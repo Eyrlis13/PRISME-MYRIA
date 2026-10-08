@@ -102,22 +102,16 @@
       var on = d.id === state.domainId;
       ul.appendChild(h("li", null, h("button", {
         type: "button", class: "lamp" + (on ? " on" : n ? " avail" : " off"), "aria-pressed": String(on), "data-domain": d.id,
-        title: n ? "" : P.NOT_INTEGRATED,
+        title: n ? "" : "Non intégré à cette version",
+        "aria-label": d.label + (n ? "" : " (non intégré à cette version)"),
         onclick: function () { loadDomain(d.id); render(); },
-      }, h("span", { class: "dot", "aria-hidden": "true" }), h("span", { class: "name", text: d.label }), n ? null : h("em", { text: "non intégré" }))));
+      }, h("span", { class: "dot", "aria-hidden": "true" }), h("span", { class: "name", text: d.label }))));
     });
     src.appendChild(ul);
+    src.appendChild(h("p", { class: "legend", "aria-hidden": "true" }, h("span", { class: "dot" }), "grisé : non intégré à cette version"));
     if (cmp) {
-      var list = P.comparisonsOfDomain(cmp.domainId);
-      if (list.length > 1) {
-        src.appendChild(h("div", { class: "examples", role: "group", "aria-label": "Exemple documenté" },
-          h("span", { class: "lab", text: "Exemple" }),
-          list.map(function (c) {
-            return h("button", { type: "button", class: "chip" + (c.id === cmp.id ? " on" : ""), "aria-pressed": String(c.id === cmp.id), text: c.kind === "contre-exemple" ? "Contre-exemples" : c.title, onclick: function () { loadGroup(c.id); render(); } });
-          })));
-      }
       if (cmp.contextMode === "common") src.appendChild(V.contextCard(P.idx.contexts[cmp.contextId]));
-      else src.appendChild(h("section", { class: "sit", "aria-label": "Situation" }, h("b", { text: "Situation" }), h("p", { class: "small", text: "Propre à chaque prisme : voir chaque spectre sur l'écran." })));
+      else src.appendChild(h("section", { class: "sit", "aria-label": "Situation" }, h("b", { text: "Situation" }), h("p", { text: "Propre à chaque prisme : voir chaque spectre." })));
       if (cmp.situations) src.appendChild(V.situationBlock(cmp, state, function (id) { state.situationId = id; render(); }));
     } else {
       src.appendChild(h("section", { class: "sit placeholder", role: "status" }, h("b", { text: P.NOT_INTEGRATED }), h("p", { class: "small muted", text: P.NOT_INTEGRATED_NOTE })));
@@ -130,12 +124,25 @@
     var slots = slotsResolved();
     var root = h("div", { class: "compare" });
 
-    root.appendChild(h("p", { class: "orient", text: "Un domaine de critères traverse une conception de la valeur sociale et se décompose en un critère spécifié : contenu, référence de valeur, fonction." }));
     var head = h("div", { class: "ex-head" });
+    var titleBox = h("div", { class: "ex-titlebox" });
     if (cmp) {
-      head.appendChild(h("div", null, h("h2", { class: "ex-title", text: cmp.title }), h("p", { class: "subtitle", text: cmp.subtitle })));
-    } else head.appendChild(h("h2", { class: "ex-title", text: P.idx.domains[state.domainId].label }));
-    head.appendChild(h("label", { class: "check" }, h("input", { type: "checkbox", id: "textonly", checked: state.textOnly, onchange: function (e) { state.textOnly = e.target.checked; render(); } }), h("span", { text: "Vue texte (sans banc optique)" })));
+      titleBox.appendChild(h("p", { class: "eyebrow", text: P.idx.domains[cmp.domainId].label }));
+      titleBox.appendChild(h("h2", { class: "ex-title", text: cmp.title }));
+      titleBox.appendChild(h("p", { class: "subtitle", text: cmp.subtitle }));
+    } else titleBox.appendChild(h("h2", { class: "ex-title", text: P.idx.domains[state.domainId].label }));
+    head.appendChild(titleBox);
+    var tools = h("div", { class: "ex-tools" });
+    var list = cmp ? P.comparisonsOfDomain(cmp.domainId) : [];
+    if (list.length > 1) {
+      tools.appendChild(h("div", { class: "examples seg", role: "group", "aria-label": "Exemple documenté" }, list.map(function (c) {
+        return h("button", { type: "button", class: "chip" + (c.id === cmp.id ? " on" : ""), "aria-pressed": String(c.id === cmp.id), text: c.kind === "contre-exemple" ? "Contre-exemples" : "Exemple principal", onclick: function () { loadGroup(c.id); render(); } });
+      })));
+    }
+    tools.appendChild(h("div", { class: "seg", role: "group", "aria-label": "Mode de lecture" },
+      h("button", { type: "button", class: "chip" + (state.textOnly ? "" : " on"), id: "view-bench", "aria-pressed": String(!state.textOnly), text: "Banc optique", onclick: function () { state.textOnly = false; render(); } }),
+      h("button", { type: "button", class: "chip" + (state.textOnly ? " on" : ""), id: "view-text", "aria-pressed": String(state.textOnly), text: "Texte seul", onclick: function () { state.textOnly = true; render(); } })));
+    head.appendChild(tools);
     root.appendChild(head);
     if (cmp && cmp.kind === "contre-exemple") root.appendChild(h("p", { class: "notice warn", role: "note", id: "context-change", text: cmp.contextChangeNotice }));
     if (cmp && cmp.hint) root.appendChild(h("p", { class: "hint", id: "hint", text: cmp.hint }));
@@ -201,7 +208,6 @@
         if (b && !b.hidden) b.previousSibling.focus();
       }, extra));
     });
-    if (cmp) screen.appendChild(h("p", { class: "muted small", text: "Cliquez une bande pour sa formulation, ses conditions, son origine et ses appuis." }));
   }
 
   function renderStage() {

@@ -33,6 +33,6 @@ Le contenu se corrige dans `data/` sans toucher aux composants.
 
 ## Choix techniques
 
-JavaScript sans framework, banc optique en SVG recalculé à chaque rotation, scripts classiques pour que l'ouverture directe du fichier fonctionne. Vue texte sans banc optique, clavier (flèches, touches 1 à 5, Début), `prefers-reduced-motion`, vue imprimable. Les polices Fraunces et Inter sont chargées depuis Google Fonts ; hors ligne, l'application retombe sur Georgia et la police système.
+Charte graphique Myriad (aubergine #3d1a32, prune #58284a, crème #f7f2ea, orange #e4552b ; Montserrat pour les titres, Inter pour le texte). JavaScript sans framework, banc optique en SVG recalculé à chaque rotation, scripts classiques pour que l'ouverture directe du fichier fonctionne. Vue texte sans banc optique, clavier (flèches, touches 1 à 5, Début), `prefers-reduced-motion`, vue imprimable. Les polices Montserrat et Inter sont chargées depuis Google Fonts ; hors ligne, l'application retombe sur les polices système.
 
 Voir `docs/AJOUTER_UNE_CONFIGURATION.md` et `docs/COUVERTURE.md`.

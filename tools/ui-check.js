@@ -25,9 +25,11 @@ const has = (txt, arr) => arr.filter((s) => !txt.toLowerCase().includes(s.toLowe
   ok((await page.locator(".prism").count()) === 2, "deux prismes");
   ok((await page.locator(".lamp").count()) === 11, "onze domaines à la source");
   ok((await page.locator(".lamp.on").innerText()).includes("Portée et accès"), "domaine allumé : Portée et accès");
-  ok((await page.locator(".lamp em").count()) === 9, "neuf domaines marqués non intégrés");
+  ok((await page.locator(".lamp.off").count()) === 9, "neuf domaines marqués non intégrés");
   ok((await active(0)).includes("Parties prenantes ciblées") && (await active(1)).includes("Normative"), "faces initiales A et B");
   ok((await txt(".sit")).toLowerCase().includes("situation construite"), "signalement situation construite");
+  await page.locator(".sit details summary").first().click();
+  ok((await txt(".sit")).includes("un principe retenu exige"), "situation : suite dépliable");
   ok((await bandText(0, "content")) === (await bandText(1, "content")), "bandes Contenu identiques");
   ok(has(await txt("#screen .same"), ["identique", "diffèrent"]).length === 0, "ligne identique / diffère");
   ok((await page.locator("#screen .status-identique").count()) === 2, "statut identique sur les deux bandes Contenu");
@@ -92,14 +94,14 @@ const has = (txt, arr) => arr.filter((s) => !txt.toLowerCase().includes(s.toLowe
   if (shots) await page.screenshot({ path: shots + "/02-cumul.png", fullPage: true });
 
   /* vue texte */
-  await page.locator("#textonly").check();
+  await page.locator("#view-text").click();
   ok((await page.locator(".bench-svg").count()) === 0 && (await page.locator("#screen .spec").count()) === 2, "vue texte : sans banc, spectres présents");
   await page.locator("#screen .spec").nth(0).locator(".b-content .band-head").click();
   const flat = await txt("#screen");
   ok(has(flat, ["Possibilité effective, pour chaque personne du groupe, d'accéder à l'accompagnement administratif.", "Conditions propres au cas", "Teasdale (2021)"]).length === 0, "vue texte : informations complètes");
   await page.selectOption("#sel-slot-1", "vertueuse");
   ok((await txt("#screen .spec.placeholder")).includes("non intégrée"), "vue texte : conception non intégrée");
-  await page.locator("#textonly").uncheck();
+  await page.locator("#view-bench").click();
 
   /* pertinence */
   await page.locator('.lamp[data-domain="pertinence"]').click();

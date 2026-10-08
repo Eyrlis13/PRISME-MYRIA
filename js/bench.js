@@ -8,7 +8,7 @@
   var D = P.data;
   var NS = "http://www.w3.org/2000/svg";
   var R = 78, SY = 0.4, H = 58, CX = 210, STEP = 72, SLOT_H = 280, TOP = 160;
-  var RAY_COLORS = ["#5b8bd6", "#e0ad3a", "#5fb57e"];
+  var RAY_COLORS = ["#7aa6e0", "#f0b54a", "#6cc192"];
 
   function reducedMotion() {
     return window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -87,7 +87,7 @@
   P.createBench = function (opts) {
     var n = opts.slots.length;
     var labels = D.conceptions.map(function (c) { return c.label; });
-    var benchH = TOP + SLOT_H * (n - 1) + H + 140;
+    var benchH = TOP + SLOT_H * (n - 1) + H + 120;
     var svg = el("svg", { viewBox: "0 0 420 " + benchH, class: "bench-svg", role: "img", "aria-label": "Banc optique : rayon du domaine, prismes des conceptions, spectres des critères" });
     var defs = el("defs");
     defs.innerHTML =
@@ -103,8 +103,12 @@
     var rays = el("g", { class: "rays" });
     var prisms = [];
     var caps = el("g", { class: "caps" });
-    caps.appendChild(el("text", { class: "cap", x: 14, y: 26 }, "LUMIÈRE BLANCHE · LE DOMAINE CHOISI"));
-    caps.appendChild(el("text", { class: "cap sub", x: 14, y: 40 }, "un rayon par prisme, un spectre par conception"));
+    caps.appendChild(el("text", { class: "cap", x: 20, y: 30 }, "LUMIÈRE BLANCHE"));
+    caps.appendChild(el("text", { class: "cap sub", x: 20, y: 45 }, "le domaine choisi"));
+    var ribbons = el("g", { class: "ribbons", "aria-hidden": "true" });
+    ribbons.appendChild(el("path", { d: "M250 -40 L470 230 L470 330 L250 60 Z" }));
+    ribbons.appendChild(el("path", { d: "M-60 " + (benchH - 40) + " L150 " + (benchH - 300) + " L230 " + (benchH - 300) + " L20 " + (benchH - 40) + " Z" }));
+    svg.insertBefore(ribbons, svg.firstChild.nextSibling);
     svg.appendChild(beams); svg.appendChild(rays);
 
     var state = opts.slots.map(function (s, i) {
@@ -130,10 +134,10 @@
       svg.appendChild(g);
       st.g = g;
       caps.appendChild(el("text", { class: "cap", x: CX, y: st.cy - 68, "text-anchor": "middle" }, "PRISME " + (opts.slotNames ? opts.slotNames[i] : String.fromCharCode(65 + i))));
-      caps.appendChild(el("text", { class: "cap hint", x: CX, y: st.cy + H + SY * R + 52, "text-anchor": "middle" }, "↻ tourner : glisser, flèches ou touches 1 à 5"));
       bindInteraction(st, i);
       render(st);
     });
+    caps.appendChild(el("text", { class: "cap sub", x: CX, y: benchH - 18, "text-anchor": "middle" }, "glisser, flèches ou touches 1 à 5 pour tourner un prisme"));
     svg.appendChild(caps);
 
     function render(st) {

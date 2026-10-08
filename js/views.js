@@ -75,7 +75,7 @@
     },
       h("span", { class: "k" }, def.label, f && f.type ? h("span", { class: "pill", text: D.functionTypes[f.type].label }) : null),
       h("span", { class: "t" + (f ? "" : " np"), text: f ? f.full : (faceId === "function" ? P.FUNCTION_UNSPECIFIED : P.NOT_PROVIDED) }),
-      status ? h("span", { class: "status status-" + status.replace(/\W/g, ""), text: status }) : null,
+      status === "identique" ? h("span", { class: "status status-identique", text: "identique" }) : h("span"),
       h("span", { class: "chev", "aria-hidden": "true", text: "›" })
     );
     var body = h("div", { class: "band-body", id: id, hidden: !opened }, V.faceDetail(cfg, faceId, 0));
@@ -85,14 +85,14 @@
   V.spectrumCard = function (cfg, letter, cmp, openFace, onToggle, extra) {
     var conc = P.idx.conceptions[cfg.conceptionId];
     var card = h("section", { class: "spec", "aria-label": "Spectre " + letter + ", " + conc.label });
+    var comp = cfg.completeness;
     card.appendChild(h("header", { class: "who" },
       h("span", { class: "letter", text: letter }),
       h("b", { text: conc.label }),
+      comp.status !== "complète" ? h("span", { class: "tag", title: comp.note, text: "exemple " + comp.status }) : null,
       h("small", { text: conc.description })));
     if (extra) card.appendChild(extra);
     card.appendChild(h("div", { class: "bands" }, P.FACE_ORDER.map(function (fid) { return V.band(cfg, fid, cmp, openFace === fid, onToggle); })));
-    var comp = cfg.completeness;
-    card.appendChild(h("p", { class: "muted small", text: cfg.tag + " · complétude : " + comp.status + ". " + comp.note }));
     return card;
   };
 
@@ -101,8 +101,7 @@
     return h("section", { class: "spec placeholder", role: "status" },
       h("header", { class: "who" }, h("span", { class: "letter", text: letter }), h("b", { text: conc.label }), h("small", { text: conc.description })),
       h("p", { class: "ph-main", text: P.NOT_INTEGRATED }),
-      h("p", { class: "muted", text: P.NOT_INTEGRATED_NOTE }),
-      h("p", { class: "muted small", text: "Le rayon traverse ce prisme sans se décomposer : aucun spectre n'est affiché." }));
+      h("p", { class: "muted small", text: P.NOT_INTEGRATED_NOTE + " Le rayon traverse ce prisme sans se décomposer." }));
   };
 
   /* Ligne entre deux spectres, tirée du groupe de comparaison. */
@@ -113,7 +112,7 @@
       if (s === "identique") same.push(l); else if (s === "diffère") diff.push(l); else if (s) unsp.push(l);
     });
     var parts = [];
-    if (same.length) parts.push(same.join(" et ") + " identique" + (same.length > 1 ? "s" : "") + " sous A et B");
+    if (same.length) parts.push(same.join(" et ") + " identique" + (same.length > 1 ? "s" : ""));
     if (diff.length) parts.push(diff.join(" et ") + " diffère" + (diff.length > 1 ? "nt" : ""));
     if (unsp.length) parts.push(unsp.join(" et ") + " non spécifié" + (unsp.length > 1 ? "s" : ""));
     return h("p", { class: "same", text: parts.join(" · ") });
@@ -121,13 +120,17 @@
 
   V.contextCard = function (ctx, opts) {
     opts = opts || {};
+    /* première phrase visible, la suite se déplie */
+    var cut = ctx.text.indexOf(". ");
+    var first = cut > 0 ? ctx.text.slice(0, cut + 1) : ctx.text;
+    var rest = cut > 0 ? ctx.text.slice(cut + 2) : "";
     return h("section", { class: "sit", "aria-label": opts.heading || "Situation" },
       h("b", { text: opts.heading || (ctx.constructed ? "Situation construite" : "Situation") }),
-      h("p", { text: ctx.text }),
-      h("dl", { class: "kvs tight" },
+      h("p", { text: first }),
+      h("details", { class: "more" }, h("summary", { text: rest ? "Suite, destinataires et sources" : "Destinataires et sources" }), rest ? h("p", { text: rest }) : null, h("dl", { class: "kvs tight" },
         row("Destinataires", h("span", { text: ctx.recipients })),
         row("Source du critère", ctx.sourceCritere ? h("span", { text: ctx.sourceCritere }) : np("Non renseignée (exemple construit)")),
-        row("Source des données", ctx.sourceDonnees ? h("span", { text: ctx.sourceDonnees }) : np("Non renseignée (exemple construit)"))));
+        row("Source des données", ctx.sourceDonnees ? h("span", { text: ctx.sourceDonnees }) : np("Non renseignée (exemple construit)")))));
   };
 
   V.annotations = function (cmp) {
@@ -136,8 +139,8 @@
     if (cmp.constant.length) dl.appendChild(row("Maintenu constant", h("span", { text: names(cmp.constant) })));
     if (cmp.varies.length) dl.appendChild(row("Varie", h("span", { text: names(cmp.varies) })));
     if (cmp.unspecified && cmp.unspecified.length) dl.appendChild(row("Non spécifié", h("span", { text: names(cmp.unspecified) })));
-    return h("section", { class: "card annot", "aria-label": "Éléments constants et variables" },
-      h("h3", { text: "Ce que la comparaison maintient et ce qu'elle fait varier" }), dl,
+    return h("details", { class: "card annot", "aria-label": "Éléments constants et variables" },
+      h("summary", null, h("span", { text: "Ce que la comparaison maintient et ce qu'elle fait varier" })), dl,
       h("p", { class: "muted small", text: "L'équivalence des éléments constants est posée par la construction du groupe de comparaison. Une égalité de texte ne suffit pas à établir l'équivalence scientifique de deux critères." }));
   };
 
@@ -146,7 +149,7 @@
     var root = h("section", { class: "stage2", "aria-label": "Étape 2 : le constat traverse chaque critère" });
     var formulation = slots.some(function (s) { return s.cfg && s.cfg.assessment.mode === "formulation"; });
     root.appendChild(h("h2", null, h("span", { class: "step", text: "Étape 2" }), formulation ? "Ce que la référence implique pour la formulation du critère" : "Le même constat traverse chaque critère"));
-    root.appendChild(h("p", { class: "muted", text: "Textes préparés pour chaque configuration. L'application les affiche ; elle ne produit aucun jugement automatique sur une organisation réelle et ne calcule aucun score." }));
+    root.appendChild(h("p", { class: "muted small", text: "Textes préparés pour chaque configuration : aucun jugement automatique, aucun score." }));
     var grid = h("div", { class: "s2grid" });
 
     /* constat et standard : commun si constants, sinon par prisme */
@@ -341,6 +344,7 @@
     root.appendChild(h("ol", { class: "refs" }, D.references.map(function (r) { return h("li", null, r.full, r.doi ? " https://doi.org/" + r.doi : ""); })));
     root.appendChild(h("p", { class: "muted small", text: "Le prisme des critères, PRISME MYRIA. Situations construites à des fins de raisonnement. Aucun score, aucune pondération, aucun classement." }));
     root.querySelectorAll("[id]").forEach(function (e) { e.removeAttribute("id"); });
+    root.querySelectorAll("details").forEach(function (e) { e.open = true; });
     return root;
   };
 })();
