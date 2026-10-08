@@ -14,6 +14,12 @@ Le prisme représente la conception de la valeur sociale. Il a cinq faces, une p
 
 Ce qui a motivé le changement : un prisme ne montre pas des faces, il décompose une lumière qui le traverse. La seconde lecture rend visible, d'un coup d'œil, ce qu'un changement de conception modifie et ce qu'il laisse inchangé, ce que la première cachait derrière la rotation.
 
+## Version 0.3 (forme, sans changement de fond)
+
+Le prisme est dessiné en coupe : un pentagone dont chaque côté porte le nom d'une conception. Le côté tourné vers le haut reçoit le rayon. Le rayon blanc descend de la source (le domaine), traverse le prisme et en ressort en trois rayons colorés qui rejoignent les trois bandes. Les bandes de A et de B sont alignées ligne à ligne ; un signe entre elles indique le rapport fixé par le groupe de comparaison : `=` identique, `≠` diffère, `≈` formulations différentes qui convergent dans la situation choisie, `–` non spécifié.
+
+Le signe `≈` est une lecture, par l'interface, du champ `relation: "convergence"` de la situation. Il ne figure pas comme tel dans les données.
+
 ## Conséquences à vérifier dans le manuscrit
 
 1. Si l'article emploie l'image du prisme, il doit l'aligner sur cette lecture (prisme = conception), sinon l'application et le texte ne diront pas la même chose.

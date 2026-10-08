@@ -120,17 +120,14 @@
 
   V.contextCard = function (ctx, opts) {
     opts = opts || {};
-    /* première phrase visible, la suite se déplie */
-    var cut = ctx.text.indexOf(". ");
-    var first = cut > 0 ? ctx.text.slice(0, cut + 1) : ctx.text;
-    var rest = cut > 0 ? ctx.text.slice(cut + 2) : "";
+    var dl = h("dl", { class: "kvs tight" },
+      row("Destinataires", h("span", { text: ctx.recipients })),
+      row("Source du critère", ctx.sourceCritere ? h("span", { text: ctx.sourceCritere }) : np("Non renseignée (exemple construit)")),
+      row("Source des données", ctx.sourceDonnees ? h("span", { text: ctx.sourceDonnees }) : np("Non renseignée (exemple construit)")));
+    if (opts.full) return h("div", { class: "ctx-full" }, h("p", { class: "lead", text: ctx.text }), dl);
     return h("section", { class: "sit", "aria-label": opts.heading || "Situation" },
       h("b", { text: opts.heading || (ctx.constructed ? "Situation construite" : "Situation") }),
-      h("p", { text: first }),
-      h("details", { class: "more" }, h("summary", { text: rest ? "Suite, destinataires et sources" : "Destinataires et sources" }), rest ? h("p", { text: rest }) : null, h("dl", { class: "kvs tight" },
-        row("Destinataires", h("span", { text: ctx.recipients })),
-        row("Source du critère", ctx.sourceCritere ? h("span", { text: ctx.sourceCritere }) : np("Non renseignée (exemple construit)")),
-        row("Source des données", ctx.sourceDonnees ? h("span", { text: ctx.sourceDonnees }) : np("Non renseignée (exemple construit)")))));
+      h("p", { text: ctx.text }), dl);
   };
 
   V.annotations = function (cmp) {
@@ -144,48 +141,49 @@
       h("p", { class: "muted small", text: "L'équivalence des éléments constants est posée par la construction du groupe de comparaison. Une égalité de texte ne suffit pas à établir l'équivalence scientifique de deux critères." }));
   };
 
-  /* Étape 2 : le constat traverse chaque critère. */
+  /* Étape 2 : le constat traverse chaque critère. Même grille que la scène : A | marque | B. */
   V.stageTwo = function (cmp, slots, situation) {
-    var root = h("section", { class: "stage2", "aria-label": "Étape 2 : le constat traverse chaque critère" });
     var formulation = slots.some(function (s) { return s.cfg && s.cfg.assessment.mode === "formulation"; });
-    root.appendChild(h("h2", null, h("span", { class: "step", text: "Étape 2" }), formulation ? "Ce que la référence implique pour la formulation du critère" : "Le même constat traverse chaque critère"));
-    root.appendChild(h("p", { class: "muted small", text: "Textes préparés pour chaque configuration : aucun jugement automatique, aucun score." }));
-    var grid = h("div", { class: "s2grid" });
-
-    /* constat et standard : commun si constants, sinon par prisme */
+    var root = h("section", { class: "stage2", "aria-label": "Étape 2" });
+    root.appendChild(h("h2", null, h("span", { class: "step", text: "Étape 2" }),
+      formulation ? "Ce que chaque référence implique pour la formulation" : "Le même constat, deux conclusions"));
+    var grid = h("div", { class: "s2" });
     var common = cmp.constant.indexOf("standard") >= 0 && cmp.constant.indexOf("constat") >= 0;
     var first = slots.filter(function (s) { return s.cfg; })[0];
-    function obsCard(cfg, letter) {
-      var a = cfg.assessment;
-      return h("div", { class: "s2card obs" },
-        h("h3", { text: letter ? "Constat et standard · " + letter : "Constat et standard" }),
-        h("p", { class: "lab", text: "Observé ou supposé dans l'exemple" }), a.observed ? h("p", { text: a.observed }) : h("p", null, np()),
-        h("p", { class: "lab", text: "Standard retenu" }), a.standard ? h("p", { text: a.standard }) : h("p", null, np()),
-        common ? h("p", { class: "same inline", text: "identique sous A et B" }) : null);
+
+    function obs(a) {
+      if (!a.observed && !a.standard) return h("p", { class: "np", text: "Aucun standard ni constat dans cet exemple." });
+      return h("div", null,
+        h("p", { class: "obs-main", text: a.observed || P.NOT_PROVIDED }),
+        h("p", { class: "obs-sub" }, h("span", { class: "lab inline", text: "Standard " }), a.standard || P.NOT_PROVIDED));
     }
-    if (common && first) grid.appendChild(obsCard(first.cfg, null));
-    var cols = h("div", { class: "s2cols" });
+    var none = slots.every(function (s) { return !s.cfg || (!s.cfg.assessment.observed && !s.cfg.assessment.standard); });
+    if (!common && none) {
+      grid.appendChild(h("div", { class: "s2-obs span" }, h("p", { class: "np", text: "Aucun standard ni constat dans cet exemple." })));
+      common = true;
+    } else if (common && first) {
+      grid.appendChild(h("div", { class: "s2-obs span" },
+        h("span", { class: "s2-k", text: "Constat supposé, identique pour A et B" }), obs(first.cfg.assessment)));
+    }
     slots.forEach(function (s, i) {
       var letter = String.fromCharCode(65 + i);
-      var col = h("div", { class: "s2col" });
-      if (!s.cfg) { col.appendChild(h("div", { class: "s2card" }, h("h3", { text: letter + " · " + P.idx.conceptions[s.conceptionId].label }), h("p", { class: "np", text: P.NOT_INTEGRATED }))); cols.appendChild(col); return; }
+      var col = i === 0 ? "1" : "3";
+      var cell = h("div", { class: "s2-card", style: "grid-column:" + col });
+      if (!s.cfg) { cell.appendChild(h("p", { class: "np", text: P.NOT_INTEGRATED })); grid.appendChild(cell); return; }
       var a = s.cfg.assessment;
-      if (!common) col.appendChild(obsCard(s.cfg, letter));
-      var card = h("div", { class: "s2card concl" });
-      card.appendChild(h("h3", { text: letter + " · " + P.idx.conceptions[s.cfg.conceptionId].label }));
+      if (!common) cell.appendChild(h("div", { class: "s2-obs" }, h("span", { class: "s2-k", text: "Constat" }), obs(a)));
       var sit = situation && situation.byConfig[s.cfg.id];
       var supported = a.mode === "formulation" ? (sit ? sit.implication : null) : a.supported;
       var remaining = a.mode === "formulation" ? (sit ? sit.remaining : null) : a.remaining;
-      card.appendChild(h("p", { class: "lab", text: a.mode === "formulation" ? "Implication pour la formulation" : "Conclusion soutenue, sous les conditions indiquées" }));
-      card.appendChild(supported ? h("p", { class: "strong", text: supported }) : h("p", null, np()));
-      if (a.conditions && a.conditions.length) card.appendChild(h("p", { class: "cond" }, h("span", { class: "lab inline", text: "Condition : " }), a.conditions.join(" ")));
-      card.appendChild(h("p", { class: "lab", text: "Ce qui reste à établir pour une conclusion plus large" }));
-      card.appendChild(remaining ? h("p", { text: remaining }) : h("p", null, np()));
-      if (a.supports && a.supports.length) card.appendChild(h("div", { class: "cmeta" }, chips(a.supports)));
-      col.appendChild(card);
-      cols.appendChild(col);
+      cell.appendChild(h("p", { class: "s2-k" }, h("span", { class: "letter sm", text: letter }), a.mode === "formulation" ? "Implication" : "Conclusion soutenue"));
+      cell.appendChild(supported ? h("p", { class: "s2-main", text: supported }) : h("p", null, np()));
+      var more = h("details", { class: "more" }, h("summary", { text: "Ce qui reste à établir" + (a.conditions && a.conditions.length ? ", condition" : "") }));
+      if (a.conditions && a.conditions.length) more.appendChild(h("p", { class: "cond" }, h("span", { class: "lab inline", text: "Condition : " }), a.conditions.join(" ")));
+      more.appendChild(remaining ? h("p", { text: remaining }) : h("p", null, np()));
+      if (a.supports && a.supports.length) more.appendChild(chips(a.supports));
+      cell.appendChild(more);
+      grid.appendChild(cell);
     });
-    grid.appendChild(cols);
     root.appendChild(grid);
     if (cmp.noticeReading) root.appendChild(h("p", { class: "notice", text: cmp.noticeReading }));
     return root;

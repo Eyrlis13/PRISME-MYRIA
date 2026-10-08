@@ -25,7 +25,7 @@ node tools/ui-check.js         # comportements dans Chromium (nécessite Playwri
 | Dossier | Contenu |
 |---|---|
 | `data/` | Contenu scientifique : domaines, conceptions, références (`catalogue.js`), contextes, configurations et justifications, groupes de comparaison |
-| `js/` | Affichage : `core.js` (utilitaires), `bench.js` (banc optique SVG), `views.js` (écran, étape 2, rubriques, impression), `main.js` (état) |
+| `js/` | Affichage : `core.js` (utilitaires), `bench.js` (prisme vu en coupe, que l'on tourne), `views.js` (étape 2, panneau de détail, rubriques, impression), `main.js` (état, scène, rayons) |
 | `css/` | Styles, y compris la vue imprimable |
 | `docs/` | Ajouter une configuration, couverture, évolution conceptuelle, maquettes |
 
@@ -33,6 +33,6 @@ Le contenu se corrige dans `data/` sans toucher aux composants.
 
 ## Choix techniques
 
-Charte graphique Myriad (aubergine #3d1a32, prune #58284a, crème #f7f2ea, orange #e4552b ; Montserrat pour les titres, Inter pour le texte). JavaScript sans framework, banc optique en SVG recalculé à chaque rotation, scripts classiques pour que l'ouverture directe du fichier fonctionne. Vue texte sans banc optique, clavier (flèches, touches 1 à 5, Début), `prefers-reduced-motion`, vue imprimable. Les polices Montserrat et Inter sont chargées depuis Google Fonts ; hors ligne, l'application retombe sur les polices système.
+Charte graphique Myriad (aubergine #3d1a32, prune #58284a, crème #f7f2ea, orange #e4552b ; Montserrat pour les titres, Inter pour le texte). JavaScript sans framework, banc optique en SVG recalculé à chaque rotation, scripts classiques pour que l'ouverture directe du fichier fonctionne. Vue « texte seul » sans prismes, clavier (flèches, touches 1 à 5, Début ; Échap ferme le panneau de détail), `prefers-reduced-motion`, vue imprimable. Les polices Montserrat et Inter sont chargées depuis Google Fonts ; hors ligne, l'application retombe sur les polices système.
 
 Voir `docs/AJOUTER_UNE_CONFIGURATION.md` et `docs/COUVERTURE.md`.

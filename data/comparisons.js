@@ -66,6 +66,7 @@
       situations: [
         {
           id: "sit-divergence",
+          shortLabel: "Les usages débordent le besoin",
           label: "Les usages valorisés débordent le besoin administratif",
           relation: "divergence",
           relationLabel: "Les contenus peuvent diverger",
@@ -90,6 +91,7 @@
         },
         {
           id: "sit-convergence",
+          shortLabel: "Les usages coïncident avec les démarches",
           label: "Les démarches administratives correspondent précisément aux usages valorisés",
           relation: "convergence",
           relationLabel: "Les contenus peuvent converger",
