@@ -29,3 +29,9 @@ Le signe `≈` est une lecture, par l'interface, du champ `relation: "convergenc
 ## Ce qui n'a pas changé
 
 Les données (`data/`), les définitions des trois composantes, les groupes de comparaison, les conclusions préparées et les références sont identiques entre les deux versions. Seul le rendu a été remplacé.
+
+## Version 0.4 (épure)
+
+L'écran Comparer ne montre plus que la scène : domaine, deux prismes, deux spectres, signes de rapport. Les définitions des conceptions, la situation, les sources et le détail de chaque bande s'ouvrent dans un panneau latéral. L'étape 2 (constat et conclusions) est repliée par défaut.
+
+Les « contre-exemples » du cahier des charges (section 8) sont présentés sous l'onglet « Fonctions inversées » : sous d'autres situations, les parties prenantes ciblées donnent une fonction directe et la conception normative une fonction instrumentale, à l'inverse de l'exemple principal. L'avertissement de changement de situation reste affiché, sous une forme courte ; sa version complète est dans l'infobulle et dans la vue imprimable.

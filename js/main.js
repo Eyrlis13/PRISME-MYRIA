@@ -14,6 +14,8 @@
     openFace: [null, null],
     situationId: null,
     cumul: false,
+    showStage2: false,
+    turned: false,
     textOnly: false,
     print: false,
   };
@@ -32,6 +34,7 @@
     state.initial = state.slots.map(function (s) { return conceptionIndex(s.conceptionId); });
     state.openFace = [null, null];
     state.cumul = false;
+    state.turned = false;
     state.situationId = cmp.situations ? cmp.situations[0].id : null;
   }
   function loadDomain(domainId) {
@@ -113,7 +116,6 @@
     var bar = h("div", { class: "source" });
     var picker = h("details", { class: "domain-picker" });
     picker.appendChild(h("summary", { "aria-label": "Domaine de critères : " + P.idx.domains[state.domainId].label + ". Changer de domaine" },
-      h("span", { class: "src-k", text: "Source · domaine de critères" }),
       h("span", { class: "src-v" }, P.idx.domains[state.domainId].label, h("span", { class: "caret", "aria-hidden": "true", text: " ▾" })),
       h("span", { class: "lamp-glow", "aria-hidden": "true" })));
     var ul = h("ul", { class: "lamps" });
@@ -131,6 +133,13 @@
     return bar;
   }
 
+  /* Sur la bande, le type de fonction est porté par l'étiquette : on ne le répète pas dans la phrase. */
+  function bandText(f) {
+    if (!f.type) return f.short;
+    var t = f.short.replace(/^(Directe|Instrumentale)\s*:\s*/, "");
+    return t.charAt(0).toUpperCase() + t.slice(1);
+  }
+
   function renderComparison() {
     var cmp = group();
     var slots = slotsResolved();
@@ -140,18 +149,13 @@
     var head = h("div", { class: "ex-head wrap" });
     var tb = h("div", { class: "ex-titlebox" });
     tb.appendChild(h("h2", { class: "ex-title", text: cmp ? cmp.title : P.idx.domains[state.domainId].label }));
-    if (cmp) tb.appendChild(h("p", { class: "subtitle", text: cmp.subtitle }));
-    if (cmp && cmp.kind === "contre-exemple") tb.appendChild(h("p", { class: "ce-note", id: "context-change", role: "note", text: cmp.contextChangeNotice }));
+    if (cmp && cmp.kind === "contre-exemple") tb.appendChild(h("p", { class: "ce-note", id: "context-change", role: "note", title: cmp.contextChangeNotice, text: "Autres situations que l'exemple principal" }));
     if (cmp && cmp.contextMode === "common") {
       var ctx = P.idx.contexts[cmp.contextId];
-      var cut = ctx.text.indexOf(". ");
-      tb.appendChild(h("p", { class: "sit-line" },
-        h("span", { class: "sit-k", text: "Situation construite" }),
-        h("span", { text: cut > 0 ? ctx.text.slice(0, cut + 1) : ctx.text }),
-        h("button", { type: "button", class: "link-light", id: "ctx-open", text: "Lire la suite", onclick: function () { openDrawer(contextDrawer(ctx)); } })));
+      tb.appendChild(h("button", { type: "button", class: "info-btn", id: "ctx-open", onclick: function () { openDrawer(contextDrawer(ctx)); } }, h("span", { class: "i", "aria-hidden": "true", text: "i" }), "Situation construite"));
     }
     if (cmp && cmp.situations) {
-      tb.appendChild(h("div", { class: "sit-row" }, h("span", { class: "sit-k", text: "Situation" }), h("div", { class: "seg dark situations", role: "radiogroup", "aria-label": cmp.situationsLabel },
+      tb.appendChild(h("div", { class: "sit-row" }, h("div", { class: "seg dark situations", role: "radiogroup", "aria-label": cmp.situationsLabel },
         cmp.situations.map(function (x) {
           var on = x.id === state.situationId;
           return h("button", { type: "button", role: "radio", "aria-checked": String(on), class: "chip" + (on ? " on" : ""), "data-situation": x.id, text: x.shortLabel || x.label, title: x.label, onclick: function () { state.situationId = x.id; render(); } });
@@ -161,11 +165,8 @@
     var tools = h("div", { class: "ex-tools" });
     var list = cmp ? P.comparisonsOfDomain(cmp.domainId) : [];
     if (list.length > 1) tools.appendChild(h("div", { class: "examples seg dark", role: "group", "aria-label": "Exemple documenté" }, list.map(function (c) {
-      return h("button", { type: "button", class: "chip" + (c.id === cmp.id ? " on" : ""), "aria-pressed": String(c.id === cmp.id), text: c.kind === "contre-exemple" ? "Contre-exemples" : "Exemple principal", onclick: function () { loadGroup(c.id); render(); } });
+      return h("button", { type: "button", class: "chip" + (c.id === cmp.id ? " on" : ""), "aria-pressed": String(c.id === cmp.id), text: c.kind === "contre-exemple" ? "Fonctions inversées" : "Exemple principal", onclick: function () { loadGroup(c.id); render(); } });
     })));
-    tools.appendChild(h("div", { class: "seg dark", role: "group", "aria-label": "Mode de lecture" },
-      h("button", { type: "button", class: "chip" + (state.textOnly ? "" : " on"), id: "view-bench", "aria-pressed": String(!state.textOnly), text: "Prismes", onclick: function () { state.textOnly = false; render(); } }),
-      h("button", { type: "button", class: "chip" + (state.textOnly ? " on" : ""), id: "view-text", "aria-pressed": String(state.textOnly), text: "Texte seul", onclick: function () { state.textOnly = true; render(); } })));
     head.appendChild(tools);
 
     var stage = h("section", { class: "optic" + (state.textOnly ? " textonly" : ""), "aria-label": "Scène optique" });
@@ -193,6 +194,7 @@
             if (state.slots[i].conceptionId === cid) { drawRays(); return; }
             var refocus = document.activeElement && document.activeElement.classList && document.activeElement.classList.contains("dial");
             state.slots[i] = { conceptionId: cid };
+            state.turned = true;
             render();
             if (refocus && dials[i]) dials[i].el.focus({ preventScroll: true });
           },
@@ -204,21 +206,19 @@
           h("select", { id: "sel-slot-" + i, onchange: function (e) { state.slots[i] = { conceptionId: e.target.value }; render(); } },
             D.conceptions.map(function (c) { return h("option", { value: c.id, selected: c.id === s.conceptionId, text: c.label + (P.configFor(cmp, c.id) ? "" : " (non intégrée)") }); }))));
       }
-      top.appendChild(h("div", { class: "conc-name" },
+      top.appendChild(h("button", { type: "button", class: "conc-name", title: conc.description, "aria-label": "Conception " + conc.label + " : voir la définition", onclick: function () { openDrawer(conceptionDrawer(conc, s.cfg, letter)); } },
         h("span", { class: "letter", text: letter }),
-        h("span", { class: "cn", text: conc.label }),
-        s.cfg && s.cfg.completeness.status !== "complète" ? h("span", { class: "tag", title: s.cfg.completeness.note, text: "exemple partiel" }) : null));
-      top.appendChild(h("p", { class: "conc-desc", text: conc.description }));
+        h("span", { class: "cn", text: conc.label })));
       if (cmp.contextMode === "per-config" && s.cfg) {
         var cx = P.idx.contexts[s.cfg.contextId];
-        top.appendChild(h("button", { type: "button", class: "ctx-chip", onclick: function () { openDrawer(contextDrawer(cx, "Contexte propre à " + letter)); } }, "Contexte propre à " + letter + " · lire"));
+        top.appendChild(h("button", { type: "button", class: "info-btn ctx-chip", onclick: function () { openDrawer(contextDrawer(cx, "Situation de " + letter)); } }, h("span", { class: "i", "aria-hidden": "true", text: "i" }), "Situation"));
       }
       grid.appendChild(top);
 
       if (!s.cfg) {
         grid.appendChild(h("div", { class: "band-empty", style: "grid-column:" + col + ";grid-row:2 / span 3", "data-slot": String(i) },
           h("p", { class: "ph-main", text: P.NOT_INTEGRATED }),
-          h("p", { text: "Le rayon traverse ce prisme sans se décomposer. " + P.NOT_INTEGRATED_NOTE })));
+          h("p", { title: P.NOT_INTEGRATED_NOTE, text: "Le rayon traverse sans se décomposer." })));
         return;
       }
       P.FACE_ORDER.forEach(function (fid, r) {
@@ -230,7 +230,7 @@
           onclick: function () { openDrawer(faceDrawer(s.cfg, fid, letter)); },
         },
           h("span", { class: "k" }, P.idx.faces[fid].label, f && f.type ? h("span", { class: "pill", text: D.functionTypes[f.type].label }) : null),
-          h("span", { class: "t" + (f ? "" : " np"), text: f ? f.short : P.FUNCTION_UNSPECIFIED })));
+          h("span", { class: "t" + (f ? "" : " np"), text: f ? bandText(f) : P.FUNCTION_UNSPECIFIED })));
       });
     });
     P.FACE_ORDER.forEach(function (fid, r) {
@@ -239,10 +239,12 @@
         m ? h("span", { class: "mark " + m.cls, title: m.text, role: "img", "aria-label": m.text, text: m.sym }) : null));
     });
     inner.appendChild(grid);
-    if (slots[0].cfg && slots[1].cfg) inner.appendChild(h("p", { class: "legend-marks" },
-      h("span", null, h("b", { text: "=" }), " identique"), h("span", null, h("b", { text: "≠" }), " diffère"),
-      cmp.situations ? h("span", null, h("b", { text: "≈" }), " converge dans cette situation") : null,
-      h("span", { class: "hint-turn", text: state.textOnly ? "" : "Cliquez un nom autour d'un prisme pour le tourner." })));
+    inner.appendChild(h("div", { class: "scene-foot" },
+      h("p", { class: "legend-marks" },
+        h("span", null, h("b", { text: "=" }), " identique"), h("span", null, h("b", { text: "≠" }), " diffère"),
+        cmp.situations ? h("span", null, h("b", { text: "≈" }), " converge") : null),
+      !state.textOnly && !state.turned ? h("p", { class: "hint-turn", id: "hint", text: "Cliquez un nom autour d'un prisme pour le tourner." }) : null,
+      h("button", { type: "button", class: "link-light small", id: state.textOnly ? "view-bench" : "view-text", onclick: function () { state.textOnly = !state.textOnly; render(); } }, state.textOnly ? "Revenir aux prismes" : "Version texte")));
 
     var overlay = document.createElementNS("http://www.w3.org/2000/svg", "svg");
     overlay.setAttribute("class", "rays-overlay"); overlay.setAttribute("aria-hidden", "true");
@@ -251,15 +253,19 @@
     root.appendChild(stage);
     sceneEl = stage;
 
-    var st2 = h("div", { class: "wrap" }, V.stageTwo(cmp, slots, cmp.situations ? cmp.situations.filter(function (x) { return x.id === state.situationId; })[0] : null));
-    if (cmp.cumul && slots.every(function (s) { return s.cfg; })) {
+    var st2 = h("div", { class: "wrap st2-wrap" });
+    st2.appendChild(h("button", { type: "button", class: "stage2-toggle", id: "stage2-btn", "aria-expanded": String(state.showStage2), onclick: function () { state.showStage2 = !state.showStage2; render(); if (state.showStage2) document.getElementById("stage2-btn").scrollIntoView({ block: "start", behavior: "smooth" }); } },
+      h("span", { class: "step", text: "Étape 2" }),
+      h("span", { text: cmp.situations ? "Implications pour la formulation du critère" : "Le même constat, deux conclusions" }),
+      h("span", { class: "chev", "aria-hidden": "true", text: state.showStage2 ? "−" : "+" })));
+    if (state.showStage2) st2.appendChild(V.stageTwo(cmp, slots, cmp.situations ? cmp.situations.filter(function (x) { return x.id === state.situationId; })[0] : null));
+    if (state.showStage2 && cmp.cumul && slots.every(function (s) { return s.cfg; })) {
       st2.appendChild(h("div", { class: "cumul-bar" }, h("button", {
         type: "button", class: "btn accent", id: "cumul-btn", "aria-pressed": String(state.cumul), "aria-controls": "cumul-panel", text: cmp.cumul.buttonLabel,
         onclick: function () { state.cumul = !state.cumul; render(); if (state.cumul) { var p = document.getElementById("cumul-panel"); if (p) { p.scrollIntoView({ block: "start" }); p.focus({ preventScroll: true }); } } },
       })));
       if (state.cumul) st2.appendChild(V.cumulPanel(cmp, function (id) { return P.idx.configurations[id]; }));
     }
-    st2.appendChild(V.annotations(cmp));
     root.appendChild(st2);
     app.appendChild(root);
     requestAnimationFrame(drawRays);
@@ -345,6 +351,14 @@
       h("h2", { id: "drawer-title" }, h("span", { class: "swatch s-" + fid, "aria-hidden": "true" }), P.idx.faces[fid].label, f && f.type ? h("span", { class: "pill", text: D.functionTypes[f.type].label }) : null),
       h("blockquote", { class: "full" + (f ? "" : " np"), text: f ? f.full : P.FUNCTION_UNSPECIFIED }),
       V.faceDetail(cfg, fid, 0));
+  }
+  function conceptionDrawer(conc, cfg, letter) {
+    return h("div", { class: "drawer-body" },
+      h("p", { class: "eyebrow", text: "Prisme " + letter + " · conception de la valeur sociale" }),
+      h("h2", { id: "drawer-title", text: conc.label }),
+      h("p", { class: "lead", text: conc.description }),
+      h("p", { class: "muted small", text: "Description reprise de la typologie de de la Cruz Jara et Spanjol (2025). Elle présente l'approche ; elle ne permet pas de déduire automatiquement un critère." }),
+      cfg ? h("p", { class: "muted small", text: cfg.tag + " · " + cfg.completeness.status + ". " + cfg.completeness.note }) : h("p", { class: "muted small", text: P.NOT_INTEGRATED + " " + P.NOT_INTEGRATED_NOTE }));
   }
   function contextDrawer(ctx, title) {
     return h("div", { class: "drawer-body" },

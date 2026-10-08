@@ -145,7 +145,7 @@
   V.stageTwo = function (cmp, slots, situation) {
     var formulation = slots.some(function (s) { return s.cfg && s.cfg.assessment.mode === "formulation"; });
     var root = h("section", { class: "stage2", "aria-label": "Étape 2" });
-    root.appendChild(h("h2", null, h("span", { class: "step", text: "Étape 2" }),
+    if (P.printing) root.appendChild(h("h2", null, h("span", { class: "step", text: "Étape 2" }),
       formulation ? "Ce que chaque référence implique pour la formulation" : "Le même constat, deux conclusions"));
     var grid = h("div", { class: "s2" });
     var common = cmp.constant.indexOf("standard") >= 0 && cmp.constant.indexOf("constat") >= 0;
@@ -303,6 +303,7 @@
 
   /* ---------- Vue imprimable ---------- */
   V.printView = function (cmp, slots, situationId) {
+    P.printing = true;
     var root = h("div", { class: "print-doc" });
     root.appendChild(h("h1", { text: "Le prisme des critères" }));
     root.appendChild(h("h2", { text: cmp.title + " : " + cmp.subtitle }));
@@ -343,6 +344,7 @@
     root.appendChild(h("p", { class: "muted small", text: "Le prisme des critères, PRISME MYRIA. Situations construites à des fins de raisonnement. Aucun score, aucune pondération, aucun classement." }));
     root.querySelectorAll("[id]").forEach(function (e) { e.removeAttribute("id"); });
     root.querySelectorAll("details").forEach(function (e) { e.open = true; });
+    P.printing = false;
     return root;
   };
 })();

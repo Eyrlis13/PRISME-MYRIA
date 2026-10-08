@@ -21,6 +21,7 @@ const missing = (txt, arr) => arr.filter((s) => !txt.toLowerCase().includes(s.to
   const band = (i, f) => page.locator(`.band[data-slot="${i}"][data-face="${f}"] .t`).innerText();
   const marks = () => page.$$eval(".mark-cell", (c) => c.map((x) => (x.querySelector(".mark") || {}).textContent || ""));
   const drawer = () => page.locator(".drawer").innerText();
+  const openStage2 = async () => { if ((await page.locator("#stage2-btn").getAttribute("aria-expanded")) !== "true") await page.locator("#stage2-btn").click(); };
   const closeDrawer = async () => { await page.keyboard.press("Escape"); await page.waitForTimeout(100); };
 
   /* entrée */
@@ -28,10 +29,11 @@ const missing = (txt, arr) => arr.filter((s) => !txt.toLowerCase().includes(s.to
   ok((await page.locator(".dial").count()) === 2, "deux prismes");
   ok((await dialVal(0)) === "Parties prenantes ciblées" && (await dialVal(1)) === "Normative", "faces initiales A et B");
   ok((await txt(".src-v")).includes("Portée et accès"), "source : Portée et accès");
-  ok((await txt(".sit-line")).toLowerCase().includes("situation construite"), "situation construite signalée");
+  ok((await txt("#ctx-open")).toLowerCase().includes("situation construite"), "situation construite signalée");
   ok((await band(0, "content")) === (await band(1, "content")), "bandes Contenu identiques");
   ok(JSON.stringify(await marks()) === JSON.stringify(["=", "≠", "≠"]), "marques = ≠ ≠");
-  ok((await band(0, "function")).startsWith("Instrumentale") && (await band(1, "function")).startsWith("Directe"), "fonctions A et B");
+  ok((await page.locator('.band[data-slot="0"][data-face="function"] .pill').innerText()) === "Instrumentale" && (await page.locator('.band[data-slot="1"][data-face="function"] .pill').innerText()) === "Directe", "fonctions A et B");
+  ok(!(await band(0, "function")).startsWith("Instrumentale"), "type de fonction non répété dans la phrase");
   ok((await page.locator(".rays-overlay .ray-core").count()) === 6 && (await page.locator(".rays-overlay .beam-core").count()) === 2, "rayons : 2 faisceaux, 6 rayons colorés");
   if (shots) await page.screenshot({ path: shots + "/01-entree.png", fullPage: true });
 
@@ -40,7 +42,9 @@ const missing = (txt, arr) => arr.filter((s) => !txt.toLowerCase().includes(s.to
   ok((await drawer()).includes("un principe retenu exige") && (await drawer()).includes("Non renseignée (exemple construit)"), "situation complète dans le panneau");
   await closeDrawer();
 
-  /* étape 2 */
+  /* étape 2 : repliée par défaut */
+  ok((await page.locator(".stage2").count()) === 0, "étape 2 repliée");
+  await openStage2();
   const s2 = await txt(".stage2");
   ok(s2.toLowerCase().includes("identique pour a et b") && (await page.locator(".s2-obs").count()) === 1, "constat et standard communs");
   ok(missing(s2, ["La possibilité d'accès satisfait le standard retenu.", "Le constat peut établir la satisfaction de cette exigence particulière."]).length === 0, "conclusions A et B");
@@ -109,6 +113,7 @@ const missing = (txt, arr) => arr.filter((s) => !txt.toLowerCase().includes(s.to
   ok(clipped === 0, "aucune étiquette coupée");
 
   /* cumul */
+  await openStage2();
   await page.locator("#cumul-btn").click();
   const cumul = await page.locator("#cumul-panel").innerText();
   ok((await page.locator("#cumul-panel .chain").count()) === 2 && /moyenn/.test(cumul) && cumul.includes("laissant le bénéfice administratif à établir"), "cumul : deux chaînes, pas de moyenne");
@@ -128,6 +133,7 @@ const missing = (txt, arr) => arr.filter((s) => !txt.toLowerCase().includes(s.to
   ok((await band(0, "content")) !== (await band(1, "content")), "pertinence : contenus différents");
   ok((await band(0, "function")) === "Fonction non spécifiée dans cet exemple" && (await band(1, "function")) === "Fonction non spécifiée dans cet exemple", "fonction non renseignée reste non renseignée");
   ok(JSON.stringify(await marks()) === JSON.stringify(["≠", "≠", "–"]), "divergence : ≠ ≠ –");
+  await openStage2();
   ok((await txt(".stage2")).includes("n'entrent pas dans le champ"), "implications divergence");
   await page.locator('[data-situation="sit-convergence"]').click();
   ok(JSON.stringify(await marks()) === JSON.stringify(["≈", "≠", "–"]), "convergence : ≈ ≠ –");
@@ -138,10 +144,13 @@ const missing = (txt, arr) => arr.filter((s) => !txt.toLowerCase().includes(s.to
   /* contre-exemples */
   await page.locator(".domain-picker summary").click();
   await page.locator('.lamp[data-domain="portee-acces"]').click();
-  await page.locator(".examples .chip", { hasText: "Contre-exemples" }).click();
-  ok((await txt("#context-change")).includes("contre-exemples distincts"), "contre-exemples : changement de contexte signalé");
+  await page.locator(".examples .chip", { hasText: "Fonctions inversées" }).click();
+  ok((await txt("#context-change")).includes("Autres situations") && (await page.locator("#context-change").getAttribute("title")).includes("contre-exemples distincts"), "fonctions inversées : changement de situation signalé");
   ok((await page.locator(".ctx-chip").count()) === 2, "contre-exemples : un contexte par prisme");
-  ok((await band(0, "function")).startsWith("Directe") && (await band(1, "function")).startsWith("Instrumentale"), "contre-exemples : directe sous A, instrumentale sous B");
+  ok((await page.locator('.band[data-slot="0"][data-face="function"] .pill').innerText()) === "Directe" && (await page.locator('.band[data-slot="1"][data-face="function"] .pill').innerText()) === "Instrumentale", "fonctions inversées : directe sous A, instrumentale sous B");
+  await page.locator(".conc-name").first().click();
+  ok((await drawer()).includes("Bénéfice anticipé comme réponse à un besoin commun du groupe."), "définition de la conception au clic sur son nom");
+  await closeDrawer();
   if (shots) await page.screenshot({ path: shots + "/04-contre-exemples.png", fullPage: true });
 
   /* domaine sans exemple */
