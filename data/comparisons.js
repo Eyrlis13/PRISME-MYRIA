@@ -23,7 +23,7 @@
       constant: ["domaine", "contexte", "contenu", "standard", "constat"],
       varies: ["conception", "reference", "fonction"],
       unspecified: [],
-      hint: "Le contenu est identique. Tournez les prismes pour comparer leurs justifications.",
+      hint: "Le contenu est identique sous les deux conceptions ; la référence de valeur et la fonction diffèrent. Tournez un prisme pour voir ce qu'une autre conception change.",
       noticeReading:
         "Les deux conclusions ne forment pas deux verdicts opposés : elles répondent à des questions différentes à partir du même constat.",
       cumul: {
@@ -54,7 +54,7 @@
       constant: ["domaine", "contexte"],
       varies: ["conception", "reference", "contenu"],
       unspecified: ["fonction", "standard", "constat"],
-      hint: "Les références de valeur diffèrent. Tournez les prismes pour comparer les contenus qu'elles conduisent à formuler, puis changez de situation.",
+      hint: "Les références de valeur diffèrent et conduisent à des contenus différents. Changez de situation, à gauche, pour voir les contenus diverger ou converger.",
       noticeReading:
         "Cet exemple examine la relation entre référence de valeur et contenu. Il ne présente aucun standard ni constat et n'annonce donc aucune satisfaction du critère.",
       cumul: null,
@@ -129,7 +129,7 @@
       unspecified: ["standard", "constat"],
       contextChangeNotice:
         "Ces deux fiches changent les conditions de l'exemple principal. Ce sont des contre-exemples distincts : leur contexte n'est pas celui de la comparaison d'accès, et ils ne forment pas une comparaison à contexte inchangé.",
-      hint: "Les contextes diffèrent de l'exemple principal et entre eux. Tournez les prismes pour lire la fonction de chacun.",
+      hint: "Les contextes diffèrent de l'exemple principal et entre eux. Lisez la fonction de chaque spectre : directe sous A, instrumentale sous B.",
       noticeReading:
         "Une conception ne détermine pas, à elle seule, la fonction d'une propriété. Sous les parties prenantes ciblées, la fonction peut être directe. Sous la conception normative, elle peut être instrumentale.",
       cumul: null,

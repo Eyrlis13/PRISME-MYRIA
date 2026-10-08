@@ -224,3 +224,15 @@
     },
   ];
 })();
+
+/* Métaphore optique retenue par l'application (choix de présentation). */
+(function () {
+  var P = window.PRISME;
+  P.data.metaphor = [
+    { term: "Lumière blanche (rayon)", definition: "Le domaine de critères, dans la situation considérée : une famille de caractéristiques à apprécier, non encore spécifiée. La situation précise le besoin, le principe et les destinataires que la conception ne fournit pas seule." },
+    { term: "Prisme", definition: "La conception de la valeur sociale. Le prisme a cinq faces, une par conception ; la face tournée vers le rayon est celle qui spécifie le critère." },
+    { term: "Spectre", definition: "Le critère spécifié, tel qu'il ressort du prisme : trois bandes, contenu, référence de valeur, fonction." },
+    { term: "Bande", definition: "Une composante du critère spécifié. Les trois bandes ont une couleur constante qui les distingue ; la couleur n'indique aucune qualité ni préférence." },
+    { term: "Écran", definition: "Le panneau où les spectres se projettent et se comparent. Une bande identique sous deux conceptions signale un élément maintenu constant par le groupe de comparaison." },
+  ];
+})();

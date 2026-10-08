@@ -1,4 +1,4 @@
-# Couverture de la version 0.1
+# Couverture de la version 0.2
 
 ## Configurations intégrées (6)
 
@@ -20,6 +20,10 @@ Neuf domaines n'ont aucun exemple : ils s'affichent « Configuration non intégr
 - Contre-exemples : standard et constat non renseignés.
 - Origines (`origin`) et appuis (`supports`) : classification proposée, à valider par l'auteur.
 - Textes rédigés pour l'application, absents de l'énoncé : contextes et formulations des deux contre-exemples, implications des situations de pertinence, explications des justifications, conditions de contenu, notes d'appui.
+
+## Pour que le levier « changer de conception » frappe
+
+Sur les cinq faces du prisme, deux seulement sont documentées par exemple ; tourner vers les trois autres montre un rayon non décomposé et la mention « non intégrée ». Une troisième configuration pour l'accès (vertueuse ou maximisatrice, par exemple) ferait voir le contenu rester stable pendant que référence et fonction changent trois fois. C'est un travail de rédaction, non de développement.
 
 ## Point conceptuel à trancher
 

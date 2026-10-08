@@ -1,4 +1,4 @@
-/* Orchestration : état, sélection des configurations, rendu de la comparaison. */
+/* Orchestration : état, source (domaines), banc optique, écran, étape 2, rubriques. */
 (function () {
   var P = window.PRISME;
   var D = P.data;
@@ -10,90 +10,72 @@
     domainId: "portee-acces",
     groupId: "cmp-acces",
     slots: [],
-    view: P.supports3D() ? "3d" : "flat",
-    sync: true,
-    angles: [0, 0],
-    jIdx: [0, 0],
+    initial: [],
+    openFace: [null, null],
     situationId: null,
     cumul: false,
-    hintDismissed: {},
+    textOnly: false,
     print: false,
   };
-
   var app = document.getElementById("app");
   var printRoot = document.getElementById("print-root");
-  var prisms = [];
+  var bench = null;
 
-  function group() {
-    return P.idx.comparisons[state.groupId];
-  }
+  function group() { return state.groupId ? P.idx.comparisons[state.groupId] : null; }
+  function conceptionIndex(id) { return D.conceptions.map(function (c) { return c.id; }).indexOf(id); }
 
   function loadGroup(groupId, preferredConception) {
     var cmp = P.idx.comparisons[groupId];
     state.groupId = groupId;
     state.domainId = cmp.domainId;
-    state.slots = cmp.configIds.map(function (id) {
-      return { conceptionId: P.idx.configurations[id].conceptionId };
-    });
+    state.slots = cmp.configIds.map(function (id) { return { conceptionId: P.idx.configurations[id].conceptionId }; });
     if (preferredConception) state.slots[0] = { conceptionId: preferredConception };
-    state.angles = [0, 0];
-    state.jIdx = [0, 0];
+    state.initial = state.slots.map(function (s) { return conceptionIndex(s.conceptionId); });
+    state.openFace = [null, null];
     state.cumul = false;
     state.situationId = cmp.situations ? cmp.situations[0].id : null;
   }
-
+  function loadDomain(domainId) {
+    state.domainId = domainId;
+    var list = P.comparisonsOfDomain(domainId);
+    if (list.length) loadGroup(list[0].id);
+    else { state.groupId = null; state.slots = [{ conceptionId: D.conceptions[0].id }, { conceptionId: D.conceptions[1].id }]; state.openFace = [null, null]; }
+  }
   function slotsResolved() {
     var cmp = group();
-    return state.slots.map(function (s) {
-      return { conceptionId: s.conceptionId, cfg: cmp ? P.configFor(cmp, s.conceptionId) : null };
-    });
+    return state.slots.map(function (s) { return { conceptionId: s.conceptionId, cfg: cmp ? P.configFor(cmp, s.conceptionId) : null }; });
   }
 
-  /* ---------- routage par fragment ---------- */
+  /* ---------- routage ---------- */
   function route() {
     var m = (location.hash || "").match(/^#\/(origine|catalogue|lexique)(?:\/(.+))?$/);
     var prev = state.tab;
     state.tab = m ? m[1] : "comparaisons";
+    state.print = false;
     render();
     if (m && m[2]) {
       var target = document.getElementById(m[2]);
-      if (target) {
-        target.scrollIntoView({ block: "center" });
-        target.focus({ preventScroll: true });
-        target.classList.add("flash");
-        setTimeout(function () { target.classList.remove("flash"); }, 1600);
-      }
-    } else if (prev !== state.tab) {
-      window.scrollTo(0, 0);
-    }
+      if (target) { target.scrollIntoView({ block: "center" }); target.focus({ preventScroll: true }); target.classList.add("flash"); setTimeout(function () { target.classList.remove("flash"); }, 1600); }
+    } else if (prev !== state.tab) window.scrollTo(0, 0);
   }
 
   function renderNav() {
     var nav = document.getElementById("nav");
     nav.textContent = "";
-    [
-      ["comparaisons", "#/", "Comparaisons"],
-      ["catalogue", "#/catalogue", "Catalogue"],
-      ["lexique", "#/lexique", "Lexique"],
-      ["origine", "#/origine", "Origine du modèle"],
-    ].forEach(function (t) {
-      nav.appendChild(
-        h("a", { href: t[1], class: "tab" + (state.tab === t[0] ? " on" : ""), "aria-current": state.tab === t[0] ? "page" : null, text: t[2] })
-      );
+    [["comparaisons", "#/", "Comparer"], ["catalogue", "#/catalogue", "Catalogue"], ["lexique", "#/lexique", "Lexique"], ["origine", "#/origine", "Origine du modèle"]].forEach(function (t) {
+      nav.appendChild(h("a", { href: t[1], class: "tab" + (state.tab === t[0] ? " on" : ""), "aria-current": state.tab === t[0] ? "page" : null, text: t[2] }));
     });
+    nav.appendChild(h("button", { type: "button", class: "tab btnlike", id: "print-btn", text: "Imprimer", onclick: function () { if (!group()) { loadGroup("cmp-acces"); } state.tab = "comparaisons"; state.print = true; render(); window.scrollTo(0, 0); } }));
   }
 
-  function openFromCatalogue(cmpId, conceptionId) {
-    loadGroup(cmpId, conceptionId);
-    location.hash = "#/";
-  }
+  function openFromCatalogue(cmpId, conceptionId) { loadGroup(cmpId, conceptionId); location.hash = "#/"; render(); }
 
-  /* ---------- rendu général ---------- */
+  /* ---------- rendu ---------- */
   function render() {
     renderNav();
     document.body.classList.toggle("print-preview", state.print);
     app.textContent = "";
-    prisms = [];
+    bench = null;
     if (state.tab === "catalogue") app.appendChild(V.catalogue(openFromCatalogue));
     else if (state.tab === "lexique") app.appendChild(V.lexique());
     else if (state.tab === "origine") app.appendChild(V.origine());
@@ -103,381 +85,145 @@
 
   function renderPrint() {
     printRoot.textContent = "";
-    if (!group()) return;
-    printRoot.appendChild(
-      h(
-        "div",
-        { class: "print-toolbar" },
-        h("button", { type: "button", class: "btn primary", text: "Imprimer", onclick: function () { window.print(); } }),
-        h("button", { type: "button", class: "btn", text: "Retour à l'application", onclick: function () { state.print = false; render(); } })
-      )
-    );
-    printRoot.appendChild(V.printView(group(), { slots: state.slots }));
+    if (!group() || !state.print) return;
+    printRoot.appendChild(h("div", { class: "print-toolbar" },
+      h("button", { type: "button", class: "btn primary", text: "Imprimer", onclick: function () { window.print(); } }),
+      h("button", { type: "button", class: "btn", text: "Retour à l'application", onclick: function () { state.print = false; render(); } })));
+    printRoot.appendChild(V.printView(group(), slotsResolved(), state.situationId));
   }
 
-  function select(label, id, options, value, onchange, disabled) {
-    return h(
-      "div",
-      { class: "field" },
-      h("label", { for: id, text: label }),
-      h(
-        "select",
-        { id: id, onchange: function (e) { onchange(e.target.value); }, disabled: disabled },
-        options.map(function (o) {
-          return h("option", { value: o.value, selected: o.value === value, text: o.label });
-        })
-      )
-    );
+  /* Source : onze domaines comme onze lampes. */
+  function renderSource(cmp) {
+    var src = h("aside", { class: "src", "aria-label": "Source : domaines de critères" });
+    src.appendChild(h("h2", { class: "colh", text: "Source · domaines de critères" }));
+    var ul = h("ul", { class: "lamps", role: "list" });
+    D.domains.forEach(function (d) {
+      var n = P.comparisonsOfDomain(d.id).length;
+      var on = d.id === state.domainId;
+      ul.appendChild(h("li", null, h("button", {
+        type: "button", class: "lamp" + (on ? " on" : n ? " avail" : " off"), "aria-pressed": String(on), "data-domain": d.id,
+        title: n ? "" : P.NOT_INTEGRATED,
+        onclick: function () { loadDomain(d.id); render(); },
+      }, h("span", { class: "dot", "aria-hidden": "true" }), h("span", { class: "name", text: d.label }), n ? null : h("em", { text: "non intégré" }))));
+    });
+    src.appendChild(ul);
+    if (cmp) {
+      var list = P.comparisonsOfDomain(cmp.domainId);
+      if (list.length > 1) {
+        src.appendChild(h("div", { class: "examples", role: "group", "aria-label": "Exemple documenté" },
+          h("span", { class: "lab", text: "Exemple" }),
+          list.map(function (c) {
+            return h("button", { type: "button", class: "chip" + (c.id === cmp.id ? " on" : ""), "aria-pressed": String(c.id === cmp.id), text: c.kind === "contre-exemple" ? "Contre-exemples" : c.title, onclick: function () { loadGroup(c.id); render(); } });
+          })));
+      }
+      if (cmp.contextMode === "common") src.appendChild(V.contextCard(P.idx.contexts[cmp.contextId]));
+      else src.appendChild(h("section", { class: "sit", "aria-label": "Situation" }, h("b", { text: "Situation" }), h("p", { class: "small", text: "Propre à chaque prisme : voir chaque spectre sur l'écran." })));
+      if (cmp.situations) src.appendChild(V.situationBlock(cmp, state, function (id) { state.situationId = id; render(); }));
+    } else {
+      src.appendChild(h("section", { class: "sit placeholder", role: "status" }, h("b", { text: P.NOT_INTEGRATED }), h("p", { class: "small muted", text: P.NOT_INTEGRATED_NOTE })));
+    }
+    return src;
   }
 
   function renderComparison() {
     var cmp = group();
-    var root = h("div", { class: "comparison" });
+    var slots = slotsResolved();
+    var root = h("div", { class: "compare" });
 
-    root.appendChild(
-      h(
-        "section",
-        { class: "intro" },
-        h("h2", { class: "orient", text: "Explorer ce qu'un critère apprécie, pourquoi cela compte et ce que l'on peut en conclure." })
-      )
-    );
+    root.appendChild(h("p", { class: "orient", text: "Un domaine de critères traverse une conception de la valeur sociale et se décompose en un critère spécifié : contenu, référence de valeur, fonction." }));
+    var head = h("div", { class: "ex-head" });
+    if (cmp) {
+      head.appendChild(h("div", null, h("h2", { class: "ex-title", text: cmp.title }), h("p", { class: "subtitle", text: cmp.subtitle })));
+    } else head.appendChild(h("h2", { class: "ex-title", text: P.idx.domains[state.domainId].label }));
+    head.appendChild(h("label", { class: "check" }, h("input", { type: "checkbox", id: "textonly", checked: state.textOnly, onchange: function (e) { state.textOnly = e.target.checked; render(); } }), h("span", { text: "Vue texte (sans banc optique)" })));
+    root.appendChild(head);
+    if (cmp && cmp.kind === "contre-exemple") root.appendChild(h("p", { class: "notice warn", role: "note", id: "context-change", text: cmp.contextChangeNotice }));
+    if (cmp && cmp.hint) root.appendChild(h("p", { class: "hint", id: "hint", text: cmp.hint }));
 
-    /* Sélection : domaine, exemple, conceptions des deux prismes */
-    var cmps = P.comparisonsOfDomain(state.domainId);
-    var sel = h("section", { class: "card selectors", "aria-label": "Sélection des configurations" });
-    sel.appendChild(
-      select(
-        "Domaine de critères",
-        "sel-domain",
-        D.domains.map(function (d) {
-          return { value: d.id, label: d.label + (P.comparisonsOfDomain(d.id).length ? "" : " (non intégré à cette version)") };
-        }),
-        state.domainId,
-        function (v) {
-          state.domainId = v;
-          var list = P.comparisonsOfDomain(v);
-          if (list.length) loadGroup(list[0].id);
-          else {
-            state.groupId = null;
-            state.slots = [];
-          }
-          render();
-        }
-      )
-    );
-    sel.appendChild(
-      select(
-        "Exemple documenté",
-        "sel-group",
-        cmps.length
-          ? cmps.map(function (c) {
-              return { value: c.id, label: (c.kind === "contre-exemple" ? "Contre-exemples : " : "") + c.title };
-            })
-          : [{ value: "", label: "Aucun exemple intégré" }],
-        state.groupId,
-        function (v) {
-          loadGroup(v);
-          render();
+    var scene = h("div", { class: "scene" + (state.textOnly ? " textonly" : "") });
+    scene.appendChild(renderSource(cmp));
+
+    /* banc optique */
+    var benchWrap = h("div", { class: "bench", "aria-label": "Banc optique" });
+    if (!state.textOnly) {
+      bench = P.createBench({
+        slots: slots.map(function (s) { return { conceptionId: s.conceptionId, integrated: !!s.cfg }; }),
+        initial: state.initial,
+        onChange: function (i, conceptionId) {
+          if (state.slots[i].conceptionId === conceptionId) return;
+          state.slots[i] = { conceptionId: conceptionId };
+          state.openFace[i] = null; state.cumul = false;
+          renderScreen(); renderStage();
+          var s = slotsResolved()[i];
+          bench.set(i, conceptionId, !!s.cfg, false);
         },
-        !cmps.length
-      )
-    );
-    root.appendChild(sel);
-
-    if (!cmp) {
-      root.appendChild(
-        h(
-          "section",
-          { class: "card placeholder", role: "status" },
-          h("p", { class: "ph-main", text: P.NOT_INTEGRATED }),
-          h("p", { class: "muted", text: P.NOT_INTEGRATED_NOTE })
-        )
-      );
-      app.appendChild(root);
-      return;
-    }
-
-    sel.appendChild(
-      h(
-        "div",
-        { class: "slot-selects" },
-        state.slots.map(function (s, i) {
-          return select(
-            "Conception du prisme " + (i + 1),
-            "sel-slot-" + i,
-            D.conceptions.map(function (c) {
-              return { value: c.id, label: c.label + (P.configFor(cmp, c.id) ? "" : " (non intégrée)") };
-            }),
-            s.conceptionId,
-            function (v) {
-              state.slots[i] = { conceptionId: v };
-              state.angles[i] = state.sync ? state.angles[1 - i] : 0;
-              state.jIdx[i] = 0;
-              state.cumul = false;
-              render();
-            }
-          );
-        })
-      )
-    );
-
-    /* Barre d'outils */
-    var tools = h("div", { class: "toolbar", role: "toolbar", "aria-label": "Affichage" });
-    tools.appendChild(
-      h(
-        "div",
-        { class: "seg", role: "group", "aria-label": "Mode de vue" },
-        h("button", {
-          type: "button",
-          class: "btn",
-          "aria-pressed": String(state.view === "3d"),
-          disabled: !P.supports3D(),
-          title: P.supports3D() ? null : "Le rendu 3D n'est pas disponible dans ce navigateur.",
-          text: "Vue 3D",
-          onclick: function () { state.view = "3d"; render(); },
-        }),
-        h("button", {
-          type: "button",
-          class: "btn",
-          "aria-pressed": String(state.view === "flat"),
-          text: "Vue plane",
-          onclick: function () { state.view = "flat"; render(); },
-        })
-      )
-    );
-    if (state.view === "3d") {
-      tools.appendChild(
-        h(
-          "label",
-          { class: "check" },
-          h("input", {
-            type: "checkbox",
-            id: "sync",
-            checked: state.sync,
-            onchange: function (e) {
-              state.sync = e.target.checked;
-              if (state.sync && prisms[0] && prisms[1]) {
-                prisms[1].setAngle(prisms[0].angle(), true);
-                state.angles[1] = prisms[0].angle();
-                updateReading();
-              }
-            },
-          }),
-          h("span", { text: "Rotation synchronisée" })
-        )
-      );
-      tools.appendChild(
-        h("button", {
-          type: "button",
-          class: "btn",
-          id: "reset",
-          text: "Position initiale",
-          onclick: function () {
-            state.angles = [0, 0];
-            prisms.forEach(function (p) { p.rotateToFace(0, true); });
-            prisms.forEach(function (p, i) { if (p) state.angles[i] = p.angle(); });
-            state.hintDismissed[cmp.id] = false;
-            updateReading();
-            updateHint();
-          },
-        })
-      );
-    }
-    tools.appendChild(
-      h("button", {
-        type: "button",
-        class: "btn",
-        id: "print-btn",
-        text: "Vue imprimable",
-        onclick: function () { state.print = true; render(); window.scrollTo(0, 0); },
-      })
-    );
-    root.appendChild(tools);
-
-    /* Bannière et contexte */
-    root.appendChild(
-      h("section", { class: "example-head" }, h("h3", { text: cmp.title }), h("p", { class: "subtitle", text: cmp.subtitle }))
-    );
-    if (cmp.kind === "contre-exemple") {
-      root.appendChild(h("p", { class: "notice warn", role: "note", id: "context-change", text: cmp.contextChangeNotice }));
-    }
-    if (cmp.contextMode === "common") root.appendChild(V.contextCard(P.idx.contexts[cmp.contextId]));
-
-    root.appendChild(h("p", { class: "hint", id: "hint", role: "note" }));
-
-    if (cmp.situations) {
-      root.appendChild(
-        V.situationBlock(cmp, state, function (id) {
-          state.situationId = id;
-          render();
-        })
-      );
-    }
-
-    /* Prismes ou fiches planes */
-    var slots = slotsResolved();
-    if (state.view === "3d") {
-      var cols = h("div", { class: "cols two" });
-      slots.forEach(function (s, i) {
-        var col = h("div", { class: "col", "data-slot": String(i) });
-        if (s.cfg) {
-          col.appendChild(V.configHeader(s.cfg));
-          if (cmp.contextMode === "per-config") col.appendChild(V.contextCard(P.idx.contexts[s.cfg.contextId], { heading: "Contexte de ce contre-exemple" }));
-          var justs = P.justificationsOf(s.cfg);
-          if (justs.length > 1) {
-            col.appendChild(
-              select(
-                "Justification affichée",
-                "sel-just-" + i,
-                justs.map(function (j, n) { return { value: String(n), label: "Justification " + (n + 1) + " sur " + justs.length }; }),
-                String(state.jIdx[i]),
-                function (v) { state.jIdx[i] = Number(v); render(); }
-              )
-            );
-          }
-          var pr = P.createPrism({
-            cfg: s.cfg,
-            jIdx: state.jIdx[i],
-            angle: state.angles[i],
-            title: s.cfg.tag + ", conception " + P.idx.conceptions[s.cfg.conceptionId].label,
-            onRotate: function (angle, faceIdx, phase) {
-              state.angles[i] = angle;
-              state.hintDismissed[cmp.id] = true;
-              if (state.sync) {
-                var other = prisms[1 - i];
-                if (other) {
-                  other.setAngle(angle, phase === "settle");
-                  state.angles[1 - i] = angle;
-                }
-              }
-              if (phase === "settle") updateReading();
-              updateHint();
-            },
-          });
-          prisms[i] = pr;
-          col.appendChild(pr.el);
-        } else {
-          col.appendChild(V.placeholderConfig(s.conceptionId, "Prisme " + (i + 1)));
-          prisms[i] = null;
-        }
-        cols.appendChild(col);
       });
-      root.appendChild(cols);
-      root.appendChild(h("div", { class: "facestatus", id: "facestatus", "aria-live": "polite" }));
-      root.appendChild(h("section", { class: "reading", id: "reading", "aria-label": "Panneau de lecture" }));
-    } else {
-      root.appendChild(renderFlat(cmp, slots));
+      benchWrap.appendChild(bench.el);
+      benchWrap.appendChild(h("div", { class: "bench-ctl" }, slots.map(function (s, i) {
+        return h("div", { class: "ctl" }, h("span", { class: "lab", text: "Prisme " + String.fromCharCode(65 + i) }),
+          h("select", { "aria-label": "Conception du prisme " + String.fromCharCode(65 + i), id: "sel-slot-" + i, onchange: function (e) { bench.rotateTo(i, conceptionIndex(e.target.value)); } },
+            D.conceptions.map(function (c) { return h("option", { value: c.id, selected: c.id === s.conceptionId, text: c.label + (cmp && P.configFor(cmp, c.id) ? "" : " (non intégrée)") }); })));
+      })));
     }
+    scene.appendChild(benchWrap);
 
-    root.appendChild(V.annotations(cmp));
-
-    /* Conclusions et cumul */
-    var sit = cmp.situations ? cmp.situations.filter(function (x) { return x.id === state.situationId; })[0] : null;
-    if (cmp.cumul && slots.every(function (s) { return s.cfg; })) {
-      root.appendChild(
-        h(
-          "div",
-          { class: "cumul-bar" },
-          h("button", {
-            type: "button",
-            class: "btn accent",
-            id: "cumul-btn",
-            "aria-pressed": String(state.cumul),
-            "aria-controls": "cumul-panel",
-            text: cmp.cumul.buttonLabel,
-            onclick: function () {
-              state.cumul = !state.cumul;
-              render();
-              if (state.cumul) {
-                var p = document.getElementById("cumul-panel");
-                if (p) { p.scrollIntoView({ block: "start" }); p.focus({ preventScroll: true }); }
-              }
-            },
-          })
-        )
-      );
-      if (state.cumul) root.appendChild(V.cumulPanel(cmp, function (id) { return P.idx.configurations[id]; }));
-    }
-    root.appendChild(V.conclusions(cmp, slots, sit));
-
+    scene.appendChild(h("div", { class: "screen", id: "screen", "aria-label": "Écran : critères spécifiés" }));
+    root.appendChild(scene);
+    root.appendChild(h("div", { id: "stage" }));
     app.appendChild(root);
-    updateReading();
-    updateHint();
+    renderScreen();
+    renderStage();
   }
 
-  function renderFlat(cmp, slots) {
-    var wrap = h("section", { class: "flat", "aria-label": "Vue plane" });
-    var head = h("div", { class: "cols two" });
-    slots.forEach(function (s, i) {
-      var c = h("div", { class: "col" });
-      if (s.cfg) {
-        c.appendChild(V.configHeader(s.cfg));
-        if (cmp.contextMode === "per-config") c.appendChild(V.contextCard(P.idx.contexts[s.cfg.contextId], { heading: "Contexte de ce contre-exemple" }));
-      } else c.appendChild(V.placeholderConfig(s.conceptionId, "Prisme " + (i + 1)));
-      head.appendChild(c);
-    });
-    wrap.appendChild(head);
-    P.FACE_ORDER.forEach(function (fid) {
-      var rowEl = h("div", { class: "cols two flat-row" });
-      slots.forEach(function (s) {
-        var cell = h("div", { class: "col flat-card face-card-" + fid });
-        if (s.cfg) {
-          var f = P.getFace(s.cfg, fid, 0).value;
-          cell.appendChild(h("p", { class: "ccell-tag", text: s.cfg.tag + " · " + P.idx.conceptions[s.cfg.conceptionId].label }));
-          cell.appendChild(h("p", { class: "flat-short" + (f ? "" : " np"), text: f ? f.short : P.FUNCTION_UNSPECIFIED }));
-          cell.appendChild(V.faceDetail(s.cfg, fid, 0));
-        } else {
-          cell.appendChild(h("p", { class: "np", text: P.NOT_INTEGRATED }));
-        }
-        rowEl.appendChild(cell);
-      });
-      wrap.appendChild(rowEl);
-    });
-    return wrap;
-  }
-
-  /* Panneau de lecture : suit la face au premier plan de chaque prisme. */
-  function updateReading() {
-    var panel = document.getElementById("reading");
-    if (!panel) return;
+  function renderScreen() {
     var cmp = group();
-    panel.textContent = "";
+    var screen = document.getElementById("screen");
+    if (!screen) return;
+    screen.textContent = "";
+    screen.appendChild(h("h2", { class: "colh", text: "Écran · critères spécifiés" }));
     var slots = slotsResolved();
-    var ids = [];
-    var cols = h("div", { class: "cols two" });
-    slots.forEach(function (s, i) {
-      var col = h("div", { class: "col" });
-      if (s.cfg && prisms[i]) {
-        var fid = P.FACE_ORDER[prisms[i].faceIndex()];
-        ids.push(fid);
-        col.appendChild(h("p", { class: "ccell-tag", text: s.cfg.tag + " · " + P.idx.conceptions[s.cfg.conceptionId].label }));
-        col.appendChild(V.faceDetail(s.cfg, fid, state.jIdx[i]));
-      } else {
-        col.appendChild(h("p", { class: "np", text: P.NOT_INTEGRATED }));
-      }
-      cols.appendChild(col);
-    });
-    panel.appendChild(h("h3", { text: "Panneau de lecture : face au premier plan" }));
-    panel.appendChild(cols);
-    var st = document.getElementById("facestatus");
-    if (st) {
-      st.textContent = "";
-      if (ids.length === 2 && ids[0] === ids[1]) st.textContent = V.faceStatus(cmp, ids[0]);
+    if (state.textOnly) {
+      screen.appendChild(h("div", { class: "bench-ctl" }, slots.map(function (s, i) {
+        return h("div", { class: "ctl" }, h("span", { class: "lab", text: "Prisme " + String.fromCharCode(65 + i) }),
+          h("select", { "aria-label": "Conception du prisme " + String.fromCharCode(65 + i), id: "sel-slot-" + i, onchange: function (e) { state.slots[i] = { conceptionId: e.target.value }; state.openFace[i] = null; state.cumul = false; render(); } },
+            D.conceptions.map(function (c) { return h("option", { value: c.id, selected: c.id === s.conceptionId, text: c.label + (cmp && P.configFor(cmp, c.id) ? "" : " (non intégrée)") }); })));
+      })));
     }
+    slots.forEach(function (s, i) {
+      var letter = String.fromCharCode(65 + i);
+      if (i === 1 && cmp && slots[0].cfg && slots[1].cfg) screen.appendChild(V.sameLine(cmp));
+      if (!s.cfg) { screen.appendChild(V.placeholderCard(s.conceptionId, letter)); return; }
+      var extra = cmp && cmp.contextMode === "per-config" ? V.contextCard(P.idx.contexts[s.cfg.contextId], { heading: "Contexte de ce contre-exemple" }) : null;
+      screen.appendChild(V.spectrumCard(s.cfg, letter, cmp, state.openFace[i], function (fid) {
+        state.openFace[i] = state.openFace[i] === fid ? null : fid;
+        renderScreen();
+        var b = document.getElementById("band-" + s.cfg.id + "-" + fid);
+        if (b && !b.hidden) b.previousSibling.focus();
+      }, extra));
+    });
+    if (cmp) screen.appendChild(h("p", { class: "muted small", text: "Cliquez une bande pour sa formulation, ses conditions, son origine et ses appuis." }));
   }
 
-  function updateHint() {
-    var el = document.getElementById("hint");
-    if (!el) return;
+  function renderStage() {
     var cmp = group();
-    var show = state.view === "3d" && !state.hintDismissed[cmp.id];
-    el.hidden = !show;
-    el.textContent = show ? cmp.hint : "";
+    var stage = document.getElementById("stage");
+    if (!stage) return;
+    stage.textContent = "";
+    if (!cmp) return;
+    var slots = slotsResolved();
+    var sit = cmp.situations ? cmp.situations.filter(function (x) { return x.id === state.situationId; })[0] : null;
+    stage.appendChild(V.stageTwo(cmp, slots, sit));
+    if (cmp.cumul && slots.every(function (s) { return s.cfg; })) {
+      stage.appendChild(h("div", { class: "cumul-bar" }, h("button", {
+        type: "button", class: "btn accent", id: "cumul-btn", "aria-pressed": String(state.cumul), "aria-controls": "cumul-panel", text: cmp.cumul.buttonLabel,
+        onclick: function () { state.cumul = !state.cumul; renderStage(); if (state.cumul) { var p = document.getElementById("cumul-panel"); if (p) { p.scrollIntoView({ block: "start" }); p.focus({ preventScroll: true }); } } },
+      })));
+      if (state.cumul) stage.appendChild(V.cumulPanel(cmp, function (id) { return P.idx.configurations[id]; }));
+    }
+    stage.appendChild(V.annotations(cmp));
   }
 
   window.addEventListener("hashchange", route);
-  if (state.view === "flat" && !P.supports3D()) document.body.classList.add("no3d");
-
   loadGroup("cmp-acces");
   route();
 })();

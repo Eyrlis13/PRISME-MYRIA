@@ -52,7 +52,7 @@
       },
       sources: { criterion: null, data: null },
       completeness: {
-        status: "complete",
+        status: "complète",
         note: "Complète pour l'exemple construit.",
         missing: ["sources.criterion", "sources.data"],
       },
@@ -88,7 +88,7 @@
       },
       sources: { criterion: null, data: null },
       completeness: {
-        status: "complete",
+        status: "complète",
         note: "Complète pour l'exemple construit.",
         missing: ["sources.criterion", "sources.data"],
       },

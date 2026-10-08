@@ -5,31 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Le prisme des critères</title>
   <meta name="description" content="Explorer ce qu'un critère apprécie, pourquoi cela compte et ce que l'on peut en conclure.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <a class="skip" href="#app">Aller au contenu</a>
-  <header class="site-head">
-    <div class="wrap">
+  <header class="site-head wrap">
+    <div>
       <p class="brand">PRISME MYRIA</p>
       <h1>Le prisme des critères</h1>
-      <nav id="nav" aria-label="Rubriques"></nav>
+      <p class="tagline">Explorer ce qu'un critère apprécie, pourquoi cela compte et ce que l'on peut en conclure.</p>
     </div>
+    <nav id="nav" aria-label="Rubriques"></nav>
   </header>
   <main id="app" class="wrap" tabindex="-1"></main>
   <div id="print-root" class="print-root wrap"></div>
   <footer class="site-foot wrap">
     <p>Exemples construits à des fins de raisonnement. L'application ne calcule aucun score global de valeur sociale, aucune pondération et aucun classement des conceptions.</p>
   </footer>
-
   <noscript><p class="wrap">Cette application nécessite JavaScript. Les contenus sont dans les fichiers du dossier <code>data/</code>.</p></noscript>
-
   <script src="data/catalogue.js"></script>
   <script src="data/contexts.js"></script>
   <script src="data/configurations.js"></script>
   <script src="data/comparisons.js"></script>
   <script src="js/core.js"></script>
-  <script src="js/prism.js"></script>
+  <script src="js/bench.js"></script>
   <script src="js/views.js"></script>
   <script src="js/main.js"></script>
 </body>
