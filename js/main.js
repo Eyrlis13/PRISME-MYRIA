@@ -1,4 +1,4 @@
-/* Orchestration : état, source (domaines), banc optique, écran, étape 2, rubriques. */
+/* Orchestration : état, routage, modèle conceptuel, illustrations, panneau latéral. */
 (function () {
   var P = window.PRISME;
   var D = P.data;
@@ -6,7 +6,7 @@
   var V = P.views;
 
   var state = {
-    tab: "comparaisons",
+    tab: "modele",
     domainId: "portee-acces",
     groupId: "cmp-acces",
     slots: [],
@@ -14,13 +14,13 @@
     openFace: [null, null],
     situationId: null,
     cumul: false,
-    showStage2: false,
+    showStage2: true,
     turned: false,
     textOnly: false,
-    print: false,
+    relation: null,
   };
   var app = document.getElementById("app");
-  var printRoot = document.getElementById("print-root");
+  var modelScene = null;
 
   function group() { return state.groupId ? P.idx.comparisons[state.groupId] : null; }
   function conceptionIndex(id) { return D.conceptions.map(function (c) { return c.id; }).indexOf(id); }
@@ -50,48 +50,46 @@
 
   /* ---------- routage ---------- */
   function route() {
-    var m = (location.hash || "").match(/^#\/(origine|catalogue|lexique)(?:\/(.+))?$/);
     var prev = state.tab;
-    state.tab = m ? m[1] : "comparaisons";
-    state.print = false;
+    state.tab = /^#\/illustrations/.test(location.hash || "") ? "illustrations" : "modele";
     render();
-    if (m && m[2]) {
-      var target = document.getElementById(m[2]);
-      if (target) { target.scrollIntoView({ block: "center" }); target.focus({ preventScroll: true }); target.classList.add("flash"); setTimeout(function () { target.classList.remove("flash"); }, 1600); }
-    } else if (prev !== state.tab) window.scrollTo(0, 0);
+    if (prev !== state.tab) window.scrollTo(0, 0);
   }
 
   function renderNav() {
     var nav = document.getElementById("nav");
     nav.textContent = "";
-    [["comparaisons", "#/", "Comparer"], ["catalogue", "#/catalogue", "Catalogue"], ["lexique", "#/lexique", "Lexique"], ["origine", "#/origine", "Origine du modèle"]].forEach(function (t) {
+    [["modele", "#/", "Modèle conceptuel"], ["illustrations", "#/illustrations", "Illustrations"]].forEach(function (t) {
       nav.appendChild(h("a", { href: t[1], class: "tab" + (state.tab === t[0] ? " on" : ""), "aria-current": state.tab === t[0] ? "page" : null, text: t[2] }));
     });
-    nav.appendChild(h("button", { type: "button", class: "tab btnlike", id: "print-btn", text: "Imprimer", onclick: function () { if (!group()) { loadGroup("cmp-acces"); } state.tab = "comparaisons"; state.print = true; render(); window.scrollTo(0, 0); } }));
   }
 
-  function openFromCatalogue(cmpId, conceptionId) { loadGroup(cmpId, conceptionId); location.hash = "#/"; render(); }
+  /* Depuis le modèle : ouvrir l'exemple qui illustre une relation. */
+  function goExample(ex, relId) {
+    loadGroup(ex.cmpId);
+    state.showStage2 = true;
+    state.relation = relId ? { id: relId, example: ex } : null;
+    closeDrawer(true);
+    if (location.hash !== "#/illustrations") location.hash = "#/illustrations"; else render();
+    setTimeout(function () {
+      var t = ex.stage2 ? document.getElementById("stage2-btn") : document.querySelector(".optic");
+      if (t) t.scrollIntoView({ block: "start" });
+    }, 30);
+  }
 
   /* ---------- rendu ---------- */
   function render() {
     renderNav();
-    document.body.classList.toggle("print-preview", state.print);
     app.textContent = "";
-    dials = []; sceneEl = null; closeDrawer(true);
-    if (state.tab === "catalogue") app.appendChild(V.catalogue(openFromCatalogue));
-    else if (state.tab === "lexique") app.appendChild(V.lexique());
-    else if (state.tab === "origine") app.appendChild(V.origine());
-    else renderComparison();
-    renderPrint();
+    dials = []; sceneEl = null; modelScene = null; closeDrawer(true);
+    if (state.tab === "illustrations") renderComparison();
+    else renderModelView();
   }
 
-  function renderPrint() {
-    printRoot.textContent = "";
-    if (!group() || !state.print) return;
-    printRoot.appendChild(h("div", { class: "print-toolbar" },
-      h("button", { type: "button", class: "btn primary", text: "Imprimer", onclick: function () { window.print(); } }),
-      h("button", { type: "button", class: "btn", text: "Retour à l'application", onclick: function () { state.print = false; render(); } })));
-    printRoot.appendChild(V.printView(group(), slotsResolved(), state.situationId));
+  function renderModelView() {
+    modelScene = P.renderModel({ openRelation: openRelation, openNotes: openNotes });
+    app.appendChild(modelScene);
+    requestAnimationFrame(function () { P.drawModelRays(modelScene); });
   }
 
   /* ---------- scène optique ---------- */
@@ -133,6 +131,9 @@
     return bar;
   }
 
+  /* Dans l'illustration, la référence et la fonction appartiennent au cas construit. */
+  var CASE_LABELS = { content: "Contenu", reference: "Référence choisie pour ce cas", function: "Fonction justifiée dans ce cas" };
+
   /* Sur la bande, le type de fonction est porté par l'étiquette : on ne le répète pas dans la phrase. */
   function bandText(f) {
     if (!f.type) return f.short;
@@ -147,6 +148,15 @@
 
     /* titre de l'exemple + choix de lecture */
     var head = h("div", { class: "ex-head wrap" });
+    var relBanner = null;
+    if (state.relation) {
+      var R = relationById(state.relation.id);
+      relBanner = h("div", { class: "rel-banner wrap", role: "note" },
+        h("a", { href: "#/", class: "back", text: "← Modèle conceptuel" }),
+        h("span", { class: "rb-k", text: "Relation illustrée" }),
+        h("button", { type: "button", class: "rb-rel", onclick: function () { openRelation(R.id); } }, R.id === "P1" || R.id === "P2" ? R.id + " · " + D.model.propositions[R.id].text : R.label),
+        h("button", { type: "button", class: "rb-x", "aria-label": "Masquer", text: "×", onclick: function () { state.relation = null; render(); } }));
+    }
     var tb = h("div", { class: "ex-titlebox" });
     tb.appendChild(h("h2", { class: "ex-title", text: cmp ? cmp.title : P.idx.domains[state.domainId].label }));
     if (cmp && cmp.kind === "contre-exemple") tb.appendChild(h("p", { class: "ce-note", id: "context-change", role: "note", title: cmp.contextChangeNotice, text: "Autres situations que l'exemple principal" }));
@@ -169,7 +179,8 @@
     })));
     head.appendChild(tools);
 
-    var stage = h("section", { class: "optic" + (state.textOnly ? " textonly" : ""), "aria-label": "Scène optique" });
+    var stage = h("section", { class: "optic" + (state.textOnly ? " textonly" : ""), "aria-label": "Illustration" });
+    if (relBanner) stage.appendChild(relBanner);
     stage.appendChild(head);
     var inner = h("div", { class: "optic-inner wrap" });
     inner.appendChild(renderSourceBar(cmp));
@@ -206,9 +217,11 @@
           h("select", { id: "sel-slot-" + i, onchange: function (e) { state.slots[i] = { conceptionId: e.target.value }; render(); } },
             D.conceptions.map(function (c) { return h("option", { value: c.id, selected: c.id === s.conceptionId, text: c.label + (P.configFor(cmp, c.id) ? "" : " (non intégrée)") }); }))));
       }
+      top.appendChild(h("span", { class: "conc-kick", text: "Conception générale mobilisée" }));
       top.appendChild(h("button", { type: "button", class: "conc-name", title: conc.description, "aria-label": "Conception " + conc.label + " : voir la définition", onclick: function () { openDrawer(conceptionDrawer(conc, s.cfg, letter)); } },
         h("span", { class: "letter", text: letter }),
         h("span", { class: "cn", text: conc.label })));
+      if (s.cfg) top.appendChild(h("span", { class: "conc-cap", text: s.conceptionId === P.idx.configurations[cmp.configIds[i]].conceptionId ? "justification construite pour ce cas" : "autre justification construite pour ce cas" }));
       if (cmp.contextMode === "per-config" && s.cfg) {
         var cx = P.idx.contexts[s.cfg.contextId];
         top.appendChild(h("button", { type: "button", class: "info-btn ctx-chip", onclick: function () { openDrawer(contextDrawer(cx, "Situation de " + letter)); } }, h("span", { class: "i", "aria-hidden": "true", text: "i" }), "Situation"));
@@ -226,10 +239,10 @@
         grid.appendChild(h("button", {
           type: "button", class: "band b-" + fid, "data-slot": String(i), "data-face": fid,
           style: "grid-column:" + col + ";grid-row:" + (r + 2),
-          "aria-label": P.idx.faces[fid].label + " " + letter + " : " + (f ? f.full : P.FUNCTION_UNSPECIFIED) + ". Ouvrir le détail",
+          "aria-label": CASE_LABELS[fid] + " " + letter + " : " + (f ? f.full : P.FUNCTION_UNSPECIFIED) + ". Ouvrir le détail",
           onclick: function () { openDrawer(faceDrawer(s.cfg, fid, letter)); },
         },
-          h("span", { class: "k" }, P.idx.faces[fid].label, f && f.type ? h("span", { class: "pill", text: D.functionTypes[f.type].label }) : null),
+          h("span", { class: "k" }, CASE_LABELS[fid], f && f.type ? h("span", { class: "pill", text: D.functionTypes[f.type].label }) : null),
           h("span", { class: "t" + (f ? "" : " np"), text: f ? bandText(f) : P.FUNCTION_UNSPECIFIED })));
       });
     });
@@ -243,7 +256,7 @@
       h("p", { class: "legend-marks" },
         h("span", null, h("b", { text: "=" }), " identique"), h("span", null, h("b", { text: "≠" }), " diffère"),
         cmp.situations ? h("span", null, h("b", { text: "≈" }), " converge") : null),
-      !state.textOnly && !state.turned ? h("p", { class: "hint-turn", id: "hint", text: "Cliquez un nom autour d'un prisme pour le tourner." }) : null,
+      !state.textOnly ? h("p", { class: "hint-turn", id: "hint", text: "Tourner un prisme fait passer à une autre justification construite pour ce cas. Cliquez un nom autour du prisme." }) : null,
       h("button", { type: "button", class: "link-light small", id: state.textOnly ? "view-bench" : "view-text", onclick: function () { state.textOnly = !state.textOnly; render(); } }, state.textOnly ? "Revenir aux prismes" : "Version texte")));
 
     var overlay = document.createElementNS("http://www.w3.org/2000/svg", "svg");
@@ -300,7 +313,7 @@
         path("M" + ex.x + " " + ex.y + " L" + ex.x + " " + ey, "beam-core faint");
         return;
       }
-      var nameEl = dial.el.parentNode.querySelector(".conc-name");
+      var nameEl = dial.el.parentNode.querySelector(".conc-kick") || dial.el.parentNode.querySelector(".conc-name");
       var nameTop = nameEl ? rel({ x: 0, y: nameEl.getBoundingClientRect().top }).y : ex.y + 80;
       var y1 = Math.min(ex.y + 22, nameTop - 34), y2 = nameTop - 8;
       [].forEach.call(bands, function (b, j) {
@@ -319,8 +332,9 @@
       });
     });
   }
-  window.addEventListener("resize", function () { requestAnimationFrame(drawRays); });
-  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { requestAnimationFrame(drawRays); });
+  function redraw() { if (modelScene) P.drawModelRays(modelScene); else drawRays(); }
+  window.addEventListener("resize", function () { requestAnimationFrame(redraw); });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { requestAnimationFrame(redraw); });
 
   /* ---------- panneau latéral ---------- */
   var lastFocus = null;
@@ -341,7 +355,6 @@
     if (!silent && lastFocus && lastFocus.focus) lastFocus.focus();
   }
   document.addEventListener("keydown", function (e) { if (e.key === "Escape" && document.querySelector(".drawer")) closeDrawer(); });
-  document.addEventListener("click", function (e) { if (e.target.closest && e.target.closest(".drawer a.chip")) closeDrawer(true); });
 
   function faceDrawer(cfg, fid, letter) {
     var f = P.getFace(cfg, fid, 0).value;
@@ -365,6 +378,61 @@
       h("p", { class: "eyebrow", text: ctx.constructed ? "Situation construite à des fins de raisonnement" : "Situation" }),
       h("h2", { id: "drawer-title", text: title || ctx.title }),
       V.contextCard(ctx, { full: true }));
+  }
+
+  function relationById(id) { return D.model.relations.filter(function (r) { return r.id === id; })[0]; }
+
+  function refChips(ids) {
+    return h("ul", { class: "chips" }, ids.map(function (id) {
+      var r = P.idx.references[id];
+      return h("li", null, h("button", { type: "button", class: "chip ref-chip", onclick: function () { openRef(id); } }, r.short));
+    }));
+  }
+
+  /* Explication d'une relation du modèle : mobilisé, à justifier, déduit. */
+  function openRelation(id) {
+    var R = relationById(id);
+    var prop = D.model.propositions[id];
+    var body = h("div", { class: "drawer-body rel-body" },
+      h("p", { class: "eyebrow", text: prop ? "Apport de l'article" : "Relation du modèle" }),
+      h("h2", { id: "drawer-title", text: prop ? id : R.label }),
+      prop ? h("p", { class: "lead", text: prop.text }) : null,
+      h("dl", { class: "rel-steps" },
+        h("div", null, h("dt", { text: "Ce qui est mobilisé" }), h("dd", { text: R.mobilise })),
+        h("div", null, h("dt", { text: "Ce qui doit être justifié" }), h("dd", { text: R.justifier })),
+        h("div", null, h("dt", { text: "Ce qu'on peut en déduire" }), h("dd", { text: R.deduire }))),
+      h("div", { class: "rel-examples" }, R.examples.map(function (ex) {
+        return h("button", { type: "button", class: "btn primary ex-btn", onclick: function () { goExample(ex, id); } }, "Voir cette relation dans un exemple : " + ex.label);
+      })),
+      h("details", { class: "more" }, h("summary", { text: "Préciser" }),
+        R.detail ? h("p", { text: R.detail }) : null,
+        id === "orientation" ? h("dl", { class: "conc-list" }, D.conceptions.map(function (c) { return [h("dt", { text: c.label }), h("dd", { text: c.description })]; })) : null,
+        h("p", { class: "lab", text: "Appuis" }), refChips(R.supports)),
+      R.source === "proposition" ? h("p", { class: "muted small", text: "Explication rédigée pour l'application, à valider." }) : null);
+    openDrawer(body);
+  }
+
+  function openRef(id) {
+    var r = P.idx.references[id];
+    openDrawer(h("div", { class: "drawer-body" },
+      h("p", { class: "eyebrow", text: "Note" }),
+      h("h2", { id: "drawer-title", text: r.short }),
+      h("p", { text: r.full }),
+      r.doi ? h("p", null, h("a", { href: "https://doi.org/" + r.doi, target: "_blank", rel: "noopener noreferrer", text: "https://doi.org/" + r.doi })) : null,
+      h("p", { class: "muted small" }, "Établit : " + r.establishes)));
+  }
+  P.openRef = openRef;
+
+  function openNotes() {
+    openDrawer(h("div", { class: "drawer-body" },
+      h("p", { class: "eyebrow", text: "Notes" }),
+      h("h2", { id: "drawer-title", text: "Références" }),
+      h("ol", { class: "refs" }, D.references.map(function (r) {
+        return h("li", { class: "ref" }, h("p", { text: r.full }),
+          r.doi ? h("p", null, h("a", { href: "https://doi.org/" + r.doi, target: "_blank", rel: "noopener noreferrer", text: "https://doi.org/" + r.doi })) : null,
+          h("p", { class: "muted small", text: "Établit : " + r.establishes }));
+      })),
+      h("p", { class: "muted small", text: "Les domaines viennent de Teasdale, les conceptions de de la Cruz Jara et Spanjol. La distinction entre contenu, référence de valeur et fonction, les propositions P1 et P2 et les exemples appartiennent au travail analytique de l'article. Aucune formulation d'exemple n'est une citation d'un auteur." })));
   }
 
   window.addEventListener("hashchange", route);

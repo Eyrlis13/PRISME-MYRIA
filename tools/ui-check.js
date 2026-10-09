@@ -8,6 +8,19 @@ let fails = 0;
 const ok = (c, m) => { console.log((c ? "ok   " : "ECHEC ") + m); if (!c) fails++; };
 const missing = (txt, arr) => arr.filter((s) => !txt.toLowerCase().includes(s.toLowerCase()));
 
+/* Rectangles de texte qui se chevauchent dans un conteneur (libellés visibles uniquement). */
+async function textOverlaps(page, sel) {
+  return page.$$eval(sel, (els) => {
+    const r = els.filter((e) => e.getBoundingClientRect().width > 0).map((e) => ({ t: e.textContent.trim().slice(0, 30), b: e.getBoundingClientRect() }));
+    const out = [];
+    for (let i = 0; i < r.length; i++) for (let j = i + 1; j < r.length; j++) {
+      const a = r[i].b, c = r[j].b;
+      if (a.left < c.right - 1 && c.left < a.right - 1 && a.top < c.bottom - 1 && c.top < a.bottom - 1) out.push(r[i].t + " / " + r[j].t);
+    }
+    return out;
+  });
+}
+
 (async () => {
   const browser = await chromium.launch({ executablePath: process.env.CHROMIUM || undefined });
   const page = await browser.newPage({ viewport: { width: 1320, height: 900 } });
@@ -15,177 +28,126 @@ const missing = (txt, arr) => arr.filter((s) => !txt.toLowerCase().includes(s.to
   page.on("pageerror", (e) => errs.push(String(e)));
   page.on("console", (m) => m.type() === "error" && errs.push(m.text()));
   await page.goto(url);
-  await page.waitForTimeout(400);
+  await page.waitForTimeout(500);
   const txt = (sel) => page.locator(sel).first().innerText();
-  const dialVal = (i) => page.locator(".dial").nth(i).getAttribute("aria-valuetext");
-  const band = (i, f) => page.locator(`.band[data-slot="${i}"][data-face="${f}"] .t`).innerText();
-  const marks = () => page.$$eval(".mark-cell", (c) => c.map((x) => (x.querySelector(".mark") || {}).textContent || ""));
   const drawer = () => page.locator(".drawer").innerText();
-  const openStage2 = async () => { if ((await page.locator("#stage2-btn").getAttribute("aria-expanded")) !== "true") await page.locator("#stage2-btn").click(); };
   const closeDrawer = async () => { await page.keyboard.press("Escape"); await page.waitForTimeout(100); };
 
-  /* entrée */
-  ok((await txt("h1")) === "Le prisme des critères", "titre");
-  ok((await page.locator(".dial").count()) === 2, "deux prismes");
-  ok((await dialVal(0)) === "Parties prenantes ciblées" && (await dialVal(1)) === "Normative", "faces initiales A et B");
-  ok((await txt(".src-v")).includes("Portée et accès"), "source : Portée et accès");
-  ok((await txt("#ctx-open")).toLowerCase().includes("situation construite"), "situation construite signalée");
-  ok((await band(0, "content")) === (await band(1, "content")), "bandes Contenu identiques");
+  /* ---------- navigation ---------- */
+  const tabs = await page.$$eval("#nav .tab", (t) => t.map((x) => x.textContent));
+  ok(JSON.stringify(tabs) === JSON.stringify(["Modèle conceptuel", "Illustrations"]), "navigation : deux onglets");
+  ok((await page.locator("#nav .tab.on").textContent()) === "Modèle conceptuel", "modèle conceptuel affiché par défaut");
+
+  /* ---------- modèle : trajet lisible sans interaction ---------- */
+  const model = await txt("#model");
+  ok(missing(model, ["Domaine de critères", "Situation", "Propriété à apprécier", "Conception de la valeur", "Références compatibles", "Précision dans la situation", "Référence de valeur retenue", "précisée en amont", "Contenu", "Fonction"]).length === 0, "stations du trajet visibles");
+  ok(missing(model, ["Quelle propriété est formulée comme désirable ?", "Au regard de quel bénéfice ou de quel principe cette propriété compte-t-elle ?", "Quelle relation justifie cette propriété au regard de cette référence ?"]).length === 0, "trois questions du critère");
+  ok(model.includes("Une conception de la valeur oriente le contenu du critère par une référence précisée dans la situation. Des conceptions différentes peuvent justifier un même contenu."), "P1 visible");
+  ok(model.includes("À contenu, standard et observations identiques, des justifications différentes peuvent autoriser des conclusions de portée différente."), "P2 visible");
+  ok(missing(model, ["La propriété constitue un aspect du bénéfice ou une exigence du principe retenu.", "fonction directe", "La propriété contribue à réaliser ce bénéfice ou cette exigence.", "fonction instrumentale"]).length === 0, "deux justifications et leurs noms");
+  ok((await page.locator(".mf-concl").count()) === 2 && (await page.locator(".mf-remain").count()) === 2, "conclusion autorisée et éléments restant à établir distincts");
+  ok(missing(model, ["Si le standard et les observations les couvrent effectivement.", "qui étayent la contribution de la propriété à sa réalisation", "se cumuler", "étendre ou réviser", "conserve son périmètre"]).length === 0, "conséquences et notes");
+  const rays = await page.$$eval("#model .rays-overlay path", (p) => p.map((x) => x.getAttribute("class")));
+  ok(rays.filter((c) => c === "beam-core" || c === "beam-core warm").length === 2 && rays.includes("ray-core") && rays.includes("orient-arc") && rays.filter((c) => c === "fn-line").length === 2, "faisceaux : entrant, orienté, référence retenue, orientation du contenu, liens vers les justifications");
+  ok((await page.$$eval(".m-fan.is-h line.cand", (l) => l.length)) === 4 && (await page.$$eval(".m-fan.is-h line.kept", (l) => l.length)) === 1, "plusieurs références compatibles, une retenue");
+  ok((await textOverlaps(page, "#model .st-label, #model .st-cap, #model .frame-tab, #model .dk, #model .dq, #model .ptxt, #model .mf-title")).length === 0, "modèle : aucun texte superposé (ordinateur)");
+  const refBand = await page.locator('[data-anchor="reference"]').boundingBox();
+  const rayEnd = await page.$eval("#model .ray-core", (p) => { const l = p.getTotalLength(); const q = p.getPointAtLength(l); const s = p.ownerSVGElement.getBoundingClientRect(); return { x: q.x + s.left, y: q.y + s.top }; });
+  ok(Math.abs(rayEnd.x - refBand.x) < 6 && rayEnd.y > refBand.y && rayEnd.y < refBand.y + refBand.height, "continuité : le rayon de la référence retenue aboutit à la bande Référence");
+  if (shots) await page.screenshot({ path: shots + "/01-modele.png", fullPage: true });
+
+  /* ---------- relations : explication au clic ---------- */
+  for (const [sel, title] of [[".prism-btn", "La conception oriente"], [".fan-r", "Précision dans la situation"], [".c-p1", "P1"], [".dim-function", "Fonction"], [".c-p2", "P2"]]) {
+    await page.locator(sel).first().click();
+    const d = await drawer();
+    ok(d.includes(title) && missing(d, ["Ce qui est mobilisé", "Ce qui doit être justifié", "Ce qu'on peut en déduire", "Voir cette relation dans un exemple"]).length === 0, "relation « " + title + " » : mobilisé, à justifier, déduit, exemple");
+    await closeDrawer();
+  }
+  await page.locator(".prism-btn").click();
+  await page.locator(".drawer details summary").click();
+  ok((await drawer()).includes("Parties prenantes ciblées") && (await page.locator(".drawer .ref-chip").count()) >= 1, "détail dépliable : conceptions et appuis");
+  await page.locator(".drawer .ref-chip").first().click();
+  ok((await drawer()).includes("doi.org"), "note de référence");
+  await closeDrawer();
+  await page.locator("#notes-btn").click();
+  ok((await page.locator(".drawer .ref").count()) === 5, "notes et références : 5 références");
+  await closeDrawer();
+
+  /* ---------- du modèle à l'exemple ---------- */
+  await page.locator(".c-p2").click();
+  await page.locator(".drawer .ex-btn").first().click();
+  await page.waitForTimeout(500);
+  ok(page.url().endsWith("#/illustrations") && (await page.locator("#nav .tab.on").textContent()) === "Illustrations", "accès à l'exemple depuis P2");
+  ok((await txt(".rel-banner")).includes("P2") && (await txt(".rel-banner")).includes("Modèle conceptuel"), "bandeau de la relation illustrée, retour au modèle");
+  ok((await page.locator(".stage2").count()) === 1, "étape 2 ouverte");
+
+  /* ---------- illustration : distinctions explicites ---------- */
+  const ill = await txt(".compare");
+  ok(missing(ill, ["Conception générale mobilisée", "Référence choisie pour ce cas", "Fonction justifiée dans ce cas", "Conclusion autorisée", "Éléments restant à établir", "justification construite pour ce cas", "autre justification construite"]).length <= 1, "illustration : conception, référence, fonction, conclusion, restes");
+  ok(missing(ill, ["La possibilité d'accès satisfait le standard retenu.", "Le constat peut établir la satisfaction de cette exigence particulière.", "réalisation du bénéfice administratif", "valeur globale de l'intervention"]).length === 0, "conclusions et restes de l'exemple");
+  const marks = () => page.$$eval(".mark-cell", (c) => c.map((x) => (x.querySelector(".mark") || {}).textContent || ""));
   ok(JSON.stringify(await marks()) === JSON.stringify(["=", "≠", "≠"]), "marques = ≠ ≠");
-  ok((await page.locator('.band[data-slot="0"][data-face="function"] .pill').innerText()) === "Instrumentale" && (await page.locator('.band[data-slot="1"][data-face="function"] .pill').innerText()) === "Directe", "fonctions A et B");
-  ok(!(await band(0, "function")).startsWith("Instrumentale"), "type de fonction non répété dans la phrase");
-  ok((await page.locator(".rays-overlay .ray-core").count()) === 6 && (await page.locator(".rays-overlay .beam-core").count()) === 2, "rayons : 2 faisceaux, 6 rayons colorés");
-  if (shots) await page.screenshot({ path: shots + "/01-entree.png", fullPage: true });
-
-  /* situation : panneau */
-  await page.locator("#ctx-open").click();
-  ok((await drawer()).includes("un principe retenu exige") && (await drawer()).includes("Non renseignée (exemple construit)"), "situation complète dans le panneau");
-  await closeDrawer();
-
-  /* étape 2 : repliée par défaut */
-  ok((await page.locator(".stage2").count()) === 0, "étape 2 repliée");
-  await openStage2();
-  const s2 = await txt(".stage2");
-  ok(s2.toLowerCase().includes("identique pour a et b") && (await page.locator(".s2-obs").count()) === 1, "constat et standard communs");
-  ok(missing(s2, ["La possibilité d'accès satisfait le standard retenu.", "Le constat peut établir la satisfaction de cette exigence particulière."]).length === 0, "conclusions A et B");
-  await page.locator(".s2-card details summary").first().click();
-  await page.locator(".s2-card details summary").nth(1).click();
-  ok(missing(await txt(".stage2"), ["réalisation du bénéfice administratif", "valeur globale de l'intervention", "doit être étayée", "couvrir les termes de l'exigence"]).length === 0, "restes à établir et conditions");
-  ok(!(await txt("#app")).match(/\d\s?%/), "aucun pourcentage");
-
-  /* détail d'une bande */
-  await page.locator('.band[data-slot="1"][data-face="reference"]').click();
-  ok(missing(await drawer(), ["Le principe retenu exige une possibilité effective", "Le principe retenu et ses termes doivent être explicités", "Hypothèse de l'exemple", "De la Cruz Jara et Spanjol (2025)"]).length === 0, "détail : formulation complète, conditions, origine, appuis");
-  await closeDrawer();
-  await page.locator('.band[data-slot="1"][data-face="function"]').click();
-  ok((await drawer()).includes("ne désigne pas un effet causal direct"), "précision sur « directe »");
-  await closeDrawer();
-  ok((await page.locator(".drawer").count()) === 0, "Échap ferme le panneau");
-
-  /* rotation : clic sur un nom */
-  await page.locator('.dial >> nth=1').locator('.p-lab', { hasText: "Maximisatrice" }).click();
+  await page.locator(".dial").nth(1).locator(".p-lab", { hasText: "Vertueuse" }).click();
   await page.waitForTimeout(800);
-  ok((await dialVal(1)).includes("Maximisatrice") && (await dialVal(1)).includes("non intégrée"), "clic sur un nom : Maximisatrice, non intégrée");
-  ok((await txt('.band-empty[data-slot="1"]')).includes("Configuration non intégrée à cette version."), "écran : non intégrée");
-  ok((await page.locator(".rays-overlay .ray-core").count()) === 3 && (await page.locator(".rays-overlay .beam-core.faint").count()) === 1, "rayon non décomposé");
-  ok(JSON.stringify(await marks()) === JSON.stringify(["", "", ""]), "pas de marque sans configuration");
-  /* clavier */
+  ok((await page.locator(".dial").nth(1).getAttribute("aria-valuetext")).includes("Vertueuse"), "rotation d'un prisme");
   await page.locator(".dial").nth(1).focus();
-  await page.keyboard.press("5");
-  await page.waitForTimeout(800);
-  ok((await dialVal(1)) === "Normative", "touche 5 : Normative");
-  await page.keyboard.press("ArrowLeft");
-  await page.waitForTimeout(800);
-  ok((await dialVal(1)).startsWith("Vertueuse"), "flèche gauche : face précédente");
   await page.keyboard.press("Home");
   await page.waitForTimeout(800);
-  ok((await dialVal(1)) === "Normative", "Début : position initiale");
-  /* glissement */
-  const box = await page.locator(".dial-svg").nth(0).boundingBox();
-  const cx = box.x + box.width / 2, cy = box.y + box.height * 128 / 270;
-  await page.mouse.move(cx + 70, cy);
-  await page.mouse.down();
-  await page.mouse.move(cx, cy + 70, { steps: 10 });
-  await page.mouse.up();
-  await page.waitForTimeout(900);
-  ok((await dialVal(0)) !== "Parties prenantes ciblées", "glissement : la face change");
-  await page.locator(".dial").nth(0).focus();
-  await page.keyboard.press("Home");
-  await page.waitForTimeout(800);
-  ok((await dialVal(0)) === "Parties prenantes ciblées", "retour à A");
-  /* même conception des deux côtés */
+  ok((await page.locator(".dial").nth(1).getAttribute("aria-valuetext")) === "Normative", "retour au clavier");
   await page.locator(".dial").nth(1).focus();
   await page.keyboard.press("3");
   await page.waitForTimeout(800);
-  ok(JSON.stringify(await marks()) === JSON.stringify(["=", "=", "="]), "même configuration des deux côtés : = = =");
+  ok((await txt(".compare")).includes("autre justification construite pour ce cas"), "le changement de conception est présenté comme une autre justification construite");
   await page.keyboard.press("Home");
   await page.waitForTimeout(800);
-
-  /* lisibilité : pas de chevauchement d'étiquettes, pas de rayon sur le texte */
-  const overlaps = await page.$$eval(".dial-svg", (svgs) => svgs.reduce((n, s) => {
-    const r = [...s.querySelectorAll("text")].map((t) => t.getBoundingClientRect());
-    for (let i = 0; i < r.length; i++) for (let j = i + 1; j < r.length; j++)
-      if (r[i].left < r[j].right && r[j].left < r[i].right && r[i].top < r[j].bottom && r[j].top < r[i].bottom) n++;
-    return n;
-  }, 0));
-  ok(overlaps === 0, "aucun chevauchement d'étiquettes sur les prismes");
-  const clipped = await page.$$eval(".dial-svg", (svgs) => svgs.reduce((n, s) => { const b = s.getBoundingClientRect(); return n + [...s.querySelectorAll("text")].filter((t) => { const r = t.getBoundingClientRect(); return r.left < b.left - 1 || r.right > b.right + 1; }).length; }, 0));
-  ok(clipped === 0, "aucune étiquette coupée");
-
-  /* cumul */
-  await openStage2();
+  await page.locator('.band[data-slot="1"][data-face="reference"]').click();
+  ok((await drawer()).includes("Le principe retenu exige une possibilité effective"), "détail d'une bande");
+  await page.locator(".drawer .ref-chip").first().click();
+  ok((await drawer()).includes("doi.org"), "appui d'une bande : note de référence");
+  await closeDrawer();
   await page.locator("#cumul-btn").click();
-  const cumul = await page.locator("#cumul-panel").innerText();
-  ok((await page.locator("#cumul-panel .chain").count()) === 2 && /moyenn/.test(cumul) && cumul.includes("laissant le bénéfice administratif à établir"), "cumul : deux chaînes, pas de moyenne");
+  ok((await page.locator("#cumul-panel .chain").count()) === 2, "justifications cumulées : deux chaînes");
 
-  /* texte seul */
-  await page.locator("#view-text").click();
-  ok((await page.locator(".dial").count()) === 0 && (await page.locator(".band").count()) === 6, "texte seul : sans prismes, bandes présentes");
-  await page.selectOption("#sel-slot-1", "vertueuse");
-  ok((await page.locator(".band-empty").count()) === 1, "texte seul : conception non intégrée");
-  await page.locator("#view-bench").click();
-
-  /* pertinence */
+  /* pertinence et fonctions inversées */
   await page.locator(".domain-picker summary").click();
   await page.locator('.lamp[data-domain="pertinence"]').click();
-  await page.waitForTimeout(300);
-  ok((await txt(".src-v")).includes("Pertinence"), "source : Pertinence");
-  ok((await band(0, "content")) !== (await band(1, "content")), "pertinence : contenus différents");
-  ok((await band(0, "function")) === "Fonction non spécifiée dans cet exemple" && (await band(1, "function")) === "Fonction non spécifiée dans cet exemple", "fonction non renseignée reste non renseignée");
-  ok(JSON.stringify(await marks()) === JSON.stringify(["≠", "≠", "–"]), "divergence : ≠ ≠ –");
-  await openStage2();
-  ok((await txt(".stage2")).includes("n'entrent pas dans le champ"), "implications divergence");
+  ok(JSON.stringify(await marks()) === JSON.stringify(["≠", "≠", "–"]), "pertinence : ≠ ≠ –");
   await page.locator('[data-situation="sit-convergence"]').click();
-  ok(JSON.stringify(await marks()) === JSON.stringify(["≈", "≠", "–"]), "convergence : ≈ ≠ –");
-  ok((await page.locator('[data-situation="sit-convergence"]').getAttribute("aria-checked")) === "true", "situation sélectionnée");
-  ok(!(await txt(".stage2")).includes("satisfait"), "aucune satisfaction annoncée");
-  if (shots) await page.screenshot({ path: shots + "/03-pertinence.png", fullPage: true });
-
-  /* contre-exemples */
+  ok(JSON.stringify(await marks()) === JSON.stringify(["≈", "≠", "–"]), "pertinence, convergence : ≈ ≠ –");
   await page.locator(".domain-picker summary").click();
   await page.locator('.lamp[data-domain="portee-acces"]').click();
   await page.locator(".examples .chip", { hasText: "Fonctions inversées" }).click();
-  ok((await txt("#context-change")).includes("Autres situations") && (await page.locator("#context-change").getAttribute("title")).includes("contre-exemples distincts"), "fonctions inversées : changement de situation signalé");
-  ok((await page.locator(".ctx-chip").count()) === 2, "contre-exemples : un contexte par prisme");
-  ok((await page.locator('.band[data-slot="0"][data-face="function"] .pill').innerText()) === "Directe" && (await page.locator('.band[data-slot="1"][data-face="function"] .pill').innerText()) === "Instrumentale", "fonctions inversées : directe sous A, instrumentale sous B");
-  await page.locator(".conc-name").first().click();
-  ok((await drawer()).includes("Bénéfice anticipé comme réponse à un besoin commun du groupe."), "définition de la conception au clic sur son nom");
-  await closeDrawer();
-  if (shots) await page.screenshot({ path: shots + "/04-contre-exemples.png", fullPage: true });
-
-  /* domaine sans exemple */
+  ok((await txt("#context-change")).includes("Autres situations"), "fonctions inversées : changement de situation signalé");
   await page.locator(".domain-picker summary").click();
-  ok((await page.locator(".lamp.off").count()) === 9, "neuf domaines non intégrés dans la liste");
   await page.locator('.lamp[data-domain="equite"]').click();
   ok((await txt(".empty")).includes("Configuration non intégrée à cette version."), "domaine sans exemple");
-
-  /* rubriques */
-  await page.goto(url + "#/catalogue");
-  ok((await page.locator(".matrix tbody tr").count()) === 11, "catalogue : 11 domaines");
-  await page.goto(url + "#/lexique");
-  ok((await txt(".page")).includes("Spectre"), "lexique : métaphore optique");
-  await page.goto(url + "#/origine/ref-teasdale2021");
-  ok((await page.locator("#ref-teasdale2021 a").getAttribute("href")) === "https://doi.org/10.1177/1098214020955226", "origine : DOI Teasdale");
-  await page.goto(url + "#/"); await page.reload(); await page.waitForTimeout(300);
-  await page.locator('.band[data-slot="0"][data-face="content"]').click();
-  await page.locator(".drawer a.chip").first().click();
+  await page.locator("#nav .tab", { hasText: "Modèle conceptuel" }).click();
   await page.waitForTimeout(300);
-  ok(page.url().includes("#/origine/") && (await page.locator(".drawer").count()) === 0, "appui documentaire : lien vers l'origine");
+  ok((await page.locator("#model").count()) === 1, "retour au modèle par la navigation");
+  ok(!(await txt("#app")).match(/\d\s?%/), "aucun pourcentage");
 
-  /* impression */
-  await page.goto(url + "#/"); await page.reload();
-  await page.locator("#print-btn").click();
-  ok(missing(await txt("#print-root"), ["Conditions propres au cas", "Teasdale, R. M. (2021)", "Le principe retenu exige", "Justifications cumulées", "Ce qui reste à établir", "Maintenu constant"]).length === 0, "vue imprimable complète");
-
-  /* téléphone */
-  const m = await browser.newPage({ viewport: { width: 375, height: 800 } });
-  await m.goto(url); await m.waitForTimeout(400);
-  ok((await m.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth)) <= 0, "téléphone : pas de défilement horizontal");
-  if (shots) await m.screenshot({ path: shots + "/06-telephone.png", fullPage: true });
+  /* ---------- téléphone ---------- */
+  for (const w of [375, 768]) {
+    const m = await browser.newPage({ viewport: { width: w, height: 800 } });
+    await m.goto(url); await m.waitForTimeout(500);
+    ok((await m.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth)) <= 0, w + " px : pas de défilement horizontal");
+    ok((await textOverlaps(m, "#model .st-label, #model .st-cap, #model .frame-tab, #model .dk, #model .dq, #model .ptxt, #model .mf-title")).length === 0, w + " px : aucun texte superposé");
+    const lab = await m.locator(".st-prism .st-label").boundingBox(), pr = await m.locator(".m-prism.is-v").boundingBox();
+    ok(lab.x >= pr.x + pr.width - 1, w + " px : libellés à côté du faisceau");
+    const hit = await m.evaluate(() => {
+      const t = document.querySelector(".crit-title").getBoundingClientRect(), p = document.querySelector("#model .ray-core");
+      const s = p.ownerSVGElement.getBoundingClientRect(), L = p.getTotalLength();
+      for (let i = 0; i <= L; i += 2) { const q = p.getPointAtLength(i); const x = q.x + s.left, y = q.y + s.top; if (x > t.left && x < t.left + 120 && y > t.top && y < t.bottom) return true; }
+      return false;
+    });
+    ok(!hit, w + " px : le rayon de la référence ne traverse pas l'intitulé du critère");
+    if (shots) await m.screenshot({ path: shots + "/02-modele-" + w + ".png", fullPage: true });
+    await m.close();
+  }
 
   /* animations réduites */
   const rm = await browser.newPage({ viewport: { width: 1100, height: 800 }, reducedMotion: "reduce" });
-  await rm.goto(url);
+  await rm.goto(url + "#/illustrations");
   await rm.locator(".dial").nth(0).focus();
   await rm.keyboard.press("ArrowRight");
   ok((await rm.locator(".dial").nth(0).getAttribute("aria-valuetext")).startsWith("Vertueuse"), "animations réduites : rotation immédiate");

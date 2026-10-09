@@ -1,4 +1,4 @@
-# Couverture de la version 0.2
+# Couverture de la version 0.5
 
 ## Configurations intégrées (6)
 
@@ -12,6 +12,13 @@
 | | | Contre-exemple 2 | Normative |
 
 Neuf domaines n'ont aucun exemple : ils s'affichent « Configuration non intégrée à cette version. »
+
+## Textes du modèle conceptuel à valider (`data/modele.js`)
+
+- Les explications des relations « La conception oriente », « Précision dans la situation » et « Fonction » (mobilisé, à justifier, déduit, détail).
+- Les explications de P1 et P2 (mobilisé, à justifier, déduit) ; les énoncés de P1 et P2 sont ceux de l'autrice.
+- Fonction directe, « éléments restant à établir » : « Les autres aspects ou exigences, et le jugement global. »
+- Fonction instrumentale, « conclusion autorisée » : « La satisfaction du standard par la propriété. »
 
 ## Champs à documenter
 

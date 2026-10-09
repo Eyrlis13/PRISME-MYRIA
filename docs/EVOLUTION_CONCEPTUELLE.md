@@ -35,3 +35,13 @@ Les données (`data/`), les définitions des trois composantes, les groupes de c
 L'écran Comparer ne montre plus que la scène : domaine, deux prismes, deux spectres, signes de rapport. Les définitions des conceptions, la situation, les sources et le détail de chaque bande s'ouvrent dans un panneau latéral. L'étape 2 (constat et conclusions) est repliée par défaut.
 
 Les « contre-exemples » du cahier des charges (section 8) sont présentés sous l'onglet « Fonctions inversées » : sous d'autres situations, les parties prenantes ciblées donnent une fonction directe et la conception normative une fonction instrumentale, à l'inverse de l'exemple principal. L'avertissement de changement de situation reste affiché, sous une forme courte ; sa version complète est dans l'infobulle et dans la vue imprimable.
+
+## Version 0.5 (modèle avant exemples, 9 octobre 2026)
+
+L'application s'ouvre sur le modèle conceptuel, hors exemple. Le faisceau entrant représente la propriété à apprécier ; le domaine de critères et la situation l'encadrent. Le trajet rend visible l'opération de précision : la conception oriente (plusieurs références compatibles), une interprétation argumentée dans la situation en retient une, et c'est cette référence qui arrive sur le critère. La fonction est dessinée comme la relation entre contenu et référence. Les deux fonctions mènent à des conclusions autorisées distinctes des éléments restant à établir.
+
+Le prisme garde ici le sens fixé en 0.2 (prisme = conception de la valeur), mais la métaphore ne doit plus suggérer une décomposition automatique : la sortie du prisme est un éventail de références compatibles, et le choix de l'une d'elles passe par une fente marquée « à justifier ».
+
+Les rubriques Catalogue, Lexique, Origine du modèle et la vue imprimable ont été retirées de l'interface. Les données (domaines, conceptions, lexique, références) sont conservées ; les références restent accessibles en notes.
+
+Textes à valider : les explications des relations et deux formulations de conclusion sont marquées `source: "proposition"` dans `data/modele.js`.
