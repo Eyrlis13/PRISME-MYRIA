@@ -1,26 +1,7 @@
-/* Utilitaires, index des données et accès aux faces. Aucun contenu scientifique ici. */
+/* Utilitaires et accès aux données scientifiques (window.PRISME_DATA). */
 (function () {
   var P = (window.PRISME = window.PRISME || {});
-  var D = P.data;
-
-  function by(arr) {
-    var m = {};
-    arr.forEach(function (x) {
-      m[x.id] = x;
-    });
-    return m;
-  }
-
-  P.idx = {
-    domains: by(D.domains),
-    conceptions: by(D.conceptions),
-    contexts: by(D.contexts),
-    configurations: by(D.configurations),
-    justifications: by(D.justifications),
-    comparisons: by(D.comparisons),
-    references: by(D.references),
-    faces: by(D.faces),
-  };
+  var D = (P.D = window.PRISME_DATA);
 
   /* Création d'éléments DOM. Les textes passent toujours par textContent. */
   P.h = function (tag, attrs) {
@@ -46,41 +27,33 @@
     return el;
   };
 
-  P.justificationsOf = function (cfg) {
-    return cfg.justificationIds.map(function (id) {
-      return P.idx.justifications[id];
-    });
+  /* Conceptions, dans l'ordre du fichier (M, I, G, V, N). */
+  P.conceptionIds = Object.keys(D.profiles);
+  P.conceptions = P.conceptionIds.map(function (id) { return { id: id, label: D.profiles[id].name }; });
+  P.profile = function (id) { return D.profiles[id]; };
+
+  /* Dimensions, dans l'ordre recommandé par l'interface. */
+  P.dims = D.interface.dimension_order.map(function (id) {
+    return D.model.dimensions.filter(function (d) { return d.id === id; })[0];
+  });
+  P.dimRays = P.dims.map(function (d) { return P.ui.dimColors[d.id].ray; });
+
+  P.caseById = function (id) { return D.cases.filter(function (c) { return c.id === id; })[0]; };
+  P.block = function (id) { return D.model.blocks.filter(function (b) { return b.id === id; })[0]; };
+  P.link = function (from, to) { return D.model.links.filter(function (l) { return l.from_id === from && l.to_id === to; })[0]; };
+  P.source = function (id) { return D.sources.filter(function (s) { return s.id === id; })[0]; };
+
+  /* « DCJ:421–422 » → { source, pages } */
+  P.parseRef = function (ref) {
+    var i = ref.indexOf(":");
+    var id = i < 0 ? ref : ref.slice(0, i);
+    return { source: P.source(id), id: id, pages: i < 0 ? "" : ref.slice(i + 1) };
   };
 
-  /* Renvoie {value, justification} pour une face. `value` vaut null lorsque
-     la face n'est pas renseignée (par exemple une fonction non spécifiée). */
-  P.getFace = function (cfg, faceId, jIdx) {
-    var js = P.justificationsOf(cfg);
-    var j = js[Math.min(jIdx || 0, js.length - 1)] || null;
-    if (faceId === "content") return { value: cfg.content, justification: j };
-    if (faceId === "reference") return { value: j ? j.valueReference : null, justification: j };
-    return { value: j ? j.function : null, justification: j };
+  /* Analyse transversale documentée pour une paire (ordre indifférent), ou null. */
+  P.auditFor = function (a, b) {
+    return D.pair_audits.filter(function (x) { return (x.pair[0] === a && x.pair[1] === b) || (x.pair[0] === b && x.pair[1] === a); })[0] || null;
   };
-
-  P.configFor = function (cmp, conceptionId) {
-    for (var i = 0; i < cmp.configIds.length; i++) {
-      var c = P.idx.configurations[cmp.configIds[i]];
-      if (c.conceptionId === conceptionId) return c;
-    }
-    return null;
-  };
-
-  P.comparisonsOfDomain = function (domainId) {
-    return D.comparisons.filter(function (c) {
-      return c.domainId === domainId;
-    });
-  };
-
-  P.NOT_INTEGRATED = "Configuration non intégrée à cette version.";
-  P.NOT_INTEGRATED_NOTE =
-    "Cette indication concerne la couverture de l'application. Elle ne signifie pas que le critère serait sans pertinence sous cette conception.";
-  P.NOT_PROVIDED = "Non renseigné dans cet exemple";
-  P.FUNCTION_UNSPECIFIED = "Fonction non spécifiée dans cet exemple";
-
-  P.FACE_ORDER = ["content", "reference", "function"];
+  P.sensitivityFor = function (caseId) { return D.sensitivity.filter(function (s) { return s.case === caseId; }); };
+  P.sourceLabel = function (s) { return s.authors + " (" + s.year + ")"; };
 })();

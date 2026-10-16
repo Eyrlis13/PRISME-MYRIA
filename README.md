@@ -1,43 +1,34 @@
-# PRISME MYRIA : Le prisme des critères
+# PRISME MYRIA · Le prisme du jugement
 
-Application web statique, en français, qui présente un modèle conceptuel : comment une conception de la valeur sociale oriente la spécification d'un critère de jugement, puis la portée de la conclusion que sa satisfaction permet de soutenir.
+Application web statique, en français : comment une conception de la valeur sociale intervient dans le jugement porté sur l'action d'une organisation.
 
-Deux onglets :
+- **Modèle conceptuel** (par défaut) : la lecture évaluative traverse le prisme de la conception et rejoint les quatre dimensions des exigences de justification (qualification, portée, preuve, règle d'appréciation). Le dossier évaluatif commun forme une entrée distincte. Les deux rejoignent la confrontation, qui autorise et délimite un jugement justifié. On peut faire tourner le prisme pour voir l'orientation générique de chacune des cinq conceptions, sans cas ni verdict.
+- **Illustrations** : quinze dossiers construits, lus par deux conceptions au choix (A et B). Le dossier reste identique ; chaque rotation actualise les quatre dimensions, la conclusion autorisée, sa justification et sa limite.
 
-- **Modèle conceptuel** (par défaut) : le trajet d'un faisceau, hors exemple. La propriété à apprécier traverse le prisme de la conception de la valeur ; plusieurs références compatibles en sortent ; une précision argumentée dans la situation en retient une ; elle rejoint le critère (contenu, fonction, référence de valeur). Les deux fonctions conduisent à des conclusions de portée différente. P1 et P2 sont placées sur les relations correspondantes ; un clic sur une relation l'explique et mène à un exemple.
-- **Illustrations** : deux prismes que l'on tourne, sur trois cas construits.
-
-Voir `docs/EVOLUTION_CONCEPTUELLE.md`.
-
-Projet indépendant d'Ergothèque et d'ESM.
+Modèle conceptuel proposé et situations construites ; aucun test empirique. Aucun score, aucune pondération, aucun classement des conceptions.
 
 ## Lancement
 
-Aucune installation. Aucune dépendance. Aucun serveur métier.
+Ouvrir `index.html` dans un navigateur, ou `./serve.sh` puis http://localhost:8080. Aucune dépendance.
 
-- Ouvrir `index.html` dans un navigateur récent, ou
-- `./serve.sh` puis http://localhost:8080
+## Données
+
+| Fichier | Rôle |
+|---|---|
+| `data/PRISME_MAJ_2026-10-16.json` | Fichier scientifique de référence (modèle, profils, cas, sources, analyses, contrôles) |
+| `data/prisme-data.js` | Copie chargeable du JSON, générée par `node tools/build-data.js` après toute modification du JSON |
+| `data/interface-fr.js` | Libellés d'interface, couleurs des dimensions, condensations à relire |
+| `recherche/` | Registre, rapports et scripts de recherche fournis par l'autrice |
+| `archive/v0.5/` | Ancienne organisation (contenu, référence de valeur, fonction ; P1/P2), conservée pour mémoire |
 
 ## Vérifications
 
 ```
-node tools/verify-data.js      # intégrité des données (références, cohérence des groupes)
-node tools/ui-check.js         # comportements dans Chromium (nécessite Playwright)
+node tools/build-data.js     # régénère data/prisme-data.js
+node tools/verify-data.js    # 75 lectures complètes, empreintes des dossiers, références
+node tools/ui-check.js       # deux pages, 75 lectures, dossier constant, mobile, clavier (Playwright)
 ```
 
-## Organisation
+## Organisation du code
 
-| Dossier | Contenu |
-|---|---|
-| `data/` | Contenu scientifique : modèle conceptuel (`modele.js`), domaines, conceptions, références (`catalogue.js`), contextes, configurations et justifications, groupes de comparaison |
-| `js/` | Affichage : `core.js` (utilitaires), `model.js` (vue du modèle conceptuel), `bench.js` (prisme des illustrations, que l'on tourne), `views.js` (détails et étape 2 des illustrations), `main.js` (état, routage, illustrations, panneau latéral) |
-| `css/` | Styles, y compris la vue imprimable |
-| `docs/` | Ajouter une configuration, couverture, évolution conceptuelle, maquettes |
-
-Le contenu se corrige dans `data/` sans toucher aux composants.
-
-## Choix techniques
-
-Charte graphique Myriad (aubergine #3d1a32, prune #58284a, crème #f7f2ea, orange #e4552b ; Montserrat pour les titres, Inter pour le texte). JavaScript sans framework, banc optique en SVG recalculé à chaque rotation, scripts classiques pour que l'ouverture directe du fichier fonctionne. Version texte des illustrations, clavier (flèches, touches 1 à 5, Début ; Échap ferme le panneau latéral), `prefers-reduced-motion`. Les polices Montserrat et Inter sont chargées depuis Google Fonts ; hors ligne, l'application retombe sur les polices système.
-
-Voir `docs/AJOUTER_UNE_CONFIGURATION.md` et `docs/COUVERTURE.md`.
+`js/core.js` (accès aux données), `js/bench.js` (prisme rotatif), `js/ui.js` (panneau latéral, cartes de dimension, références), `js/model.js` (page Modèle), `js/illus.js` (page Illustrations), `js/main.js` (routage et état). Charte Myriad : aubergine #3d1a32, prune #58284a, crème #f7f2ea, orange #e4552b ; Montserrat et Inter.

@@ -1,72 +1,60 @@
 /* Contrôle d'intégrité des données : node tools/verify-data.js */
 const fs = require("fs");
 const path = require("path");
+const crypto = require("crypto");
 const vm = require("vm");
 
 const root = path.join(__dirname, "..");
-const sandbox = { window: {} };
-sandbox.window.window = sandbox.window;
-vm.createContext(sandbox);
-["catalogue", "contexts", "configurations", "comparisons"].forEach((f) =>
-  vm.runInContext(fs.readFileSync(path.join(root, "data", f + ".js"), "utf8"), sandbox, { filename: f })
-);
-const D = sandbox.window.PRISME.data;
+const D = JSON.parse(fs.readFileSync(path.join(root, "data", "PRISME_MAJ_2026-10-16.json"), "utf8"));
 const errors = [];
 const err = (m) => errors.push(m);
-const ids = (a) => new Set(a.map((x) => x.id));
-const dup = (name, a) => { const s = ids(a); if (s.size !== a.length) err(`${name} : identifiants dupliqués`); };
 
-["domains", "conceptions", "contexts", "configurations", "justifications", "comparisons", "references"].forEach((k) => dup(k, D[k]));
-if (D.domains.length !== 11) err(`11 domaines attendus, ${D.domains.length} trouvés`);
-if (D.conceptions.length !== 5) err(`5 conceptions attendues, ${D.conceptions.length} trouvées`);
+/* le script chargé par l'application doit correspondre au JSON */
+const sandbox = { window: {} };
+vm.createContext(sandbox);
+vm.runInContext(fs.readFileSync(path.join(root, "data", "prisme-data.js"), "utf8"), sandbox);
+vm.runInContext(fs.readFileSync(path.join(root, "data", "interface-fr.js"), "utf8"), sandbox);
+if (JSON.stringify(sandbox.window.PRISME_DATA) !== JSON.stringify(D)) err("data/prisme-data.js n'est pas à jour : lancer node tools/build-data.js");
+const UI = sandbox.window.PRISME.ui;
 
-const dom = ids(D.domains), con = ids(D.conceptions), ctx = ids(D.contexts), cfg = ids(D.configurations), jus = ids(D.justifications), ref = ids(D.references);
-const checkSupports = (where, arr) => (arr || []).forEach((s) => { if (!ref.has(s.ref)) err(`${where} : référence inconnue ${s.ref}`); });
-const checkFace = (where, f) => {
-  if (f === null) return;
-  ["short", "full"].forEach((k) => { if (!f[k]) err(`${where} : ${k} manquant`); });
-  if (f.short && f.short.length > 90) err(`${where} : formulation courte trop longue (${f.short.length} > 90)`);
-  if (f.origin && !D.origins[f.origin]) err(`${where} : origine inconnue ${f.origin}`);
-  checkSupports(where, f.supports);
-};
+const dims = D.interface.dimension_order;
+const profiles = Object.keys(D.profiles);
+const srcIds = new Set(D.sources.map((s) => s.id));
+const statuses = new Set(Object.keys(UI.statusLabels));
+const refOk = (ref, where) => { const id = ref.split(":")[0]; if (!srcIds.has(id)) err(where + " : source inconnue " + ref); };
 
-D.configurations.forEach((c) => {
-  if (!dom.has(c.domainId)) err(`${c.id} : domaine inconnu`);
-  if (!con.has(c.conceptionId)) err(`${c.id} : conception inconnue`);
-  if (!ctx.has(c.contextId)) err(`${c.id} : contexte inconnu`);
-  checkFace(`${c.id}.content`, c.content);
-  if (!c.justificationIds.length) err(`${c.id} : aucune justification`);
-  c.justificationIds.forEach((j) => {
-    if (!jus.has(j)) err(`${c.id} : justification inconnue ${j}`);
-    else if (D.justifications.find((x) => x.id === j).configId !== c.id) err(`${j} : configId incohérent`);
+/* empreinte du dossier : même calcul que recherche/build_research.py (json.dumps Python, ensure_ascii=False) */
+const pyDumps = (objective, facts) => "[" + JSON.stringify(objective) + ", [" + facts.map((f) => JSON.stringify(f)).join(", ") + "]]";
+
+if (D.cases.length !== 15) err("15 cas attendus");
+if (profiles.join("") !== "MIGVN") err("profils attendus M I G V N");
+if (dims.join(",") !== "qualification,portee,preuve,regle") err("ordre des dimensions inattendu");
+D.model.dimensions.forEach((d) => { if (!UI.dimColors[d.id] || !UI.dimRoles[d.id]) err("dimension sans couleur ou rôle : " + d.id); });
+profiles.forEach((p) => {
+  dims.forEach((d) => { if (!D.profiles[p].generic_dimensions[d]) err(p + " : orientation générique manquante " + d); });
+  D.profiles[p].sources.forEach((r) => refOk(r, "profil " + p));
+  if (!UI.specLabels[p]) err(p + " : libellé de spécification manquant");
+});
+let readings = 0;
+D.cases.forEach((c) => {
+  const h = crypto.createHash("sha256").update(pyDumps(c.objective, c.facts), "utf8").digest("hex");
+  if (h !== c.dossier_hash) err(c.id + " : empreinte du dossier différente");
+  profiles.forEach((p) => {
+    const r = c.readings[p];
+    if (!r) { err(c.id + " : lecture " + p + " manquante"); return; }
+    readings++;
+    dims.forEach((d) => { if (!r.dimensions[d] || !r.dimensions[d].text || !r.dimensions[d].detail) err(c.id + "/" + p + " : dimension " + d + " incomplète"); });
+    ["conclusion", "justification", "scope", "reserve"].forEach((k) => { if (!r[k]) err(c.id + "/" + p + " : " + k + " vide"); });
+    if (!statuses.has(r.status)) err(c.id + "/" + p + " : statut inconnu " + r.status);
+    if (!r.references.length) err(c.id + "/" + p + " : aucune référence");
+    r.references.forEach((ref) => refOk(ref, c.id + "/" + p));
   });
-  if (!["conclusion", "formulation"].includes(c.assessment.mode)) err(`${c.id} : mode d'appréciation invalide`);
 });
-D.justifications.forEach((j) => {
-  if (!cfg.has(j.configId)) err(`${j.id} : configuration inconnue`);
-  checkFace(`${j.id}.valueReference`, j.valueReference);
-  checkFace(`${j.id}.function`, j.function);
-  if (j.function && !D.functionTypes[j.function.type]) err(`${j.id} : type de fonction inconnu`);
-});
-D.comparisons.forEach((c) => {
-  if (!dom.has(c.domainId)) err(`${c.id} : domaine inconnu`);
-  c.configIds.forEach((id) => { if (!cfg.has(id)) err(`${c.id} : configuration inconnue ${id}`); });
-  [...c.constant, ...c.varies, ...(c.unspecified || [])].forEach((k) => { if (!D.elements[k]) err(`${c.id} : élément inconnu ${k}`); });
-  const all = [...c.constant, ...c.varies, ...(c.unspecified || [])];
-  if (new Set(all).size !== all.length) err(`${c.id} : un élément est classé deux fois`);
-  if (c.contextMode === "common" && !ctx.has(c.contextId)) err(`${c.id} : contexte commun inconnu`);
-  if (c.contextMode === "common") c.configIds.forEach((id) => { if (D.configurations.find((x) => x.id === id).contextId !== c.contextId) err(`${c.id} : ${id} n'a pas le contexte commun`); });
-  if (c.situations) c.situations.forEach((s) => c.configIds.forEach((id) => { if (!s.byConfig[id]) err(`${c.id}/${s.id} : implication manquante pour ${id}`); }));
-});
-D.contexts.forEach((c) => { if (c.constructed !== true) err(`${c.id} : contexte non marqué comme construit`); });
-
-/* Exigences de contenu de l'énoncé */
-const A = D.configurations.find((c) => c.id === "cfg-acces-A"), B = D.configurations.find((c) => c.id === "cfg-acces-B");
-if (A.content.full !== B.content.full) err("accès : les contenus A et B diffèrent");
-if (A.assessment.standard !== B.assessment.standard || A.assessment.observed !== B.assessment.observed) err("accès : standard ou constat différents");
-if (/\d\s*%/.test(JSON.stringify(D.configurations))) err("pourcentage détecté dans les configurations");
-const pj = D.justifications.filter((j) => j.configId.startsWith("cfg-pert"));
-if (pj.some((j) => j.function !== null)) err("pertinence : la fonction doit rester non renseignée");
+D.sensitivity.forEach((s) => { if (!D.cases.some((c) => c.id === s.case)) err(s.id + " : cas inconnu"); s.sources.forEach((r) => refOk(r, s.id)); });
+D.pair_audits.forEach((a) => a.witness.forEach((w) => { if (!D.cases.some((c) => c.id === w)) err("audit " + a.pair + " : témoin inconnu " + w); }));
+D.model.sources.forEach((r) => refOk(r, "modèle"));
+if (!D.cases.some((c) => c.id === D.interface.default_case)) err("cas par défaut inconnu");
+UI.quickCases.forEach((q) => { if (!D.cases.some((c) => c.id === q.id)) err("cas mis en avant inconnu " + q.id); });
 
 if (errors.length) { console.error(errors.map((e) => "ERREUR " + e).join("\n")); process.exit(1); }
-console.log(`OK : ${D.domains.length} domaines, ${D.conceptions.length} conceptions, ${D.configurations.length} configurations, ${D.justifications.length} justifications, ${D.comparisons.length} groupes de comparaison.`);
+console.log("OK : " + D.cases.length + " cas, " + readings + " lectures, empreintes des dossiers vérifiées, " + D.sources.length + " sources, références résolues.");

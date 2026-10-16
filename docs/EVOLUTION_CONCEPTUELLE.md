@@ -45,3 +45,9 @@ Le prisme garde ici le sens fixé en 0.2 (prisme = conception de la valeur), mai
 Les rubriques Catalogue, Lexique, Origine du modèle et la vue imprimable ont été retirées de l'interface. Les données (domaines, conceptions, lexique, références) sont conservées ; les références restent accessibles en notes.
 
 Textes à valider : les explications des relations et deux formulations de conclusion sont marquées `source: "proposition"` dans `data/modele.js`.
+
+## Version 1.0 (16 octobre 2026) : le prisme du jugement
+
+Le centre du modèle n'est plus le triplet contenu, référence de valeur, fonction, mais les quatre dimensions des exigences de justification (qualification, portée, preuve, règle d'appréciation), issues de `data/PRISME_MAJ_2026-10-16.json`. Les anciennes catégories et les propositions P1/P2 ne sont pas renommées : elles sont retirées du parcours et conservées dans `archive/v0.5/`.
+
+Le prisme représente toujours la conception de la valeur sociale (cinq orientations). La lumière qui le traverse est la lecture évaluative ; les quatre faisceaux sont les quatre dimensions. Le dossier évaluatif commun est dessiné comme un document, avec un trait plein de couleur papier, distinct des faisceaux : changer de conception ne transforme pas les faits.

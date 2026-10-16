@@ -1,247 +1,228 @@
 /*
- * Vue « Modèle conceptuel » : le trajet du faisceau, hors exemple.
- * Propriété à apprécier → conception de la valeur → références compatibles →
- * précision dans la situation → référence retenue → critère (contenu, fonction, référence)
- * → conclusions autorisées selon la fonction.
+ * Page « Modèle conceptuel » : fonctionnement générique, sans cas ni verdict.
+ * Lecture évaluative → prisme de la conception → quatre dimensions des exigences ;
+ * dossier évaluatif commun (entrée distincte) → confrontation → jugement justifié.
  */
 (function () {
   var P = window.PRISME;
-  var D = P.data;
-  var M = D.model;
+  var D = P.D;
   var h = P.h;
+  var U = P.comp;
+  var T = P.ui.model;
   var NS = "http://www.w3.org/2000/svg";
-  var AMBER = "#f0b54a", GREEN = "#6cc192";
 
   function svgEl(tag, attrs) {
     var e = document.createElementNS(NS, tag);
     Object.keys(attrs || {}).forEach(function (k) { e.setAttribute(k, attrs[k]); });
     return e;
   }
-  function rad(a) { return a * Math.PI / 180; }
 
-  /* Prisme vu en coupe. horizontal : le faisceau entre par la face gauche ; vertical : par la face du haut. */
-  function prismSvg(horizontal) {
-    var W = 200, H = 200, cx = 100, cy = 100, R = 62, apo = R * Math.cos(rad(36));
-    var base = horizontal ? 144 : -126;
-    var s = svgEl("svg", { viewBox: "0 0 " + W + " " + H, class: "m-prism " + (horizontal ? "is-h" : "is-v"), "aria-hidden": "true" });
-    var dx = 12, dy = -9;
-    function pent(ox, oy) {
-      var pts = [];
-      for (var k = 0; k < 5; k++) { var a = rad(base + 72 * k); pts.push((cx + ox + R * Math.cos(a)).toFixed(1) + "," + (cy + oy + R * Math.sin(a)).toFixed(1)); }
-      return pts.join(" ");
-    }
-    s.appendChild(svgEl("polygon", { class: "p-back", points: pent(dx, dy) }));
-    s.appendChild(svgEl("polygon", { class: "p-front m-glass", points: pent(0, 0) }));
-    var inX = horizontal ? cx - apo : cx, inY = horizontal ? cy : cy - apo;
-    var outX = horizontal ? cx + R : cx, outY = horizontal ? cy : cy + R;
-    /* face d'entrée */
-    var a0 = rad(base), a1 = rad(base + 72);
-    s.appendChild(svgEl("line", { class: "p-active", x1: cx + R * Math.cos(a0), y1: cy + R * Math.sin(a0), x2: cx + R * Math.cos(a1), y2: cy + R * Math.sin(a1) }));
-    s.appendChild(svgEl("line", { class: "in-white", x1: inX, y1: inY, x2: cx, y2: cy }));
-    /* dans le verre, la lumière s'oriente : un cône ambré vers la sortie */
-    var cone = horizontal
-      ? "M" + cx + " " + cy + " L" + outX + " " + (outY - 9) + " L" + outX + " " + (outY + 9) + " Z"
-      : "M" + cx + " " + cy + " L" + (outX - 9) + " " + outY + " L" + (outX + 9) + " " + outY + " Z";
-    s.appendChild(svgEl("path", { d: cone, fill: AMBER, opacity: ".45" }));
-    s.dataset.in = inX + "," + inY;
-    s.dataset.out = outX + "," + outY;
-    s.dataset.vb = W + "," + H;
-    return s;
+  /* Détail d'une conception, au niveau générique. */
+  function openConception(id) {
+    var p = P.profile(id);
+    var code = P.ui.specCodes[id];
+    U.openDrawer(h("div", { class: "drawer-body" },
+      h("p", { class: "eyebrow", text: "Conception de la valeur sociale" }),
+      h("h2", { id: "drawer-title", text: p.name }),
+      h("p", { class: "lead", text: p.question }),
+      h("section", { class: "d-sec" }, h("h3", { text: "Prémisse" }), h("p", { text: p.premise })),
+      h("section", { class: "d-sec accent" }, h("h3", { text: "Orientation des quatre dimensions" }),
+        h("ul", { class: "dim-orient" }, P.dims.map(function (d) {
+          var c = P.ui.dimColors[d.id];
+          return h("li", { style: "--dim:" + c.ray }, h("span", { class: "lab inline", text: d.label + " · " }), p.generic_dimensions[d.id]);
+        }))),
+      h("p", { class: "callout-note", text: T.specification }),
+      id === "N" ? h("p", { class: "callout-note", text: T.normativeOpen }) : null,
+      h("section", { class: "d-sec" }, h("h3", { text: "Proposition examinée par le jugement" }), h("p", { text: p.claim })),
+      h("details", { class: "more" }, h("summary", { text: "Détail scientifique" }),
+        h("p", { class: "lab", text: "À préciser dans une situation" }), h("p", { text: p.missing }),
+        h("p", { class: "lab", text: "Ce que cette conception n'implique pas" }), h("p", { text: p.not_implied }),
+        h("p", { class: "lab", text: "Spécification utilisée dans les illustrations (" + code + ")" }), h("p", { text: p.specification }),
+        h("p", { class: "lab", text: P.ui.provenance.authors }), U.refList(p.sources),
+        h("p", { class: "muted small", text: D.sources.filter(function (s) { return s.id === "DCJ"; })[0].role }))));
   }
 
-  /* Éventail des références compatibles et fente de précision. */
-  function fanSvg(horizontal) {
-    var L = 300, Wd = 200, slit = 205, origin = 100;
-    var cands = [30, 68, 114, 160], pick = 2;
-    var s = svgEl("svg", { viewBox: horizontal ? "0 0 " + L + " " + Wd : "0 0 " + Wd + " " + L, class: "m-fan " + (horizontal ? "is-h" : "is-v"), "aria-hidden": "true" });
-    function P2(along, across) { return horizontal ? [along, across] : [across, along]; }
-    function line(a, b, attrs) { var p = P2(a[0], a[1]), q = P2(b[0], b[1]); attrs.x1 = p[0]; attrs.y1 = p[1]; attrs.x2 = q[0]; attrs.y2 = q[1]; s.appendChild(svgEl("line", attrs)); }
-    cands.forEach(function (c, i) {
-      line([0, origin], [slit, c], { class: "cand" + (i === pick ? " picked" : ""), stroke: AMBER });
-    });
-    /* fente : deux segments laissant une ouverture sur la référence retenue */
-    var gap = 9, sel = cands[pick];
-    line([slit, 8], [slit, sel - gap], { class: "slit" });
-    line([slit, sel + gap], [slit, Wd - 8], { class: "slit" });
-    var slope = (sel - origin) / slit;
-    var exitAcross = sel + slope * (L - slit);
-    line([slit, sel], [L, exitAcross], { class: "kept", stroke: AMBER });
-    var pin = P2(0, origin), pout = P2(L, exitAcross);
-    s.dataset.in = pin.join(",");
-    s.dataset.out = pout.join(",");
-    s.dataset.vb = (horizontal ? [L, Wd] : [Wd, L]).join(",");
-    return s;
+  function openRelations() {
+    U.openDrawer(h("div", { class: "drawer-body" },
+      h("p", { class: "eyebrow", text: "Exigences de justification" }),
+      h("h2", { id: "drawer-title", text: "Quatre dimensions interdépendantes" }),
+      h("p", { class: "lead", text: D.model.relations }),
+      h("ul", { class: "dim-orient" }, P.dims.map(function (d) {
+        return h("li", { style: "--dim:" + P.ui.dimColors[d.id].ray }, h("span", { class: "lab inline", text: d.label + " · " }), P.ui.dimRoles[d.id].role);
+      })),
+      h("p", { text: D.model.generalization }),
+      h("details", { class: "more" }, h("summary", { text: "Niveaux de lecture et références" }),
+        h("ul", { class: "plain" }, D.model.reading_levels.map(function (r) { return h("li", { text: r }); })),
+        h("p", { class: "lab", text: P.ui.provenance.ours }), h("p", { text: D.metadata.content_policy }),
+        h("p", { class: "lab", text: P.ui.provenance.authors }), U.refList(D.model.sources))));
   }
 
-  function relBtn(relId, cls, children, api, label) {
-    return h("button", { type: "button", class: "rel " + (cls || ""), "data-rel": relId, "aria-label": label || null, onclick: function () { api.openRelation(relId); } }, children);
+  function openBlock(id) {
+    var b = P.block(id);
+    U.openDrawer(h("div", { class: "drawer-body" },
+      h("p", { class: "eyebrow", text: "Modèle conceptuel" }),
+      h("h2", { id: "drawer-title", text: b.label }),
+      h("p", { class: "lead", text: b.detail }),
+      D.model.links.filter(function (l) { return l.from_id === id || l.to_id === id; }).map(function (l) {
+        return h("p", null, h("span", { class: "lab inline", text: P.block(l.from_id).label + " → " + P.block(l.to_id).label + " : " }), l.label);
+      }),
+      id === "dossier" ? h("p", { class: "callout-note", text: T.dossierNote }) : null,
+      id === "judgment" ? h("p", { class: "muted", text: T.judgmentNoCase }) : null));
   }
 
-  P.renderModel = function (api) {
-    var st = M.stations, dims = M.dimensions;
-    var scene = h("section", { class: "optic model", id: "model", "aria-label": M.title });
-    var overlay = svgEl("svg", { class: "rays-overlay", "aria-hidden": "true" });
-    scene.appendChild(overlay);
+  /*
+   * state : { conception: null | "M"|"I"|"G"|"V"|"N" }
+   * api : { setConception(id|null), goIllustrations(id|null) }
+   */
+  P.renderModel = function (state, api) {
+    var prof = state.conception ? P.profile(state.conception) : null;
+    var scene = h("section", { class: "optic model", id: "model", "aria-label": "Modèle conceptuel" });
+    scene.appendChild(svgEl("svg", { class: "rays-overlay", "aria-hidden": "true" }));
     var inner = h("div", { class: "wrap model-inner" });
     scene.appendChild(inner);
+    inner.appendChild(h("header", { class: "m-head" },
+      h("h2", { text: D.model.title }),
+      h("p", { class: "m-lead", text: D.model.lead })));
 
-    inner.appendChild(h("header", { class: "m-head" }, h("h2", { text: M.title }), h("p", { class: "m-lead", text: M.lead.text })));
+    var grid = h("div", { class: "m-grid" });
 
-    var fDomain = h("div", { class: "frame f-domain" }, h("span", { class: "frame-tab", title: M.frames.domain.note, text: M.frames.domain.label }));
-    var row = h("div", { class: "m-row" });
-
-    row.appendChild(h("div", { class: "st st-prop" },
-      h("span", { class: "lamp-glow", "data-anchor": "prop", "aria-hidden": "true" }),
-      h("span", { class: "st-label", text: st.property.label }),
-      h("span", { class: "st-cap", text: st.property.caption })));
-
-    row.appendChild(h("div", { class: "st st-prism" },
-      relBtn("orientation", "prism-btn", [prismSvg(true), prismSvg(false)], api, st.conception.label + " : ce que la conception mobilise"),
-      h("span", { class: "st-label", text: st.conception.label }),
-      h("span", { class: "st-cap", text: st.conception.caption })));
-
-    var fSit = h("div", { class: "frame f-sit" }, h("span", { class: "frame-tab", title: M.frames.situation.note, text: M.frames.situation.label }));
-    var sitRow = h("div", { class: "m-sit-row" });
-    sitRow.appendChild(h("div", { class: "st st-fan" },
-      fanSvg(true), fanSvg(false),
-      h("div", { class: "fan-labels" },
-        relBtn("orientation", "fan-l", [h("span", { class: "st-label", text: st.compatible.label }), h("span", { class: "st-cap", text: st.compatible.caption })], api),
-        relBtn("precision", "fan-r", [h("span", { class: "st-label", text: st.precision.label }), h("span", { class: "st-cap", text: st.precision.caption })], api))));
-
-    var crit = h("div", { class: "crit" },
-      h("p", { class: "crit-title", text: st.criterion.label }),
-      h("div", { class: "dim dim-content", "data-anchor": "content" },
-        h("span", { class: "dk", text: dims.content.label }), h("span", { class: "dq", text: dims.content.question })),
-      relBtn("fonction", "dim dim-function", [
-        h("span", { class: "fn-link", "aria-hidden": "true" }),
-        h("span", { class: "dk" }, dims.function.label, h("span", { class: "fn-kinds", text: "directe · instrumentale · les deux" })),
-        h("span", { class: "dq", text: dims.function.question })], api),
-      h("div", { class: "dim dim-reference", "data-anchor": "reference" },
-        h("span", { class: "dk" }, st.retained.label, h("span", { class: "dtag", text: dims.reference.tag })),
-        h("span", { class: "dq", text: dims.reference.question })));
-    sitRow.appendChild(h("div", { class: "st st-crit" }, crit));
-    fSit.appendChild(sitRow);
-    row.appendChild(fSit);
-    fDomain.appendChild(relBtn("P1", "callout c-p1", [h("span", { class: "pk", text: "P1" }), h("span", { class: "ptxt", text: M.propositions.P1.text }), h("span", { class: "more", "aria-hidden": "true", text: "›" })], api));
-    fDomain.appendChild(row);
-    inner.appendChild(fDomain);
-
-    /* Section 4 : fonctions et conclusions */
-    var F = M.functions;
-    var func = h("section", { class: "m-func", "aria-label": F.title });
-    func.appendChild(h("h3", { class: "mf-title", text: F.title }));
-    var grid = h("div", { class: "mf-grid" });
-    F.items.forEach(function (it, i) {
-      grid.appendChild(h("div", { class: "mf-just", "data-anchor": i === 0 ? "just-a" : "just-b", style: "grid-column:" + (i ? 3 : 1) + ";grid-row:1" },
-        h("p", { class: "mf-simple", text: "« " + it.simple + " »" }),
-        h("p", { class: "mf-name" }, h("span", { class: "fn-dot", "aria-hidden": "true" }), "Nom scientifique : ", h("strong", { text: it.name })),
-        h("p", { class: "mf-note", text: it.note })));
+    /* conception : le grand prisme */
+    var conc = h("div", { class: "m-conc" });
+    var stageCol = h("div", { class: "m-prism-col" });
+    stageCol.appendChild(h("div", { class: "m-src" }, h("span", { class: "lamp-glow", "data-anchor": "lamp", "aria-hidden": "true" }),
+      h("span", { class: "src-txt" }, h("span", { class: "st-label", text: T.beamLabel }), h("span", { class: "st-cap", text: T.beamCaption }))));
+    var dial = P.createDial({
+      uid: "m", conceptions: P.conceptions, conceptionId: state.conception, rays: P.dimRays,
+      name: "Prisme des conceptions de la valeur sociale",
+      onChange: function (id) { api.setConception(id); },
     });
-    grid.appendChild(h("div", { class: "mf-inputs", style: "grid-column:1 / -1;grid-row:2" },
-      h("div", { class: "mf-in" }, h("span", { class: "mf-k", text: F.inputs.label }), h("span", { text: F.inputs.text })),
-      relBtn("P2", "callout c-p2", [h("span", { class: "pk", text: "P2" }), h("span", { class: "ptxt", text: M.propositions.P2.text }), h("span", { class: "more", "aria-hidden": "true", text: "›" })], api)));
-    F.items.forEach(function (it, i) {
-      var col = i ? 3 : 1;
-      grid.appendChild(h("div", { class: "mf-concl", style: "grid-column:" + col + ";grid-row:3" },
-        h("span", { class: "mf-k" }, "Conclusion autorisée", h("span", { class: "mf-tag", text: it.name })),
-        h("p", { class: "mf-main", text: it.allowed }),
-        it.condition ? h("p", { class: "mf-cond", text: it.condition }) : null));
-      grid.appendChild(h("div", { class: "mf-remain", style: "grid-column:" + col + ";grid-row:4" },
-        h("span", { class: "mf-k", text: "Éléments restant à établir" }),
-        h("p", { text: it.remaining })));
-    });
-    func.appendChild(grid);
-    func.appendChild(h("ul", { class: "mf-notes" }, F.notes.map(function (n) { return h("li", { text: n }); })));
-    inner.appendChild(func);
+    stageCol.appendChild(dial.el);
+    var cBlock = P.block("conception");
+    conc.appendChild(h("div", { class: "m-conc-name" },
+      h("button", { type: "button", class: "kick-btn", onclick: function () { openBlock("conception"); } }, cBlock.label, h("span", { class: "kick-sub", text: " · " + T.forum })),
+      prof
+        ? h("button", { type: "button", class: "cn-btn", id: "conception-btn", onclick: function () { openConception(state.conception); } }, h("span", { class: "cn", text: prof.name }), h("span", { class: "chev", "aria-hidden": "true", text: "›" }))
+        : h("p", { class: "generic-hint", text: T.genericHint }),
+      prof ? h("p", { class: "cn-q", text: prof.question }) : null,
+      prof ? h("button", { type: "button", class: "link-light small", id: "generic-btn", onclick: function () { api.setConception(null); } }, "Revenir à la vue générique") : null));
+    conc.appendChild(stageCol);
+    grid.appendChild(conc);
 
-    inner.appendChild(h("p", { class: "m-foot" },
-      h("button", { type: "button", class: "link-light small", id: "notes-btn", onclick: api.openNotes }, "Notes et références"),
-      h("span", { class: "sep", "aria-hidden": "true", text: "·" }),
-      h("a", { class: "link-light small", href: "#/illustrations", text: "Voir les illustrations" })));
+    /* dossier : entrée distincte */
+    var dBlock = P.block("dossier");
+    grid.appendChild(h("aside", { class: "m-dossier", "data-anchor": "dossier" },
+      h("button", { type: "button", class: "dossier-card", onclick: function () { openBlock("dossier"); } },
+        h("span", { class: "dos-k", text: dBlock.label }),
+        h("ul", { class: "dos-items" }, T.dossierItems.map(function (t) { return h("li", { text: t }); })),
+        h("span", { class: "dos-note", text: dBlock.detail }),
+        h("span", { class: "chev", "aria-hidden": "true", text: "›" }))));
+
+    /* quatre dimensions */
+    var rBlock = P.block("requirements");
+    var req = h("div", { class: "m-req frame" });
+    req.appendChild(h("div", { class: "req-head" },
+      h("p", { class: "req-k", text: rBlock.label }),
+      h("p", { class: "req-link", text: "la conception " + P.link("conception", "requirements").label }),
+      h("button", { type: "button", class: "link-light small", id: "relations-btn", onclick: openRelations }, T.dimsLink + " ›")));
+    var cards = h("div", { class: "req-cards" });
+    P.dims.forEach(function (d) {
+      cards.appendChild(U.dimCard(d, {
+        text: prof ? prof.generic_dimensions[d.id] : null,
+        onclick: function () { U.openDimension(d.id, { profileId: state.conception }); },
+      }));
+    });
+    req.appendChild(cards);
+    grid.appendChild(req);
+
+    /* confrontation */
+    var cf = P.block("confrontation");
+    grid.appendChild(h("button", { type: "button", class: "m-confront", "data-anchor": "confront", onclick: function () { openBlock("confrontation"); } },
+      h("span", { class: "mc-links" }, "les exigences " + P.link("requirements", "confrontation").label + " · le dossier " + P.link("dossier", "confrontation").label),
+      h("span", { class: "mc-k", text: cf.label }),
+      h("span", { class: "mc-d", text: cf.detail })));
+
+    /* jugement */
+    var jd = P.block("judgment");
+    grid.appendChild(h("div", { class: "m-judge", "data-anchor": "judge" },
+      h("span", { class: "mc-links", text: "la confrontation " + P.link("confrontation", "judgment").label }),
+      h("button", { type: "button", class: "judge-btn", onclick: function () { openBlock("judgment"); } },
+        h("span", { class: "mc-k", text: jd.label }),
+        h("span", { class: "mc-d", text: "Appréciation · portée autorisée · réserves" })),
+      prof
+        ? h("p", { class: "judge-claim" }, h("span", { class: "lab inline", text: "Proposition examinée sous cette conception : " }), prof.claim)
+        : h("p", { class: "judge-claim muted", text: T.judgmentNoCase })));
+
+    inner.appendChild(grid);
+    inner.appendChild(h("div", { class: "m-cta" },
+      h("button", { type: "button", class: "btn cta", id: "to-illustrations", onclick: function () { api.goIllustrations(state.conception); } },
+        prof ? "Voir la conception " + prof.name.toLowerCase() + " appliquée à un dossier" : "Voir le fonctionnement sur des dossiers construits"),
+      h("button", { type: "button", class: "link-light small", id: "notes-btn", onclick: U.openNotes }, "Statut et références")));
+    scene._dial = dial;
     return scene;
   };
 
   /* ---------- faisceaux, calculés d'après la mise en page ---------- */
-  function visible(el) { return el && el.getBoundingClientRect().width > 0; }
-  function svgPoint(svg, which) {
-    var vb = svg.dataset.vb.split(",").map(Number), p = svg.dataset[which].split(",").map(Number);
-    var r = svg.getBoundingClientRect();
-    return { x: r.left + p[0] * r.width / vb[0], y: r.top + p[1] * r.height / vb[1] };
-  }
-
   P.drawModelRays = function (scene) {
-    if (!scene) return;
+    if (!scene || !scene.isConnected) return;
     var svg = scene.querySelector(".rays-overlay");
     var box = scene.getBoundingClientRect();
     svg.setAttribute("width", box.width); svg.setAttribute("height", box.height);
     svg.setAttribute("viewBox", "0 0 " + box.width + " " + box.height);
     while (svg.firstChild) svg.removeChild(svg.firstChild);
-    var defs = svgEl("defs");
-    defs.innerHTML = '<marker id="arr-amber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="' + AMBER + '"/></marker>' +
-      '<marker id="arr-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="' + GREEN + '"/></marker>';
-    svg.appendChild(defs);
     function rel(p) { return { x: p.x - box.left, y: p.y - box.top }; }
-    function rect(el) { var r = el.getBoundingClientRect(); return { l: r.left - box.left, r: r.right - box.left, t: r.top - box.top, b: r.bottom - box.top, cx: (r.left + r.right) / 2 - box.left, cy: (r.top + r.bottom) / 2 - box.top }; }
-    function path(d, cls, color, marker) { var e = svgEl("path", { d: d, class: cls }); if (color) e.setAttribute("stroke", color); if (marker) e.setAttribute("marker-end", "url(#" + marker + ")"); svg.appendChild(e); }
-    function curve(a, b, horiz) {
-      if (horiz) { var mx = (a.x + b.x) / 2; return "M" + a.x + " " + a.y + " C " + mx + " " + a.y + ", " + mx + " " + b.y + ", " + b.x + " " + b.y; }
-      var my = (a.y + b.y) / 2; return "M" + a.x + " " + a.y + " C " + a.x + " " + my + ", " + b.x + " " + my + ", " + b.x + " " + b.y;
-    }
+    function rect(el) { var r = el.getBoundingClientRect(); return { l: r.left - box.left, r: r.right - box.left, t: r.top - box.top, b: r.bottom - box.top, cx: (r.left + r.right) / 2 - box.left, cy: (r.top + r.bottom) / 2 - box.top, w: r.width }; }
+    function path(d, cls, color) { var e = svgEl("path", { d: d, class: cls }); if (color) e.setAttribute("stroke", color); svg.appendChild(e); return e; }
+    function curveV(a, b) { var my = (a.y + b.y) / 2; return "M" + a.x + " " + a.y + " C " + a.x + " " + my + ", " + b.x + " " + my + ", " + b.x + " " + b.y; }
 
-    var prismH = scene.querySelector(".m-prism.is-h"), prismV = scene.querySelector(".m-prism.is-v");
-    var horiz = visible(prismH);
-    var prism = horiz ? prismH : prismV;
-    var fan = scene.querySelector(".m-fan.is-" + (horiz ? "h" : "v"));
-    var lamp = rect(scene.querySelector('[data-anchor="prop"]'));
-    var pin = rel(svgPoint(prism, "in")), pout = rel(svgPoint(prism, "out"));
-    var fin = rel(svgPoint(fan, "in")), fout = rel(svgPoint(fan, "out"));
-    var a0 = horiz ? { x: lamp.r - 4, y: lamp.cy } : { x: lamp.cx, y: lamp.b - 4 };
+    var dial = scene._dial;
+    var lamp = rect(scene.querySelector('[data-anchor="lamp"]'));
+    var en = rel(dial.entry()), ex = rel(dial.exit());
+    var d0 = curveV({ x: lamp.cx, y: lamp.b - 4 }, en);
+    path(d0, "beam-glow"); path(d0, "beam-core");
 
-    /* propriété → conception : faisceau blanc */
-    var d1 = curve(a0, pin, horiz);
-    path(d1, "beam-glow"); path(d1, "beam-core");
-    /* conception → éventail : la lumière orientée */
-    var d2 = curve(pout, fin, horiz);
-    path(d2, "beam-glow"); path(d2, "beam-core warm");
-
-    /* fente → référence retenue : même couleur que la bande Référence */
-    var refBand = rect(scene.querySelector('[data-anchor="reference"]'));
-    var contBand = rect(scene.querySelector('[data-anchor="content"]'));
-    var target = { x: refBand.l + 2, y: refBand.cy };
-    var d3;
-    if (horiz) d3 = curve(fout, target, true);
-    else {
-      var lane = refBand.l - 12;
-      var ct = rect(scene.querySelector(".crit-title"));
-      var yL = Math.max(fout.y + 40, Math.min(fout.y + 60, ct.t - 6));
-      d3 = "M" + fout.x + " " + fout.y + " C " + fout.x + " " + (fout.y + (yL - fout.y) / 2) + ", " + lane + " " + (fout.y + (yL - fout.y) / 3) + ", " + lane + " " + yL +
-        " L " + lane + " " + (target.y - 12) + " Q " + lane + " " + target.y + ", " + (lane + 12) + " " + target.y + " L " + target.x + " " + target.y;
-    }
-    path(d3, "ray-glow", AMBER); path(d3, "ray-core", AMBER);
-
-    /* la référence oriente le contenu : arc ambré à droite du critère */
-    var rx = Math.max(refBand.r, contBand.r) + 4;
-    var bulge = horiz ? 30 : 14;
-    path("M" + rx + " " + refBand.cy + " C " + (rx + bulge) + " " + refBand.cy + ", " + (rx + bulge) + " " + contBand.cy + ", " + (rx + 2) + " " + contBand.cy, "orient-arc", AMBER, "arr-amber");
-
-    /* critère → justifications : liens verts, à angle droit, sous le titre de la section */
-    var fn = rect(scene.querySelector(".crit"));
-    var ja = rect(scene.querySelector('[data-anchor="just-a"]')), jb = rect(scene.querySelector('[data-anchor="just-b"]'));
-    var title = rect(scene.querySelector(".mf-title"));
-    var x0 = fn.cx, y0 = fn.b + 2;
-    if (jb.t > ja.b) {
-      /* empilé (téléphone) : un seul lien jusqu'au titre */
-      path("M" + x0 + " " + y0 + " L " + x0 + " " + (title.t - 6), "fn-line", GREEN, "arr-green");
-    } else {
-      var yH = title.b + 14, r = 12;
-      [ja, jb].forEach(function (j) {
-        var tx = j.cx, dir = tx < x0 ? -1 : 1;
-        var d = Math.abs(tx - x0) < 2
-          ? "M" + x0 + " " + y0 + " L " + tx + " " + (j.t - 3)
-          : "M" + x0 + " " + y0 + " L " + x0 + " " + (yH - r) + " Q " + x0 + " " + yH + ", " + (x0 + dir * r) + " " + yH +
-            " L " + (tx - dir * r) + " " + yH + " Q " + tx + " " + yH + ", " + tx + " " + (yH + r) + " L " + tx + " " + (j.t - 3);
-        path(d, "fn-line", GREEN, "arr-green");
-      });
-    }
+    var cards = [].slice.call(scene.querySelectorAll(".req-cards .dim-card")).map(rect);
+    var conf = rect(scene.querySelector('[data-anchor="confront"]'));
+    var stacked = cards.length > 1 && cards[1].t > cards[0].b - 2;
+    var n = cards.length;
+    cards.forEach(function (c, j) {
+      var color = P.dimRays[j];
+      var spread = (j - (n - 1) / 2) * 4;
+      var a, b, d;
+      if (!stacked) {
+        /* exigences : du prisme au haut de chaque carte, puis de la carte vers la confrontation */
+        a = { x: ex.x + spread, y: ex.y }; b = { x: c.cx, y: c.t + 1 };
+        d = curveV(a, b);
+        path(d, "ray-glow", color); path(d, "ray-core", color);
+        var tx = conf.l + conf.w * (j + 1) / (n + 1);
+        var d2 = curveV({ x: c.cx, y: c.b - 1 }, { x: tx, y: conf.t + 1 });
+        path(d2, "ray-glow", color); path(d2, "ray-core thin", color);
+      } else {
+        /* téléphone : un couloir à gauche des cartes, jusqu'à la confrontation */
+        var lane = c.l - 10 - (n - 1 - j) * 6;
+        var ty = c.t + 22;
+        var reqTop = rect(scene.querySelector(".m-req")).t;
+        var y1 = Math.max(ex.y + 10, reqTop - 22 - (n - 1 - j) * 6);
+        d = "M" + (ex.x + spread) + " " + ex.y + " L " + (ex.x + spread) + " " + y1 +
+          " Q " + (ex.x + spread) + " " + (y1 + 12) + ", " + (ex.x + spread - 12) + " " + (y1 + 12) +
+          " L " + (lane + 12) + " " + (y1 + 12) + " Q " + lane + " " + (y1 + 12) + ", " + lane + " " + (y1 + 24) +
+          " L " + lane + " " + (ty - 10) + " Q " + lane + " " + ty + ", " + (lane + 10) + " " + ty + " L " + (c.l + 2) + " " + ty;
+        path(d, "ray-glow", color); path(d, "ray-core", color);
+        var cy = conf.t + 16 + j * 6;
+        var dd = "M" + lane + " " + ty + " L " + lane + " " + (cy - 10) + " Q " + lane + " " + cy + ", " + (lane + 10) + " " + cy + " L " + (conf.l + 2) + " " + cy;
+        path(dd, "ray-core thin", color);
+      }
+    });
+    /* dossier : un trait plein, de couleur papier, distinct des faisceaux */
+    var dos = rect(scene.querySelector('[data-anchor="dossier"] .dossier-card'));
+    var frame = rect(scene.querySelector(".m-req"));
+    var gx = frame.r + 16, r = 14;
+    var dpath = stacked
+      ? "M" + dos.cx + " " + dos.b + " L " + dos.cx + " " + conf.t
+      : "M" + dos.cx + " " + dos.b + " L " + dos.cx + " " + (frame.t - 18 - r) + " Q " + dos.cx + " " + (frame.t - 18) + ", " + (dos.cx + r) + " " + (frame.t - 18) +
+        " L " + (gx - r) + " " + (frame.t - 18) + " Q " + gx + " " + (frame.t - 18) + ", " + gx + " " + (frame.t - 18 + r) +
+        " L " + gx + " " + (conf.cy - r) + " Q " + gx + " " + conf.cy + ", " + (gx - r) + " " + conf.cy + " L " + (conf.r + 2) + " " + conf.cy;
+    path(dpath, "dossier-line");
+    var jd = rect(scene.querySelector('[data-anchor="judge"] .judge-btn'));
+    path("M" + jd.cx + " " + conf.b + " L " + jd.cx + " " + jd.t, "judge-line");
   };
 })();

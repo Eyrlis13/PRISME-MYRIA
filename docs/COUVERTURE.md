@@ -1,37 +1,21 @@
-# Couverture de la version 0.5
+# Couverture de la version 1.0 (16 octobre 2026)
 
-## Configurations intégrées (6)
+## Contenu intégré
 
-| Groupe | Domaine | Configuration | Conception |
-|---|---|---|---|
-| Accès à un accompagnement administratif | Portée et accès | A | Parties prenantes ciblées |
-| | | B | Normative |
-| Ateliers numériques (deux situations : divergence, convergence) | Pertinence | A | Individualiste |
-| | | B | Parties prenantes ciblées |
-| Une conception peut soutenir plusieurs fonctions | Portée et accès | Contre-exemple 1 | Parties prenantes ciblées |
-| | | Contre-exemple 2 | Normative |
+- Modèle générique : titre, introduction, quatre dimensions, cinq blocs, quatre liens, relations, généralisation, niveaux de lecture, sources du modèle.
+- Cinq profils (M, I, G, V, N) avec prémisse, question, proposition examinée, orientations génériques, spécification appliquée, éléments à préciser, ce que la conception n'implique pas, sources.
+- Quinze cas et leurs 75 lectures (quatre dimensions avec texte et détail, conclusion, justification, portée, réserve, statut, références).
+- Dix analyses de paires (affichées seulement pour la paire sélectionnée, en complément), six contrôles de sensibilité (séparés de la rotation), quinze sources (rôle, limite, passages).
 
-Neuf domaines n'ont aucun exemple : ils s'affichent « Configuration non intégrée à cette version. »
+## Choix d'affichage à relire (`data/interface-fr.js`)
 
-## Textes du modèle conceptuel à valider (`data/modele.js`)
+- Rôle et articulation de chaque dimension : condensation de `model.relations`.
+- Libellés courts des spécifications : M « Effets favorables et défavorables, ressources et horizon explicités » ; I « Appréciations individuelles restituées, sans moyenne ajoutée » ; G « Groupe et besoin du dossier commun » ; V « Bénéfice, engagement et raisons d'agir distingués » ; N « Principe retenu : consentement ».
+- Libellés des statuts : « Proposition établie / réfutée / indéterminée / partiellement établie / hétérogène ».
+- Quatrième couleur (règle d'appréciation) : lilas #b49be6.
 
-- Les explications des relations « La conception oriente », « Précision dans la situation » et « Fonction » (mobilisé, à justifier, déduit, détail).
-- Les explications de P1 et P2 (mobilisé, à justifier, déduit) ; les énoncés de P1 et P2 sont ceux de l'autrice.
-- Fonction directe, « éléments restant à établir » : « Les autres aspects ou exigences, et le jugement global. »
-- Fonction instrumentale, « conclusion autorisée » : « La satisfaction du standard par la propriété. »
+## Champs non affichés
 
-## Champs à documenter
-
-- Source du critère et source des données : non renseignées dans tous les exemples construits.
-- Pertinence : fonction, standard et constat non renseignés, par construction.
-- Contre-exemples : standard et constat non renseignés.
-- Origines (`origin`) et appuis (`supports`) : classification proposée, à valider par l'auteur.
-- Textes rédigés pour l'application, absents de l'énoncé : contextes et formulations des deux contre-exemples, implications des situations de pertinence, explications des justifications, conditions de contenu, notes d'appui.
-
-## Pour que le levier « changer de conception » frappe
-
-Sur les cinq faces du prisme, deux seulement sont documentées par exemple ; tourner vers les trois autres montre un rayon non décomposé et la mention « non intégrée ». Une troisième configuration pour l'accès (vertueuse ou maximisatrice, par exemple) ferait voir le contenu rester stable pendant que référence et fonction changent trois fois. C'est un travail de rédaction, non de développement.
-
-## Point conceptuel à trancher
-
-Le contexte commun de l'exemple de pertinence précise que les personnes valorisent « aussi d'autres usages ». La situation de convergence suppose le contraire. L'interface le signale dans la description de la situation ; une reformulation du contexte commun lèverait la tension.
+- `analysis_dimension` : son sens n'est pas défini dans le fichier ni dans les scripts ; il n'est pas affiché plutôt que de lui prêter une interprétation.
+- Aucun signe = ou ≠ : aucune comparaison sémantique par dimension n'est documentée (`interface.semantic_comparison`).
+- Domaines de Teasdale : aucun rattachement documenté dans les cas ; ils ne sont plus affichés.
