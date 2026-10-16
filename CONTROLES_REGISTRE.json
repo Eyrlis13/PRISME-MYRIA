@@ -1,0 +1,10 @@
+{
+  "cases": 15,
+  "lectures": 75,
+  "paires_completes": 10,
+  "controles_sensibilite": 6,
+  "empreintes_verifiees": true,
+  "references_resolues": true,
+  "temoins_convergence": true,
+  "portee": "Contrôle structurel du registre ; ne remplace pas l’examen scientifique des inférences."
+}

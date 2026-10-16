@@ -1,0 +1,1575 @@
+{
+  "date": "2026-10-15",
+  "formalisation_date": "2026-10-16",
+  "version": "1.2",
+  "purpose": "Épreuves analytiques du prisme des conceptions de la valeur sociale",
+  "method": "15 cas construits × 5 conceptions, 75 lectures argumentées ; 10 audits de paires ; 6 contrôles de sensibilité. Aucun test empirique ni estimation de fréquence.",
+  "profiles": {
+    "M": {
+      "name": "Maximisatrice",
+      "question": "Quel bénéfice d’ensemble et quelle supériorité sur les alternatives sont établis ?",
+      "premise": "La valeur est rapportée au bénéfice pour l’ensemble des personnes et composantes du système affectées.",
+      "specification": "Variante M1 : prise en compte des effets favorables et défavorables, à ressources et horizon explicités. Une dominance établie suffit pour départager deux options ; un arbitrage entre effets hétérogènes reste indéterminé sans règle de comparaison. Le nombre de participants ne vaut jamais, seul, maximisation.",
+      "claim": "Bénéfice d’ensemble et choix comparativement justifié",
+      "sources": [
+        "DCJ",
+        "KING",
+        "GK"
+      ],
+      "missing": "Périmètre, effets externes, alternatives ou règle de comparaison des bénéfices hétérogènes.",
+      "not_implied": "Ni monétarisation obligatoire, ni simple comptage, ni horizon court, ni équivalence automatique entre individus."
+    },
+    "I": {
+      "name": "Individualiste",
+      "question": "Pour quelles personnes le changement constitue-t-il un bénéfice selon ce qui compte pour elles ?",
+      "premise": "Le caractère bénéfique est rapporté aux besoins, préférences et appréciations des personnes concernées.",
+      "specification": "Variante I1 : restituer les appréciations individuelles et leur périmètre. Aucune majorité ni moyenne n’est ajoutée pour produire un verdict global. Une appréciation peut être étayée par plusieurs formes de données, sans imposer un questionnaire unique.",
+      "claim": "Bénéfice apprécié par les personnes",
+      "sources": [
+        "DCJ",
+        "T22"
+      ],
+      "missing": "Ce que les personnes valorisent, les effets qu’elles apprécient, les variations entre elles.",
+      "not_implied": "Ni égoïsme, ni satisfaction immédiate comme unique métrique, ni priorité automatique à la majorité."
+    },
+    "G": {
+      "name": "Parties prenantes ciblées",
+      "question": "L’action répond-elle au besoin commun qui justifie son intervention auprès du groupe visé ?",
+      "premise": "La valeur réside dans la réponse apportée à un besoin ou problème partagé par un groupe ciblé.",
+      "specification": "Variante G1 : groupe et besoin sont ceux du dossier commun. On conserve la couverture et les différences internes. Aucun seuil de succès global n’est ajouté. Une réponse au besoin peut être établie sans démontrer tous les bénéfices ni tous les effets de l’action.",
+      "claim": "Réponse au besoin du groupe ciblé",
+      "sources": [
+        "DCJ",
+        "T22"
+      ],
+      "missing": "Validation du besoin commun, appartenance au public, réalisation effective de la réponse et couverture.",
+      "not_implied": "Ni homogénéité des préférences, ni ignorance de la parole des personnes, ni assimilation des clients commerciaux aux bénéficiaires sociaux."
+    },
+    "V": {
+      "name": "Vertueuse",
+      "question": "Le bénéfice examiné procède-t-il d’un engagement moral explicité envers ses destinataires ?",
+      "premise": "DCJ rattachent cette conception au bénéfice généré à partir d’un sentiment d’obligation morale.",
+      "specification": "Variante V1 : séparer bénéfice constaté, contenu de l’engagement et raisons d’agir. Une déclaration ne suffit pas à établir l’origine morale ; la motivation ne prouve pas l’efficacité. Une motivation mixte n’équivaut pas à l’absence d’engagement moral. Le qualificatif « vertueux » n’est pas un certificat de moralité générale.",
+      "claim": "Bénéfice issu d’un engagement moral",
+      "sources": [
+        "DCJ",
+        "GH"
+      ],
+      "missing": "Engagement précis, indices crédibles des raisons d’agir et lien avec le bénéfice effectivement produit.",
+      "not_implied": "Ni bénévolat obligatoire, ni absence de recettes, ni équivalence avec toute l’éthique des vertus, ni effet bénéfique causé automatiquement par une intention."
+    },
+    "N": {
+      "name": "Normative",
+      "question": "L’action satisfait-elle l’exigence du principe explicitement retenu ?",
+      "premise": "La valeur prend la forme d’un principe qui guide les conduites et permet de les juger.",
+      "specification": "Variante N1 commune aux 15 cas : consentement éclairé et possibilité effective de refuser sans sanction, comme exigence indépendante du bilan des conséquences. Ce choix est explicite, parmi d’autres principes possibles. La conformité à N1 ne vaut ni efficacité, ni respect de toutes les exigences morales. N2, inclusion de chaque personne, est examinée séparément en sensibilité.",
+      "claim": "Conformité au principe de consentement retenu",
+      "sources": [
+        "DCJ",
+        "RG"
+      ],
+      "missing": "Principe applicable, situations concernées et faits démontrant sa réalisation ou sa violation.",
+      "not_implied": "Ni inclusion universelle automatique, ni interdiction générale d’agréger, ni exclusivité des critères de processus."
+    }
+  },
+  "sources": [
+    {
+      "id": "DCJ",
+      "authors": "de la Cruz Jara et Spanjol",
+      "year": 2025,
+      "title": "Understanding Multiple Perspectives on Social Value in Business: An Integrative Review and Typology",
+      "url": "https://doi.org/10.1007/s10551-024-05692-1",
+      "passages": "Typologie polythétique p. 415 ; cinq approches pp. 418–424 ; implications pp. 426–428.",
+      "read": "Original intégral disponible localement ; relecture ciblée de la construction de la typologie, des cinq approches et de leurs implications.",
+      "role": "Fondements des cinq conceptions. Leurs traductions ci-dessous en exigences de jugement sont nos inférences conditionnelles.",
+      "limit": "Ne fournit ni cinq algorithmes complets de jugement ni une correspondance univoque conception–critère. La causalité entre motivation morale et bénéfice ne peut être tenue pour établie."
+    },
+    {
+      "id": "KING",
+      "authors": "King",
+      "year": 2021,
+      "title": "Expanding theory-based evaluation: incorporating value creation in a theory of change",
+      "url": "https://doi.org/10.1016/j.evalprogplan.2021.101963",
+      "passages": "Manuscrit auteur pp. 4–5 et 12–14.",
+      "read": "Original auteur local ; relecture des passages sur le raisonnement évaluatif, les critères, la théorie de création de valeur et les limites de l’analyse économique.",
+      "role": "Fondement du passage valeurs–preuves–jugement et de la distinction changement/valeur.",
+      "limit": "L’articulation valeur, critères, preuves et jugement est déjà présente. Notre comparaison ne revendique pas son invention."
+    },
+    {
+      "id": "BENJ",
+      "authors": "Benjamin, Ebrahim et Gugerty",
+      "year": 2023,
+      "title": "Nonprofit Organizations and the Evaluation of Social Impact: A Research Program to Advance Theory and Practice",
+      "url": "https://doi.org/10.1177/08997640221123590",
+      "passages": "Version auteur pp. 14–17, particulièrement deuxième piste p. 16.",
+      "read": "Original local ; passage de l’agenda relu.",
+      "role": "Appel à expliciter comment les valeurs interviennent dans les critères, leur hiérarchisation et la synthèse des preuves.",
+      "limit": "L’appel porte sur les valeurs des acteurs et l’évaluation associative ; son traitement par les conceptions de DCJ constitue notre choix théorique."
+    },
+    {
+      "id": "GH",
+      "authors": "Gullickson et Hannum",
+      "year": 2019,
+      "title": "Making values explicit in evaluation practice",
+      "url": "https://doi.org/10.1177/1035719X19893892",
+      "passages": "pp. 164–170 ; logique élargie et tableau 2 pp. 171–175 ; limites pp. 175–176.",
+      "read": "Original intégral déjà lu ; passages ciblés relus.",
+      "role": "Justification explicite des critères, standards et synthèses ; valeurs susceptibles d’affecter plusieurs étapes de l’évaluation.",
+      "limit": "Position paper. Leurs valeurs motivationnelles et les conceptions de la valeur sociale sont des construits distincts, sans absence totale de recouvrement."
+    },
+    {
+      "id": "RG",
+      "authors": "Roorda et Gullickson",
+      "year": 2019,
+      "title": "Developing evaluation criteria using an ethical lens",
+      "url": "https://doi.org/10.1177/1035719X19891991",
+      "passages": "Exemple handicap pp. 183–184 ; matrice des principes et groupes pp. 184–190.",
+      "read": "Original intégral déjà lu ; exemple et matrice relus.",
+      "role": "Appui explicite à la différence entre maximisation des bénéfices et exigence fondée sur des droits ; ancrage du cas C05 et de la sensibilité N2.",
+      "limit": "Les chiffres et l’intervention d’aides techniques de notre cas sont construits. Leur exemple concerne le passage de l’hébergement institutionnel à la vie dans la communauté."
+    },
+    {
+      "id": "T22",
+      "authors": "Teasdale",
+      "year": 2022,
+      "title": "Representing the values of program participants: Endogenous evaluative criteria",
+      "url": "https://doi.org/10.1016/j.evalprogplan.2022.102123",
+      "passages": "pp. 2–4 et 8.",
+      "read": "Original local ; distinctions origine/application et implications relues.",
+      "role": "Pertinence des critères pour les participants et distinction entre origine des critères et application uniforme ou individualisée.",
+      "limit": "La collecte d’un témoignage ne garantit ni la définition du critère par la personne ni une règle de synthèse des appréciations individuelles."
+    },
+    {
+      "id": "TA25",
+      "authors": "Teasdale et Avent",
+      "year": 2025,
+      "title": "Investigating Equity and Social Justice within Programs: A Framework of Evaluative Criteria",
+      "url": "https://doi.org/10.56645/jmde.v21i49.1095",
+      "passages": "Développement du cadre et méthode, notamment pp. 5–13.",
+      "read": "Original local ; sections de construction et d’application du cadre relues.",
+      "role": "Benchmark de construction d’un cadre conceptuel et application d’une perspective transversale aux domaines évaluatifs.",
+      "limit": "La perspective d’équité comme lentille transversale est un acquis. Les domaines de critères ne sont pas des verdicts ni des fonctions de critère."
+    },
+    {
+      "id": "GK",
+      "authors": "Gargani et King",
+      "year": 2024,
+      "title": "Principles and methods to advance value for money",
+      "url": "https://doi.org/10.1177/13563890231221526",
+      "passages": "pp. 52–53 et 62–65.",
+      "read": "Original local ; passages sur les conceptions et les conclusions multiples relus.",
+      "role": "Pluralité des conceptions de valeur et possibilité de conclusions multiples ; rôle des rubriques.",
+      "limit": "Ils parlent déjà explicitement de conceptions de valeur. La différence terminologique valeurs/conceptions ne suffit donc pas à établir notre originalité."
+    },
+    {
+      "id": "KW",
+      "authors": "Kroeger et Weber",
+      "year": 2014,
+      "title": "Developing a Conceptual Framework for Comparing Social Value Creation",
+      "url": "https://doi.org/10.5465/amr.2012.0344",
+      "passages": "pp. 514–515 ; autres passages ciblés sur le bien-être.",
+      "read": "Original local ; distinction réalisations/bien-être relue.",
+      "role": "Appui à la séparation entre prestations, changements et bénéfices ; cadre conceptuel de comparaison de valeur sociale.",
+      "limit": "Leur choix du bien-être subjectif ne s’impose pas à toutes les conceptions de DCJ."
+    },
+    {
+      "id": "JAA",
+      "authors": "Jaakkola",
+      "year": 2020,
+      "title": "Designing conceptual articles: four approaches",
+      "url": "https://doi.org/10.1007/s13162-020-00161-0",
+      "passages": "Section Theory synthesis et distinction entre revue et intégration conceptuelle.",
+      "read": "Original local ; section relue.",
+      "role": "Guide de synthèse théorique et de clarification du rôle de chaque ressource.",
+      "limit": "La quantité de cellules et la seule juxtaposition de théories ne constituent pas un apport conceptuel."
+    },
+    {
+      "id": "AGU",
+      "authors": "Aguinis, Beltran, Archibold, Jean et Rice",
+      "year": 2023,
+      "title": "Thought experiments: Review and recommendations",
+      "url": "https://doi.org/10.1002/job.2658",
+      "passages": "pp. 548–551, recommandations et explicitation des hypothèses.",
+      "read": "Original auteur accessible ; lecture ciblée du tableau de recommandations et des sections 5.6–5.8.",
+      "role": "Justification de l’usage de cas construits pour éprouver les conséquences de prémisses et rechercher des contre-exemples.",
+      "limit": "Ces épreuves ne donnent ni fréquences empiriques ni preuve du comportement effectif des forums."
+    },
+    {
+      "id": "PET",
+      "authors": "Peterson",
+      "year": 2026,
+      "title": "Democratic deliberation as a North Star: Showcasing a framework to assess the value for money of systems-change efforts",
+      "url": "https://doi.org/10.1177/13563890251386814",
+      "passages": "Introduction et sections The shift towards deliberative valuing / Conceptualising the value for money of systems-change efforts.",
+      "read": "Lecture ciblée du texte éditeur en ligne ; aucun audit intégral de la démonstration empirique.",
+      "role": "Voisin récent : cadre de types de valeur et rôle de la délibération dans le jugement.",
+      "limit": "Publication en ligne décembre 2025, volume 2026. La présente note ne revendique pas une comparaison exhaustive avec son étude de cas."
+    },
+    {
+      "id": "DER",
+      "authors": "Dershem",
+      "year": 2026,
+      "title": "Ordering Value in Evaluation: Methods, Judgment, and Evaluative Practice",
+      "url": "https://doi.org/10.1177/10982140261472438",
+      "passages": "Résumé éditeur et références seulement.",
+      "read": "Texte intégral inaccessible dans les accès consultés ; absent de la recherche ciblée dans les titres Zotero lisibles.",
+      "role": "Voisin récent à discuter : organisation des valeurs à travers méthodes et niveaux d’évaluation.",
+      "limit": "Aucune affirmation sur ce que le texte complet omet. La comparaison détaillée et une revendication de nouveauté générale du classement des opérations restent ouvertes."
+    },
+    {
+      "id": "GATES",
+      "authors": "Gates, Teasdale, Shim et Hubacz",
+      "year": 2024,
+      "title": "Whose and what values? Advancing and illustrating explicit specification of evaluative criteria in education",
+      "url": "https://doi.org/10.1016/j.stueduc.2024.101335",
+      "passages": "Résumé et présentation éditeur.",
+      "read": "Lecture limitée ; pièce Zotero repérée au format HTML, pas de texte intégral validé.",
+      "role": "Voisin sur la spécification explicite des critères et leurs implications pour les jugements.",
+      "limit": "Pas d’inférence d’absence à partir de cette lecture partielle."
+    },
+    {
+      "id": "BOV",
+      "authors": "Bovens",
+      "year": 2007,
+      "title": "Analysing and Assessing Accountability: A Conceptual Framework",
+      "url": "https://doi.org/10.1111/j.1468-0386.2007.00378.x",
+      "passages": "Définition de la relation de reddition de comptes dans le résumé éditeur.",
+      "read": "Résumé éditeur vérifié le 16 octobre 2026 ; usage limité à la définition de la relation acteur–forum.",
+      "role": "Situer le forum et le jugement dans la relation de reddition de comptes.",
+      "limit": "La typologie des quatre dimensions de justification n’est pas attribuée à Bovens."
+    }
+  ],
+  "cases": [
+    {
+      "id": "C01",
+      "title": "Convergence avec un dossier complet",
+      "context": "Aides techniques à domicile",
+      "objective": "Améliorer l’autonomie quotidienne des 30 personnes ciblées à douze mois.",
+      "facts": [
+        "Les 30 personnes présentent le besoin partagé et validé de réaliser une activité quotidienne seule ; elles obtiennent cette capacité et chacune la valorise.",
+        "Le dossier couvre les autres personnes affectées, les coûts et les effets indirects : aucune atteinte n’est relevée dans le cas construit. L’option est au moins aussi bénéfique que chaque alternative réalisable et supérieure sur une dimension, sans désavantage ailleurs.",
+        "Le consentement éclairé et le refus sans sanction sont attestés pour chaque personne.",
+        "Des éléments convergents documentent un engagement moral effectif d’aider ce public et sa mise en œuvre ; les seules déclarations ne constituent pas cette preuve."
+      ],
+      "test": "Vérifier que le prisme autorise une convergence lorsque les exigences de chaque lecture sont couvertes.",
+      "results": {
+        "M": {
+          "status": "etabli",
+          "conclusion": "Choix collectivement justifié parmi les alternatives examinées.",
+          "warrant": "La dominance documentée et le périmètre couvert soutiennent la comparaison.",
+          "refs": [
+            "DCJ:419",
+            "KING:4–5"
+          ],
+          "reserve": "Conclusion bornée aux alternatives, ressources et effets du dossier.",
+          "scope": "Système affecté et alternatives",
+          "change": "regle"
+        },
+        "I": {
+          "status": "etabli",
+          "conclusion": "Un bénéfice est reconnu par chacune des 30 personnes.",
+          "warrant": "L’amélioration et son appréciation personnelle sont toutes deux documentées.",
+          "refs": [
+            "DCJ:420–421",
+            "T22:3–4"
+          ],
+          "reserve": "Aucune règle de moyenne ni prédiction pour d’autres personnes.",
+          "scope": "30 personnes, individuellement",
+          "change": "qualification"
+        },
+        "G": {
+          "status": "etabli",
+          "conclusion": "Le besoin partagé des 30 personnes reçoit une réponse effective.",
+          "warrant": "Le besoin, le public et la réponse coïncident dans le dossier.",
+          "refs": [
+            "DCJ:421–422"
+          ],
+          "reserve": "Ne prouve pas à elle seule la supériorité sur toutes les alternatives.",
+          "scope": "Groupe ciblé et besoin validé",
+          "change": "portee"
+        },
+        "V": {
+          "status": "etabli",
+          "conclusion": "Le bénéfice réalisé procède de l’engagement moral documenté.",
+          "warrant": "Les effets et les raisons d’agir sont étayés séparément puis reliés.",
+          "refs": [
+            "DCJ:422–423"
+          ],
+          "reserve": "Ne certifie pas la moralité générale de l’organisation.",
+          "scope": "Action et engagement moral précisé",
+          "change": "qualification"
+        },
+        "N": {
+          "status": "etabli",
+          "conclusion": "Le principe de consentement N1 est satisfait.",
+          "warrant": "Le consentement et la possibilité de refus sont documentés pour tous.",
+          "refs": [
+            "DCJ:423–424"
+          ],
+          "reserve": "La conformité porte sur N1.",
+          "scope": "Conduite et personnes concernées",
+          "change": "regle"
+        }
+      },
+      "limits": "",
+      "kind": "Cas construit ; aucune donnée empirique attribuée aux auteurs",
+      "dossier_hash": "bc82abd62b17658f2e132388c546cc621b02cc72f97c679ab9bcf77caa09fdfb"
+    },
+    {
+      "id": "C02",
+      "title": "Capacité améliorée et appréciations absentes",
+      "context": "Aides techniques à domicile",
+      "objective": "Améliorer l’autonomie quotidienne des 30 personnes ciblées à douze mois.",
+      "facts": [
+        "Le besoin commun de réaliser seule une activité est validé et les 30 personnes acquièrent cette capacité.",
+        "Leurs appréciations de cette amélioration et les effets sur leurs proches ne sont pas recueillis. Les alternatives ne sont pas évaluées.",
+        "Le consentement éclairé et la possibilité de refus sont attestés.",
+        "Les raisons d’agir de l’organisation ne sont pas documentées."
+      ],
+      "test": "Distinguer une réponse fonctionnelle établie de qualifications qui demandent d’autres preuves.",
+      "results": {
+        "M": {
+          "status": "indetermine",
+          "conclusion": "La maximisation du bénéfice d’ensemble demeure indéterminée.",
+          "warrant": "Un gain local ne documente ni les effets externes ni les alternatives.",
+          "refs": [
+            "DCJ:419",
+            "KING:12–14"
+          ],
+          "reserve": "Le gain fonctionnel est acquis ; il ne s’agit pas d’un constat d’échec.",
+          "scope": "Système et alternatives",
+          "change": "preuve"
+        },
+        "I": {
+          "status": "indetermine",
+          "conclusion": "Le bénéfice selon les appréciations individuelles reste à établir.",
+          "warrant": "La capacité mesurée ne renseigne pas suffisamment ce que les personnes en retirent.",
+          "refs": [
+            "DCJ:420–421",
+            "T22:3–4"
+          ],
+          "reserve": "Des preuves appropriées peuvent être indirectes ; un questionnaire n’est pas imposé.",
+          "scope": "Personnes",
+          "change": "preuve"
+        },
+        "G": {
+          "status": "etabli",
+          "conclusion": "Le besoin fonctionnel commun reçoit une réponse pour les 30 personnes.",
+          "warrant": "La propriété observée correspond précisément au besoin validé.",
+          "refs": [
+            "DCJ:421–422"
+          ],
+          "reserve": "L’appréciation de l’ensemble du programme par le groupe reste ouverte.",
+          "scope": "Besoin fonctionnel ciblé",
+          "change": "portee"
+        },
+        "V": {
+          "status": "indetermine",
+          "conclusion": "L’origine morale du bénéfice reste à établir.",
+          "warrant": "L’efficacité ne renseigne pas à elle seule les raisons d’agir.",
+          "refs": [
+            "DCJ:422–423"
+          ],
+          "reserve": "Aucune présomption de motivation opportuniste.",
+          "scope": "Origine du bénéfice",
+          "change": "preuve"
+        },
+        "N": {
+          "status": "etabli",
+          "conclusion": "Le principe de consentement N1 est satisfait.",
+          "warrant": "Les faits requis par ce principe sont disponibles.",
+          "refs": [
+            "DCJ:423–424"
+          ],
+          "reserve": "Ce jugement porte sur la conduite.",
+          "scope": "Conduite",
+          "change": "regle"
+        }
+      },
+      "limits": "",
+      "kind": "Cas construit ; aucune donnée empirique attribuée aux auteurs",
+      "dossier_hash": "1dd28c53f0854e21bfb182205b65e98b526597f7de737b87c829482f37852c02"
+    },
+    {
+      "id": "C03",
+      "title": "Amélioration mesurée et expériences hétérogènes",
+      "context": "Aides techniques à domicile",
+      "objective": "Améliorer l’autonomie quotidienne des 30 personnes ciblées à douze mois.",
+      "facts": [
+        "Le besoin fonctionnel commun est validé ; les 30 personnes acquièrent la capacité mesurée.",
+        "Vingt-quatre apprécient le changement. Six expliquent que l’ensemble de la solution dégrade leur vie quotidienne malgré la capacité gagnée : elles perdent une forme d’aide et de relation qu’elles valorisaient.",
+        "Les modalités ont été librement choisies ; le consentement et le refus sans sanction sont attestés. Les six évaluations négatives sont recueillies après usage.",
+        "L’ampleur comparable des gains et pertes, les alternatives et les raisons morales d’agir ne sont pas établies."
+      ],
+      "test": "Vérifier si une même amélioration fonctionnelle suffit à qualifier un bénéfice pour tous.",
+      "results": {
+        "M": {
+          "status": "indetermine",
+          "conclusion": "Le bilan d’ensemble reste indéterminé.",
+          "warrant": "Les désavantages exprimés font partie des conséquences à considérer ; aucune règle d’arbitrage n’est donnée.",
+          "refs": [
+            "DCJ:419",
+            "GK:62–65"
+          ],
+          "reserve": "Interdiction de traiter les six expériences négatives comme sans importance.",
+          "scope": "Ensemble des effets",
+          "change": "regle"
+        },
+        "I": {
+          "status": "heterogene",
+          "conclusion": "Bénéfice reconnu par 24 personnes ; appréciation défavorable de l’ensemble de la solution pour 6.",
+          "warrant": "Les personnes qualifient différemment une capacité pourtant gagnée par toutes.",
+          "refs": [
+            "DCJ:420–421",
+            "T22:3–4"
+          ],
+          "reserve": "Aucun verdict global tiré de la majorité.",
+          "scope": "Personnes et diversité interne",
+          "change": "qualification"
+        },
+        "G": {
+          "status": "etabli",
+          "conclusion": "La réponse au besoin fonctionnel est établie ; sa portée est limitée à ce besoin.",
+          "warrant": "Le gain correspond au besoin ciblé, mais les six expériences empêchent de le confondre avec une appréciation favorable complète du groupe.",
+          "refs": [
+            "DCJ:421–422",
+            "T22:8"
+          ],
+          "reserve": "Une réussite fonctionnelle n’efface pas les réserves individuelles.",
+          "scope": "Besoin commun précis",
+          "change": "portee"
+        },
+        "V": {
+          "status": "indetermine",
+          "conclusion": "Le bénéfice attribuable à un engagement moral reste à qualifier.",
+          "warrant": "L’origine morale n’est pas documentée et les effets sont hétérogènes.",
+          "refs": [
+            "DCJ:422–423"
+          ],
+          "reserve": "La déduction ne peut inventer ni une obligation ni sa réalisation générale.",
+          "scope": "Engagement et effets",
+          "change": "preuve"
+        },
+        "N": {
+          "status": "etabli",
+          "conclusion": "Le principe N1 est satisfait dans le dossier.",
+          "warrant": "Consentement préalable et appréciation ultérieure sont deux constats distincts.",
+          "refs": [
+            "DCJ:423–424"
+          ],
+          "reserve": "Un consentement valable n’implique pas une appréciation ultérieure positive.",
+          "scope": "Conduite",
+          "change": "qualification"
+        }
+      },
+      "limits": "",
+      "kind": "Cas construit ; aucune donnée empirique attribuée aux auteurs",
+      "dossier_hash": "3e5daebe65f606a2a7070387fdc20de2f9b7c7c575ecf0f8b8ed012fa5b378cd"
+    },
+    {
+      "id": "C04",
+      "title": "Bénéfice ciblé et alternative supérieure",
+      "context": "Aides techniques à domicile",
+      "objective": "Améliorer l’autonomie quotidienne des 30 personnes ciblées à douze mois.",
+      "facts": [
+        "Les 30 personnes acquièrent et apprécient la capacité visée ; le besoin commun est satisfait.",
+        "L’organisation retenue impose 10 heures hebdomadaires supplémentaires à des proches. Une alternative réalisable, de même coût, apporte exactement les mêmes gains aux destinataires sans cette charge ni autre désavantage.",
+        "Le consentement et le refus sans sanction sont attestés pour les participants et les proches. La charge est acceptée mais reste un effet défavorable documenté.",
+        "Un engagement moral effectif envers les personnes ciblées est corroboré ; sa moralité générale et la meilleure décision organisationnelle ne sont pas présupposées."
+      ],
+      "test": "Construire une différence comparative sans somme arbitraire des bénéfices et préjudices.",
+      "results": {
+        "M": {
+          "status": "refute",
+          "conclusion": "La prétention au meilleur choix collectif est réfutée.",
+          "warrant": "Une alternative domine l’option retenue : mêmes gains et coûts, charge moindre pour les proches.",
+          "refs": [
+            "DCJ:419",
+            "KING:4–5"
+          ],
+          "reserve": "Cela ne nie pas les bénéfices effectivement produits.",
+          "scope": "Système incluant les proches",
+          "change": "regle"
+        },
+        "I": {
+          "status": "heterogene",
+          "conclusion": "Bénéfice reconnu par les 30 destinataires ; charge reconnue par les proches.",
+          "warrant": "La lecture conserve les appréciations des différentes personnes affectées.",
+          "refs": [
+            "DCJ:420–421"
+          ],
+          "reserve": "Pas de bilan global sans règle supplémentaire.",
+          "scope": "Toutes les personnes affectées",
+          "change": "portee"
+        },
+        "G": {
+          "status": "etabli",
+          "conclusion": "La réponse au besoin du groupe ciblé est établie.",
+          "warrant": "Le bénéfice ciblé reste réalisé malgré l’existence d’une meilleure option.",
+          "refs": [
+            "DCJ:421–422"
+          ],
+          "reserve": "Ce jugement local ne valide pas le choix d’allocation.",
+          "scope": "Groupe ciblé",
+          "change": "portee"
+        },
+        "V": {
+          "status": "etabli",
+          "conclusion": "Le bénéfice ciblé procède d’un engagement moral étayé.",
+          "warrant": "Les raisons d’agir et le bénéfice sont présents.",
+          "refs": [
+            "DCJ:422–423"
+          ],
+          "reserve": "Ni l’engagement ni le bénéfice ne prouvent que l’option retenue était la meilleure ou moralement irréprochable.",
+          "scope": "Origine du bénéfice ciblé",
+          "change": "qualification"
+        },
+        "N": {
+          "status": "etabli",
+          "conclusion": "Le principe N1 est satisfait.",
+          "warrant": "L’acceptation éclairée et le refus possible sont documentés, y compris pour les proches.",
+          "refs": [
+            "DCJ:423–424"
+          ],
+          "reserve": "Un principe de moindre charge conduirait à une autre question ; il n’est pas ajouté silencieusement.",
+          "scope": "Conduite",
+          "change": "qualification"
+        }
+      },
+      "limits": "",
+      "kind": "Cas construit ; aucune donnée empirique attribuée aux auteurs",
+      "dossier_hash": "184d9e93c4543b088d4306c757a17ffbb92c845351490eff0a70becb9bd5243e"
+    },
+    {
+      "id": "C05",
+      "title": "Couverture partielle et besoins coûteux",
+      "context": "Aides techniques à domicile",
+      "objective": "Améliorer l’autonomie quotidienne des 100 personnes ciblées à douze mois.",
+      "facts": [
+        "Quatre-vingts personnes obtiennent un gain équivalent qu’elles apprécient ; 20 ayant des besoins plus coûteux restent sans solution.",
+        "Dans le dossier construit, les gains sont comparables, les autres effets identiques, et aucune alternative à budget constant n’apporte un bénéfice total supérieur.",
+        "Toutes les prestations fournies respectent le consentement et le refus sans sanction. L’absence de solution pour les 20 est connue.",
+        "Un engagement moral effectif d’aide au public est corroboré ; aucune règle morale de distribution n’est présupposée."
+      ],
+      "test": "Tester la différence entre maximisation et couverture, puis la sensibilité au principe normatif choisi.",
+      "results": {
+        "M": {
+          "status": "etabli",
+          "conclusion": "La maximisation est étayée dans les hypothèses du dossier.",
+          "warrant": "Le bénéfice total comparé est maximal avec les ressources fixées.",
+          "refs": [
+            "DCJ:419",
+            "RG:183"
+          ],
+          "reserve": "La comparabilité des gains est une hypothèse du cas, pas une propriété universelle.",
+          "scope": "Population et alternatives",
+          "change": "regle"
+        },
+        "I": {
+          "status": "heterogene",
+          "conclusion": "Un bénéfice est reconnu par 80 personnes ; aucun bénéfice fourni par ce dispositif n’est établi pour les 20 autres.",
+          "warrant": "Le profil individuel reste différencié.",
+          "refs": [
+            "DCJ:420–421"
+          ],
+          "reserve": "Ni vote majoritaire ni qualification morale de la sélection.",
+          "scope": "100 personnes",
+          "change": "portee"
+        },
+        "G": {
+          "status": "partiel",
+          "conclusion": "Le besoin commun reçoit une réponse pour 80 personnes sur 100.",
+          "warrant": "La réponse et sa couverture sont distinguées.",
+          "refs": [
+            "DCJ:421–422"
+          ],
+          "reserve": "Sans seuil de couverture, la catégorie ne fixe pas un verdict global de succès.",
+          "scope": "Groupe ciblé",
+          "change": "portee"
+        },
+        "V": {
+          "status": "partiel",
+          "conclusion": "Un bénéfice issu de l’engagement moral est établi pour 80 personnes.",
+          "warrant": "L’engagement est documenté ; sa réalisation couvre une partie du public.",
+          "refs": [
+            "DCJ:422–423"
+          ],
+          "reserve": "L’approche ne fixe pas à elle seule comment répartir les ressources ni si cette couverture suffit.",
+          "scope": "Engagement et public servi",
+          "change": "portee"
+        },
+        "N": {
+          "status": "etabli",
+          "conclusion": "N1, le consentement, est satisfait pour les prestations fournies.",
+          "warrant": "Les faits documentent précisément ce principe.",
+          "refs": [
+            "DCJ:423–424"
+          ],
+          "reserve": "N2, inclusion de chacun, échoue sur les mêmes faits ; cette variante est testée séparément.",
+          "scope": "Conduite et prestations fournies",
+          "change": "regle"
+        }
+      },
+      "limits": "",
+      "kind": "Cas construit ; aucune donnée empirique attribuée aux auteurs",
+      "dossier_hash": "870293a9a721b65851521c40faacb8ec3f3c062e17461302921238ac161abf10"
+    },
+    {
+      "id": "C06",
+      "title": "Bénéfices établis et motivations inconnues",
+      "context": "Aides techniques à domicile",
+      "objective": "Améliorer l’autonomie quotidienne des 30 personnes ciblées à douze mois.",
+      "facts": [
+        "Les 30 personnes présentent le besoin partagé et validé de réaliser une activité quotidienne seule ; elles obtiennent cette capacité et chacune la valorise.",
+        "Le dossier couvre les autres personnes affectées, les coûts et les effets indirects : aucune atteinte n’est relevée dans le cas construit. L’option est au moins aussi bénéfique que chaque alternative réalisable et supérieure sur une dimension, sans désavantage ailleurs.",
+        "Le consentement éclairé et le refus sans sanction sont attestés pour chaque personne.",
+        "Les raisons d’agir de l’organisation sont inconnues : ni engagement moral corroboré ni opportunisme exclusif établi."
+      ],
+      "test": "Retirer une seule information du témoin complet ; observer quelle conclusion devient indéterminée.",
+      "results": {
+        "M": {
+          "status": "etabli",
+          "conclusion": "La justification comparative reste établie.",
+          "warrant": "Les effets, ressources et alternatives n’ont pas changé.",
+          "refs": [
+            "DCJ:419"
+          ],
+          "reserve": "La motivation ne figure pas dans M1 comme condition indépendante de bénéfice.",
+          "scope": "Système et alternatives",
+          "change": "convergence"
+        },
+        "I": {
+          "status": "etabli",
+          "conclusion": "Les 30 bénéfices appréciés restent établis.",
+          "warrant": "Les appréciations individuelles sont inchangées.",
+          "refs": [
+            "DCJ:420–421"
+          ],
+          "reserve": "Aucune conclusion sur les motivations de l’organisation.",
+          "scope": "Personnes",
+          "change": "convergence"
+        },
+        "G": {
+          "status": "etabli",
+          "conclusion": "La réponse au besoin commun reste établie.",
+          "warrant": "Le public, le besoin et l’amélioration sont inchangés.",
+          "refs": [
+            "DCJ:421–422"
+          ],
+          "reserve": "Aucune conclusion sur l’origine morale.",
+          "scope": "Groupe ciblé",
+          "change": "convergence"
+        },
+        "V": {
+          "status": "indetermine",
+          "conclusion": "L’origine morale des bénéfices est indéterminée.",
+          "warrant": "Une condition propre à cette qualification n’est plus documentée.",
+          "refs": [
+            "DCJ:422–423"
+          ],
+          "reserve": "Indéterminé ne signifie pas immoral ou absent.",
+          "scope": "Origine des bénéfices",
+          "change": "preuve"
+        },
+        "N": {
+          "status": "etabli",
+          "conclusion": "N1 reste satisfait.",
+          "warrant": "Le consentement est documenté indépendamment des motivations.",
+          "refs": [
+            "DCJ:423–424"
+          ],
+          "reserve": "La conformité observée ne prouve pas le sentiment d’obligation.",
+          "scope": "Conduite",
+          "change": "convergence"
+        }
+      },
+      "limits": "",
+      "kind": "Cas construit ; aucune donnée empirique attribuée aux auteurs",
+      "dossier_hash": "89b05a5dfd94481ee788b3ae4ff1917776d1c3e4d62b7ba8e4c5ff69231fb98c"
+    },
+    {
+      "id": "C07",
+      "title": "Bénéfices établis et origine exclusivement commerciale",
+      "context": "Aides techniques à domicile",
+      "objective": "Améliorer l’autonomie quotidienne des 30 personnes ciblées à douze mois.",
+      "facts": [
+        "Les 30 personnes présentent le besoin partagé et validé de réaliser une activité quotidienne seule ; elles obtiennent cette capacité et chacune la valorise.",
+        "Le dossier couvre les autres personnes affectées, les coûts et les effets indirects : aucune atteinte n’est relevée dans le cas construit. L’option est au moins aussi bénéfique que chaque alternative réalisable et supérieure sur une dimension, sans désavantage ailleurs.",
+        "Le consentement éclairé et le refus sans sanction sont attestés pour chaque personne.",
+        "À titre d’hypothèse de l’expérience de pensée, l’action procède exclusivement d’une opportunité commerciale : aucun engagement moral n’entre dans les raisons d’agir.",
+        "Cette exclusivité n’est pas déduite de la présence d’un prix, de profits ou d’une forme juridique."
+      ],
+      "test": "Distinguer absence d’information et incompatibilité avérée avec une qualification.",
+      "results": {
+        "M": {
+          "status": "etabli",
+          "conclusion": "La justification comparative reste établie.",
+          "warrant": "Les conséquences et alternatives sont inchangées.",
+          "refs": [
+            "DCJ:419"
+          ],
+          "reserve": "La motivation exclusivement commerciale n’annule pas les bénéfices.",
+          "scope": "Système et alternatives",
+          "change": "convergence"
+        },
+        "I": {
+          "status": "etabli",
+          "conclusion": "Les bénéfices appréciés sont établis.",
+          "warrant": "Les personnes continuent de valoriser le changement.",
+          "refs": [
+            "DCJ:420–421"
+          ],
+          "reserve": "Ne conclut pas à une intention morale.",
+          "scope": "Personnes",
+          "change": "convergence"
+        },
+        "G": {
+          "status": "etabli",
+          "conclusion": "La réponse au besoin ciblé est établie.",
+          "warrant": "La réponse ne disparaît pas avec une motivation commerciale.",
+          "refs": [
+            "DCJ:421–422"
+          ],
+          "reserve": "Ne qualifie pas l’origine du bénéfice.",
+          "scope": "Groupe ciblé",
+          "change": "convergence"
+        },
+        "V": {
+          "status": "refute",
+          "conclusion": "La qualification de bénéfice issu d’une obligation morale est réfutée dans l’hypothèse du cas.",
+          "warrant": "L’exclusivité de la raison commerciale contredit la condition d’origine morale.",
+          "refs": [
+            "DCJ:422–423"
+          ],
+          "reserve": "Aucun jugement général d’immoralité ; une motivation mixte ne conduirait pas à cette réfutation.",
+          "scope": "Origine des bénéfices",
+          "change": "qualification"
+        },
+        "N": {
+          "status": "etabli",
+          "conclusion": "N1 est satisfait.",
+          "warrant": "La conduite respecte le principe retenu.",
+          "refs": [
+            "DCJ:423–424"
+          ],
+          "reserve": "Un motif commercial ne prouve pas une violation de principe.",
+          "scope": "Conduite",
+          "change": "convergence"
+        }
+      },
+      "limits": "L’exclusivité des motivations est difficile à établir empiriquement. Ici, elle est stipulée et ne doit pas être présentée comme mesurée dans une organisation réelle.",
+      "kind": "Cas construit ; aucune donnée empirique attribuée aux auteurs",
+      "dossier_hash": "b7ed1124efa9f9dd238eecf14002f1a9eed5960d23556da7e7dac35fd2bdae84"
+    },
+    {
+      "id": "C08",
+      "title": "Engagement moral et absence d’amélioration",
+      "context": "Aides techniques à domicile",
+      "objective": "Améliorer l’autonomie quotidienne des 30 personnes ciblées à douze mois.",
+      "facts": [
+        "À douze mois, les équipements ne permettent aucune amélioration de l’activité visée ; aucune personne ne reconnaît de bénéfice de ce programme et le besoin ciblé demeure entier.",
+        "Une alternative réalisable de même coût aurait amélioré cette activité sans désavantage supplémentaire ; le dossier documente cette comparaison.",
+        "L’engagement moral réel d’aider ce public et les efforts de mise en œuvre sont corroborés.",
+        "Le consentement éclairé et le refus sans sanction ont été respectés."
+      ],
+      "test": "Rechercher le contre-exemple à l’idée que l’intention morale ou la conformité prouverait l’impact.",
+      "results": {
+        "M": {
+          "status": "refute",
+          "conclusion": "La justification du choix par maximisation est réfutée.",
+          "warrant": "Une alternative réalisable apporte un bénéfice supérieur sans désavantage.",
+          "refs": [
+            "DCJ:419",
+            "KING:4–5"
+          ],
+          "reserve": "Ne qualifie pas la sincérité de l’organisation.",
+          "scope": "Alternatives et effets",
+          "change": "regle"
+        },
+        "I": {
+          "status": "refute",
+          "conclusion": "Le bénéfice apprécié de l’action n’est pas réalisé au terme retenu.",
+          "warrant": "L’absence de gain et les appréciations concordantes sont documentées.",
+          "refs": [
+            "DCJ:420–421"
+          ],
+          "reserve": "Aucune généralisation à la valeur de toute relation d’aide hors du dossier.",
+          "scope": "Personnes à douze mois",
+          "change": "qualification"
+        },
+        "G": {
+          "status": "refute",
+          "conclusion": "La réponse au besoin ciblé n’est pas réalisée.",
+          "warrant": "Le besoin demeure entier malgré les prestations.",
+          "refs": [
+            "DCJ:421–422",
+            "KW:514"
+          ],
+          "reserve": "L’effort ne vaut pas satisfaction du besoin.",
+          "scope": "Besoin ciblé",
+          "change": "qualification"
+        },
+        "V": {
+          "status": "refute",
+          "conclusion": "Le bénéfice réalisé au titre de l’engagement n’est pas établi : son absence est documentée.",
+          "warrant": "L’engagement est attesté, mais la composante bénéfice fait défaut.",
+          "refs": [
+            "DCJ:422–423"
+          ],
+          "reserve": "L’engagement moral lui-même demeure attesté. Ajustement explicite de la lecture causale trop forte de DCJ.",
+          "scope": "Bénéfice et engagement distingués",
+          "change": "qualification"
+        },
+        "N": {
+          "status": "etabli",
+          "conclusion": "Le principe N1 est satisfait.",
+          "warrant": "Le consentement est établi même si l’action échoue sur son objectif.",
+          "refs": [
+            "DCJ:423–424"
+          ],
+          "reserve": "Conformité à N1 et efficacité sont deux conclusions de portée distincte.",
+          "scope": "Conduite",
+          "change": "qualification"
+        }
+      },
+      "limits": "",
+      "kind": "Cas construit ; aucune donnée empirique attribuée aux auteurs",
+      "dossier_hash": "bcbd114ddb0b66909543463b6d72870619080482c5ff5f59b1504d8f3afa135f"
+    },
+    {
+      "id": "C09",
+      "title": "Gains fonctionnels et aide imposée",
+      "context": "Aides techniques à domicile",
+      "objective": "Améliorer l’autonomie quotidienne des 30 personnes ciblées à douze mois.",
+      "facts": [
+        "Les 30 personnes gagnent la capacité quotidienne ciblée ; le besoin fonctionnel validé est traité.",
+        "Vingt apprécient l’ensemble du changement. Dix déclarent que la solution leur a été imposée malgré un refus explicite et rejettent cette expérience ; le refus et l’imposition sont corroborés.",
+        "Les alternatives et la comparaison des gains avec les préjudices liés à l’imposition ne sont pas documentées.",
+        "L’organisation affirme une intention d’aider, sans éléments suffisants pour établir ses raisons d’agir ou qualifier moralement sa conduite."
+      ],
+      "test": "Examiner le rôle d’une violation avérée et empêcher une maximisation supposée qui ignorerait les préjudices.",
+      "results": {
+        "M": {
+          "status": "indetermine",
+          "conclusion": "Le bilan et la préférence comparative restent indéterminés.",
+          "warrant": "Les préjudices liés à l’imposition doivent être inclus ; aucun arbitrage ni alternative n’est établi.",
+          "refs": [
+            "DCJ:419",
+            "GK:62–65"
+          ],
+          "reserve": "Aucun verdict favorable déduit du seul nombre de gains.",
+          "scope": "Effets favorables et défavorables",
+          "change": "regle"
+        },
+        "I": {
+          "status": "heterogene",
+          "conclusion": "Appréciation favorable pour 20 personnes, défavorable pour 10.",
+          "warrant": "Le gain fonctionnel ne résume pas l’expérience que les personnes jugent bénéfique.",
+          "refs": [
+            "DCJ:420–421",
+            "T22:3–4"
+          ],
+          "reserve": "La majorité ne tranche pas la portée de ces appréciations.",
+          "scope": "Personnes",
+          "change": "qualification"
+        },
+        "G": {
+          "status": "etabli",
+          "conclusion": "La réponse fonctionnelle ciblée est établie, avec une restriction majeure de portée.",
+          "warrant": "Le besoin mesuré est traité ; cette conclusion ne couvre ni l’acceptabilité ni l’expérience de l’ensemble de l’action.",
+          "refs": [
+            "DCJ:421–422"
+          ],
+          "reserve": "La déclaration de réussite globale du programme serait excessive.",
+          "scope": "Besoin fonctionnel précis",
+          "change": "portee"
+        },
+        "V": {
+          "status": "indetermine",
+          "conclusion": "La qualification morale demeure insuffisamment étayée.",
+          "warrant": "L’intention proclamée ne suffit pas ; les effets et conduites doivent rester distincts.",
+          "refs": [
+            "DCJ:422–423",
+            "GH:175–176"
+          ],
+          "reserve": "Aucune immunité morale déduite de l’intention d’aide.",
+          "scope": "Engagement et conduite",
+          "change": "preuve"
+        },
+        "N": {
+          "status": "refute",
+          "conclusion": "Le principe N1 est violé pour 10 personnes.",
+          "warrant": "Le refus explicite suivi de l’imposition constitue une contradiction factuelle du principe choisi.",
+          "refs": [
+            "DCJ:423–424",
+            "RG:183–184"
+          ],
+          "reserve": "Les gains des autres personnes ne réparent pas cette violation sous N1.",
+          "scope": "Conduite et personnes concernées",
+          "change": "regle"
+        }
+      },
+      "limits": "",
+      "kind": "Cas construit ; aucune donnée empirique attribuée aux auteurs",
+      "dossier_hash": "2c2cb59c3aa958a5ffcb0260ba196975f5beea2e0eb1d63139d84853d09c99d5"
+    },
+    {
+      "id": "C10",
+      "title": "Un rapport limité au nombre de participants",
+      "context": "Accompagnement administratif",
+      "objective": "Améliorer l’accès effectif aux droits du public ciblé à six mois.",
+      "facts": [
+        "Le rapport indique 200 participants et 350 rendez-vous.",
+        "Il ne renseigne ni ouverture de droits, ni résolution de difficultés, ni appréciations des personnes, ni alternatives, ni motifs d’action.",
+        "Il ne permet pas de vérifier le consentement éclairé ou l’absence de sanctions en cas de refus."
+      ],
+      "test": "Contrôle négatif : ne pas fabriquer cinq conclusions différentes avec des informations insuffisantes pour toutes.",
+      "results": {
+        "M": {
+          "status": "indetermine",
+          "conclusion": "Le bénéfice d’ensemble et sa maximisation sont indéterminés.",
+          "warrant": "Le volume d’activité ne renseigne pas les bénéfices et alternatives.",
+          "refs": [
+            "KING:5",
+            "KW:514"
+          ],
+          "reserve": "Une activité est documentée.",
+          "scope": "Effets et alternatives",
+          "change": "preuve"
+        },
+        "I": {
+          "status": "indetermine",
+          "conclusion": "Les bénéfices appréciés restent indéterminés.",
+          "warrant": "Participer ne prouve pas que le changement attendu a été vécu et valorisé.",
+          "refs": [
+            "DCJ:420–421",
+            "T22:3–4"
+          ],
+          "reserve": "Aucun bénéfice supposé nul.",
+          "scope": "Personnes",
+          "change": "preuve"
+        },
+        "G": {
+          "status": "indetermine",
+          "conclusion": "La réponse au besoin d’accès aux droits reste indéterminée.",
+          "warrant": "Les rendez-vous ne prouvent pas l’accès effectif aux droits.",
+          "refs": [
+            "DCJ:421–422",
+            "KW:514"
+          ],
+          "reserve": "Le critère de volume possède ici une portée limitée.",
+          "scope": "Besoin du groupe",
+          "change": "preuve"
+        },
+        "V": {
+          "status": "indetermine",
+          "conclusion": "Le bénéfice issu d’un engagement moral reste indéterminé.",
+          "warrant": "Ni le bénéfice ni l’engagement ne sont suffisamment documentés.",
+          "refs": [
+            "DCJ:422–423"
+          ],
+          "reserve": "Absence de preuve et absence de valeur restent distinctes.",
+          "scope": "Engagement et bénéfice",
+          "change": "preuve"
+        },
+        "N": {
+          "status": "indetermine",
+          "conclusion": "La conformité à N1 reste indéterminée.",
+          "warrant": "Le registre des présences ne suffit pas à établir le consentement libre et éclairé.",
+          "refs": [
+            "DCJ:423–424"
+          ],
+          "reserve": "La présence ne prouve pas une contrainte non plus.",
+          "scope": "Conduite",
+          "change": "preuve"
+        }
+      },
+      "limits": "",
+      "kind": "Cas construit ; aucune donnée empirique attribuée aux auteurs",
+      "dossier_hash": "c0a7b21cb17cb05028997d07157f565b5963c05a1fcbe81d4380dfdb7d137e09"
+    },
+    {
+      "id": "C11",
+      "title": "Bénéfices réels hors du groupe initialement ciblé",
+      "context": "Mobilité solidaire",
+      "objective": "Améliorer la mobilité autonome de 10 personnes isolées dépourvues de solution de transport.",
+      "facts": [
+        "Les 10 personnes ciblées restent sans desserte adaptée et sans amélioration.",
+        "Trente autres personnes bénéficient d’un service de transport, gagnent une mobilité comparable et apprécient cette amélioration.",
+        "Dans l’hypothèse construite, les gains sont comparables, les autres effets couverts et aucune alternative au même coût ne produit un bénéfice total supérieur. M1 ne prévoit pas de priorité supplémentaire au groupe initial.",
+        "L’engagement moral corroboré portait précisément sur les 10 personnes initiales. Le consentement des usagers effectifs et leur possibilité de refus sont attestés."
+      ],
+      "test": "Faire varier le périmètre de reconnaissance sans changer l’objectif officiel ni cacher son échec.",
+      "results": {
+        "M": {
+          "status": "etabli",
+          "conclusion": "Un bénéfice d’ensemble comparativement maximal est établi sous M1.",
+          "warrant": "Le périmètre du bénéfice collectif inclut les personnes effectivement aidées.",
+          "refs": [
+            "DCJ:419"
+          ],
+          "reserve": "L’objectif initial envers les 10 personnes reste non atteint, y compris sous cette lecture.",
+          "scope": "Personnes affectées au-delà de la cible",
+          "change": "portee"
+        },
+        "I": {
+          "status": "heterogene",
+          "conclusion": "Bénéfice reconnu par 30 personnes ; aucune amélioration pour les 10 personnes ciblées.",
+          "warrant": "La reconnaissance est restituée avec l’identité des personnes concernées.",
+          "refs": [
+            "DCJ:420–421"
+          ],
+          "reserve": "Le bénéfice hors cible ne devient pas un bénéfice des personnes ciblées.",
+          "scope": "Personnes aidées et non aidées",
+          "change": "portee"
+        },
+        "G": {
+          "status": "refute",
+          "conclusion": "La réponse au besoin du groupe ciblé n’est pas réalisée.",
+          "warrant": "Les bénéficiaires effectifs ne sont pas ceux du besoin qui fondait l’intervention.",
+          "refs": [
+            "DCJ:421–422"
+          ],
+          "reserve": "Les bénéfices hors cible demeurent des effets réels.",
+          "scope": "10 personnes ciblées",
+          "change": "portee"
+        },
+        "V": {
+          "status": "refute",
+          "conclusion": "Le bénéfice que l’engagement envers les 10 personnes visait à produire n’est pas réalisé.",
+          "warrant": "Le contenu précis de l’engagement et ses destinataires restent fixes.",
+          "refs": [
+            "DCJ:422–423"
+          ],
+          "reserve": "Ne nie pas toute valeur morale possible de l’aide à d’autres personnes.",
+          "scope": "Engagement envers le groupe initial",
+          "change": "portee"
+        },
+        "N": {
+          "status": "etabli",
+          "conclusion": "N1 est satisfait pour les usagers effectifs.",
+          "warrant": "Les prestations sont librement choisies.",
+          "refs": [
+            "DCJ:423–424"
+          ],
+          "reserve": "N1 n’équivaut pas au respect de la mission de ciblage.",
+          "scope": "Conduite auprès des usagers",
+          "change": "qualification"
+        }
+      },
+      "limits": "Ce cas ne permet pas de présenter le changement d’objectif comme un succès. Toutes les lectures conservent le constat commun de non-atteinte de l’objectif initial.",
+      "kind": "Cas construit ; aucune donnée empirique attribuée aux auteurs",
+      "dossier_hash": "853896559af1abbda14da9d865d687b8676bb17d8d009ac926658dc4a1b1d8a2"
+    },
+    {
+      "id": "C12",
+      "title": "Économies d’énergie et origine inconnue",
+      "context": "Rénovation énergétique sociale",
+      "objective": "Réduire la précarité énergétique de 40 ménages ciblés à douze mois.",
+      "facts": [
+        "Les 40 ménages réduisent leurs dépenses contraintes, gagnent en confort et apprécient les deux changements ; le besoin partagé est traité.",
+        "Le dossier intègre les coûts et effets environnementaux ; les alternatives réalisables sont dominées par la solution retenue dans les dimensions prises en compte.",
+        "Consentement éclairé et refus sans sanction sont attestés.",
+        "Les raisons morales ou commerciales de l’organisation ne sont pas documentées."
+      ],
+      "test": "Répliquer la réserve sur l’origine morale dans un autre contexte.",
+      "results": {
+        "M": {
+          "status": "etabli",
+          "conclusion": "La justification comparative est établie sur le périmètre documenté.",
+          "warrant": "Les bénéfices, coûts et externalités pertinents sont couverts.",
+          "refs": [
+            "DCJ:419",
+            "KING:12–14"
+          ],
+          "reserve": "La conclusion reste bornée aux dimensions couvertes.",
+          "scope": "Ménages et environnement",
+          "change": "regle"
+        },
+        "I": {
+          "status": "etabli",
+          "conclusion": "Les 40 ménages reconnaissent un bénéfice.",
+          "warrant": "Les améliorations sont appréciées par leurs destinataires.",
+          "refs": [
+            "DCJ:420–421"
+          ],
+          "reserve": "Aucune inférence sur les motivations du prestataire.",
+          "scope": "Ménages",
+          "change": "qualification"
+        },
+        "G": {
+          "status": "etabli",
+          "conclusion": "Le besoin de réduction de la précarité énergétique est traité.",
+          "warrant": "Groupe, besoin et effets se correspondent.",
+          "refs": [
+            "DCJ:421–422"
+          ],
+          "reserve": "La réponse ciblée n’établit pas l’origine morale.",
+          "scope": "Groupe ciblé",
+          "change": "portee"
+        },
+        "V": {
+          "status": "indetermine",
+          "conclusion": "L’origine morale du bénéfice demeure indéterminée.",
+          "warrant": "Les économies et le confort ne renseignent pas les raisons d’agir.",
+          "refs": [
+            "DCJ:422–423"
+          ],
+          "reserve": "Le recours à un prestataire commercial ne réfute pas un engagement moral.",
+          "scope": "Origine",
+          "change": "preuve"
+        },
+        "N": {
+          "status": "etabli",
+          "conclusion": "N1 est satisfait.",
+          "warrant": "Les conditions du consentement sont documentées.",
+          "refs": [
+            "DCJ:423–424"
+          ],
+          "reserve": "Conformité limitée au principe retenu.",
+          "scope": "Conduite",
+          "change": "regle"
+        }
+      },
+      "limits": "",
+      "kind": "Cas construit ; aucune donnée empirique attribuée aux auteurs",
+      "dossier_hash": "da952ea9bff65ce038c1e6971ab1f6864d2849a6b72b419cc38888ceae736cc5"
+    },
+    {
+      "id": "C13",
+      "title": "Amélioration nutritionnelle et repas peu appréciés",
+      "context": "Portage de repas",
+      "objective": "Améliorer la situation nutritionnelle de 30 personnes ciblées à six mois.",
+      "facts": [
+        "Le besoin nutritionnel partagé est validé et les indicateurs de nutrition s’améliorent pour les 30 personnes.",
+        "Vingt apprécient l’ensemble du service ; dix jugent que la perte de plaisir et de sociabilité dégrade leur vie malgré l’amélioration nutritionnelle.",
+        "Les repas ont été librement acceptés ; le refus sans sanction est possible. Les motifs de l’organisation et la comparaison des effets avec les alternatives restent inconnus."
+      ],
+      "test": "Répliquer la différence entre amélioration ciblée et bénéfice apprécié, sans changer d’objectif entre conceptions.",
+      "results": {
+        "M": {
+          "status": "indetermine",
+          "conclusion": "Le bilan d’ensemble et sa maximisation restent indéterminés.",
+          "warrant": "La nutrition, le plaisir et la sociabilité présentent des effets différents sans règle d’arbitrage.",
+          "refs": [
+            "DCJ:419",
+            "GK:62–65"
+          ],
+          "reserve": "Une amélioration clinique ne suffit pas à solder les autres effets.",
+          "scope": "Ensemble des effets",
+          "change": "regle"
+        },
+        "I": {
+          "status": "heterogene",
+          "conclusion": "Vingt appréciations favorables et dix appréciations défavorables sont conservées.",
+          "warrant": "Les appréciations portent sur les changements vécus du même service.",
+          "refs": [
+            "DCJ:420–421",
+            "T22:3–4"
+          ],
+          "reserve": "Aucun vote majoritaire.",
+          "scope": "Personnes",
+          "change": "qualification"
+        },
+        "G": {
+          "status": "etabli",
+          "conclusion": "La réponse au besoin nutritionnel ciblé est établie.",
+          "warrant": "Le besoin retenu et l’amélioration nutritionnelle se correspondent.",
+          "refs": [
+            "DCJ:421–422"
+          ],
+          "reserve": "L’appréciation complète du service par le groupe reste hétérogène.",
+          "scope": "Besoin nutritionnel",
+          "change": "portee"
+        },
+        "V": {
+          "status": "indetermine",
+          "conclusion": "La qualification de bénéfice issu d’un engagement moral reste indéterminée.",
+          "warrant": "Les raisons d’agir ne sont pas documentées ; les effets sont pluriels.",
+          "refs": [
+            "DCJ:422–423"
+          ],
+          "reserve": "Aucune obligation de bienveillance présumée du fait du secteur.",
+          "scope": "Origine et effets",
+          "change": "preuve"
+        },
+        "N": {
+          "status": "etabli",
+          "conclusion": "N1 est satisfait.",
+          "warrant": "Consentement et possibilité de refus sont établis.",
+          "refs": [
+            "DCJ:423–424"
+          ],
+          "reserve": "Le consentement ne garantit pas le plaisir ni la satisfaction.",
+          "scope": "Conduite",
+          "change": "qualification"
+        }
+      },
+      "limits": "",
+      "kind": "Cas construit ; aucune donnée empirique attribuée aux auteurs",
+      "dossier_hash": "a4aab7a652952263213da48eef1ea27e244d099de0e0916534f3cc0392de9c03"
+    },
+    {
+      "id": "C14",
+      "title": "Horizon de jugement non encore observé",
+      "context": "Accompagnement vers l’emploi",
+      "objective": "Améliorer l’accès à un emploi durable des 50 personnes ciblées à douze mois.",
+      "facts": [
+        "À trois mois, 50 personnes ont participé aux ateliers ; aucune observation de l’emploi à douze mois n’est disponible.",
+        "Le besoin d’accès à un emploi durable est validé ; les appréciations de son obtention sont logiquement indisponibles à ce stade.",
+        "L’engagement moral d’aider ce groupe et le consentement éclairé sont documentés.",
+        "Le dossier ne fournit pas de modèle prédictif validé ni de comparaison permettant d’établir les effets futurs."
+      ],
+      "test": "Contrôle temporel : ne pas attribuer un horizon court ou long par stéréotype de conception.",
+      "results": {
+        "M": {
+          "status": "indetermine",
+          "conclusion": "Le bénéfice à douze mois et sa maximisation restent indéterminés.",
+          "warrant": "La participation à trois mois ne documente pas le résultat à l’horizon fixé.",
+          "refs": [
+            "KING:5",
+            "KW:514"
+          ],
+          "reserve": "Aucune négation des bénéfices futurs possibles.",
+          "scope": "Horizon de douze mois",
+          "change": "preuve"
+        },
+        "I": {
+          "status": "indetermine",
+          "conclusion": "Le bénéfice d’accès à l’emploi apprécié à douze mois reste indéterminé.",
+          "warrant": "Les données sur le bénéfice visé ne sont pas encore disponibles.",
+          "refs": [
+            "DCJ:420–421"
+          ],
+          "reserve": "D’éventuels bénéfices actuels distincts demanderaient leur propre preuve.",
+          "scope": "Personnes à douze mois",
+          "change": "preuve"
+        },
+        "G": {
+          "status": "indetermine",
+          "conclusion": "La réponse durable au besoin d’emploi reste indéterminée.",
+          "warrant": "Le besoin est défini, sa réalisation n’est pas encore observable.",
+          "refs": [
+            "DCJ:421–422"
+          ],
+          "reserve": "Le maintien de l’horizon évite de transformer un atelier en emploi durable.",
+          "scope": "Groupe à douze mois",
+          "change": "preuve"
+        },
+        "V": {
+          "status": "indetermine",
+          "conclusion": "L’engagement est attesté ; le bénéfice qui en résultera reste indéterminé.",
+          "warrant": "La preuve des raisons d’agir ne remplace pas celle des effets.",
+          "refs": [
+            "DCJ:422–423"
+          ],
+          "reserve": "Absence de preuve future et échec sont distincts.",
+          "scope": "Engagement et résultat futur",
+          "change": "preuve"
+        },
+        "N": {
+          "status": "etabli",
+          "conclusion": "Le respect de N1 dans la participation actuelle est établi.",
+          "warrant": "Le principe concerne une conduite déjà observée.",
+          "refs": [
+            "DCJ:423–424"
+          ],
+          "reserve": "Cette conclusion ne porte pas sur l’emploi à douze mois.",
+          "scope": "Conduite actuelle",
+          "change": "qualification"
+        }
+      },
+      "limits": "",
+      "kind": "Cas construit ; aucune donnée empirique attribuée aux auteurs",
+      "dossier_hash": "2070ab510788610fece4149254a7ef1c4e48412cdd4def36b9d90ebde2ee9f31"
+    },
+    {
+      "id": "C15",
+      "title": "Bilan favorable et refus initial transgressé",
+      "context": "Aides techniques au domicile",
+      "objective": "Améliorer l’autonomie quotidienne des 30 personnes ciblées à douze mois.",
+      "facts": [
+        "Les 30 personnes acquièrent la capacité visée. À douze mois, chacune juge l’ensemble des conséquences vécues préférable à celui des autres solutions réalisables, y compris le maintien de la situation antérieure.",
+        "Pour 10 personnes, l’installation a pourtant eu lieu malgré un refus initial explicite et valide. Leur appréciation ultérieure favorable ne modifie pas ce fait.",
+        "L’expérience de pensée stipule que toutes les conséquences, y compris les désagréments de l’imposition, les effets sur les proches et les ressources, sont connues. Selon les bénéfices et préjudices vécus, la solution est au moins aussi bonne pour chaque personne affectée et meilleure pour certaines que les alternatives réalisables. Aucune violation n’est retirée du dossier.",
+        "Les raisons d’agir de l’organisation restent inconnues. Le besoin commun et les effets sont documentés indépendamment de ces raisons."
+      ],
+      "test": "Épreuve critique : comparer la justification de la même action au titre de sa valeur sociale. M1 apprécie les conséquences ; N1 fait du respect du refus une exigence indépendante. Les conclusions locales sont distinguées du verdict conditionnel sur l’action.",
+      "results": {
+        "M": {
+          "status": "etabli",
+          "conclusion": "L’action est justifiée selon M1 par la préférence comparative pour ses conséquences.",
+          "warrant": "Toutes les conséquences défavorables sont incluses ; la dominance porte sur les bénéfices vécus. M1 n’ajoute pas de contrainte de consentement indépendante de ses conséquences.",
+          "refs": [
+            "DCJ:419–420",
+            "RG:183–184"
+          ],
+          "reserve": "Cette justification est conditionnelle à M1 et au dossier entièrement stipulé. Elle ne vaut pas approbation morale générale.",
+          "scope": "Même action, ensemble des conséquences",
+          "change": "regle"
+        },
+        "I": {
+          "status": "etabli",
+          "conclusion": "Les 30 personnes reconnaissent rétrospectivement un bénéfice d’ensemble.",
+          "warrant": "L’appréciation de chaque personne porte ici sur l’ensemble des conséquences vécues.",
+          "refs": [
+            "DCJ:420–421",
+            "T22:3–4"
+          ],
+          "reserve": "L’appréciation rétrospective ne produit pas rétroactivement un consentement et ne justifie pas seule l’imposition.",
+          "scope": "Personnes, appréciation à douze mois",
+          "change": "qualification"
+        },
+        "G": {
+          "status": "etabli",
+          "conclusion": "Le besoin fonctionnel des 30 personnes reçoit une réponse.",
+          "warrant": "Le public, le besoin et l’amélioration sont identiques sous toutes les lectures.",
+          "refs": [
+            "DCJ:421–422"
+          ],
+          "reserve": "Cette conclusion fonctionnelle ne suffit pas à justifier toute la conduite de l’organisation.",
+          "scope": "Besoin commun",
+          "change": "portee"
+        },
+        "V": {
+          "status": "indetermine",
+          "conclusion": "L’origine morale des bénéfices reste indéterminée.",
+          "warrant": "Les bénéfices connus ne renseignent pas les raisons d’agir.",
+          "refs": [
+            "DCJ:422–423"
+          ],
+          "reserve": "Aucune motivation morale n’est déduite d’un bilan positif.",
+          "scope": "Origine des bénéfices",
+          "change": "preuve"
+        },
+        "N": {
+          "status": "refute",
+          "conclusion": "L’action ne satisfait pas N1 : dix refus valides ont été transgressés.",
+          "warrant": "Dans N1, le refus est une exigence indépendante du bilan des conséquences. L’appréciation favorable après usage ne répare pas sa violation préalable.",
+          "refs": [
+            "DCJ:423–424",
+            "RG:183–184"
+          ],
+          "reserve": "Le principe non compensable est une spécification explicite de la conception normative. D’autres principes demanderaient une autre analyse.",
+          "scope": "Même action, exigence de consentement",
+          "change": "regle"
+        }
+      },
+      "limits": "Cas délibérément fermé pour isoler le raisonnement : l’exhaustivité du bilan et la connaissance des préférences sont stipulées, sans prétention de réalisme empirique. Le contraste conséquence/exigence indépendante est déjà connu en éthique évaluative ; il sert de contrôle de cohérence du modèle, sans revendication de nouveauté de cette opposition.",
+      "kind": "Cas construit ; aucune donnée empirique attribuée aux auteurs",
+      "dossier_hash": "1f8fbaf27850b279a6c32fd3afd802822958351fbd2d751c113fd05a1c71d595"
+    }
+  ],
+  "pair_audits": [
+    {
+      "pair": [
+        "M",
+        "I"
+      ],
+      "witness": [
+        "C04",
+        "C05"
+      ],
+      "result": "Une appréciation individuelle favorable peut coexister avec une option collectivement dominée ; un maximum collectif peut coexister avec des personnes non bénéficiaires.",
+      "nature": "Portée et composition",
+      "control": "C01 : convergence ; C10 : indétermination commune."
+    },
+    {
+      "pair": [
+        "M",
+        "G"
+      ],
+      "witness": [
+        "C04",
+        "C11"
+      ],
+      "result": "La réponse au besoin ciblé peut être établie alors que le choix n’est pas maximal ; un maximum dans un périmètre large peut laisser le besoin ciblé insatisfait.",
+      "nature": "Portée et préférence comparative",
+      "control": "C01 : convergence ; ne jamais attribuer les bénéfices hors cible au groupe initial."
+    },
+    {
+      "pair": [
+        "M",
+        "V"
+      ],
+      "witness": [
+        "C06",
+        "C07"
+      ],
+      "result": "Des bénéfices comparativement justifiés ne suffisent pas à établir leur origine morale ; le défaut d’information se distingue d’une origine exclusivement commerciale stipulée.",
+      "nature": "Qualification et preuve",
+      "control": "C01 : convergence ; C08 : motivation morale et échec de l’effet peuvent coexister."
+    },
+    {
+      "pair": [
+        "M",
+        "N"
+      ],
+      "witness": [
+        "C04",
+        "C05",
+        "C09",
+        "C15"
+      ],
+      "result": "Une conduite conforme à N1 peut accompagner une option dominée ; une maximisation étayée ne prouve pas N2. Une violation de N1 reste réfutable même si le bilan collectif est indéterminé. C15 oppose deux réponses à la justification de la même action : ses conséquences satisfont M1, sa conduite viole N1.",
+      "nature": "Conditions de conclusion et portée",
+      "control": "C01 : convergence ; C05/N1 : convergence ; C05/N2 : divergence après explicitation du principe."
+    },
+    {
+      "pair": [
+        "I",
+        "G"
+      ],
+      "witness": [
+        "C03",
+        "C13"
+      ],
+      "result": "La réponse à un besoin précis partagé peut être établie alors que certaines personnes jugent défavorablement l’ensemble de la solution.",
+      "nature": "Qualification et étendue de la proposition",
+      "control": "C01 : convergence ; une réaction négative ne réfute pas automatiquement la réponse clinique, et celle-ci ne réfute pas la réaction."
+    },
+    {
+      "pair": [
+        "I",
+        "V"
+      ],
+      "witness": [
+        "C06",
+        "C07"
+      ],
+      "result": "Un bénéfice apprécié ne prouve pas l’engagement moral dont il procède.",
+      "nature": "Qualification et preuve",
+      "control": "C01 : convergence ; C08 : engagement sans bénéfice apprécié."
+    },
+    {
+      "pair": [
+        "I",
+        "N"
+      ],
+      "witness": [
+        "C03",
+        "C13",
+        "C14"
+      ],
+      "result": "Le consentement peut être établi malgré une appréciation ultérieure négative ou avant qu’un bénéfice futur soit connu.",
+      "nature": "Qualification et temporalité de la proposition",
+      "control": "C01 : convergence ; aucun consentement supposé bénéfique à lui seul."
+    },
+    {
+      "pair": [
+        "G",
+        "V"
+      ],
+      "witness": [
+        "C06",
+        "C07",
+        "C12"
+      ],
+      "result": "La réponse au besoin du groupe peut être connue lorsque son origine morale reste inconnue ou est contredite dans le cas construit.",
+      "nature": "Qualification et preuve",
+      "control": "C01 : convergence ; C11 : échec commun relativement au public visé par la mission et l’engagement."
+    },
+    {
+      "pair": [
+        "G",
+        "N"
+      ],
+      "witness": [
+        "C08",
+        "C09",
+        "C14"
+      ],
+      "result": "Une réponse fonctionnelle peut coexister avec une violation du consentement ; une conduite conforme peut coexister avec une absence de réponse ou une preuve encore indisponible.",
+      "nature": "Qualification et conditions indépendantes",
+      "control": "C01 : convergence ; les propositions locales doivent rester affichées."
+    },
+    {
+      "pair": [
+        "V",
+        "N"
+      ],
+      "witness": [
+        "C06",
+        "C07",
+        "C08"
+      ],
+      "result": "Une conduite conforme ne prouve pas un motif moral ; un engagement attesté et la conformité ne prouvent pas le bénéfice effectif.",
+      "nature": "Origine, conduite et effet distingués",
+      "control": "C01 : convergence ; une motivation mixte n’équivaut pas à l’échec de la qualification morale."
+    }
+  ],
+  "sensitivity": [
+    {
+      "id": "S1",
+      "case": "C05",
+      "change": "Principe normatif N1 → N2, sans changement de conception générale ni de dossier.",
+      "before": "N1 : consentement satisfait.",
+      "after": "N2 : une solution pour chaque personne éligible, quel que soit son niveau de besoin ; exigence non satisfaite pour 20 personnes.",
+      "lesson": "Le nom de la conception ne détermine pas un verdict unique. L’app doit afficher la spécification du principe.",
+      "sources": [
+        "DCJ:423–424",
+        "RG:183–184"
+      ]
+    },
+    {
+      "id": "S2",
+      "case": "C05",
+      "change": "Retrait de la comparabilité des gains ou de la connaissance des alternatives.",
+      "before": "La maximisation est étayée sous les hypothèses explicites.",
+      "after": "La maximisation devient indéterminée ; le bénéfice pour 80 personnes reste documenté.",
+      "lesson": "La quantité observée ne prouve pas la maximisation. Ceci est un changement de dossier/hypothèse, enregistré séparément de la rotation du prisme.",
+      "sources": [
+        "DCJ:419",
+        "KING:4–5"
+      ]
+    },
+    {
+      "id": "S3",
+      "case": "C07",
+      "change": "Motivation exclusivement commerciale → motivation mixte comportant un engagement moral effectif.",
+      "before": "L’origine morale est contredite par la stipulation d’exclusivité.",
+      "after": "La réfutation automatique disparaît ; il faut établir le rôle de l’engagement dans l’action.",
+      "lesson": "Profits et engagement moral ne sont pas logiquement incompatibles.",
+      "sources": [
+        "DCJ:422–423"
+      ]
+    },
+    {
+      "id": "S4",
+      "case": "C04",
+      "change": "Pas de changement de fait ; examen de la transférabilité de la conclusion ciblée.",
+      "before": "Le besoin du groupe est satisfait.",
+      "after": "La conclusion « l’organisation a fait le meilleur choix collectif » reste réfutée par la dominance de l’alternative.",
+      "lesson": "Un gain supplémentaire de précision sur la réponse ciblée ne peut effacer un défaut comparatif déjà établi.",
+      "sources": [
+        "DCJ:419–422",
+        "KING:12–14"
+      ]
+    },
+    {
+      "id": "S5",
+      "case": "C10",
+      "change": "Ajout de questionnaires de satisfaction sur l’accueil, sans observation des droits obtenus.",
+      "before": "Le bénéfice d’accès aux droits est indéterminé.",
+      "after": "L’accueil apprécié peut être établi ; l’accès effectif aux droits reste indéterminé.",
+      "lesson": "L’ajout de données peut créer une conclusion locale sans combler la lacune portant sur une autre propriété.",
+      "sources": [
+        "T22:3–4",
+        "KW:514",
+        "KING:5"
+      ]
+    },
+    {
+      "id": "S6",
+      "case": "C01",
+      "change": "Retrait de toutes les règles de synthèse ; maintien des seules étiquettes de conception.",
+      "before": "Des conclusions locales sont possibles sous des variantes explicites.",
+      "after": "Aucun verdict global automatique pour les cinq approches ; plusieurs spécifications restent compatibles.",
+      "lesson": "L’application représente des raisonnements conditionnels et doit rendre leurs prémisses visibles.",
+      "sources": [
+        "DCJ:415",
+        "GH:171–175"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "checks": [
+    {
+      "readings": 75,
+      "constantFacts": true
+    },
+    {
+      "width": 360,
+      "dimensions": {
+        "w": 328,
+        "sw": 328
+      }
+    },
+    {
+      "width": 736,
+      "dimensions": {
+        "w": 704,
+        "sw": 704
+      }
+    }
+  ],
+  "report": {
+    "title": "Le prisme des conceptions de la valeur sociale",
+    "cases": 15,
+    "sources": 14,
+    "brokenAnchors": [],
+    "placeholders": false
+  },
+  "errors": [],
+  "formalisation_2026_10_16": {
+    "cases": 15,
+    "sources": 15,
+    "generic": 1,
+    "brokenAnchors": 0,
+    "hasPlaceholder": false
+  }
+}

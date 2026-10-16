@@ -1,0 +1,15 @@
+{
+  "destination": "C:\\Users\\PC Merci Julie\\OneDrive - Senioralis\\Documents\\01. THÈSE\\4. ARTICLE 2\\work\\prisme_conceptions_jugement_2026-10-15",
+  "files": [
+    "RAPPORT_PRISME_2026-10-15.html",
+    "registre_prisme.json",
+    "CONTROLES_REGISTRE.json",
+    "CONTROLES_VISUELS.json",
+    "build_research.py",
+    "render_research.py",
+    "rapport.html",
+    "formalisation_conceptuelle.html"
+  ],
+  "manuscript_unchanged": true,
+  "manuscript_sha256": "a1399996e96c0dc9fd26c51c8677bac0ad5c37bc9651a82ca971f734422cfbe9"
+}
