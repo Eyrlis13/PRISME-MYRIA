@@ -1,0 +1,167 @@
+{
+  "version": "PRISME V1 — 21 octobre 2026",
+  "statut": "Structure conceptuelle fixée pour la rédaction et les applications ; propositions théoriques documentées.",
+  "enonce": "Une conception de la valeur oriente la propriété retenue comme critère et le raisonnement qui permet de passer de son appréciation au jugement.",
+  "rubriques": [
+    {
+      "nom": "Qualification",
+      "fonction": "Ce qui compte comme valeur et pourquoi",
+      "contenu": "Propriété évaluée et raison de la valoriser, rapportées à la conception retenue.",
+      "question": "Quelle propriété apprécie-t-on, et pourquoi compte-t-elle comme valeur ?",
+      "absence": "Une mesure peut être disponible sans que sa pertinence pour la valeur revendiquée soit justifiée.",
+      "arguments": [
+        "ARG-001",
+        "ARG-002",
+        "ARG-003",
+        "ARG-004",
+        "ARG-005",
+        "ARG-029",
+        "ARG-212"
+      ]
+    },
+    {
+      "nom": "Portée",
+      "fonction": "À qui et à quoi l’affirmation s’applique",
+      "contenu": "Objet, personnes, horizon, contexte et options comparées lorsque la question en implique.",
+      "question": "Quelle affirmation vise-t-on, pour qui, sur quelle période et dans quel périmètre ?",
+      "absence": "Un résultat situé peut être étendu à un groupe, à une période ou à une autre action sans justification.",
+      "arguments": [
+        "ARG-243",
+        "ARG-244"
+      ]
+    },
+    {
+      "nom": "Preuve",
+      "fonction": "Les appuis adéquats à l’affirmation",
+      "contenu": "Observations, témoignages, relations établies ou interprétations argumentées selon la nature de l’énoncé.",
+      "question": "Quels éléments étayent cette affirmation, ou faudrait-il réunir pour l’étayer ?",
+      "absence": "Un indicateur peut être utilisé pour soutenir une affirmation différente de ce qu’il renseigne.",
+      "arguments": [
+        "ARG-013",
+        "ARG-030",
+        "ARG-080",
+        "ARG-154",
+        "ARG-243"
+      ]
+    },
+    {
+      "nom": "Règle",
+      "fonction": "Le passage des appuis à la conclusion",
+      "contenu": "Standard ou comparaison pour apprécier le critère ; priorité et composition pour un jugement d’ensemble.",
+      "question": "Selon quelle règle conclut-on, et comment combine-t-on les appréciations si une synthèse est visée ?",
+      "absence": "Un constat peut être transformé en verdict ou un ensemble d’appréciations agrégé sans justification.",
+      "arguments": [
+        "ARG-029",
+        "ARG-080",
+        "ARG-154"
+      ]
+    }
+  ],
+  "justification_regroupement": "Ces rapprochements fondent notre regroupement des fonctions de justification. Définir une propriété laisse à préciser le champ de l’affirmation ; établir cette propriété dans un champ donné laisse à justifier la conclusion qui en est tirée. Nous retenons donc quatre fonctions articulées. Les destinataires et l’horizon sont regroupés dans la portée, les éléments d’étayage dans la preuve, les standards et la composition dans la règle. Un même passage peut renseigner plusieurs fonctions. Le tableau 3 rend visibles les appuis et les déductions de ce regroupement.",
+  "conceptions": [
+    [
+      "Maximisatrice",
+      "Bénéfice maximisé pour le système.",
+      "Système concerné ; horizon et options de la comparaison.",
+      "Bénéfices et dommages pertinents ; éléments comparables sur les options.",
+      "Apprécier la contribution, puis la supériorité relative ou la maximisation selon l’affirmation visée."
+    ],
+    [
+      "Individualiste",
+      "Bénéfice pour la personne dans son fonctionnement social.",
+      "Personne située ; personnes couvertes par la conclusion.",
+      "Appréciation personnelle et éléments sur le bénéfice revendiqué.",
+      "Rapporter l’appréciation au bénéfice que la personne valorise."
+    ],
+    [
+      "Parties prenantes ciblées",
+      "Réponse à un besoin commun identifié pour le groupe.",
+      "Groupe concerné, période et niveau de réponse visé.",
+      "Besoin retenu, réponse documentée et personnes effectivement couvertes.",
+      "Apprécier la réponse au besoin dans le périmètre défini."
+    ],
+    [
+      "Vertueuse",
+      "Bénéfice fondé sur un sens d’obligation morale.",
+      "Destinataires et situations couverts par l’obligation invoquée.",
+      "Éléments permettant d’interpréter le rôle de l’obligation dans l’action.",
+      "Examiner le rôle de l’obligation dans l’engagement et le bénéfice anticipé ; étayer les effets lorsqu’ils sont revendiqués."
+    ],
+    [
+      "Normative",
+      "Conduite appréciée au regard d’un principe moral ou collectif.",
+      "Champ d’application du principe retenu.",
+      "Justification du principe et éléments sur la conduite examinée.",
+      "Apprécier la conduite selon le principe et la manière justifiée de l’appliquer."
+    ]
+  ],
+  "questions": [
+    "Q1. Pourquoi l’aspect considéré compte-t-il comme valeur, et pour qui ?",
+    "Q2. Quelles propositions faut-il établir pour l’évaluer au regard de cette raison de valoriser ?",
+    "Q3. Quelle conclusion ces éléments permettent-ils de justifier, dans quel périmètre et avec quelles réserves ?"
+  ],
+  "propositions": [
+    "Proposition 1. À propriété évaluée, standard et performance reconnus communs, la justification d’une affirmation de valeur dépend encore de la raison de valoriser cette propriété et du lien établi avec l’affirmation dans le périmètre revendiqué. Un constat commun peut étayer une affirmation selon une référence et laisser ouverte celle qu’appelle une autre. Ces appréciations peuvent être compatibles tout en appelant des compléments de justification différents.",
+    "Proposition 2. À référence de valeur et affirmation maintenues, la confirmation d’une performance déjà reconnue peut laisser intacte une réserve portant sur sa qualification comme bénéfice, sur l’extension de la conclusion ou sur une supériorité revendiquée. La résolution de cette réserve demande des appuis ou un raisonnement portant sur la relation concernée."
+  ],
+  "decisions": [
+    {
+      "id": "S01",
+      "decision": "Retenir une architecture commune conception, critère et appréciation, jugement.",
+      "cloture": "La présentation du modèle et la fiche d’usage emploient la même structure."
+    },
+    {
+      "id": "S02",
+      "decision": "Définir les quatre rubriques par leur fonction dans la justification.",
+      "cloture": "Leur regroupement et leurs articulations sont justifiés dans la section 4.1 et l’annexe A1."
+    },
+    {
+      "id": "S03",
+      "decision": "Conserver portée pour le périmètre ; placer standards et composition dans règle.",
+      "cloture": "Aucune dimension supplémentaire ; la force de la conclusion reste une conséquence des appuis et du raisonnement."
+    },
+    {
+      "id": "S04",
+      "decision": "Conserver les deux propositions ciblées du manuscrit comme conséquences de la chaîne générale.",
+      "cloture": "P1 précise l’accord sur propriété, standard et performance ; P2 porte sur l’apport d’une preuve à une affirmation maintenue. Les quatre relations descriptives de V0.1 sont intégrées à l’explication du modèle."
+    },
+    {
+      "id": "S05",
+      "decision": "Traiter les 55 croisements comme répertoire traçable.",
+      "cloture": "38 formulations proposées, 11 exploratoires, 6 ouvertes conservées ; aucun changement de statut par effet de présentation."
+    },
+    {
+      "id": "S06",
+      "decision": "Utiliser les mêmes quatre rubriques pour audit et guidance.",
+      "cloture": "La fiche permet une conclusion circonscrite et la composition explicite si un jugement d’ensemble est recherché."
+    },
+    {
+      "id": "S07",
+      "decision": "Actualiser le manuscrit à l’analyse effectivement réalisée.",
+      "cloture": "226 textes et 277 arguments ; suppression des annonces de codage encore à conduire. Les sources historiques restent inchangées."
+    }
+  ],
+  "ce_qui_est_fixe": [
+    "Définitions et fonctions des quatre rubriques",
+    "Articulation entre conception, critère et appréciation, jugement",
+    "Dossier commun et comparaison des affirmations",
+    "Même grille pour audit et guidance"
+  ],
+  "ce_qui_releve_application": "Bénéfice, besoin ou principe retenu, standard et règle de composition sont explicités dans les rubriques pour chaque évaluation.",
+  "ce_qui_reste_a_eprouver": "Utilité et effets de la grille dans les évaluations effectives ; aucune validation empirique revendiquée.",
+  "repertoire": {
+    "nombre_cellules": 55,
+    "specifications_proposees": 38,
+    "propositions_exploratoires": 11,
+    "relations_ouvertes": [
+      "I07",
+      "V05",
+      "V07",
+      "V08",
+      "V10",
+      "V11"
+    ],
+    "fonction": "Répertoire d’applications et de traçabilité."
+  },
+  "revision_redactionnelle": "21 octobre 2026 : passe de cohérence et d’argumentation des sections4–5 et transition3.4 ; architecture V1 conservée."
+}

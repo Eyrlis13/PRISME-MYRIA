@@ -1,60 +1,90 @@
-/* Contrôle d'intégrité des données : node tools/verify-data.js */
+/* Contrôle d'intégrité et de fidélité des données : node tools/verify-data.js */
 const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
 const vm = require("vm");
 
-const root = path.join(__dirname, "..");
-const D = JSON.parse(fs.readFileSync(path.join(root, "data", "PRISME_MAJ_2026-10-16.json"), "utf8"));
+const dir = path.join(__dirname, "..", "data");
+const read = (f) => JSON.parse(fs.readFileSync(path.join(dir, f), "utf8"));
+const C = read("02_CONTENU_INTERFACE.json");
+const M = read("03_MODELE_SCIENTIFIQUE_REFERENCE.json");
+const S = read("04_SOURCES_ET_ATTRIBUTIONS.json");
 const errors = [];
 const err = (m) => errors.push(m);
+const eq = (a, b, where) => { if (a !== b) err(where + " : « " + a + " » ≠ « " + b + " »"); };
 
-/* le script chargé par l'application doit correspondre au JSON */
+/* le script chargé par l'application doit correspondre aux trois fichiers */
 const sandbox = { window: {} };
 vm.createContext(sandbox);
-vm.runInContext(fs.readFileSync(path.join(root, "data", "prisme-data.js"), "utf8"), sandbox);
-vm.runInContext(fs.readFileSync(path.join(root, "data", "interface-fr.js"), "utf8"), sandbox);
-if (JSON.stringify(sandbox.window.PRISME_DATA) !== JSON.stringify(D)) err("data/prisme-data.js n'est pas à jour : lancer node tools/build-data.js");
-const UI = sandbox.window.PRISME.ui;
+vm.runInContext(fs.readFileSync(path.join(dir, "prisme-data.js"), "utf8"), sandbox);
+if (JSON.stringify(sandbox.window.PRISME_DATA) !== JSON.stringify({ contenu: C, modele: M, sources: S })) err("data/prisme-data.js n'est pas à jour : lancer node tools/build-data.js");
 
-const dims = D.interface.dimension_order;
-const profiles = Object.keys(D.profiles);
-const srcIds = new Set(D.sources.map((s) => s.id));
-const statuses = new Set(Object.keys(UI.statusLabels));
-const refOk = (ref, where) => { const id = ref.split(":")[0]; if (!srcIds.has(id)) err(where + " : source inconnue " + ref); };
+/* le modèle de référence est bien celui que désigne le fichier des sources */
+const sha = crypto.createHash("sha256").update(fs.readFileSync(path.join(dir, S.source_modele.fichier))).digest("hex");
+eq(sha, S.source_modele.sha256, "empreinte du modèle de référence");
 
-/* empreinte du dossier : même calcul que recherche/build_research.py (json.dumps Python, ensure_ascii=False) */
-const pyDumps = (objective, facts) => "[" + JSON.stringify(objective) + ", [" + facts.map((f) => JSON.stringify(f)).join(", ") + "]]";
-
-if (D.cases.length !== 15) err("15 cas attendus");
-if (profiles.join("") !== "MIGVN") err("profils attendus M I G V N");
-if (dims.join(",") !== "qualification,portee,preuve,regle") err("ordre des dimensions inattendu");
-D.model.dimensions.forEach((d) => { if (!UI.dimColors[d.id] || !UI.dimRoles[d.id]) err("dimension sans couleur ou rôle : " + d.id); });
-profiles.forEach((p) => {
-  dims.forEach((d) => { if (!D.profiles[p].generic_dimensions[d]) err(p + " : orientation générique manquante " + d); });
-  D.profiles[p].sources.forEach((r) => refOk(r, "profil " + p));
-  if (!UI.specLabels[p]) err(p + " : libellé de spécification manquant");
+/* fidélité au modèle V1 : énoncé, quatre fonctions, cinq conceptions */
+eq(C.accueil.enonce_modele, M.enonce, "énoncé du modèle");
+const F = C.fonctions.map((f) => f.id);
+eq(F.join(","), "qualification,portee,preuve,regle", "ordre des fonctions");
+C.fonctions.forEach((f, i) => {
+  const r = M.rubriques[i];
+  eq(f.question, r.question, "question " + f.id);
+  eq(f.explication, r.contenu, "explication " + f.id);
+  eq(f.arguments.join(","), r.arguments.join(","), "arguments " + f.id);
 });
-let readings = 0;
-D.cases.forEach((c) => {
-  const h = crypto.createHash("sha256").update(pyDumps(c.objective, c.facts), "utf8").digest("hex");
-  if (h !== c.dossier_hash) err(c.id + " : empreinte du dossier différente");
-  profiles.forEach((p) => {
-    const r = c.readings[p];
-    if (!r) { err(c.id + " : lecture " + p + " manquante"); return; }
-    readings++;
-    dims.forEach((d) => { if (!r.dimensions[d] || !r.dimensions[d].text || !r.dimensions[d].detail) err(c.id + "/" + p + " : dimension " + d + " incomplète"); });
-    ["conclusion", "justification", "scope", "reserve"].forEach((k) => { if (!r[k]) err(c.id + "/" + p + " : " + k + " vide"); });
-    if (!statuses.has(r.status)) err(c.id + "/" + p + " : statut inconnu " + r.status);
-    if (!r.references.length) err(c.id + "/" + p + " : aucune référence");
-    r.references.forEach((ref) => refOk(ref, c.id + "/" + p));
-  });
+eq(C.conceptions.map((c) => c.id).join(""), "MISVN", "identifiants des conceptions");
+C.conceptions.forEach((c, i) => {
+  const row = M.conceptions[i];
+  eq(c.nom, row[0], "nom " + c.id);
+  F.forEach((f, j) => eq(c.rubriques[f], row[j + 1], "rubrique " + f + " de " + c.id));
+  if (!c.raison_courte) err("raison courte manquante : " + c.id);
 });
-D.sensitivity.forEach((s) => { if (!D.cases.some((c) => c.id === s.case)) err(s.id + " : cas inconnu"); s.sources.forEach((r) => refOk(r, s.id)); });
-D.pair_audits.forEach((a) => a.witness.forEach((w) => { if (!D.cases.some((c) => c.id === w)) err("audit " + a.pair + " : témoin inconnu " + w); }));
-D.model.sources.forEach((r) => refOk(r, "modèle"));
-if (!D.cases.some((c) => c.id === D.interface.default_case)) err("cas par défaut inconnu");
-UI.quickCases.forEach((q) => { if (!D.cases.some((c) => c.id === q.id)) err("cas mis en avant inconnu " + q.id); });
+if (C.conceptions.filter((c) => c.id === C.accueil.conception_initiale).length !== 1) err("conception initiale inconnue");
 
-if (errors.length) { console.error(errors.map((e) => "ERREUR " + e).join("\n")); process.exit(1); }
-console.log("OK : " + D.cases.length + " cas, " + readings + " lectures, empreintes des dossiers vérifiées, " + D.sources.length + " sources, références résolues.");
+/* références : toutes résolues, avec un DOI et un lien qui lui correspond */
+const refs = new Map(S.references.map((r) => [r.id, r]));
+S.references.forEach((r) => {
+  if (!/^10\.\d{4,9}\//.test(r.doi || "")) err("DOI absent ou mal formé : " + r.id);
+  eq(r.url, "https://doi.org/" + r.doi, "lien DOI " + r.id);
+});
+const cited = [].concat(
+  C.illustrations.principal.sources,
+  ...C.illustrations.complementaires.map((e) => e.sources),
+  ...Object.values(S.appuis_par_fonction),
+  C.conceptions.map((c) => c.source_typologie));
+cited.forEach((id) => { if (!refs.has(id)) err("référence inconnue : " + id); });
+F.forEach((f) => { if (!S.appuis_par_fonction[f]) err("appuis manquants pour " + f); });
+
+/* démonstration guidée : A puis B, deux lectures complètes dans chaque version */
+const X = C.illustrations.principal;
+eq(C.illustrations.cas_initial, X.id, "cas initial");
+const V = new Map(X.versions.map((v) => [v.id, v]));
+const A = V.get(C.illustrations.version_initiale), B = X.versions.filter((v) => v.herite_de === A.id)[0];
+if (!A || !B) err("versions A et B attendues");
+else {
+  [A, B].forEach((v) => C.illustrations.couple_initial.forEach((cid) => {
+    const l = v.lectures.filter((x) => x.conception === cid)[0];
+    if (!l) return err("lecture " + cid + " absente de la version " + v.id);
+    ["affirmation", "statut_affichage", "portee", "pourquoi"].forEach((k) => { if (!l[k]) err(k + " manquant : " + v.id + "/" + cid); });
+    F.forEach((f) => { if (!l.rubriques[f]) err("rubrique " + f + " manquante : " + v.id + "/" + cid); });
+    if (/réfutée|établie$/i.test(l.statut_affichage)) err("verdict générique dans " + v.id + "/" + cid);
+  }));
+  const sent = (t) => t.match(/[^.]+\.(\s|$)/g).map((s) => s.trim());
+  const sa = sent(A.faits_communs), sb = sent(B.faits_communs);
+  const lacune = sa[sa.length - 1];
+  if (sb.indexOf(lacune) >= 0) err("la lacune de A est encore affichée dans B");
+  if (sa.slice(0, -1).join(" ") !== sb.slice(0, sa.length - 1).join(" ")) err("B ne conserve pas les faits de A");
+  if (!B.bandeau || !B.information_ajoutee) err("bandeau ou information ajoutée manquant pour B");
+}
+
+/* termes proscrits dans les textes affichés */
+const shown = JSON.stringify([C.accueil, C.conceptions, C.fonctions, C.illustrations, C.documentation, C.libelles]);
+[/explicitée par le forum/i, /Proposition réfutée/i, /Proposition établie/i, /\bscore\b/i, /pondération/i].forEach((re) => { if (re.test(shown)) err("terme proscrit : " + re); });
+
+/* le répertoire n'est pas publié : aucun lien vers lui dans le code */
+const code = ["js/ui.js", "js/model.js", "js/illus.js", "js/main.js", "index.html"].map((f) => fs.readFileSync(path.join(__dirname, "..", f), "utf8")).join("\n");
+if (/repertoire[^"]*\.(html|pdf|csv|json)/i.test(code)) err("lien vers un répertoire non publié");
+
+if (errors.length) { console.error(errors.join("\n")); process.exit(1); }
+console.log("Données conformes : modèle V1 (" + sha.slice(0, 12) + "…), 5 conceptions × 4 fonctions, " + S.references.length + " références avec DOI, dossier A → B.");

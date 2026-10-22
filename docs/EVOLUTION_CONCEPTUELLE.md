@@ -51,3 +51,11 @@ Textes à valider : les explications des relations et deux formulations de concl
 Le centre du modèle n'est plus le triplet contenu, référence de valeur, fonction, mais les quatre dimensions des exigences de justification (qualification, portée, preuve, règle d'appréciation), issues de `data/PRISME_MAJ_2026-10-16.json`. Les anciennes catégories et les propositions P1/P2 ne sont pas renommées : elles sont retirées du parcours et conservées dans `archive/v0.5/`.
 
 Le prisme représente toujours la conception de la valeur sociale (cinq orientations). La lumière qui le traverse est la lecture évaluative ; les quatre faisceaux sont les quatre dimensions. Le dossier évaluatif commun est dessiné comme un document, avec un trait plein de couleur papier, distinct des faisceaux : changer de conception ne transforme pas les faits.
+
+## Version 1.1 (22 octobre 2026) : faire lire le modèle
+
+Le modèle V1 (`data/03_MODELE_SCIENTIFIQUE_REFERENCE.json`) parle de quatre fonctions de justification, communes aux cinq conceptions, plutôt que de « dimensions des exigences ». L'accueil suit la chaîne de l'énoncé : conception de la valeur, critère et appréciation, jugement justifié. La confrontation du dossier aux exigences n'est plus un bloc distinct ; elle se lit dans le passage des appuis à la conclusion, au sein des quatre rubriques.
+
+Le prisme garde ses cinq faces et sa rotation ; cinq boutons nommés y donnent un accès direct et restent synchronisés avec lui. Ses faisceaux colorés vont du prisme aux quatre rubriques, puis des rubriques au jugement. Le dossier commun n'entre plus dans le schéma de l'accueil : il fait l'objet d'un bandeau sous la chaîne, et devient le point de départ de la démonstration, où un trait couleur papier le relie aux deux lectures.
+
+Les illustrations ne présentent plus quinze cas lus par une paire au choix, mais un cas construit, en deux versions de dossier. Ce qui change entre A et B est une information, ajoutée visiblement, et non la conception. Les libellés de conclusion du fichier 02 remplacent les statuts génériques « Proposition établie / réfutée ».

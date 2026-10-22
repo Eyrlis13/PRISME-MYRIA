@@ -1,7 +1,10 @@
-/* Utilitaires et accès aux données scientifiques (window.PRISME_DATA). */
+/* Utilitaires et accès aux contenus (window.PRISME_DATA : contenu, modèle de référence, sources). */
 (function () {
   var P = (window.PRISME = window.PRISME || {});
-  var D = (P.D = window.PRISME_DATA);
+  var DATA = window.PRISME_DATA;
+  var C = (P.C = DATA.contenu);
+  P.M = DATA.modele;
+  var S = (P.S = DATA.sources);
 
   /* Création d'éléments DOM. Les textes passent toujours par textContent. */
   P.h = function (tag, attrs) {
@@ -27,33 +30,26 @@
     return el;
   };
 
-  /* Conceptions, dans l'ordre du fichier (M, I, G, V, N). */
-  P.conceptionIds = Object.keys(D.profiles);
-  P.conceptions = P.conceptionIds.map(function (id) { return { id: id, label: D.profiles[id].name }; });
-  P.profile = function (id) { return D.profiles[id]; };
+  /* Les cinq conceptions, dans l'ordre du contenu : ce sont les cinq faces du prisme. */
+  P.conceptions = C.conceptions.map(function (c) { return { id: c.id, label: c.nom }; });
+  P.conception = function (id) { return C.conceptions.filter(function (c) { return c.id === id; })[0]; };
 
-  /* Dimensions, dans l'ordre recommandé par l'interface. */
-  P.dims = D.interface.dimension_order.map(function (id) {
-    return D.model.dimensions.filter(function (d) { return d.id === id; })[0];
-  });
-  P.dimRays = P.dims.map(function (d) { return P.ui.dimColors[d.id].ray; });
-
-  P.caseById = function (id) { return D.cases.filter(function (c) { return c.id === id; })[0]; };
-  P.block = function (id) { return D.model.blocks.filter(function (b) { return b.id === id; })[0]; };
-  P.link = function (from, to) { return D.model.links.filter(function (l) { return l.from_id === from && l.to_id === to; })[0]; };
-  P.source = function (id) { return D.sources.filter(function (s) { return s.id === id; })[0]; };
-
-  /* « DCJ:421–422 » → { source, pages } */
-  P.parseRef = function (ref) {
-    var i = ref.indexOf(":");
-    var id = i < 0 ? ref : ref.slice(0, i);
-    return { source: P.source(id), id: id, pages: i < 0 ? "" : ref.slice(i + 1) };
+  /* Les quatre fonctions (rubriques), communes aux cinq conceptions. Couleurs d'identification
+     reprises de la version précédente : bleu pâle, ambre, vert, lavande. Elles ne codent aucun résultat. */
+  P.fonctions = C.fonctions;
+  P.colors = {
+    qualification: { ray: "#7aa6e0", tint: "#e9f0fa" },
+    portee: { ray: "#f0b54a", tint: "#fcf2df" },
+    preuve: { ray: "#6cc192", tint: "#e6f4eb" },
+    regle: { ray: "#b49be6", tint: "#f0eafb" },
   };
+  P.rays = C.fonctions.map(function (f) { return P.colors[f.id].ray; });
 
-  /* Analyse transversale documentée pour une paire (ordre indifférent), ou null. */
-  P.auditFor = function (a, b) {
-    return D.pair_audits.filter(function (x) { return (x.pair[0] === a && x.pair[1] === b) || (x.pair[0] === b && x.pair[1] === a); })[0] || null;
+  P.ref = function (id) { return S.references.filter(function (r) { return r.id === id; })[0]; };
+  P.refLabel = function (r) {
+    var a = r.auteurs.map(function (x) { return x.split(" ").slice(-1)[0]; });
+    var who = a.length > 2 ? a[0] + " et al." : a.join(" et ");
+    if (r.id === "DCJ2025") who = "de la Cruz Jara et Spanjol";
+    return who + " (" + r.annee + ")";
   };
-  P.sensitivityFor = function (caseId) { return D.sensitivity.filter(function (s) { return s.case === caseId; }); };
-  P.sourceLabel = function (s) { return s.authors + " (" + s.year + ")"; };
 })();

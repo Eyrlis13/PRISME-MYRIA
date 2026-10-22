@@ -1,0 +1,139 @@
+PRISME MYRIA — BRIEF DE MISE À JOUR
+22 octobre 2026 | Périmètre : accueil #/ et illustrations #/illustrations
+
+INTENTION
+
+Conserver l'identité visuelle actuelle et rendre le modèle compréhensible dès la première lecture. Le visiteur doit pouvoir expliquer la relation entre conception de la valeur, critère et jugement, puis la voir fonctionner sur un dossier concret.
+
+Le modèle à transmettre :
+« Une conception de la valeur oriente la propriété retenue comme critère et le raisonnement qui permet de passer de son appréciation au jugement. »
+
+Chaîne à afficher :
+CONCEPTION DE LA VALEUR → CRITÈRE ET APPRÉCIATION → JUGEMENT JUSTIFIÉ
+
+Les cinq conceptions sont les cinq faces du prisme. Qualification, portée, preuve et règle d'appréciation sont quatre fonctions communes aux cinq conceptions. Les flèches représentent leur articulation argumentative. Une évaluation peut procéder par allers-retours.
+
+CONTENU DU DOSSIER
+
+01_BRIEF_CODEUR.txt : présent document, parcours et critères de réception.
+02_CONTENU_INTERFACE.json : textes prêts à intégrer, cinq conceptions, quatre rubriques, démonstration guidée, deux exemples complémentaires et provenance.
+03_MODELE_SCIENTIFIQUE_REFERENCE.json : copie fidèle du modèle V1 actualisé après la passe argumentative. Sert à contrôler la fidélité scientifique ; son intégralité n'a pas vocation à être affichée.
+04_SOURCES_ET_ATTRIBUTIONS.json : références extraites du registre et correspondances avec les éléments de l'interface. Les exemples sont nos constructions ; les sources fondent leurs distinctions.
+
+Le texte de l'interface est fixé dans 02. Les choix de mise en page restent au codeur, dans l'esthétique actuelle. Toute nouvelle affirmation scientifique doit être soumise à l'autrice. Les fichiers fournis suffisent à réaliser cette version sans produire de nouveaux cas ni compléter la matrice.
+
+1. GARDER L'ESTHÉTIQUE
+
+Réutiliser les styles, composants et ressources existants : fond aubergine/prune, cartes crème, prisme translucide, faisceau lumineux, rubans colorés, arrondis et ombres. Conserver les correspondances de couleurs des rubriques : bleu pâle, ambre, vert et lavande. Garder les accents corail/orange, la typographie actuelle et l'espace entre les éléments. L'interface inspectée utilise Inter pour le texte courant et Montserrat pour certains titres ; reprendre les déclarations existantes et leurs polices de secours.
+
+Conserver le prisme comme signature visuelle. Réduire son encombrement lorsque sa taille repousse les conclusions hors de la zone de lecture. La rotation reste possible ; cinq boutons nommés offrent aussi un accès immédiat aux conceptions. Le choix par bouton et l'orientation du prisme restent synchronisés. Le fonctionnement doit être complet au clavier et lorsque les animations sont réduites.
+
+Préserver les deux routes actuelles et leur navigation. Aucune migration de technologie n'est demandée. Établir des captures de référence avant modification pour vérifier la continuité visuelle.
+
+2. ACCUEIL : FAIRE LIRE LE MODÈLE
+
+Titre : « Comment la conception de la valeur oriente le jugement ».
+Sous-titre : « PRISME relie la raison de valoriser une action aux critères retenus et aux conclusions que leur appréciation permet de soutenir. »
+
+Organiser le premier ensemble visuel autour de la chaîne en trois blocs :
+
+A. Conception de la valeur
+Un prisme et cinq boutons portant les noms complets des conceptions. Sous le nom sélectionné, afficher une seule phrase : sa raison de valoriser. Par défaut, sélectionner Parties prenantes ciblées pour préparer la démonstration principale. Les cinq choix restent également visibles.
+
+B. Critère et appréciation
+Ce bloc central doit être nommé explicitement. Il contient quatre rubriques compactes, chacune avec son intitulé accessible et son terme scientifique en second niveau :
+• Ce qui compte, et pourquoi — Qualification.
+• Pour qui, et dans quel périmètre — Portée.
+• Sur quels appuis — Preuve.
+• Ce qui permet de conclure — Règle d'appréciation.
+Au premier niveau, montrer pour chacune la formulation courte correspondant à la conception sélectionnée. Déplier la question et l'explication complète à la demande. Regrouper les quatre fonctions visuellement ; éviter quatre parcours de navigation distincts.
+
+C. Jugement justifié
+Une carte de sortie indique : « Une conclusion précise, son périmètre et ce qui reste à étayer. » L'accueil expose le fonctionnement général. Les conclusions appliquées apparaissent dans les illustrations.
+
+Placer sous cette chaîne un bandeau bref : « Pour comparer les justifications, on conserve le même dossier : l'action, son objectif et toutes les informations disponibles. » Le détail explique qu'une information ajoutée crée une nouvelle version du dossier.
+
+L'actuel bloc Confrontation du dossier aux exigences est intégré au bloc central. Cette opération reste intelligible dans le passage des appuis à la conclusion. Les quatre rubriques sont appelées fonctions ou rubriques, et le prisme conserve cinq faces.
+
+Action principale : « Voir le modèle sur un exemple », vers #/illustrations.
+En dessous, un petit espace « À quoi sert PRISME ? » présente deux usages : audit d'un jugement déjà formulé ; guidance pour préparer l'évaluation. Les deux emploient les mêmes quatre rubriques. Le détail est fourni dans 02. Cette livraison présente ces usages ; le développement d'un formulaire d'analyse ou de l'import de rapports relève d'une étape distincte.
+
+Remplacer la formule qui attribue systématiquement la conception au seul forum par une provenance explicite lorsqu'elle est renseignée : qui formule la référence et dans quel contexte. Le modèle peut servir aux échanges entre organisation, destinataires et forum.
+
+3. ILLUSTRATIONS : UNE DÉMONSTRATION GUIDÉE D'ABORD
+
+Titre : « Ce que le même constat permet de conclure ».
+Mention discrète mais visible : « Illustration construite ».
+
+Ouvrir directement sur le cas des aides techniques à domicile, avec les conceptions Parties prenantes ciblées et Individualiste. Ce choix remplace le couple conservé arbitrairement après une navigation entre anciens cas.
+
+Organisation verticale :
+1) Le dossier commun, en une carte compacte.
+2) Deux cartes comparables, portant chacune la raison de valoriser et la conclusion.
+3) Une phrase expliquant la différence entre les conclusions.
+4) Un bouton qui ajoute une information pertinente et rend visible ce qui change.
+
+Les conclusions sont visibles sans déplier les rubriques. Les deux cartes s'alignent sur grand écran et se suivent sur mobile. Utiliser de petits repères de conception ou des miniatures du prisme ; la lecture des conclusions prime sur l'encombrement de deux grands prismes.
+
+Le dossier A contient le besoin de transfert lit-fauteuil identifié avec les destinataires, le standard convenu sans aide humaine et sa réalisation observée. L'appréciation du gain dans les activités et relations de chaque personne reste inconnue. Les textes exacts et les quatre rubriques appliquées figurent dans 02.
+
+La première carte conclut que la réponse au besoin de transfert est étayée. La seconde conserve ce constat et précise que l'appréciation personnelle du gain reste à établir. Le périmètre observé est indiqué dans chaque carte. Les deux conclusions sont compatibles.
+
+Interaction principale : « Ajouter l'appréciation des personnes ».
+Elle passe au dossier B. Afficher : « Nouvelle version du dossier : une information a été ajoutée. » Montrer le complément, commun aux deux lectures : les personnes interrogées apprécient favorablement le gain dans leurs activités et relations. La phrase signalant l'appréciation encore inconnue appartient à l'état A ; dans B, elle est remplacée par l'information recueillie. Les deux cartes sont actualisées à partir de ce même dossier. Un bouton « Revenir au dossier initial » restaure l'état A.
+
+Ce changement illustre l'apport d'une information adaptée à l'affirmation encore ouverte. Une courte note précise qu'une nouvelle confirmation du transfert conforterait le constat déjà établi. Aucun curseur ni tableau de paramètres n'est nécessaire pour cette démonstration.
+
+Un dépliable « Voir le raisonnement » par carte révèle les quatre rubriques. Un lien « Sources et prémisses de cet exemple » donne les références, la construction effectuée et les limites de l'affirmation. La précision sur l'absence d'attribution causale au seul aménagement reste dans ce détail, à proximité de la définition du cas.
+
+APRÈS la démonstration, proposer « Deux autres exemples », sous forme de cartes fermées par défaut :
+• Accès garanti et réponse au besoin : même accès observé, deux affirmations précisées dans l'annexe B2.
+• Bénéfice constaté et supériorité : une contribution étayée laisse la supériorité comparative ouverte, suivant l'annexe B3.
+Le contenu fourni dans 02 suffit. Ces exemples complémentaires sont statiques dans cette livraison.
+
+4. TRAITER LES ANCIENS CAS
+
+Retirer du parcours principal le sélecteur de quinze cas, les raccourcis redondants, les vingt-cinq couples possibles et les variantes de sensibilité simultanément visibles. Conserver leurs contenus dans l'historique du projet pour permettre leur reprise ultérieure.
+
+La version publique de cette livraison utilise les trois illustrations fournies. Une ancienne illustration pourra être réintroduite après contrôle de son dossier, de ses prémisses et de ses conclusions au regard du modèle V1. Un changement de conception conserve les faits ; un changement de faits doit être visible et versionné.
+
+Les cas actuels C01 à C15 ne sont pas automatiquement équivalents aux trois exemples fournis. Utiliser de nouveaux identifiants stables. Si d'anciens liens de cas existent, les rediriger vers l'entrée de la page avec une indication brève de la mise à jour, sans leur attribuer silencieusement un autre contenu.
+
+5. SOURCES ET DÉTAILS SCIENTIFIQUES
+
+Prévoir un accès secondaire « Sources et construction du modèle », depuis les deux pages. Son ouverture conserve l'état de la démonstration.
+
+Présenter clairement :
+• La typologie des cinq conceptions provient de de la Cruz Jara et Spanjol.
+• L'articulation avec le critère, les quatre fonctions et le jugement est notre synthèse analytique. Les références évaluatives en étayent les distinctions.
+• Les illustrations sont construites à partir de ces distinctions et de prémisses explicites.
+
+Les trois questions d'analyse, les deux propositions et les références peuvent y être consultées. Le répertoire de 55 croisements reste une documentation de traçabilité. Il comporte 38 formulations proposées, 11 exploratoires et 6 relations ouvertes ; ces statuts sont conservés dans le fichier de référence. Un lien vers ce répertoire ne doit apparaître que si le document est effectivement disponible dans le site. L'ajout de cette documentation ne bloque pas la lecture du modèle.
+
+Footer court : « Modèle conceptuel · illustrations construites » puis lien vers les sources. Rassembler les précisions scientifiques dans ce volet accessible, pour alléger les écrans de découverte.
+
+6. FIDÉLITÉ DU MODÈLE
+
+Une conclusion encore à étayer est distincte d'un résultat défavorable. Dans la démonstration principale, un libellé de conclusion explicite remplace le verdict générique Proposition réfutée/établie. Éviter un feu rouge qui ferait lire une information absente comme un échec.
+
+Les quatre rubriques restent articulées. Portée désigne les personnes, l'objet, la période, le contexte et, le cas échéant, les options comparées. La règle comprend le standard pour apprécier un critère et, lorsqu'un jugement global est recherché, la composition des appréciations. La preuve peut mobiliser observations, témoignages ou raisonnement pertinent.
+
+Les bénéficiaires peuvent participer à l'appréciation dans plusieurs conceptions. Le besoin défini avec les destinataires est une prémisse de notre illustration ; il ne crée pas une procédure universelle pour la conception ciblée. L'accord sur ce besoin renseigne déjà une partie de ce que les personnes valorisent.
+
+Conserver la différence entre bénéfice étayé, supériorité relative à des options et maximisation. Pour les conceptions vertueuse et normative, préciser respectivement l'obligation morale invoquée et le principe appliqué. Le modèle n'attribue aucun poids, seuil, veto ou score universel.
+
+Une éventuelle future analyse de rapport devra distinguer ce que le rapport documente de ce qui a effectivement été réalisé. Elle devra rendre visibles ses extraits et ses déductions. Cette livraison ne comporte aucun classement automatique de rapport ni résultat présenté comme empiriquement validé.
+
+7. RÉCEPTION ATTENDUE
+
+• Les deux routes actuelles fonctionnent directement et par la navigation.
+• Les cinq conceptions sont accessibles au clic et au clavier ; le prisme reflète le choix.
+• Les quatre rubriques restent groupées dans Critère et appréciation.
+• À l'ouverture des illustrations, le cas A et le couple ciblée/individualiste sont affichés avec leurs deux conclusions.
+• L'ajout d'information crée visiblement le dossier B et actualise les deux lectures. Le retour à A rétablit les textes initiaux.
+• Ouvrir les détails ou les sources préserve le dossier et les choix courants.
+• Les affirmations, leurs périmètres et leurs appuis correspondent au contenu fourni. Les liens bibliographiques renvoient aux DOI vérifiés.
+• Les pages restent lisibles sur ordinateur et téléphone, au clavier et avec animations réduites. Les conclusions ne dépendent ni d'un survol ni de la seule couleur.
+• La comparaison visuelle avant/après confirme la conservation de l'univers graphique.
+
+Livrer une prévisualisation des deux routes et quelques captures ordinateur/mobile. Joindre la liste courte des contenus déplacés, des anciens cas retirés du parcours et des éventuels arbitrages encore nécessaires. Faire examiner cette prévisualisation par l'autrice avant publication.

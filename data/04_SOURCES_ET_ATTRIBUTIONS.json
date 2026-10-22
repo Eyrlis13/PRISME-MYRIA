@@ -1,0 +1,141 @@
+{
+  "provenance": "Métadonnées du registre local et localisateurs vérifiés dans la passe argumentative du manuscrit.",
+  "references": [
+    {
+      "id": "DCJ2025",
+      "auteurs": [
+        "Marcelo F. de la Cruz Jara",
+        "Jelena Spanjol"
+      ],
+      "annee": 2025,
+      "titre": "Understanding Multiple Perspectives on Social Value in Business: An Integrative Review and Typology",
+      "doi": "10.1007/s10551-024-05692-1",
+      "url": "https://doi.org/10.1007/s10551-024-05692-1",
+      "passages": "pp. 418–424",
+      "role": "Typologie des cinq conceptions ; distinction entre besoin commun et bénéfice personnel, pp. 420–422.",
+      "argument_repere": "ARG-001",
+      "attribution": "Appui à une distinction mobilisée ; le regroupement PRISME et les illustrations sont notre synthèse."
+    },
+    {
+      "id": "TEASDALE2021",
+      "auteurs": [
+        "Rebecca M. Teasdale"
+      ],
+      "annee": 2021,
+      "titre": "Evaluative Criteria: An Integrated Model of Domains and Sources",
+      "doi": "10.1177/1098214020955226",
+      "url": "https://doi.org/10.1177/1098214020955226",
+      "passages": "pp. 370–371",
+      "role": "Domaines et définitions de la réussite ; exemple du programme de robotique.",
+      "argument_repere": "ARG-212",
+      "attribution": "Appui à une distinction mobilisée ; le regroupement PRISME et les illustrations sont notre synthèse."
+    },
+    {
+      "id": "TEASDALE2023",
+      "auteurs": [
+        "Rebecca M. Teasdale",
+        "Robyn Thomas Pitts",
+        "Emily F. Gates",
+        "Clara Shim"
+      ],
+      "annee": 2023,
+      "titre": "Teaching specification of evaluative criteria: A guide for evaluation education",
+      "doi": "10.1002/ev.20546",
+      "url": "https://doi.org/10.1002/ev.20546",
+      "passages": "p. 33",
+      "role": "Définitions des domaines évaluatifs, dont pertinence et portée/accès.",
+      "argument_repere": "ARG-021",
+      "attribution": "Appui à une distinction mobilisée ; le regroupement PRISME et les illustrations sont notre synthèse."
+    },
+    {
+      "id": "EBRAHIM2014",
+      "auteurs": [
+        "Alnoor Ebrahim",
+        "V. Kasturi Rangan"
+      ],
+      "annee": 2014,
+      "titre": "What Impact? A Framework for Measuring the Scale and Scope of Social Performance",
+      "doi": "10.1525/cmr.2014.56.3.118",
+      "url": "https://doi.org/10.1525/cmr.2014.56.3.118",
+      "passages": "pp. 124–125",
+      "role": "Distinction entre résultats éducatifs et ambition de réduction de la pauvreté.",
+      "argument_repere": "ARG-243",
+      "attribution": "Appui à une distinction mobilisée ; le regroupement PRISME et les illustrations sont notre synthèse."
+    },
+    {
+      "id": "KROEGER2014",
+      "auteurs": [
+        "Arne Kroeger",
+        "Christiana Weber"
+      ],
+      "annee": 2014,
+      "titre": "Developing a Conceptual Framework for Comparing Social Value Creation",
+      "doi": "10.5465/amr.2012.0344",
+      "url": "https://doi.org/10.5465/amr.2012.0344",
+      "passages": "p. 514 et pp. 526–528",
+      "role": "Prestations et bénéfice ; établissement d’un degré de valeur et comparaison des interventions.",
+      "argument_repere": "ARG-013",
+      "attribution": "Appui à une distinction mobilisée ; le regroupement PRISME et les illustrations sont notre synthèse."
+    },
+    {
+      "id": "BENJAMIN2023",
+      "auteurs": [
+        "Lehn M. Benjamin",
+        "Alnoor Ebrahim",
+        "Mary Kay Gugerty"
+      ],
+      "annee": 2023,
+      "titre": "Nonprofit Organizations and the Evaluation of Social Impact: A Research Program to Advance Theory and Practice",
+      "doi": "10.1177/08997640221123590",
+      "url": "https://doi.org/10.1177/08997640221123590",
+      "passages": "version auteur, pp. 15–19",
+      "role": "Standards et synthèse ; adéquation des méthodes à la question.",
+      "argument_repere": "ARG-029",
+      "attribution": "Appui à une distinction mobilisée ; le regroupement PRISME et les illustrations sont notre synthèse."
+    },
+    {
+      "id": "SCRIVEN2012",
+      "auteurs": [
+        "Michael S. Scriven"
+      ],
+      "annee": 2012,
+      "titre": "The logic of valuing",
+      "doi": "10.1002/ev.20003",
+      "url": "https://doi.org/10.1002/ev.20003",
+      "passages": "PDF, p. 5 et p. 11",
+      "role": "Voies de justification par observation, inférence ou définition.",
+      "argument_repere": "ARG-080",
+      "attribution": "Appui à une distinction mobilisée ; le regroupement PRISME et les illustrations sont notre synthèse."
+    }
+  ],
+  "appuis_par_fonction": {
+    "qualification": [
+      "DCJ2025",
+      "TEASDALE2021"
+    ],
+    "portee": [
+      "EBRAHIM2014"
+    ],
+    "preuve": [
+      "KROEGER2014",
+      "BENJAMIN2023",
+      "SCRIVEN2012"
+    ],
+    "regle": [
+      "BENJAMIN2023",
+      "SCRIVEN2012"
+    ]
+  },
+  "precision": "Le manuscrit mobilise également Fournier (1995) pour les opérations du raisonnement évaluatif. La liste courte fournie ici rassemble les références dont les liens DOI sont disponibles dans le registre ; elle n’est pas la bibliographie exhaustive du manuscrit.",
+  "source_modele": {
+    "fichier": "03_MODELE_SCIENTIFIQUE_REFERENCE.json",
+    "sha256": "be8d4227829177e67853d8924b86cf1fbc8d2d49187ca77781eb66b46aba0959"
+  },
+  "correspondances_manuscrit": {
+    "accueil": "Sections 4.1 et 4.2 ; tableaux 3 et 4.",
+    "aides-domicile": "Section 4.3 ; tableau 5 ; propositions 1 et 2.",
+    "acces-et-besoin": "Annexe B2.",
+    "benefice-et-superiorite": "Annexe B3.",
+    "usages": "Section 5.2."
+  }
+}

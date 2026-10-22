@@ -1,7 +1,7 @@
 /*
  * Prisme vu en coupe : un pentagone dont chaque côté est une conception de la
- * valeur sociale. Le côté du haut reçoit la lecture évaluative ; à la sortie,
- * un rayon par dimension des exigences de justification.
+ * valeur. Le côté du haut reçoit le faisceau ; à la sortie, un rayon par
+ * fonction du critère (qualification, portée, preuve, règle d'appréciation).
  * On le tourne en cliquant (ou en activant au clavier) un nom, en glissant,
  * ou avec les flèches et les touches 1 à 5.
  * Sans conception choisie (`conceptionId: null`), le prisme est en vue générique.
@@ -171,5 +171,23 @@
       exit: function () { return toPage(CX, CY + R); },
       visible: function () { return svg.getBoundingClientRect().width > 0; },
     };
+  };
+
+  /* Repère miniature : le prisme orienté vers une conception, sans interaction. */
+  P.miniPrism = function (conceptionId, rays) {
+    var k = Math.max(0, P.conceptions.map(function (c) { return c.id; }).indexOf(conceptionId));
+    var s = 0.3, ox = 30 - CX * s, oy = 26 - CY * s;
+    function sc(v) { return v.map(function (p) { return [ox + p[0] * s, oy + p[1] * s]; }); }
+    var front = sc(verts(phiFor(k))), back = sc(verts(phiFor(k), DEPTH.x, DEPTH.y));
+    var svg = el("svg", { viewBox: "0 0 60 60", class: "mini-prism", "aria-hidden": "true", focusable: "false" });
+    svg.appendChild(el("polygon", { class: "mp-back", points: pts(back) }));
+    svg.appendChild(el("polygon", { class: "mp-front", points: pts(front) }));
+    svg.appendChild(el("line", { class: "mp-active", x1: front[k][0], y1: front[k][1], x2: front[(k + 1) % 5][0], y2: front[(k + 1) % 5][1] }));
+    var bx = ox + CX * s, by = oy + (CY + R) * s;
+    (rays || []).forEach(function (c, j) {
+      var off = (j - (rays.length - 1) / 2) * 3;
+      svg.appendChild(el("line", { class: "mp-ray", stroke: c, x1: bx, y1: by - 2, x2: bx + off * 2.2, y2: by + 9 }));
+    });
+    return svg;
   };
 })();
