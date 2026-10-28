@@ -190,4 +190,37 @@
     });
     return svg;
   };
+  /*
+   * Sélecteur compact d'une conception : un petit prisme orienté et cinq boutons (noms courts).
+   * opts : { label, value, other (conception choisie de l'autre côté, désactivée ici), onChange(id) }
+   */
+  P.conceptionPicker = function (opts) {
+    var h = P.h;
+    var wrap = h("div", { class: "picker", role: "group", "aria-label": opts.label });
+    var mini = h("span", { class: "pk-mini" });
+    var row = h("div", { class: "pk-row" });
+    var btns = {};
+    P.conceptions.forEach(function (c) {
+      var b = h("button", { type: "button", class: "pk-btn", "data-c": c.id, onclick: function () {
+        if (b.getAttribute("aria-disabled") === "true") return;
+        opts.onChange(c.id);
+      } }, c.label);
+      btns[c.id] = b; row.appendChild(b);
+    });
+    wrap.appendChild(h("span", { class: "pk-k", text: opts.label }));
+    wrap.appendChild(h("div", { class: "pk-body" }, mini, row));
+    function set(value, other) {
+      mini.textContent = "";
+      mini.appendChild(P.miniPrism(value, P.rays));
+      Object.keys(btns).forEach(function (id) {
+        btns[id].setAttribute("aria-pressed", id === value ? "true" : "false");
+        btns[id].classList.toggle("on", id === value);
+        var off = id === other;
+        btns[id].setAttribute("aria-disabled", off ? "true" : "false");
+        btns[id].title = off ? "Déjà choisie de l’autre côté" : P.conception(id).nom;
+      });
+    }
+    set(opts.value, opts.other);
+    return { el: wrap, set: set };
+  };
 })();

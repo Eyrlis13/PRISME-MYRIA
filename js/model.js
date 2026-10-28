@@ -1,7 +1,8 @@
 /*
- * Accueil : la chaîne Conception de la valeur → Critère et appréciation → Jugement justifié.
- * Le choix d'une conception (prisme ou boutons) actualise les formulations courtes des quatre
- * rubriques sans reconstruire la page : les rubriques dépliées le restent.
+ * Accueil : la chaîne Conception de la valeur sociale → Garantie du jugement →
+ * Spécification du critère en quatre volets → Affirmation de valeur et son issue.
+ * Le choix d'une conception (prisme ou boutons) actualise les formulations des quatre volets
+ * sans reconstruire la page : les volets dépliés le restent.
  */
 (function () {
   var P = window.PRISME;
@@ -11,20 +12,26 @@
   var U = P.comp;
   var NS = "http://www.w3.org/2000/svg";
 
+  /* Texte de la carte « Garantie du jugement » : brief v2, section 2. */
+  var GARANTIE = "La conception, précisée par sa référence de valeur, est ce qui autorise à passer des appuis à l’affirmation. Elle fixe les quatre volets.";
+  var INITIALE = "S";
+
   function svgEl(tag, attrs) {
     var e = document.createElementNS(NS, tag);
     Object.keys(attrs || {}).forEach(function (k) { e.setAttribute(k, attrs[k]); });
     return e;
   }
-
-  /* Les quatre fonctions communes aux cinq conceptions, et leur articulation (texte du brief). */
-  var NOTE_FONCTIONS = "Les quatre fonctions sont communes aux cinq conceptions. Les flèches représentent leur articulation argumentative ; une évaluation peut procéder par allers-retours.";
+  function lex(terme) { return C.lexique.filter(function (l) { return l[0] === terme; })[0]; }
+  function kicker(n, text, id, dark) {
+    return h("h3", { class: "chain-k" + (dark ? " dark" : ""), id: id }, h("span", { class: "chain-n", text: String(n) }), text);
+  }
 
   /*
    * state : { conception: "M"|"I"|"S"|"V"|"N" }
    * api : { setConception(id) }
    */
   P.renderModel = function (state, api) {
+    if (!state.conception) state.conception = INITIALE;
     var scene = h("section", { class: "optic model", id: "model", "aria-labelledby": "page-title" });
     scene.appendChild(svgEl("svg", { class: "rays-overlay", "aria-hidden": "true" }));
     var inner = h("div", { class: "wrap model-inner" });
@@ -37,15 +44,14 @@
 
     var chain = h("div", { class: "chain" });
 
-    /* A. Conception de la valeur */
-    var blockA = h("section", { class: "c-a", "aria-labelledby": "chain-a" });
-    var choose = h("div", { class: "c-choose" },
-      h("h3", { class: "chain-k", id: "chain-a" }, h("span", { class: "chain-n", text: "A" }), A.chaine[0]));
+    /* 1. Conception de la valeur sociale */
+    var blockA = h("section", { class: "c-a", "aria-labelledby": "chain-1" });
+    var choose = h("div", { class: "c-choose" }, kicker(1, A.chaine[0], "chain-1"));
     var list = h("ul", { class: "c-list", role: "list" });
     var buttons = {};
     var reason = h("p", { class: "c-reason", id: "c-reason", "aria-live": "polite" });
     C.conceptions.forEach(function (c) {
-      var b = h("button", { type: "button", class: "c-btn", "data-c": c.id, "aria-pressed": "false", "aria-describedby": null,
+      var b = h("button", { type: "button", class: "c-btn", "data-c": c.id, "aria-pressed": "false",
         onclick: function () { select(c.id, true); } }, c.nom);
       buttons[c.id] = b;
       list.appendChild(h("li", null, b));
@@ -58,53 +64,64 @@
     var prismCol = h("div", { class: "c-prism" },
       h("span", { class: "lamp-glow", "data-anchor": "lamp", "aria-hidden": "true" }));
     var dial = P.createDial({
-      uid: "m", conceptions: P.conceptions, conceptionId: state.conception, rays: P.rays, initial: A.conception_initiale,
-      name: "Prisme des cinq conceptions de la valeur",
+      uid: "m", conceptions: P.conceptions, conceptionId: state.conception, rays: P.rays, initial: INITIALE,
+      name: "Prisme des cinq conceptions de la valeur sociale",
       onChange: function (id) { select(id, false); },
     });
     prismCol.appendChild(dial.el);
     blockA.appendChild(choose);
+    blockA.appendChild(h("p", { class: "c-meta", text: A.metaphore }));
     blockA.appendChild(prismCol);
     chain.appendChild(blockA);
 
-    /* B. Critère et appréciation */
-    var blockB = h("section", { class: "c-b frame", "aria-labelledby": "chain-b" });
-    blockB.appendChild(h("div", { class: "c-b-head" },
-      h("h3", { class: "chain-k", id: "chain-b" }, h("span", { class: "chain-n", text: "B" }), A.chaine[1]),
-      h("p", { class: "c-note", text: NOTE_FONCTIONS })));
-    var rubs = h("ol", { class: "rubs" });
+    /* 2. Garantie du jugement */
+    var g = lex("Garantie");
+    chain.appendChild(h("section", { class: "c-g", "aria-labelledby": "chain-2" },
+      h("div", { class: "guarantee", "data-anchor": "guarantee" },
+        kicker(2, A.chaine[1], "chain-2", true),
+        h("p", { class: "g-t", text: GARANTIE }),
+        h("details", { class: "more" }, h("summary", { text: "Définition" }),
+          h("p", null, g[1], h("span", { class: "muted", text: " (" + g[2] + ")" }))))));
+
+    /* 3. Spécification du critère en quatre volets */
+    var blockB = h("section", { class: "c-b frame", "aria-labelledby": "chain-3" });
+    blockB.appendChild(h("div", { class: "c-b-head" }, kicker(3, A.chaine[2], "chain-3")));
+    var vol = h("ol", { class: "rubs" });
     var formulations = {};
-    P.fonctions.forEach(function (f, i) {
-      var col = P.colors[f.id];
+    P.volets.forEach(function (v, i) {
+      var col = P.colors[v.id];
       var fEl = h("p", { class: "rub-f" });
-      formulations[f.id] = fEl;
-      rubs.appendChild(h("li", { class: "rub", "data-f": f.id, style: "--dim:" + col.ray + ";--dim-tint:" + col.tint },
-        h("h4", { class: "rub-t" }, h("span", { class: "dot", "aria-hidden": "true" }), f.intitule),
-        h("p", { class: "rub-term", text: f.terme }),
+      formulations[v.id] = fEl;
+      vol.appendChild(h("li", { class: "rub", "data-v": v.id, style: "--dim:" + col.ray + ";--dim-tint:" + col.tint },
+        h("h4", { class: "rub-t" }, h("span", { class: "dot", "aria-hidden": "true" }), v.intitule),
+        h("p", { class: "rub-term", text: v.terme }),
         fEl,
-        h("details", { class: "rub-more" }, h("summary", { text: "Question et explication" }),
-          h("p", { class: "rub-q", text: f.question }),
-          h("p", { text: f.explication }))));
-      if (i < P.fonctions.length - 1) rubs.appendChild(h("li", { class: "rub-arrow", "aria-hidden": "true" }, h("span", { text: "→" })));
+        h("details", { class: "rub-more" }, h("summary", { text: "Question et définition" }),
+          h("p", { class: "rub-q", text: v.question }),
+          h("p", { text: v.definition }))));
+      if (i < P.volets.length - 1) vol.appendChild(h("li", { class: "rub-arrow", "aria-hidden": "true" }, h("span", { text: "→" })));
     });
-    blockB.appendChild(rubs);
+    blockB.appendChild(vol);
     chain.appendChild(blockB);
 
-    /* C. Jugement justifié */
-    chain.appendChild(h("section", { class: "c-c", "aria-labelledby": "chain-c" },
+    /* 4. Affirmation de valeur et son issue */
+    chain.appendChild(h("section", { class: "c-c", "aria-labelledby": "chain-4" },
       h("div", { class: "judge-card", "data-anchor": "judge" },
-        h("h3", { class: "chain-k dark", id: "chain-c" }, h("span", { class: "chain-n", text: "C" }), A.chaine[2]),
-        h("p", { class: "judge-out", text: A.sortie }))));
+        kicker(4, A.chaine[3], "chain-4", true),
+        h("p", { class: "judge-out", text: C.issues.definition }),
+        U.issueKeys("home"))));
     inner.appendChild(chain);
 
-    /* dossier commun */
+    /* le résultat, lisible sans cliquer */
+    inner.appendChild(h("p", { class: "result" }, h("span", { class: "lab inline", text: "Résultat · " }), A.resultat_en_une_phrase));
+
     inner.appendChild(h("aside", { class: "dossier-band" },
       h("p", { class: "db-k", text: "Dossier commun" }),
-      h("p", { class: "db-t", text: A.dossier_commun }),
-      h("details", { class: "more" }, h("summary", { text: "Détail" }), h("p", { text: A.detail_dossier }))));
+      h("p", { class: "db-t", text: A.dossier })));
 
     inner.appendChild(h("div", { class: "m-cta" },
-      h("a", { class: "btn cta", href: "#/illustrations", id: "to-illustrations", text: A.cta })));
+      h("a", { class: "btn cta", href: "#/illustrations", id: "to-illustrations", text: A.cta_illustrations }),
+      h("a", { class: "btn cta alt", href: "#/rapports", id: "to-rapports", text: A.cta_rapports })));
 
     function select(id, rotate) {
       var c = P.conception(id);
@@ -116,7 +133,7 @@
         if (on) buttons[k].parentNode.appendChild(reason);
       });
       reason.textContent = c.raison_courte;
-      P.fonctions.forEach(function (f) { formulations[f.id].textContent = c.rubriques[f.id]; });
+      P.volets.forEach(function (v) { formulations[v.id].textContent = c.volets[v.id]; });
       if (rotate) dial.rotateTo(id);
       if (api && api.setConception) api.setConception(id);
       requestAnimationFrame(function () { P.drawModelRays(scene); });
@@ -131,11 +148,8 @@
   P.renderUsages = function () {
     return h("section", { class: "page usages", "aria-labelledby": "usages-t" },
       h("h2", { id: "usages-t", text: "À quoi sert PRISME ?" }),
-      h("div", { class: "use-grid" }, A.usages.map(function (u) {
-        return h("article", { class: "card use" },
-          h("h3", { text: u.nom }),
-          h("p", { text: u.texte }),
-          h("p", { class: "use-ex" }, h("span", { class: "lab inline", text: "Exemple · " }), u.exemple));
+      h("div", { class: "use-grid" }, C.usages.map(function (u) {
+        return h("article", { class: "card use" }, h("h3", { text: u.nom }), h("p", { text: u.texte }));
       })));
   };
 
@@ -158,28 +172,37 @@
     var d0 = curveV({ x: lamp.cx, y: lamp.b - 4 }, en);
     path(d0, "beam-glow"); path(d0, "beam-core");
 
+    /* du prisme à la garantie : le faisceau décomposé entre dans la carte */
+    var gar = rect(scene.querySelector('[data-anchor="guarantee"]'));
+    var n = P.rays.length;
+    P.rays.forEach(function (color, j) {
+      var spread = (j - (n - 1) / 2) * 4;
+      var d = curveV({ x: ex.x + spread, y: ex.y }, { x: gar.cx + spread * 2, y: gar.t + 1 });
+      path(d, "ray-glow", color); path(d, "ray-core", color);
+    });
+    var gx = gar.cx, gy = gar.b - 1;
+
     var cards = [].slice.call(scene.querySelectorAll(".rubs .rub")).map(rect);
     var judge = rect(scene.querySelector('[data-anchor="judge"]'));
     var frame = rect(scene.querySelector(".c-b"));
-    var n = cards.length;
-    var stacked = n > 1 && cards[1].t > cards[0].b - 2;
+    var stacked = cards.length > 1 && cards[1].t > cards[0].b - 2;
     cards.forEach(function (c, j) {
       var color = P.rays[j];
-      var spread = (j - (n - 1) / 2) * 4;
+      var spread = (j - (n - 1) / 2) * 8;
       var d;
       if (!stacked) {
-        d = curveV({ x: ex.x + spread, y: ex.y }, { x: c.cx, y: c.t + 1 });
+        d = curveV({ x: gx + spread, y: gy }, { x: c.cx, y: c.t + 1 });
         path(d, "ray-glow", color); path(d, "ray-core", color);
         var tx = judge.l + 24 + (judge.w - 48) * (j + 0.5) / n;
         var d2 = curveV({ x: c.cx, y: c.b - 1 }, { x: tx, y: judge.t + 1 });
         path(d2, "ray-glow", color); path(d2, "ray-core thin", color);
       } else {
-        /* téléphone : un couloir à gauche des rubriques, puis jusqu'au jugement */
+        /* téléphone : un couloir à gauche des volets, puis jusqu'à l'issue */
         var lane = frame.l + 10 + j * 5;
         var ty = c.t + 20;
-        var y1 = Math.max(ex.y + 10, frame.t - 24 + j * 5);
-        var x0 = ex.x + spread;
-        d = "M" + x0 + " " + ex.y + " L " + x0 + " " + (y1 - 10) +
+        var y1 = Math.max(gy + 12, frame.t - 24 + j * 5);
+        var x0 = gx + spread / 2;
+        d = "M" + x0 + " " + gy + " L " + x0 + " " + (y1 - 10) +
           " Q " + x0 + " " + y1 + ", " + (x0 - 10) + " " + y1 +
           " L " + (lane + 10) + " " + y1 + " Q " + lane + " " + y1 + ", " + lane + " " + (y1 + 10) +
           " L " + lane + " " + (ty - 8) + " Q " + lane + " " + ty + ", " + (lane + 8) + " " + ty + " L " + (c.l + 2) + " " + ty;

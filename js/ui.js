@@ -1,16 +1,16 @@
 /*
  * Composants partagés : panneau latéral, liens bibliographiques,
- * volet « Sources et construction du modèle ».
+ * volet « Sources et construction du modèle » (mentions, propositions, issues, lexique, explorateur des 55 cellules).
  * Le panneau se superpose à la page : l'ouvrir ne modifie ni le dossier ni les choix courants.
  */
 (function () {
   var P = window.PRISME;
-  var C = P.C, M = P.M, S = P.S;
+  var C = P.C, S = P.S;
   var h = P.h;
   var U = (P.comp = {});
 
   var lastFocus = null;
-  U.openDrawer = function (content, label) {
+  U.openDrawer = function (content) {
     U.closeDrawer(true);
     lastFocus = document.activeElement;
     var scrim = h("div", { class: "scrim", onclick: function () { U.closeDrawer(); } });
@@ -46,29 +46,81 @@
     return h("ul", { class: "ref-list" }, ids.map(function (id) { return U.refItem(id, withRole); }));
   };
 
+  /* Issues nommées, définition au survol et au clavier (le bouton reçoit le focus). */
+  U.issueKeys = function (prefix) {
+    return h("ul", { class: "issue-keys" }, C.issues.valeurs.map(function (v) {
+      var tid = prefix + "-" + v.id;
+      return h("li", { class: "ik" },
+        h("button", { type: "button", class: "ik-btn", "aria-describedby": tid }, P.issueChip(v.id)),
+        h("span", { class: "ik-tip", role: "tooltip", id: tid, text: v.definition }));
+    }));
+  };
+
+  /* Statuts des cellules : forme du cadre (plein, tirets, pointillés) et libellé ; distincts des issues. */
+  var STATUT = { proposee: "Spécification proposée", exploratoire: "Piste exploratoire", ouverte: "Relation ouverte" };
+  U.statutLabel = function (s) { return STATUT[s]; };
+
+  function explorer() {
+    var detail = h("div", { class: "cell-detail", "aria-live": "polite" },
+      h("p", { class: "muted small", text: "Choisir une cellule pour afficher sa spécification." }));
+    var grid = h("table", { class: "cells" },
+      h("thead", null, h("tr", null, h("th", { scope: "col", text: "Domaine" }),
+        C.conceptions.map(function (c) { return h("th", { scope: "col", title: c.nom, text: c.nom_court }); }))),
+      h("tbody", null, C.domaines.map(function (d) {
+        return h("tr", null, h("th", { scope: "row", text: d.code + " · " + d.nom }),
+          C.conceptions.map(function (c) {
+            var cell = C.repertoire.cellules.filter(function (x) { return x.conception === c.id && x.domaine_code === d.code; })[0];
+            if (!cell) return h("td");
+            return h("td", null, h("button", { type: "button", class: "cell-btn", "data-statut": cell.statut, "data-cell": cell.id,
+              "aria-label": cell.id + ", " + c.nom + ", " + d.nom + " : " + STATUT[cell.statut],
+              onclick: function (e) {
+                grid.querySelectorAll(".cell-btn[aria-pressed=true]").forEach(function (b) { b.setAttribute("aria-pressed", "false"); });
+                e.currentTarget.setAttribute("aria-pressed", "true");
+                showCell(cell);
+              } }, cell.id));
+          }));
+      })));
+    grid.querySelectorAll(".cell-btn").forEach(function (b) { b.setAttribute("aria-pressed", "false"); });
+    function showCell(cell) {
+      detail.textContent = "";
+      detail.appendChild(h("div", { class: "cd" },
+        h("p", { class: "cd-k" }, cell.id + " · " + P.conception(cell.conception).nom + " · " + cell.domaine),
+        h("p", { class: "cd-t", text: cell.formulation_courte }),
+        h("p", { class: "cd-s", "data-statut": cell.statut, text: STATUT[cell.statut] }),
+        h("dl", { class: "cd-dl" },
+          h("dt", { text: "Raison de valoriser" }), h("dd", { text: cell.raison_de_valoriser }),
+          h("dt", { text: "Critère" }), h("dd", { text: cell.critere_propose }),
+          h("dt", { text: "Question" }), h("dd", { text: cell.question_evaluative }),
+          h("dt", { text: "Appuis à examiner" }), h("dd", null, h("ul", { class: "plain" }, cell.appuis_a_examiner.map(function (a) { return h("li", { text: a }); }))),
+          h("dt", { text: "Règle pour conclure" }), h("dd", { text: cell.regle_pour_conclure })),
+        h("details", { class: "more" }, h("summary", { text: "Limite et lecture concurrente" }), U.p(cell.limite), U.p(cell.interpretation_concurrente))));
+    }
+    return h("details", { class: "more explorer", id: "explorer" }, h("summary", { text: "Explorer les " + C.repertoire.nombre_cellules + " cellules" }),
+      h("ul", { class: "statut-keys" }, Object.keys(STATUT).map(function (s) { return h("li", null, h("span", { class: "sk", "data-statut": s, "aria-hidden": "true" }), STATUT[s]); })),
+      h("div", { class: "cells-wrap" }, grid), detail);
+  }
+
   /* Volet « Sources et construction du modèle ». */
   U.openSources = function () {
-    var D = C.documentation;
-    var rep = D.repertoire;
+    var M = C.mentions, R = C.repertoire;
     U.openDrawer(h("div", { class: "drawer-body" },
       h("p", { class: "eyebrow", text: "Documentation" }),
-      h("h2", { id: "drawer-title", text: D.titre }),
+      h("h2", { id: "drawer-title", text: "Sources et construction du modèle" }),
       h("p", { class: "lead", text: C.accueil.enonce_modele }),
-      U.section("Attributions", h("ul", { class: "plain" }, D.attributions.map(function (t) { return h("li", { text: t }); }))),
-      U.section("Questions d'analyse", h("ul", { class: "plain" }, D.questions_analyse.map(function (t) { return h("li", { text: t }); }))),
-      U.section("Propositions", D.propositions.map(function (t) { return U.p(t); })),
-      U.section("Les quatre fonctions", h("dl", { class: "fn-def" }, M.rubriques.map(function (r, i) {
-        var f = C.fonctions[i];
-        return [h("dt", { style: "--dim:" + P.colors[f.id].ray }, f.terme + " · " + r.fonction),
-          h("dd", null, U.p(r.contenu), U.p(r.absence, "muted small"),
-            h("p", { class: "muted small" }, "Appuis : ", S.appuis_par_fonction[f.id].map(function (id) { return P.refLabel(P.ref(id)); }).join(" ; ")))];
-      })), "small-gap"),
-      U.p(M.justification_regroupement, "muted small"),
-      U.section("Statut", [U.p(D.note_statut), U.p(M.ce_qui_reste_a_eprouver, "muted small")]),
-      U.section("Références", [U.refList(S.references.map(function (r) { return r.id; }), true), U.p(S.precision, "muted small")]),
-      h("details", { class: "more" }, h("summary", { text: "Traçabilité" }),
-        U.p("Répertoire de " + rep.nombre_cellules + " croisements entre conceptions et fonctions : " + rep.specifications_proposees + " formulations proposées, " + rep.propositions_exploratoires + " exploratoires et " + rep.relations_ouvertes.length + " relations ouvertes (" + rep.relations_ouvertes.join(", ") + "). " + rep.fonction),
-        U.p("Le répertoire n'est pas publié sur ce site ; ses statuts sont conservés dans le fichier de référence.", "muted small"),
-        U.p("Modèle de référence : " + M.version + ". " + M.statut, "muted small"))));
+      U.section("Provenance", h("ul", { class: "plain" }, [M.typologie, M.domaines, M.modele, M.ia].map(function (t) { return h("li", { text: t }); }))),
+      U.section("Propositions", C.propositions.map(function (p) {
+        return h("div", { class: "prop" }, h("p", null, h("span", { class: "lab inline", text: p.id + " · " }), p.texte), U.p(p.condition, "muted small"));
+      })),
+      U.section("Issues d’une affirmation", [U.p(C.issues.definition),
+        h("dl", { class: "issue-def" }, C.issues.valeurs.map(function (v) { return [h("dt", null, P.issueChip(v.id)), h("dd", { text: v.definition })]; })),
+        U.p(C.issues.regle_de_priorite, "muted small")]),
+      U.section("Lexique", h("div", { class: "lex-wrap" }, h("table", { class: "lexique" },
+        h("thead", null, h("tr", null, h("th", { scope: "col", text: "Terme" }), h("th", { scope: "col", text: "Définition" }), h("th", { scope: "col", text: "Source" }))),
+        h("tbody", null, C.lexique.map(function (l) { return h("tr", null, h("th", { scope: "row", text: l[0] }), h("td", { text: l[1] }), h("td", { class: "muted", text: l[2] })); }))))),
+      U.section("Répertoire des cellules", [
+        U.p(R.nombre_cellules + " cellules (cinq conceptions × onze domaines) : " + R.specifications_proposees + " spécifications proposées, " + R.pistes_exploratoires + " pistes exploratoires, " + R.relations_ouvertes.length + " relations ouvertes (" + R.relations_ouvertes.join(", ") + ")."),
+        U.p(R.note, "muted small"),
+        explorer()]),
+      U.section("Références", [U.refList(S.references.map(function (r) { return r.id; }), true), U.p(S.precision, "muted small")])));
   };
 })();

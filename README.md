@@ -1,38 +1,39 @@
-# PRISME MYRIA · Comment la conception de la valeur oriente le jugement
+# PRISME MYRIA · Ce qu’une conception de la valeur sociale autorise à conclure
 
-Application web statique, en français. PRISME relie la raison de valoriser une action aux critères retenus et aux conclusions que leur appréciation permet de soutenir.
+Application web statique, en français. PRISME montre comment la conception de la valeur mobilisée par une évaluation décide de ce qu’une performance observée permet d’affirmer sur la valeur sociale d’une action.
 
-- **Accueil** (`#/`) : la chaîne Conception de la valeur → Critère et appréciation → Jugement justifié. Le prisme et cinq boutons nommés choisissent la conception (Parties prenantes ciblées par défaut) ; les quatre rubriques (qualification, portée, preuve, règle d'appréciation) affichent la formulation courte correspondante, avec question et explication à déplier. Sous la chaîne : le dossier commun, l'accès à l'exemple, et les deux usages (audit, guidance).
-- **Illustrations** (`#/illustrations`) : démonstration guidée sur les aides techniques à domicile. Le dossier A est lu par les conceptions Parties prenantes ciblées et Individualiste ; « Ajouter l'appréciation des personnes » crée le dossier B et actualise les deux lectures ; « Revenir au dossier initial » rétablit A. Deux exemples complémentaires suivent, fermés par défaut.
-- **Sources et construction du modèle** : volet latéral accessible depuis l'en-tête et le pied de page des deux pages ; son ouverture ne modifie ni le dossier ni les choix courants.
+- **Accueil** (`#/`) : la chaîne Conception de la valeur sociale → Garantie du jugement → Spécification du critère en quatre volets → Affirmation de valeur et son issue. Le prisme et cinq boutons choisissent la conception ; les quatre volets affichent la formulation correspondante. Sous la chaîne : le résultat en une phrase, le dossier commun, deux actions, deux usages.
+- **Illustrations** (`#/illustrations`) : le cas construit des aides techniques, lu par deux conceptions au choix parmi cinq ; « Ajouter l’appréciation des personnes » crée le dossier B. Deux exemples complémentaires suivent.
+- **Rapports** (`#/rapports`, `#/rapports/<identifiant>`) : analyses de rapports d’impact préparées hors du site, un fichier JSON par rapport (`data/rapports/`). Pour chaque énoncé : issues sous deux conceptions et phrase de comparaison, puis les quatre volets, puis les passages et les prémisses ; en bas, le profil du rapport.
+- **Sources et construction du modèle** : volet latéral (en-tête et pied de page) avec mentions, propositions, issues, lexique et explorateur des 55 cellules.
 
-Modèle conceptuel et illustrations construites. Aucun poids, seuil, veto ou score.
+Modèle conceptuel ; aucune validation empirique revendiquée. Aucun poids, seuil, veto ou score.
 
 ## Lancement
 
-Ouvrir `index.html` dans un navigateur, ou `./serve.sh` puis http://localhost:8080. Aucune dépendance.
+Ouvrir `index.html` dans un navigateur, ou `./serve.sh` puis http://localhost:8080. Aucune dépendance. Ouverte comme fichier local, la page Rapports utilise la copie des rapports incluse dans `data/prisme-data.js` ; servie (GitHub Pages, `serve.sh`), elle lit `data/rapports/index.json`.
 
 ## Données
 
 | Fichier | Rôle |
 |---|---|
-| `data/02_CONTENU_INTERFACE.json` | Textes de l'interface (fixés par l'autrice) |
-| `data/03_MODELE_SCIENTIFIQUE_REFERENCE.json` | Modèle V1 de référence, pour le contrôle de fidélité |
-| `data/04_SOURCES_ET_ATTRIBUTIONS.json` | Références avec DOI, appuis par fonction, empreinte du modèle |
-| `data/prisme-data.js` | Copie chargeable des trois fichiers, générée par `node tools/build-data.js` |
-| `docs/livraison-2026-10-22/` | Brief du 22 octobre et compte rendu de livraison |
-| `archive/v1.0/`, `archive/v0.5/` | Versions précédentes (dont les quinze cas C01–C15), conservées pour mémoire |
-| `recherche/` | Registre, rapports et scripts de recherche fournis par l'autrice |
+| `data/02_CONTENU_MODELE_v2.json` | Textes du modèle révisé du 28 octobre (accueil, volets, issues, lexique, conceptions, propositions, usages, 55 cellules, mentions) |
+| `data/rapports/` | Un fichier par rapport, `index.json` (liste et rapport par défaut), `schema.json`, `LISEZMOI.md` (ajouter un rapport) |
+| `data/illustrations.json` | Titre, mention et boutons de la démonstration, exemples complémentaires (textes du 22 octobre, issues renommées) |
+| `data/04_SOURCES_ET_ATTRIBUTIONS.json` | Références avec DOI |
+| `data/prisme-data.js` | Copie chargeable, générée par `node tools/build-data.js` |
+| `docs/livraison-2026-10-28/` | Brief v2, fichiers fournis et compte rendu de livraison |
+| `archive/` | Versions précédentes (dont le modèle V1 et les textes du 22 octobre) |
 
 ## Vérifications
 
 ```
 node tools/build-data.js     # régénère data/prisme-data.js
-node tools/verify-data.js    # empreinte du modèle, fidélité 02/03, DOI, dossier A → B
-node tools/ui-check.js       # critères de réception, ordinateur, tablette, téléphone, clavier, animations réduites
-SHOTS=docs/captures/apres-2026-10-22 node tools/ui-check.js   # idem, avec captures
+node tools/verify-data.js    # modèle, répertoire 37 / 12 / 6, DOI, validation de chaque rapport
+node tools/ui-check.js       # critères de réception : trois pages, trois largeurs, clavier, animations réduites, ajout d'un rapport
+SHOTS=docs/captures/apres-2026-10-28 node tools/ui-check.js   # idem, avec captures
 ```
 
 ## Organisation du code
 
-`js/core.js` (accès aux données), `js/bench.js` (prisme rotatif et repère miniature), `js/ui.js` (panneau latéral, références, volet des sources), `js/model.js` (accueil), `js/illus.js` (illustrations), `js/main.js` (routage, état, anciens liens). Charte Myriad : aubergine #3d1a32, prune #58284a, crème #f7f2ea, orange #e4552b ; Montserrat et Inter.
+`js/core.js` (données, issues, phrase de comparaison, chargement des rapports), `js/bench.js` (prisme, repère miniature, sélecteur de conception), `js/ui.js` (panneau latéral, volet des sources), `js/model.js` (accueil), `js/illus.js` (illustrations, dossier, lectures), `js/rapports.js` (page Rapports), `js/main.js` (routage, état, anciens liens). Charte Myriad : aubergine #3d1a32, prune #58284a, crème #f7f2ea, orange #e4552b ; Montserrat et Inter.

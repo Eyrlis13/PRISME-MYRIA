@@ -1,0 +1,70 @@
+{
+ "provenance": "Textes du 22 octobre 2026 encore utilisés (02_CONTENU_INTERFACE.json, archivé dans archive/v1.1/). Les champs « issue » des exemples complémentaires remplacent les anciens libellés de conclusion (brief v2, section 3) ; correspondance à valider par l’autrice.",
+ "titre": "Ce que le même constat permet de conclure",
+ "mention": "Illustration construite",
+ "cas": "aides-techniques-domicile",
+ "couple_initial": [
+  "S",
+  "I"
+ ],
+ "bouton_ajout": "Ajouter l’appréciation des personnes",
+ "bouton_retour": "Revenir au dossier initial",
+ "libelles": {
+  "detail_sources": "Sources et prémisses de cet exemple",
+  "autres_exemples": "Deux autres exemples",
+  "footer": "Modèle conceptuel · illustrations construites"
+ },
+ "complementaires": [
+  {
+   "id": "acces-et-besoin",
+   "titre": "Accès garanti et réponse au besoin",
+   "origine": "Manuscrit, annexe B2 ; reformulation pédagogique.",
+   "sources": [
+    "DCJ2025",
+    "TEASDALE2023"
+   ],
+   "faits_communs": "Un accompagnement vise à aider les mêmes personnes à résoudre leurs difficultés administratives. Les observations établissent leur accès effectif au service pendant la période étudiée. Un principe explicite exige de garantir cet accès ; son standard est satisfait pour les personnes et les conditions qu’il couvre. Le dossier ne documente pas encore la résolution des difficultés.",
+   "lectures": [
+    {
+     "conception": "N",
+     "affirmation": "L’exigence d’accès est satisfaite dans le champ du principe retenu.",
+     "raison": "Les observations couvrent l’accès effectivement exigé par le principe.",
+     "issue": "autorisee"
+    },
+    {
+     "conception": "S",
+     "affirmation": "La réponse au besoin de résolution des difficultés reste à étayer.",
+     "raison": "L’accès est établi ; la réalisation recherchée ou une inférence fondée à son sujet reste à documenter.",
+     "issue": "laissee_a_justifier"
+    }
+   ],
+   "enseignement": "L’accès établi et la réponse au besoin encore ouverte sont compatibles.",
+   "premisse_visible": "Le principe porte ici sur l’accès ; le besoin porte sur la résolution des difficultés.",
+   "detail": "Si le besoin portait lui-même sur l’accès, sa satisfaction pourrait constituer une réponse directe. La fonction de l’accès dépend des références explicitement retenues."
+  },
+  {
+   "id": "benefice-et-superiorite",
+   "titre": "Bénéfice constaté et supériorité",
+   "origine": "Manuscrit, annexe B3 ; reformulation pédagogique.",
+   "sources": [
+    "DCJ2025",
+    "KROEGER2014"
+   ],
+   "faits_communs": "Une évaluation étaye un bénéfice défini et son lien avec l’action pour un groupe et une période précisés. La visée est de maximiser ce bénéfice pour le système considéré. Le dossier ne fournit pas d’éléments comparables sur les autres options.",
+   "conception": "M",
+   "affirmations": [
+    {
+     "enonce": "L’action contribue au bénéfice défini.",
+     "issue": "autorisee"
+    },
+    {
+     "enonce": "L’action apporte davantage de ce bénéfice que les options considérées.",
+     "issue": "laissee_a_justifier"
+    }
+   ],
+   "enseignement": "Le bénéfice déjà établi est conservé ; la prétention de supériorité appelle une comparaison justifiée.",
+   "complement": "Réunir des éléments comparables sur les options retenues. Une conclusion favorable resterait relative à cet ensemble d’options.",
+   "detail": "L’exigence de comparaison vaut pour toute affirmation de supériorité. Elle est ici reliée à la visée maximisatrice."
+  }
+ ]
+}

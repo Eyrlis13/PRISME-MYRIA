@@ -59,3 +59,11 @@ Le modèle V1 (`data/03_MODELE_SCIENTIFIQUE_REFERENCE.json`) parle de quatre fon
 Le prisme garde ses cinq faces et sa rotation ; cinq boutons nommés y donnent un accès direct et restent synchronisés avec lui. Ses faisceaux colorés vont du prisme aux quatre rubriques, puis des rubriques au jugement. Le dossier commun n'entre plus dans le schéma de l'accueil : il fait l'objet d'un bandeau sous la chaîne, et devient le point de départ de la démonstration, où un trait couleur papier le relie aux deux lectures.
 
 Les illustrations ne présentent plus quinze cas lus par une paire au choix, mais un cas construit, en deux versions de dossier. Ce qui change entre A et B est une information, ajoutée visiblement, et non la conception. Les libellés de conclusion du fichier 02 remplacent les statuts génériques « Proposition établie / réfutée ».
+
+## Version 2.0 (28 octobre 2026) : la garantie du jugement
+
+Le manuscrit révisé place la garantie au centre : la conception de la valeur sociale, précisée par sa référence de valeur, autorise le passage des appuis à l'affirmation. La chaîne de l'accueil compte désormais quatre maillons, et la carte de sortie nomme les trois issues d'une affirmation (autorisée, délimitée, laissée à justifier). Les « rubriques » ou « fonctions » deviennent les quatre volets ; « périmètre » devient « portée ».
+
+Le prisme garde son sens : une phrase l'explique désormais à l'accueil, et c'est la seule. Il décompose sans modifier : changer de conception ne change rien au dossier, ni au standard, mais ce qu'il faut établir pour conclure.
+
+Les illustrations ouvrent le choix de deux conceptions parmi cinq. La page Rapports applique la même lecture à des rapports d'impact publiés ; le site affiche des analyses préparées hors du site et ne calcule rien, sinon la phrase qui compare deux issues selon un gabarit fixé par l'autrice.

@@ -1,0 +1,165 @@
+{
+ "id": "aides-techniques-domicile",
+ "titre": "Aides techniques à domicile",
+ "organisation": "Cas construit (expérience de pensée du manuscrit, sections 4.1 et 4.3)",
+ "annee": "2026",
+ "type": "cas_construit",
+ "source": "Manuscrit révisé du 28 octobre 2026, tableaux 3 et 5 ; conceptions d’après de la Cruz Jara et Spanjol (2025).",
+ "statut_affichage": "Illustration construite",
+ "dossier": {
+  "action": "Des aides techniques sont installées au domicile de personnes qui ont besoin de réaliser le transfert du lit au fauteuil.",
+  "objectif": "Répondre au besoin de transfert identifié avec les destinataires.",
+  "standard": "Réaliser le transfert sans aide humaine.",
+  "observations": [
+   "Les personnes suivies réalisent le transfert sans aide humaine avec l’aide technique installée, alors qu’elles ne le réalisaient pas avant l’aménagement."
+  ],
+  "lacunes": [
+   "Ce que ce changement représente pour chaque personne dans ses activités et ses relations n’est pas documenté.",
+   "Les effets sur les aidants et les services, les options possibles, le rôle d’une obligation morale et la couverture du groupe ne sont pas documentés."
+  ]
+ },
+ "enonces": [
+  {
+   "id": "E1",
+   "type": "performance",
+   "texte": "Le transfert du lit au fauteuil est réalisé sans aide humaine par les personnes suivies, pendant la période observée.",
+   "passages": [],
+   "domaine_code": "01",
+   "lectures": {
+    "S": {
+     "cellule": "S01",
+     "affirmation": "L’action répond au besoin commun de transfert, pour les personnes suivies et la période observée.",
+     "reference_de_valeur": "Le besoin commun de réaliser le transfert sans aide humaine, défini avec les destinataires.",
+     "volets": {
+      "qualification": "Le transfert compte comme réponse au besoin commun de le réaliser sans aide humaine.",
+      "portee": "Personnes suivies et période observée ; réponse au besoin de transfert.",
+      "preuve": "Besoin et standard convenus ; transfert réalisé sans aide humaine avec l’aide technique.",
+      "regle": "Rapporter le transfert au besoin et au standard convenus."
+     },
+     "issue": "autorisee",
+     "pourquoi": "Le besoin et le standard ont été convenus avec les destinataires ; le transfert sans aide humaine est établi.",
+     "relation_manquante": null,
+     "ce_qui_changerait_l_issue": "Son extension au groupe entier demanderait d’en documenter la couverture.",
+     "premisse_ajoutee": null
+    },
+    "I": {
+     "cellule": "I01",
+     "affirmation": "Le transfert constitue un bénéfice reconnu par chaque personne suivie.",
+     "reference_de_valeur": "Ce que la personne valorise dans ses activités et ses relations.",
+     "volets": {
+      "qualification": "Le transfert compte par ce qu’il change dans les activités et les relations que la personne valorise.",
+      "portee": "Chaque personne suivie, pendant la période observée ; bénéfice dans ses activités et ses relations.",
+      "preuve": "Transfert établi ; ce que la personne reconnaît dans ce changement, à documenter.",
+      "regle": "Rapporter le changement à ce que la personne valorise."
+     },
+     "issue": "laissee_a_justifier",
+     "pourquoi": "Le transfert est réalisé ; ce qu’il change pour chaque personne reste sans appui.",
+     "relation_manquante": "La relation entre le transfert et ce que la personne valorise.",
+     "ce_qui_changerait_l_issue": "Recueillir ce que chaque personne reconnaît dans ce changement, dans ses activités et ses relations.",
+     "premisse_ajoutee": null
+    },
+    "M": {
+     "cellule": "M01",
+     "affirmation": "L’action produit un bénéfice pour le système retenu (personnes accompagnées, aidants, services) et est supérieure aux options.",
+     "reference_de_valeur": "Le bénéfice pour le système retenu, restreint pour l’illustration aux personnes accompagnées, à leurs aidants et aux services.",
+     "volets": {
+      "qualification": "Bénéfice maximisé pour le système.",
+      "portee": "Système retenu ; horizon et options de la comparaison.",
+      "preuve": "Bénéfices et dommages pertinents ; appuis comparables sur les options.",
+      "regle": "Apprécier la contribution ; justifier la supériorité relative aux options ; délimiter les possibilités pour conclure à une maximisation."
+     },
+     "issue": "delimitee",
+     "pourquoi": "Gain établi pour les personnes suivies ; extension au système à documenter. La supériorité sur les options est laissée à justifier : aucune option comparée.",
+     "relation_manquante": "Pour la supériorité : la comparaison avec les options.",
+     "ce_qui_changerait_l_issue": "Effets sur les aidants et les services ; effets et ressources des options comparées.",
+     "premisse_ajoutee": "La restriction du système aux personnes accompagnées, aidants et services est posée pour l’illustration.",
+     "issues_detaillees": [
+      {
+       "porte_sur": "Bénéfice",
+       "issue": "delimitee"
+      },
+      {
+       "porte_sur": "Supériorité sur les options",
+       "issue": "laissee_a_justifier"
+      }
+     ]
+    },
+    "V": {
+     "cellule": "V01",
+     "affirmation": "L’engagement et la réponse sont fondés sur un devoir moral reconnu par le créateur de valeur.",
+     "reference_de_valeur": "L’obligation morale invoquée par l’organisation.",
+     "volets": {
+      "qualification": "Bénéfice fondé sur un sens d’obligation morale du créateur de valeur.",
+      "portee": "Destinataires et situations couverts par l’obligation invoquée.",
+      "preuve": "Appuis permettant d’interpréter le rôle de l’obligation dans l’action ; appuis sur l’effet lorsqu’il est revendiqué.",
+      "regle": "Examiner le rôle de l’obligation dans l’engagement et le bénéfice anticipé."
+     },
+     "issue": "laissee_a_justifier",
+     "pourquoi": "Le transfert documenté ne renseigne pas le rôle du devoir dans l’action.",
+     "relation_manquante": "Le lien entre l’obligation reconnue, le bénéfice anticipé et l’action.",
+     "ce_qui_changerait_l_issue": "Appuis sur l’obligation reconnue et sur son rôle dans l’engagement.",
+     "premisse_ajoutee": null
+    },
+    "N": {
+     "cellule": "N06",
+     "affirmation": "Le principe d’accès aux aides nécessaires au maintien à domicile est respecté pour l’ensemble des personnes qu’il couvre.",
+     "reference_de_valeur": "Un principe d’accès aux aides nécessaires au maintien à domicile.",
+     "volets": {
+      "qualification": "Satisfaction du principe d’accès appliqué à la situation.",
+      "portee": "Champ d’application du principe : toutes les personnes qu’il couvre.",
+      "preuve": "Justification du principe ; accès effectif et obstacles pour les personnes encore sans réponse.",
+      "regle": "Apprécier l’accès au regard du principe et de la manière justifiée de l’appliquer."
+     },
+     "issue": "delimitee",
+     "pourquoi": "Accès établi pour les personnes suivies ; respect du principe pour l’ensemble de son champ à documenter.",
+     "relation_manquante": "La couverture du champ visé par le principe.",
+     "ce_qui_changerait_l_issue": "Personnes concernées par le principe, accès effectif et obstacles pour les personnes encore sans réponse.",
+     "premisse_ajoutee": "Le principe d’accès sert l’illustration ; un principe d’autodétermination appellerait un examen du choix de la personne."
+    }
+   },
+   "non_examine_sous": []
+  }
+ ],
+ "versions": [
+  {
+   "id": "B",
+   "titre": "Dossier enrichi",
+   "information_ajoutee": "L’appréciation du gain a été recueillie auprès des mêmes personnes : chacune décrit ce transfert sans aide comme un gain dans ses activités et ses relations.",
+   "lectures_mises_a_jour": {
+    "E1": {
+     "I": {
+      "issue": "autorisee",
+      "pourquoi": "Les mêmes personnes reconnaissent le gain dans leurs activités et leurs relations.",
+      "relation_manquante": null,
+      "ce_qui_changerait_l_issue": null
+     },
+     "S": {
+      "issue": "autorisee",
+      "pourquoi": "Inchangée : la réponse au besoin reste établie."
+     }
+    }
+   },
+   "enseignement": "Un supplément d’appuis portant sur la relation manquante rend l’affirmation individualiste autorisée ; une nouvelle confirmation du transfert ne l’aurait pas fait (proposition 2).",
+   "bandeau": "Nouvelle version du dossier : une information a été ajoutée.",
+   "lacunes": [
+    "Les effets sur les aidants et les services, les options possibles, le rôle d’une obligation morale et la couverture du groupe ne sont pas documentés."
+   ]
+  }
+ ],
+ "profil": {
+  "convention": "sans objet pour un cas construit",
+  "affirmations_examinees": 5,
+  "rattachees": 5,
+  "indeterminees": 0,
+  "parts": {
+   "M": 1,
+   "I": 1,
+   "S": 1,
+   "V": 1,
+   "N": 1
+  },
+  "concurrentes": [],
+  "note": "Cas construit : une affirmation par conception, formulée au niveau que la conception vise."
+ },
+ "limites": "Le dossier pose le rôle de l’aide dans le changement comme établi ; il ne vise pas l’attribution causale. Les conclusions portent sur les personnes suivies et la période observée."
+}

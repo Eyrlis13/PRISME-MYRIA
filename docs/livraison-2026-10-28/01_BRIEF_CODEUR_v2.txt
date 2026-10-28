@@ -1,0 +1,89 @@
+PRISME MYRIA — BRIEF DE MISE À JOUR v2
+28 octobre 2026 | Périmètre : accueil #/, illustrations #/illustrations, nouvelle page #/rapports, volet Sources
+
+CE QUI CHANGE PAR RAPPORT AU BRIEF DU 22 OCTOBRE
+
+Le manuscrit a été révisé le 28 octobre. Le modèle n'a pas changé dans sa structure (cinq conceptions, quatre volets, un dossier commun, des issues), mais son énoncé, son vocabulaire et plusieurs textes ont changé. Le site doit les reprendre à l'identique. Une page nouvelle est demandée : la lecture de rapports d'impact réels avec le modèle. Le brief du 22 octobre reste valable pour tout ce qui n'est pas contredit ici (esthétique, prisme, accessibilité, routes, traitement des anciens cas).
+
+CONTENU DU DOSSIER
+
+01_BRIEF_CODEUR_v2.txt : présent document.
+02_CONTENU_MODELE_v2.json : textes à intégrer tels quels. Énoncé du modèle, chaîne à quatre maillons, métaphore, quatre volets (intitulé courant, question, définition), lexique de quatorze termes, cinq conceptions avec leurs quatre volets, trois issues et règle de priorité, deux propositions, deux usages, répertoire des 55 cellules avec leurs textes et leur statut (37 / 12 / 6), mentions de sources.
+03_RAPPORTS_schema_et_exemples.json : format de données de la page Rapports et deux jeux prêts à afficher : le cas construit des aides techniques (cinq lectures, deux versions du dossier) et le rapport ReSanté-Vous 2024 (deux affirmations, trois lectures).
+
+Tout texte scientifique vient de 02 ou de 03. Le codeur n'écrit aucune phrase de contenu ; s'il en manque une, il la demande à l'autrice.
+
+1. MISE À JOUR DU VOCABULAIRE (TOUT LE SITE)
+
+Remplacer partout :
+- « rubriques » et « fonctions » → « volets » ;
+- « Étayée dans le périmètre observé », « À étayer », « Étayé » → les trois issues : « Autorisée », « Délimitée », « Laissée à justifier » (définitions dans 02 > issues) ;
+- « périmètre » → « portée » (sauf « périmètre de lecture » dans un profil) ;
+- l'énoncé du modèle et la chaîne : l'ancienne chaîne à trois blocs (Conception → Critère et appréciation → Jugement justifié) devient une chaîne à quatre maillons : Conception de la valeur sociale → Garantie du jugement → Spécification du critère en quatre volets → Affirmation de valeur et son issue. Le mot « garantie » est le mot central du modèle révisé ; il doit être visible dès l'accueil, avec sa définition en infobulle ou en second niveau (02 > lexique) ;
+- le titre d'accueil devient « Ce qu'une conception de la valeur sociale autorise à conclure » ; le sous-titre est dans 02 > accueil ;
+- la phrase sur le prisme (02 > accueil > metaphore) est la seule explication du nom à afficher ; le prisme « décompose sans modifier » ;
+- les cinq conceptions : reprendre les textes de 02 > conceptions (plusieurs cellules ont changé, par exemple la règle individualiste) ; le nom court « Ciblée » est admis pour les boutons, le nom complet pour les cartes ;
+- les deux propositions : reprendre 02 > propositions (formulations nouvelles) ;
+- le répertoire : 37 spécifications proposées, 12 pistes exploratoires, 6 relations ouvertes (le site affiche encore 38 / 11 / 6). Les 55 cellules sont fournies avec leurs textes ; elles peuvent nourrir un explorateur de cellules dans le volet Sources (conception × domaine), fermé par défaut.
+
+2. ACCUEIL
+
+Garder l'organisation du 22 octobre (prisme et cinq boutons ; bloc central des quatre volets ; carte de sortie), avec trois changements :
+- insérer le maillon « Garantie du jugement » entre la conception et les quatre volets. Une carte courte : « La conception, précisée par sa référence de valeur, est ce qui autorise à passer des appuis à l'affirmation. Elle fixe les quatre volets. » ;
+- la carte de sortie affiche l'affirmation et son issue, avec les trois issues nommées et leur définition au survol ou au clavier. Jamais de feu rouge : « laissée à justifier » signale une information manquante, pas un échec (02 > issues > a_ne_pas_faire) ;
+- ajouter, sous la chaîne, le résultat en une phrase (02 > accueil > resultat_en_une_phrase). C'est l'apport de l'article ; il doit être lu sans cliquer.
+Deux actions : « Voir le modèle sur un dossier » (illustrations) et « Lire un rapport d'impact avec le modèle » (rapports).
+
+3. ILLUSTRATIONS
+
+Conserver la démonstration guidée (dossier A, dossier B par ajout de l'appréciation des personnes), en remplaçant les libellés de conclusion par les issues et en reprenant les textes de 03 > rapports > aides-techniques-domicile. Trois changements :
+- les deux cartes affichent, dans l'ordre : l'affirmation examinée (avec sa portée), l'issue, le « pourquoi » en une phrase, puis « ce qui changerait l'issue » ;
+- le passage au dossier B montre que l'issue individualiste devient « Autorisée » et que l'issue ciblée ne change pas ; afficher la phrase d'enseignement fournie (proposition 2 en acte) ;
+- permettre de choisir deux conceptions parmi cinq (deux petits prismes ou deux sélecteurs synchronisés avec le prisme principal), le couple Ciblée / Individualiste restant celui par défaut. Les cinq lectures du cas sont fournies ; la lecture maximisatrice porte deux issues (bénéfice délimité, supériorité laissée à justifier) et doit les afficher toutes deux.
+Les deux exemples complémentaires (accès, supériorité) restent tels quels, avec les issues renommées.
+
+4. NOUVELLE PAGE : RAPPORTS (#/rapports)
+
+But : montrer ce que le modèle produit sur un rapport d'impact réel, en restant lisible par un non-spécialiste.
+
+Parcours :
+a) Une liste déroulante de rapports (titre, organisation, année, mention « Rapport publié, analyse documentaire » ou « Illustration construite »). Au chargement : le rapport ReSanté-Vous 2024.
+b) Un bandeau « Dossier » : l'action, l'objectif, le standard s'il existe, puis deux listes courtes, « ce que le rapport établit » et « ce qui manque » (03 > dossier). Fermé au-delà de quatre lignes, dépliable.
+c) Deux sélecteurs de conception (deux petits prismes ou deux rangées de cinq boutons), à gauche et à droite. Par défaut : les deux conceptions pour lesquelles le rapport fournit le plus de lectures.
+d) Pour chaque énoncé examiné du rapport (03 > enonces), une ligne de comparaison sur trois niveaux de lecture :
+   Niveau 1, toujours visible : l'énoncé (citation courte avec sa page), puis deux cases, une par conception choisie, contenant l'affirmation examinée et son issue (chip colorée : vert, ambre, bleu gris ; jamais rouge ; le libellé est toujours écrit). Sous les deux cases, une phrase de comparaison produite par le site à partir du gabarit de 03 > schema > comparaison_template, sans aucun calcul : elle nomme la différence d'issue et la relation manquante.
+   Niveau 2, « Voir les quatre volets » : les quatre volets côte à côte pour les deux conceptions (même forme que le tableau 3 du manuscrit), puis « ce qui changerait l'issue ».
+   Niveau 3, « Voir les passages et les prémisses » : extraits du rapport avec pages, prémisse ajoutée par l'analyse, limites.
+   Quand une conception n'a pas de lecture pour cet énoncé, la case affiche « Non examinée sous cette conception » et rien d'autre.
+e) En bas de page, le profil du rapport : nombre d'affirmations examinées, rattachées, indéterminées ; parts par conception sous forme d'une petite barre à cinq segments avec les nombres ; lectures concurrentes signalées ; la note de convention et la phrase « ces fréquences décrivent les justifications du rapport, pas la quantité de valeur produite ni la qualité des appuis », toujours visible.
+f) Une mention fixe en tête de page : « Les analyses affichées ont été produites hors du site selon le protocole de la section 5.2 du manuscrit et contrôlées par l'autrice. Le site n'analyse pas les rapports. »
+
+Données : un fichier JSON par rapport, au format de 03 > schema, déposé dans data/rapports/ ; un index data/rapports/index.json liste les fichiers disponibles. Le site charge l'index et n'affiche que les rapports présents. Ajouter un rapport ne demande aucune modification de code. Les champs vides (standard absent, passages absents) doivent s'afficher proprement (ligne masquée), jamais comme « null ».
+
+Ce que la page ne fait pas : pas de saisie libre, pas de classement automatique, pas de score global, pas d'agrégation entre rapports dans cette livraison.
+
+5. VOLET SOURCES ET CONSTRUCTION DU MODÈLE
+
+Mettre à jour : typologie (de la Cruz Jara et Spanjol, 2025), domaines (Teasdale, 2021 ; Teasdale et al., 2023), synthèse de l'autrice, absence de validation empirique, mention de l'assistance par IA pour la revue et de la vérification manuelle (02 > mentions). Afficher le lexique (02 > lexique) sous forme de tableau. Explorateur optionnel des 55 cellules : une grille 5 × 11, une cellule cliquable ouvre sa formulation courte, son statut, sa raison de valoriser, son critère, sa question, ses appuis à examiner et sa règle pour conclure.
+
+6. FIDÉLITÉ DU MODÈLE (RAPPELS, À RELIRE AVANT LIVRAISON)
+
+- Le standard appartient au dossier, pas à la conception : changer de conception ne change pas le standard, il change ce qu'il faut établir pour conclure.
+- Les statuts des cellules (proposée, exploratoire, ouverte) et les issues des affirmations (autorisée, délimitée, laissée à justifier) sont deux choses différentes ; ne jamais les mélanger dans une même légende.
+- Une issue « laissée à justifier » est une information manquante, pas un verdict défavorable.
+- Aucun poids, seuil, score ou veto.
+- Les textes des conceptions, des volets, des issues et des propositions sont ceux de 02 ; les textes des lectures sont ceux de 03.
+
+7. RÉCEPTION ATTENDUE
+
+- Vocabulaire : plus aucune occurrence de « rubrique », « fonction » (au sens des volets), « étayée », « à étayer », « périmètre » (hors profil) ; les mots « garantie » et « issue » apparaissent à l'accueil.
+- Accueil : la chaîne à quatre maillons, la phrase de résultat, les deux actions.
+- Illustrations : choix de deux conceptions, cinq lectures disponibles, dossier A/B avec issues mises à jour, phrase d'enseignement.
+- Rapports : liste, dossier, deux sélecteurs, trois niveaux de lecture par énoncé, profil, mention fixe ; ajout d'un rapport par simple dépôt d'un fichier JSON et mise à jour de l'index.
+- Sources : lexique et effectifs 37 / 12 / 6.
+- Lisibilité au téléphone, au clavier et avec animations réduites ; l'issue ne dépend jamais de la seule couleur.
+Livrer une prévisualisation des trois routes et quelques captures ordinateur/mobile, à faire examiner par l'autrice avant publication.
+
+8. CE QUI VIENDRA ENSUITE (HORS LIVRAISON)
+
+L'autrice dispose d'une vingtaine de rapports d'impact. Chaque rapport analysé sera livré au format de 03, un fichier à la fois ; le site les affichera sans changement de code. Une agrégation entre rapports (profils comparés) et une assistance à l'analyse pourront être étudiées après cette livraison.

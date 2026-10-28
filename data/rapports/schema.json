@@ -1,0 +1,86 @@
+{
+ "version": "PRISME MYRIA v2 — page Rapports — 28 octobre 2026",
+ "principe": "Le site n’analyse rien : il affiche des analyses préparées hors du site (protocole de la section 5.2 du manuscrit) et livrées sous la forme ci-dessous, un fichier par rapport. Le codeur construit l’affichage, la sélection du rapport, la sélection de deux conceptions et la comparaison ; il ne produit aucun contenu d’analyse.",
+ "schema": {
+  "id": "identifiant stable du rapport (kebab-case)",
+  "titre": "titre affiché",
+  "organisation": "organisation évaluée",
+  "annee": "année du rapport",
+  "type": "cas_construit | rapport_publie",
+  "source": "référence complète ; pagination utilisée",
+  "statut_affichage": "Illustration construite | Rapport publié, analyse documentaire",
+  "dossier": {
+   "action": "…",
+   "objectif": "…",
+   "standard": "standard convenu, s’il existe",
+   "observations": [
+    "…"
+   ],
+   "lacunes": [
+    "informations absentes du rapport, dites comme telles"
+   ]
+  },
+  "enonces": [
+   {
+    "id": "E1",
+    "type": "performance | affirmation_du_rapport",
+    "texte": "ce qui est examiné, cité ou résumé",
+    "passages": [
+     {
+      "page": "44",
+      "extrait": "citation exacte"
+     }
+    ],
+    "domaine_code": "01",
+    "lectures": {
+     "<M|I|S|V|N>": {
+      "cellule": "I01",
+      "affirmation": "affirmation de valeur examinée sous cette conception, avec sa portée",
+      "reference_de_valeur": "bénéfice, besoin ou principe précisé",
+      "volets": {
+       "qualification": "…",
+       "portee": "…",
+       "preuve": "…",
+       "regle": "…"
+      },
+      "issue": "autorisee | delimitee | laissee_a_justifier",
+      "pourquoi": "une phrase",
+      "relation_manquante": "la relation que la garantie exige et qui reste sans appui, ou null",
+      "ce_qui_changerait_l_issue": "l’information à réunir, ou null",
+      "premisse_ajoutee": "prémisse explicitée par l’analyse, ou null"
+     }
+    },
+    "non_examine_sous": [
+     "conceptions sans lecture fournie ; afficher « non examinée »"
+    ]
+   }
+  ],
+  "profil": {
+   "convention": "une unité par affirmation distincte, partagée également entre conceptions conjointement mobilisées ; la fréquence rapporte la somme des parts au nombre d’affirmations rattachées",
+   "affirmations_examinees": 0,
+   "rattachees": 0,
+   "indeterminees": 0,
+   "parts": {
+    "M": 0,
+    "I": 0,
+    "S": 0,
+    "V": 0,
+    "N": 0
+   },
+   "concurrentes": [
+    {
+     "enonce": "E1",
+     "lectures": [
+      "I",
+      "S"
+     ],
+     "note": "…"
+    }
+   ],
+   "note": "les fréquences décrivent les justifications du rapport, pas la quantité de valeur produite ni la qualité des appuis"
+  },
+  "versions": "facultatif, pour un cas construit : liste de versions du dossier, chacune avec une information ajoutée et les lectures mises à jour",
+  "limites": "phrase sur ce que l’analyse ne fait pas (attribution causale, validation, etc.)",
+  "comparaison_template": "Texte produit par le site, sans calcul : « Sous {A}, l’affirmation « {affirmation_A} » est {issue_A}. Sous {B}, l’affirmation « {affirmation_B} » est {issue_B}. {si issues différentes : La différence tient à {relation_manquante de la lecture non autorisée}. Ce qui changerait l’issue : {ce_qui_changerait_l_issue}.} {si issues identiques : Les deux garanties exigent ici les mêmes relations.} »"
+ }
+}
