@@ -12,7 +12,7 @@
     tab: "modele", notice: null,
     model: { conception: C.accueil.conception_initiale, domaine: C.accueil.domaine_initial },
     illus: { version: "A", left: P.X.couple_initial[0], right: P.X.couple_initial[1] },
-    rap: { rapport: null, rev: null, left: "S", right: "I" },
+    rap: { rapport: null, rev: null, left: "S", right: "I", lastRev: null },
   };
   var app = document.getElementById("app");
   var current = null;

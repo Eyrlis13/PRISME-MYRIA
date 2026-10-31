@@ -89,8 +89,16 @@
       body.appendChild(h("p", { class: "vchip big v-" + r.verdict, text: v.nom }));
       body.appendChild(h("p", { class: "out-k", text: L.manque }));
       body.appendChild(h("p", { class: "out-why", text: r.manque }));
+      if (r.pour_etayer && r.pour_etayer.verdict_vise) {
+        body.appendChild(h("div", { class: "lp-guide" },
+          h("p", { class: "out-k", text: L.pour_etayer }),
+          h("p", { class: "out-why", text: r.pour_etayer.texte }),
+          h("p", { class: "lp-to" }, "→ ", L.deviendrait, " ", h("span", { class: "vchip v-" + r.pour_etayer.verdict_vise, text: P.verdict(r.pour_etayer.verdict_vise).nom.toLowerCase() }))));
+      } else if (r.pour_etayer && r.pour_etayer.texte && r.pour_etayer.texte !== "Rien pour cette portée." && r.pour_etayer.texte !== "—") {
+        body.appendChild(h("div", { class: "lp-guide" }, h("p", { class: "out-k", text: L.pour_etayer }), h("p", { class: "out-why", text: r.pour_etayer.texte })));
+      }
       body.appendChild(h("p", { class: "out-k", text: L.integre }));
-      body.appendChild(h("p", { class: "out-main", text: r.integre }));
+      body.appendChild(h("p", { class: "out-main" }, r.integre, " ", h("span", { class: "vchip mini v-etayee", text: "étayée" })));
       var g = r.garantie;
       var det = h("details", { class: "more reasoning" }, h("summary", { text: L.garantie }),
         h("ul", { class: "r-rubs" }, P.composantes.map(function (f) {

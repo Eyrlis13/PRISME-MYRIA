@@ -24,7 +24,11 @@
      },
      "verdict": "suspens",
      "manque": "Effets sur les aidants et les services ; ressources consommées ; options comparées pour une supériorité.",
-     "integre": "Les personnes suivies réalisent désormais le transfert sans aide ; le bénéfice net pour le système reste à établir."
+     "integre": "Les personnes suivies réalisent désormais le transfert sans aide ; le bénéfice net pour le système reste à établir.",
+     "pour_etayer": {
+      "texte": "Documenter le temps d’aide évité pour les aidants et les services, et le coût de l’installation.",
+      "verdict_vise": "etayee"
+     }
     },
     "I": {
      "garantie": {
@@ -35,7 +39,11 @@
      },
      "verdict": "suspens",
      "manque": "Ce que le transfert change dans les activités et les relations de chaque personne.",
-     "integre": "Les personnes suivies réalisent désormais le transfert sans aide ; ce que ce transfert change pour chacune reste à établir."
+     "integre": "Les personnes suivies réalisent désormais le transfert sans aide ; ce que ce transfert change pour chacune reste à établir.",
+     "pour_etayer": {
+      "texte": "Recueillir auprès de chaque personne ce que le transfert change dans ses activités et ses relations (dossier B).",
+      "verdict_vise": "etayee"
+     }
     },
     "S": {
      "garantie": {
@@ -46,7 +54,11 @@
      },
      "verdict": "etayee",
      "manque": "Rien pour cette portée.",
-     "integre": "L’installation des aides a créé de la valeur sociale pour les personnes suivies, sur la période observée, quant à leur transfert du lit au fauteuil."
+     "integre": "L’installation des aides a créé de la valeur sociale pour les personnes suivies, sur la période observée, quant à leur transfert du lit au fauteuil.",
+     "pour_etayer": {
+      "texte": "Rien pour cette portée.",
+      "verdict_vise": null
+     }
     },
     "V": {
      "garantie": {
@@ -57,7 +69,11 @@
      },
      "verdict": "suspens",
      "manque": "Obligation de l’agent, engagement qu’elle soutient et bénéfices anticipés.",
-     "integre": "Les personnes suivies réalisent désormais le transfert sans aide ; le lien avec une obligation de l’organisation reste à documenter."
+     "integre": "Les personnes suivies réalisent désormais le transfert sans aide ; le lien avec une obligation de l’organisation reste à documenter.",
+     "pour_etayer": {
+      "texte": "Sous cette garantie, l’effet relève d’une autre conception. Pour étayer l’engagement : énoncer l’obligation que l’organisation invoque et montrer comment elle guide le choix des personnes équipées.",
+      "verdict_vise": null
+     }
     },
     "N": {
      "options": [
@@ -72,7 +88,11 @@
        },
        "verdict": "etayee",
        "manque": "Rien pour cette portée.",
-       "integre": "L’installation des aides a créé de la valeur sociale pour les personnes suivies, sur la période observée, quant à leur transfert du lit au fauteuil."
+       "integre": "L’installation des aides a créé de la valeur sociale pour les personnes suivies, sur la période observée, quant à leur transfert du lit au fauteuil.",
+       "pour_etayer": {
+        "texte": "Rien pour cette portée.",
+        "verdict_vise": null
+       }
       },
       {
        "id": "autodet",
@@ -85,7 +105,11 @@
        },
        "verdict": "suspens",
        "manque": "La décision des personnes sur les aides installées.",
-       "integre": "Les personnes suivies ont reçu une aide qui répond à un besoin identifié avec elles ; leur décision sur cette aide reste à documenter."
+       "integre": "Les personnes suivies ont reçu une aide qui répond à un besoin identifié avec elles ; leur décision sur cette aide reste à documenter.",
+       "pour_etayer": {
+        "texte": "Consigner, pour chaque personne, sa décision sur l’aide proposée et les autres options discutées.",
+        "verdict_vise": "etayee"
+       }
       }
      ]
     }
@@ -107,7 +131,11 @@
      },
      "verdict": "suspens",
      "manque": "Effets sur les aidants et les services ; ressources consommées ; options comparées pour une supériorité.",
-     "integre": "Les personnes suivies réalisent désormais le transfert sans aide ; le bénéfice net pour le système reste à établir."
+     "integre": "Les personnes suivies réalisent désormais le transfert sans aide ; le bénéfice net pour le système reste à établir.",
+     "pour_etayer": {
+      "texte": "Documenter le temps d’aide évité pour les aidants et les services, et le coût de l’installation.",
+      "verdict_vise": "etayee"
+     }
     },
     "I": {
      "garantie": {
@@ -118,7 +146,11 @@
      },
      "verdict": "etayee",
      "manque": "Rien pour cette portée, sauf si les appréciations expriment une adaptation à la situation.",
-     "integre": "L’installation des aides a créé de la valeur sociale pour les personnes suivies, sur la période observée, quant à leur transfert du lit au fauteuil."
+     "integre": "L’installation des aides a créé de la valeur sociale pour les personnes suivies, sur la période observée, quant à leur transfert du lit au fauteuil.",
+     "pour_etayer": {
+      "texte": "Rien pour cette portée, sauf à vérifier que les appréciations n’expriment pas une adaptation à la situation.",
+      "verdict_vise": null
+     }
     },
     "S": {
      "garantie": {
@@ -129,7 +161,11 @@
      },
      "verdict": "etayee",
      "manque": "Rien pour cette portée.",
-     "integre": "L’installation des aides a créé de la valeur sociale pour les personnes suivies, sur la période observée, quant à leur transfert du lit au fauteuil."
+     "integre": "L’installation des aides a créé de la valeur sociale pour les personnes suivies, sur la période observée, quant à leur transfert du lit au fauteuil.",
+     "pour_etayer": {
+      "texte": "Rien pour cette portée.",
+      "verdict_vise": null
+     }
     },
     "V": {
      "garantie": {
@@ -140,7 +176,11 @@
      },
      "verdict": "suspens",
      "manque": "Obligation de l’agent, engagement qu’elle soutient et bénéfices anticipés.",
-     "integre": "Les personnes suivies réalisent désormais le transfert sans aide ; le lien avec une obligation de l’organisation reste à documenter."
+     "integre": "Les personnes suivies réalisent désormais le transfert sans aide ; le lien avec une obligation de l’organisation reste à documenter.",
+     "pour_etayer": {
+      "texte": "Sous cette garantie, l’effet relève d’une autre conception. Pour étayer l’engagement : énoncer l’obligation que l’organisation invoque et montrer comment elle guide le choix des personnes équipées.",
+      "verdict_vise": null
+     }
     },
     "N": {
      "options": [
@@ -155,7 +195,11 @@
        },
        "verdict": "etayee",
        "manque": "Rien pour cette portée.",
-       "integre": "L’installation des aides a créé de la valeur sociale pour les personnes suivies, sur la période observée, quant à leur transfert du lit au fauteuil."
+       "integre": "L’installation des aides a créé de la valeur sociale pour les personnes suivies, sur la période observée, quant à leur transfert du lit au fauteuil.",
+       "pour_etayer": {
+        "texte": "Rien pour cette portée.",
+        "verdict_vise": null
+       }
       },
       {
        "id": "autodet",
@@ -168,7 +212,11 @@
        },
        "verdict": "suspens",
        "manque": "La décision des personnes sur les aides installées.",
-       "integre": "Les personnes suivies ont reçu une aide qui répond à un besoin identifié avec elles ; leur décision sur cette aide reste à documenter."
+       "integre": "Les personnes suivies ont reçu une aide qui répond à un besoin identifié avec elles ; leur décision sur cette aide reste à documenter.",
+       "pour_etayer": {
+        "texte": "Consigner, pour chaque personne, sa décision sur l’aide proposée et les autres options discutées.",
+        "verdict_vise": "etayee"
+       }
       }
      ]
     }
@@ -190,7 +238,11 @@
      },
      "verdict": "suspens",
      "manque": "Effets sur les aidants et les services ; ressources consommées ; options comparées pour une supériorité.",
-     "integre": "Les personnes suivies réalisent désormais le transfert sans aide ; le bénéfice net pour le système reste à établir."
+     "integre": "Les personnes suivies réalisent désormais le transfert sans aide ; le bénéfice net pour le système reste à établir.",
+     "pour_etayer": {
+      "texte": "Documenter le temps d’aide évité pour les aidants et les services, et le coût de l’installation.",
+      "verdict_vise": "etayee"
+     }
     },
     "I": {
      "garantie": {
@@ -201,7 +253,11 @@
      },
      "verdict": "suspens",
      "manque": "Ce que le transfert change dans les activités et les relations de chaque personne.",
-     "integre": "Les personnes suivies réalisent désormais le transfert sans aide ; ce que ce transfert change pour chacune reste à établir."
+     "integre": "Les personnes suivies réalisent désormais le transfert sans aide ; ce que ce transfert change pour chacune reste à établir.",
+     "pour_etayer": {
+      "texte": "Recueillir auprès de chaque personne ce que le transfert change dans ses activités et ses relations (dossier B).",
+      "verdict_vise": "etayee"
+     }
     },
     "S": {
      "garantie": {
@@ -212,7 +268,11 @@
      },
      "verdict": "etayee",
      "manque": "Rien pour cette portée.",
-     "integre": "L’installation des aides a créé de la valeur sociale pour les personnes suivies, sur la période observée, quant à leur transfert du lit au fauteuil."
+     "integre": "L’installation des aides a créé de la valeur sociale pour les personnes suivies, sur la période observée, quant à leur transfert du lit au fauteuil.",
+     "pour_etayer": {
+      "texte": "Rien pour cette portée.",
+      "verdict_vise": null
+     }
     },
     "V": {
      "garantie": {
@@ -223,7 +283,11 @@
      },
      "verdict": "suspens",
      "manque": "Obligation de l’agent, engagement qu’elle soutient et bénéfices anticipés.",
-     "integre": "Les personnes suivies réalisent désormais le transfert sans aide ; le lien avec une obligation de l’organisation reste à documenter."
+     "integre": "Les personnes suivies réalisent désormais le transfert sans aide ; le lien avec une obligation de l’organisation reste à documenter.",
+     "pour_etayer": {
+      "texte": "Sous cette garantie, l’effet relève d’une autre conception. Pour étayer l’engagement : énoncer l’obligation que l’organisation invoque et montrer comment elle guide le choix des personnes équipées.",
+      "verdict_vise": null
+     }
     },
     "N": {
      "options": [
@@ -238,7 +302,11 @@
        },
        "verdict": "etayee",
        "manque": "Rien pour cette portée.",
-       "integre": "L’installation des aides a créé de la valeur sociale pour les personnes suivies, sur la période observée, quant à leur transfert du lit au fauteuil."
+       "integre": "L’installation des aides a créé de la valeur sociale pour les personnes suivies, sur la période observée, quant à leur transfert du lit au fauteuil.",
+       "pour_etayer": {
+        "texte": "Rien pour cette portée.",
+        "verdict_vise": null
+       }
       },
       {
        "id": "autodet",
@@ -251,7 +319,11 @@
        },
        "verdict": "suspens",
        "manque": "La décision des personnes sur les aides installées.",
-       "integre": "Les personnes suivies ont reçu une aide qui répond à un besoin identifié avec elles ; leur décision sur cette aide reste à documenter."
+       "integre": "Les personnes suivies ont reçu une aide qui répond à un besoin identifié avec elles ; leur décision sur cette aide reste à documenter.",
+       "pour_etayer": {
+        "texte": "Consigner, pour chaque personne, sa décision sur l’aide proposée et les autres options discutées.",
+        "verdict_vise": "etayee"
+       }
       }
      ]
     }
@@ -274,7 +346,11 @@
      },
      "verdict": "suspens",
      "manque": "Effets sur les aidants et les services ; ressources consommées ; options comparées pour une supériorité.",
-     "integre": "Les personnes suivies réalisent désormais le transfert sans aide ; le bénéfice net pour le système reste à établir."
+     "integre": "Les personnes suivies réalisent désormais le transfert sans aide ; le bénéfice net pour le système reste à établir.",
+     "pour_etayer": {
+      "texte": "Documenter le temps d’aide évité pour les aidants et les services, et le coût de l’installation.",
+      "verdict_vise": "etayee"
+     }
     },
     "I": {
      "garantie": {
@@ -285,7 +361,11 @@
      },
      "verdict": "suspens",
      "manque": "Ce que le transfert change dans les activités et les relations de chaque personne.",
-     "integre": "Les personnes suivies réalisent désormais le transfert sans aide ; ce que ce transfert change pour chacune reste à établir."
+     "integre": "Les personnes suivies réalisent désormais le transfert sans aide ; ce que ce transfert change pour chacune reste à établir.",
+     "pour_etayer": {
+      "texte": "Recueillir auprès de chaque personne ce que le transfert change dans ses activités et ses relations (dossier B).",
+      "verdict_vise": "etayee"
+     }
     },
     "S": {
      "garantie": {
@@ -296,7 +376,11 @@
      },
      "verdict": "bornee",
      "manque": "Couverture du groupe ; personnes du territoire encore sans aide.",
-     "integre": "L’installation des aides a créé de la valeur sociale pour les personnes suivies, sur la période observée ; son extension au territoire reste à documenter."
+     "integre": "L’installation des aides a créé de la valeur sociale pour les personnes suivies, sur la période observée ; son extension au territoire reste à documenter.",
+     "pour_etayer": {
+      "texte": "Recenser les personnes du territoire qui ont ce besoin et celles qui ont déjà reçu une aide.",
+      "verdict_vise": "etayee"
+     }
     },
     "V": {
      "garantie": {
@@ -307,7 +391,11 @@
      },
      "verdict": "suspens",
      "manque": "Obligation de l’agent, engagement qu’elle soutient et bénéfices anticipés.",
-     "integre": "Les personnes suivies réalisent désormais le transfert sans aide ; le lien avec une obligation de l’organisation reste à documenter."
+     "integre": "Les personnes suivies réalisent désormais le transfert sans aide ; le lien avec une obligation de l’organisation reste à documenter.",
+     "pour_etayer": {
+      "texte": "Sous cette garantie, l’effet relève d’une autre conception. Pour étayer l’engagement : énoncer l’obligation que l’organisation invoque et montrer comment elle guide le choix des personnes équipées.",
+      "verdict_vise": null
+     }
     },
     "N": {
      "options": [
@@ -322,7 +410,11 @@
        },
        "verdict": "bornee",
        "manque": "Accès effectif de toutes les personnes couvertes ; obstacles.",
-       "integre": "L’installation des aides a créé de la valeur sociale pour les personnes suivies, sur la période observée ; son extension au territoire reste à documenter."
+       "integre": "L’installation des aides a créé de la valeur sociale pour les personnes suivies, sur la période observée ; son extension au territoire reste à documenter.",
+       "pour_etayer": {
+        "texte": "Recenser les personnes que couvre le principe sur le territoire et leur accès effectif à une aide.",
+        "verdict_vise": "etayee"
+       }
       },
       {
        "id": "autodet",
@@ -335,7 +427,11 @@
        },
        "verdict": "suspens",
        "manque": "La décision des personnes sur les aides installées.",
-       "integre": "Les personnes suivies ont reçu une aide qui répond à un besoin identifié avec elles ; leur décision sur cette aide reste à documenter."
+       "integre": "Les personnes suivies ont reçu une aide qui répond à un besoin identifié avec elles ; leur décision sur cette aide reste à documenter.",
+       "pour_etayer": {
+        "texte": "Consigner, pour chaque personne, sa décision sur l’aide proposée et les autres options discutées.",
+        "verdict_vise": "etayee"
+       }
       }
      ]
     }

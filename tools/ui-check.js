@@ -26,8 +26,9 @@ const SHOTS = process.env.SHOTS || "";
     for (const v of ["B", "C", "D", "A"]) { await p.click(".ver-seg .chip:has-text('" + (v === "A" ? "Dossier initial" : v + " ·") + "')"); await p.waitForTimeout(150); }
     if (SHOTS) await p.screenshot({ path: SHOTS + "/" + name + "-illustration.png", fullPage: true });
     await p.goto(BASE + "#/rapports", { waitUntil: "networkidle" });
-    const chips = await p.$$(".rev-seg .chip");
-    for (let i = 0; i < chips.length; i++) { const cs = await p.$$(".rev-seg .chip"); await cs[i].click(); await p.waitForTimeout(120); }
+    const chips = await p.$$(".prof-rev");
+    for (let i = 0; i < chips.length; i++) { const cs = await p.$$(".prof-rev"); await cs[i].click(); await p.waitForTimeout(120); }
+    const cells = await p.$$(".vchip.cell"); if (cells.length) { await cells[cells.length - 1].click(); await p.waitForTimeout(150); }
     if (SHOTS) await p.screenshot({ path: SHOTS + "/" + name + "-rapports.png", fullPage: true });
     const over = await p.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
     if (over) errs.push(name + " : défilement horizontal");

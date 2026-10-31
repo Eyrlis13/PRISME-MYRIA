@@ -46,11 +46,26 @@
       h("h2", { id: "page-title", text: C.rapports.titre }), rsel));
     inner.appendChild(h("p", { class: "rap-meta" }, h("strong", { text: R.titre }), " · ", R.perimetre, R.donnees ? " " + R.donnees : ""));
 
-    inner.appendChild(h("div", { class: "seg dark rev-seg", role: "group", "aria-label": "Revendications" },
-      R.revendications.map(function (x) {
-        return h("button", { type: "button", class: "chip" + (x.id === rev.id ? " on" : ""), "aria-pressed": x.id === rev.id ? "true" : "false", title: x.enonce,
-          onclick: function () { api.set({ rev: x.id }); } }, x.id + " · " + x.court);
+    /* profil du rapport : revendications × conceptions */
+    function first(l) { return l.options ? l.options[0] : l; }
+    var CS = C.conceptions;
+    var tbl = h("table", { class: "prof" },
+      h("thead", null, h("tr", null, h("th", { scope: "col", text: L.revendication }),
+        CS.map(function (c) { return h("th", { scope: "col" }, P.miniPrism(c.id, P.rays), h("span", { text: c.nom })); }))),
+      h("tbody", null, R.revendications.map(function (x) {
+        var inv = x.conception_invoquee && x.conception_invoquee.id;
+        return h("tr", { class: x.id === rev.id ? "on" : null },
+          h("th", { scope: "row" }, h("button", { type: "button", class: "prof-rev", "aria-pressed": x.id === rev.id ? "true" : "false", title: x.enonce,
+            onclick: function () { api.set({ rev: x.id }); } }, h("strong", { text: x.id }), " " + x.court)),
+          CS.map(function (c) {
+            var r = first(x.lectures[c.id]);
+            var nom = r.verdict === "ouvert" ? "ouvert" : P.verdict(r.verdict).nom;
+            return h("td", { class: inv === c.id ? "inv" : null },
+              h("button", { type: "button", class: "vchip cell v-" + r.verdict, title: (r.libelle ? r.libelle + " · " : "") + (r.pour_etayer ? r.pour_etayer.texte : r.manque),
+                onclick: function () { api.set({ rev: x.id, left: c.id, lastRev: x.id }); } }, nom));
+          }));
       })));
+    inner.appendChild(h("div", { class: "prof-wrap", role: "region", "aria-label": L.profil, tabindex: "0" }, h("p", { class: "five-k", text: L.profil }), tbl));
 
     var dom = P.domaine(rev.domaine);
     inner.appendChild(h("section", { class: "dossier", id: "dossier", tabindex: "-1", "data-anchor": "dossier", "aria-labelledby": "rev-t" },
@@ -76,6 +91,19 @@
       panels.appendChild(panel.el);
     });
     inner.appendChild(panels);
+
+    /* pour étayer : la même revendication sous les cinq garanties */
+    inner.appendChild(h("section", { class: "guide", "aria-label": L.guide },
+      h("p", { class: "five-k", text: L.guide }),
+      h("ul", { class: "guide-list" }, CS.map(function (c) {
+        var l = rev.lectures[c.id], r = first(l);
+        var pe = r.pour_etayer || {};
+        return h("li", null,
+          h("span", { class: "g-c" }, P.miniPrism(c.id, P.rays), c.nom),
+          h("span", { class: "vchip v-" + r.verdict, text: r.verdict === "ouvert" ? "ouvert" : P.verdict(r.verdict).nom }),
+          h("span", { class: "g-t" }, l.options ? h("em", { text: r.libelle + " · " }) : null, pe.texte || r.manque,
+            pe.verdict_vise ? [" → ", h("span", { class: "vchip mini v-" + pe.verdict_vise, text: P.verdict(pe.verdict_vise).nom.toLowerCase() })] : null));
+      }))));
     inner.appendChild(h("p", { class: "i-src", text: "Analyse : " + R.analyse.par + ", " + R.analyse.date + " · " + R.source }));
     scene._lines = true;
     return scene;

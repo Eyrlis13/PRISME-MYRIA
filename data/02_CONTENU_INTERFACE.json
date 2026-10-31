@@ -215,11 +215,15 @@
   "question": "Question évaluative",
   "verdict": "Verdict",
   "manque": "Ce qui manque",
-  "integre": "Revendication avec intégrité",
+  "integre": "Ce que les preuves permettent d’affirmer",
   "garantie": "Garantie pour le cas",
   "revendication": "Revendication",
   "preuves_rapport": "Preuves du rapport",
-  "autre": "Autre…"
+  "autre": "Autre…",
+  "pour_etayer": "Pour l’étayer",
+  "profil": "Profil du rapport",
+  "guide": "Pour étayer cette revendication",
+  "deviendrait": "deviendrait"
  },
  "rapports": {
   "titre": "Rapports analysés",
