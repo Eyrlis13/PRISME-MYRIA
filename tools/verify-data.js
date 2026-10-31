@@ -36,6 +36,8 @@ function checkReading(where, r) {
   if (VERD.indexOf(r.verdict) < 0) err(where + " : verdict inconnu « " + r.verdict + " »");
   if (!r.manque) err(where + " : « manque » vide");
   if (r.verdict !== "ouvert" && !r.integre) err(where + " : « integre » vide");
+  if (!r.pour_etayer || typeof r.pour_etayer.texte !== "string") err(where + " : « pour_etayer » manquant");
+  else if (r.pour_etayer.verdict_vise !== null && VERD.indexOf(r.pour_etayer.verdict_vise) < 0) err(where + " : verdict visé inconnu");
 }
 (B.rapports || []).forEach((R) => {
   ["id", "titre", "organisation", "annee", "perimetre", "source", "analyse", "revendications"].forEach((k) => { if (R[k] === undefined) err(R.id + " : champ " + k + " manquant"); });
