@@ -31,6 +31,12 @@
     state.rapport = R.id;
     var rev = R.revendications.filter(function (x) { return x.id === state.rev; })[0] || R.revendications[0];
     state.rev = rev.id;
+    if (state.lastRev !== rev.id) {
+      state.lastRev = rev.id;
+      var inv = rev.conception_invoquee && rev.conception_invoquee.id;
+      state.left = inv || "S";
+      if (state.right === state.left) state.right = state.left === "I" ? "S" : "I";
+    }
 
     var rsel = h("select", { class: "dom-select rap-select", "aria-label": "Rapport",
       onchange: function () { api.set({ rapport: rsel.value, rev: null }); } },

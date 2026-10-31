@@ -1,0 +1,907 @@
+{
+ "id": "resante-vous-2024",
+ "titre": "Changeons de regard : la mesure d’impact social de ReSanté-Vous. Résultats et méthodes des actions menées avec les partenaires",
+ "organisation": "ReSanté-Vous",
+ "annee": 2024,
+ "perimetre": "Activités centrées sur la personne (sport, art, radio, sorties) et transfert de compétences menés par ReSanté-Vous, entreprise solidaire d’utilité sociale, auprès des habitants et des professionnels d’EHPAD partenaires de six départements de Nouvelle-Aquitaine.",
+ "donnees": "Mesure de 2023 recueillie par des intervenants de ReSanté-Vous : 12 entretiens qualitatifs, réponses de 76 personnes âgées (population cible de 300) recueillies juste après une activité, avec un biais d’amorçage reconnu, et de 87 ou 88 professionnels (population cible de 230) ; le rapport ne donne ni les questions ni l’échelle de réponse.",
+ "source": "Rapport d’impact public (août 2024).",
+ "analyse": { "par": "compétence prisme-rapport (Claude Code)", "date": "2026-10-31", "modele": "PRISME 2.0" },
+ "revendications": [
+  {
+   "id": "R1",
+   "enonce": "Les activités de ReSanté-Vous soutiennent l’autonomie des personnes âgées en EHPAD : elles leur permettent de montrer leurs capacités et d’en développer.",
+   "court": "Soutien de l’autonomie",
+   "citation": "80% des personnes âgées interrogées estiment qu’elles ont pu montrer de quoi elles étaient capables",
+   "pages": "p. 35–36",
+   "domaine": "D01",
+   "propriete": "L’autonomie des personnes âgées, saisie par les capacités qu’elles montrent et développent.",
+   "portee": "Les personnes âgées accompagnées dans les EHPAD partenaires.",
+   "preuves": [
+    { "texte": "80 % des personnes âgées interrogées estiment avoir pu montrer de quoi elles étaient capables.", "pages": "p. 36" },
+    { "texte": "78 % des professionnels de proximité interrogés estiment que les personnes âgées ont développé des capacités.", "pages": "p. 36" },
+    { "texte": "76 personnes âgées ont répondu, sur une population cible de 300, juste après l’activité partagée ; le rapport reconnaît un biais d’amorçage.", "pages": "p. 33–34" },
+    { "texte": "Témoignages : « Je ne pensais pas être capable de faire tout ça » (Mme L., 82 ans, à propos d’une activité physique hors de l’établissement) ; « il a gagné en tout sur son autonomie » (une ergothérapeute, à propos d’un habitant).", "pages": "p. 34" },
+    { "texte": "Autonomie définie avec F. Gzil en trois dimensions : morale, fonctionnelle et sociale.", "pages": "p. 35" }
+   ],
+   "conception_invoquee": { "id": "I", "mode": "reconstruite", "premisse": "L’autonomie repose sur la capacité à choisir et à gérer sa vie ; il importe de connaître les valeurs présentes de la personne et sa compétence à les réaliser dans un environnement donné, p. 35" },
+   "lectures": {
+    "M": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "L’autonomie soutenue compte par le bénéfice net qu’elle apporte au système formé des habitants, des équipes et des établissements.",
+      "portee": "Habitants accompagnés, équipes et établissements partenaires, sur un horizon commun ; situation sans les activités.",
+      "preuves": "Effets sur chaque composante et leur attribution aux activités ; ressources consommées ; situation sans les activités.",
+      "regle": "Apprécier le bénéfice net ; pour conclure à une supériorité, classer les options selon une règle justifiée."
+     },
+     "verdict": "suspens",
+     "manque": "Effets sur les équipes et les établissements ; ressources consommées ; situation sans les activités ; attribution des capacités développées.",
+     "integre": "Interrogées juste après une activité, 80 % des personnes âgées estiment avoir pu montrer de quoi elles étaient capables ; le bénéfice net pour le système reste à établir."
+    },
+    "I": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "L’autonomie vaut par ce que chaque personne peut choisir et faire selon ses propres valeurs.",
+      "portee": "Chaque personne âgée accompagnée, en situation ; la source de chaque appréciation.",
+      "preuves": "Appréciation de chaque personne et sa possibilité de l’exprimer ; éléments sur les capacités revendiquées ; changements dans le temps et autres influences, puisque le développement est attribué aux activités.",
+      "regle": "Distinguer l’expérience exprimée, la capacité acquise et l’attribution, en restant attentif à l’adaptation et à l’amorçage ; conclure au niveau documenté."
+     },
+     "verdict": "suspens",
+     "manque": "Le développement des capacités apprécié par les personnes elles-mêmes, que l’avis des professionnels ne remplace pas ; les changements dans le temps et leur attribution aux activités.",
+     "integre": "Interrogées juste après une activité, 80 % des personnes âgées estiment avoir pu montrer de quoi elles étaient capables."
+    },
+    "S": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Soutenir l’autonomie répond à un besoin commun des habitants d’EHPAD, à condition qu’il ait été identifié avec eux.",
+      "portee": "Les habitants des EHPAD partenaires ; réalisation pendant l’activité ou changement durable de l’autonomie.",
+      "preuves": "Besoin identifié avec les habitants ; réponse documentée au niveau revendiqué ; personnes effectivement couvertes.",
+      "regle": "Apprécier la réponse au niveau du besoin retenu ; ne conclure à un changement durable qu’avec un suivi."
+     },
+     "verdict": "suspens",
+     "manque": "Le besoin d’autonomie défini avec les habitants ; un changement au-delà de l’activité ; la couverture des 300 personnes visées.",
+     "integre": "Interrogées juste après une activité, 80 % des 76 personnes âgées répondantes estiment avoir pu montrer de quoi elles étaient capables ; la réponse à un besoin défini avec les habitants reste à documenter."
+    },
+    "V": {
+     "statut_croisement": "Proposed",
+     "options": [
+      {
+       "id": "reperage",
+       "libelle": "Engagement à repérer les capacités de chaque personne pour qu’elles s’expriment dans des activités",
+       "source": "rapport, p. 14",
+       "garantie": {
+        "raison": "Le soutien de l’autonomie compte s’il procède de l’engagement de ReSanté-Vous à repérer les capacités de chacun et à les faire s’exprimer.",
+        "portee": "Les personnes âgées accompagnées ; l’engagement, distingué de l’effet revendiqué.",
+        "preuves": "Contenu de l’engagement et sa justification ; actes qui s’y rapportent ; bénéfices anticipés.",
+        "regle": "Examiner la cohérence entre l’engagement et la conduite des activités ; un effet produit appelle une seconde garantie."
+       },
+       "verdict": "suspens",
+       "manque": "Une seconde garantie pour l’effet revendiqué ; les repérages effectivement conduits.",
+       "integre": "ReSanté-Vous s’engage à repérer les capacités de chaque personne pour qu’elles s’expriment dans des activités, et en attend un mieux-être ; le soutien effectif de l’autonomie relève d’une seconde garantie."
+      },
+      {
+       "id": "sollicitude",
+       "libelle": "Devoir de sollicitude envers des personnes rendues vulnérables par l’âge",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "Le soutien de l’autonomie compte s’il procède d’un devoir de sollicitude que ReSanté-Vous reconnaît envers les personnes âgées.",
+        "portee": "Les personnes âgées accompagnées ; l’engagement, distingué de l’effet revendiqué.",
+        "preuves": "Énoncé du devoir par l’organisation ; engagement qu’il soutient ; bénéfices anticipés.",
+        "regle": "Examiner la cohérence entre le devoir et la conduite des activités ; un effet produit appelle une seconde garantie."
+       },
+       "verdict": "suspens",
+       "manque": "L’énoncé de ce devoir par ReSanté-Vous ; une seconde garantie pour l’effet revendiqué.",
+       "integre": "Interrogées juste après une activité, 80 % des personnes âgées estiment avoir pu montrer de quoi elles étaient capables ; le lien avec un devoir de sollicitude de l’organisation reste à documenter."
+      }
+     ]
+    },
+    "N": {
+     "statut_croisement": "Proposed",
+     "options": [
+      {
+       "id": "faire-seul",
+       "libelle": "« Aide-moi à faire seul »",
+       "source": "rapport, p. 14 et 41",
+       "garantie": {
+        "raison": "Le principe « Aide-moi à faire seul » exige que l’accompagnement permette à la personne de faire elle-même ce qu’elle peut faire.",
+        "portee": "Les personnes âgées accompagnées, dans les activités et dans les actes du quotidien.",
+        "preuves": "Justification du principe ; ce que les personnes font elles-mêmes ; ce que l’organisation met en œuvre.",
+        "regle": "Comparer ce que les personnes font elles-mêmes à l’exigence du principe, dans chaque situation examinée."
+       },
+       "verdict": "bornee",
+       "manque": "Ce que les personnes font elles-mêmes dans les actes du quotidien, hors des activités.",
+       "integre": "Interrogées juste après une activité, 80 % des personnes âgées estiment avoir pu montrer de quoi elles étaient capables, et 78 % des professionnels interrogés estiment qu’elles ont développé des capacités ; ce qu’elles font elles-mêmes dans les actes du quotidien reste à documenter."
+      },
+      {
+       "id": "libre-choix",
+       "libelle": "Libre choix, consentement éclairé et participation de la personne accueillie",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "Le principe de libre choix exige que la personne choisisse les activités qui soutiennent son autonomie et y consente.",
+        "portee": "Les personnes âgées accompagnées, dans les activités proposées.",
+        "preuves": "Choix des activités par les personnes ; consentement recueilli ; ce que l’organisation met en œuvre.",
+        "regle": "Comparer les choix documentés à l’exigence du principe."
+       },
+       "verdict": "suspens",
+       "manque": "Le choix des activités par les personnes et leur consentement.",
+       "integre": "Interrogées juste après une activité, 80 % des personnes âgées estiment avoir pu montrer de quoi elles étaient capables ; le choix de ces activités par les personnes reste à documenter."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "R2",
+   "enonce": "Les actions de ReSanté-Vous répondent à un besoin social : soutenir la santé, l’engagement et l’autonomie des personnes âgées face à l’âgisme, à l’exclusion sociale, à la sédentarité et au sentiment d’inutilité.",
+   "court": "Réponse au besoin",
+   "citation": "Depuis 2007, notre mission tente de répondre à ce besoin social, celui de considérer la santé comme une résultante d’un bien-être physique, psychique et social.",
+   "pages": "p. 7–11, 31",
+   "domaine": "D04",
+   "propriete": "L’adéquation des actions aux besoins des personnes âgées.",
+   "portee": "Les personnes âgées que ReSanté-Vous accompagne, quel que soit leur état de santé.",
+   "preuves": [
+    { "texte": "Quatre défis documentés par des rapports et des statistiques nationales et internationales : âgisme, exclusion sociale, sédentarité, sentiment d’inutilité ; coût moyen de la prise en charge de la perte d’autonomie.", "pages": "p. 7–11" },
+    { "texte": "Engagement à repérer les capacités de chaque personne pour proposer des activités adaptées, fondé sur Montessori, Csíkszentmihályi et Gardner.", "pages": "p. 13–15" },
+    { "texte": "Actions menées « en étroite collaboration avec les établissements et les structures intervenant auprès des personnes âgées ».", "pages": "p. 17" },
+    { "texte": "Origine : un programme de recherche sur des interventions non médicamenteuses auprès de personnes ayant des troubles cognitifs, qui a « permis de révéler un besoin de développement de ce type d’activités dans les EHPAD ».", "pages": "p. 20" },
+    { "texte": "Six axes d’impact dégagés d’entretiens avec des directions, des soignants et des habitants sur leurs perceptions des actions.", "pages": "p. 31" },
+    { "texte": "Méthode : la personne pratique « une activité qui a du sens en fonction de son expérience ou de ses envies du moment » ; témoignage d’un homme de 90 ans sur la place du vélo dans sa vie, lors d’une activité vélo.", "pages": "p. 39, 46" }
+   ],
+   "conception_invoquee": { "id": "S", "mode": "reconstruite", "premisse": "L’impact est jugé par rapport à un besoin social fort et doit être évalué comme créé collectivement avec toutes les parties prenantes, p. 27" },
+   "lectures": {
+    "M": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "La pertinence compte comme moyen du bénéfice net : les actions doivent viser les problèmes dont le traitement produit le bénéfice recherché pour le système.",
+      "portee": "Personnes âgées accompagnées et leurs circonstances ; besoins que le ciblage laisse de côté ; autres réponses possibles.",
+      "preuves": "Problèmes et besoins des personnes concernées, avec leur variation ; lien explicite entre la réponse et le bénéfice recherché ; justification de la priorité donnée à ces besoins.",
+      "regle": "Tenir l’adéquation documentée pour un indice de plausibilité de la contribution ; justifier une priorité en comparant les contributions possibles."
+     },
+     "verdict": "suspens",
+     "manque": "Les besoins des personnes accompagnées et leur variation ; la priorité donnée à ces besoins au regard d’autres réponses.",
+     "integre": "Le rapport documente par des données générales quatre problèmes qui touchent les personnes âgées et le coût de la perte d’autonomie, et argumente le lien entre activités porteuses de sens et santé ; les besoins des personnes accompagnées et la priorité donnée à ces besoins restent à documenter."
+    },
+    "I": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "La pertinence tient à l’adéquation des activités à ce que chaque personne cherche à être ou à faire.",
+      "portee": "Chaque personne accompagnée, en situation, dont les choix sont exprimés ou la représentation justifiée.",
+      "preuves": "Besoins et souhaits exprimés par chaque personne ; possibilité réelle de choisir ou de refuser une activité ; écarts entre objectifs personnels et objectifs de l’organisation.",
+      "regle": "Apprécier l’adéquation au regard des références personnelles explicitées, en gardant visibles les écarts avec la perspective de l’organisation."
+     },
+     "verdict": "suspens",
+     "manque": "Les besoins et souhaits exprimés par les personnes ; leur possibilité de choisir ou de refuser une activité.",
+     "integre": "Le rapport énonce une méthode qui part de l’expérience et des envies de chaque personne, et un homme de 90 ans relie une activité vélo à son histoire ; l’adéquation des activités aux choix de chaque personne reste à documenter."
+    },
+    "S": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Les actions contribuent à la valeur sociale si elles portent sur le besoin du groupe tel qu’il a été défini avec lui.",
+      "portee": "Les personnes âgées accompagnées ; le problème commun retenu ; les personnes habilitées à le définir.",
+      "preuves": "Définition et priorité du problème, et qui les a fixées ; perspectives du groupe, y compris ses désaccords ; adéquation pratique des activités.",
+      "regle": "Apprécier la correspondance entre le besoin défini et la réponse, en exposant les désaccords qui bornent la conclusion."
+     },
+     "verdict": "suspens",
+     "manque": "La définition du problème avec les personnes âgées concernées ; leurs perspectives et leurs désaccords.",
+     "integre": "Le problème est défini à partir de rapports et de statistiques sur les personnes âgées, et les axes d’impact sont dégagés d’entretiens sur les perceptions des actions ; la définition du besoin avec les personnes âgées reste à documenter."
+    },
+    "V": {
+     "statut_croisement": "Exploratory",
+     "options": [
+      {
+       "id": "mission",
+       "libelle": "Mission : que chaque personne âgée puisse se sentir autonome, s’épanouir et s’engager dans des activités porteuses de sens, quel que soit son état de santé",
+       "source": "rapport, p. 13",
+       "garantie": {
+        "raison": "Les actions sont pertinentes si elles constituent une réponse argumentée à la mission que ReSanté-Vous se reconnaît envers les personnes âgées.",
+        "portee": "Les personnes âgées que vise la mission, quel que soit leur état de santé ; les actions envisagées comme réponse.",
+        "preuves": "Assise de l’obligation ; bénéfices anticipés et leurs raisons ; congruence avec les principes invoqués ; raisons de retenir cette réponse.",
+        "regle": "Apprécier la cohérence de la justification et l’étendue des bénéfices anticipés ; traiter toute réalisation revendiquée sous une seconde garantie."
+       },
+       "verdict": "etayee",
+       "manque": "Rien pour cette portée ; la réalisation de la réponse relève d’une seconde garantie.",
+       "integre": "Les actions de ReSanté-Vous constituent une réponse argumentée à la mission qu’elle se reconnaît : soutenir l’engagement, l’autonomie et l’épanouissement des personnes âgées, quel que soit leur état de santé."
+      },
+      {
+       "id": "sollicitude",
+       "libelle": "Devoir de sollicitude envers des personnes rendues vulnérables par l’âge",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "Les actions sont pertinentes si elles constituent une réponse argumentée à un devoir de sollicitude que ReSanté-Vous reconnaît envers les personnes âgées.",
+        "portee": "Les personnes âgées accompagnées ; les actions envisagées comme réponse.",
+        "preuves": "Énoncé et assise du devoir ; bénéfices anticipés et leurs raisons ; raisons de retenir cette réponse.",
+        "regle": "Apprécier la cohérence de la justification et l’étendue des bénéfices anticipés ; traiter toute réalisation revendiquée sous une seconde garantie."
+       },
+       "verdict": "suspens",
+       "manque": "L’énoncé de ce devoir par ReSanté-Vous : le rapport évoque une « nouvelle conception du prendre soin » (p. 22) sans en faire une obligation.",
+       "integre": "Les actions répondent à une mission argumentée envers les personnes âgées ; leur lien avec un devoir de sollicitude reste à établir."
+      }
+     ]
+    },
+    "N": {
+     "statut_croisement": "Exploratory",
+     "options": [
+      {
+       "id": "avec-elle",
+       "libelle": "Ne rien faire pour la personne sans elle",
+       "source": "rapport, p. 36",
+       "garantie": {
+        "raison": "Le principe de ne rien faire pour la personne sans elle qualifie une réponse comme appropriée lorsque les personnes ont pris part à sa définition.",
+        "portee": "Les personnes âgées accompagnées ; les problèmes et les réponses qui les concernent.",
+        "preuves": "Qualification du problème et autorité de cette qualification ; part des personnes à la définition des réponses ; désaccords et leurs effets.",
+        "regle": "Argumenter l’application du principe aux circonstances et garder les interprétations concurrentes dans la conclusion."
+       },
+       "verdict": "suspens",
+       "manque": "La part des personnes âgées à la définition du problème et des réponses ; les interprétations concurrentes.",
+       "integre": "Le rapport énonce le principe de ne rien faire pour la personne sans elle et interroge des habitants sur leurs perceptions des actions ; leur part à la définition du problème et des réponses reste à documenter."
+      },
+      {
+       "id": "prevention",
+       "libelle": "Prévention de la perte d’autonomie, priorité des politiques du vieillissement",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "Le principe de prévention de la perte d’autonomie qualifie comme appropriées des activités qui entretiennent les capacités des personnes âgées.",
+        "portee": "Les personnes âgées exposées à une perte d’autonomie, en EHPAD et à domicile.",
+        "preuves": "Qualification du problème et autorité de cette qualification ; justification morale du principe ; désaccords et leurs effets.",
+        "regle": "Argumenter l’application du principe aux circonstances et garder les interprétations concurrentes dans la conclusion."
+       },
+       "verdict": "suspens",
+       "manque": "Une justification morale du principe, au-delà d’une priorité institutionnelle ; les interprétations concurrentes du problème.",
+       "integre": "Le rapport qualifie la sédentarité et la perte d’autonomie comme problèmes à l’aide de données de santé publique ; la justification morale du principe et les désaccords restent à exposer."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "R3",
+   "enonce": "Les interventions de ReSanté-Vous font évoluer les pratiques des professionnels de proximité vers l’approche centrée sur la personne, en développant leurs compétences.",
+   "court": "Compétences des pros",
+   "citation": "74% des pros de proximité interrogés ont le sentiment d’avoir développé leurs compétences grâce à l’activité",
+   "pages": "p. 39–40",
+   "domaine": "D01",
+   "propriete": "Les compétences des professionnels de proximité dans l’approche centrée sur la personne.",
+   "portee": "Les professionnels de proximité des EHPAD partenaires.",
+   "preuves": [
+    { "texte": "74 % des professionnels de proximité interrogés ont le sentiment d’avoir développé leurs compétences grâce à l’activité.", "pages": "p. 40" },
+    { "texte": "88 professionnels ont répondu sur une population cible de 230 ; profil : 8 hommes et 57 femmes ; 10 IDE, 9 animatrices, 33 aides-soignantes ou faisant fonction, 10 AES.", "pages": "p. 38" },
+    { "texte": "Témoignage : « Permet de voir des capacités chez eux que l’on avait oublié » (Mme P., AS).", "pages": "p. 38" },
+    { "texte": "Leviers décrits : formations continues et personnalisées, temps de sensibilisation, compagnonnage dans les actes.", "pages": "p. 18, 41" }
+   ],
+   "conception_invoquee": { "id": null, "mode": "aucune" },
+   "lectures": {
+    "M": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Les compétences développées comptent par le bénéfice net qu’elles apportent au système formé des équipes, des habitants et des établissements.",
+      "portee": "Équipes, habitants et établissements partenaires, sur un horizon commun ; situation sans l’intervention.",
+      "preuves": "Pratiques changées et leurs effets sur les habitants, attribués à l’intervention ; ressources consommées ; situation sans l’intervention.",
+      "regle": "Apprécier le bénéfice net ; pour conclure à une supériorité, classer les options selon une règle justifiée."
+     },
+     "verdict": "suspens",
+     "manque": "Pratiques changées et leurs effets sur les habitants ; ressources consommées, dont le temps des équipes ; situation sans l’intervention.",
+     "integre": "74 % des professionnels interrogés ont le sentiment d’avoir développé leurs compétences grâce à l’activité ; le bénéfice net pour le système reste à établir."
+    },
+    "I": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Le développement des compétences vaut par le bénéfice que chaque professionnel reconnaît dans sa propre pratique.",
+      "portee": "Chaque professionnel interrogé, sur la période de la mesure ; la source de chaque appréciation.",
+      "preuves": "Appréciation de chaque professionnel ; éléments sur les compétences et les pratiques revendiquées ; changements dans le temps et autres influences, puisque l’évolution est attribuée à l’intervention.",
+      "regle": "Distinguer le sentiment exprimé, la pratique changée et l’attribution ; conclure au niveau documenté."
+     },
+     "verdict": "suspens",
+     "manque": "Des éléments sur les pratiques au-delà du sentiment déclaré ; les changements dans le temps et les autres influences.",
+     "integre": "74 % des professionnels interrogés ont le sentiment d’avoir développé leurs compétences grâce à l’activité."
+    },
+    "S": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Développer les compétences des équipes répond à un besoin commun des professionnels, à condition qu’il ait été identifié avec eux.",
+      "portee": "Les professionnels de proximité des EHPAD partenaires ; réalisation immédiate ou évolution durable des pratiques.",
+      "preuves": "Besoin identifié avec les équipes ; réponse documentée au niveau revendiqué ; professionnels effectivement couverts.",
+      "regle": "Apprécier la réponse au niveau du besoin retenu ; ne conclure à une évolution durable des pratiques qu’avec un suivi."
+     },
+     "verdict": "suspens",
+     "manque": "Le besoin de compétences défini avec les équipes ; l’évolution des pratiques au-delà de l’intervention ; la couverture des 230 professionnels visés.",
+     "integre": "74 % des 88 professionnels répondants, sur 230 visés, ont le sentiment d’avoir développé leurs compétences grâce à l’activité ; le besoin défini avec les équipes et l’évolution des pratiques restent à documenter."
+    },
+    "V": {
+     "statut_croisement": "Proposed",
+     "options": [
+      {
+       "id": "competences",
+       "libelle": "Engagement à contribuer à l’évolution des compétences des acteurs de terrain, au nom du respect de la dignité et de l’autonomie",
+       "source": "rapport, p. 17",
+       "garantie": {
+        "raison": "Le développement des compétences compte s’il procède de l’engagement de ReSanté-Vous envers les acteurs de terrain, fondé sur le respect de la dignité et de l’autonomie des personnes âgées.",
+        "portee": "Les professionnels accompagnés ; l’engagement, distingué de l’effet revendiqué.",
+        "preuves": "Contenu de l’engagement et sa justification ; actes qui s’y rapportent ; bénéfices anticipés.",
+        "regle": "Examiner la cohérence entre l’engagement et la conduite des interventions ; un effet produit appelle une seconde garantie."
+       },
+       "verdict": "suspens",
+       "manque": "Une seconde garantie pour l’évolution des pratiques ; les formations et le compagnonnage effectivement conduits.",
+       "integre": "ReSanté-Vous s’engage, au nom du respect de la dignité et de l’autonomie, à contribuer à l’évolution des compétences des acteurs de terrain par des formations et un compagnonnage ; l’évolution effective des pratiques relève d’une seconde garantie."
+      },
+      {
+       "id": "soutien-soignants",
+       "libelle": "Devoir de soutenir ceux qui prennent soin",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "Le développement des compétences compte s’il procède d’un devoir que ReSanté-Vous reconnaît envers les professionnels du soin.",
+        "portee": "Les professionnels accompagnés ; l’engagement, distingué de l’effet revendiqué.",
+        "preuves": "Énoncé du devoir par l’organisation ; engagement qu’il soutient ; bénéfices anticipés pour les équipes.",
+        "regle": "Examiner la cohérence entre le devoir et la conduite des interventions ; un effet produit appelle une seconde garantie."
+       },
+       "verdict": "suspens",
+       "manque": "L’énoncé de ce devoir par ReSanté-Vous, qui fonde son engagement sur les personnes âgées ; une seconde garantie pour l’effet.",
+       "integre": "74 % des professionnels interrogés ont le sentiment d’avoir développé leurs compétences grâce à l’activité ; le lien avec un devoir envers les équipes reste à documenter."
+      }
+     ]
+    },
+    "N": {
+     "statut_croisement": "Proposed",
+     "options": [
+      {
+       "id": "centree-personne",
+       "libelle": "Approche centrée sur la personne : considérer la personne âgée comme un sujet",
+       "source": "rapport, p. 39",
+       "garantie": {
+        "raison": "L’approche centrée sur la personne exige des pratiques qui partent de ce qui a du sens pour chaque personne âgée.",
+        "portee": "Les professionnels des EHPAD partenaires, dans leur relation aux habitants.",
+        "preuves": "Justification du principe ; pratiques des équipes envers les habitants ; ce que l’organisation met en œuvre.",
+        "regle": "Comparer les pratiques documentées à l’exigence du principe, situation par situation."
+       },
+       "verdict": "suspens",
+       "manque": "Les pratiques des équipes auprès des habitants, observées ou rapportées par eux.",
+       "integre": "Une aide-soignante dit voir chez les habitants des capacités oubliées, et 74 % des professionnels interrogés ont le sentiment d’avoir développé leurs compétences ; la conformité des pratiques à l’approche centrée sur la personne reste à documenter."
+      },
+      {
+       "id": "bientraitance",
+       "libelle": "Bientraitance",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "Le principe de bientraitance exige des pratiques professionnelles qui respectent la personne, ses capacités et ses choix.",
+        "portee": "Les professionnels des EHPAD partenaires, dans leur relation aux habitants.",
+        "preuves": "Pratiques documentées des équipes et leur évaluation ; ce que l’organisation met en œuvre.",
+        "regle": "Comparer les pratiques documentées à l’exigence du principe."
+       },
+       "verdict": "suspens",
+       "manque": "Les pratiques des équipes et leur évaluation au regard de la bientraitance.",
+       "integre": "74 % des professionnels interrogés ont le sentiment d’avoir développé leurs compétences grâce à l’activité ; la conformité de leurs pratiques à la bientraitance reste à documenter."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "R4",
+   "enonce": "Les interventions de ReSanté-Vous facilitent le quotidien des professionnels de proximité et agissent sur leur bien-être au travail.",
+   "court": "Bien-être au travail",
+   "citation": "75% des pros de proximité interrogés ont le sentiment que l’activité agit également sur leur bien-être au travail",
+   "pages": "p. 40–41",
+   "domaine": "D01",
+   "propriete": "Le bien-être au travail des professionnels de proximité.",
+   "portee": "Les professionnels de proximité des EHPAD partenaires.",
+   "preuves": [
+    { "texte": "75 % des professionnels de proximité interrogés ont le sentiment que l’activité agit également sur leur bien-être au travail.", "pages": "p. 40" },
+    { "texte": "88 professionnels ont répondu sur une population cible de 230 (87 selon les p. 31–32).", "pages": "p. 38" },
+    { "texte": "Le rapport pose que « la qualité du travail perçue est un facteur clé de bonne qualité de vie au travail ».", "pages": "p. 19" },
+    { "texte": "Leviers décrits : formations personnalisées, temps de sensibilisation, compagnonnage, pilotage suivant l’évolution des objectifs.", "pages": "p. 41" }
+   ],
+   "conception_invoquee": { "id": null, "mode": "aucune" },
+   "lectures": {
+    "M": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Le bien-être au travail compte par le bénéfice net qu’il apporte au système formé des équipes, des habitants et des établissements.",
+      "portee": "Équipes, habitants et établissements partenaires, sur un horizon commun ; situation sans l’intervention.",
+      "preuves": "Effets sur chaque composante, attribués à l’intervention ; ressources consommées ; situation sans l’intervention.",
+      "regle": "Apprécier le bénéfice net ; pour conclure à une supériorité, classer les options selon une règle justifiée."
+     },
+     "verdict": "suspens",
+     "manque": "Effets sur les habitants et les établissements ; ressources consommées ; situation sans l’intervention.",
+     "integre": "75 % des professionnels interrogés ont le sentiment que l’activité agit sur leur bien-être au travail ; le bénéfice net pour le système reste à établir."
+    },
+    "I": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Le bien-être au travail vaut par ce que chaque professionnel reconnaît dans sa propre activité.",
+      "portee": "Chaque professionnel interrogé, sur la période de la mesure.",
+      "preuves": "Appréciation de chaque professionnel ; changements dans le temps et autres influences, puisque l’effet est attribué à l’intervention.",
+      "regle": "Distinguer le sentiment exprimé, le changement de bien-être et l’attribution, en restant attentif à l’adaptation."
+     },
+     "verdict": "suspens",
+     "manque": "Les changements de bien-être dans le temps et les autres influences ; le moment du recueil auprès des professionnels.",
+     "integre": "75 % des professionnels interrogés ont le sentiment que l’activité agit sur leur bien-être au travail."
+    },
+    "S": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Faciliter le quotidien des équipes répond à un besoin commun des professionnels, à condition qu’il ait été identifié avec eux.",
+      "portee": "Les professionnels de proximité des EHPAD partenaires ; réalisation immédiate ou changement durable du quotidien de travail.",
+      "preuves": "Besoin identifié avec les équipes ; réponse documentée au niveau revendiqué ; professionnels effectivement couverts.",
+      "regle": "Apprécier la réponse au niveau du besoin retenu ; ne conclure à un changement durable qu’avec un suivi."
+     },
+     "verdict": "suspens",
+     "manque": "Le besoin des équipes défini avec elles ; un changement du quotidien de travail ; la couverture des 230 professionnels visés.",
+     "integre": "75 % des 88 professionnels répondants, sur 230 visés, ont le sentiment que l’activité agit sur leur bien-être au travail ; le besoin défini avec les équipes reste à documenter."
+    },
+    "V": {
+     "statut_croisement": "Proposed",
+     "options": [
+      {
+       "id": "corollaire",
+       "libelle": "Favoriser le bien-être des personnes âgées « et en corollaire des personnes qui les accompagnent »",
+       "source": "rapport, p. 41",
+       "garantie": {
+        "raison": "Le bien-être des équipes compte s’il procède de l’engagement de ReSanté-Vous envers les personnes qui accompagnent les personnes âgées.",
+        "portee": "Les professionnels accompagnés ; l’engagement, distingué de l’effet revendiqué.",
+        "preuves": "Contenu de l’engagement et sa justification ; actes qui s’y rapportent ; bénéfices anticipés.",
+        "regle": "Examiner la cohérence entre l’engagement et la conduite des interventions ; un effet produit appelle une seconde garantie."
+       },
+       "verdict": "suspens",
+       "manque": "Le contenu de l’engagement envers les équipes, posé en corollaire ; une seconde garantie pour l’effet.",
+       "integre": "ReSanté-Vous vise le bien-être des personnes qui accompagnent les personnes âgées, en corollaire du leur ; l’effet sur le bien-être au travail relève d’une seconde garantie."
+      },
+      {
+       "id": "soutien-soignants",
+       "libelle": "Devoir de soutenir ceux qui prennent soin",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "Le bien-être des équipes compte s’il procède d’un devoir que ReSanté-Vous reconnaît envers les professionnels du soin.",
+        "portee": "Les professionnels accompagnés ; l’engagement, distingué de l’effet revendiqué.",
+        "preuves": "Énoncé du devoir par l’organisation ; engagement qu’il soutient ; bénéfices anticipés pour les équipes.",
+        "regle": "Examiner la cohérence entre le devoir et la conduite des interventions ; un effet produit appelle une seconde garantie."
+       },
+       "verdict": "suspens",
+       "manque": "L’énoncé de ce devoir par ReSanté-Vous ; une seconde garantie pour l’effet.",
+       "integre": "75 % des professionnels interrogés ont le sentiment que l’activité agit sur leur bien-être au travail ; le lien avec un devoir envers les équipes reste à documenter."
+      }
+     ]
+    },
+    "N": {
+     "statut_croisement": "Proposed",
+     "options": [
+      {
+       "id": "qualite-travail",
+       "libelle": "Pouvoir faire un travail de qualité, « facteur clé de bonne qualité de vie au travail »",
+       "source": "rapport, p. 19",
+       "garantie": {
+        "raison": "Ce principe exige que les professionnels puissent accomplir un travail dont ils reconnaissent la qualité.",
+        "portee": "Les professionnels de proximité des EHPAD partenaires.",
+        "preuves": "Justification du principe ; qualité du travail perçue par les équipes ; ce que l’intervention change dans l’organisation du travail.",
+        "regle": "Comparer la qualité du travail perçue à l’exigence du principe."
+       },
+       "verdict": "suspens",
+       "manque": "La qualité du travail perçue par les équipes, que le rapport tient pour facteur clé ; ce que l’intervention change dans l’organisation du travail.",
+       "integre": "75 % des professionnels interrogés ont le sentiment que l’activité agit sur leur bien-être au travail ; la qualité du travail perçue, que le rapport tient pour facteur clé, n’est pas mesurée."
+      },
+      {
+       "id": "qvct",
+       "libelle": "Qualité de vie et des conditions de travail",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "Ce principe exige des conditions de travail qui permettent aux professionnels de bien faire leur travail et de s’y sentir bien.",
+        "portee": "Les professionnels de proximité des EHPAD partenaires.",
+        "preuves": "Conditions de travail des équipes ; ce que l’intervention y change ; ce que l’organisation met en œuvre.",
+        "regle": "Comparer les conditions documentées à l’exigence du principe."
+       },
+       "verdict": "suspens",
+       "manque": "Les conditions de travail des équipes et ce que l’intervention y change.",
+       "integre": "75 % des professionnels interrogés ont le sentiment que l’activité agit sur leur bien-être au travail ; les conditions de travail des équipes restent à documenter."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "R5",
+   "enonce": "Les activités de ReSanté-Vous améliorent l’image que les personnes âgées ont d’elles-mêmes.",
+   "court": "Image de soi",
+   "citation": "84% des personnes âgées interrogées ont le sentiment d’avoir une meilleure image d’elles-mêmes",
+   "pages": "p. 43–44",
+   "domaine": "D01",
+   "propriete": "L’image que les personnes âgées ont d’elles-mêmes.",
+   "portee": "Les personnes âgées qui participent aux activités dans les EHPAD partenaires.",
+   "preuves": [
+    { "texte": "84 % des personnes âgées interrogées ont le sentiment d’avoir une meilleure image d’elles-mêmes.", "pages": "p. 44" },
+    { "texte": "76 personnes âgées ont répondu, sur une population cible de 300 : 57 femmes et 19 hommes, de moins de 70 ans à plus de 100 ans.", "pages": "p. 34" },
+    { "texte": "Recueil juste après l’activité partagée, en raison des problèmes de mémoire liés à l’âge ; le rapport reconnaît un biais d’amorçage.", "pages": "p. 33, 47" },
+    { "texte": "Témoignages : « À mon âge, j’ai 85 ans, la première fois je me suis dit : jamais j’y arriverai à ça » (Mme L., stand up paddle) ; « J’ai pris du plaisir même si ça fait peur au départ » (Mme S., 97 ans, piscine).", "pages": "p. 42, 46" },
+    { "texte": "Axe « changer de regard » : agir contre l’âgisme, dont souffrent 60 % des personnes âgées selon l’OMS.", "pages": "p. 42–43" }
+   ],
+   "conception_invoquee": { "id": "I", "mode": "reconstruite", "premisse": "La personne âgée est considérée comme « un véritable sujet », et la mesure d’impact est indissociable de « la valeur constatée par les bénéficiaires », p. 27 et 37" },
+   "lectures": {
+    "M": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Une meilleure image de soi compte par le bénéfice net qu’elle apporte au système formé des habitants, des équipes et des établissements.",
+      "portee": "Habitants, équipes et établissements partenaires, sur un horizon commun ; situation sans les activités.",
+      "preuves": "Effets sur chaque composante, attribués aux activités ; ressources consommées ; situation sans les activités.",
+      "regle": "Apprécier le bénéfice net ; pour conclure à une supériorité, classer les options selon une règle justifiée."
+     },
+     "verdict": "suspens",
+     "manque": "Persistance et attribution de l’effet ; effets sur les autres composantes ; ressources consommées ; situation sans les activités.",
+     "integre": "Juste après une activité, 84 % des personnes âgées interrogées déclarent une meilleure image d’elles-mêmes ; le bénéfice net pour le système reste à établir."
+    },
+    "I": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Une meilleure image de soi vaut par le bénéfice que chaque personne reconnaît pour elle-même.",
+      "portee": "Chaque personne âgée interrogée, en situation ; la période que couvre la revendication.",
+      "preuves": "Appréciation de chaque personne et sa possibilité de l’exprimer ; changements dans le temps et autres influences, puisque l’amélioration est attribuée aux activités.",
+      "regle": "Distinguer l’expérience exprimée, le changement et l’attribution, en restant attentif à l’adaptation et à l’amorçage."
+     },
+     "verdict": "suspens",
+     "manque": "La persistance de l’image de soi au-delà de l’activité ; son attribution aux activités, compte tenu du biais d’amorçage.",
+     "integre": "84 % des résidents interrogés ont déclaré une meilleure image d’eux-mêmes juste après une activité."
+    },
+    "S": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Améliorer l’image de soi répond à un besoin commun des habitants, à condition qu’il ait été identifié avec eux.",
+      "portee": "Les habitants des EHPAD partenaires ; réalisation immédiate ou changement durable.",
+      "preuves": "Besoin identifié avec les habitants ; réponse au niveau revendiqué ; personnes effectivement couvertes.",
+      "regle": "Apprécier la réponse au niveau du besoin retenu ; ne conclure à un changement durable qu’avec un suivi."
+     },
+     "verdict": "suspens",
+     "manque": "Le besoin défini avec les habitants ; un changement au-delà de l’activité ; la couverture des 300 personnes visées.",
+     "integre": "Juste après une activité, 84 % des 76 personnes âgées répondantes, sur 300 visées, déclarent une meilleure image d’elles-mêmes ; le besoin défini avec les habitants et un changement durable restent à documenter."
+    },
+    "V": {
+     "statut_croisement": "Proposed",
+     "options": [
+      {
+       "id": "regard-confiance",
+       "libelle": "Cultiver un regard plein de confiance sur la potentialité des personnes âgées pour « réenchanter la vieillesse »",
+       "source": "rapport, p. 43",
+       "garantie": {
+        "raison": "Une meilleure image de soi compte si elle procède de l’engagement de ReSanté-Vous à porter un regard de confiance sur les personnes âgées.",
+        "portee": "Les personnes âgées accompagnées ; l’engagement, distingué de l’effet revendiqué.",
+        "preuves": "Contenu de l’engagement et sa justification ; actes qui s’y rapportent ; bénéfices anticipés.",
+        "regle": "Examiner la cohérence entre l’engagement et la conduite des activités ; un effet produit appelle une seconde garantie."
+       },
+       "verdict": "suspens",
+       "manque": "Une seconde garantie pour l’effet revendiqué ; les projets effectivement conduits.",
+       "integre": "ReSanté-Vous s’engage à porter un regard de confiance sur la potentialité des personnes âgées et décrit des projets en ce sens ; l’amélioration de leur image d’elles-mêmes relève d’une seconde garantie."
+      },
+      {
+       "id": "sollicitude",
+       "libelle": "Devoir de sollicitude envers des personnes rendues vulnérables par l’âge",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "Une meilleure image de soi compte si elle procède d’un devoir de sollicitude que ReSanté-Vous reconnaît envers les personnes âgées.",
+        "portee": "Les personnes âgées accompagnées ; l’engagement, distingué de l’effet revendiqué.",
+        "preuves": "Énoncé du devoir par l’organisation ; engagement qu’il soutient ; bénéfices anticipés.",
+        "regle": "Examiner la cohérence entre le devoir et la conduite des activités ; un effet produit appelle une seconde garantie."
+       },
+       "verdict": "suspens",
+       "manque": "L’énoncé de ce devoir par ReSanté-Vous ; une seconde garantie pour l’effet revendiqué.",
+       "integre": "Juste après une activité, 84 % des personnes âgées interrogées déclarent une meilleure image d’elles-mêmes ; le lien avec un devoir de sollicitude de l’organisation reste à documenter."
+      }
+     ]
+    },
+    "N": {
+     "statut_croisement": "Proposed",
+     "options": [
+      {
+       "id": "agisme",
+       "libelle": "Lutte contre l’âgisme, discrimination fondée sur l’âge",
+       "source": "rapport, p. 43",
+       "garantie": {
+        "raison": "Le principe de lutte contre l’âgisme exige que les personnes âgées ne subissent pas de dépréciation fondée sur l’âge, y compris dans l’image qu’elles ont d’elles-mêmes.",
+        "portee": "Les personnes âgées accompagnées dans les EHPAD partenaires.",
+        "preuves": "Justification du principe ; dépréciation de soi liée à l’âge, établie au-delà de l’activité ; ce que l’organisation met en œuvre.",
+        "regle": "Comparer la dépréciation documentée à l’exigence du principe."
+       },
+       "verdict": "suspens",
+       "manque": "La dépréciation de soi liée à l’âge, établie avant les activités et à distance d’elles, hors de l’effet d’amorçage.",
+       "integre": "Juste après une activité, 84 % des personnes âgées interrogées déclarent une meilleure image d’elles-mêmes ; le recul de la dépréciation de soi liée à l’âge reste à établir."
+      },
+      {
+       "id": "epanouissement",
+       "libelle": "Épanouissement personnel (Principes des Nations unies pour les personnes âgées, 1991)",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "Ce principe exige que les personnes âgées aient la possibilité de développer pleinement leur potentiel.",
+        "portee": "Les personnes âgées accompagnées dans les EHPAD partenaires.",
+        "preuves": "Justification du principe ; accès effectif des personnes à des activités qui développent leur potentiel ; ce que l’organisation met en œuvre.",
+        "regle": "Comparer l’accès documenté à l’exigence du principe."
+       },
+       "verdict": "suspens",
+       "manque": "L’accès de chaque habitant à des activités qui développent son potentiel : nature et fréquence des activités, habitants concernés.",
+       "integre": "Les 76 personnes âgées répondantes ont été interrogées après une activité, et 84 % d’entre elles déclarent une meilleure image d’elles-mêmes ; l’accès des habitants à des activités qui développent leur potentiel reste à documenter."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "R6",
+   "enonce": "Les activités changent le regard que les professionnels de proximité portent sur les personnes âgées et les incitent à réaliser davantage d’activités avec elles.",
+   "court": "Regard des pros",
+   "citation": "70% des pros de proximité interrogés estiment être plus inspirés pour réaliser des activités avec les personnes âgées",
+   "pages": "p. 43–44",
+   "domaine": "D01",
+   "propriete": "Le regard des professionnels sur les capacités des personnes âgées.",
+   "portee": "Les professionnels de proximité des EHPAD partenaires.",
+   "preuves": [
+    { "texte": "70 % des professionnels de proximité interrogés estiment être plus inspirés pour réaliser des activités avec les personnes âgées.", "pages": "p. 44" },
+    { "texte": "88 professionnels ont répondu sur une population cible de 230.", "pages": "p. 38" },
+    { "texte": "Témoignages : « Ça permet de voir les gens autrement » (Mme G., IDE) ; « Permet de voir des capacités chez eux que l’on avait oublié » (Mme P., AS).", "pages": "p. 38, 42" },
+    { "texte": "Projets visant à partager « la faim de vie des vieux en les décloisonnant d’un carcan sécuritaire » et à leur offrir « le droit au risque » ; témoignages de personnes de 85 et 97 ans sur une sortie en stand up paddle et à la piscine.", "pages": "p. 42, 43, 46" }
+   ],
+   "conception_invoquee": { "id": "N", "mode": "reconstruite", "premisse": "Il importe d’agir contre l’âgisme, qui désigne « toutes les formes de ségrégation, de dépréciation ou de mépris fondées sur l’âge », p. 43" },
+   "lectures": {
+    "M": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Un regard changé compte par le bénéfice net qu’il apporte au système formé des équipes, des habitants et des établissements.",
+      "portee": "Équipes, habitants et établissements partenaires, sur un horizon commun ; situation sans les activités.",
+      "preuves": "Pratiques changées et leurs effets sur les habitants, attribués aux activités ; ressources consommées ; situation sans les activités.",
+      "regle": "Apprécier le bénéfice net ; pour conclure à une supériorité, classer les options selon une règle justifiée."
+     },
+     "verdict": "suspens",
+     "manque": "Les pratiques changées et leurs effets sur les habitants ; ressources consommées ; situation sans les activités.",
+     "integre": "70 % des professionnels interrogés estiment être plus inspirés pour réaliser des activités avec les personnes âgées ; le bénéfice net pour le système reste à établir."
+    },
+    "I": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Le changement de regard vaut par le bénéfice que chaque professionnel reconnaît dans sa propre pratique auprès des personnes âgées.",
+      "portee": "Chaque professionnel interrogé, sur la période de la mesure.",
+      "preuves": "Appréciation de chaque professionnel ; éléments sur son regard et sa pratique ; changements dans le temps et autres influences, puisque le changement est attribué aux activités.",
+      "regle": "Distinguer l’inspiration exprimée, la pratique changée et l’attribution ; conclure au niveau documenté."
+     },
+     "verdict": "suspens",
+     "manque": "Le regard et la pratique des professionnels au-delà de l’inspiration déclarée ; les changements dans le temps et les autres influences.",
+     "integre": "70 % des professionnels interrogés estiment être plus inspirés pour réaliser des activités avec les personnes âgées."
+    },
+    "S": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Changer le regard des équipes répond à un besoin commun, lutter contre l’âgisme en EHPAD, à condition qu’il ait été identifié avec les habitants et les équipes.",
+      "portee": "Les professionnels et les habitants des EHPAD partenaires ; réalisation immédiate ou changement durable.",
+      "preuves": "Besoin identifié avec le groupe ; réponse documentée au niveau revendiqué ; professionnels effectivement couverts.",
+      "regle": "Apprécier la réponse au niveau du besoin retenu ; ne conclure à un changement durable qu’avec un suivi."
+     },
+     "verdict": "suspens",
+     "manque": "Le besoin défini avec les habitants et les équipes ; un changement de regard durable ; la couverture des 230 professionnels visés.",
+     "integre": "70 % des 88 professionnels répondants, sur 230 visés, estiment être plus inspirés pour réaliser des activités avec les personnes âgées ; le besoin défini avec le groupe reste à documenter."
+    },
+    "V": {
+     "statut_croisement": "Proposed",
+     "options": [
+      {
+       "id": "transformer-regard",
+       "libelle": "Transformer les pratiques, les postures et le regard sur les personnes âgées « au bénéfice de celles-ci et du Bien Commun »",
+       "source": "rapport, p. 13",
+       "garantie": {
+        "raison": "Un regard changé compte s’il procède de l’engagement de ReSanté-Vous à transformer le regard porté sur les personnes âgées.",
+        "portee": "Les équipes des EHPAD partenaires ; l’engagement, distingué de l’effet revendiqué.",
+        "preuves": "Contenu de l’engagement et sa justification ; actes qui s’y rapportent ; bénéfices anticipés.",
+        "regle": "Examiner la cohérence entre l’engagement et la conduite des interventions ; un effet produit appelle une seconde garantie."
+       },
+       "verdict": "suspens",
+       "manque": "Une seconde garantie pour le changement de regard revendiqué.",
+       "integre": "ReSanté-Vous fonde sa culture d’innovation sur la volonté de transformer le regard porté sur les personnes âgées, au bénéfice de celles-ci ; le changement de regard des équipes relève d’une seconde garantie."
+      },
+      {
+       "id": "sollicitude",
+       "libelle": "Devoir de sollicitude envers des personnes rendues vulnérables par l’âge",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "Un regard changé compte s’il procède d’un devoir de sollicitude que ReSanté-Vous reconnaît envers les personnes âgées.",
+        "portee": "Les équipes des EHPAD partenaires ; l’engagement, distingué de l’effet revendiqué.",
+        "preuves": "Énoncé du devoir par l’organisation ; engagement qu’il soutient ; bénéfices anticipés.",
+        "regle": "Examiner la cohérence entre le devoir et la conduite des interventions ; un effet produit appelle une seconde garantie."
+       },
+       "verdict": "suspens",
+       "manque": "L’énoncé de ce devoir par ReSanté-Vous ; une seconde garantie pour l’effet revendiqué.",
+       "integre": "70 % des professionnels interrogés estiment être plus inspirés pour réaliser des activités avec les personnes âgées ; le lien avec un devoir de sollicitude de l’organisation reste à documenter."
+      }
+     ]
+    },
+    "N": {
+     "statut_croisement": "Proposed",
+     "options": [
+      {
+       "id": "agisme",
+       "libelle": "Lutte contre l’âgisme, discrimination fondée sur l’âge",
+       "source": "rapport, p. 43",
+       "garantie": {
+        "raison": "Le principe de lutte contre l’âgisme exige que les professionnels ne déprécient pas les capacités des personnes âgées en raison de leur âge.",
+        "portee": "Les professionnels des EHPAD partenaires, dans leur relation aux habitants.",
+        "preuves": "Justification du principe ; regard et pratiques des professionnels envers les habitants ; ce que l’organisation met en œuvre.",
+        "regle": "Comparer le regard et les pratiques documentés à l’exigence du principe."
+       },
+       "verdict": "suspens",
+       "manque": "Le regard et les pratiques des équipes envers les habitants, au-delà de l’inspiration déclarée.",
+       "integre": "70 % des professionnels interrogés estiment être plus inspirés pour réaliser des activités avec les personnes âgées, et deux soignantes disent voir autrement leurs capacités ; le recul de la dépréciation liée à l’âge dans les équipes reste à établir."
+      },
+      {
+       "id": "droit-risque",
+       "libelle": "Droit au risque",
+       "source": "rapport, p. 43",
+       "garantie": {
+        "raison": "Le droit au risque exige que les personnes âgées puissent vivre des activités nouvelles, au-delà d’un cadre seulement sécuritaire.",
+        "portee": "Les habitants des EHPAD partenaires, dans la pratique des équipes.",
+        "preuves": "Justification du principe ; activités ouvertes aux habitants hors du cadre sécuritaire et choix des habitants ; ce que l’organisation et les équipes mettent en œuvre.",
+        "regle": "Comparer les activités documentées à l’exigence du principe."
+       },
+       "verdict": "suspens",
+       "manque": "L’accès des habitants à de telles activités dans la pratique des équipes ; le choix des habitants.",
+       "integre": "Des témoignages rapportent des activités nouvelles vécues par des personnes de 85 et 97 ans (stand up paddle, piscine) ; leur accès dans la pratique des équipes reste à documenter."
+      },
+      {
+       "id": "bientraitance",
+       "libelle": "Bientraitance",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "Le principe de bientraitance exige des pratiques professionnelles qui reconnaissent les capacités et les choix des personnes accompagnées.",
+        "portee": "Les professionnels des EHPAD partenaires, dans leur relation aux habitants.",
+        "preuves": "Pratiques documentées des équipes et leur évaluation ; ce que l’organisation met en œuvre.",
+        "regle": "Comparer les pratiques documentées à l’exigence du principe."
+       },
+       "verdict": "suspens",
+       "manque": "Les pratiques des équipes envers les habitants et leur évaluation.",
+       "integre": "70 % des professionnels interrogés estiment être plus inspirés pour réaliser des activités avec les personnes âgées ; la conformité des pratiques des équipes à la bientraitance reste à documenter."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "R7",
+   "enonce": "Les actions de ReSanté-Vous rendent l’EHPAD inclusif : elles donnent aux habitants accès aux pouvoirs et aux ressources nécessaires pour que leur voix soit entendue, et font vivre leur droit à la participation sociale, dans l’établissement et dans la cité.",
+   "court": "EHPAD inclusif",
+   "citation": "Cette inclusion réaffirme le droit à la participation sociale pour empêcher qu’elle ne soit isolée. Il s’agit ainsi de faire vivre la démocratie interne pour que les habitants vivent ensemble.",
+   "pages": "p. 44–45",
+   "domaine": "D01",
+   "propriete": "L’inclusion des habitants : accès aux pouvoirs et aux ressources, participation à la vie de l’établissement et de la cité.",
+   "portee": "Tous les habitants, aidants et professionnels des EHPAD partenaires ; l’ouverture des établissements sur leur territoire.",
+   "preuves": [
+    { "texte": "Inclusion définie par l’accès aux pouvoirs et aux ressources nécessaires « pour que sa voix soit entendue et prise en compte » et par le droit à la participation sociale, dans les instances comme le CVS et dans les activités du quotidien.", "pages": "p. 8, 44–45" },
+    { "texte": "Axe dégagé des entretiens qualitatifs, qui ont recueilli « des notions d’EHPAD inclusif ».", "pages": "p. 29, 31" },
+    { "texte": "Projets coopératifs menés avec d’anciens clients devenus partenaires : Rencontres Sportives, Éclaireurs du Tour, pôles ressources de proximité.", "pages": "p. 29" },
+    { "texte": "Photographies légendées : conférence d’une habitante d’EHPAD lors d’un colloque (2019), émission de radio enregistrée en EHPAD (2020), rencontre sportive inter-EHPAD (2018).", "pages": "p. 18, 19, 29" },
+    { "texte": "Témoignage d’une personne de 82 ans sur une activité physique hors de l’établissement : « Je ne pensais pas être capable de faire tout ça ».", "pages": "p. 34" },
+    { "texte": "Exemples formulés au futur : atelier culturel à la médiathèque avec les enfants de l’école, ouvriers du village reçus au restaurant le midi.", "pages": "p. 45" }
+   ],
+   "conception_invoquee": { "id": "N", "mode": "reconstruite", "premisse": "L’inclusion réaffirme le droit à la participation sociale et exige de donner à la personne accès aux pouvoirs et aux ressources nécessaires pour que sa voix soit entendue, p. 8 et 44" },
+   "lectures": {
+    "M": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "L’inclusion compte par le bénéfice net qu’elle apporte au système formé des habitants, des aidants, des équipes, des établissements et de leur territoire.",
+      "portee": "Habitants, aidants, équipes, établissements et acteurs du territoire, sur un horizon commun ; situation sans les actions.",
+      "preuves": "Effets sur chaque composante, attribués aux actions ; ressources consommées ; situation sans les actions.",
+      "regle": "Apprécier le bénéfice net ; pour conclure à une supériorité, classer les options selon une règle justifiée."
+     },
+     "verdict": "suspens",
+     "manque": "Effets sur chaque composante ; ressources consommées ; situation sans les actions.",
+     "integre": "Le rapport décrit des projets qui ouvrent des EHPAD sur leur territoire ; le bénéfice net pour le système reste à établir."
+    },
+    "I": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "L’inclusion vaut par ce qu’elle rend possible pour chaque habitant dans les activités et les relations auxquelles il tient.",
+      "portee": "Chaque habitant, en situation, sur la période observée.",
+      "preuves": "Appréciation de chaque habitant ; éléments sur sa participation à la vie de l’établissement et de la cité ; changements dans le temps.",
+      "regle": "Distinguer l’expérience exprimée, la participation réalisée et l’attribution ; conclure au niveau documenté."
+     },
+     "verdict": "suspens",
+     "manque": "L’appréciation des habitants sur leur participation ; des éléments sur cette participation et son évolution.",
+     "integre": "Une personne de 82 ans dit ne pas s’être crue capable d’une activité physique hors de l’établissement ; ce que l’inclusion change pour chaque habitant reste à établir."
+    },
+    "S": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Rendre l’EHPAD inclusif répond à un besoin commun des habitants, participer à la vie sociale, à condition qu’il ait été identifié avec eux.",
+      "portee": "Les habitants des EHPAD partenaires ; réalisation immédiate ou changement durable de la vie de l’établissement.",
+      "preuves": "Besoin identifié avec les habitants ; réponse documentée au niveau revendiqué ; habitants effectivement couverts.",
+      "regle": "Apprécier la réponse au niveau du besoin retenu ; ne conclure à un changement durable qu’avec un suivi."
+     },
+     "verdict": "suspens",
+     "manque": "La participation effective des habitants à la vie de l’établissement et de la cité ; le nombre d’habitants concernés.",
+     "integre": "Des notions d’EHPAD inclusif ont été recueillies lors des entretiens, et des projets coopératifs sont décrits ; la participation effective des habitants reste à documenter."
+    },
+    "V": {
+     "statut_croisement": "Proposed",
+     "options": [
+      {
+       "id": "decisions",
+       "libelle": "Que la personne âgée ne soit pas écartée des débats et des prises de décisions",
+       "source": "rapport, p. 16",
+       "garantie": {
+        "raison": "L’inclusion compte si elle procède de l’engagement de ReSanté-Vous à ne pas écarter les personnes âgées des débats et des décisions.",
+        "portee": "Les habitants des EHPAD partenaires ; l’engagement, distingué de l’effet revendiqué.",
+        "preuves": "Contenu de l’engagement et sa justification ; actes qui s’y rapportent ; bénéfices anticipés.",
+        "regle": "Examiner la cohérence entre l’engagement et la conduite des actions ; un effet produit appelle une seconde garantie."
+       },
+       "verdict": "suspens",
+       "manque": "Une seconde garantie pour l’inclusion revendiquée ; les actes qui associent les habitants aux décisions.",
+       "integre": "ReSanté-Vous s’engage à ne pas écarter les personnes âgées des débats et des décisions, et décrit des projets coopératifs avec des partenaires ; l’inclusion effective relève d’une seconde garantie."
+      },
+      {
+       "id": "fraternite",
+       "libelle": "Fraternité républicaine sous forme de solidarité : tisser du lien social",
+       "source": "rapport, préface, p. 5",
+       "garantie": {
+        "raison": "L’inclusion compte si elle procède d’une obligation de solidarité envers des personnes dont le lien social est fragilisé par l’âge.",
+        "portee": "Les habitants des EHPAD partenaires ; l’engagement, distingué de l’effet revendiqué.",
+        "preuves": "Contenu de l’obligation ; engagement qu’elle soutient ; bénéfices anticipés.",
+        "regle": "Examiner la cohérence entre l’obligation et la conduite des actions ; un effet produit appelle une seconde garantie."
+       },
+       "verdict": "suspens",
+       "manque": "L’obligation énoncée par ReSanté-Vous elle-même, la préface étant signée d’un auteur extérieur ; une seconde garantie pour l’effet.",
+       "integre": "La préface rattache le statut d’entreprise de l’économie sociale et solidaire de ReSanté-Vous à la fraternité et à la solidarité ; l’inclusion effective relève d’une seconde garantie."
+      },
+      {
+       "id": "sollicitude",
+       "libelle": "Devoir de sollicitude envers des personnes rendues vulnérables par l’âge",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "L’inclusion compte si elle procède d’un devoir de sollicitude que ReSanté-Vous reconnaît envers les personnes âgées.",
+        "portee": "Les habitants des EHPAD partenaires ; l’engagement, distingué de l’effet revendiqué.",
+        "preuves": "Énoncé du devoir par l’organisation ; engagement qu’il soutient ; bénéfices anticipés.",
+        "regle": "Examiner la cohérence entre le devoir et la conduite des actions ; un effet produit appelle une seconde garantie."
+       },
+       "verdict": "suspens",
+       "manque": "L’énoncé de ce devoir par ReSanté-Vous ; une seconde garantie pour l’effet revendiqué.",
+       "integre": "Le rapport décrit des projets qui ouvrent des EHPAD sur leur territoire ; le lien avec un devoir de sollicitude de l’organisation reste à documenter."
+      }
+     ]
+    },
+    "N": {
+     "statut_croisement": "Proposed",
+     "options": [
+      {
+       "id": "participation-sociale",
+       "libelle": "Droit à la participation sociale et accès aux pouvoirs et aux ressources",
+       "source": "rapport, p. 8 et 44",
+       "garantie": {
+        "raison": "Le droit à la participation sociale exige que chaque habitant ait accès aux pouvoirs et aux ressources nécessaires pour que sa voix soit entendue et prise en compte.",
+        "portee": "Tous les habitants des EHPAD partenaires, dans les instances comme le CVS et dans les activités du quotidien.",
+        "preuves": "Justification du principe ; accès effectif des habitants aux pouvoirs et aux ressources ; participation aux instances et aux activités ; ce que l’organisation met en œuvre.",
+        "regle": "Comparer l’accès et la participation documentés à l’exigence du principe."
+       },
+       "verdict": "suspens",
+       "manque": "L’accès effectif des habitants aux pouvoirs et aux ressources ; leur participation aux instances comme le CVS et à la vie de la cité.",
+       "integre": "Le rapport définit l’inclusion par le droit à la participation sociale et décrit des projets qui ouvrent des EHPAD sur leur territoire ; l’accès effectif des habitants aux pouvoirs et aux ressources n’est pas documenté."
+      },
+      {
+       "id": "accessibilite",
+       "libelle": "Accessibilité pour tous des structures ordinaires de santé, de culture, de sport et de loisirs",
+       "source": "rapport, p. 45",
+       "garantie": {
+        "raison": "Ce principe exige que soient levés les obstacles qui séparent les habitants des structures ordinaires de la cité.",
+        "portee": "Tous les habitants des EHPAD partenaires et les structures ordinaires de leur territoire.",
+        "preuves": "Justification du principe ; accès effectif des habitants à ces structures ; obstacles levés ; ce que l’organisation met en œuvre.",
+        "regle": "Comparer l’accès documenté à l’exigence du principe."
+       },
+       "verdict": "suspens",
+       "manque": "L’accès effectif des habitants aux structures ordinaires et les obstacles levés ; les photographies, antérieures à la mesure, ne disent ni qui a participé ni combien.",
+       "integre": "Des photographies montrent des événements hors des établissements, dont un colloque où une habitante d’EHPAD a pris la parole (2019) ; l’accès des habitants aux structures ordinaires reste à documenter."
+      },
+      {
+       "id": "onu-participation",
+       "libelle": "Participation (Principes des Nations unies pour les personnes âgées, 1991)",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "Ce principe exige que les personnes âgées restent intégrées dans la société et participent activement aux décisions qui touchent leur bien-être.",
+        "portee": "Les habitants des EHPAD partenaires.",
+        "preuves": "Participation effective des habitants aux décisions et à la vie de la communauté ; ce que l’organisation met en œuvre.",
+        "regle": "Comparer la participation documentée à l’exigence du principe."
+       },
+       "verdict": "suspens",
+       "manque": "La participation effective des habitants aux décisions qui les concernent et à la vie de la communauté.",
+       "integre": "Le rapport décrit des projets qui ouvrent des EHPAD sur leur territoire ; la participation effective des habitants aux décisions reste à documenter."
+      }
+     ]
+    }
+   }
+  }
+ ]
+}
