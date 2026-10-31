@@ -1,0 +1,3897 @@
+{
+ "version": "PRISME 2.0",
+ "source": "Zouakh, « Same evidence, different judgements: Conceptions of social value as the backing of evaluative warrants », matériel supplémentaire S1, traduit en français.",
+ "lien": "La conception de la valeur sociale fonde la garantie qui permet de passer des preuves du dossier à la revendication de valeur.",
+ "appuis_composantes": {
+  "raison": [
+   "Teasdale (2021)"
+  ],
+  "portee": [
+   "Ebrahim et Rangan (2014)"
+  ],
+  "preuves": [
+   "Benjamin et al. (2023)",
+   "Meldrum et Gullickson (2026)",
+   "Scriven (2012)"
+  ],
+  "regle": [
+   "Benjamin et al. (2023)",
+   "Meldrum et Gullickson (2026)",
+   "Scriven (2012)"
+  ]
+ },
+ "decompte": {
+  "proposees": 37,
+  "exploratoires": 12,
+  "ouvertes": 6
+ },
+ "specifications": {
+  "M01": {
+   "statut": "Proposed",
+   "libelle": "Contribution comparée des résultats au bénéfice du système",
+   "question": "Quels bénéfices l’action produit-elle, et dans quelle mesure sa contribution dépasse-t-elle celle des options examinées ?",
+   "raison": {
+    "texte": "Les résultats comptent comme contribution sociale par le bénéfice net qu’ils apportent au système que forment les personnes, les institutions et l’environnement naturel, bénéfice maximisé parmi les possibilités, ce qui confère à leur appréciation un caractère comparatif.",
+    "appuis": [
+     {
+      "arg": "ARG-001",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 418",
+      "ce_que": "Définit la valeur sociale, sous la conception maximisatrice, comme le bénéfice maximisé pour le système global que forment les personnes, les institutions et l’environnement naturel.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Système délimité par la revendication, avec les destinataires, les institutions et les environnements affectés, ainsi que les effets qui débordent le périmètre mesuré ; horizon commun aux options ; situation de référence et options comparées ; ensemble des possibilités pertinentes lorsqu’un maximum est revendiqué.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Effets sur chaque composante du système délimité, avec la justification de leur attribution à l’action ; ressources consommées ; définition du bénéfice retenu ; éléments de preuve comparables sur les options, y compris la situation sans l’action.",
+    "appuis": [
+     {
+      "arg": "ARG-156",
+      "source": "Fujiwara et al. (2022)",
+      "loc": "p. 178, 182",
+      "ce_que": "Définit la valeur sociale d’un projet comme la variation du bien-être agrégé avec le projet par rapport à la situation sans projet, et distingue un montant de bénéfice net d’un ratio bénéfice-coût.",
+      "doi": "10.1680/jensu.21.00029"
+     }
+    ],
+    "nature": [
+     "Direct",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Apprécier le bénéfice net au sein du système délimité ; justifier la supériorité en comparant les options selon une seule règle de classement justifiée ; délimiter les possibilités pertinentes, et défendre leurs restrictions, avant de revendiquer un maximum.",
+    "appuis": [
+     {
+      "arg": "ARG-156",
+      "source": "Fujiwara et al. (2022)",
+      "loc": "p. 178, 182",
+      "ce_que": "Définit la valeur sociale d’un projet comme la variation du bien-être agrégé avec le projet par rapport à la situation sans projet, et distingue un montant de bénéfice net d’un ratio bénéfice-coût.",
+      "doi": "10.1680/jensu.21.00029"
+     },
+     {
+      "arg": "ARG-066",
+      "source": "Gargani (2017)",
+      "loc": "manuscrit accepté, p. 22",
+      "ce_que": "Montre, à l’aide d’un exemple construit, que l’option d’investissement qui ajoute de la valeur avec la plus grande efficience peut ne pas être celle qui en ajoute le plus, de sorte que le SROI ne devrait pas être le seul critère pour juger des programmes.",
+      "doi": "10.1016/j.evalprogplan.2017.01.005"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "Un gain établi auprès des seuls participants laisse en suspens la revendication de bénéfice pour le système, et le bénéfice net comme le ratio bénéfice-coût peuvent classer les options de façon différente. Lorsque les effets résistent à une commensuration justifiée, un profil comparatif des effets autorise des revendications partielles et laisse la supériorité en suspens.",
+    "appuis": [
+     {
+      "arg": "ARG-066",
+      "source": "Gargani (2017)",
+      "loc": "manuscrit accepté, p. 22",
+      "ce_que": "Montre, à l’aide d’un exemple construit, que l’option d’investissement qui ajoute de la valeur avec la plus grande efficience peut ne pas être celle qui en ajoute le plus, de sorte que le SROI ne devrait pas être le seul critère pour juger des programmes.",
+      "doi": "10.1016/j.evalprogplan.2017.01.005"
+     }
+    ],
+    "nature": [
+     "Direct",
+     "Derivation"
+    ]
+   }
+  },
+  "M02": {
+   "statut": "Proposed",
+   "libelle": "Intégration des conséquences non recherchées",
+   "question": "Quels effets non recherchés, positifs ou négatifs, modifient le bilan de l’action, y compris pour des personnes, des institutions ou des environnements extérieurs au groupe cible ?",
+   "raison": {
+    "texte": "Une conséquence non recherchée modifie le bénéfice net pour le système au même titre qu’une conséquence recherchée, car la distinction entre elles décrit l’intention de l’action et laisse inchangée la contribution de l’effet.",
+    "appuis": [
+     {
+      "arg": "ARG-001",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 418",
+      "ce_que": "Définit la valeur sociale, sous la conception maximisatrice, comme le bénéfice maximisé pour le système global que forment les personnes, les institutions et l’environnement naturel.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Groupes, institutions et environnements exposés, y compris ceux qui se situent hors du groupe cible ; lieux et périodes où les effets apparaissent ; conséquences non recherchées que le dossier identifie ou rend plausibles et qui peuvent modifier le bénéfice.",
+    "appuis": [
+     {
+      "arg": "ARG-114",
+      "source": "Tello (2020)",
+      "loc": "p. 565, 569",
+      "ce_que": "Propose que l’évaluation de l’impact social prenne en compte les conséquences d’une activité pour la communauté élargie et pour son environnement physique et naturel, au-delà des bénéficiaires visés, y compris les effets secondaires non recherchés.",
+      "doi": "10.1016/j.jbusres.2020.07.040"
+     }
+    ],
+    "nature": [
+     "Direct",
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Effets secondaires positifs et négatifs, directs ou indirects ; mécanismes par lesquels l’action pourrait les produire et solidité des preuves disponibles ; transferts entre groupes, distingués des gains pour l’ensemble ; changements exposés à un double comptage.",
+    "appuis": [
+     {
+      "arg": "ARG-241",
+      "source": "Keilty (2001)",
+      "loc": "p. 38",
+      "ce_que": "Distingue les transferts de coûts, par lesquels un groupe paie un bénéfice monétaire qu’un autre reçoit, et relève que ces transferts ont des implications distributives tout en produisant une valeur nulle pour la société dans son ensemble.",
+      "doi": "10.1097/00001163-200113040-00009"
+     }
+    ],
+    "nature": [
+     "Direct",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Réviser le bénéfice net à la lumière de toute conséquence pertinente établie, en tenant les transferts entre groupes pour un gain nul à l’échelle de l’ensemble. Laisser la revendication en suspens tant qu’un effet plausible sur une composante du système reste non mesuré, sans attribuer à cet effet une valeur nulle.",
+    "appuis": [
+     {
+      "arg": "ARG-241",
+      "source": "Keilty (2001)",
+      "loc": "p. 38",
+      "ce_que": "Distingue les transferts de coûts, par lesquels un groupe paie un bénéfice monétaire qu’un autre reçoit, et relève que ces transferts ont des implications distributives tout en produisant une valeur nulle pour la société dans son ensemble.",
+      "doi": "10.1097/00001163-200113040-00009"
+     }
+    ],
+    "nature": [
+     "Direct",
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "Aucune recherche des conséquences n’est exhaustive, et les effets qui touchent des groupes différents exigent une règle explicite avant que l’un ne compense l’autre. Lorsque la compensation est contestée, rapporter séparément gains et préjudices ; une revendication limitée à un type d’effet laisse alors en suspens le bénéfice net global.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   }
+  },
+  "M03": {
+   "statut": "Proposed",
+   "libelle": "Bénéfices et coûts de l’expérience vécue",
+   "question": "L’expérience de l’action apporte-t-elle un bénéfice ou un préjudice qui doit entrer dans son appréciation d’ensemble ?",
+   "raison": {
+    "texte": "L’expérience vécue pendant l’action compte comme une composante du bénéfice net, ou du préjudice, pour les personnes comprises dans le système lorsque la définition du bénéfice retenu l’intègre, quel que soit le moment où elle survient.",
+    "appuis": [
+     {
+      "arg": "ARG-001",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 418",
+      "ce_que": "Définit la valeur sociale, sous la conception maximisatrice, comme le bénéfice maximisé pour le système global que forment les personnes, les institutions et l’environnement naturel.",
+      "doi": "10.1007/s10551-024-05692-1"
+     },
+     {
+      "arg": "ARG-032",
+      "source": "King (2017)",
+      "loc": "p. 105",
+      "ce_que": "Rappelle que les processus d’un programme peuvent compter dans sa valeur indépendamment de ses résultats, et que le résultat ultime peut lui-même être un processus.",
+      "doi": "10.1177/1098214016641211"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Participants, personnes ayant quitté le programme et personnel ; période de participation ; définition du bénéfice retenu, qui intègre l’expérience vécue ou, à défaut, un lien documenté entre l’expérience et un autre bénéfice.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Expériences favorables et défavorables rapportées par les personnes, telles que le plaisir, l’appartenance, la reconnaissance, la fatigue ou l’humiliation ; expérience vécue distinguée de l’attitude envers le programme et des effets ultérieurs ; chevauchements avec les bénéfices déjà comptés.",
+    "appuis": [
+     {
+      "arg": "ARG-045",
+      "source": "Edwards et al. (2012)",
+      "loc": "p. 24, 26, 30",
+      "ce_que": "Rapporte que les participants aux groupes de discussion ont décrit l’appartenance, le sentiment d’être valorisés par autrui et des amitiés durables comme des bénéfices de leur participation à des activités de surf.",
+      "doi": "10.5130/ccs.v4i3.2576"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Intégrer l’expérience au bilan net, comme bénéfice ou comme préjudice, selon une règle d’inclusion explicite. Lorsqu’elle ne sert que d’indice d’engagement ou de maintien dans le programme, établir sa contribution aux effets ultérieurs et l’apprécier comme un moyen.",
+    "appuis": [
+     {
+      "arg": "ARG-032",
+      "source": "King (2017)",
+      "loc": "p. 105",
+      "ce_que": "Rappelle que les processus d’un programme peuvent compter dans sa valeur indépendamment de ses résultats, et que le résultat ultime peut lui-même être un processus.",
+      "doi": "10.1177/1098214016641211"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "Une satisfaction élevée peut refléter un bénéfice partiel et coexister avec des préjudices subis par d’autres, et des témoignages qualitatifs ne permettent pas d’estimer un gain total représentatif. La lecture concurrente traite l’expérience comme un mécanisme d’engagement, dont le lien avec les résultats poursuivis est documenté séparément.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   }
+  },
+  "M04": {
+   "statut": "Proposed",
+   "libelle": "Adéquation aux problèmes dont dépend le bénéfice recherché",
+   "question": "La réponse proposée correspond-elle aux problèmes et aux circonstances qui justifient le bénéfice attendu, et son ciblage peut-il contribuer au bénéfice plus large invoqué ?",
+   "raison": {
+    "texte": "La pertinence compte comme un moyen du bénéfice net pour le système, dans la mesure où la contribution attendue passe par une réponse ajustée aux besoins et aux circonstances dont le traitement produit le bénéfice retenu.",
+    "appuis": [
+     {
+      "arg": "ARG-001",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 418",
+      "ce_que": "Définit la valeur sociale, sous la conception maximisatrice, comme le bénéfice maximisé pour le système global que forment les personnes, les institutions et l’environnement naturel.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Destinataires concernés et leurs circonstances ; périmètre opérationnel de l’action au sein de sa visée plus large ; ciblage retenu, y compris les besoins importants qu’il laisse de côté ; autres réponses possibles et périmètre de priorité.",
+    "appuis": [
+     {
+      "arg": "ARG-243",
+      "source": "Ebrahim et Rangan (2014)",
+      "loc": "p. 123, 125",
+      "ce_que": "Distingue la mission aspirationnelle d’une organisation de la mission opérationnelle qui encadre son travail quotidien, et soutient que les réalisations ne se traduisent pas nécessairement en résultats.",
+      "doi": "10.1525/cmr.2014.56.3.118"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Problème identifié et besoins des destinataires concernés, avec leur variation au sein du groupe ; lien explicite entre la réponse et le bénéfice recherché ; justification de la priorité accordée à ces besoins.",
+    "appuis": [
+     {
+      "arg": "ARG-043",
+      "source": "Weaver (2018)",
+      "loc": "p. 85",
+      "ce_que": "Rapporte que les études qui appliquent l’approche par les capabilités à l’identification des besoins essentiels cherchent à déterminer les principaux besoins qui affectent les personnes au sein d’un groupe ou d’une zone géographique donnés.",
+      "doi": "10.1080/19420676.2018.1430607"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Traiter une adéquation documentée comme un élément de preuve de la plausibilité de la contribution attendue, et laisser en suspens toute revendication de bénéfice réalisé jusqu’à ce que les effets correspondants soient documentés ; justifier une priorité sur d’autres besoins en comparant les contributions possibles.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "Un besoin local pressant ne montre pas que le satisfaire maximise le bénéfice pour le système, et l’identification des besoins transposée ici n’est pas propre à cette conception. Lorsque le besoin du groupe constitue lui-même la raison de valoriser, la conception des parties prenantes ciblées fournit le fondement de la garantie concurrente.",
+    "appuis": [
+     {
+      "arg": "ARG-043",
+      "source": "Weaver (2018)",
+      "loc": "p. 85",
+      "ce_que": "Rapporte que les études qui appliquent l’approche par les capabilités à l’identification des besoins essentiels cherchent à déterminer les principaux besoins qui affectent les personnes au sein d’un groupe ou d’une zone géographique donnés.",
+      "doi": "10.1080/19420676.2018.1430607"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   }
+  },
+  "M05": {
+   "statut": "Proposed",
+   "libelle": "Le bénéfice dans la durée",
+   "question": "En quoi la durée des effets, les effets différés et leur maintien éventuel modifient-ils l’appréciation de l’action ?",
+   "raison": {
+    "texte": "La persistance des bénéfices, leur apparition différée et la prévention de leur perte modifient le bénéfice net pour le système sur l’horizon retenu, dès lors que les effets futurs font partie du bénéfice apprécié.",
+    "appuis": [
+     {
+      "arg": "ARG-001",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 418",
+      "ce_que": "Définit la valeur sociale, sous la conception maximisatrice, comme le bénéfice maximisé pour le système global que forment les personnes, les institutions et l’environnement naturel.",
+      "doi": "10.1007/s10551-024-05692-1"
+     },
+     {
+      "arg": "ARG-191",
+      "source": "Jain et al. (2020)",
+      "loc": "p. 884, 887",
+      "ce_que": "Rapporte que, dans les scénarios les plus défavorables, les créateurs de valeur sociale maintiennent le niveau existant de valeur sociale en freinant sa destruction.",
+      "doi": "10.1080/01900692.2019.1660992"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Horizon de comparaison ; périodes où les effets apparaissent ; scénario sans l’action lorsqu’un bénéfice est présenté comme une perte évitée.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Données ou hypothèses sur le maintien, l’érosion et le renouvellement des bénéfices ; ressources futures requises et préjudices différés ; bénéfices observés distingués des projections ; règle de prise en compte des effets futurs et sensibilité de la revendication à cette règle.",
+    "appuis": [
+     {
+      "arg": "ARG-192",
+      "source": "Chapman et al. (2017)",
+      "loc": "p. 2, 5",
+      "ce_que": "Rapporte que la valeur accordée aux générations futures et le choix du taux d’actualisation reposent sur des jugements éthiques, et que l’analyse de sensibilité permet de traiter les désaccords sur ces paramètres.",
+      "doi": "10.3390/ijerph14090996"
+     }
+    ],
+    "nature": [
+     "Direct",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Comparer les contributions dans le temps selon un horizon et une règle explicites pour les effets futurs, en tenant les bénéfices observés à part des projections ; ne compter la prolongation des activités en faveur de l’action que lorsque le bénéfice qu’elle maintient ou produit l’emporte sur ses coûts et ses effets.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "Une projection de bénéfice durable repose sur des hypothèses de continuité et sur le poids accordé aux générations futures, et une durée plus longue ne garantit pas un bénéfice net plus élevé. Lorsque la règle temporelle est contestée, rapporter plusieurs horizons ou scénarios et les revendications qui demeurent stables de l’un à l’autre.",
+    "appuis": [
+     {
+      "arg": "ARG-192",
+      "source": "Chapman et al. (2017)",
+      "loc": "p. 2, 5",
+      "ce_que": "Rapporte que la valeur accordée aux générations futures et le choix du taux d’actualisation reposent sur des jugements éthiques, et que l’analyse de sensibilité permet de traiter les désaccords sur ces paramètres.",
+      "doi": "10.3390/ijerph14090996"
+     }
+    ],
+    "nature": [
+     "Direct",
+     "Derivation"
+    ]
+   }
+  },
+  "M06": {
+   "statut": "Proposed",
+   "libelle": "Accès au bénéfice et atteinte des publics",
+   "question": "Qui peut accéder à l’action, qui en bénéficie effectivement, et comment une modification de son atteinte affecterait-elle le bénéfice global ?",
+   "raison": {
+    "texte": "L’accès et le maintien des participants comptent comme des moyens du bénéfice net pour le système, dans la mesure où ils étendent les bénéfices effectivement réalisés et modifient leur ampleur globale.",
+    "appuis": [
+     {
+      "arg": "ARG-001",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 418",
+      "ce_que": "Définit la valeur sociale, sous la conception maximisatrice, comme le bénéfice maximisé pour le système global que forment les personnes, les institutions et l’environnement naturel.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Personnes ciblées, recrutées, effectivement prises en charge et maintenues dans l’action ; personnes non atteintes ; populations entre lesquelles les bénéfices sont comparés ; extension de l’accès envisagée.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Obstacles à l’accès et caractéristiques des personnes non atteintes ; ampleur et variation des bénéfices selon les populations ; ressources supplémentaires et effets associés à l’extension de l’accès.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Apprécier l’atteinte par les bénéfices auxquels elle donne accès, en pondérant le degré de bénéfice par le nombre de personnes qui l’obtiennent ; ne compter une atteinte plus large en faveur de l’action que lorsque ses bénéfices supplémentaires, nets des ressources requises, la justifient.",
+    "appuis": [
+     {
+      "arg": "ARG-012",
+      "source": "Kroeger et Weber (2014)",
+      "loc": "p. 528",
+      "ce_que": "Propose, lorsque des interventions sont comparées, de pondérer le degré de valeur sociale créée par le nombre d’individus qui bénéficient de chaque intervention.",
+      "doi": "10.5465/amr.2012.0344"
+     }
+    ],
+    "nature": [
+     "Direct",
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "Une couverture élevée peut coexister avec des bénéfices faibles ou avec des pertes ailleurs, et une règle fondée sur la facilité d’accès peut écarter les populations plus coûteuses à atteindre. Traiter un accès minimal ou équitable comme une exigence ajoute une prémisse distributive qui requiert sa propre justification.",
+    "appuis": [
+     {
+      "arg": "ARG-033",
+      "source": "King (2017)",
+      "loc": "p. 108",
+      "ce_que": "Montre, dans un scénario fictif, qu’une analyse coûts-avantages élémentaire peut juger moins efficient le travail auprès d’usagers difficiles à atteindre, et soutient que repondérer leurs résultats au titre de l’équité exige des pondérations solidement fondées.",
+      "doi": "10.1177/1098214016641211"
+     }
+    ],
+    "nature": [
+     "Direct",
+     "Derivation"
+    ]
+   }
+  },
+  "M07": {
+   "statut": "Exploratory",
+   "libelle": "Répartition du bénéfice et prémisse d’équité",
+   "question": "Qui supporte les coûts et reçoit les bénéfices, et quelle prémisse permet à cette répartition de compter dans le jugement maximisateur ?",
+   "raison": {
+    "texte": "La répartition montre qui gagne et qui perd au sein du bénéfice net pour le système, et elle n’acquiert de valeur propre que par une prémisse qui énonce comment l’équité entre dans le bénéfice ou contraint sa maximisation.",
+    "appuis": [
+     {
+      "arg": "ARG-001",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 418",
+      "ce_que": "Définit la valeur sociale, sous la conception maximisatrice, comme le bénéfice maximisé pour le système global que forment les personnes, les institutions et l’environnement naturel.",
+      "doi": "10.1007/s10551-024-05692-1"
+     },
+     {
+      "arg": "ARG-092",
+      "source": "Ramanathan (1976)",
+      "loc": "p. 518, 520",
+      "ce_que": "Distingue les bénéfices et les sacrifices agrégés engendrés dans la société de leur partage entre individus, communautés, segments sociaux et générations, partage régi par la justice et l’équité plus que par l’optimalité.",
+      "doi": "10.2308/tar-4482122"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Groupes entre lesquels se répartissent gains et pertes, dès lors que plusieurs groupes gagnent ou perdent ; inégalités reconnues comme pertinentes ; options dont le classement est examiné.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Gains et pertes par groupe, y compris les effets sacrifiés et les ressources supportées ; justification des inégalités retenues comme pertinentes ; pondération distributive, contrainte ou règle de priorité adoptée, avec sa justification ; sensibilité du classement à cette règle.",
+    "appuis": [
+     {
+      "arg": "ARG-033",
+      "source": "King (2017)",
+      "loc": "p. 108",
+      "ce_que": "Montre, dans un scénario fictif, qu’une analyse coûts-avantages élémentaire peut juger moins efficient le travail auprès d’usagers difficiles à atteindre, et soutient que repondérer leurs résultats au titre de l’équité exige des pondérations solidement fondées.",
+      "doi": "10.1177/1098214016641211"
+     }
+    ],
+    "nature": [
+     "Direct",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Maintenir la répartition visible à côté du bilan agrégé, qui n’autorise à lui seul aucune revendication de répartition juste ni de compensation réalisée. Lorsque l’équité entre dans le bénéfice par une pondération justifiée, classer les options selon cette pondération et rapporter son effet sur le classement.",
+    "appuis": [
+     {
+      "arg": "ARG-033",
+      "source": "King (2017)",
+      "loc": "p. 108",
+      "ce_que": "Montre, dans un scénario fictif, qu’une analyse coûts-avantages élémentaire peut juger moins efficient le travail auprès d’usagers difficiles à atteindre, et soutient que repondérer leurs résultats au titre de l’équité exige des pondérations solidement fondées.",
+      "doi": "10.1177/1098214016641211"
+     }
+    ],
+    "nature": [
+     "Direct",
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "La spécification reste exploratoire tant que le dossier n’énonce pas comment l’équité entre dans le bénéfice ou le contraint, car une priorité accordée aux plus défavorisés ajoute un principe que la conception ne fixe pas. À défaut, rapporter le bilan des bénéfices à côté du jugement d’équité, dont la conciliation avec ce bilan fait appel à une autre conception.",
+    "appuis": [
+     {
+      "arg": "ARG-001",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 418",
+      "ce_que": "Définit la valeur sociale, sous la conception maximisatrice, comme le bénéfice maximisé pour le système global que forment les personnes, les institutions et l’environnement naturel.",
+      "doi": "10.1007/s10551-024-05692-1"
+     },
+     {
+      "arg": "ARG-092",
+      "source": "Ramanathan (1976)",
+      "loc": "p. 518, 520",
+      "ce_que": "Distingue les bénéfices et les sacrifices agrégés engendrés dans la société de leur partage entre individus, communautés, segments sociaux et générations, partage régi par la justice et l’équité plus que par l’optimalité.",
+      "doi": "10.2308/tar-4482122"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Indirect",
+     "Derivation"
+    ]
+   }
+  },
+  "M08": {
+   "statut": "Proposed",
+   "libelle": "Ressources et bénéfices sacrifiés",
+   "question": "Les ressources mobilisées sont-elles suffisantes, et employées de manière à produire le meilleur bénéfice justifiable parmi les usages comparés ?",
+   "raison": {
+    "texte": "L’usage des ressources compte comme un moyen du bénéfice net pour le système, puisque les ressources qu’une action consomme sont soustraites à d’autres usages dont les bénéfices sont sacrifiés.",
+    "appuis": [
+     {
+      "arg": "ARG-001",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 418",
+      "ce_que": "Définit la valeur sociale, sous la conception maximisatrice, comme le bénéfice maximisé pour le système global que forment les personnes, les institutions et l’environnement naturel.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Ressources effectivement mobilisées, quel que soit l’acteur qui les supporte ; secteurs et groupes entre lesquels se répartissent coûts et conséquences ; autres usages plausibles des mêmes ressources.",
+    "appuis": [
+     {
+      "arg": "ARG-141",
+      "source": "Walker et al. (2019)",
+      "loc": "p. 578, 585",
+      "ce_que": "Soutient que les résultats obtenus par une intervention doivent être comparés aux résultats sacrifiés du fait des coûts d’opportunité, lesquels peuvent toucher plusieurs secteurs, et que leur agrégation requiert des jugements normatifs sur leur valeur relative et leur répartition.",
+      "doi": "10.1007/s40258-019-00481-8"
+     }
+    ],
+    "nature": [
+     "Direct",
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Ressources financières, matérielles, humaines et en temps effectivement mobilisées ; suffisance de ces ressources au regard des bénéfices attendus ; bénéfices obtenus et sacrifiés selon les autres usages possibles ; bénéfice total, bénéfice net et bénéfice par unité de ressource, tenus distincts.",
+    "appuis": [
+     {
+      "arg": "ARG-141",
+      "source": "Walker et al. (2019)",
+      "loc": "p. 578, 585",
+      "ce_que": "Soutient que les résultats obtenus par une intervention doivent être comparés aux résultats sacrifiés du fait des coûts d’opportunité, lesquels peuvent toucher plusieurs secteurs, et que leur agrégation requiert des jugements normatifs sur leur valeur relative et leur répartition.",
+      "doi": "10.1007/s40258-019-00481-8"
+     }
+    ],
+    "nature": [
+     "Direct",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Comparer les usages possibles sous des contraintes de ressources explicites, en ne comptant une économie en faveur de l’action qu’une fois connus ses effets sur les bénéfices ; tenir un meilleur ratio pour insuffisant à revendiquer le plus grand bénéfice total.",
+    "appuis": [
+     {
+      "arg": "ARG-066",
+      "source": "Gargani (2017)",
+      "loc": "manuscrit accepté, p. 22",
+      "ce_que": "Montre, à l’aide d’un exemple construit, que l’option d’investissement qui ajoute de la valeur avec la plus grande efficience peut ne pas être celle qui en ajoute le plus, de sorte que le SROI ne devrait pas être le seul critère pour juger des programmes.",
+      "doi": "10.1016/j.evalprogplan.2017.01.005"
+     }
+    ],
+    "nature": [
+     "Direct",
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "Les coûts supportés par un financeur peuvent différer des ressources et des bénéfices que le système sacrifie, et seules comptent les alternatives plausibles et documentées. Lorsqu’aucune ne peut être comparée, apprécier séparément la suffisance et l’économie, et restreindre la revendication d’efficience à ce qu’elles établissent.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   }
+  },
+  "M09": {
+   "statut": "Proposed",
+   "libelle": "Conception et mise en œuvre au service du bénéfice",
+   "question": "Les choix de conception et de mise en œuvre rendent-ils les bénéfices attendus plausibles ou effectivement atteignables, et qu’est-ce qui justifie les adaptations apportées ?",
+   "raison": {
+    "texte": "La conception et la mise en œuvre comptent comme des moyens du bénéfice net pour le système, par leur capacité à produire le bénéfice retenu dans les circonstances que documente le dossier.",
+    "appuis": [
+     {
+      "arg": "ARG-001",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 418",
+      "ce_que": "Définit la valeur sociale, sous la conception maximisatrice, comme le bénéfice maximisé pour le système global que forment les personnes, les institutions et l’environnement naturel.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Composantes de la conception et de la mise en œuvre pour lesquelles un lien avec le bénéfice recherché est proposé ; circonstances et ressources dans lesquelles l’action est conduite ; période de mise en œuvre, y compris ses adaptations.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Théorie d’action et liens documentés entre activités, réalisations et bénéfices ; qualité et exécution effective des composantes nécessaires ; adéquation aux circonstances et aux ressources disponibles ; adaptations, leurs motifs déclarés et leurs conséquences observables ; qualité d’exécution distinguée du bénéfice réalisé.",
+    "appuis": [
+     {
+      "arg": "ARG-243",
+      "source": "Ebrahim et Rangan (2014)",
+      "loc": "p. 123, 125",
+      "ce_que": "Distingue activités, réalisations, résultats et impacts, et soutient que les réalisations ne se traduisent pas nécessairement en résultats, dont la mesure requiert un lien causal bien établi ou des interventions qui relèvent du contrôle de l’organisation.",
+      "doi": "10.1525/cmr.2014.56.3.118"
+     }
+    ],
+    "nature": [
+     "Direct",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Apprécier l’exécution par sa contribution aux bénéfices : la conformité au plan établit que ce qui était prévu a été fourni, et une revendication de bénéfice requiert les liens correspondants. Compter une adaptation en faveur de l’action lorsque sa contribution est justifiée et documentée.",
+    "appuis": [
+     {
+      "arg": "ARG-051",
+      "source": "King et Allan (2018)",
+      "loc": "p. 213, 219",
+      "ce_que": "Décrit une grille critériée d’optimisation des ressources qui portait au crédit les écarts au plan de travail opérés pour saisir de nouvelles occasions à mesure qu’elles se présentaient et pour abandonner les activités qui ne prenaient pas.",
+      "doi": "10.18296/em.0034"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "La conformité aux bonnes pratiques n’établit ici par elle-même aucun bénéfice, et un standard révisé après un échec sans motifs déclarés rend le jugement opportuniste. Une manière d’agir valorisée pour elle-même appelle une garantie distincte, au titre de l’expérience constitutive ou de l’exigence morale.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   }
+  },
+  "M10": {
+   "statut": "Proposed",
+   "libelle": "Coordination et contribution au système",
+   "question": "Les relations de l’action avec les initiatives connexes renforcent-elles ou limitent-elles sa contribution au bénéfice du système ?",
+   "raison": {
+    "texte": "L’alignement compte comme un moyen du bénéfice net pour le système, puisque les complémentarités, les dépendances et les interférences avec d’autres initiatives peuvent accroître ou réduire ce bénéfice.",
+    "appuis": [
+     {
+      "arg": "ARG-001",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 418",
+      "ce_que": "Définit la valeur sociale, sous la conception maximisatrice, comme le bénéfice maximisé pour le système global que forment les personnes, les institutions et l’environnement naturel.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Initiatives connexes et ressources externes avec lesquelles l’action interagit ; acteurs entre lesquels les contributions se partagent ; interactions qui modifient les moyens, les effets ou leur interprétation.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Ressources et appuis externes effectivement mobilisés ; complémentarités, dépendances, chevauchements ou interférences identifiés ; liens proposés entre coordination et bénéfices ; partage des contributions entre acteurs, avec les risques de double comptage.",
+    "appuis": [
+     {
+      "arg": "ARG-041",
+      "source": "Benjamin (2012)",
+      "loc": "p. 437, 442",
+      "ce_que": "Suggère qu’une mesure qui ignore les ressources extérieures que le personnel mobilise pour les usagers ne saisit pas combien la réussite des organisations à but non lucratif dépend de « systèmes de soutien plus larges », sans estimer d’effet net.",
+      "doi": "10.1177/1098214012440496"
+     },
+     {
+      "arg": "ARG-243",
+      "source": "Ebrahim et Rangan (2014)",
+      "loc": "p. 123, 125",
+      "ce_que": "Soutient que des résultats tels que la réhabilitation et la réinstallation de personnes déplacées peuvent dépendre d’une coordination étendue avec les pouvoirs publics locaux, les entreprises et d’autres ONG, hors du contrôle de toute organisation prise isolément.",
+      "doi": "10.1525/cmr.2014.56.3.118"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Apprécier l’alignement par les effets qu’il rend possibles ou empêche ; traiter un partenariat ou une cohérence formelle des objectifs comme un élément de preuve en faveur d’une hypothèse de coordination, et exiger les liens et les accomplissements correspondants avant toute revendication de bénéfice.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "La convergence avec une stratégie plus large peut renforcer une orientation néfaste, et une cohérence déclarée ne fournit aucune estimation de l’effet de la coordination. Une action en partie indépendante peut produire davantage de bénéfice lorsque les initiatives existantes laissent un besoin sans réponse ou créent une dépendance défavorable, hypothèse qui requiert ses propres preuves.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   }
+  },
+  "M11": {
+   "statut": "Exploratory",
+   "libelle": "Bénéfice potentiel par transfert à un autre contexte",
+   "question": "La reproduction ou l’adaptation de l’action dans un autre contexte pourrait-elle produire un bénéfice supplémentaire justifié, et sur quels éléments de preuve repose cette anticipation ?",
+   "raison": {
+    "texte": "La réplicabilité compte comme un moyen du bénéfice net pour le système lorsque la reproduction ou l’adaptation de l’action étend son bénéfice à d’autres contextes et à d’autres destinataires tout en préservant le mécanisme qui le produit.",
+    "appuis": [
+     {
+      "arg": "ARG-001",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 418",
+      "ce_que": "Définit la valeur sociale, sous la conception maximisatrice, comme le bénéfice maximisé pour le système global que forment les personnes, les institutions et l’environnement naturel.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Contexte d’origine et contextes d’accueil, avec leurs différences pertinentes ; diffusion envisagée ou potentiel d’extension revendiqué ; autres voies d’extension comparées au transfert.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Composantes et mécanismes supposés transférables ; besoins d’adaptation, ressources et capacités de mise en œuvre dans le contexte d’accueil ; bénéfices attendus et préjudices possibles dans ce contexte ; potentiel anticipé distingué des effets observés après transfert.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Traiter une transférabilité argumentée comme un élément de preuve d’un potentiel dans des circonstances énoncées, et exiger des observations ou des estimations justifiées dans les contextes d’accueil pour revendiquer un bénéfice étendu. Tenir le potentiel à part du bénéfice observé, qui conserve sa valeur si l’action se révèle difficile à reproduire.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "La spécification reste exploratoire tant qu’une prémisse sur la transférabilité du mécanisme et sur son adaptation au contexte d’accueil n’est pas consolidée, car un succès sur un site n’en garantit aucun sur un autre. Diffuser des principes, coordonner ou faire évoluer les politiques publiques peut étendre le bénéfice sans reproduire l’action.",
+    "appuis": [
+     {
+      "arg": "ARG-244",
+      "source": "Ebrahim et Rangan (2014)",
+      "loc": "p. 125, 135",
+      "ce_que": "Relève que le changement d’échelle peut passer par la croissance, les politiques publiques, les réseaux collaboratifs ou de nouveaux secteurs d’activité, que les mécanismes de chaque voie restent mal compris, et que les résultats ne sont mesurables qu’à deux conditions peu fréquentes.",
+      "doi": "10.1525/cmr.2014.56.3.118"
+     },
+     {
+      "arg": "ARG-078",
+      "source": "Rawhouser et al. (2019)",
+      "loc": "p. 91",
+      "ce_que": "Qualifie de monosectorielle une approche de l’impact social qui suppose les résultats de chaque secteur uniques, et donc difficiles, voire impossibles, à comparer d’un secteur à l’autre.",
+      "doi": "10.1177/1042258717727718"
+     }
+    ],
+    "nature": [
+     "Direct",
+     "Indirect",
+     "Derivation"
+    ]
+   }
+  },
+  "I01": {
+   "statut": "Proposed",
+   "libelle": "Fonctionnements et choix de la personne",
+   "question": "Qu’est-ce qui a changé ou est devenu possible pour cette personne, et pourquoi y reconnaît-elle un bénéfice ?",
+   "raison": {
+    "texte": "Un changement compte comme contribution sociale par le bénéfice que la personne reconnaît dans son propre fonctionnement, selon ses besoins, ses préférences et ses choix.",
+    "appuis": [
+     {
+      "arg": "ARG-002",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 420",
+      "ce_que": "Rapporte la valeur sociale à l’efficacité du fonctionnement d’un individu au sein du système et pose que seul le bénéficiaire individuel peut juger d’un bénéfice ou le percevoir.",
+      "doi": "10.1007/s10551-024-05692-1"
+     },
+     {
+      "arg": "ARG-039",
+      "source": "Benjamin (2012)",
+      "loc": "p. 439, 442",
+      "ce_que": "Soutient que l’échec à atteindre les résultats du programme peut traduire le progrès réel d’un usager dont les choix ne se conforment pas à la logique du programme.",
+      "doi": "10.1177/1098214012440496"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Indirect"
+    ]
+   },
+   "portee": {
+    "texte": "Chaque personne, en situation ; les personnes que couvre la revendication, sur la période observée ; la source de chaque appréciation et le fonctionnement ou la possibilité examinés.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "L’appréciation de la personne et sa possibilité de l’exprimer ; des éléments de preuve sur le fonctionnement ou la possibilité revendiqués ; les changements dans le temps et les autres influences lorsque la persistance ou l’attribution à l’action est revendiquée.",
+    "appuis": [
+     {
+      "arg": "ARG-002",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 420",
+      "ce_que": "Pose que seul le bénéficiaire individuel peut juger d’un bénéfice ou le percevoir.",
+      "doi": "10.1007/s10551-024-05692-1"
+     },
+     {
+      "arg": "ARG-042",
+      "source": "Weaver (2018)",
+      "loc": "p. 79–81",
+      "ce_que": "Distingue, à la suite de Sen, les fonctionnements que les personnes réalisent des possibilités qu’elles ont de choisir ce qu’elles cherchent à être et à faire.",
+      "doi": "10.1080/19420676.2018.1430607"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Direct",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Rapporter le bénéfice que reconnaît la personne au changement établi, en tenant compte de l’adaptation. Distinguer l’expérience exprimée, le fonctionnement réalisé et l’attribution à l’action, et conclure au niveau que les preuves documentent.",
+    "appuis": [
+     {
+      "arg": "ARG-042",
+      "source": "Weaver (2018)",
+      "loc": "p. 79–81",
+      "ce_que": "Distingue les fonctionnements réalisés des possibilités d’être et de faire ce que l’on valorise, ce qui sépare une revendication portant sur une possibilité d’une revendication portant sur l’usage qui en est fait.",
+      "doi": "10.1080/19420676.2018.1430607"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "Une appréciation favorable peut exprimer l’adaptation à une condition autant qu’un bénéfice ; une préférence déclarée ne montre pas une capabilité acquise, et l’appréciation d’un tiers exige de justifier qu’il représente la personne. L’objectif commun du programme relève de la lecture propre à la conception des parties prenantes ciblées.",
+    "appuis": [
+     {
+      "arg": "ARG-259",
+      "source": "Ruiz-Lozano et al. (2020)",
+      "loc": "p. 5, 14",
+      "ce_que": "Relève que les études antérieures divergent sur la capacité des proches ou du personnel du service à fournir une information valide sur le bien-être des élèves en situation de handicap.",
+      "doi": "10.3390/su12031070"
+     },
+     {
+      "arg": "KW-529",
+      "source": "Kroeger et Weber (2014)",
+      "loc": "p. 529",
+      "ce_que": "Relèvent, à la suite de Binder, que les individus peuvent s’adapter au malheur et à de mauvaises conditions de vie, puis déclarer une satisfaction de vie meilleure que ne le justifie leur situation.",
+      "doi": "10.5465/amr.2012.0344"
+     }
+    ],
+    "nature": [
+     "Direct",
+     "Derivation"
+    ]
+   }
+  },
+  "I02": {
+   "statut": "Proposed",
+   "libelle": "Conséquences imprévues pour la personne",
+   "question": "Quelles conséquences inattendues la personne reconnaît-elle comme importantes pour elle ?",
+   "raison": {
+    "texte": "Une conséquence que vit la personne peut modifier son fonctionnement et la valeur qu’elle reconnaît, quelle que soit sa place dans les objectifs initiaux de l’action.",
+    "appuis": [
+     {
+      "arg": "ARG-002",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 420",
+      "ce_que": "Pose que seul le bénéficiaire individuel peut juger d’un bénéfice ou le percevoir, puisque les préférences, les besoins et les choix sont hétérogènes.",
+      "doi": "10.1007/s10551-024-05692-1"
+     },
+     {
+      "arg": "ARG-209",
+      "source": "Lorenzo-Afable et al. (2020)",
+      "loc": "page à confirmer",
+      "ce_que": "Rapporte que les bénéficiaires étudiés valorisent le travail comme source de subsistance, d’appartenance et de développement personnel, et répondent à l’attention qu’ils perçoivent par une réciprocité envers l’organisation.",
+      "doi": "10.1108/sej-11-2019-0082"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Chaque personne concernée, en situation ; les conséquences favorables ou défavorables extérieures aux objectifs initiaux, identifiées ou raisonnablement recherchées au cours de l’enquête ; la période observée.",
+    "appuis": [
+     {
+      "arg": "ARG-114",
+      "source": "Tello (2020)",
+      "loc": "p. 565, 569",
+      "ce_que": "Distingue les résultats, soit les bénéfices pour les bénéficiaires visés, de l’impact, soit les conséquences d’une activité sur la communauté élargie, y compris les effets secondaires non recherchés.",
+      "doi": "10.1016/j.jbusres.2020.07.040"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "L’appréciation par la personne de chaque conséquence et du sens qu’elle revêt pour elle ; les témoignages favorables et défavorables ; les effets sur ses activités, ses relations et ses choix ; des éléments de preuve sur le lien avec l’action lorsque la revendication lui attribue la conséquence.",
+    "appuis": [
+     {
+      "arg": "ARG-002",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 420",
+      "ce_que": "Pose que seul le bénéficiaire individuel peut juger d’un bénéfice ou le percevoir.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Rendre compte de l’appréciation située de chaque conséquence, et n’attribuer une conséquence à l’action que sur la preuve du lien correspondant.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "La valeur sociale que les responsables accordent à une conséquence laisse indéterminée l’appréciation qu’en fait la personne, et un préjudice auquel la personne s’est adaptée peut ne pas être signalé.",
+    "appuis": [
+     {
+      "arg": "KW-529",
+      "source": "Kroeger et Weber (2014)",
+      "loc": "p. 529",
+      "ce_que": "Relèvent, à la suite de Binder, que les individus peuvent s’adapter au malheur et à de mauvaises conditions de vie, puis déclarer une satisfaction de vie meilleure que ne le justifie leur situation.",
+      "doi": "10.5465/amr.2012.0344"
+     }
+    ],
+    "nature": [
+     "Direct",
+     "Derivation"
+    ]
+   }
+  },
+  "I03": {
+   "statut": "Proposed",
+   "libelle": "Expérience vécue de la participation",
+   "question": "Comment la personne apprécie-t-elle la relation et ce qu’elle vit au cours de sa participation ?",
+   "raison": {
+    "texte": "L’appartenance, le sentiment d’être utile et la possibilité de donner et de recevoir peuvent faire partie du bénéfice que la personne reconnaît dans sa participation.",
+    "appuis": [
+     {
+      "arg": "ARG-002",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 420",
+      "ce_que": "Fait reposer l’efficacité du fonctionnement individuel sur la participation aux processus sociaux, par des relations d’échange où l’on donne et où l’on reçoit, et pose que seul le bénéficiaire individuel peut juger d’un bénéfice.",
+      "doi": "10.1007/s10551-024-05692-1"
+     },
+     {
+      "arg": "ARG-045",
+      "source": "Edwards et al. (2012)",
+      "loc": "p. 24, 26, 30",
+      "ce_que": "Rapporte que les participants décrivent l’appartenance, le sentiment d’être valorisés par autrui, des amitiés durables et un espace de réciprocité comme des effets de leur engagement dans le club.",
+      "doi": "10.5130/ccs.v4i3.2576"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Direct"
+    ]
+   },
+   "portee": {
+    "texte": "Chaque personne entendue, en situation ; la période de participation ; l’expérience comme objet de la revendication, ou la relation énoncée entre cette expérience et un autre bénéfice.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Les attentes et les critères de la personne ; son appréciation des expériences d’appartenance, de respect ou de malaise ; le contexte dans lequel les appréciations ont été exprimées.",
+    "appuis": [
+     {
+      "arg": "ARG-002",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 420",
+      "ce_que": "Pose que seul le bénéficiaire individuel peut juger d’un bénéfice ou le percevoir.",
+      "doi": "10.1007/s10551-024-05692-1"
+     },
+     {
+      "arg": "ARG-084",
+      "source": "Kingston et al. (2025)",
+      "loc": "version d’auteur, p. 10, 20",
+      "ce_que": "Rapporte que les bénéficiaires étudiés formulent des évaluations personnelles selon leurs propres attentes, même en l’absence d’un dispositif formel conçu à cet effet.",
+      "doi": "10.1108/aaaj-02-2024-6906"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Direct",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Garder en vue la diversité des expériences et préciser qui a été entendu, sans laisser une majorité favorable fixer la valeur de chaque expérience.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "Un cadeau ou une satisfaction exprimée ne constitue pas un indicateur universel de valeur, car son interprétation reste située et peut traduire une adaptation. Employée comme indice d’adhésion au programme, la satisfaction joue un rôle instrumental qui appelle une autre justification.",
+    "appuis": [
+     {
+      "arg": "ARG-084",
+      "source": "Kingston et al. (2025)",
+      "loc": "version d’auteur, p. 10, 20",
+      "ce_que": "Rapporte des évaluations que les bénéficiaires expriment hors de tout dispositif formel et que l’évaluateur doit interpréter dans leur contexte.",
+      "doi": "10.1108/aaaj-02-2024-6906"
+     },
+     {
+      "arg": "KW-529",
+      "source": "Kroeger et Weber (2014)",
+      "loc": "p. 529",
+      "ce_que": "Relèvent, à la suite de Binder, que les individus peuvent s’adapter au malheur et à de mauvaises conditions de vie, puis déclarer une satisfaction de vie meilleure que ne le justifie leur situation.",
+      "doi": "10.5465/amr.2012.0344"
+     }
+    ],
+    "nature": [
+     "Direct",
+     "Indirect",
+     "Derivation"
+    ]
+   }
+  },
+  "I04": {
+   "statut": "Proposed",
+   "libelle": "Adéquation aux aspirations personnelles",
+   "question": "La réponse proposée correspond-elle à ce que cette personne cherche à être ou à faire ?",
+   "raison": {
+    "texte": "La pertinence d’une réponse tient à son adéquation aux besoins et aux choix hétérogènes de la personne, qui fait autorité quant au bénéfice recherché.",
+    "appuis": [
+     {
+      "arg": "ARG-002",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 420",
+      "ce_que": "Pose que les préférences, les besoins et les choix sont hétérogènes, de sorte que ce qui est désirable et ce qui mérite d’être recherché se détermine au niveau individuel.",
+      "doi": "10.1007/s10551-024-05692-1"
+     },
+     {
+      "arg": "ARG-036",
+      "source": "Gargani et King (2024)",
+      "loc": "p. 60–62",
+      "ce_que": "Soutient que les choses n’ont pas de valeur et que les personnes accordent de la valeur à ce qu’elles comprennent être un impact.",
+      "doi": "10.1177/13563890231221526"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Indirect"
+    ]
+   },
+   "portee": {
+    "texte": "Chaque personne, en situation, dont les choix sont exprimés ou dont la représentation est justifiée ; la réponse proposée et les options qui lui sont ouvertes.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Les besoins et les résultats souhaités qu’exprime la personne ; ses possibilités réelles de choisir ou de refuser, compte tenu des contraintes qu’elle rencontre ; les écarts entre objectifs personnels et objectifs organisationnels.",
+    "appuis": [
+     {
+      "arg": "ARG-002",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 420",
+      "ce_que": "Pose que seul le bénéficiaire individuel peut juger d’un bénéfice ou le percevoir.",
+      "doi": "10.1007/s10551-024-05692-1"
+     },
+     {
+      "arg": "ARG-053",
+      "source": "Courtney (2018)",
+      "loc": "post-print, p. 11–12",
+      "ce_que": "Décrit la personnalisation comme le fait de confier aux individus leur propre budget pour répondre à leurs propres besoins et atteindre les résultats qu’ils souhaitent.",
+      "doi": "10.1007/s11266-017-9908-3"
+     },
+     {
+      "arg": "ARG-039",
+      "source": "Benjamin (2012)",
+      "loc": "p. 439, 442",
+      "ce_que": "Relève qu’ignorer la manière dont le personnel ajuste les services aux besoins des usagers masque l’inadéquation possible entre les interventions et la population cible, ainsi que les progrès accomplis par des choix extérieurs à la logique du programme.",
+      "doi": "10.1177/1098214012440496"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Direct"
+    ]
+   },
+   "regle": {
+    "texte": "Apprécier l’adéquation au regard des références personnelles explicitées, et garder en vue les différences entre la perspective de la personne et celle de l’organisation.",
+    "appuis": [
+     {
+      "arg": "ARG-036",
+      "source": "Gargani et King (2024)",
+      "loc": "p. 60–62",
+      "ce_que": "Recommande d’expliciter les valeurs et les points de vue que représente une grille d’évaluation.",
+      "doi": "10.1177/13563890231221526"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "Un budget individualisé ne montre pas une liberté de choix effective, et les aspirations peuvent elles-mêmes s’être adaptées aux contraintes. Lorsque le jugement repose sur un besoin partagé, la pertinence de la réponse relève de la conception des parties prenantes ciblées.",
+    "appuis": [
+     {
+      "arg": "ARG-053",
+      "source": "Courtney (2018)",
+      "loc": "post-print, p. 11–12",
+      "ce_que": "Décrit des budgets individuels par lesquels le bénéficiaire devient commanditaire des services des prestataires.",
+      "doi": "10.1007/s11266-017-9908-3"
+     },
+     {
+      "arg": "KW-529",
+      "source": "Kroeger et Weber (2014)",
+      "loc": "p. 529",
+      "ce_que": "Relèvent, à la suite de Binder, que les individus peuvent s’adapter au malheur et à de mauvaises conditions de vie, puis déclarer une satisfaction de vie meilleure que ne le justifie leur situation.",
+      "doi": "10.5465/amr.2012.0344"
+     }
+    ],
+    "nature": [
+     "Direct",
+     "Indirect",
+     "Derivation"
+    ]
+   }
+  },
+  "I05": {
+   "statut": "Proposed",
+   "libelle": "Maintien des possibilités valorisées",
+   "question": "Que la personne souhaite-t-elle pouvoir maintenir, et que montrent les informations dans la durée ?",
+   "raison": {
+    "texte": "La persistance d’un bénéfice compte dans la mesure où elle a de l’importance pour les activités et les choix de la personne.",
+    "appuis": [
+     {
+      "arg": "ARG-002",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 420",
+      "ce_que": "Rapporte la valeur sociale à l’efficacité du fonctionnement d’un individu au sein du système et pose que seul le bénéficiaire individuel peut juger d’un bénéfice ou le percevoir.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Chaque personne, en situation ; l’horizon pertinent pour elle et la période observée ; une revendication de bénéfice durable, ou une persistance que la personne valorise elle-même.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "L’appréciation par la personne de ce qu’elle souhaite maintenir ; le suivi des possibilités et des fonctionnements dans la durée ; les dépendances et les aides sur lesquelles repose leur maintien.",
+    "appuis": [
+     {
+      "arg": "ARG-002",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 420",
+      "ce_que": "Pose que seul le bénéficiaire individuel peut juger d’un bénéfice ou le percevoir.",
+      "doi": "10.1007/s10551-024-05692-1"
+     },
+     {
+      "arg": "ARG-039",
+      "source": "Benjamin (2012)",
+      "loc": "p. 439, 442",
+      "ce_que": "Soutient que les évaluations qui ne consignent pas la manière dont le personnel travaille avec les usagers ne saisissent pas la mesure dans laquelle ceux-ci s’approprient les changements qu’ils opèrent.",
+      "doi": "10.1177/1098214012440496"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Conclure sur le maintien documenté au cours de la période observée, et présenter toute projection avec ses hypothèses.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "Un fonctionnement temporaire peut compter beaucoup pour la personne, et la durée seule n’en fixe pas l’importance. La poursuite du service, ou la survie de l’organisation, peut jouer un rôle instrumental sans montrer que le bénéfice individuel persiste.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   }
+  },
+  "I06": {
+   "statut": "Proposed",
+   "libelle": "Possibilité effective de participer",
+   "question": "La personne peut-elle effectivement accéder à une possibilité qui a de la valeur pour elle ?",
+   "raison": {
+    "texte": "L’accès contribue à la valeur lorsqu’il ouvre une possibilité de fonctionnement ou de choix que la personne valorise.",
+    "appuis": [
+     {
+      "arg": "ARG-002",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 420",
+      "ce_que": "Rapporte la valeur sociale à l’efficacité du fonctionnement d’un individu au sein du système et pose que seul le bénéficiaire individuel peut juger d’un bénéfice ou le percevoir.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Chaque personne, en situation, pour qui l’accès conditionne une possibilité qu’elle valorise ; la réponse proposée ; les circonstances dans lesquelles cette réponse peut être utilisée, choisie ou refusée.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "L’appréciation de la possibilité par la personne ; l’offre accessible et ses conditions de conversion ; les contraintes matérielles, temporelles et relationnelles ; la participation choisie, empêchée ou refusée, avec ses raisons.",
+    "appuis": [
+     {
+      "arg": "ARG-002",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 420",
+      "ce_que": "Pose que seul le bénéficiaire individuel peut juger d’un bénéfice ou le percevoir.",
+      "doi": "10.1007/s10551-024-05692-1"
+     },
+     {
+      "arg": "ARG-053",
+      "source": "Courtney (2018)",
+      "loc": "post-print, p. 11–12",
+      "ce_que": "Décrit la personnalisation comme le fait de confier aux individus un budget à employer comme ils l’entendent pour répondre à leurs propres besoins.",
+      "doi": "10.1007/s11266-017-9908-3"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Distinguer la disponibilité du service, la liberté effective de la personne d’y recourir ou de le refuser et la participation observée, et conclure au niveau que les preuves documentent.",
+    "appuis": [
+     {
+      "arg": "ARG-042",
+      "source": "Weaver (2018)",
+      "loc": "p. 79–81",
+      "ce_que": "Distingue, à la suite de Sen, les fonctionnements que les personnes réalisent des possibilités qu’elles ont de choisir ce qu’elles cherchent à être et à faire.",
+      "doi": "10.1080/19420676.2018.1430607"
+     }
+    ],
+    "nature": [
+     "Direct",
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "Tant que ses raisons n’ont pas été examinées, la non-participation ne montre ni une exclusion ni une absence de besoin, et la participation seule ne mesure pas la réussite. La couverture d’un groupe cible répond à une autre question, qui relève de la conception des parties prenantes ciblées.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   }
+  },
+  "I07": {
+   "statut": "Open",
+   "libelle": "Arbitrage entre bénéfices individuels",
+   "question": "Quelle règle permettrait d’apprécier une répartition entre des personnes qui valorisent différemment leurs bénéfices ?",
+   "raison": {
+    "texte": "Aucune raison de valoriser. Puisque la conception suppose que les préférences, les besoins et les choix sont hétérogènes et que seul le bénéficiaire individuel peut juger d’un bénéfice, elle ne fournit aucune règle pour arbitrer entre les bénéfices de plusieurs personnes.",
+    "appuis": [
+     {
+      "arg": "ARG-002",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 420",
+      "ce_que": "Suppose que les préférences, les besoins et les choix sont hétérogènes, de sorte que ce qui est désirable et ce qui mérite d’être recherché se détermine au niveau individuel.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition"
+    ]
+   },
+   "portee": {
+    "texte": "—",
+    "appuis": [],
+    "nature": [
+     "—"
+    ]
+   },
+   "preuves": {
+    "texte": "—",
+    "appuis": [],
+    "nature": [
+     "—"
+    ]
+   },
+   "regle": {
+    "texte": "—",
+    "appuis": [],
+    "nature": [
+     "—"
+    ]
+   },
+   "refutation": {
+    "texte": "Une revendication de répartition équitable exige un principe distributif extérieur à la conception, que ne fournissent ni une majorité d’opinions ni des scores égaux. Une combinaison avec la conception normative peut rapporter les bénéfices personnels à un tel principe, sous réserve d’une justification explicite.",
+    "appuis": [
+     {
+      "arg": "ARG-237",
+      "source": "O’Connor (2018)",
+      "loc": "p. 34, 36",
+      "ce_que": "Relève que le traitement équitable, le respect et la dignité peuvent peser dans la valeur que les personnes accordent à un service, et illustre un impératif moral d’accès minimal à l’eau potable.",
+      "doi": "10.2478/admin-2018-0026"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   }
+  },
+  "I08": {
+   "statut": "Proposed",
+   "libelle": "Ressources et possibilités personnelles",
+   "question": "Quelles ressources cette personne engage-t-elle et quelles contraintes accepte-t-elle, pour quel bénéfice qu’elle valorise ?",
+   "raison": {
+    "texte": "L’usage des ressources compte par les possibilités et les bénéfices que la personne y reconnaît et par ce qu’elle doit engager pour les obtenir.",
+    "appuis": [
+     {
+      "arg": "ARG-002",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 420",
+      "ce_que": "Rapporte la valeur sociale à l’efficacité du fonctionnement d’un individu au sein du système et pose que seul le bénéficiaire individuel peut juger d’un bénéfice ou le percevoir.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Chaque personne, en situation, dont l’usage des ressources modifie les possibilités ou les bénéfices ; les options qui lui sont réellement ouvertes compte tenu de sa situation.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Le bénéfice que recherche la personne ; les ressources dont elle dispose et les coûts qu’elle supporte ; son appréciation des arbitrages et de ce à quoi elle renonce.",
+    "appuis": [
+     {
+      "arg": "ARG-002",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 420",
+      "ce_que": "Pose que seul le bénéficiaire individuel peut juger d’un bénéfice ou le percevoir.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Apprécier les options du point de vue documenté de la personne et dans les limites de ses possibilités réelles de choix, et préciser sur quoi repose toute comparaison de valeur pour elle.",
+    "appuis": [
+     {
+      "arg": "ARG-053",
+      "source": "Courtney (2018)",
+      "loc": "post-print, p. 11–12",
+      "ce_que": "Décrit le titulaire d’un budget individuel comme un commanditaire qui recherche les services des prestataires offrant le meilleur rapport qualité-prix.",
+      "doi": "10.1007/s11266-017-9908-3"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "Le consentement à payer peut dépendre de ressources très inégales et ne révèle pas tous les bénéfices. Le coût supporté par le financeur peut appeler une appréciation collective distincte du bénéfice personnel.",
+    "appuis": [
+     {
+      "arg": "ARG-053",
+      "source": "Courtney (2018)",
+      "loc": "post-print, p. 11–12",
+      "ce_que": "Relève que la personnalisation recherche le meilleur rapport qualité-prix à la fois pour le secteur public et pour le bénéficiaire en tant que commanditaire.",
+      "doi": "10.1007/s11266-017-9908-3"
+     }
+    ],
+    "nature": [
+     "Direct",
+     "Derivation"
+    ]
+   }
+  },
+  "I09": {
+   "statut": "Proposed",
+   "libelle": "Conception adaptée à la personne",
+   "question": "La mise en œuvre permet-elle d’ajuster la réponse à la personne et à ses choix ?",
+   "raison": {
+    "texte": "La manière dont l’action est conçue et conduite peut ouvrir ou restreindre les choix et les fonctionnements que la personne valorise.",
+    "appuis": [
+     {
+      "arg": "ARG-002",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 420",
+      "ce_que": "Rapporte la valeur sociale à l’efficacité du fonctionnement d’un individu au sein du système et pose que seul le bénéficiaire individuel peut juger d’un bénéfice ou le percevoir.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Chaque personne, en situation ; les modalités de l’action qui influent sur les possibilités ou l’expérience qu’elle valorise ; la période de mise en œuvre.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "L’appréciation par la personne de la manière dont la réponse lui a été ajustée ; les ajustements réalisés avec les personnes ; leurs possibilités de prendre la parole et de refuser ; la correspondance entre les modalités et le fonctionnement recherché.",
+    "appuis": [
+     {
+      "arg": "ARG-002",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 420",
+      "ce_que": "Pose que seul le bénéficiaire individuel peut juger d’un bénéfice ou le percevoir.",
+      "doi": "10.1007/s10551-024-05692-1"
+     },
+     {
+      "arg": "ARG-039",
+      "source": "Benjamin (2012)",
+      "loc": "p. 439, 442",
+      "ce_que": "Relève que les évaluations qui ignorent le travail du personnel pour ajuster les programmes aux besoins des usagers laissent échapper des informations sur les limites du programme et sur son adéquation aux usagers.",
+      "doi": "10.1177/1098214012440496"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Direct",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Apprécier les pratiques documentées au regard de l’adaptation recherchée, et ne déduire aucun bénéfice d’une procédure participative à elle seule.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "Un dispositif formel d’écoute des personnes peut coexister avec une faible prise en compte de leurs avis. Une modalité peut aussi être appréciée comme une expérience en soi ; la revendication doit alors énoncer ce changement de rôle.",
+    "appuis": [
+     {
+      "arg": "ARG-084",
+      "source": "Kingston et al. (2025)",
+      "loc": "version d’auteur, p. 10, 20",
+      "ce_que": "Rapporte que les bénéficiaires étudiés formulent des évaluations personnelles selon leurs propres attentes, même en l’absence d’un dispositif formel conçu à cet effet.",
+      "doi": "10.1108/aaaj-02-2024-6906"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   }
+  },
+  "I10": {
+   "statut": "Proposed",
+   "libelle": "Coordination autour du parcours de la personne",
+   "question": "Les initiatives coordonnées soutiennent-elles un parcours que la personne valorise ?",
+   "raison": {
+    "texte": "La coordination entre services compte lorsqu’elle contribue aux possibilités de la personne et à la continuité de son parcours.",
+    "appuis": [
+     {
+      "arg": "ARG-002",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 420",
+      "ce_que": "Rapporte la valeur sociale à l’efficacité du fonctionnement d’un individu au sein du système et pose que seul le bénéficiaire individuel peut juger d’un bénéfice ou le percevoir.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Chaque personne, en situation ; les initiatives qui influent sur ses possibilités et dont la coordination peut modifier le bénéfice retenu ; la période observée du parcours.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "L’appréciation par la personne de son parcours ; les services disponibles et les liens entre eux ; les ruptures, les contradictions et les charges de coordination.",
+    "appuis": [
+     {
+      "arg": "ARG-002",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 420",
+      "ce_que": "Pose que seul le bénéficiaire individuel peut juger d’un bénéfice ou le percevoir.",
+      "doi": "10.1007/s10551-024-05692-1"
+     },
+     {
+      "arg": "ARG-039",
+      "source": "Benjamin (2012)",
+      "loc": "p. 439, 442",
+      "ce_que": "Soutient qu’il faut consigner la manière dont le personnel travaille avec les usagers pour déterminer les lignes d’action si l’on veut voir les progrès qui échappent aux résultats du programme.",
+      "doi": "10.1177/1098214012440496"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Rapporter la continuité ou les incohérences documentées au bénéfice personnel recherché, et ne compter l’accord entre organisations qu’à travers un lien explicite avec le parcours de la personne.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "L’alignement sur une priorité institutionnelle peut restreindre les choix que la personne valorise. La coordination peut servir une mission collective sans que chaque personne l’apprécie favorablement.",
+    "appuis": [
+     {
+      "arg": "ARG-273",
+      "source": "Jardine et Whyte (2013)",
+      "loc": "page à confirmer",
+      "ce_que": "Relève une tension entre les priorités les plus susceptibles d’attirer des financements et ce que les usagers d’un projet de réinsertion disent valoriser le plus.",
+      "doi": "10.1080/0969160x.2013.768088"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   }
+  },
+  "I11": {
+   "statut": "Exploratory",
+   "libelle": "Transfert respectueux des choix",
+   "question": "Quelles adaptations permettraient à d’autres personnes de reconnaître un bénéfice dans une action répliquée ?",
+   "raison": {
+    "texte": "Répliquer une action peut ouvrir des possibilités à d’autres personnes, dont les besoins et les préférences restent à examiner.",
+    "appuis": [
+     {
+      "arg": "ARG-002",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 420",
+      "ce_que": "Pose que les préférences, les besoins et les choix sont hétérogènes, de sorte que ce qui est désirable et ce qui mérite d’être recherché se détermine au niveau individuel.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Une diffusion envisagée ; les nouveaux destinataires dans le contexte d’accueil, dont les attentes peuvent différer de celles des premiers destinataires.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Les attentes des nouveaux destinataires ; le mécanisme de l’action et ses éléments adaptables ; les conditions locales d’accès et de choix.",
+    "appuis": [
+     {
+      "arg": "ARG-002",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 420",
+      "ce_que": "Pose que seul le bénéficiaire individuel peut juger d’un bénéfice ou le percevoir.",
+      "doi": "10.1007/s10551-024-05692-1"
+     },
+     {
+      "arg": "ARG-244",
+      "source": "Ebrahim et Rangan (2014)",
+      "loc": "p. 125, 135",
+      "ce_que": "Soutient que la mesure des résultats est possible à deux conditions peu fréquentes dans le secteur social, dont un lien causal bien établi entre réalisations et résultats.",
+      "doi": "10.1525/cmr.2014.56.3.118"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Énoncer une hypothèse de transfert et les informations nécessaires pour l’examiner, et ne conclure à un bénéfice dans le contexte d’accueil qu’à partir d’observations qui y ont été faites.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "Une expérience favorable sur un site ne montre pas que le bénéfice soit transposable, et l’articulation entre les voies de changement d’échelle et la personnalisation reste à consolider. Une action singulière peut être appréciée favorablement sans aucune ambition de réplication.",
+    "appuis": [
+     {
+      "arg": "ARG-053",
+      "source": "Courtney (2018)",
+      "loc": "post-print, p. 11–12",
+      "ce_que": "Décrit la personnalisation comme le fait de relier les services aux besoins propres des individus et aux résultats qu’ils souhaitent, sans traiter du transfert.",
+      "doi": "10.1007/s11266-017-9908-3"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   }
+  },
+  "S01": {
+   "statut": "Proposed",
+   "libelle": "Réponse au besoin du groupe",
+   "question": "Quelle réponse au problème partagé est documentée pour le groupe concerné ?",
+   "raison": {
+    "texte": "L’action contribue à la valeur sociale lorsqu’elle apporte une réponse ciblée à un besoin ou à un problème commun identifié avec le groupe concerné.",
+    "appuis": [
+     {
+      "arg": "ARG-003",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 421",
+      "ce_que": "Définit la valeur sociale comme le bénéfice, pour des groupes cibles déterminés, qui résulte d’une réponse ciblée à leurs besoins et problèmes communs, et considère que les parties prenantes dans le besoin jugent du mérite d’une action en fonction des réponses qu’elles reçoivent.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Groupe concerné et besoin commun retenu ; période couverte par la revendication ; niveau de réponse revendiqué, réalisation immédiate ou changement durable.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Définition du groupe et du besoin, identifiés avec le groupe ; réponse documentée au niveau revendiqué, les réalisations immédiates étant distinguées des changements ultérieurs ; lien entre l’action et la réponse ; personnes effectivement couvertes.",
+    "appuis": [
+     {
+      "arg": "ARG-243",
+      "source": "Ebrahim et Rangan (2014)",
+      "loc": "p. 123, 125",
+      "ce_que": "Distingue les réalisations, que l’organisation maîtrise largement, des résultats qu’elle recherche, et soutient que la mesure des résultats exige un lien causal bien établi ou la maîtrise de l’ensemble des interventions intégrées nécessaires.",
+      "doi": "10.1525/cmr.2014.56.3.118"
+     }
+    ],
+    "nature": [
+     "Direct",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Apprécier la réponse au niveau du besoin retenu, dans la portée définie. Apprécier directement une réalisation immédiate qui correspond au besoin, et ne conclure à un changement durable qu’avec les preuves que ce changement exige.",
+    "appuis": [
+     {
+      "arg": "ARG-243",
+      "source": "Ebrahim et Rangan (2014)",
+      "loc": "p. 123, 125",
+      "ce_que": "Relève que les secours destinés aux besoins immédiats de survie se mesurent par leurs activités et leurs réalisations, alors que la mesure des résultats cherche à savoir si celles-ci conduisent à des améliorations durables de la vie des personnes.",
+      "doi": "10.1525/cmr.2014.56.3.118"
+     },
+     {
+      "arg": "ARG-028",
+      "source": "Benjamin et al. (2023)",
+      "loc": "manuscrit d'auteur, p. 14–15",
+      "ce_que": "Soutient que juger les organisations à but non lucratif sur leurs seuls résultats visés peut méconnaître des contributions telles que les réalisations de secours à court terme et les résultats coconstruits avec les participants et les communautés.",
+      "doi": "10.1177/08997640221123590"
+     }
+    ],
+    "nature": [
+     "Direct",
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "La garantie ne s’applique pas à un besoin retenu sans les personnes concernées, et une activité comptabilisée ne montre un besoin satisfait qu’une fois la qualité et l’accès examinés. Une satisfaction personnelle ou une contribution systémique plus large appelle sa propre garantie.",
+    "appuis": [
+     {
+      "arg": "ARG-003",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 421",
+      "ce_que": "Considère que les parties prenantes dans le besoin sont en mesure de juger du mérite d’une action en fonction des réponses que les créateurs de valeur apportent à leurs demandes.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   }
+  },
+  "S02": {
+   "statut": "Proposed",
+   "libelle": "Effets sur le groupe et son environnement",
+   "question": "Quelles conséquences non recherchées modifient la réponse au besoin, et qui est affecté au-delà du groupe ?",
+   "raison": {
+    "texte": "Les conséquences non recherchées touchent à la valeur sociale lorsqu’elles modifient la réponse au besoin commun du groupe concerné, et elles peuvent révéler des effets sur des personnes extérieures à ce groupe.",
+    "appuis": [
+     {
+      "arg": "ARG-003",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 421",
+      "ce_que": "Définit la valeur sociale comme le bénéfice, pour des groupes cibles déterminés, qui résulte d’une réponse ou d’une intervention ciblée face à leurs besoins et problèmes communs.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Groupe concerné ; autres groupes présents dans le dossier que l’action peut affecter ; conséquences dans le groupe et au-delà.",
+    "appuis": [
+     {
+      "arg": "ARG-114",
+      "source": "Tello (2020)",
+      "loc": "p. 565, 569",
+      "ce_que": "Relève, à la suite de Bagnoli et Megali, que l’impact s’étend au-delà des bénéficiaires visés, à la communauté élargie, et impose de prendre en compte les effets secondaires non recherchés.",
+      "doi": "10.1016/j.jbusres.2020.07.040"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Bénéfices et dommages non recherchés, dans le groupe et au-delà ; interdépendances et rétroactions entre le groupe et son environnement ; lien entre chaque conséquence et la réponse au besoin commun.",
+    "appuis": [
+     {
+      "arg": "ARG-046",
+      "source": "Edwards et al. (2012)",
+      "loc": "p. 32–34",
+      "ce_que": "Avance que les bénéfices des réseaux et des pratiques des membres s’étendent à la communauté élargie selon un processus itératif dans lequel l’action en réseau rétroagit sur la confiance et les liens sociaux.",
+      "doi": "10.5130/ccs.v4i3.2576"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Intégrer les conséquences pertinentes à l’appréciation de la réponse au besoin commun, et conserver une appréciation distincte des effets extérieurs au groupe concerné.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "Le bénéfice pour le groupe concerné ne fournit aucune règle pour compenser des dommages causés ailleurs. Les effets plus larges, ou les exigences qui découlent des droits, appellent une garantie maximisatrice ou normative composée avec celle-ci.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   }
+  },
+  "S03": {
+   "statut": "Proposed",
+   "libelle": "Expérience en rapport avec le besoin",
+   "question": "L’expérience vécue répond-elle au besoin commun retenu, ou contribue-t-elle à cette réponse ?",
+   "raison": {
+    "texte": "L’expérience de participation compte comme une contribution lorsqu’elle fait partie du besoin commun ou conditionne la réponse recherchée.",
+    "appuis": [
+     {
+      "arg": "ARG-003",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 421",
+      "ce_que": "Définit la valeur sociale comme le bénéfice, pour des groupes cibles déterminés, qui résulte d’une réponse ou d’une intervention ciblée face à leurs besoins et problèmes communs.",
+      "doi": "10.1007/s10551-024-05692-1"
+     },
+     {
+      "arg": "ARG-209",
+      "source": "Lorenzo-Afable et al. (2020)",
+      "loc": "page à confirmer",
+      "ce_que": "Rapporte que les bénéficiaires d’une entreprise sociale valorisent le travail pour l’appartenance et le développement personnel qu’il procure, en plus de leur subsistance, car la pauvreté n’exclut pas le besoin de ces dimensions du travail porteuses de sens.",
+      "doi": "10.1108/sej-11-2019-0082"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Direct",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Groupe concerné et besoin commun retenu ; membres du groupe dont les expériences peuvent différer.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Prémisse reliant la qualité de l’expérience au besoin partagé, y compris la place de la relation dans la définition du besoin ; expériences différenciées au sein du groupe ; lien entre l’expérience, l’accès et le résultat recherché.",
+    "appuis": [
+     {
+      "arg": "ARG-045",
+      "source": "Edwards et al. (2012)",
+      "loc": "p. 24, 26, 30",
+      "ce_que": "Rapporte que les participants aux groupes de discussion décrivent l’appartenance, le sentiment d’être valorisés par les autres et des amitiés durables comme des bénéfices de leur engagement dans le club.",
+      "doi": "10.5130/ccs.v4i3.2576"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Conclure sur la fonction de l’expérience que documente le dossier, et préciser si l’expérience constitue la réponse recherchée ou intervient comme moyen de l’obtenir.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "Des expériences personnelles semblables n’établissent pas à elles seules un besoin commun. Une expérience que chaque personne valorise à sa manière peut appeler une garantie individualiste, même au sein d’un programme collectif.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   }
+  },
+  "S04": {
+   "statut": "Proposed",
+   "libelle": "Pertinence de la réponse ciblée",
+   "question": "Qui a défini le problème commun, et pourquoi la réponse proposée est-elle appropriée ?",
+   "raison": {
+    "texte": "La réponse contribue à la valeur sociale lorsqu’elle porte effectivement sur le besoin et la situation du groupe concerné.",
+    "appuis": [
+     {
+      "arg": "ARG-003",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 421",
+      "ce_que": "Définit la valeur sociale comme le bénéfice, pour des groupes cibles déterminés, qui résulte d’une réponse ou d’une intervention ciblée face à leurs besoins et problèmes communs.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Groupe concerné ; problème commun retenu et sa priorité ; personnes habilitées à définir le problème.",
+    "appuis": [
+     {
+      "arg": "ARG-128",
+      "source": "van der Puije et Satzinger (2025)",
+      "loc": "p. 1, 7",
+      "ce_que": "Relève, en s’appuyant sur les lignes directrices de l’OCDE et sur Samoff, que l’appréciation de la pertinence suppose des arbitrages entre besoins et priorités, et demande qui tranche ces arbitrages lorsque divergent les interprétations de ce qui est juste.",
+      "doi": "10.1080/09614524.2025.2482780"
+     }
+    ],
+    "nature": [
+     "Direct",
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Définition et priorité du problème, et personnes qui les ont fixées ; perspectives du groupe, y compris ses désaccords internes ; adéquation culturelle et pratique de la réponse.",
+    "appuis": [
+     {
+      "arg": "ARG-194",
+      "source": "Munté-Pascual et al. (2022)",
+      "loc": "p. 6",
+      "ce_que": "Rapporte le témoignage de chercheurs pour qui le fait de convenir dès le départ des indicateurs d’impact avec les participants roms a approfondi leur connaissance de la réalité de ces participants et les a conduits à réviser leurs méthodes.",
+      "doi": "10.1177/16094069211064668"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Apprécier la correspondance entre le besoin tel qu’il est défini et la réponse, et exposer les désaccords qui bornent la conclusion.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "La garantie ne s’applique pas à un besoin défini sans le groupe concerné, et la participation à cette définition n’assure ni l’unanimité ni une réponse efficace. Une priorité imposée par un financeur demeure une référence externe à justifier.",
+    "appuis": [
+     {
+      "arg": "ARG-003",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 421",
+      "ce_que": "Considère que les parties prenantes dans le besoin sont en mesure de juger du mérite d’une action en fonction des réponses que les créateurs de valeur apportent à leurs demandes.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   }
+  },
+  "S05": {
+   "statut": "Proposed",
+   "libelle": "Maintien de la réponse au besoin",
+   "question": "La réponse se maintient-elle pendant la période pertinente pour le besoin retenu ?",
+   "raison": {
+    "texte": "La durée touche à la valeur sociale lorsque le besoin retenu, ou la réponse recherchée, s’inscrit dans le temps.",
+    "appuis": [
+     {
+      "arg": "ARG-003",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 421",
+      "ce_que": "Définit la valeur sociale comme le bénéfice, pour des groupes cibles déterminés, qui résulte d’une réponse ou d’une intervention ciblée face à leurs besoins et problèmes communs.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Groupe concerné ; temporalité du besoin et horizon annoncé ; revendications qui affirment une persistance, ou besoins qui la requièrent.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Suivi des réalisations sur l’horizon annoncé ; conditions du maintien ; relais assurés par d’autres interventions, ou dépendances envers elles.",
+    "appuis": [
+     {
+      "arg": "ARG-244",
+      "source": "Ebrahim et Rangan (2014)",
+      "loc": "p. 125, 135",
+      "ce_que": "Soutient que la mesure des résultats est possible à deux conditions, peu courantes dans le secteur social : un lien causal bien établi entre réalisations et résultats, ou la maîtrise de l’ensemble des interventions intégrées nécessaires.",
+      "doi": "10.1525/cmr.2014.56.3.118"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Distinguer la réponse immédiate, le maintien observé et le maintien anticipé, et apprécier chacun au regard du besoin retenu.",
+    "appuis": [
+     {
+      "arg": "ARG-243",
+      "source": "Ebrahim et Rangan (2014)",
+      "loc": "p. 123, 125",
+      "ce_que": "Distingue les secours qui répondent aux besoins immédiats de survie, mesurés par les réalisations, des résultats qui exigent des améliorations durables de la vie des personnes touchées.",
+      "doi": "10.1525/cmr.2014.56.3.118"
+     }
+    ],
+    "nature": [
+     "Direct",
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "La continuité de l’organisation peut coexister avec une réponse devenue inadéquate. Une réponse ponctuelle peut suffire à un besoin ponctuel documenté.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   }
+  },
+  "S06": {
+   "statut": "Proposed",
+   "libelle": "Accès du groupe concerné",
+   "question": "Quels membres du groupe accèdent à la réponse, et lesquels restent empêchés de l’atteindre ?",
+   "raison": {
+    "texte": "L’accès contribue à la valeur lorsque les personnes qui partagent le besoin peuvent effectivement bénéficier de la réponse.",
+    "appuis": [
+     {
+      "arg": "ARG-003",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 421",
+      "ce_que": "Définit la valeur sociale comme le bénéfice, pour des groupes cibles déterminés, qui résulte d’une réponse ou d’une intervention ciblée face à leurs besoins et problèmes communs.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Population qui partage le besoin, et ses sous-groupes ; conditions d’accès à la réponse.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Nombre de personnes servies rapporté à la population concernée ; accès effectif, recours et usage continu ; raisons des exclusions et du non-recours ; personnes toujours sans réponse.",
+    "appuis": [
+     {
+      "arg": "ARG-243",
+      "source": "Ebrahim et Rangan (2014)",
+      "loc": "p. 123, 125",
+      "ce_que": "Relève que l’action de secours se mesure au respect des délais et à la livraison des fournitures, ainsi qu’au nombre de personnes atteintes.",
+      "doi": "10.1525/cmr.2014.56.3.118"
+     }
+    ],
+    "nature": [
+     "Direct",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Rapporter la couverture à la réponse au besoin, en conservant la population concernée comme dénominateur et en gardant visibles les écarts entre sous-groupes.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "Un taux de participation élevé ne documente pas à lui seul la qualité de la réponse. Une règle de priorité entre sous-groupes exige une justification propre.",
+    "appuis": [
+     {
+      "arg": "ARG-128",
+      "source": "van der Puije et Satzinger (2025)",
+      "loc": "p. 1, 7",
+      "ce_que": "Demande qui tranche, dans l’appréciation de la pertinence d’une intervention, les arbitrages entre des besoins et des priorités différents, lorsque divergent les interprétations de ce qui est juste.",
+      "doi": "10.1080/09614524.2025.2482780"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   }
+  },
+  "S07": {
+   "statut": "Exploratory",
+   "libelle": "Répartition au sein du groupe concerné",
+   "question": "La répartition de la réponse est-elle justifiée par les différences de besoin et d’accès ?",
+   "raison": {
+    "texte": "La répartition de la réponse touche à sa valeur, car des personnes qui partagent un problème peuvent différer par l’intensité de leur besoin et par leurs possibilités d’accès.",
+    "appuis": [
+     {
+      "arg": "ARG-003",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 421",
+      "ce_que": "Définit la valeur sociale comme le bénéfice, pour des groupes cibles déterminés, qui résulte d’une réponse ou d’une intervention ciblée face à leurs besoins et problèmes communs.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Sous-groupes du groupe concerné ; revendications qui affirment une priorité distributive, ou réponses qui varient d’un sous-groupe à l’autre.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Hétérogénéité des besoins et des coûts d’accès ; réponse obtenue par chaque sous-groupe ; principe de priorité retenu et sa justification.",
+    "appuis": [
+     {
+      "arg": "ARG-033",
+      "source": "King (2017)",
+      "loc": "p. 108",
+      "ce_que": "Soutient qu’une analyse coûts-bénéfices peut être repondérée pour valoriser davantage les résultats obtenus auprès des usagers difficiles à atteindre, ce qui exige une base solide pour déterminer et justifier les pondérations.",
+      "doi": "10.1177/1098214016641211"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Décrire la répartition, et n’en apprécier l’équité que selon une règle de priorité identifiée. Garder visibles les sous-groupes moins bien servis lorsque la moyenne est favorable.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "La définition ne prescrit ni l’égalité stricte ni la priorité aux besoins les plus intenses, et le transfert d’une règle de priorité à cette garantie reste à consolider. Un principe normatif peut fournir cette règle, à condition que son articulation avec la présente garantie soit argumentée.",
+    "appuis": [
+     {
+      "arg": "ARG-128",
+      "source": "van der Puije et Satzinger (2025)",
+      "loc": "p. 1, 7",
+      "ce_que": "Demande qui tranche, dans l’appréciation de la pertinence d’une intervention, les arbitrages entre des besoins et des priorités différents, lorsque divergent les interprétations de ce qui est juste.",
+      "doi": "10.1080/09614524.2025.2482780"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   }
+  },
+  "S08": {
+   "statut": "Proposed",
+   "libelle": "Ressources pour une réponse adéquate",
+   "question": "Les ressources mobilisées permettent-elles une réponse pertinente et suffisante au niveau retenu ?",
+   "raison": {
+    "texte": "Les ressources comptent par leur capacité à rendre possible la réponse au besoin du groupe concerné.",
+    "appuis": [
+     {
+      "arg": "ARG-003",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 421",
+      "ce_que": "Définit la valeur sociale comme le bénéfice, pour des groupes cibles déterminés, qui résulte d’une réponse ou d’une intervention ciblée face à leurs besoins et problèmes communs.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Groupe concerné et niveau de réponse recherché ; options envisagées pour le groupe et renoncements consentis.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Ressources nécessaires et ressources disponibles ; usage des ressources pour apporter la réponse ; qualité et portée de la réponse.",
+    "appuis": [
+     {
+      "arg": "ARG-243",
+      "source": "Ebrahim et Rangan (2014)",
+      "loc": "p. 123, 125",
+      "ce_que": "Décrit comment une organisation prévoit ses ressources et ses activités pour produire des réalisations qui apportent des secours aux personnes les plus touchées, ces maillons s’enchaînant logiquement lorsque l’effort est bien planifié.",
+      "doi": "10.1525/cmr.2014.56.3.118"
+     }
+    ],
+    "nature": [
+     "Direct",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Apprécier l’usage des ressources au regard de la réponse recherchée, et examiner la qualité de la réponse et la population servie avant de porter un coût unitaire bas au crédit de l’action.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "Une comparaison des coûts peut favoriser les besoins faciles à traiter lorsque les différences entre personnes sont ignorées. Une comparaison d’ensemble de l’allocation entre groupes appelle une garantie maximisatrice ou normative.",
+    "appuis": [
+     {
+      "arg": "ARG-033",
+      "source": "King (2017)",
+      "loc": "p. 108",
+      "ce_que": "Relève qu’une analyse coûts-bénéfices élémentaire pourrait juger le travail auprès des usagers difficiles à atteindre moins efficient que le travail auprès d’usagers plus faciles, à moins que les résultats ne soient repondérés sur une base justifiée.",
+      "doi": "10.1177/1098214016641211"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   }
+  },
+  "S09": {
+   "statut": "Proposed",
+   "libelle": "Modalités adaptées au problème partagé",
+   "question": "Pourquoi ces modalités sont-elles adaptées au problème, et comment sont-elles effectivement mises en œuvre ?",
+   "raison": {
+    "texte": "Les modalités de l’action contribuent à sa valeur lorsqu’elles rendent possible une réponse appropriée au problème du groupe concerné.",
+    "appuis": [
+     {
+      "arg": "ARG-003",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 421",
+      "ce_que": "Définit la valeur sociale comme le bénéfice, pour des groupes cibles déterminés, qui résulte d’une réponse ou d’une intervention ciblée face à leurs besoins et problèmes communs.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Groupe concerné et besoin commun ; niveau de réponse revendiqué ; modalités telles que conçues et telles que mises en œuvre.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Lien explicite entre les modalités et la réponse au besoin ; adaptations tirées de la connaissance du groupe ; conduite effective des activités pertinentes.",
+    "appuis": [
+     {
+      "arg": "ARG-194",
+      "source": "Munté-Pascual et al. (2022)",
+      "loc": "p. 6",
+      "ce_que": "Rapporte le témoignage de chercheurs pour qui la compréhension du problème et des besoins de la communauté, grâce à des indicateurs convenus avec les participants roms, les a conduits à réviser leurs méthodes.",
+      "doi": "10.1177/16094069211064668"
+     },
+     {
+      "arg": "ARG-243",
+      "source": "Ebrahim et Rangan (2014)",
+      "loc": "p. 123, 125",
+      "ce_que": "Décrit comment ressources, activités et réalisations s’enchaînent logiquement lorsqu’un programme est bien planifié et bien exécuté.",
+      "doi": "10.1525/cmr.2014.56.3.118"
+     }
+    ],
+    "nature": [
+     "Direct",
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Apprécier la cohérence des modalités avec le besoin ainsi que leur exécution, et établir séparément tout effet revendiqué au-delà des réalisations observées.",
+    "appuis": [
+     {
+      "arg": "ARG-243",
+      "source": "Ebrahim et Rangan (2014)",
+      "loc": "p. 123, 125",
+      "ce_que": "Soutient que les réalisations ne se traduisent pas nécessairement en résultats, ni les résultats en impact.",
+      "doi": "10.1525/cmr.2014.56.3.118"
+     }
+    ],
+    "nature": [
+     "Direct",
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "Une mise en œuvre conforme au plan ne montre ni que le plan est adéquat ni qu’un effet final s’est produit. Un ajustement qui s’écarte du dispositif initial peut être pertinent, et sa justification doit alors être examinée.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   }
+  },
+  "S10": {
+   "statut": "Proposed",
+   "libelle": "Coordination pour répondre au besoin",
+   "question": "Comment les interventions se complètent-elles pour répondre au besoin du groupe ?",
+   "raison": {
+    "texte": "La coordination touche à la valeur sociale lorsque plusieurs interventions contribuent à la réponse au problème que partage le groupe.",
+    "appuis": [
+     {
+      "arg": "ARG-003",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 421",
+      "ce_que": "Définit la valeur sociale comme le bénéfice, pour des groupes cibles déterminés, qui résulte d’une réponse ou d’une intervention ciblée face à leurs besoins et problèmes communs.",
+      "doi": "10.1007/s10551-024-05692-1"
+     },
+     {
+      "arg": "ARG-046",
+      "source": "Edwards et al. (2012)",
+      "loc": "p. 32–34",
+      "ce_que": "Avance que les bénéfices des réseaux et des pratiques des membres s’étendent à la communauté élargie selon un processus itératif dans lequel l’action en réseau rétroagit sur la confiance et les liens sociaux.",
+      "doi": "10.5130/ccs.v4i3.2576"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Groupe concerné et problème partagé ; besoins qui requièrent plusieurs contributions, ou actions qui revendiquent une réponse intégrée ; partenaires dont les interventions contribuent à la réponse.",
+    "appuis": [
+     {
+      "arg": "ARG-243",
+      "source": "Ebrahim et Rangan (2014)",
+      "loc": "p. 123, 125",
+      "ce_que": "Relève que des résultats tels que la réinstallation de personnes déplacées peuvent dépendre d’une coordination étendue avec les autorités locales, les entreprises et d’autres ONG, au-delà de ce que l’organisation maîtrise.",
+      "doi": "10.1525/cmr.2014.56.3.118"
+     }
+    ],
+    "nature": [
+     "Direct",
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Rôles des partenaires et leurs interfaces ; lacunes, redondances et contradictions entre interventions ; lien entre la coordination et la réponse revendiquée.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Apprécier la complémentarité que documente le dossier, et limiter la conclusion aux niveaux de réponse que couvrent les preuves.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "L’existence d’un partenariat ne démontre pas une complémentarité effective. Un alignement stratégique entre organisations peut n’avoir aucun rapport établi avec le besoin du groupe.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   }
+  },
+  "S11": {
+   "statut": "Exploratory",
+   "libelle": "Transfert vers un besoin comparable",
+   "question": "Le besoin et les conditions du nouveau groupe permettent-ils d’envisager une réponse comparable ?",
+   "raison": {
+    "texte": "Une action reproduite peut répondre à un besoin semblable dans un autre groupe, à condition que ce besoin et son contexte soient précisés.",
+    "appuis": [
+     {
+      "arg": "ARG-003",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 421",
+      "ce_que": "Définit la valeur sociale comme le bénéfice, pour des groupes cibles déterminés, qui résulte d’une réponse ou d’une intervention ciblée face à leurs besoins et problèmes communs.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Groupe initial et groupe d’accueil ; réplication ou adaptation envisagée ; bénéfice attendu dans le contexte d’accueil.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Besoin du groupe d’accueil, identifié avec lui ; mécanisme et contexte de la réponse initiale ; adaptations, ressources et inconnues du transfert.",
+    "appuis": [
+     {
+      "arg": "ARG-128",
+      "source": "van der Puije et Satzinger (2025)",
+      "loc": "p. 1, 7",
+      "ce_que": "Demande qui tranche, dans l’appréciation de la pertinence d’une intervention, les arbitrages entre des besoins et des priorités différents, lorsque divergent les interprétations de ce qui est juste.",
+      "doi": "10.1080/09614524.2025.2482780"
+     },
+     {
+      "arg": "ARG-244",
+      "source": "Ebrahim et Rangan (2014)",
+      "loc": "p. 125, 135",
+      "ce_que": "Relève que les organisations changent d’échelle par la croissance, l’influence sur les politiques publiques ou les réseaux collaboratifs, et que les mécanismes propres à chacune de ces voies restent mal compris.",
+      "doi": "10.1525/cmr.2014.56.3.118"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Présenter le transfert comme une hypothèse, accompagnée des vérifications qu’elle exige, et n’apprécier la réponse pour le nouveau groupe qu’à partir de preuves recueillies pour ce groupe.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "Une population semblable ne démontre ni un problème identique ni un mécanisme identique, et le transfert à la réplicabilité des arguments sur le changement d’échelle reste à consolider. L’action peut répondre de manière adéquate au besoin initial tout en restant singulière.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   }
+  },
+  "V01": {
+   "statut": "Proposed",
+   "libelle": "Bénéfice anticipé et obligation morale",
+   "question": "Quelle obligation soutient l’engagement, et comment les bénéfices anticipés ou les principes invoqués s’y rapportent-ils ?",
+   "raison": {
+    "texte": "Un résultat vaut contribution sociale lorsqu’il est un bénéfice né du sentiment d’obligation morale du créateur de valeur, apprécié au regard des bénéfices que l’agent anticipe ou de la congruence de ses valeurs avec des principes moraux universels.",
+    "appuis": [
+     {
+      "arg": "ARG-004",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 422",
+      "ce_que": "Définit la valeur sociale comme le bénéfice pour le commun ou pour l’individu né d’un sentiment d’obligation morale, et en fait dépendre le mérite de l’anticipation de bénéfices plus larges par les créateurs de valeur ou de la congruence de leur système de valeurs avec des principes moraux universels.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition"
+    ]
+   },
+   "portee": {
+    "texte": "Destinataires et situations couverts par l’obligation invoquée ; objet de la revendication, en distinguant la qualification morale de l’engagement d’un effet revendiqué comme produit.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Contenu de l’obligation invoquée ; engagement qu’elle soutient, avec sa justification et les actes qui s’y rapportent ; bénéfices que l’agent anticipe, ou congruence de son système de valeurs avec les principes invoqués.",
+    "appuis": [
+     {
+      "arg": "ARG-004",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 422",
+      "ce_que": "Énonce que l’obligation morale recouvre l’engagement envers des principes vertueux tels que l’harmonie, la solidarité ou la générosité, et que le mérite dépend principalement des bénéfices qu’anticipent les créateurs de valeur.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Examiner la cohérence entre l’obligation invoquée et la conduite de l’action, et conclure au regard de l’obligation explicitée ; une revendication portant sur un effet effectivement produit appelle une seconde garantie et les preuves qu’elle exige.",
+    "appuis": [
+     {
+      "arg": "ARG-017",
+      "source": "Tan et al. (2005)",
+      "loc": "p. 360",
+      "ce_que": "Observe, à propos de l’entrepreneuriat altruiste, construit voisin, que les bénéfices destinés à une partie de la société peuvent ne pas se concrétiser.",
+      "doi": "10.1007/s11365-005-2600-x"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "Une déclaration de générosité n’établit pas une disposition morale, et des preuves relatives à un effet documentent le bénéfice sans en documenter la source. Le même effet peut être examiné sous la conception des parties prenantes ciblées ou sous la conception maximisatrice, au titre d’une autre raison de valoriser.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   }
+  },
+  "V02": {
+   "statut": "Exploratory",
+   "libelle": "Conséquences et contenu du devoir",
+   "question": "Que change la connaissance d’une conséquence imprévue dans la manière d’accomplir le devoir reconnu ?",
+   "raison": {
+    "texte": "Le traitement des conséquences non recherchées compte dans la contribution sociale lorsque l’obligation invoquée, telle qu’elle est interprétée, requiert de l’agent qu’il se soucie des conséquences connues de son action.",
+    "appuis": [
+     {
+      "arg": "ARG-004",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 422",
+      "ce_que": "Définit la valeur sociale comme le bénéfice né d’un sentiment d’obligation morale, lequel recouvre un engagement envers des principes vertueux tels que l’harmonie, la solidarité ou la générosité.",
+      "doi": "10.1007/s10551-024-05692-1"
+     },
+     {
+      "arg": "ARG-187",
+      "source": "Mazigo (2026)",
+      "loc": "p. 6, 11",
+      "ce_que": "Reconstruit, à partir de proverbes swahilis, une éthique évaluative de la redevabilité et de l’obligation relationnelle qui inclut la conscience des conséquences de ses propres actes.",
+      "doi": "10.4102/aej.v14i1.855"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Conséquences non recherchées couvertes par l’exigence qu’implique le devoir reconnu ; marge d’action de l’agent à leur égard.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Contenu du devoir et exigence qu’il implique quant aux conséquences ; conséquences connues et moment où elles l’ont été ; réponses que l’agent leur a apportées.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Examiner comment la conduite de l’agent se rapporte à sa connaissance des conséquences et au devoir tel qu’il est interprété, et réserver à une garantie distincte la revendication portant sur les effets eux-mêmes.",
+    "appuis": [
+     {
+      "arg": "ARG-096",
+      "source": "Zahra et al. (2009)",
+      "loc": "p. 528–529",
+      "ce_que": "Soutient que des entrepreneurs sociaux mus par une obligation éthique peuvent adopter des pratiques contraires à l’éthique, et relève que les changements qu’ils promeuvent peuvent faire naître de nouveaux problèmes de société qui portent atteinte au bien public.",
+      "doi": "10.1016/j.jbusvent.2008.04.007"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "La prémisse selon laquelle le devoir reconnu porte sur les conséquences reste à établir, car la conception n’implique aucune obligation générale d’éviter de nuire et un dommage, à lui seul, ne réfute pas l’obligation. Un principe fondé sur les droits peut saisir ces conséquences sous la conception normative.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   }
+  },
+  "V03": {
+   "statut": "Exploratory",
+   "libelle": "Relation aux personnes et devoir reconnu",
+   "question": "Qu’exige le devoir reconnu dans la relation avec les personnes concernées ?",
+   "raison": {
+    "texte": "La manière dont l’action traite les personnes concernées compte dans la contribution sociale, en tant qu’expression de l’engagement moral, lorsque le devoir invoqué porte sur la relation avec elles.",
+    "appuis": [
+     {
+      "arg": "ARG-004",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 422",
+      "ce_que": "Énonce que l’obligation morale recouvre l’engagement envers des principes vertueux tels que l’harmonie, la solidarité ou la générosité.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Personnes envers lesquelles le devoir invoqué énonce une exigence relationnelle ; situations de l’action dans lesquelles cette exigence s’applique.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Contenu du devoir relationnel ; pratiques observables et engagements envers les personnes concernées ; expériences des personnes, en tant qu’éléments de preuve portant sur l’interprétation de ce devoir.",
+    "appuis": [
+     {
+      "arg": "ARG-209",
+      "source": "Lorenzo-Afable et al. (2020)",
+      "loc": "page à confirmer",
+      "ce_que": "Rapporte que les bénéficiaires d’une entreprise sociale valorisent dans le travail la subsistance, l’appartenance et le développement personnel qu’il leur procure, et qu’ils répondent à la sollicitude qu’ils perçoivent par de l’altruisme envers l’organisation et leur communauté.",
+      "doi": "10.1108/sej-11-2019-0082"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Examiner la congruence des pratiques avec le devoir relationnel tel qu’il est spécifié, et distinguer le plaisir que les personnes prennent à participer de l’orientation morale de l’agent.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "La prémisse selon laquelle l’obligation invoquée énonce une exigence relationnelle explicite reste à établir, car la sollicitude, la réciprocité ou la bienveillance ne suffisent pas à identifier la conception. La même expérience peut être appréciée sous la conception individualiste, pour ce qu’elle vaut aux yeux de la personne.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   }
+  },
+  "V04": {
+   "statut": "Exploratory",
+   "libelle": "Réponse envisagée au devoir reconnu",
+   "question": "Pourquoi cette action constitue-t-elle une réponse au devoir que ses créateurs reconnaissent ?",
+   "raison": {
+    "texte": "Une action est pertinente lorsqu’elle constitue une réponse argumentée à une obligation que ses créateurs reconnaissent envers des personnes, un groupe ou le système.",
+    "appuis": [
+     {
+      "arg": "ARG-004",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 422",
+      "ce_que": "Présente le sentiment d’obligation morale comme la condition de la création de bénéfices pour des individus, des groupes de parties prenantes ou le système dans son ensemble.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Destinataires de l’obligation, qu’il s’agisse de personnes, d’un groupe ou du système ; action envisagée comme réponse au devoir.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Assise de l’obligation invoquée ; bénéfice que l’agent anticipe et raisons pour lesquelles il l’anticipe ; congruence avec les principes invoqués ; raisons de retenir cette réponse.",
+    "appuis": [
+     {
+      "arg": "ARG-004",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 422",
+      "ce_que": "Énonce que le mérite dépend principalement de l’anticipation, par les créateurs de valeur, de bénéfices plus larges pour la société ou de la congruence de leur système de valeurs avec des principes moraux universels.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Apprécier la cohérence de la justification morale et l’étendue des bénéfices anticipés, et traiter toute réalisation empirique revendiquée sous une seconde garantie.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "Un problème social pressant n’établit pas le rôle d’une obligation morale chez le créateur, et la lecture de la pertinence comme relation entre obligation et action reste à consolider au-delà de la définition. L’adéquation à un besoin commun peut être examinée sous la conception des parties prenantes ciblées.",
+    "appuis": [
+     {
+      "arg": "ARG-096",
+      "source": "Zahra et al. (2009)",
+      "loc": "p. 528–529",
+      "ce_que": "Soutient que des entrepreneurs sociaux mus par une obligation éthique peuvent néanmoins adopter des pratiques contraires à l’éthique, dans un cadre qui les évalue à l’aune de la richesse sociale qu’ils créent.",
+      "doi": "10.1016/j.jbusvent.2008.04.007"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   }
+  },
+  "V05": {
+   "statut": "Open",
+   "libelle": "Étendue temporelle du devoir",
+   "question": "Le devoir invoqué exige-t-il une continuité, et sur quelle justification ?",
+   "raison": {
+    "texte": "Aucune raison de valoriser. L’obligation qui définit la conception dans la typologie ne fixe aucun horizon et ne dit rien par elle-même de la durée de l’action ou de ses effets.",
+    "appuis": [
+     {
+      "arg": "ARG-004",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 422",
+      "ce_que": "Définit la valeur sociale comme le bénéfice pour le commun ou pour l’individu né d’un sentiment d’obligation morale.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "—",
+    "appuis": [],
+    "nature": [
+     "—"
+    ]
+   },
+   "preuves": {
+    "texte": "—",
+    "appuis": [],
+    "nature": [
+     "—"
+    ]
+   },
+   "regle": {
+    "texte": "—",
+    "appuis": [],
+    "nature": [
+     "—"
+    ]
+   },
+   "refutation": {
+    "texte": "Une spécification future exigerait une obligation établie de continuité ou envers les personnes futures, prémisse qu’illustrent, hors de la conception, les lignes directrices éthiques relatives aux obligations spéciales et aux générations futures. Ni la survie de l’organisation ni un effet projeté n’établissent un devoir de poursuivre l’action.",
+    "appuis": [
+     {
+      "arg": "ARG-265",
+      "source": "Pratt et al. (2026)",
+      "loc": "page à confirmer",
+      "ce_que": "Soutient que les personnes d’un avenir lointain doivent recevoir un poids substantiel dans l’établissement des priorités de la recherche en santé, et rapporte la définition que l’OMS donne des obligations spéciales comme devoirs dus en raison d’un rôle, d’une relation ou d’une histoire.",
+      "doi": "10.2471/blt.25.293973"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   }
+  },
+  "V06": {
+   "statut": "Exploratory",
+   "libelle": "Destinataires de l’engagement moral",
+   "question": "Envers qui le devoir est-il reconnu, et qu’exige-t-il quant à l’accès à l’action ?",
+   "raison": {
+    "texte": "L’accès compte dans la contribution sociale lorsque les engagements de l’action en matière d’accès correspondent aux destinataires envers lesquels l’obligation est reconnue, qu’il s’agisse de personnes, d’un groupe ou du système.",
+    "appuis": [
+     {
+      "arg": "ARG-004",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 422",
+      "ce_que": "Présente le sentiment d’obligation morale comme la condition de la création de bénéfices pour des individus, des groupes de parties prenantes ou le système dans son ensemble.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Destinataires explicitement couverts par le devoir et limites tracées autour d’eux.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Raisons de la délimitation des destinataires ; obstacles connus à l’accès ; engagements et pratiques d’accès que vise le devoir.",
+    "appuis": [
+     {
+      "arg": "ARG-096",
+      "source": "Zahra et al. (2009)",
+      "loc": "p. 528–529",
+      "ce_que": "Soulève, comme enjeu éthique pour des entrepreneurs sociaux aux mobiles nobles, les questions de savoir qui accède à la richesse sociale engendrée et comment celle-ci est allouée.",
+      "doi": "10.1016/j.jbusvent.2008.04.007"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Apprécier l’accès au regard du devoir tel qu’il est délimité, et exposer la justification de ses limites ainsi que les difficultés rencontrées dans la conduite de l’action.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "La prémisse selon laquelle le devoir exige un accès pour des destinataires identifiables reste à établir, car un devoir d’accès universel ne découle pas de toute obligation morale. Une exigence d’accès fondée sur un droit relève de la conception normative.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   }
+  },
+  "V07": {
+   "statut": "Open",
+   "libelle": "Contenu distributif de l’obligation",
+   "question": "Quelle distribution l’obligation invoquée exige-t-elle, et pourquoi ?",
+   "raison": {
+    "texte": "Aucune raison de valoriser. Le sentiment d’obligation morale qui définit la conception dans la typologie ne détermine pas par lui-même qui doit recevoir quoi.",
+    "appuis": [
+     {
+      "arg": "ARG-004",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 422",
+      "ce_que": "Définit la valeur sociale comme le bénéfice pour le commun ou pour l’individu né d’un sentiment d’obligation morale, entendu comme un engagement envers des principes tels que la solidarité ou la générosité.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "—",
+    "appuis": [],
+    "nature": [
+     "—"
+    ]
+   },
+   "preuves": {
+    "texte": "—",
+    "appuis": [],
+    "nature": [
+     "—"
+    ]
+   },
+   "regle": {
+    "texte": "—",
+    "appuis": [],
+    "nature": [
+     "—"
+    ]
+   },
+   "refutation": {
+    "texte": "Des mobiles nobles laissent ouverte la manière d’allouer les bénéfices, et une spécification exigerait une obligation distributive explicite ou une composition avec la conception normative. Les principes de besoin et de juste répartition qu’appliquent les cadres institutionnels d’évaluation se situent hors de l’obligation du créateur de valeur.",
+    "appuis": [
+     {
+      "arg": "ARG-096",
+      "source": "Zahra et al. (2009)",
+      "loc": "p. 528–529",
+      "ce_que": "Soulève la question de la meilleure allocation de la richesse sociale créée par des entrepreneurs aux mobiles nobles et de l’accès à celle-ci, sans fournir de règle de distribution.",
+      "doi": "10.1016/j.jbusvent.2008.04.007"
+     },
+     {
+      "arg": "ARG-175",
+      "source": "Angelis et al. (2018)",
+      "loc": "p. 137",
+      "ce_que": "Rapporte que les organismes d’évaluation des technologies de santé appliquent la dignité humaine, le besoin, la solidarité et la juste répartition des ressources comme principes des jugements de valeur sociale.",
+      "doi": "10.1007/s10198-017-0871-0"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   }
+  },
+  "V08": {
+   "statut": "Open",
+   "libelle": "Devoir et usage des ressources",
+   "question": "Quel devoir relatif aux ressources est effectivement reconnu, et comment se rapporte-t-il à l’action ?",
+   "raison": {
+    "texte": "Aucune raison de valoriser. L’obligation qui définit la conception dans la typologie n’emporte aucun devoir déterminé quant à l’acquisition ou à l’usage des ressources, et donc aucun standard d’efficience.",
+    "appuis": [
+     {
+      "arg": "ARG-004",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 422",
+      "ce_que": "Définit la valeur sociale comme le bénéfice pour le commun ou pour l’individu né d’un sentiment d’obligation morale.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "—",
+    "appuis": [],
+    "nature": [
+     "—"
+    ]
+   },
+   "preuves": {
+    "texte": "—",
+    "appuis": [],
+    "nature": [
+     "—"
+    ]
+   },
+   "regle": {
+    "texte": "—",
+    "appuis": [],
+    "nature": [
+     "—"
+    ]
+   },
+   "refutation": {
+    "texte": "Une spécification exigerait un devoir de bonne gestion, d’évitement du gaspillage ou d’obtention des ressources établi dans le dossier, l’efficience gestionnaire restant distincte de la qualification morale de l’engagement. Un coût élevé ne montre pas l’absence d’obligation morale.",
+    "appuis": [
+     {
+      "arg": "ARG-096",
+      "source": "Zahra et al. (2009)",
+      "loc": "p. 528–529",
+      "ce_que": "Relie les défis éthiques auxquels font face les entrepreneurs sociaux à leurs mobiles, aux ressources qu’exigent leurs ambitions et aux mécanismes de gouvernance qui régulent leur comportement.",
+      "doi": "10.1016/j.jbusvent.2008.04.007"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   }
+  },
+  "V09": {
+   "statut": "Proposed",
+   "libelle": "Engagement et conduite de l’action",
+   "question": "Comment les pratiques rendent-elles l’engagement intelligible, et quelles tensions avec les principes invoqués apparaissent-elles ?",
+   "raison": {
+    "texte": "La conception et la mise en œuvre de l’action comptent dans la contribution sociale pour autant que les moyens employés et la conduite de l’action mettent en acte les principes qu’engage l’obligation morale du créateur de valeur.",
+    "appuis": [
+     {
+      "arg": "ARG-004",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 422",
+      "ce_que": "Relie le mérite à la congruence du système de valeurs des créateurs de valeur avec des principes moraux universels, et l’obligation morale à un engagement envers des principes vertueux.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Destinataires et situations couverts par l’obligation invoquée ; étapes de conception et de mise en œuvre, moyens et pratiques auxquels s’appliquent les principes invoqués.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Engagements préalables et raisons avancées à leur appui ; pratiques et moyens effectivement documentés ; tensions entre les principes invoqués et la conduite de l’action.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Examiner la cohérence de la conduite de l’action et des moyens employés avec les principes explicités, sans prétendre observer directement les dispositions morales de l’agent.",
+    "appuis": [
+     {
+      "arg": "ARG-096",
+      "source": "Zahra et al. (2009)",
+      "loc": "p. 528–529",
+      "ce_que": "Soutient que la manière dont les entrepreneurs sociaux poursuivent la richesse sociale compte sur le plan éthique autant que les bénéfices qu’ils obtiennent, car leur conduite peut contredire l’obligation éthique qui les anime.",
+      "doi": "10.1016/j.jbusvent.2008.04.007"
+     }
+    ],
+    "nature": [
+     "Direct",
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "Une conduite conforme ne montre pas qu’un mobile soit exclusif, et une tension, à elle seule, ne réfute pas l’obligation invoquée. La cohérence ne documente aucun bénéfice produit, et la conformité à un principe collectif peut être appréciée sous la conception normative, quel que soit le mobile.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   }
+  },
+  "V10": {
+   "statut": "Open",
+   "libelle": "Coordination et obligation reconnue",
+   "question": "En quoi le devoir invoqué exige-t-il une coordination avec d’autres initiatives ?",
+   "raison": {
+    "texte": "Aucune raison de valoriser. L’obligation qui définit la conception dans la typologie ne contient aucune exigence de coordination avec d’autres initiatives, et la coprésence d’obligations et de coordination n’en établit aucune.",
+    "appuis": [
+     {
+      "arg": "ARG-004",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 422",
+      "ce_que": "Définit la valeur sociale comme le bénéfice pour le commun ou pour l’individu né d’un sentiment d’obligation morale.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "—",
+    "appuis": [],
+    "nature": [
+     "—"
+    ]
+   },
+   "preuves": {
+    "texte": "—",
+    "appuis": [],
+    "nature": [
+     "—"
+    ]
+   },
+   "regle": {
+    "texte": "—",
+    "appuis": [],
+    "nature": [
+     "—"
+    ]
+   },
+   "refutation": {
+    "texte": "Une spécification exigerait une prémisse explicite reliant la coordination au devoir reconnu, le rapprochement moral entre organisations se distinguant de l’alignement technique entre interventions. Une coordination justifiée par les résultats qu’elle rend possibles, ou par un besoin commun sous la conception des parties prenantes ciblées, laisse indéterminé le rôle de l’obligation.",
+    "appuis": [
+     {
+      "arg": "ARG-096",
+      "source": "Zahra et al. (2009)",
+      "loc": "p. 528–529",
+      "ce_que": "Relie les défis éthiques des entrepreneurs sociaux à leurs mobiles, à leurs ressources et à leur gouvernance, sans fournir de règle de coordination entre initiatives.",
+      "doi": "10.1016/j.jbusvent.2008.04.007"
+     },
+     {
+      "arg": "ARG-243",
+      "source": "Ebrahim et Rangan (2014)",
+      "loc": "p. 123, 125",
+      "ce_que": "Relève que les résultats dépendent souvent d’une coordination étendue avec d’autres acteurs, hors du contrôle de l’organisation, et distingue la mission d’aspiration de la mission opérationnelle.",
+      "doi": "10.1525/cmr.2014.56.3.118"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   }
+  },
+  "V11": {
+   "statut": "Open",
+   "libelle": "Diffusion et obligation morale",
+   "question": "Pourquoi le devoir exigerait-il une diffusion, et vers quels nouveaux destinataires ?",
+   "raison": {
+    "texte": "Aucune raison de valoriser. L’obligation qui définit la conception dans la typologie ne fournit aucun devoir de répliquer l’action ou de l’étendre à de nouveaux destinataires.",
+    "appuis": [
+     {
+      "arg": "ARG-004",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 422",
+      "ce_que": "Définit la valeur sociale comme le bénéfice pour le commun ou pour l’individu né d’un sentiment d’obligation morale.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "—",
+    "appuis": [],
+    "nature": [
+     "—"
+    ]
+   },
+   "preuves": {
+    "texte": "—",
+    "appuis": [],
+    "nature": [
+     "—"
+    ]
+   },
+   "regle": {
+    "texte": "—",
+    "appuis": [],
+    "nature": [
+     "—"
+    ]
+   },
+   "refutation": {
+    "texte": "Une spécification exigerait un devoir d’extension documenté et relié à la diffusion envisagée, car la conception ne retient aucune des voies de changement d’échelle qu’une organisation peut emprunter. Une impossibilité de réplication ne disqualifie pas à elle seule un engagement moral singulier.",
+    "appuis": [
+     {
+      "arg": "ARG-244",
+      "source": "Ebrahim et Rangan (2014)",
+      "loc": "p. 125, 135",
+      "ce_que": "Relie la mesure de la performance à la mission opérationnelle ainsi qu’à l’échelle et à l’étendue de l’action d’une organisation, et relève que le changement d’échelle peut passer par la croissance, les politiques publiques, les réseaux de collaboration ou de nouvelles industries.",
+      "doi": "10.1525/cmr.2014.56.3.118"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   }
+  },
+  "N01": {
+   "statut": "Proposed",
+   "libelle": "Résultat au regard du principe",
+   "question": "Que demande le principe quant au résultat, et que permet d’établir le dossier ?",
+   "raison": {
+    "texte": "Un résultat vaut comme contribution sociale par sa conformité à l’exigence qu’un principe moral ou collectif, appliqué à la situation, fait peser sur ce que l’action réalise.",
+    "appuis": [
+     {
+      "arg": "ARG-005",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 423",
+      "ce_que": "Définit la valeur sociale, dans l’approche normative, comme un impératif moral ou une croyance collectivement admise, et la valeur comme un principe de jugement qui gouverne les décisions et les actions.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Champ d’application du principe ; personnes et situations auxquelles s’applique son exigence relative aux résultats.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Justification du principe et de son applicabilité à l’action ; exigence qu’il fait peser sur les résultats ; éléments de preuve sur la propriété qu’il exige (accès, traitement ou effets) et sur ce que l’organisation met en œuvre.",
+    "appuis": [
+     {
+      "arg": "ARG-237",
+      "source": "O’Connor (2018)",
+      "loc": "p. 34, 36",
+      "ce_que": "Relève que le traitement équitable, le respect et la dignité peuvent peser dans la valeur que les personnes accordent à un service, à côté de son résultat final, et présente l’accès à un minimum suffisant d’eau comme un impératif moral.",
+      "doi": "10.2478/admin-2018-0026"
+     }
+    ],
+    "nature": [
+     "Direct",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Comparer la propriété à l’exigence du principe tel qu’il est interprété, et préciser la portée de la conclusion. Le rôle que le principe joue ensuite (minimum, priorité ou obstacle à la compensation) est tranché dans la synthèse.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "L’énoncé d’un principe n’établit rien quant à la réalisation empirique de ce qu’il exige. Un résultat peut être efficace au regard d’un objectif de l’action tout en restant en deçà de l’exigence du principe retenu.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   }
+  },
+  "N02": {
+   "statut": "Proposed",
+   "libelle": "Conséquences au regard des exigences du principe",
+   "question": "Les effets que l’action n’a pas recherchés portent-ils atteinte à une exigence qui s’applique à elle ?",
+   "raison": {
+    "texte": "Les conséquences non recherchées comptent dans cette conception lorsqu’elles affectent des personnes ou des milieux que protège le principe retenu, puisque son exigence s’étend aux effets que l’action n’a pas recherchés.",
+    "appuis": [
+     {
+      "arg": "ARG-005",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 423",
+      "ce_que": "Définit la valeur sociale, dans l’approche normative, comme un impératif moral ou une croyance collectivement admise, et la valeur comme un principe de jugement qui gouverne les décisions et les actions.",
+      "doi": "10.1007/s10551-024-05692-1"
+     },
+     {
+      "arg": "ARG-267",
+      "source": "Vanclay (2003)",
+      "loc": "p. 9",
+      "ce_que": "Affirme que les processus de développement qui portent atteinte aux droits humains d’une partie quelconque de la société ne devraient pas être acceptés.",
+      "doi": "10.3152/147154603781766491"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Direct"
+    ]
+   },
+   "portee": {
+    "texte": "Champ d’application du principe ; personnes, groupes et milieux qu’il protège ; conséquences connues de l’action dans ce champ.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Conséquences de l’action et groupes affectés ; exigence de protection applicable ; éléments de preuve qui qualifient l’atteinte et son étendue.",
+    "appuis": [
+     {
+      "arg": "ARG-111",
+      "source": "Parsons et Mottee (2024)",
+      "loc": "p. 744",
+      "ce_que": "Rapporte un jugement qui a rejeté le recours d’une société minière en retenant, parmi les motifs du refus, l’iniquité distributive subie par des groupes déjà marginalisés.",
+      "doi": "10.1177/00113921231203170"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Conclure sur l’exigence examinée en qualifiant l’atteinte et son étendue. Un rôle de contrainte ou de veto dans le jugement global exige un fondement propre et se décide dans la synthèse.",
+    "appuis": [
+     {
+      "arg": "ARG-267",
+      "source": "Vanclay (2003)",
+      "loc": "p. 9",
+      "ce_que": "Énonce un principe de non-acceptation des projets de développement qui portent atteinte aux droits humains d’une partie quelconque de la société.",
+      "doi": "10.3152/147154603781766491"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "La garantie n’affirme ni un droit en vigueur ni un veto universel, si bien qu’une atteinte ne se qualifie qu’au regard du principe applicable au dossier. Un bilan net favorable dans la conception maximisatrice ne règle pas cette qualification.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   }
+  },
+  "N03": {
+   "statut": "Proposed",
+   "libelle": "Traitement conforme au principe",
+   "question": "Le traitement des personnes respecte-t-il le principe applicable à la relation ?",
+   "raison": {
+    "texte": "L’expérience des personnes vaut comme contribution sociale lorsque le traitement qu’elles reçoivent est conforme à une exigence de respect ou de dignité qui règle la relation à leur égard.",
+    "appuis": [
+     {
+      "arg": "ARG-005",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 423",
+      "ce_que": "Définit la valeur sociale, dans l’approche normative, comme un impératif moral ou une croyance collectivement admise, et la valeur comme un principe de jugement qui gouverne les décisions et les actions.",
+      "doi": "10.1007/s10551-024-05692-1"
+     },
+     {
+      "arg": "ARG-237",
+      "source": "O’Connor (2018)",
+      "loc": "p. 34, 36",
+      "ce_que": "Relève que le traitement équitable, le respect et la préservation de la dignité peuvent peser dans la valeur que les personnes accordent à un service, en plus de son résultat final.",
+      "doi": "10.2478/admin-2018-0026"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Direct"
+    ]
+   },
+   "portee": {
+    "texte": "Champ d’application du principe de traitement ; personnes concernées ; situations déterminées de la relation examinée.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Signification du respect ou de la dignité dans le cadre choisi ; pratiques et expériences de traitement documentées ; écarts entre l’engagement collectif et la vie quotidienne.",
+    "appuis": [
+     {
+      "arg": "ARG-047",
+      "source": "Edwards et al. (2012)",
+      "loc": "p. 32–33",
+      "ce_que": "Rapporte que la revendication d’inclusivité d’un club coexiste avec des difficultés à intégrer les minorités ethniques, et distingue les programmes spécifiques de la vie quotidienne du club.",
+      "doi": "10.5130/ccs.v4i3.2576"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Qualifier chaque situation examinée au regard de l’exigence telle qu’elle est explicitée. Une expérience favorable dans d’autres situations laisse ouverte la question de celles-ci.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "Un sentiment de satisfaction ne donne qu’une mesure incomplète de la conformité à un principe de dignité. La même expérience peut être valorisée dans la conception individualiste pour une raison différente, d’ordre personnel.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   }
+  },
+  "N04": {
+   "statut": "Exploratory",
+   "libelle": "Adéquation au problème tel que le principe le qualifie",
+   "question": "Pourquoi le principe retenu conduit-il à considérer ce problème et cette réponse comme appropriés ?",
+   "raison": {
+    "texte": "La pertinence compte dans cette conception lorsqu’un principe, dont l’application aux circonstances est argumentée, qualifie le problème et la réponse comme appropriés.",
+    "appuis": [
+     {
+      "arg": "ARG-005",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 423",
+      "ce_que": "Définit la valeur sociale, dans l’approche normative, comme un impératif moral ou une croyance collectivement admise, et la valeur comme un principe de jugement qui gouverne les décisions et les actions.",
+      "doi": "10.1007/s10551-024-05692-1"
+     },
+     {
+      "arg": "ARG-237",
+      "source": "O’Connor (2018)",
+      "loc": "p. 34, 36",
+      "ce_que": "Donne pour exemple de valeur éthique l’impératif moral selon lequel toute personne devrait, de plein droit, avoir accès à un minimum suffisant d’eau.",
+      "doi": "10.2478/admin-2018-0026"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Indirect"
+    ]
+   },
+   "portee": {
+    "texte": "Champ d’application du principe ; circonstances pertinentes pour son application ; personnes concernées par le problème et la réponse.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Qualification du problème et autorité de cette qualification ; contenu du principe et circonstances de son application ; désaccords et leurs effets sur les personnes concernées.",
+    "appuis": [
+     {
+      "arg": "ARG-128",
+      "source": "van der Puije et Satzinger (2025)",
+      "loc": "p. 1, 7",
+      "ce_que": "Soutient que le critère de pertinence marginalise la complexité politique et laisse ouvertes deux questions : qui arbitre entre les besoins, et qui détermine ce qui est juste.",
+      "doi": "10.1080/09614524.2025.2482780"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Argumenter l’application du principe aux circonstances, et conserver dans la conclusion les interprétations concurrentes du problème et du principe.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "Une priorité institutionnelle ou un accord procédural n’apporte aucune justification morale ; l’adéquation à un besoin commun relève d’une lecture des parties prenantes ciblées lorsque le besoin fonde la valeur. À consolider : la prémisse selon laquelle un principe qualifie le problème, et son rôle dans le dossier.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   }
+  },
+  "N05": {
+   "statut": "Proposed",
+   "libelle": "Exigence envers le futur",
+   "question": "Quelles obligations envers le futur s’appliquent, et comment l’action y répond-elle ?",
+   "raison": {
+    "texte": "La durabilité compte dans cette conception lorsque le principe retenu étend des obligations aux personnes futures ou à la continuité de conditions collectives.",
+    "appuis": [
+     {
+      "arg": "ARG-005",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 423",
+      "ce_que": "Définit la valeur sociale, dans l’approche normative, comme un impératif moral ou une croyance collectivement admise, et la valeur comme un principe de jugement qui gouverne les décisions et les actions.",
+      "doi": "10.1007/s10551-024-05692-1"
+     },
+     {
+      "arg": "ARG-265",
+      "source": "Pratt et al. (2026)",
+      "loc": "page à confirmer",
+      "ce_que": "Soutient que, dans la fixation éthique des priorités de la recherche en santé, les personnes du futur lointain doivent recevoir un poids substantiel par rapport aux personnes présentes.",
+      "doi": "10.2471/blt.25.293973"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Direct"
+    ]
+   },
+   "portee": {
+    "texte": "Champ d’application du principe ; horizon qu’il engage ; personnes présentes et futures, et conditions collectives, qu’il couvre.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Exigence envers le futur telle qu’elle est explicitée ; effets différés et conditions de leur maintien ; raisons données aux arbitrages entre personnes présentes et futures.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Apprécier l’action au regard de l’exigence telle qu’elle est explicitée, rapporter l’incertitude des projections et justifier les arbitrages entre personnes présentes et futures.",
+    "appuis": [
+     {
+      "arg": "ARG-265",
+      "source": "Pratt et al. (2026)",
+      "loc": "page à confirmer",
+      "ce_que": "Rapporte que les orientations de l’OMS exigent que les arbitrages entre critères éthiques en conflit reposent sur des raisons justifiables.",
+      "doi": "10.2471/blt.25.293973"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "La conception ne fixe par elle-même ni horizon, ni taux d’actualisation, ni priorité absolue aux générations futures, qui découlent du principe retenu. Dans la conception maximisatrice, la durée peut être appréciée par ses conséquences, selon une autre justification.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   }
+  },
+  "N06": {
+   "statut": "Proposed",
+   "libelle": "Accès exigé par un principe",
+   "question": "Qui devrait pouvoir accéder à quoi selon le principe, et quels obstacles sont documentés ?",
+   "raison": {
+    "texte": "L’accès vaut comme contribution sociale lorsqu’un droit, un principe d’égalité ou un autre cadre collectif justifié l’exige pour les destinataires relevant de son champ.",
+    "appuis": [
+     {
+      "arg": "ARG-005",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 423",
+      "ce_que": "Définit la valeur sociale, dans l’approche normative, comme un impératif moral ou une croyance collectivement admise, et la valeur comme un principe de jugement qui gouverne les décisions et les actions.",
+      "doi": "10.1007/s10551-024-05692-1"
+     },
+     {
+      "arg": "ARG-237",
+      "source": "O’Connor (2018)",
+      "loc": "p. 34, 36",
+      "ce_que": "Donne pour exemple de valeur éthique l’impératif moral selon lequel toute personne devrait, de plein droit, avoir accès à un minimum suffisant d’eau.",
+      "doi": "10.2478/admin-2018-0026"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Direct"
+    ]
+   },
+   "portee": {
+    "texte": "Destinataires du droit ou du principe ; champ d’application du principe.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Principe d’accès explicité ; niveau ou condition d’accès qu’il exige ; accès effectif des destinataires, distinct de l’usage ; obstacles, exceptions et justification de leur traitement ; ce que l’organisation met en œuvre autant que ce qu’elle déclare.",
+    "appuis": [
+     {
+      "arg": "ARG-047",
+      "source": "Edwards et al. (2012)",
+      "loc": "p. 32–33",
+      "ce_que": "Rapporte que la revendication d’inclusivité d’un club coexiste avec des difficultés à intégrer les minorités ethniques, et distingue les programmes spécifiques de la vie quotidienne du club.",
+      "doi": "10.5130/ccs.v4i3.2576"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Comparer l’accès documenté à l’exigence telle qu’elle est interprétée. Le rôle de ce verdict dans le jugement global (minimum ou priorité) est tranché dans la synthèse.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "Un exemple de droit d’accès ne permet de déduire ni seuil universel ni état actuel du droit. Dans la conception des parties prenantes ciblées, la couverture peut être appréciée par la réponse au besoin, même lorsqu’aucun droit n’est invoqué.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   }
+  },
+  "N07": {
+   "statut": "Proposed",
+   "libelle": "Distribution selon le principe de justice",
+   "question": "Quelle distribution le principe exige-t-il, et comment les groupes sont-ils affectés ?",
+   "raison": {
+    "texte": "Une distribution des bénéfices, des charges ou des possibilités est tenue pour juste dans cette conception lorsqu’elle est conforme à un principe distributif, moral ou collectif, dont le contenu est spécifié.",
+    "appuis": [
+     {
+      "arg": "ARG-005",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 423",
+      "ce_que": "Définit la valeur sociale, dans l’approche normative, comme un impératif moral ou une croyance collectivement admise, et la valeur comme un principe de jugement qui gouverne les décisions et les actions.",
+      "doi": "10.1007/s10551-024-05692-1"
+     },
+     {
+      "arg": "ARG-175",
+      "source": "Angelis et al. (2018)",
+      "loc": "p. 137",
+      "ce_que": "Rapporte que les organismes d’évaluation des technologies de santé retiennent la dignité humaine, le besoin, la solidarité et la distribution la plus équitable des ressources de santé comme principes de leurs évaluations.",
+      "doi": "10.1007/s10198-017-0871-0"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Direct"
+    ]
+   },
+   "portee": {
+    "texte": "Population de référence du principe ; groupes entre lesquels se répartissent les bénéfices, les charges et les possibilités.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Principe distributif explicité ; distribution des bénéfices et des charges entre les groupes identifiés ; arbitrages entre exigences et leur justification.",
+    "appuis": [
+     {
+      "arg": "ARG-265",
+      "source": "Pratt et al. (2026)",
+      "loc": "page à confirmer",
+      "ce_que": "Rapporte la définition de l’équité donnée par les orientations de l’OMS, ainsi que leur remarque selon laquelle la meilleure manière de spécifier l’équité dépend du périmètre de l’exercice de fixation des priorités.",
+      "doi": "10.2471/blt.25.293973"
+     }
+    ],
+    "nature": [
+     "Direct",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Apprécier la distribution au regard du principe identifié et traiter explicitement les conflits entre ses exigences ; les conflits entre critères relèvent de la synthèse.",
+    "appuis": [
+     {
+      "arg": "ARG-265",
+      "source": "Pratt et al. (2026)",
+      "loc": "page à confirmer",
+      "ce_que": "Rapporte que les orientations de l’OMS exigent que les arbitrages entre critères éthiques en conflit reposent sur des raisons justifiables.",
+      "doi": "10.2471/blt.25.293973"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "Le choix d’un principe laisse entiers les conflits entre besoins, entre générations et avec d’autres exigences. Une préférence majoritaire ne constitue pas à elle seule le principe distributif retenu.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   }
+  },
+  "N08": {
+   "statut": "Proposed",
+   "libelle": "Allocation conforme aux exigences",
+   "question": "Les choix de ressources suivent-ils les exigences et priorités justifiées dans ce cadre ?",
+   "raison": {
+    "texte": "Une allocation des ressources compte dans cette conception lorsqu’elle suit un principe qui fixe des priorités, des minima ou des obligations envers les destinataires.",
+    "appuis": [
+     {
+      "arg": "ARG-005",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 423",
+      "ce_que": "Définit la valeur sociale, dans l’approche normative, comme un impératif moral ou une croyance collectivement admise, et la valeur comme un principe de jugement qui gouverne les décisions et les actions.",
+      "doi": "10.1007/s10551-024-05692-1"
+     },
+     {
+      "arg": "ARG-175",
+      "source": "Angelis et al. (2018)",
+      "loc": "p. 137",
+      "ce_que": "Rapporte que les cadres d’évaluation des technologies de santé comptent, parmi les principes de leurs évaluations, la distribution la plus équitable des ressources de santé et le ciblage actif des inégalités.",
+      "doi": "10.1007/s10198-017-0871-0"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Direct"
+    ]
+   },
+   "portee": {
+    "texte": "Ressources et options disponibles ; champ d’application du principe ; destinataires de l’allocation.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Exigences d’allocation et leurs exceptions ; allocation et usage des ressources ; renoncements et groupes qui en supportent les charges.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Apprécier l’allocation au regard du principe tel qu’il est explicité, en distinguant exigence minimale, classement et calcul d’efficience, et justifier les arbitrages.",
+    "appuis": [
+     {
+      "arg": "ARG-265",
+      "source": "Pratt et al. (2026)",
+      "loc": "page à confirmer",
+      "ce_que": "Rapporte que les orientations de l’OMS exigent que les arbitrages entre critères éthiques en conflit reposent sur des raisons justifiables.",
+      "doi": "10.2471/blt.25.293973"
+     }
+    ],
+    "nature": [
+     "Direct",
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "La conformité à une règle budgétaire technique n’établit aucun fondement moral ou collectif au sens de cette conception. Une allocation jugée efficiente dans la conception maximisatrice peut recevoir une appréciation distincte au regard du principe retenu.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   }
+  },
+  "N09": {
+   "statut": "Proposed",
+   "libelle": "Conduite conforme au principe",
+   "question": "Quelles exigences le principe impose-t-il aux pratiques, et sont-elles respectées ?",
+   "raison": {
+    "texte": "Dans cette conception de la valeur, la conception et la mise en œuvre de l’action comptent par leur conformité au principe qui gouverne les décisions et les conduites au sein du système.",
+    "appuis": [
+     {
+      "arg": "ARG-005",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 423",
+      "ce_que": "Définit la valeur sociale, dans l’approche normative, comme un impératif moral ou une croyance collectivement admise, et la valeur comme un principe de jugement qui gouverne les décisions et les actions.",
+      "doi": "10.1007/s10551-024-05692-1"
+     },
+     {
+      "arg": "ARG-267",
+      "source": "Vanclay (2003)",
+      "loc": "p. 9",
+      "ce_que": "Affirme que les processus de développement qui portent atteinte aux droits humains d’une partie quelconque de la société ne devraient pas être acceptés.",
+      "doi": "10.3152/147154603781766491"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Direct"
+    ]
+   },
+   "portee": {
+    "texte": "Champ d’application du principe et des engagements pris ; situations déterminées de conception et de mise en œuvre examinées.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Exigence de conduite et engagements pris ; pratiques documentées ; écarts, exceptions et raisons données.",
+    "appuis": [
+     {
+      "arg": "ARG-187",
+      "source": "Mazigo (2026)",
+      "loc": "p. 6, 11",
+      "ce_que": "Reconstruit, à partir de proverbes swahilis, une éthique de l’évaluation dans laquelle les engagements créent des attentes légitimes qu’il convient d’honorer.",
+      "doi": "10.4102/aej.v14i1.855"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Qualifier les pratiques au regard de l’exigence explicite et exposer les exceptions justifiées. Une conformité attestée par des documents appelle des preuves correspondantes tirées des pratiques.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "Un devoir de reporting porte sur l’évaluation ou la reddition de comptes et ne devient pas pour autant l’obligation morale sur laquelle une lecture vertueuse fonde l’action. La conformité d’exécution peut aussi être appréciée techniquement, sans invoquer de principe.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   }
+  },
+  "N10": {
+   "statut": "Exploratory",
+   "libelle": "Compatibilité avec les exigences collectives",
+   "question": "Les initiatives coordonnées respectent-elles des exigences compatibles, et comment leurs conflits sont-ils traités ?",
+   "raison": {
+    "texte": "La coordination entre initiatives compte dans cette conception lorsqu’un principe règle leur coexistence ou les engagements qui les lient.",
+    "appuis": [
+     {
+      "arg": "ARG-005",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 423",
+      "ce_que": "Définit la valeur sociale, dans l’approche normative, comme un impératif moral ou une croyance collectivement admise, et la valeur comme un principe de jugement qui gouverne les décisions et les actions.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Initiatives coordonnées ; champ d’application du principe qui les règle.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Principes, engagements et responsabilités concernés ; conflits entre exigences ou entre initiatives ; raisons des arbitrages retenus.",
+    "appuis": [
+     {
+      "arg": "ARG-187",
+      "source": "Mazigo (2026)",
+      "loc": "p. 6, 11",
+      "ce_que": "Reconstruit, à partir de proverbes swahilis, une éthique de l’évaluation centrée sur la redevabilité, l’obligation morale et la responsabilité envers autrui.",
+      "doi": "10.4102/aej.v14i1.855"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Identifier les exigences applicables, apprécier leur compatibilité et justifier les arbitrages, en gardant en vue les tensions non résolues.",
+    "appuis": [
+     {
+      "arg": "ARG-265",
+      "source": "Pratt et al. (2026)",
+      "loc": "page à confirmer",
+      "ce_que": "Relève qu’un processus équitable peut produire des priorités incompatibles avec le critère de valeur sociale, et rapporte que les arbitrages entre critères en conflit doivent être justifiables.",
+      "doi": "10.2471/blt.25.293973"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "Un objectif institutionnel partagé n’atteste ni une référence morale commune ni la résolution des conflits ; la complémentarité utile à un besoin ciblé relève d’une lecture des parties prenantes ciblées. À consolider : la prémisse selon laquelle un principe exige la compatibilité, et son rôle dans le dossier.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   }
+  },
+  "N11": {
+   "statut": "Exploratory",
+   "libelle": "Transfert compatible avec le principe",
+   "question": "Quelles exigences doivent être réexaminées dans le nouveau contexte, et qui peut justifier leur application ?",
+   "raison": {
+    "texte": "La réplication d’une action compte dans cette conception lorsque les principes qui la gouvernent conservent ou retrouvent leur applicabilité dans le contexte d’accueil.",
+    "appuis": [
+     {
+      "arg": "ARG-005",
+      "source": "de la Cruz Jara et Spanjol (2025)",
+      "loc": "p. 423",
+      "ce_que": "Définit la valeur sociale, dans l’approche normative, comme un impératif moral ou une croyance collectivement admise, et la valeur comme un principe de jugement qui gouverne les décisions et les actions.",
+      "doi": "10.1007/s10551-024-05692-1"
+     }
+    ],
+    "nature": [
+     "Definition",
+     "Derivation"
+    ]
+   },
+   "portee": {
+    "texte": "Diffusion envisagée ; champ d’application du principe dans le contexte d’origine et dans le contexte d’accueil.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "preuves": {
+    "texte": "Principe et ses variantes contextuelles ; adaptations et autorités en mesure de les justifier dans le contexte d’accueil ; droits, voix et conflits susceptibles d’être affectés.",
+    "appuis": [
+     {
+      "arg": "ARG-128",
+      "source": "van der Puije et Satzinger (2025)",
+      "loc": "p. 1, 7",
+      "ce_que": "Soutient que les tentatives de révision des critères du CAD de l’OCDE n’ont pas interrogé les structures, les valeurs et les systèmes de savoirs eurocentrés sur lesquels ces critères reposent.",
+      "doi": "10.1080/09614524.2025.2482780"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   },
+   "regle": {
+    "texte": "Présenter une hypothèse de transfert normativement justifiée et les questions à examiner dans le contexte d’accueil, en laissant ouverte toute obligation générale de réplication.",
+    "appuis": [],
+    "nature": [
+     "Derivation"
+    ]
+   },
+   "refutation": {
+    "texte": "Un principe universel ne s’applique à des circonstances nouvelles que par voie d’argumentation, un consensus local ne résout aucun conflit moral, et la facilité de reproduction relève d’une lecture maximisatrice ou des parties prenantes ciblées. L’échelle ne fournit aucune règle normative de transfert, et l’articulation avec la réplicabilité reste à consolider.",
+    "appuis": [
+     {
+      "arg": "ARG-244",
+      "source": "Ebrahim et Rangan (2014)",
+      "loc": "p. 125, 135",
+      "ce_que": "Relie la mesure de la performance sociale à la mission opérationnelle ainsi qu’à l’échelle et au périmètre de l’activité d’une organisation.",
+      "doi": "10.1525/cmr.2014.56.3.118"
+     }
+    ],
+    "nature": [
+     "Indirect",
+     "Derivation"
+    ]
+   }
+  }
+ }
+}

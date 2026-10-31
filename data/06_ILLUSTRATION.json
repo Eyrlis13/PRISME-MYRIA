@@ -1,0 +1,345 @@
+{
+ "titre": "Ce que le même dossier permet de conclure",
+ "mention": "Illustration construite",
+ "cas": "Aides techniques au transfert, à domicile",
+ "source": "Expérience de pensée de l’article, sections 5.1 et 5.2.",
+ "couple_initial": [
+  "S",
+  "I"
+ ],
+ "dossiers": [
+  {
+   "id": "A",
+   "nom": "Dossier initial",
+   "faits": "Des aides techniques sont installées au domicile de personnes qui ne pouvaient pas passer du lit au fauteuil sans aide. Le besoin a été identifié avec elles et le standard convenu est un transfert sans aide humaine. Les observations établissent que les personnes suivies réalisent désormais ce transfert.",
+   "ajout": null,
+   "revendication": "L’installation des aides a créé de la valeur sociale pour les personnes suivies, sur la période observée, quant à leur transfert du lit au fauteuil.",
+   "lectures": {
+    "M": {
+     "garantie": {
+      "raison": "Le transfert compte par le bénéfice net qu’il apporte au système formé des personnes suivies, de leurs aidants et des services.",
+      "portee": "Les personnes suivies, leurs aidants et les services, sur la période observée.",
+      "preuves": "Effets sur chaque composante du système ; ressources consommées par l’installation ; pour une supériorité, options comparées.",
+      "regle": "Apprécier le bénéfice net ; pour conclure à une supériorité, classer les options selon une règle justifiée."
+     },
+     "verdict": "suspens",
+     "manque": "Effets sur les aidants et les services ; ressources consommées ; options comparées pour une supériorité.",
+     "integre": "Les personnes suivies réalisent désormais le transfert sans aide ; le bénéfice net pour le système reste à établir."
+    },
+    "I": {
+     "garantie": {
+      "raison": "Le transfert vaut par ce qu’il change dans les activités et les relations auxquelles chaque personne tient.",
+      "portee": "Chaque personne suivie, sur la période observée.",
+      "preuves": "L’appréciation de chaque personne ; le changement établi.",
+      "regle": "Rapporter le bénéfice que la personne reconnaît au changement établi, en restant attentif à l’adaptation."
+     },
+     "verdict": "suspens",
+     "manque": "Ce que le transfert change dans les activités et les relations de chaque personne.",
+     "integre": "Les personnes suivies réalisent désormais le transfert sans aide ; ce que ce transfert change pour chacune reste à établir."
+    },
+    "S": {
+     "garantie": {
+      "raison": "Répondre au besoin partagé de se transférer sans aide humaine, identifié avec les personnes, est un bénéfice pour le groupe concerné.",
+      "portee": "Les personnes suivies, sur la période observée.",
+      "preuves": "Besoin identifié avec les personnes ; standard convenu ; réponse documentée.",
+      "regle": "Apprécier la réponse au niveau du besoin retenu, dans la portée définie."
+     },
+     "verdict": "etayee",
+     "manque": "Rien pour cette portée.",
+     "integre": "L’installation des aides a créé de la valeur sociale pour les personnes suivies, sur la période observée, quant à leur transfert du lit au fauteuil."
+    },
+    "V": {
+     "garantie": {
+      "raison": "Le transfert compte s’il procède du sens de l’obligation morale de l’organisation et des bénéfices qu’elle anticipe.",
+      "portee": "Les destinataires et les situations que couvre l’obligation invoquée.",
+      "preuves": "Contenu de l’obligation ; engagement qu’elle soutient ; bénéfices anticipés par l’agent.",
+      "regle": "Examiner la cohérence entre l’obligation invoquée et la conduite de l’action ; un effet produit appelle une seconde garantie."
+     },
+     "verdict": "suspens",
+     "manque": "Obligation de l’agent, engagement qu’elle soutient et bénéfices anticipés.",
+     "integre": "Les personnes suivies réalisent désormais le transfert sans aide ; le lien avec une obligation de l’organisation reste à documenter."
+    },
+    "N": {
+     "options": [
+      {
+       "id": "acces",
+       "libelle": "Principe d’accès aux aides nécessaires pour vivre chez soi",
+       "garantie": {
+        "raison": "Le principe d’accès aux aides nécessaires pour vivre chez soi fait de l’accès à une aide qui répond à un besoin identifié une exigence.",
+        "portee": "Les personnes suivies, sur la période observée.",
+        "preuves": "Aide reçue ; besoin identifié avec les personnes.",
+        "regle": "Comparer l’accès documenté à l’exigence du principe."
+       },
+       "verdict": "etayee",
+       "manque": "Rien pour cette portée.",
+       "integre": "L’installation des aides a créé de la valeur sociale pour les personnes suivies, sur la période observée, quant à leur transfert du lit au fauteuil."
+      },
+      {
+       "id": "autodet",
+       "libelle": "Principe d’autodétermination",
+       "garantie": {
+        "raison": "Le principe d’autodétermination exige que les personnes décident des aides installées chez elles.",
+        "portee": "Les personnes suivies, sur la période observée.",
+        "preuves": "Décision des personnes sur les aides installées.",
+        "regle": "Comparer la décision documentée à l’exigence du principe."
+       },
+       "verdict": "suspens",
+       "manque": "La décision des personnes sur les aides installées.",
+       "integre": "Les personnes suivies ont reçu une aide qui répond à un besoin identifié avec elles ; leur décision sur cette aide reste à documenter."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "B",
+   "nom": "B · appréciation des personnes",
+   "faits": "Des aides techniques sont installées au domicile de personnes qui ne pouvaient pas passer du lit au fauteuil sans aide. Le besoin a été identifié avec elles et le standard convenu est un transfert sans aide humaine. Les observations établissent que les personnes suivies réalisent désormais ce transfert.",
+   "ajout": "Chaque personne suivie décrit le transfert sans aide comme un gain dans ses activités et ses relations.",
+   "revendication": "L’installation des aides a créé de la valeur sociale pour les personnes suivies, sur la période observée, quant à leur transfert du lit au fauteuil.",
+   "lectures": {
+    "M": {
+     "garantie": {
+      "raison": "Le transfert compte par le bénéfice net qu’il apporte au système formé des personnes suivies, de leurs aidants et des services.",
+      "portee": "Les personnes suivies, leurs aidants et les services, sur la période observée.",
+      "preuves": "Effets sur chaque composante du système ; ressources consommées par l’installation ; pour une supériorité, options comparées.",
+      "regle": "Apprécier le bénéfice net ; pour conclure à une supériorité, classer les options selon une règle justifiée."
+     },
+     "verdict": "suspens",
+     "manque": "Effets sur les aidants et les services ; ressources consommées ; options comparées pour une supériorité.",
+     "integre": "Les personnes suivies réalisent désormais le transfert sans aide ; le bénéfice net pour le système reste à établir."
+    },
+    "I": {
+     "garantie": {
+      "raison": "Le transfert vaut par ce qu’il change dans les activités et les relations auxquelles chaque personne tient.",
+      "portee": "Chaque personne suivie, sur la période observée.",
+      "preuves": "L’appréciation de chaque personne ; le changement établi.",
+      "regle": "Rapporter le bénéfice que la personne reconnaît au changement établi, en restant attentif à l’adaptation."
+     },
+     "verdict": "etayee",
+     "manque": "Rien pour cette portée, sauf si les appréciations expriment une adaptation à la situation.",
+     "integre": "L’installation des aides a créé de la valeur sociale pour les personnes suivies, sur la période observée, quant à leur transfert du lit au fauteuil."
+    },
+    "S": {
+     "garantie": {
+      "raison": "Répondre au besoin partagé de se transférer sans aide humaine, identifié avec les personnes, est un bénéfice pour le groupe concerné.",
+      "portee": "Les personnes suivies, sur la période observée.",
+      "preuves": "Besoin identifié avec les personnes ; standard convenu ; réponse documentée.",
+      "regle": "Apprécier la réponse au niveau du besoin retenu, dans la portée définie."
+     },
+     "verdict": "etayee",
+     "manque": "Rien pour cette portée.",
+     "integre": "L’installation des aides a créé de la valeur sociale pour les personnes suivies, sur la période observée, quant à leur transfert du lit au fauteuil."
+    },
+    "V": {
+     "garantie": {
+      "raison": "Le transfert compte s’il procède du sens de l’obligation morale de l’organisation et des bénéfices qu’elle anticipe.",
+      "portee": "Les destinataires et les situations que couvre l’obligation invoquée.",
+      "preuves": "Contenu de l’obligation ; engagement qu’elle soutient ; bénéfices anticipés par l’agent.",
+      "regle": "Examiner la cohérence entre l’obligation invoquée et la conduite de l’action ; un effet produit appelle une seconde garantie."
+     },
+     "verdict": "suspens",
+     "manque": "Obligation de l’agent, engagement qu’elle soutient et bénéfices anticipés.",
+     "integre": "Les personnes suivies réalisent désormais le transfert sans aide ; le lien avec une obligation de l’organisation reste à documenter."
+    },
+    "N": {
+     "options": [
+      {
+       "id": "acces",
+       "libelle": "Principe d’accès aux aides nécessaires pour vivre chez soi",
+       "garantie": {
+        "raison": "Le principe d’accès aux aides nécessaires pour vivre chez soi fait de l’accès à une aide qui répond à un besoin identifié une exigence.",
+        "portee": "Les personnes suivies, sur la période observée.",
+        "preuves": "Aide reçue ; besoin identifié avec les personnes.",
+        "regle": "Comparer l’accès documenté à l’exigence du principe."
+       },
+       "verdict": "etayee",
+       "manque": "Rien pour cette portée.",
+       "integre": "L’installation des aides a créé de la valeur sociale pour les personnes suivies, sur la période observée, quant à leur transfert du lit au fauteuil."
+      },
+      {
+       "id": "autodet",
+       "libelle": "Principe d’autodétermination",
+       "garantie": {
+        "raison": "Le principe d’autodétermination exige que les personnes décident des aides installées chez elles.",
+        "portee": "Les personnes suivies, sur la période observée.",
+        "preuves": "Décision des personnes sur les aides installées.",
+        "regle": "Comparer la décision documentée à l’exigence du principe."
+       },
+       "verdict": "suspens",
+       "manque": "La décision des personnes sur les aides installées.",
+       "integre": "Les personnes suivies ont reçu une aide qui répond à un besoin identifié avec elles ; leur décision sur cette aide reste à documenter."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "C",
+   "nom": "C · nouvelles observations",
+   "faits": "Des aides techniques sont installées au domicile de personnes qui ne pouvaient pas passer du lit au fauteuil sans aide. Le besoin a été identifié avec elles et le standard convenu est un transfert sans aide humaine. Les observations établissent que les personnes suivies réalisent désormais ce transfert.",
+   "ajout": "De nouvelles observations confirment le transfert chez les mêmes personnes, sur la même période.",
+   "revendication": "L’installation des aides a créé de la valeur sociale pour les personnes suivies, sur la période observée, quant à leur transfert du lit au fauteuil.",
+   "lectures": {
+    "M": {
+     "garantie": {
+      "raison": "Le transfert compte par le bénéfice net qu’il apporte au système formé des personnes suivies, de leurs aidants et des services.",
+      "portee": "Les personnes suivies, leurs aidants et les services, sur la période observée.",
+      "preuves": "Effets sur chaque composante du système ; ressources consommées par l’installation ; pour une supériorité, options comparées.",
+      "regle": "Apprécier le bénéfice net ; pour conclure à une supériorité, classer les options selon une règle justifiée."
+     },
+     "verdict": "suspens",
+     "manque": "Effets sur les aidants et les services ; ressources consommées ; options comparées pour une supériorité.",
+     "integre": "Les personnes suivies réalisent désormais le transfert sans aide ; le bénéfice net pour le système reste à établir."
+    },
+    "I": {
+     "garantie": {
+      "raison": "Le transfert vaut par ce qu’il change dans les activités et les relations auxquelles chaque personne tient.",
+      "portee": "Chaque personne suivie, sur la période observée.",
+      "preuves": "L’appréciation de chaque personne ; le changement établi.",
+      "regle": "Rapporter le bénéfice que la personne reconnaît au changement établi, en restant attentif à l’adaptation."
+     },
+     "verdict": "suspens",
+     "manque": "Ce que le transfert change dans les activités et les relations de chaque personne.",
+     "integre": "Les personnes suivies réalisent désormais le transfert sans aide ; ce que ce transfert change pour chacune reste à établir."
+    },
+    "S": {
+     "garantie": {
+      "raison": "Répondre au besoin partagé de se transférer sans aide humaine, identifié avec les personnes, est un bénéfice pour le groupe concerné.",
+      "portee": "Les personnes suivies, sur la période observée.",
+      "preuves": "Besoin identifié avec les personnes ; standard convenu ; réponse documentée.",
+      "regle": "Apprécier la réponse au niveau du besoin retenu, dans la portée définie."
+     },
+     "verdict": "etayee",
+     "manque": "Rien pour cette portée.",
+     "integre": "L’installation des aides a créé de la valeur sociale pour les personnes suivies, sur la période observée, quant à leur transfert du lit au fauteuil."
+    },
+    "V": {
+     "garantie": {
+      "raison": "Le transfert compte s’il procède du sens de l’obligation morale de l’organisation et des bénéfices qu’elle anticipe.",
+      "portee": "Les destinataires et les situations que couvre l’obligation invoquée.",
+      "preuves": "Contenu de l’obligation ; engagement qu’elle soutient ; bénéfices anticipés par l’agent.",
+      "regle": "Examiner la cohérence entre l’obligation invoquée et la conduite de l’action ; un effet produit appelle une seconde garantie."
+     },
+     "verdict": "suspens",
+     "manque": "Obligation de l’agent, engagement qu’elle soutient et bénéfices anticipés.",
+     "integre": "Les personnes suivies réalisent désormais le transfert sans aide ; le lien avec une obligation de l’organisation reste à documenter."
+    },
+    "N": {
+     "options": [
+      {
+       "id": "acces",
+       "libelle": "Principe d’accès aux aides nécessaires pour vivre chez soi",
+       "garantie": {
+        "raison": "Le principe d’accès aux aides nécessaires pour vivre chez soi fait de l’accès à une aide qui répond à un besoin identifié une exigence.",
+        "portee": "Les personnes suivies, sur la période observée.",
+        "preuves": "Aide reçue ; besoin identifié avec les personnes.",
+        "regle": "Comparer l’accès documenté à l’exigence du principe."
+       },
+       "verdict": "etayee",
+       "manque": "Rien pour cette portée.",
+       "integre": "L’installation des aides a créé de la valeur sociale pour les personnes suivies, sur la période observée, quant à leur transfert du lit au fauteuil."
+      },
+      {
+       "id": "autodet",
+       "libelle": "Principe d’autodétermination",
+       "garantie": {
+        "raison": "Le principe d’autodétermination exige que les personnes décident des aides installées chez elles.",
+        "portee": "Les personnes suivies, sur la période observée.",
+        "preuves": "Décision des personnes sur les aides installées.",
+        "regle": "Comparer la décision documentée à l’exigence du principe."
+       },
+       "verdict": "suspens",
+       "manque": "La décision des personnes sur les aides installées.",
+       "integre": "Les personnes suivies ont reçu une aide qui répond à un besoin identifié avec elles ; leur décision sur cette aide reste à documenter."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "D",
+   "nom": "D · revendication étendue",
+   "faits": "Des aides techniques sont installées au domicile de personnes qui ne pouvaient pas passer du lit au fauteuil sans aide. Le besoin a été identifié avec elles et le standard convenu est un transfert sans aide humaine. Les observations établissent que les personnes suivies réalisent désormais ce transfert.",
+   "ajout": null,
+   "revendication": "L’installation des aides a créé de la valeur sociale pour toutes les personnes du territoire qui ont besoin de passer du lit au fauteuil, quant à ce transfert.",
+   "revendication_modifiee": true,
+   "lectures": {
+    "M": {
+     "garantie": {
+      "raison": "Le transfert compte par le bénéfice net qu’il apporte au système formé des personnes suivies, de leurs aidants et des services.",
+      "portee": "Les personnes suivies, leurs aidants et les services, sur la période observée.",
+      "preuves": "Effets sur chaque composante du système ; ressources consommées par l’installation ; pour une supériorité, options comparées.",
+      "regle": "Apprécier le bénéfice net ; pour conclure à une supériorité, classer les options selon une règle justifiée."
+     },
+     "verdict": "suspens",
+     "manque": "Effets sur les aidants et les services ; ressources consommées ; options comparées pour une supériorité.",
+     "integre": "Les personnes suivies réalisent désormais le transfert sans aide ; le bénéfice net pour le système reste à établir."
+    },
+    "I": {
+     "garantie": {
+      "raison": "Le transfert vaut par ce qu’il change dans les activités et les relations auxquelles chaque personne tient.",
+      "portee": "Chaque personne suivie, sur la période observée.",
+      "preuves": "L’appréciation de chaque personne ; le changement établi.",
+      "regle": "Rapporter le bénéfice que la personne reconnaît au changement établi, en restant attentif à l’adaptation."
+     },
+     "verdict": "suspens",
+     "manque": "Ce que le transfert change dans les activités et les relations de chaque personne.",
+     "integre": "Les personnes suivies réalisent désormais le transfert sans aide ; ce que ce transfert change pour chacune reste à établir."
+    },
+    "S": {
+     "garantie": {
+      "raison": "Répondre au besoin partagé de se transférer sans aide humaine, identifié avec les personnes, est un bénéfice pour le groupe concerné.",
+      "portee": "Toutes les personnes du territoire qui ont besoin de passer du lit au fauteuil.",
+      "preuves": "Besoin identifié avec le groupe ; réponse documentée ; couverture du groupe et personnes encore sans aide.",
+      "regle": "Apprécier la réponse au niveau du besoin retenu, dans la portée définie."
+     },
+     "verdict": "bornee",
+     "manque": "Couverture du groupe ; personnes du territoire encore sans aide.",
+     "integre": "L’installation des aides a créé de la valeur sociale pour les personnes suivies, sur la période observée ; son extension au territoire reste à documenter."
+    },
+    "V": {
+     "garantie": {
+      "raison": "Le transfert compte s’il procède du sens de l’obligation morale de l’organisation et des bénéfices qu’elle anticipe.",
+      "portee": "Les destinataires et les situations que couvre l’obligation invoquée.",
+      "preuves": "Contenu de l’obligation ; engagement qu’elle soutient ; bénéfices anticipés par l’agent.",
+      "regle": "Examiner la cohérence entre l’obligation invoquée et la conduite de l’action ; un effet produit appelle une seconde garantie."
+     },
+     "verdict": "suspens",
+     "manque": "Obligation de l’agent, engagement qu’elle soutient et bénéfices anticipés.",
+     "integre": "Les personnes suivies réalisent désormais le transfert sans aide ; le lien avec une obligation de l’organisation reste à documenter."
+    },
+    "N": {
+     "options": [
+      {
+       "id": "acces",
+       "libelle": "Principe d’accès aux aides nécessaires pour vivre chez soi",
+       "garantie": {
+        "raison": "Le principe d’accès aux aides nécessaires pour vivre chez soi fait de l’accès à une aide qui répond à un besoin identifié une exigence.",
+        "portee": "Toutes les personnes que couvre le principe sur le territoire.",
+        "preuves": "Aide reçue ; besoin identifié ; accès effectif de toutes les personnes couvertes et obstacles.",
+        "regle": "Comparer l’accès documenté à l’exigence du principe."
+       },
+       "verdict": "bornee",
+       "manque": "Accès effectif de toutes les personnes couvertes ; obstacles.",
+       "integre": "L’installation des aides a créé de la valeur sociale pour les personnes suivies, sur la période observée ; son extension au territoire reste à documenter."
+      },
+      {
+       "id": "autodet",
+       "libelle": "Principe d’autodétermination",
+       "garantie": {
+        "raison": "Le principe d’autodétermination exige que les personnes décident des aides installées chez elles.",
+        "portee": "Les personnes suivies, sur la période observée.",
+        "preuves": "Décision des personnes sur les aides installées.",
+        "regle": "Comparer la décision documentée à l’exigence du principe."
+       },
+       "verdict": "suspens",
+       "manque": "La décision des personnes sur les aides installées.",
+       "integre": "Les personnes suivies ont reçu une aide qui répond à un besoin identifié avec elles ; leur décision sur cette aide reste à documenter."
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

@@ -1,12 +1,15 @@
 # PRISME MYRIA · Comment la conception de la valeur oriente le jugement
 
-Application web statique, en français. PRISME relie la raison de valoriser une action aux critères retenus et aux conclusions que leur appréciation permet de soutenir.
+Application web statique, en français, version 2.0 (31 octobre 2026). Elle met en ligne le modèle de l'article « Same evidence, different judgements: Conceptions of social value as the backing of evaluative warrants » : la conception de la valeur sociale fonde la garantie qui mène des preuves d'un dossier à une revendication de valeur.
 
-- **Accueil** (`#/`) : la chaîne Conception de la valeur → Critère et appréciation → Jugement justifié. Le prisme et cinq boutons nommés choisissent la conception (Parties prenantes ciblées par défaut) ; les quatre rubriques (qualification, portée, preuve, règle d'appréciation) affichent la formulation courte correspondante, avec question et explication à déplier. Sous la chaîne : le dossier commun, l'accès à l'exemple, et les deux usages (audit, guidance).
-- **Illustrations** (`#/illustrations`) : démonstration guidée sur les aides techniques à domicile. Le dossier A est lu par les conceptions Parties prenantes ciblées et Individualiste ; « Ajouter l'appréciation des personnes » crée le dossier B et actualise les deux lectures ; « Revenir au dossier initial » rétablit A. Deux exemples complémentaires suivent, fermés par défaut.
-- **Sources et construction du modèle** : volet latéral accessible depuis l'en-tête et le pied de page des deux pages ; son ouverture ne modifie ni le dossier ni les choix courants.
+- **Modèle conceptuel** (`#/`) : le prisme choisit la conception, un sélecteur choisit le domaine de critères (onze domaines de Teasdale). Les quatre cartes donnent la spécification de la garantie pour ce croisement (raison de valoriser, portée, preuves exigées, règle d'appréciation), avec son statut et ses appuis ; la carte du verdict rappelle les trois verdicts et la réfutation. Suivent les trois propositions et les deux usages.
+- **Illustration** (`#/illustration`) : l'expérience de pensée de l'article. Même dossier, même revendication ; deux prismes orientables donnent chacun une lecture ; les versions B, C et D ajoutent une preuve ou étendent la portée.
+- **Rapports** (`#/rapports`) : des rapports d'impact analysés avec le modèle. Pour chaque revendication, deux prismes orientables ; pour les conceptions normative et vertueuse, choix du principe ou de l'obligation, ou saisie libre (l'application prépare la demande à coller dans Claude Code).
+- **Sources** : volet latéral (construction, composantes, verdicts, propositions, références).
 
-Modèle conceptuel et illustrations construites. Aucun poids, seuil, veto ou score.
+## Ajouter un rapport
+
+Dans Claude Code, sur ce dépôt : donner le rapport et demander de l'analyser avec PRISME. La compétence `.claude/skills/prisme-rapport` applique les règles et les 55 spécifications, écrit `data/rapports/<id>.json`, reconstruit et contrôle les données.
 
 ## Lancement
 
@@ -16,23 +19,22 @@ Ouvrir `index.html` dans un navigateur, ou `./serve.sh` puis http://localhost:80
 
 | Fichier | Rôle |
 |---|---|
-| `data/02_CONTENU_INTERFACE.json` | Textes de l'interface (fixés par l'autrice) |
-| `data/03_MODELE_SCIENTIFIQUE_REFERENCE.json` | Modèle V1 de référence, pour le contrôle de fidélité |
-| `data/04_SOURCES_ET_ATTRIBUTIONS.json` | Références avec DOI, appuis par fonction, empreinte du modèle |
-| `data/prisme-data.js` | Copie chargeable des trois fichiers, générée par `node tools/build-data.js` |
-| `docs/livraison-2026-10-22/` | Brief du 22 octobre et compte rendu de livraison |
-| `archive/v1.0/`, `archive/v0.5/` | Versions précédentes (dont les quinze cas C01–C15), conservées pour mémoire |
-| `recherche/` | Registre, rapports et scripts de recherche fournis par l'autrice |
+| `data/02_CONTENU_INTERFACE.json` | Textes de l'interface, lexique, domaines, verdicts, propositions |
+| `data/03_MODELE_PRISME.json` | Les 55 spécifications (matériel supplémentaire S1, traduit), avec leurs appuis |
+| `data/04_SOURCES_ET_ATTRIBUTIONS.json` | Références de l'article |
+| `data/06_ILLUSTRATION.json` | L'expérience de pensée (dossiers A à D, lectures) |
+| `data/rapports/*.json` | Rapports analysés |
+| `data/prisme-data.js` | Copie chargeable, générée par `node tools/build-data.js` |
+| `archive/v1.1/` et antérieures | Versions précédentes |
 
 ## Vérifications
 
 ```
 node tools/build-data.js     # régénère data/prisme-data.js
-node tools/verify-data.js    # empreinte du modèle, fidélité 02/03, DOI, dossier A → B
-node tools/ui-check.js       # critères de réception, ordinateur, tablette, téléphone, clavier, animations réduites
-SHOTS=docs/captures/apres-2026-10-22 node tools/ui-check.js   # idem, avec captures
+node tools/verify-data.js    # 55 croisements, décompte des statuts, schéma des rapports
+node tools/ui-check.js       # trois pages, trois largeurs (serveur local sur le port 8090)
 ```
 
 ## Organisation du code
 
-`js/core.js` (accès aux données), `js/bench.js` (prisme rotatif et repère miniature), `js/ui.js` (panneau latéral, références, volet des sources), `js/model.js` (accueil), `js/illus.js` (illustrations), `js/main.js` (routage, état, anciens liens). Charte Myriad : aubergine #3d1a32, prune #58284a, crème #f7f2ea, orange #e4552b ; Montserrat et Inter.
+`js/core.js` (données), `js/bench.js` (prisme rotatif et repère miniature), `js/ui.js` (panneau latéral et sources), `js/model.js` (modèle conceptuel), `js/lecture.js` (panneau à deux prismes), `js/illus.js` (illustration), `js/rapports.js` (rapports), `js/main.js` (routage, état). Charte Myriad : aubergine #3d1a32, prune #58284a, crème #f7f2ea, orange #e4552b ; Montserrat et Inter.

@@ -1,141 +1,323 @@
 {
-  "provenance": "Métadonnées du registre local et localisateurs vérifiés dans la passe argumentative du manuscrit.",
-  "references": [
-    {
-      "id": "DCJ2025",
-      "auteurs": [
-        "Marcelo F. de la Cruz Jara",
-        "Jelena Spanjol"
-      ],
-      "annee": 2025,
-      "titre": "Understanding Multiple Perspectives on Social Value in Business: An Integrative Review and Typology",
-      "doi": "10.1007/s10551-024-05692-1",
-      "url": "https://doi.org/10.1007/s10551-024-05692-1",
-      "passages": "pp. 418–424",
-      "role": "Typologie des cinq conceptions ; distinction entre besoin commun et bénéfice personnel, pp. 420–422.",
-      "argument_repere": "ARG-001",
-      "attribution": "Appui à une distinction mobilisée ; le regroupement PRISME et les illustrations sont notre synthèse."
-    },
-    {
-      "id": "TEASDALE2021",
-      "auteurs": [
-        "Rebecca M. Teasdale"
-      ],
-      "annee": 2021,
-      "titre": "Evaluative Criteria: An Integrated Model of Domains and Sources",
-      "doi": "10.1177/1098214020955226",
-      "url": "https://doi.org/10.1177/1098214020955226",
-      "passages": "pp. 370–371",
-      "role": "Domaines et définitions de la réussite ; exemple du programme de robotique.",
-      "argument_repere": "ARG-212",
-      "attribution": "Appui à une distinction mobilisée ; le regroupement PRISME et les illustrations sont notre synthèse."
-    },
-    {
-      "id": "TEASDALE2023",
-      "auteurs": [
-        "Rebecca M. Teasdale",
-        "Robyn Thomas Pitts",
-        "Emily F. Gates",
-        "Clara Shim"
-      ],
-      "annee": 2023,
-      "titre": "Teaching specification of evaluative criteria: A guide for evaluation education",
-      "doi": "10.1002/ev.20546",
-      "url": "https://doi.org/10.1002/ev.20546",
-      "passages": "p. 33",
-      "role": "Définitions des domaines évaluatifs, dont pertinence et portée/accès.",
-      "argument_repere": "ARG-021",
-      "attribution": "Appui à une distinction mobilisée ; le regroupement PRISME et les illustrations sont notre synthèse."
-    },
-    {
-      "id": "EBRAHIM2014",
-      "auteurs": [
-        "Alnoor Ebrahim",
-        "V. Kasturi Rangan"
-      ],
-      "annee": 2014,
-      "titre": "What Impact? A Framework for Measuring the Scale and Scope of Social Performance",
-      "doi": "10.1525/cmr.2014.56.3.118",
-      "url": "https://doi.org/10.1525/cmr.2014.56.3.118",
-      "passages": "pp. 124–125",
-      "role": "Distinction entre résultats éducatifs et ambition de réduction de la pauvreté.",
-      "argument_repere": "ARG-243",
-      "attribution": "Appui à une distinction mobilisée ; le regroupement PRISME et les illustrations sont notre synthèse."
-    },
-    {
-      "id": "KROEGER2014",
-      "auteurs": [
-        "Arne Kroeger",
-        "Christiana Weber"
-      ],
-      "annee": 2014,
-      "titre": "Developing a Conceptual Framework for Comparing Social Value Creation",
-      "doi": "10.5465/amr.2012.0344",
-      "url": "https://doi.org/10.5465/amr.2012.0344",
-      "passages": "p. 514 et pp. 526–528",
-      "role": "Prestations et bénéfice ; établissement d’un degré de valeur et comparaison des interventions.",
-      "argument_repere": "ARG-013",
-      "attribution": "Appui à une distinction mobilisée ; le regroupement PRISME et les illustrations sont notre synthèse."
-    },
-    {
-      "id": "BENJAMIN2023",
-      "auteurs": [
-        "Lehn M. Benjamin",
-        "Alnoor Ebrahim",
-        "Mary Kay Gugerty"
-      ],
-      "annee": 2023,
-      "titre": "Nonprofit Organizations and the Evaluation of Social Impact: A Research Program to Advance Theory and Practice",
-      "doi": "10.1177/08997640221123590",
-      "url": "https://doi.org/10.1177/08997640221123590",
-      "passages": "version auteur, pp. 15–19",
-      "role": "Standards et synthèse ; adéquation des méthodes à la question.",
-      "argument_repere": "ARG-029",
-      "attribution": "Appui à une distinction mobilisée ; le regroupement PRISME et les illustrations sont notre synthèse."
-    },
-    {
-      "id": "SCRIVEN2012",
-      "auteurs": [
-        "Michael S. Scriven"
-      ],
-      "annee": 2012,
-      "titre": "The logic of valuing",
-      "doi": "10.1002/ev.20003",
-      "url": "https://doi.org/10.1002/ev.20003",
-      "passages": "PDF, p. 5 et p. 11",
-      "role": "Voies de justification par observation, inférence ou définition.",
-      "argument_repere": "ARG-080",
-      "attribution": "Appui à une distinction mobilisée ; le regroupement PRISME et les illustrations sont notre synthèse."
-    }
-  ],
-  "appuis_par_fonction": {
-    "qualification": [
-      "DCJ2025",
-      "TEASDALE2021"
-    ],
-    "portee": [
-      "EBRAHIM2014"
-    ],
-    "preuve": [
-      "KROEGER2014",
-      "BENJAMIN2023",
-      "SCRIVEN2012"
-    ],
-    "regle": [
-      "BENJAMIN2023",
-      "SCRIVEN2012"
-    ]
+ "references": [
+  {
+   "id": "Aguinis2023",
+   "court": "Aguinis et al. (2023)",
+   "apa": "Aguinis, H., Beltran, J. R., Archibold, E. E., Jean, E. L., & Rice, D. B. (2023). Thought experiments: Review and recommendations. Journal of Organizational Behavior, 44(3), 544–560. https://doi.org/10.1002/job.2658",
+   "url": "https://doi.org/10.1002/job.2658"
   },
-  "precision": "Le manuscrit mobilise également Fournier (1995) pour les opérations du raisonnement évaluatif. La liste courte fournie ici rassemble les références dont les liens DOI sont disponibles dans le registre ; elle n’est pas la bibliographie exhaustive du manuscrit.",
-  "source_modele": {
-    "fichier": "03_MODELE_SCIENTIFIQUE_REFERENCE.json",
-    "sha256": "be8d4227829177e67853d8924b86cf1fbc8d2d49187ca77781eb66b46aba0959"
+  {
+   "id": "Barman2015",
+   "court": "Barman (2015)",
+   "apa": "Barman, E. (2015). Of principle and principal: Value plurality in the market of impact investing. Valuation Studies, 3(1), 9–44. https://doi.org/10.3384/VS.2001-5592.15319",
+   "url": "https://doi.org/10.3384/VS.2001-5592.15319"
   },
-  "correspondances_manuscrit": {
-    "accueil": "Sections 4.1 et 4.2 ; tableaux 3 et 4.",
-    "aides-domicile": "Section 4.3 ; tableau 5 ; propositions 1 et 2.",
-    "acces-et-besoin": "Annexe B2.",
-    "benefice-et-superiorite": "Annexe B3.",
-    "usages": "Section 5.2."
+  {
+   "id": "Benjamin2012",
+   "court": "Benjamin (2012)",
+   "apa": "Benjamin, L. M. (2012). Nonprofit organizations and outcome measurement: From tracking program activities to focusing on frontline work. American Journal of Evaluation, 33(3), 431–447. https://doi.org/10.1177/1098214012440496",
+   "url": "https://doi.org/10.1177/1098214012440496"
+  },
+  {
+   "id": "Benjamin2023",
+   "court": "Benjamin et al. (2023)",
+   "apa": "Benjamin, L. M., Ebrahim, A., & Gugerty, M. K. (2023). Nonprofit organizations and the evaluation of social impact: A research program to advance theory and practice. Nonprofit and Voluntary Sector Quarterly, 52(1 suppl.), 313S–352S. https://doi.org/10.1177/08997640221123590",
+   "url": "https://doi.org/10.1177/08997640221123590"
+  },
+  {
+   "id": "Bovens2007",
+   "court": "Bovens (2007)",
+   "apa": "Bovens, M. (2007). Analysing and assessing accountability: A conceptual framework. European Law Journal, 13(4), 447–468. https://doi.org/10.1111/j.1468-0386.2007.00378.x",
+   "url": "https://doi.org/10.1111/j.1468-0386.2007.00378.x"
+  },
+  {
+   "id": "Choi2014",
+   "court": "Choi et Majumdar (2014)",
+   "apa": "Choi, N., & Majumdar, S. (2014). Social entrepreneurship as an essentially contested concept: Opening a new avenue for systematic future research. Journal of Business Venturing, 29(3), 363–376. https://doi.org/10.1016/j.jbusvent.2013.05.001",
+   "url": "https://doi.org/10.1016/j.jbusvent.2013.05.001"
+  },
+  {
+   "id": "Cooney2014",
+   "court": "Cooney et Lynch-Cerullo (2014)",
+   "apa": "Cooney, K., & Lynch-Cerullo, K. (2014). Measuring the social returns of nonprofits and social enterprises: The promise and perils of the SROI. Nonprofit Policy Forum, 5(2), 367–393. https://doi.org/10.1515/npf-2014-0017",
+   "url": "https://doi.org/10.1515/npf-2014-0017"
+  },
+  {
+   "id": "Davidson2005",
+   "court": "Davidson (2005)",
+   "apa": "Davidson, E. J. (2005). Evaluation methodology basics: The nuts and bolts of sound evaluation. Sage. https://doi.org/10.4135/9781452230115",
+   "url": "https://doi.org/10.4135/9781452230115"
+  },
+  {
+   "id": "DCJ2025",
+   "court": "de la Cruz Jara et Spanjol (2025)",
+   "apa": "de la Cruz Jara, M. F., & Spanjol, J. (2025). Understanding multiple perspectives on social value in business: An integrative review and typology. Journal of Business Ethics, 198(2), 407–435. https://doi.org/10.1007/s10551-024-05692-1",
+   "url": "https://doi.org/10.1007/s10551-024-05692-1"
+  },
+  {
+   "id": "Dees2001",
+   "court": "Dees (2001)",
+   "apa": "Dees, J. G. (2001). The meaning of “social entrepreneurship” (Original work published 1998). Center for the Advancement of Social Entrepreneurship, Fuqua School of Business, Duke University.",
+   "url": null
+  },
+  {
+   "id": "Ebrahim2003",
+   "court": "Ebrahim (2003)",
+   "apa": "Ebrahim, A. (2003). Accountability in practice: Mechanisms for NGOs. World Development, 31(5), 813–829. https://doi.org/10.1016/S0305-750X(03)00014-7",
+   "url": "https://doi.org/10.1016/S0305-750X(03)00014-7"
+  },
+  {
+   "id": "Ebrahim2014",
+   "court": "Ebrahim et Rangan (2014)",
+   "apa": "Ebrahim, A., & Rangan, V. K. (2014). What impact? A framework for measuring the scale and scope of social performance. California Management Review, 56(3), 118–141. https://doi.org/10.1525/cmr.2014.56.3.118",
+   "url": "https://doi.org/10.1525/cmr.2014.56.3.118"
+  },
+  {
+   "id": "Edwards2012",
+   "court": "Edwards et al. (2012)",
+   "apa": "Edwards, M., Onyx, J., Maxwell, H., & Darcy, S. (2012). Meso level social impact: Meaningful indicators of community contribution. Cosmopolitan Civil Societies: An Interdisciplinary Journal, 4(3), 18–37. https://doi.org/10.5130/ccs.v4i3.2576",
+   "url": "https://doi.org/10.5130/ccs.v4i3.2576"
+  },
+  {
+   "id": "Fournier1995",
+   "court": "Fournier (1995)",
+   "apa": "Fournier, D. M. (1995). Establishing evaluative conclusions: A distinction between general and working logic. New Directions for Evaluation, 1995(68), 15–32. https://doi.org/10.1002/ev.1017",
+   "url": "https://doi.org/10.1002/ev.1017"
+  },
+  {
+   "id": "Gargani2017",
+   "court": "Gargani (2017)",
+   "apa": "Gargani, J. (2017). The leap from ROI to SROI: Farther than expected? Evaluation and Program Planning, 64, 116–126. https://doi.org/10.1016/j.evalprogplan.2017.01.005",
+   "url": "https://doi.org/10.1016/j.evalprogplan.2017.01.005"
+  },
+  {
+   "id": "Gargani2024",
+   "court": "Gargani et King (2024)",
+   "apa": "Gargani, J., & King, J. (2024). Principles and methods to advance value for money. Evaluation, 30(1), 50–68. https://doi.org/10.1177/13563890231221526",
+   "url": "https://doi.org/10.1177/13563890231221526"
+  },
+  {
+   "id": "Green2009",
+   "court": "Green et al. (2009)",
+   "apa": "Green, S. E., Jr., Li, Y., & Nohria, N. (2009). Suspended in self-spun webs of significance: A rhetorical model of institutionalization and institutionally embedded agency. Academy of Management Journal, 52(1), 11–36. https://doi.org/10.5465/amj.2009.36461725",
+   "url": "https://doi.org/10.5465/amj.2009.36461725"
+  },
+  {
+   "id": "Gullickson2019",
+   "court": "Gullickson et Hannum (2019)",
+   "apa": "Gullickson, A. M., & Hannum, K. M. (2019). Making values explicit in evaluation practice. Evaluation Journal of Australasia, 19(4), 162–178. https://doi.org/10.1177/1035719X19893892",
+   "url": "https://doi.org/10.1177/1035719X19893892"
+  },
+  {
+   "id": "Harmon2015",
+   "court": "Harmon et al. (2015)",
+   "apa": "Harmon, D. J., Green, S. E., Jr., & Goodnight, G. T. (2015). A model of rhetorical legitimation: The structure of communication and cognition underlying institutional maintenance and change. Academy of Management Review, 40(1), 76–95. https://doi.org/10.5465/amr.2013.0310",
+   "url": "https://doi.org/10.5465/amr.2013.0310"
+  },
+  {
+   "id": "Hartley2017",
+   "court": "Hartley et al. (2017)",
+   "apa": "Hartley, J., Alford, J., Knies, E., & Douglas, S. (2017). Towards an empirical research agenda for public value theory. Public Management Review, 19(5), 670–685. https://doi.org/10.1080/14719037.2016.1192166",
+   "url": "https://doi.org/10.1080/14719037.2016.1192166"
+  },
+  {
+   "id": "House1980",
+   "court": "House (1980)",
+   "apa": "House, E. R. (1980). Evaluating with validity. Sage.",
+   "url": null
+  },
+  {
+   "id": "Jaakkola2020",
+   "court": "Jaakkola (2020)",
+   "apa": "Jaakkola, E. (2020). Designing conceptual articles: Four approaches. AMS Review, 10(1–2), 18–26. https://doi.org/10.1007/s13162-020-00161-0",
+   "url": "https://doi.org/10.1007/s13162-020-00161-0"
+  },
+  {
+   "id": "Jackson2018",
+   "court": "Jackson et Schneider (2018)",
+   "apa": "Jackson, S., & Schneider, J. (2018). Cochrane Review as a “warranting device” for reasoning about health. Argumentation, 32(2), 241–272. https://doi.org/10.1007/s10503-017-9440-z",
+   "url": "https://doi.org/10.1007/s10503-017-9440-z"
+  },
+  {
+   "id": "Kaul2026",
+   "court": "Kaul et al. (2026)",
+   "apa": "Kaul, A., Luo, J., & Singh, J. (2026). Managing social impact: An integrated approach and research agenda. Organization Science. Advance online publication. https://doi.org/10.1287/orsc.2023.17597",
+   "url": "https://doi.org/10.1287/orsc.2023.17597"
+  },
+  {
+   "id": "King2017",
+   "court": "King (2017)",
+   "apa": "King, J. (2017). Using economic methods evaluatively. American Journal of Evaluation, 38(1), 101–113. https://doi.org/10.1177/1098214016641211",
+   "url": "https://doi.org/10.1177/1098214016641211"
+  },
+  {
+   "id": "King2021",
+   "court": "King (2021)",
+   "apa": "King, J. (2021). Expanding theory-based evaluation: Incorporating value creation in a theory of change. Evaluation and Program Planning, 89, 101963. https://doi.org/10.1016/j.evalprogplan.2021.101963",
+   "url": "https://doi.org/10.1016/j.evalprogplan.2021.101963"
+  },
+  {
+   "id": "King2013",
+   "court": "King et al. (2013)",
+   "apa": "King, J., McKegg, K., Oakden, J., & Wehipeihana, N. (2013). Rubrics: A method for surfacing values and improving the credibility of evaluation. Journal of MultiDisciplinary Evaluation, 9(21), 11–20. https://doi.org/10.56645/jmde.v9i21.374",
+   "url": "https://doi.org/10.56645/jmde.v9i21.374"
+  },
+  {
+   "id": "KendelnyiGul2026",
+   "court": "Kendelényi-Gulyás et al. (2026)",
+   "apa": "Koch, Á., Kendelényi-Gulyás, E., Sterbenz, T., & Csurilla, G. (2026). Do investments in sport pay off: A systematic review and exploratory quasi meta-analysis of social return on investment in sport and physical activity. International Journal of Behavioral Nutrition and Physical Activity, 23, 99. https://doi.org/10.1186/s12966-026-01957-2",
+   "url": "https://doi.org/10.1186/s12966-026-01957-2"
+  },
+  {
+   "id": "Kroeger2014",
+   "court": "Kroeger et Weber (2014)",
+   "apa": "Kroeger, A., & Weber, C. (2014). Developing a conceptual framework for comparing social value creation. Academy of Management Review, 39(4), 513–540. https://doi.org/10.5465/amr.2012.0344",
+   "url": "https://doi.org/10.5465/amr.2012.0344"
+  },
+  {
+   "id": "Lehner2022",
+   "court": "Lehner et al. (2022)",
+   "apa": "Lehner, O. M., Nicholls, A., & Kapplmüller, S. B. (2022). Arenas of contestation: A Senian social justice perspective on the nature of materiality in impact measurement. Journal of Business Ethics, 179(4), 971–989. https://doi.org/10.1007/s10551-022-05158-2",
+   "url": "https://doi.org/10.1007/s10551-022-05158-2"
+  },
+  {
+   "id": "LorenzoAfabl2020",
+   "court": "Lorenzo-Afable et al. (2020)",
+   "apa": "Lorenzo-Afable, D., Lips-Wiersma, M., & Singh, S. (2020). ‘Social’ value creation as care: The perspective of beneficiaries in social entrepreneurship. Social Enterprise Journal, 16(3), 339–360. https://doi.org/10.1108/SEJ-11-2019-0082",
+   "url": "https://doi.org/10.1108/SEJ-11-2019-0082"
+  },
+  {
+   "id": "Meldrum2026",
+   "court": "Meldrum et Gullickson (2026)",
+   "apa": "Meldrum, K., & Gullickson, A. M. (2026). Stairways to heaven? Seeking evaluative reasoning in publicly available evaluation reports from the Australian education sector 2014–2024. Evaluation Journal of Australasia, 26(1), 7–37. https://doi.org/10.1177/1035719X251412530",
+   "url": "https://doi.org/10.1177/1035719X251412530"
+  },
+  {
+   "id": "OConnor2018",
+   "court": "O’Connor (2018)",
+   "apa": "O’Connor, N. (2018). The potential for public value frameworks in Northern Ireland and Ireland. Administration, 66(3), 33–54. https://doi.org/10.2478/admin-2018-0026",
+   "url": "https://doi.org/10.2478/admin-2018-0026"
+  },
+  {
+   "id": "OECD2023",
+   "court": "OECD (2023)",
+   "apa": "OECD. (2023). Policy guide on social impact measurement for the social and solidarity economy. OECD Publishing. https://doi.org/10.1787/270c7194-en",
+   "url": "https://doi.org/10.1787/270c7194-en"
+  },
+  {
+   "id": "Polychronopo2026",
+   "court": "Polychronopoulos et al. (2026)",
+   "apa": "Polychronopoulos, G., Lukeš, M., Vedula, S., & Bacq, S. (2026). The yin and yang: Utility and reform perspectives on social impact in social entrepreneurship research. Journal of Business Venturing, 41(6), 106630. https://doi.org/10.1016/j.jbusvent.2026.106630",
+   "url": "https://doi.org/10.1016/j.jbusvent.2026.106630"
+  },
+  {
+   "id": "RamalhoMarqu2025",
+   "court": "Ramalho Marques et al. (2025)",
+   "apa": "Ramalho Marques, S., Rodrigues, R., Zerth, J., & Orrego, C. (2025). The use of social return on investment approaches to evaluate integrated long-term care in high-income countries: A scoping review. Health Policy, 161, 105414. https://doi.org/10.1016/j.healthpol.2025.105414",
+   "url": "https://doi.org/10.1016/j.healthpol.2025.105414"
+  },
+  {
+   "id": "Ranville2022",
+   "court": "Ranville et Barros (2022)",
+   "apa": "Ranville, A., & Barros, M. (2022). Towards normative theories of social entrepreneurship: A review of the top publications of the field. Journal of Business Ethics, 180(2), 407–438. https://doi.org/10.1007/s10551-021-04867-4",
+   "url": "https://doi.org/10.1007/s10551-021-04867-4"
+  },
+  {
+   "id": "Rawhouser2019",
+   "court": "Rawhouser et al. (2019)",
+   "apa": "Rawhouser, H. N., Cummings, M. E., & Newbert, S. L. (2019). Social impact measurement: Current approaches and future directions for social entrepreneurship research. Entrepreneurship Theory and Practice, 43(1), 82–115. https://doi.org/10.1177/1042258717727718",
+   "url": "https://doi.org/10.1177/1042258717727718"
+  },
+  {
+   "id": "ReSantVous2024",
+   "court": "ReSanté-Vous (2024)",
+   "apa": "ReSanté-Vous. (2024). Changeons de regard : La mesure d’impact social de ReSanté-Vous. Résultats et méthodes des actions menées avec les partenaires. ReSanté-Vous.",
+   "url": null
+  },
+  {
+   "id": "Roorda2019",
+   "court": "Roorda et Gullickson (2019)",
+   "apa": "Roorda, M., & Gullickson, A. M. (2019). Developing evaluation criteria using an ethical lens. Evaluation Journal of Australasia, 19(4), 179–194. https://doi.org/10.1177/1035719X19891991",
+   "url": "https://doi.org/10.1177/1035719X19891991"
+  },
+  {
+   "id": "Sadler1985",
+   "court": "Sadler (1985)",
+   "apa": "Sadler, D. R. (1985). The origins and functions of evaluative criteria. Educational Theory, 35(3), 285–297. https://doi.org/10.1111/j.1741-5446.1985.00285.x",
+   "url": "https://doi.org/10.1111/j.1741-5446.1985.00285.x"
+  },
+  {
+   "id": "Salmivaara2020",
+   "court": "Salmivaara et Kibler (2020)",
+   "apa": "Salmivaara, V., & Kibler, E. (2020). “Rhetoric mix” of argumentations: How policy rhetoric conveys meaning of entrepreneurship for sustainable development. Entrepreneurship Theory and Practice, 44(4), 700–732. https://doi.org/10.1177/1042258719845345",
+   "url": "https://doi.org/10.1177/1042258719845345"
+  },
+  {
+   "id": "Scriven2012",
+   "court": "Scriven (2012)",
+   "apa": "Scriven, M. (2012). The logic of valuing. New Directions for Evaluation, 2012(133), 17–28. https://doi.org/10.1002/ev.20003",
+   "url": "https://doi.org/10.1002/ev.20003"
+  },
+  {
+   "id": "Tan2005",
+   "court": "Tan et al. (2005)",
+   "apa": "Tan, W.-L., Williams, J., & Tan, T.-M. (2005). Defining the ‘social’ in ‘social entrepreneurship’: Altruism and entrepreneurship. International Entrepreneurship and Management Journal, 1(3), 353–365. https://doi.org/10.1007/s11365-005-2600-x",
+   "url": "https://doi.org/10.1007/s11365-005-2600-x"
+  },
+  {
+   "id": "Teasdale2021",
+   "court": "Teasdale (2021)",
+   "apa": "Teasdale, R. M. (2021). Evaluative criteria: An integrated model of domains and sources. American Journal of Evaluation, 42(3), 354–376. https://doi.org/10.1177/1098214020955226",
+   "url": "https://doi.org/10.1177/1098214020955226"
+  },
+  {
+   "id": "Teasdale2022",
+   "court": "Teasdale (2022)",
+   "apa": "Teasdale, R. M. (2022). Representing the values of program participants: Endogenous evaluative criteria. Evaluation and Program Planning, 94, 102123. https://doi.org/10.1016/j.evalprogplan.2022.102123",
+   "url": "https://doi.org/10.1016/j.evalprogplan.2022.102123"
+  },
+  {
+   "id": "Teasdale2025",
+   "court": "Teasdale et Avent (2025)",
+   "apa": "Teasdale, R. M., & Avent, C. M. (2025). Investigating equity and social justice within programs: A framework of evaluative criteria. Journal of MultiDisciplinary Evaluation, 21(49), 1–22. https://doi.org/10.56645/jmde.v21i49.1095",
+   "url": "https://doi.org/10.56645/jmde.v21i49.1095"
+  },
+  {
+   "id": "Teasdale2023",
+   "court": "Teasdale et al. (2023)",
+   "apa": "Teasdale, R. M., Pitts, R. T., Gates, E. F., & Shim, C. (2023). Teaching specification of evaluative criteria: A guide for evaluation education. New Directions for Evaluation, 2023(177), 31–37. https://doi.org/10.1002/ev.20546",
+   "url": "https://doi.org/10.1002/ev.20546"
+  },
+  {
+   "id": "Toulmin1958",
+   "court": "Toulmin (1958)",
+   "apa": "Toulmin, S. E. (1958). The uses of argument. Cambridge University Press.",
+   "url": null
+  },
+  {
+   "id": "vanderPuije2025",
+   "court": "van der Puije et Satzinger (2025)",
+   "apa": "van der Puije, N., & Satzinger, F. (2025). Decolonising international development evaluation: Rethinking OECD DAC evaluation criteria from a decolonial perspective. Development in Practice. Advance online publication. https://doi.org/10.1080/09614524.2025.2482780",
+   "url": "https://doi.org/10.1080/09614524.2025.2482780"
+  },
+  {
+   "id": "Vanclay2003",
+   "court": "Vanclay (2003)",
+   "apa": "Vanclay, F. (2003). International principles for social impact assessment. Impact Assessment and Project Appraisal, 21(1), 5–12. https://doi.org/10.3152/147154603781766491",
+   "url": "https://doi.org/10.3152/147154603781766491"
+  },
+  {
+   "id": "Weaver2018",
+   "court": "Weaver (2018)",
+   "apa": "Weaver, R. L. (2018). Re-conceptualizing social value: Applying the capability approach in social enterprise research. Journal of Social Entrepreneurship, 9(2), 79–93. https://doi.org/10.1080/19420676.2018.1430607",
+   "url": "https://doi.org/10.1080/19420676.2018.1430607"
+  },
+  {
+   "id": "Zahra2009",
+   "court": "Zahra et al. (2009)",
+   "apa": "Zahra, S. A., Gedajlovic, E., Neubaum, D. O., & Shulman, J. M. (2009). A typology of social entrepreneurs: Motives, search processes and ethical challenges. Journal of Business Venturing, 24(5), 519–532. https://doi.org/10.1016/j.jbusvent.2008.04.007",
+   "url": "https://doi.org/10.1016/j.jbusvent.2008.04.007"
   }
+ ],
+ "precision": "Références de l’article ; les passages précis de chaque appui figurent dans les spécifications (Appuis) et dans le matériel supplémentaire S1."
 }

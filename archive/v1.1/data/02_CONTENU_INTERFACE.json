@@ -1,0 +1,353 @@
+{
+  "version": "PRISME web — brief du 22 octobre 2026",
+  "langue": "fr",
+  "statut": "Spécification éditoriale à intégrer ; site non modifié par cette livraison.",
+  "routes": {
+    "modele": "#/",
+    "illustrations": "#/illustrations"
+  },
+  "accueil": {
+    "titre": "Comment la conception de la valeur oriente le jugement",
+    "sous_titre": "PRISME relie la raison de valoriser une action aux critères retenus et aux conclusions que leur appréciation permet de soutenir.",
+    "enonce_modele": "Une conception de la valeur oriente la propriété retenue comme critère et le raisonnement qui permet de passer de son appréciation au jugement.",
+    "chaine": [
+      "Conception de la valeur",
+      "Critère et appréciation",
+      "Jugement justifié"
+    ],
+    "conception_initiale": "S",
+    "sortie": "Une conclusion précise, son périmètre et ce qui reste à étayer.",
+    "dossier_commun": "Pour comparer les justifications, on conserve le même dossier : l’action, son objectif et toutes les informations disponibles.",
+    "detail_dossier": "Les informations favorables, défavorables et les lacunes documentées sont conservées dans les deux lectures. Ajouter une information crée une nouvelle version du dossier.",
+    "cta": "Voir le modèle sur un exemple",
+    "usages": [
+      {
+        "nom": "Audit",
+        "texte": "Partir d’une conclusion déjà formulée pour examiner le critère, sa raison de valeur, son périmètre, ses appuis et le raisonnement qui la justifie.",
+        "exemple": "Si un rapport affirme un bénéfice personnel à partir du seul transfert observé, l’audit précise l’appréciation du gain qui reste à documenter."
+      },
+      {
+        "nom": "Guidance",
+        "texte": "Partir de l’action et des raisons de la valoriser pour préciser les critères, les appuis à réunir et les règles d’appréciation.",
+        "exemple": "Pour l’aide à domicile, préparer la définition du besoin avec les destinataires, l’observation du transfert et le recueil de l’appréciation du gain."
+      }
+    ]
+  },
+  "conceptions": [
+    {
+      "id": "M",
+      "nom": "Maximisatrice",
+      "raison_courte": "Rechercher le bénéfice le plus élevé pour le système considéré.",
+      "rubriques": {
+        "qualification": "Bénéfice maximisé pour le système.",
+        "portee": "Système concerné ; horizon et options de la comparaison.",
+        "preuve": "Bénéfices et dommages pertinents ; éléments comparables sur les options.",
+        "regle": "Apprécier la contribution, puis la supériorité relative ou la maximisation selon l’affirmation visée."
+      },
+      "source_typologie": "DCJ2025",
+      "traduction_evaluative": "Synthèse PRISME ; manuscrit, section 4.2 et tableau 4."
+    },
+    {
+      "id": "I",
+      "nom": "Individualiste",
+      "raison_courte": "Apprécier le bénéfice pour la personne dans ses activités et ses relations.",
+      "rubriques": {
+        "qualification": "Bénéfice pour la personne dans son fonctionnement social.",
+        "portee": "Personne située ; personnes couvertes par la conclusion.",
+        "preuve": "Appréciation personnelle et éléments sur le bénéfice revendiqué.",
+        "regle": "Rapporter l’appréciation au bénéfice que la personne valorise."
+      },
+      "source_typologie": "DCJ2025",
+      "traduction_evaluative": "Synthèse PRISME ; manuscrit, section 4.2 et tableau 4."
+    },
+    {
+      "id": "S",
+      "nom": "Parties prenantes ciblées",
+      "raison_courte": "Répondre à un besoin commun identifié pour le groupe concerné.",
+      "rubriques": {
+        "qualification": "Réponse à un besoin commun identifié pour le groupe.",
+        "portee": "Groupe concerné, période et niveau de réponse visé.",
+        "preuve": "Besoin retenu, réponse documentée et personnes effectivement couvertes.",
+        "regle": "Apprécier la réponse au besoin dans le périmètre défini."
+      },
+      "source_typologie": "DCJ2025",
+      "traduction_evaluative": "Synthèse PRISME ; manuscrit, section 4.2 et tableau 4."
+    },
+    {
+      "id": "V",
+      "nom": "Vertueuse",
+      "raison_courte": "Examiner un bénéfice fondé sur un sens d’obligation morale.",
+      "rubriques": {
+        "qualification": "Bénéfice fondé sur un sens d’obligation morale.",
+        "portee": "Destinataires et situations couverts par l’obligation invoquée.",
+        "preuve": "Éléments permettant d’interpréter le rôle de l’obligation dans l’action.",
+        "regle": "Examiner le rôle de l’obligation dans l’engagement et le bénéfice anticipé ; étayer les effets lorsqu’ils sont revendiqués."
+      },
+      "source_typologie": "DCJ2025",
+      "traduction_evaluative": "Synthèse PRISME ; manuscrit, section 4.2 et tableau 4."
+    },
+    {
+      "id": "N",
+      "nom": "Normative",
+      "raison_courte": "Apprécier une conduite au regard d’un principe moral ou collectif.",
+      "rubriques": {
+        "qualification": "Conduite appréciée au regard d’un principe moral ou collectif.",
+        "portee": "Champ d’application du principe retenu.",
+        "preuve": "Justification du principe et éléments sur la conduite examinée.",
+        "regle": "Apprécier la conduite selon le principe et la manière justifiée de l’appliquer."
+      },
+      "source_typologie": "DCJ2025",
+      "traduction_evaluative": "Synthèse PRISME ; manuscrit, section 4.2 et tableau 4."
+    }
+  ],
+  "fonctions": [
+    {
+      "id": "qualification",
+      "intitule": "Ce qui compte, et pourquoi",
+      "terme": "Qualification",
+      "question": "Quelle propriété apprécie-t-on, et pourquoi compte-t-elle comme valeur ?",
+      "explication": "Propriété évaluée et raison de la valoriser, rapportées à la conception retenue.",
+      "arguments": [
+        "ARG-001",
+        "ARG-002",
+        "ARG-003",
+        "ARG-004",
+        "ARG-005",
+        "ARG-029",
+        "ARG-212"
+      ]
+    },
+    {
+      "id": "portee",
+      "intitule": "Pour qui, et dans quel périmètre",
+      "terme": "Portée",
+      "question": "Quelle affirmation vise-t-on, pour qui, sur quelle période et dans quel périmètre ?",
+      "explication": "Objet, personnes, horizon, contexte et options comparées lorsque la question en implique.",
+      "arguments": [
+        "ARG-243",
+        "ARG-244"
+      ]
+    },
+    {
+      "id": "preuve",
+      "intitule": "Sur quels appuis",
+      "terme": "Preuve",
+      "question": "Quels éléments étayent cette affirmation, ou faudrait-il réunir pour l’étayer ?",
+      "explication": "Observations, témoignages, relations établies ou interprétations argumentées selon la nature de l’énoncé.",
+      "arguments": [
+        "ARG-013",
+        "ARG-030",
+        "ARG-080",
+        "ARG-154",
+        "ARG-243"
+      ]
+    },
+    {
+      "id": "regle",
+      "intitule": "Ce qui permet de conclure",
+      "terme": "Règle d’appréciation",
+      "question": "Selon quelle règle conclut-on, et comment combine-t-on les appréciations si une synthèse est visée ?",
+      "explication": "Standard ou comparaison pour apprécier le critère ; priorité et composition pour un jugement d’ensemble.",
+      "arguments": [
+        "ARG-029",
+        "ARG-080",
+        "ARG-154"
+      ]
+    }
+  ],
+  "illustrations": {
+    "titre": "Ce que le même constat permet de conclure",
+    "mention": "Illustration construite",
+    "cas_initial": "aides-domicile",
+    "version_initiale": "A",
+    "couple_initial": [
+      "S",
+      "I"
+    ],
+    "principal": {
+      "id": "aides-domicile",
+      "titre": "Aides techniques à domicile",
+      "origine": "Manuscrit, section 4.3 et tableau 5 ; complément favorable explicitement prévu par cette comparaison.",
+      "sources": [
+        "DCJ2025"
+      ],
+      "versions": [
+        {
+          "id": "A",
+          "titre": "Dossier initial",
+          "faits_communs": "Des aides techniques sont installées à domicile pour faciliter la vie quotidienne. Le besoin de transfert du lit au fauteuil a été identifié avec les destinataires. Le standard convenu est de réaliser ce transfert sans aide humaine. Les observations établissent cette réalisation chez les personnes étudiées après l’aménagement. Le dossier ne renseigne pas encore ce que ce gain représente pour elles dans leurs activités et leurs relations.",
+          "lectures": [
+            {
+              "conception": "S",
+              "affirmation": "Une réponse au besoin de transfert est étayée.",
+              "statut_affichage": "Étayée dans le périmètre observé",
+              "portee": "Personnes et période effectivement observées dans ce dossier.",
+              "pourquoi": "Le besoin et le standard ont été convenus avec les destinataires ; le transfert sans aide humaine a été observé.",
+              "rubriques": {
+                "qualification": "La réponse au besoin de transfert retenu avec les destinataires compte comme bénéfice.",
+                "portee": "Personnes et période effectivement observées dans ce dossier.",
+                "preuve": "Le dossier documente le besoin convenu et la réalisation du transfert sans aide humaine.",
+                "regle": "Rapporter le transfert observé au besoin et au standard convenus."
+              }
+            },
+            {
+              "conception": "I",
+              "affirmation": "L’appréciation du gain dans les activités et les relations reste à établir.",
+              "statut_affichage": "À étayer",
+              "portee": "Personnes et période effectivement observées dans ce dossier.",
+              "pourquoi": "Le transfert est établi. Le besoin exprimé renseigne déjà ce qui est valorisé ; l’appréciation personnelle du gain réalisé reste inconnue.",
+              "rubriques": {
+                "qualification": "Le gain compte comme bénéfice selon l’appréciation de la personne dans ses activités et ses relations.",
+                "portee": "Personnes et période effectivement observées dans ce dossier.",
+                "preuve": "Le besoin exprimé et le standard convenu renseignent ce qui est valorisé. L’appréciation du gain dans les activités et les relations reste à établir.",
+                "regle": "Rapporter le transfert à l’appréciation du gain dans les activités et les relations de la personne."
+              }
+            }
+          ],
+          "explication": "Le même constat étaye une réponse au besoin de transfert, tandis que l’appréciation du bénéfice personnel reste à établir. Ces deux conclusions sont compatibles."
+        },
+        {
+          "id": "B",
+          "titre": "Dossier enrichi",
+          "herite_de": "A",
+          "bandeau": "Nouvelle version du dossier : une information a été ajoutée.",
+          "faits_communs": "Des aides techniques sont installées à domicile pour faciliter la vie quotidienne. Le besoin de transfert du lit au fauteuil a été identifié avec les destinataires. Le standard convenu est de réaliser ce transfert sans aide humaine. Les observations établissent cette réalisation chez les personnes étudiées après l’aménagement. L’appréciation du gain a désormais été recueillie auprès des mêmes personnes. Chacune décrit ce transfert sans aide comme un gain favorable dans ses activités et ses relations.",
+          "information_ajoutee": "L’appréciation du gain a été recueillie auprès des mêmes personnes. Chacune décrit ce transfert sans aide comme un gain favorable dans ses activités et ses relations.",
+          "lectures": [
+            {
+              "conception": "S",
+              "affirmation": "Une réponse au besoin de transfert est étayée.",
+              "statut_affichage": "Étayée dans le périmètre observé",
+              "portee": "Personnes et période effectivement observées dans ce dossier.",
+              "pourquoi": "Le besoin et le standard ont été convenus avec les destinataires ; le transfert sans aide humaine a été observé.",
+              "rubriques": {
+                "qualification": "La réponse au besoin de transfert retenu avec les destinataires compte comme bénéfice.",
+                "portee": "Personnes et période effectivement observées dans ce dossier.",
+                "preuve": "Le dossier documente le besoin convenu et la réalisation du transfert sans aide humaine.",
+                "regle": "Rapporter le transfert observé au besoin et au standard convenus."
+              }
+            },
+            {
+              "conception": "I",
+              "affirmation": "Le bénéfice personnel ainsi apprécié est étayé.",
+              "statut_affichage": "Étayé dans le périmètre observé",
+              "portee": "Personnes et période effectivement observées dans ce dossier.",
+              "pourquoi": "Les mêmes personnes apprécient favorablement le gain dans leurs activités et leurs relations.",
+              "rubriques": {
+                "qualification": "Le gain compte comme bénéfice selon l’appréciation de la personne dans ses activités et ses relations.",
+                "portee": "Personnes et période effectivement observées dans ce dossier.",
+                "preuve": "Le transfert est observé ; les appréciations recueillies auprès des mêmes personnes étayent le bénéfice ainsi défini.",
+                "regle": "Rapporter le transfert à l’appréciation du gain dans les activités et les relations de la personne."
+              }
+            }
+          ],
+          "explication": "Le dossier étaye désormais aussi le bénéfice personnel ainsi défini. La réponse au besoin de transfert reste étayée. Les deux qualifications convergent dans le périmètre étudié."
+        }
+      ],
+      "bouton_ajout": "Ajouter l’appréciation des personnes",
+      "bouton_retour": "Revenir au dossier initial",
+      "note_complement": "Une nouvelle confirmation du transfert conforterait le constat déjà établi. Le complément ajouté renseigne ici l’appréciation personnelle qui manquait.",
+      "details": {
+        "premisses": "Le besoin de transfert et son standard sont convenus avec les destinataires dans cette illustration. Leur accord renseigne déjà une partie de ce qu’ils valorisent. Le complément du dossier B suppose explicitement des appréciations favorables chez chacune des personnes concernées.",
+        "limite": "Les conclusions portent sur les affirmations et le périmètre indiqués. Cette illustration ne vise pas l’attribution causale du changement au seul aménagement ni un jugement global sur l’action.",
+        "deduction": "Le contraste transpose la distinction entre référence au besoin commun et appréciation personnelle du bénéfice. Les deux lectures partagent les faits et le standard de transfert."
+      }
+    },
+    "complementaires": [
+      {
+        "id": "acces-et-besoin",
+        "titre": "Accès garanti et réponse au besoin",
+        "origine": "Manuscrit, annexe B2 ; reformulation pédagogique.",
+        "sources": [
+          "DCJ2025",
+          "TEASDALE2023"
+        ],
+        "faits_communs": "Un accompagnement vise à aider les mêmes personnes à résoudre leurs difficultés administratives. Les observations établissent leur accès effectif au service pendant la période étudiée. Un principe explicite exige de garantir cet accès ; son standard est satisfait pour les personnes et les conditions qu’il couvre. Le dossier ne documente pas encore la résolution des difficultés.",
+        "lectures": [
+          {
+            "conception": "N",
+            "affirmation": "L’exigence d’accès est satisfaite dans le champ du principe retenu.",
+            "raison": "Les observations couvrent l’accès effectivement exigé par le principe."
+          },
+          {
+            "conception": "S",
+            "affirmation": "La réponse au besoin de résolution des difficultés reste à étayer.",
+            "raison": "L’accès est établi ; la réalisation recherchée ou une inférence fondée à son sujet reste à documenter."
+          }
+        ],
+        "enseignement": "L’accès établi et la réponse au besoin encore ouverte sont compatibles.",
+        "premisse_visible": "Le principe porte ici sur l’accès ; le besoin porte sur la résolution des difficultés.",
+        "detail": "Si le besoin portait lui-même sur l’accès, sa satisfaction pourrait constituer une réponse directe. La fonction de l’accès dépend des références explicitement retenues."
+      },
+      {
+        "id": "benefice-et-superiorite",
+        "titre": "Bénéfice constaté et supériorité",
+        "origine": "Manuscrit, annexe B3 ; reformulation pédagogique.",
+        "sources": [
+          "DCJ2025",
+          "KROEGER2014"
+        ],
+        "faits_communs": "Une évaluation étaye un bénéfice défini et son lien avec l’action pour un groupe et une période précisés. La visée est de maximiser ce bénéfice pour le système considéré. Le dossier ne fournit pas d’éléments comparables sur les autres options.",
+        "conception": "M",
+        "affirmations": [
+          {
+            "enonce": "L’action contribue au bénéfice défini.",
+            "conclusion": "Étayée dans le périmètre étudié."
+          },
+          {
+            "enonce": "L’action apporte davantage de ce bénéfice que les options considérées.",
+            "conclusion": "Supériorité comparative à étayer."
+          }
+        ],
+        "enseignement": "Le bénéfice déjà établi est conservé ; la prétention de supériorité appelle une comparaison justifiée.",
+        "complement": "Réunir des éléments comparables sur les options retenues. Une conclusion favorable resterait relative à cet ensemble d’options.",
+        "detail": "L’exigence de comparaison vaut pour toute affirmation de supériorité. Elle est ici reliée à la visée maximisatrice."
+      }
+    ]
+  },
+  "documentation": {
+    "titre": "Sources et construction du modèle",
+    "attributions": [
+      "Les cinq conceptions sont empruntées à de la Cruz Jara et Spanjol (2025 ; publication en ligne en 2024).",
+      "Le regroupement en quatre fonctions et l’articulation entre conception, critère et jugement constituent notre synthèse analytique.",
+      "Les illustrations sont construites à partir de distinctions théoriques et de prémisses explicites."
+    ],
+    "questions_analyse": [
+      "Q1. Pourquoi l’aspect considéré compte-t-il comme valeur, et pour qui ?",
+      "Q2. Quelles propositions faut-il établir pour l’évaluer au regard de cette raison de valoriser ?",
+      "Q3. Quelle conclusion ces éléments permettent-ils de justifier, dans quel périmètre et avec quelles réserves ?"
+    ],
+    "propositions": [
+      "Proposition 1. À propriété évaluée, standard et performance reconnus communs, la justification d’une affirmation de valeur dépend encore de la raison de valoriser cette propriété et du lien établi avec l’affirmation dans le périmètre revendiqué. Un constat commun peut étayer une affirmation selon une référence et laisser ouverte celle qu’appelle une autre. Ces appréciations peuvent être compatibles tout en appelant des compléments de justification différents.",
+      "Proposition 2. À référence de valeur et affirmation maintenues, la confirmation d’une performance déjà reconnue peut laisser intacte une réserve portant sur sa qualification comme bénéfice, sur l’extension de la conclusion ou sur une supériorité revendiquée. La résolution de cette réserve demande des appuis ou un raisonnement portant sur la relation concernée."
+    ],
+    "note_statut": "Le modèle et ses usages d’audit et de guidance sont proposés sur une base conceptuelle. Leur utilité dans des évaluations effectives reste à étudier.",
+    "repertoire": {
+      "nombre_cellules": 55,
+      "specifications_proposees": 38,
+      "propositions_exploratoires": 11,
+      "relations_ouvertes": [
+        "I07",
+        "V05",
+        "V07",
+        "V08",
+        "V10",
+        "V11"
+      ],
+      "fonction": "Répertoire d’applications et de traçabilité."
+    }
+  },
+  "libelles": {
+    "detail_raisonnement": "Voir le raisonnement",
+    "detail_sources": "Sources et prémisses de cet exemple",
+    "autres_exemples": "Deux autres exemples",
+    "footer": "Modèle conceptuel · illustrations construites"
+  },
+  "etat_interface": {
+    "selection_conception_accueil": "indépendante du dossier guidé",
+    "entree_illustrations": "Afficher aides-domicile / A / S et I, sauf état explicitement demandé par une URL prise en charge.",
+    "ajout_information": "Créer B ; conserver les faits sur l’action, le besoin, le standard et le transfert ; remplacer dans l’affichage la lacune initiale par le complément prévu ; actualiser simultanément les deux lectures. Le texte complet faits_communs de B est fourni pour éviter de laisser la lacune résolue affichée comme actuelle. A reste accessible comme version historique.",
+    "retour_initial": "Restaurer A et ses conclusions.",
+    "sources_et_details": "Préserver le dossier et les choix courants."
+  }
+}

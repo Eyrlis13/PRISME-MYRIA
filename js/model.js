@@ -1,14 +1,14 @@
 /*
- * Accueil : la chaîne Conception de la valeur → Critère et appréciation → Jugement justifié.
- * Le choix d'une conception (prisme ou boutons) actualise les formulations courtes des quatre
- * rubriques sans reconstruire la page : les rubriques dépliées le restent.
+ * Accueil : Conception de la valeur sociale → Spécification de la garantie → Verdict.
+ * Le prisme (ou les boutons) choisit la conception ; le sélecteur choisit le domaine de critères.
+ * Les quatre cartes affichent la spécification du croisement (conception × domaine), ses appuis,
+ * et la carte du verdict sa réfutation. Rien n'est reconstruit : les cartes dépliées le restent.
  */
 (function () {
   var P = window.PRISME;
   var C = P.C;
   var A = C.accueil;
   var h = P.h;
-  var U = P.comp;
   var NS = "http://www.w3.org/2000/svg";
 
   function svgEl(tag, attrs) {
@@ -17,12 +17,22 @@
     return e;
   }
 
-  /* Les quatre fonctions communes aux cinq conceptions, et leur articulation (texte du brief). */
-  var NOTE_FONCTIONS = "Les quatre fonctions sont communes aux cinq conceptions. Les flèches représentent leur articulation argumentative ; une évaluation peut procéder par allers-retours.";
+  /* Liste des appuis d'une composante. */
+  P.appuisList = function (comp) {
+    var items = (comp.appuis || []).map(function (a) {
+      return h("li", null,
+        a.doi ? h("a", { href: "https://doi.org/" + a.doi, target: "_blank", rel: "noopener noreferrer", text: a.source + ", " + a.loc }) : h("span", { text: a.source + ", " + a.loc }),
+        h("span", { class: "ap-what", text: " · " + a.ce_que }));
+    });
+    return [
+      h("p", { class: "ap-nat" }, "Nature : ", (comp.nature || []).map(P.nature).join(" + ")),
+      items.length ? h("ul", { class: "ap-list" }, items) : h("p", { class: "ap-none", text: "Aucun passage : dérivation à partir de la raison de valoriser et de la portée." }),
+    ];
+  };
 
   /*
-   * state : { conception: "M"|"I"|"S"|"V"|"N" }
-   * api : { setConception(id) }
+   * state : { conception: "M"|"I"|"S"|"V"|"N", domaine: "D01".."D11" }
+   * api : { setConception(id), setDomaine(id) }
    */
   P.renderModel = function (state, api) {
     var scene = h("section", { class: "optic model", id: "model", "aria-labelledby": "page-title" });
@@ -37,7 +47,7 @@
 
     var chain = h("div", { class: "chain" });
 
-    /* A. Conception de la valeur */
+    /* A. Conception de la valeur sociale */
     var blockA = h("section", { class: "c-a", "aria-labelledby": "chain-a" });
     var choose = h("div", { class: "c-choose" },
       h("h3", { class: "chain-k", id: "chain-a" }, h("span", { class: "chain-n", text: "A" }), A.chaine[0]));
@@ -45,7 +55,7 @@
     var buttons = {};
     var reason = h("p", { class: "c-reason", id: "c-reason", "aria-live": "polite" });
     C.conceptions.forEach(function (c) {
-      var b = h("button", { type: "button", class: "c-btn", "data-c": c.id, "aria-pressed": "false", "aria-describedby": null,
+      var b = h("button", { type: "button", class: "c-btn", "data-c": c.id, "aria-pressed": "false",
         onclick: function () { select(c.id, true); } }, c.nom);
       buttons[c.id] = b;
       list.appendChild(h("li", null, b));
@@ -53,13 +63,13 @@
     choose.appendChild(list);
     var typo = P.ref("DCJ2025");
     choose.appendChild(h("p", { class: "c-src" }, "Typologie : ",
-      h("a", { href: typo.url, target: "_blank", rel: "noopener noreferrer", class: "light" }, P.refLabel(typo))));
+      h("a", { href: typo.url, target: "_blank", rel: "noopener noreferrer", class: "light" }, typo.court)));
 
     var prismCol = h("div", { class: "c-prism" },
       h("span", { class: "lamp-glow", "data-anchor": "lamp", "aria-hidden": "true" }));
     var dial = P.createDial({
       uid: "m", conceptions: P.conceptions, conceptionId: state.conception, rays: P.rays, initial: A.conception_initiale,
-      name: "Prisme des cinq conceptions de la valeur",
+      name: "Prisme des cinq conceptions de la valeur sociale",
       onChange: function (id) { select(id, false); },
     });
     prismCol.appendChild(dial.el);
@@ -67,34 +77,46 @@
     blockA.appendChild(prismCol);
     chain.appendChild(blockA);
 
-    /* B. Critère et appréciation */
+    /* B. Spécification de la garantie, pour un domaine de critères */
     var blockB = h("section", { class: "c-b frame", "aria-labelledby": "chain-b" });
+    var sel = h("select", { class: "dom-select", id: "dom-select", "aria-label": "Domaine de critères",
+      onchange: function () { setDomaine(sel.value); } },
+      C.domaines.map(function (d) { return h("option", { value: d.id, text: d.nom }); }));
+    var domDef = h("p", { class: "dom-def" });
+    var stChip = h("p", { class: "st-chip" });
+    var question = h("p", { class: "dom-q" });
     blockB.appendChild(h("div", { class: "c-b-head" },
       h("h3", { class: "chain-k", id: "chain-b" }, h("span", { class: "chain-n", text: "B" }), A.chaine[1]),
-      h("p", { class: "c-note", text: NOTE_FONCTIONS })));
+      h("label", { class: "dom-lab", for: "dom-select", text: "Domaine de critères" }), sel, domDef, stChip, question,
+      h("p", { class: "c-note", text: A.note_composantes })));
     var rubs = h("ol", { class: "rubs" });
-    var formulations = {};
-    P.fonctions.forEach(function (f, i) {
+    var formulations = {}, appuis = {};
+    P.composantes.forEach(function (f, i) {
       var col = P.colors[f.id];
       var fEl = h("p", { class: "rub-f" });
-      formulations[f.id] = fEl;
+      var apEl = h("div", { class: "rub-ap" });
+      formulations[f.id] = fEl; appuis[f.id] = apEl;
       rubs.appendChild(h("li", { class: "rub", "data-f": f.id, style: "--dim:" + col.ray + ";--dim-tint:" + col.tint },
         h("h4", { class: "rub-t" }, h("span", { class: "dot", "aria-hidden": "true" }), f.intitule),
         h("p", { class: "rub-term", text: f.terme }),
         fEl,
-        h("details", { class: "rub-more" }, h("summary", { text: "Question et explication" }),
-          h("p", { class: "rub-q", text: f.question }),
-          h("p", { text: f.explication }))));
-      if (i < P.fonctions.length - 1) rubs.appendChild(h("li", { class: "rub-arrow", "aria-hidden": "true" }, h("span", { text: "→" })));
+        h("details", { class: "rub-more" }, h("summary", { text: "Appuis" }),
+          h("p", { class: "rub-q", text: f.explication }), apEl)));
+      if (i < P.composantes.length - 1) rubs.appendChild(h("li", { class: "rub-arrow", "aria-hidden": "true" }, h("span", { text: "→" })));
     });
     blockB.appendChild(rubs);
     chain.appendChild(blockB);
 
-    /* C. Jugement justifié */
+    /* C. Verdict sur la revendication */
+    var refut = h("p", { class: "judge-ref" });
     chain.appendChild(h("section", { class: "c-c", "aria-labelledby": "chain-c" },
       h("div", { class: "judge-card", "data-anchor": "judge" },
         h("h3", { class: "chain-k dark", id: "chain-c" }, h("span", { class: "chain-n", text: "C" }), A.chaine[2]),
-        h("p", { class: "judge-out", text: A.sortie }))));
+        h("p", { class: "judge-out", text: A.verdict_intro }),
+        h("ul", { class: "v-list" }, C.verdicts.map(function (v) {
+          return h("li", { class: "v-item" }, h("span", { class: "vchip v-" + v.id, text: v.nom }), h("span", { class: "v-def", text: v.definition }));
+        })),
+        h("div", { class: "judge-foot" }, h("p", { class: "lab", text: C.refutation.terme }), refut))));
     inner.appendChild(chain);
 
     /* dossier commun */
@@ -104,8 +126,32 @@
       h("details", { class: "more" }, h("summary", { text: "Détail" }), h("p", { text: A.detail_dossier }))));
 
     inner.appendChild(h("div", { class: "m-cta" },
-      h("a", { class: "btn cta", href: "#/illustrations", id: "to-illustrations", text: A.cta })));
+      h("a", { class: "btn cta", href: "#/illustration", id: "to-illustration", text: A.cta })));
 
+    function fill() {
+      var s = P.spec(state.conception, state.domaine);
+      var d = P.domaine(state.domaine);
+      var st = P.statut(s.statut);
+      domDef.textContent = d.definition;
+      stChip.textContent = "Spécification " + st.nom.toLowerCase();
+      stChip.className = "st-chip st-" + s.statut.toLowerCase();
+      stChip.title = st.definition;
+      question.textContent = s.question ? "« " + s.question + " »" : "";
+      P.composantes.forEach(function (f) {
+        var comp = s[f.id];
+        formulations[f.id].textContent = comp.texte;
+        appuis[f.id].textContent = "";
+        P.appuisList(comp).forEach(function (n) { appuis[f.id].appendChild(n); });
+      });
+      refut.textContent = s.refutation.texte;
+      scene.classList.toggle("is-open", s.statut === "Open");
+    }
+    function setDomaine(id) {
+      state.domaine = id; sel.value = id;
+      if (api && api.setDomaine) api.setDomaine(id);
+      fill();
+      requestAnimationFrame(function () { P.drawModelRays(scene); });
+    }
     function select(id, rotate) {
       var c = P.conception(id);
       state.conception = id;
@@ -116,27 +162,35 @@
         if (on) buttons[k].parentNode.appendChild(reason);
       });
       reason.textContent = c.raison_courte;
-      P.fonctions.forEach(function (f) { formulations[f.id].textContent = c.rubriques[f.id]; });
+      fill();
       if (rotate) dial.rotateTo(id);
       if (api && api.setConception) api.setConception(id);
       requestAnimationFrame(function () { P.drawModelRays(scene); });
     }
+    sel.value = state.domaine;
     select(state.conception, false);
 
     scene._dial = dial;
     return scene;
   };
 
-  /* « À quoi sert PRISME ? » : deux usages, sous la scène. */
+  /* Sous la scène : usages, propositions, intégrité inférentielle. */
   P.renderUsages = function () {
-    return h("section", { class: "page usages", "aria-labelledby": "usages-t" },
-      h("h2", { id: "usages-t", text: "À quoi sert PRISME ?" }),
-      h("div", { class: "use-grid" }, A.usages.map(function (u) {
-        return h("article", { class: "card use" },
-          h("h3", { text: u.nom }),
-          h("p", { text: u.texte }),
-          h("p", { class: "use-ex" }, h("span", { class: "lab inline", text: "Exemple · " }), u.exemple));
-      })));
+    return h("div", null,
+      h("section", { class: "page props", "aria-labelledby": "props-t" },
+        h("h2", { id: "props-t", text: "Trois propositions" }),
+        h("div", { class: "prop-grid" }, A.propositions.map(function (p) {
+          return h("article", { class: "card prop" }, h("p", { class: "prop-id", text: p.id }), h("h3", { text: p.titre }), h("p", { text: p.texte }));
+        })),
+        h("p", { class: "integ" }, h("span", { class: "lab inline", text: "Intégrité inférentielle · " }), A.integrite)),
+      h("section", { class: "page usages", "aria-labelledby": "usages-t" },
+        h("h2", { id: "usages-t", text: "À quoi sert PRISME ?" }),
+        h("div", { class: "use-grid" }, A.usages.map(function (u) {
+          return h("article", { class: "card use" },
+            h("h3", { text: u.nom }),
+            h("p", { text: u.texte }),
+            h("p", { class: "use-ex" }, h("span", { class: "lab inline", text: "Exemple · " }), u.exemple));
+        }))));
   };
 
   /* ---------- faisceaux, calculés d'après la mise en page ---------- */
@@ -162,19 +216,20 @@
     var judge = rect(scene.querySelector('[data-anchor="judge"]'));
     var frame = rect(scene.querySelector(".c-b"));
     var n = cards.length;
+    var open = scene.classList.contains("is-open");
     var stacked = n > 1 && cards[1].t > cards[0].b - 2;
     cards.forEach(function (c, j) {
       var color = P.rays[j];
       var spread = (j - (n - 1) / 2) * 4;
+      var cls = open && j > 0 ? " faint" : "";
       var d;
       if (!stacked) {
         d = curveV({ x: ex.x + spread, y: ex.y }, { x: c.cx, y: c.t + 1 });
-        path(d, "ray-glow", color); path(d, "ray-core", color);
+        path(d, "ray-glow" + cls, color); path(d, "ray-core" + cls, color);
         var tx = judge.l + 24 + (judge.w - 48) * (j + 0.5) / n;
         var d2 = curveV({ x: c.cx, y: c.b - 1 }, { x: tx, y: judge.t + 1 });
-        path(d2, "ray-glow", color); path(d2, "ray-core thin", color);
+        path(d2, "ray-glow" + cls, color); path(d2, "ray-core thin" + cls, color);
       } else {
-        /* téléphone : un couloir à gauche des rubriques, puis jusqu'au jugement */
         var lane = frame.l + 10 + j * 5;
         var ty = c.t + 20;
         var y1 = Math.max(ex.y + 10, frame.t - 24 + j * 5);
@@ -183,10 +238,10 @@
           " Q " + x0 + " " + y1 + ", " + (x0 - 10) + " " + y1 +
           " L " + (lane + 10) + " " + y1 + " Q " + lane + " " + y1 + ", " + lane + " " + (y1 + 10) +
           " L " + lane + " " + (ty - 8) + " Q " + lane + " " + ty + ", " + (lane + 8) + " " + ty + " L " + (c.l + 2) + " " + ty;
-        path(d, "ray-glow", color); path(d, "ray-core", color);
+        path(d, "ray-glow" + cls, color); path(d, "ray-core" + cls, color);
         var jy = judge.t + 18 + j * 6;
         var dd = "M" + lane + " " + ty + " L " + lane + " " + (jy - 8) + " Q " + lane + " " + jy + ", " + (lane + 8) + " " + jy + " L " + (judge.l + 2) + " " + jy;
-        path(dd, "ray-core thin", color);
+        path(dd, "ray-core thin" + cls, color);
       }
     });
   };

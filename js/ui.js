@@ -48,27 +48,22 @@
 
   /* Volet « Sources et construction du modèle ». */
   U.openSources = function () {
-    var D = C.documentation;
-    var rep = D.repertoire;
+    var A = C.accueil;
     U.openDrawer(h("div", { class: "drawer-body" },
       h("p", { class: "eyebrow", text: "Documentation" }),
-      h("h2", { id: "drawer-title", text: D.titre }),
-      h("p", { class: "lead", text: C.accueil.enonce_modele }),
-      U.section("Attributions", h("ul", { class: "plain" }, D.attributions.map(function (t) { return h("li", { text: t }); }))),
-      U.section("Questions d'analyse", h("ul", { class: "plain" }, D.questions_analyse.map(function (t) { return h("li", { text: t }); }))),
-      U.section("Propositions", D.propositions.map(function (t) { return U.p(t); })),
-      U.section("Les quatre fonctions", h("dl", { class: "fn-def" }, M.rubriques.map(function (r, i) {
-        var f = C.fonctions[i];
-        return [h("dt", { style: "--dim:" + P.colors[f.id].ray }, f.terme + " · " + r.fonction),
-          h("dd", null, U.p(r.contenu), U.p(r.absence, "muted small"),
-            h("p", { class: "muted small" }, "Appuis : ", S.appuis_par_fonction[f.id].map(function (id) { return P.refLabel(P.ref(id)); }).join(" ; ")))];
+      h("h2", { id: "drawer-title", text: "Sources et construction du modèle" }),
+      h("p", { class: "lead", text: A.enonce_modele }),
+      U.section("Construction", [U.p("PRISME adapte la typologie des cinq conceptions de la valeur sociale de de la Cruz Jara et Spanjol (2025) par le modèle de l’argument de Toulmin (1958) : la conception est le fondement de la garantie qui mène des preuves du dossier à la revendication de valeur."),
+        U.p("Les spécifications des 55 croisements (cinq conceptions, onze domaines de critères) reposent sur la définition de chaque conception et sur 44 arguments publiés, vérifiés dans leurs sources. " + M.decompte.proposees + " sont proposées, " + M.decompte.exploratoires + " exploratoires et " + M.decompte.ouvertes + " ouvertes.", "muted small")]),
+      U.section("Les quatre composantes", h("dl", { class: "fn-def" }, C.composantes.map(function (f) {
+        return [h("dt", { style: "--dim:" + P.colors[f.id].ray }, f.terme), h("dd", null, U.p(f.explication), h("p", { class: "muted small" }, "Appuis : " + M.appuis_composantes[f.id].join(" ; ")))];
       })), "small-gap"),
-      U.p(M.justification_regroupement, "muted small"),
-      U.section("Statut", [U.p(D.note_statut), U.p(M.ce_qui_reste_a_eprouver, "muted small")]),
-      U.section("Références", [U.refList(S.references.map(function (r) { return r.id; }), true), U.p(S.precision, "muted small")]),
-      h("details", { class: "more" }, h("summary", { text: "Traçabilité" }),
-        U.p("Répertoire de " + rep.nombre_cellules + " croisements entre conceptions et fonctions : " + rep.specifications_proposees + " formulations proposées, " + rep.propositions_exploratoires + " exploratoires et " + rep.relations_ouvertes.length + " relations ouvertes (" + rep.relations_ouvertes.join(", ") + "). " + rep.fonction),
-        U.p("Le répertoire n'est pas publié sur ce site ; ses statuts sont conservés dans le fichier de référence.", "muted small"),
-        U.p("Modèle de référence : " + M.version + ". " + M.statut, "muted small"))));
+      U.section("Verdicts", h("dl", { class: "fn-def" }, C.verdicts.map(function (v) { return [h("dt", null, v.nom), h("dd", null, U.p(v.definition))]; }))),
+      U.section("Propositions", A.propositions.map(function (p) { return U.p(p.id + " · " + p.texte); })),
+      U.section("Intégrité inférentielle", U.p(A.integrite)),
+      U.section("Domaines de critères", U.p(C.domaines_source, "muted small")),
+      U.section("Références", [h("ul", { class: "ref-list" }, S.references.map(function (r) {
+        return h("li", { class: "ref" }, r.url ? h("a", { href: r.url, target: "_blank", rel: "noopener noreferrer", text: r.court }) : h("span", { text: r.court }), h("span", { class: "ref-title", text: " · " + r.apa.replace(/^[^)]*\)\.\s*/, "").replace(/\s*https:\/\/doi\.org\/\S+$/, "") }));
+      })), U.p(S.precision, "muted small")])));
   };
 })();

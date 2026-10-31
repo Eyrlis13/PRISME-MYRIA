@@ -1,10 +1,12 @@
-/* Utilitaires et accès aux contenus (window.PRISME_DATA : contenu, modèle de référence, sources). */
+/* Utilitaires et accès aux contenus (window.PRISME_DATA : contenu, modèle, sources, illustration, rapports). */
 (function () {
   var P = (window.PRISME = window.PRISME || {});
   var DATA = window.PRISME_DATA;
   var C = (P.C = DATA.contenu);
   P.M = DATA.modele;
-  var S = (P.S = DATA.sources);
+  P.S = DATA.sources;
+  P.X = DATA.illustration;
+  P.R = DATA.rapports || [];
 
   /* Création d'éléments DOM. Les textes passent toujours par textContent. */
   P.h = function (tag, attrs) {
@@ -30,26 +32,28 @@
     return el;
   };
 
-  /* Les cinq conceptions, dans l'ordre du contenu : ce sont les cinq faces du prisme. */
+  /* Les cinq conceptions : les cinq faces du prisme. */
   P.conceptions = C.conceptions.map(function (c) { return { id: c.id, label: c.nom }; });
   P.conception = function (id) { return C.conceptions.filter(function (c) { return c.id === id; })[0]; };
+  P.domaine = function (id) { return C.domaines.filter(function (d) { return d.id === id; })[0]; };
+  P.verdict = function (id) { return C.verdicts.filter(function (v) { return v.id === id; })[0]; };
+  P.statut = function (id) { return C.statuts.filter(function (s) { return s.id === id; })[0]; };
+  P.nature = function (n) { return C.natures[n] || n; };
 
-  /* Les quatre fonctions (rubriques), communes aux cinq conceptions. Couleurs d'identification
-     reprises de la version précédente : bleu pâle, ambre, vert, lavande. Elles ne codent aucun résultat. */
-  P.fonctions = C.fonctions;
+  /* Spécification d'un croisement : P.spec("S", "D06"). */
+  P.spec = function (cid, did) { return P.M.specifications[cid + did.slice(1)]; };
+
+  /* Les quatre composantes de la spécification de la garantie. Couleurs d'identification
+     (bleu pâle, ambre, vert, lavande) : elles ne codent aucun résultat. */
+  P.composantes = C.composantes;
   P.colors = {
-    qualification: { ray: "#7aa6e0", tint: "#e9f0fa" },
+    raison: { ray: "#7aa6e0", tint: "#e9f0fa" },
     portee: { ray: "#f0b54a", tint: "#fcf2df" },
-    preuve: { ray: "#6cc192", tint: "#e6f4eb" },
+    preuves: { ray: "#6cc192", tint: "#e6f4eb" },
     regle: { ray: "#b49be6", tint: "#f0eafb" },
   };
-  P.rays = C.fonctions.map(function (f) { return P.colors[f.id].ray; });
+  P.rays = C.composantes.map(function (f) { return P.colors[f.id].ray; });
 
-  P.ref = function (id) { return S.references.filter(function (r) { return r.id === id; })[0]; };
-  P.refLabel = function (r) {
-    var a = r.auteurs.map(function (x) { return x.split(" ").slice(-1)[0]; });
-    var who = a.length > 2 ? a[0] + " et al." : a.join(" et ");
-    if (r.id === "DCJ2025") who = "de la Cruz Jara et Spanjol";
-    return who + " (" + r.annee + ")";
-  };
+  P.ref = function (id) { return P.S.references.filter(function (r) { return r.id === id; })[0]; };
+  P.refLabel = function (r) { return r.court; };
 })();
