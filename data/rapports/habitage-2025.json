@@ -1,0 +1,729 @@
+{
+ "id": "habitage-2025",
+ "titre": "Habit’âge : nos actions, nos résultats, notre impact",
+ "organisation": "Habit’âge (association)",
+ "annee": 2025,
+ "perimetre": "Ateliers collectifs de trois jours, répartis sur environ deux mois, que l’association Habit’âge organise depuis 2018 avec un acteur local (CCAS, centre social, CLIC) pour aider des personnes retraitées du Maine-et-Loire à réfléchir à leur habitat et à le choisir.",
+ "donnees": "Questionnaire rempli par le participant à la fin de l’atelier et entretien téléphonique un an après, pour 127 participants (moyenne d’âge 74,3 ans, en grande majorité des femmes) de 20 communes, de janvier 2023 à juin ou juillet 2025 selon les passages ; le rapport ne donne ni l’énoncé des questions ni le nombre de répondants par question ou par année, et ne présente pour l’entretien à un an que la part des participants vivant seuls.",
+ "source": "Synthèse d’impact publique d’une page (2025).",
+ "analyse": {
+  "par": "compétence prisme-rapport (Claude Code)",
+  "date": "2026-10-31",
+  "modele": "PRISME 2.0"
+ },
+ "revendications": [
+  {
+   "id": "R1",
+   "enonce": "Les ateliers ont renforcé le pouvoir d’agir de 90 % des participants en matière d’habitat, par la clarification de leurs envies, la découverte de nouvelles formes d’habitat et la connaissance des acteurs ressources du territoire.",
+   "court": "Pouvoir d’agir",
+   "citation": "De janvier 2023 à juin 2025, pour 90% des participants, les ateliers ont permis de renforcer leur pouvoir d’agir en matière d’habitat grâce à la clarification de leurs envies, à la découverte de nouvelles formes d’habitat, mais également à l’acquisition de nouvelles connaissances des acteurs ressources de leur territoire.",
+   "pages": "p. 1",
+   "domaine": "D01",
+   "propriete": "Le pouvoir d’agir des participants en matière d’habitat.",
+   "portee": "Les participants aux ateliers de janvier 2023 à juin 2025 : 127 personnes de 20 communes du Maine-et-Loire.",
+   "preuves": [
+    {
+     "texte": "Graphique « Augmentation de la capacité à agir » : 42 % plutôt d’accord et 49,7 % tout à fait d’accord ; les trois autres réponses ne sont pas chiffrées ; ni l’énoncé de la question, ni le moment du recueil, ni le nombre de répondants ne sont donnés.",
+     "pages": "p. 1"
+    },
+    {
+     "texte": "Le chiffre de 90 % n’est rattaché à aucun graphique ni à aucune question.",
+     "pages": "p. 1"
+    },
+    {
+     "texte": "Clarification des envies en matière d’habitat, sur une échelle d’accord de 1 à 5 : 42 % au niveau 5 (tout à fait d’accord), 46,5 % au niveau 4, 10,8 % au niveau 3.",
+     "pages": "p. 1"
+    },
+    {
+     "texte": "Principaux bénéfices cités à chaud en 2025 : 82,6 % la découverte de nouvelles formes d’habitat, 52,2 % une clarification de leurs envies et besoins, 47,8 % une meilleure connaissance des acteurs ressources, 41,3 % un sentiment de confiance renforcé pour réfléchir à leur habitat.",
+     "pages": "p. 1"
+    },
+    {
+     "texte": "Recueil par un questionnaire rempli par le participant à la fin de l’atelier et par un entretien téléphonique un an après.",
+     "pages": "p. 1"
+    },
+    {
+     "texte": "Analyse : les ateliers soutiennent un « pouvoir réflexif » des personnes, présenté comme élément fondamental du pouvoir d’agir.",
+     "pages": "p. 1"
+    }
+   ],
+   "conception_invoquee": {
+    "id": "I",
+    "mode": "reconstruite",
+    "premisse": "L’accompagnement de la réflexion des seniors dans leur choix d’habiter est primordial pour leur permettre de décider de la manière dont ils souhaitent vivre et donc habiter, au regard de leur désir, de leur territoire et de leurs moyens, p. 1"
+   },
+   "lectures": {
+    "M": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Le pouvoir d’agir renforcé compte par le bénéfice net qu’il apporte au système formé des participants, de leurs proches, des partenaires locaux et des services de l’habitat.",
+      "portee": "Participants, proches, partenaires (CCAS, centres sociaux, CLIC) et services, sur un horizon commun ; situation sans les ateliers.",
+      "preuves": "Effets sur chaque composante et leur attribution aux ateliers ; ressources consommées ; situation sans les ateliers.",
+      "regle": "Apprécier le bénéfice net ; pour conclure à une supériorité, classer les options selon une règle justifiée."
+     },
+     "verdict": "suspens",
+     "manque": "Effets sur les proches, les partenaires et les services ; ressources consommées ; situation sans les ateliers ; attribution du renforcement aux ateliers.",
+     "integre": "42 % des répondants sont plutôt d’accord et 49,7 % tout à fait d’accord avec une augmentation de leur capacité à agir ; le bénéfice net pour le système reste à établir."
+    },
+    "I": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Le pouvoir d’agir vaut par ce que chaque personne devient capable de décider pour son habitat, selon son désir, son territoire et ses moyens.",
+      "portee": "Chaque participant, de la fin de l’atelier à un an après ; la source et le moment de chaque appréciation.",
+      "preuves": "Appréciation de chaque personne et sa possibilité de l’exprimer ; éléments sur ce qu’elle peut désormais décider ou faire ; changements dans le temps et autres influences, puisque le renforcement est attribué aux ateliers.",
+      "regle": "Distinguer l’expérience exprimée, la capacité acquise et l’attribution, en restant attentif à l’adaptation ; conclure au niveau documenté."
+     },
+     "verdict": "suspens",
+     "manque": "Ce que les participants peuvent désormais décider ou faire pour leur habitat, que l’entretien à un an pouvait documenter ; l’énoncé de la question, le moment du recueil et le nombre de répondants ; l’origine du chiffre de 90 %.",
+     "integre": "42 % des répondants sont plutôt d’accord et 49,7 % tout à fait d’accord avec une augmentation de leur capacité à agir, à un moment que le rapport ne précise pas ; ce que ce renforcement change dans leurs décisions sur leur habitat reste à établir."
+    },
+    "S": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Renforcer le pouvoir d’agir sur l’habitat répond à un besoin commun des personnes retraitées, à condition qu’il ait été identifié avec elles.",
+      "portee": "Les participants des 20 communes ; réalisation à l’issue de l’atelier ou changement durable.",
+      "preuves": "Besoin identifié avec les personnes retraitées ; réponse documentée au niveau revendiqué ; personnes effectivement couvertes.",
+      "regle": "Apprécier la réponse au niveau du besoin retenu ; ne conclure à un changement durable qu’avec un suivi."
+     },
+     "verdict": "suspens",
+     "manque": "Le besoin d’agir sur son habitat, identifié avec les personnes : la « volonté d’être acteur de leurs choix » figure dans l’analyse sans que le rapport dise d’où elle vient, et ne compte pas parmi les motifs de participation ; le nombre de répondants ; un résultat de l’entretien à un an.",
+     "integre": "42 % des répondants sont plutôt d’accord et 49,7 % tout à fait d’accord avec une augmentation de leur capacité à agir ; la réponse à un besoin défini avec les personnes retraitées et sa persistance restent à documenter."
+    },
+    "V": {
+     "statut_croisement": "Proposed",
+     "options": [
+      {
+       "id": "choisir-habitat",
+       "libelle": "Volonté de permettre à chacun de réfléchir et de choisir son habitat",
+       "source": "rapport, p. 1",
+       "garantie": {
+        "raison": "Le pouvoir d’agir renforcé compte s’il procède de la volonté d’Habit’âge de permettre à chacun de réfléchir et de choisir son habitat.",
+        "portee": "Les personnes retraitées du Maine-et-Loire ; l’engagement, distingué de l’effet revendiqué.",
+        "preuves": "Contenu de l’engagement et sa justification ; actes qui s’y rapportent ; bénéfices anticipés.",
+        "regle": "Examiner la cohérence entre l’engagement et la conduite des ateliers ; un effet produit appelle une seconde garantie."
+       },
+       "verdict": "suspens",
+       "manque": "Une seconde garantie pour l’effet revendiqué ; la justification morale de l’engagement, que le rapport énonce sans l’argumenter.",
+       "integre": "Habit’âge énonce la volonté de permettre à chacun de réfléchir et de choisir son habitat, et organise depuis 2018 des ateliers de trois jours avec des acteurs locaux ; le renforcement du pouvoir d’agir relève d’une seconde garantie."
+      },
+      {
+       "id": "sollicitude",
+       "libelle": "Devoir de sollicitude envers des personnes rendues vulnérables par l’âge",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "Le pouvoir d’agir renforcé compte s’il procède d’un devoir de sollicitude qu’Habit’âge reconnaît envers les personnes retraitées.",
+        "portee": "Les participants, dont certains en début de perte d’autonomie ou vivant seuls ; l’engagement, distingué de l’effet revendiqué.",
+        "preuves": "Énoncé du devoir par l’organisation ; engagement qu’il soutient ; bénéfices anticipés.",
+        "regle": "Examiner la cohérence entre le devoir et la conduite des ateliers ; un effet produit appelle une seconde garantie."
+       },
+       "verdict": "suspens",
+       "manque": "L’énoncé de ce devoir par Habit’âge ; une seconde garantie pour l’effet revendiqué.",
+       "integre": "42 % des répondants sont plutôt d’accord et 49,7 % tout à fait d’accord avec une augmentation de leur capacité à agir ; le lien avec un devoir de sollicitude de l’organisation reste à documenter."
+      }
+     ]
+    },
+    "N": {
+     "statut_croisement": "Proposed",
+     "options": [
+      {
+       "id": "acteur-choix",
+       "libelle": "Être acteur de ses propres choix, en conscience et en liberté",
+       "source": "rapport, p. 1",
+       "garantie": {
+        "raison": "Ce principe exige que chaque personne vieillissante décide elle-même de son habitat, en connaissance de cause et sans contrainte.",
+        "portee": "Les participants, dans les choix d’habitat qu’ils envisagent.",
+        "preuves": "Justification du principe ; choix que les personnes font ou préparent elles-mêmes, et leurs conditions ; ce que l’organisation met en œuvre.",
+        "regle": "Comparer les choix documentés à l’exigence du principe, personne par personne."
+       },
+       "verdict": "suspens",
+       "manque": "Les choix d’habitat que les participants font ou préparent, et les conditions de ces choix ; l’énoncé de la question sur la capacité à agir et le nombre de répondants.",
+       "integre": "Habit’âge organise des ateliers pour que les personnes retraitées soient actrices de leurs choix d’habitat, et 42 % des répondants sont plutôt d’accord et 49,7 % tout à fait d’accord avec une augmentation de leur capacité à agir ; leurs choix et les conditions de ces choix restent à documenter."
+      },
+      {
+       "id": "choix-de-vie",
+       "libelle": "Choix de vie : être libre d’exercer ses choix et de déterminer son mode de vie (Charte des droits et libertés de la personne âgée en situation de handicap ou de dépendance, art. 1)",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "Ce principe exige que la personne âgée devenue handicapée ou dépendante reste libre de déterminer son mode de vie, habitat compris.",
+        "portee": "Les participants en situation de handicap ou de dépendance, dont le rapport dit seulement que certains sont en début de perte d’autonomie.",
+        "preuves": "Participants que couvre le principe ; choix qu’ils exercent sur leur mode de vie ; ce que l’organisation met en œuvre.",
+        "regle": "Comparer les choix documentés à l’exigence du principe, dans son champ d’application."
+       },
+       "verdict": "suspens",
+       "manque": "Les participants en situation de handicap ou de dépendance et les choix qu’ils exercent sur leur mode de vie.",
+       "integre": "Certains participants sont en début de perte d’autonomie, et 42 % des répondants sont plutôt d’accord et 49,7 % tout à fait d’accord avec une augmentation de leur capacité à agir ; la liberté de choix des personnes que couvre la Charte reste à documenter."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "R2",
+   "enonce": "Les ateliers font acquérir aux personnes retraitées des connaissances sur les nouvelles formes d’habitat, sur les acteurs ressources du territoire et sur les aides techniques.",
+   "court": "Connaissances acquises",
+   "citation": "Acquisition de connaissances par les personnes retraitées sur les acteurs ressources du territoire concernant l’habitat : professionnels clés,...",
+   "pages": "p. 1",
+   "domaine": "D01",
+   "propriete": "Les connaissances des participants sur les formes d’habitat, les acteurs ressources du territoire et les aides techniques.",
+   "portee": "Les participants aux ateliers de 2023 à 2025.",
+   "preuves": [
+    {
+     "texte": "Graphique « Perception par les participants de l’acquisition de connaissances », pour 2023, 2024 et 2025 : découverte de nouvelles formes d’habitat 87,9 %, 93,9 % et 75 % ; meilleure connaissance des acteurs ressources du territoire 67,2 %, 83,7 % et 50 % ; connaissance des aides techniques sur l’habitat 41,4 %, 38,8 % et 50 % ; autre 3,4 %, 18,4 % et 25 %.",
+     "pages": "p. 1"
+    },
+    {
+     "texte": "Principaux bénéfices cités à chaud en 2025 : découverte des nouvelles formes d’habitat 82,6 %, meilleure connaissance des acteurs ressources 47,8 %, connaissance des aides techniques 30,4 %.",
+     "pages": "p. 1"
+    },
+    {
+     "texte": "Motifs de participation : avoir une meilleure connaissance sur le sujet et sur les professionnels de l’habitat senior, découvrir des solutions innovantes d’habitat ; « le premier motif est de s’informer sur les différentes formes d’habitats ».",
+     "pages": "p. 1"
+    },
+    {
+     "texte": "Ni le nombre de répondants par année ni l’énoncé des questions ne sont donnés.",
+     "pages": "p. 1"
+    }
+   ],
+   "conception_invoquee": {
+    "id": "N",
+    "mode": "reconstruite",
+    "premisse": "Permettre aux personnes retraitées d’avoir les clés de compréhension pour être actrice de ses choix, en conscience et en liberté, p. 1"
+   },
+   "lectures": {
+    "M": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Les connaissances acquises comptent par le bénéfice net qu’elles apportent, par les choix qu’elles permettent, au système formé des participants, de leurs proches et des services de l’habitat.",
+      "portee": "Participants, proches et services, sur un horizon commun ; situation sans les ateliers.",
+      "preuves": "Effets des connaissances sur les choix et les recours, pour chaque composante ; ressources consommées ; situation sans les ateliers.",
+      "regle": "Apprécier le bénéfice net ; pour conclure à une supériorité, classer les options selon une règle justifiée."
+     },
+     "verdict": "suspens",
+     "manque": "Ce que les connaissances changent dans les choix et les recours des participants ; effets sur les autres composantes ; ressources consommées ; situation sans les ateliers.",
+     "integre": "Selon l’année, 75 % à 93,9 % des répondants déclarent avoir découvert de nouvelles formes d’habitat ; le bénéfice net pour le système reste à établir."
+    },
+    "I": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Les connaissances valent par ce qu’elles ouvrent à chaque personne dans ses choix d’habitat, selon ses besoins et ses préférences.",
+      "portee": "Chaque participant, à l’issue de l’atelier ; la source de chaque appréciation ; chaque thème de connaissance.",
+      "preuves": "Appréciation de chaque personne sur ce que l’atelier lui a appris ; source et moment de cette appréciation.",
+      "regle": "Rapporter les connaissances que chaque personne reconnaît avoir acquises à la revendication, thème par thème ; une connaissance déclarée n’établit pas l’usage qui en est fait."
+     },
+     "verdict": "bornee",
+     "manque": "Le nombre de répondants par année et les participants qui n’ont pas répondu ; pour les aides techniques, l’acquisition ne concerne que la moitié des répondants au plus.",
+     "integre": "Selon l’année, 75 % à 93,9 % des répondants déclarent avoir découvert de nouvelles formes d’habitat, 50 % à 83,7 % mieux connaître les acteurs ressources du territoire et 38,8 % à 50 % connaître les aides techniques sur l’habitat."
+    },
+    "S": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Faire connaître les formes d’habitat et les acteurs ressources répond à un besoin commun des personnes retraitées, s’informer, à condition qu’il ait été identifié avec elles.",
+      "portee": "Les participants des 20 communes ; réalisation à l’issue de l’atelier.",
+      "preuves": "Besoin identifié avec le groupe ; réponse documentée au niveau revendiqué ; personnes effectivement couvertes.",
+      "regle": "Apprécier directement une réalisation immédiate qui correspond au besoin, dans la portée définie."
+     },
+     "verdict": "bornee",
+     "manque": "La couverture des 127 participants, le nombre de répondants par année n’étant pas donné.",
+     "integre": "S’informer sur les formes d’habitat est le premier motif des participants, et selon l’année 75 % à 93,9 % des répondants déclarent avoir découvert de nouvelles formes d’habitat et 50 % à 83,7 % mieux connaître les acteurs ressources du territoire ; la couverture de l’ensemble des participants reste à documenter."
+    },
+    "V": {
+     "statut_croisement": "Proposed",
+     "options": [
+      {
+       "id": "cles-comprehension",
+       "libelle": "Donner aux personnes retraitées les clés de compréhension pour être actrices de leurs choix",
+       "source": "rapport, p. 1",
+       "garantie": {
+        "raison": "Les connaissances acquises comptent si elles procèdent de l’engagement d’Habit’âge à donner aux personnes retraitées les clés de compréhension de leurs choix.",
+        "portee": "Les personnes retraitées du Maine-et-Loire ; l’engagement, distingué de l’effet revendiqué.",
+        "preuves": "Contenu de l’engagement et sa justification ; actes qui s’y rapportent ; bénéfices anticipés.",
+        "regle": "Examiner la cohérence entre l’engagement et la conduite des ateliers ; un effet produit appelle une seconde garantie."
+       },
+       "verdict": "suspens",
+       "manque": "Une seconde garantie pour l’acquisition revendiquée ; le contenu des ateliers, que le rapport ne décrit qu’à travers les thèmes du questionnaire.",
+       "integre": "Habit’âge s’engage à donner aux personnes retraitées les clés de compréhension de leurs choix d’habitat et organise à cette fin des ateliers avec des acteurs locaux ; l’acquisition des connaissances relève d’une seconde garantie."
+      },
+      {
+       "id": "sollicitude",
+       "libelle": "Devoir de sollicitude envers des personnes rendues vulnérables par l’âge",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "Les connaissances acquises comptent si elles procèdent d’un devoir de sollicitude qu’Habit’âge reconnaît envers les personnes retraitées.",
+        "portee": "Les participants ; l’engagement, distingué de l’effet revendiqué.",
+        "preuves": "Énoncé du devoir par l’organisation ; engagement qu’il soutient ; bénéfices anticipés.",
+        "regle": "Examiner la cohérence entre le devoir et la conduite des ateliers ; un effet produit appelle une seconde garantie."
+       },
+       "verdict": "suspens",
+       "manque": "L’énoncé de ce devoir par Habit’âge ; une seconde garantie pour l’effet revendiqué.",
+       "integre": "Selon l’année, 75 % à 93,9 % des répondants déclarent avoir découvert de nouvelles formes d’habitat ; le lien avec un devoir de sollicitude de l’organisation reste à documenter."
+      }
+     ]
+    },
+    "N": {
+     "statut_croisement": "Proposed",
+     "options": [
+      {
+       "id": "choix-eclaire",
+       "libelle": "Être acteur de ses propres choix, en conscience et en liberté",
+       "source": "rapport, p. 1",
+       "garantie": {
+        "raison": "Ce principe exige que chaque personne dispose des clés de compréhension nécessaires pour choisir son habitat en connaissance de cause.",
+        "portee": "Les participants, pour les choix d’habitat qu’ils envisagent.",
+        "preuves": "Justification du principe ; connaissances dont disposent les participants sur les options d’habitat et les recours ; ce que l’organisation met en œuvre.",
+        "regle": "Comparer les connaissances documentées à ce qu’exige un choix éclairé, thème par thème."
+       },
+       "verdict": "bornee",
+       "manque": "Les connaissances des participants qui n’ont pas répondu ; la connaissance des aides techniques, que la moitié des répondants au plus déclarent.",
+       "integre": "Selon l’année, 75 % à 93,9 % des répondants déclarent avoir découvert de nouvelles formes d’habitat et 50 % à 83,7 % mieux connaître les acteurs ressources du territoire ; 38,8 % à 50 % seulement déclarent connaître les aides techniques sur l’habitat."
+      },
+      {
+       "id": "anticipation",
+       "libelle": "Prévention de la perte d’autonomie par l’anticipation de l’adaptation du logement",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "Ce principe exige que les personnes retraitées connaissent, avant d’en avoir besoin, les moyens techniques et financiers d’adapter leur logement.",
+        "portee": "Les participants, dont certains en début de perte d’autonomie, avant une rupture dans leur parcours.",
+        "preuves": "Justification du principe ; connaissance des aides techniques et des financements ; démarches d’anticipation engagées ; ce que l’organisation met en œuvre.",
+        "regle": "Comparer les connaissances et les démarches documentées à l’exigence du principe."
+       },
+       "verdict": "suspens",
+       "manque": "La connaissance des financements, que le rapport ne mesure pas alors qu’anticiper le volet financier figure parmi les motifs de participation ; les démarches d’adaptation engagées, que l’entretien à un an pouvait documenter.",
+       "integre": "Selon l’année, 38,8 % à 50 % des répondants déclarent connaître les aides techniques sur l’habitat ; la connaissance des financements et les démarches d’anticipation restent à documenter."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "R3",
+   "enonce": "Les ateliers aident les personnes retraitées à décider de leur parcours résidentiel et à le choisir librement, en accord avec leur projet de vie.",
+   "court": "Décision et libre choix",
+   "citation": "Aide à la décision et au libre choix dans leur parcours residentiel",
+   "pages": "p. 1",
+   "domaine": "D01",
+   "propriete": "La décision et le libre choix des participants dans leur parcours résidentiel.",
+   "portee": "Les participants aux ateliers, dans leur parcours résidentiel après l’atelier.",
+   "preuves": [
+    {
+     "texte": "Perception de la clarification de leurs envies en matière d’habitat, sur une échelle d’accord de 1 à 5 : 42 % au niveau 5, 46,5 % au niveau 4, 10,8 % au niveau 3 et un faible segment non chiffré au niveau 2 ; ni le moment du recueil ni le nombre de répondants ne sont précisés.",
+     "pages": "p. 1"
+    },
+    {
+     "texte": "Principaux bénéfices cités à chaud en 2025 : 52,2 % une clarification de leurs envies et besoins concernant leur habitat, 41,3 % un sentiment de confiance renforcé pour réfléchir à leur habitat.",
+     "pages": "p. 1"
+    },
+    {
+     "texte": "Entretien téléphonique un an après l’atelier : la seule donnée présentée pour ce temps est la part des participants vivant seuls, 80 % contre 55,4 % « après ».",
+     "pages": "p. 1"
+    },
+    {
+     "texte": "Analyse : l’atelier s’inscrit dans un processus d’aide à la décision, « à partir de leurs propres réalités » ; thèmes relevés : volonté d’être acteur de leurs choix, besoin de réassurance sur le sujet du vieillissement, cheminement, étapes, déclencheur.",
+     "pages": "p. 1"
+    },
+    {
+     "texte": "Résultats énoncés sans données : explicitation par les participants de leur parcours de vie en lien avec leur habitat ; appropriation du cheminement et de la réflexion sur leur habitat.",
+     "pages": "p. 1"
+    },
+    {
+     "texte": "Motifs de participation : ne pas être pris au dépourvu ; anticiper l’aménagement de leur logement sur un volet technique et financier.",
+     "pages": "p. 1"
+    }
+   ],
+   "conception_invoquee": {
+    "id": "I",
+    "mode": "reconstruite",
+    "premisse": "Réfléchir au choix, c’est se demander comment on arrive à un projet d’habiter le plus en adéquation possible avec son projet de vie, p. 1"
+   },
+   "lectures": {
+    "M": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Le choix résidentiel préparé compte par le bénéfice net qu’il apporte au système formé des participants, de leurs proches et des services de l’habitat et du maintien à domicile.",
+      "portee": "Participants, proches et services, sur un horizon commun ; situation sans les ateliers.",
+      "preuves": "Choix effectués et leurs effets sur chaque composante, attribués aux ateliers ; ressources consommées ; situation sans les ateliers.",
+      "regle": "Apprécier le bénéfice net ; pour conclure à une supériorité, classer les options selon une règle justifiée."
+     },
+     "verdict": "suspens",
+     "manque": "Les choix effectués et leurs effets sur chaque composante ; ressources consommées ; situation sans les ateliers.",
+     "integre": "46,5 % des répondants au niveau 4 et 42 % au niveau 5 d’une échelle d’accord déclarent une clarification de leurs envies en matière d’habitat ; le bénéfice net pour le système reste à établir."
+    },
+    "I": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Le choix vaut par l’accord entre le projet d’habiter que chaque personne forme et son propre projet de vie.",
+      "portee": "Chaque participant, de la fin de l’atelier à un an après ; la source de chaque appréciation.",
+      "preuves": "Appréciation de chaque personne ; éléments sur la décision prise ou préparée et son accord avec le projet de vie ; changements dans le temps, puisque l’aide est attribuée aux ateliers.",
+      "regle": "Distinguer la clarification exprimée, la décision réalisée et l’attribution aux ateliers, en restant attentif à l’adaptation."
+     },
+     "verdict": "suspens",
+     "manque": "Les décisions ou démarches des participants sur leur habitat et leur accord avec leur projet de vie ; l’entretien à un an ne restitue que la part des personnes vivant seules.",
+     "integre": "46,5 % des répondants au niveau 4 et 42 % au niveau 5 d’une échelle d’accord déclarent une clarification de leurs envies en matière d’habitat ; l’aide à la décision et au libre choix reste à établir."
+    },
+    "S": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Aider à décider de son habitat répond à un besoin commun des personnes retraitées, ne pas être pris au dépourvu, à condition qu’il ait été identifié avec elles.",
+      "portee": "Les participants ; clarification à l’issue de l’atelier ou décisions durables dans le parcours résidentiel.",
+      "preuves": "Besoin identifié avec le groupe ; réponse documentée au niveau revendiqué, la clarification immédiate distinguée des décisions ultérieures ; personnes couvertes.",
+      "regle": "Apprécier directement une réalisation immédiate qui correspond au besoin ; ne conclure à une décision durable qu’avec un suivi."
+     },
+     "verdict": "bornee",
+     "manque": "Les décisions ou démarches après l’atelier, que l’entretien à un an pouvait documenter ; le nombre de répondants.",
+     "integre": "Ne pas être pris au dépourvu figure parmi les motifs des participants, et en 2025, 52,2 % des répondants citent à chaud une clarification de leurs envies et besoins concernant leur habitat ; l’aide à la décision dans leur parcours résidentiel, au-delà de l’atelier, reste à documenter."
+    },
+    "V": {
+     "statut_croisement": "Proposed",
+     "options": [
+      {
+       "id": "choisir-habitat",
+       "libelle": "Volonté de permettre à chacun de réfléchir et de choisir son habitat",
+       "source": "rapport, p. 1",
+       "garantie": {
+        "raison": "L’aide au choix résidentiel compte si elle procède de la volonté d’Habit’âge de permettre à chacun de réfléchir et de choisir son habitat.",
+        "portee": "Les personnes retraitées du Maine-et-Loire ; l’engagement, distingué de l’effet revendiqué.",
+        "preuves": "Contenu de l’engagement et sa justification ; actes qui s’y rapportent ; bénéfices anticipés.",
+        "regle": "Examiner la cohérence entre l’engagement et la conduite des ateliers ; un effet produit appelle une seconde garantie."
+       },
+       "verdict": "suspens",
+       "manque": "Une seconde garantie pour l’aide à la décision revendiquée ; la justification morale de cette volonté.",
+       "integre": "Habit’âge énonce la volonté de permettre à chacun de réfléchir et de choisir son habitat, et conçoit ses ateliers comme une aide à la décision partant des réalités de chaque personne ; l’aide effective au choix relève d’une seconde garantie."
+      },
+      {
+       "id": "sollicitude",
+       "libelle": "Devoir de sollicitude envers des personnes rendues vulnérables par l’âge",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "L’aide au choix résidentiel compte si elle procède d’un devoir de sollicitude qu’Habit’âge reconnaît envers les personnes retraitées.",
+        "portee": "Les participants, dont certains en début de perte d’autonomie ou vivant seuls ; l’engagement, distingué de l’effet revendiqué.",
+        "preuves": "Énoncé du devoir par l’organisation ; engagement qu’il soutient ; bénéfices anticipés.",
+        "regle": "Examiner la cohérence entre le devoir et la conduite des ateliers ; un effet produit appelle une seconde garantie."
+       },
+       "verdict": "suspens",
+       "manque": "L’énoncé de ce devoir par Habit’âge ; une seconde garantie pour l’effet revendiqué.",
+       "integre": "La majorité des répondants déclarent une clarification de leurs envies en matière d’habitat ; le lien avec un devoir de sollicitude de l’organisation reste à documenter."
+      }
+     ]
+    },
+    "N": {
+     "statut_croisement": "Proposed",
+     "options": [
+      {
+       "id": "libre-choix",
+       "libelle": "Libre choix du parcours résidentiel",
+       "source": "rapport, p. 1",
+       "garantie": {
+        "raison": "Le principe de libre choix exige que chaque personne décide elle-même de son parcours résidentiel, parmi des options qu’elle connaît, sans qu’on choisisse à sa place.",
+        "portee": "Les participants, dans leur parcours résidentiel après l’atelier.",
+        "preuves": "Justification du principe ; décisions ou démarches des personnes et leurs conditions ; ce que l’organisation met en œuvre.",
+        "regle": "Comparer les décisions documentées à l’exigence du principe."
+       },
+       "verdict": "suspens",
+       "manque": "Les décisions ou démarches des participants et les conditions dans lesquelles elles sont prises ; la justification du principe, que le rapport énonce sans l’argumenter.",
+       "integre": "Les ateliers font découvrir des options d’habitat, et 46,5 % des répondants au niveau 4 et 42 % au niveau 5 d’une échelle d’accord déclarent une clarification de leurs envies ; le libre choix exercé dans leur parcours résidentiel reste à documenter."
+      },
+      {
+       "id": "cadre-de-vie",
+       "libelle": "Cadre de vie : pouvoir choisir un lieu de vie adapté à ses attentes et à ses besoins (Charte des droits et libertés de la personne âgée en situation de handicap ou de dépendance, art. 2)",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "Ce principe exige que la personne âgée en situation de handicap ou de dépendance puisse choisir un lieu de vie, domicile personnel ou collectif, adapté à ses attentes et à ses besoins.",
+        "portee": "Les participants en situation de handicap ou de dépendance, que le rapport n’identifie pas.",
+        "preuves": "Participants que couvre le principe ; options de lieu de vie qui leur sont accessibles et choix effectués ; ce que l’organisation met en œuvre.",
+        "regle": "Comparer les choix documentés à l’exigence du principe, dans son champ d’application."
+       },
+       "verdict": "suspens",
+       "manque": "Les participants en situation de handicap ou de dépendance ; les options qui leur sont accessibles et les choix qu’ils font.",
+       "integre": "Certains participants sont en début de perte d’autonomie, et les ateliers font découvrir de nouvelles formes d’habitat ; leur possibilité de choisir un lieu de vie adapté reste à documenter."
+      },
+      {
+       "id": "vivre-chez-soi",
+       "libelle": "Vivre chez soi aussi longtemps que possible (Principes des Nations unies pour les personnes âgées, 1991)",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "Ce principe exige que les personnes âgées puissent demeurer à leur domicile aussi longtemps que possible.",
+        "portee": "Les participants qui vivent à domicile, sur la durée de leur parcours résidentiel.",
+        "preuves": "Justification du principe ; maintien à domicile des participants et adaptations réalisées ; ce que l’organisation met en œuvre.",
+        "regle": "Comparer le maintien à domicile documenté à l’exigence du principe, en gardant visible la tension avec le libre choix d’un habitat collectif."
+       },
+       "verdict": "suspens",
+       "manque": "Le lieu de vie des participants après l’atelier et les adaptations réalisées ; l’entretien à un an ne restitue que la part des personnes vivant seules.",
+       "integre": "Les ateliers abordent l’aménagement du logement et les aides techniques, que 38,8 % à 50 % des répondants déclarent connaître selon l’année ; le maintien à domicile des participants reste à documenter."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "R4",
+   "enonce": "Les ateliers offrent aux participants une expérience d’écoute et de respect qui instaure un lien de confiance et de partage entre eux et avec l’animatrice.",
+   "court": "Écoute et confiance",
+   "citation": "L’association a fait le choix de proposer un atelier de 3 jours, sur une durée de 2 mois environ, qui permettent ainsi de créer et d’instaurer un véritable lien de confiance et de partage entre les participants ainsi qu’avec l’animatrice.",
+   "pages": "p. 1",
+   "domaine": "D03",
+   "propriete": "L’expérience vécue dans les ateliers : écoute, climat, confiance et partage.",
+   "portee": "Les participants aux ateliers, pendant les trois jours d’atelier.",
+   "preuves": [
+    {
+     "texte": "Grille de satisfaction : seules les réponses « très satisfait » et « totalement satisfait » y figurent ; totalement satisfaits : 54,3 % pour le contenu, 58,7 % pour les méthodes et supports, 78,3 % pour la qualité des animateurs, 67,4 % pour le climat général (ambiance, respect), 67,4 % pour le sentiment d’être écouté ; ni l’année ni le nombre de répondants ne sont précisés.",
+     "pages": "p. 1"
+    },
+    {
+     "texte": "Courbe « Perception par les participants d’avoir été écouté et soutenu lors de l’atelier », de 2023 à 2025, sans valeur affichée : au-dessus de 75 % chaque année, en hausse.",
+     "pages": "p. 1"
+    },
+    {
+     "texte": "Principaux bénéfices cités à chaud en 2025 : 58,7 % de nouvelles rencontres ou échanges enrichissants avec d’autres participants.",
+     "pages": "p. 1"
+    },
+    {
+     "texte": "Motifs de participation : échanger et partager des expériences et des préoccupations ; l’animation en collectif est décrite comme une source de motivation pour nouer de nouveaux liens.",
+     "pages": "p. 1"
+    },
+    {
+     "texte": "Format de trois jours sur environ deux mois ; personnalisation de chaque temps collectif au regard des envies et besoins des personnes retraitées et des partenaires.",
+     "pages": "p. 1"
+    }
+   ],
+   "conception_invoquee": {
+    "id": null,
+    "mode": "aucune"
+   },
+   "lectures": {
+    "M": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "L’expérience vécue dans les ateliers compte comme composante du bénéfice net pour les participants, si la définition du bénéfice retenu l’intègre.",
+      "portee": "Participants, y compris ceux qui n’ont pas répondu, et animatrices ; période des ateliers ; définition du bénéfice retenu.",
+      "preuves": "Expériences favorables et défavorables rapportées ; expérience distinguée de l’attitude envers l’atelier ; chevauchements avec les bénéfices déjà comptés.",
+      "regle": "Intégrer l’expérience au bilan net selon une règle d’inclusion explicite ; si elle sert de moyen, établir sa contribution aux effets ultérieurs."
+     },
+     "verdict": "suspens",
+     "manque": "Une définition du bénéfice qui intègre l’expérience ; l’expérience distinguée de la satisfaction envers l’atelier ; les expériences des non-répondants ; les ressources consommées.",
+     "integre": "Les répondants à la grille de satisfaction se disent tous très ou totalement satisfaits du climat général et du sentiment d’être écoutés ; la place de cette expérience dans un bénéfice net reste à établir."
+    },
+    "I": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Être écouté, partager et nouer des liens peuvent faire partie du bénéfice que chaque participant reconnaît dans l’atelier.",
+      "portee": "Chaque participant entendu, pendant l’atelier ; la source et le contexte de chaque appréciation ; l’expérience appréciée.",
+      "preuves": "Attentes et critères de la personne ; son appréciation de l’écoute, du climat et des liens ; contexte du recueil.",
+      "regle": "Préciser qui a été entendu et garder en vue la diversité des expériences, sans laisser une majorité favorable fixer la valeur de chaque expérience."
+     },
+     "verdict": "bornee",
+     "manque": "Le nombre de répondants et l’année de la grille ; l’appréciation du lien de confiance lui-même, que la grille n’interroge pas ; les expériences des participants qui n’ont pas répondu.",
+     "integre": "Les participants qui ont rempli la grille de satisfaction, dont le rapport ne donne ni le nombre ni l’année, se disent tous très ou totalement satisfaits du climat général et du sentiment d’être écoutés, à 67,4 % totalement ; en 2025, 58,7 % des répondants citent de nouvelles rencontres ou des échanges enrichissants."
+    },
+    "S": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "L’expérience de l’atelier compte si elle fait partie du besoin commun des participants, échanger et partager, ou conditionne la réflexion recherchée.",
+      "portee": "Les participants ; membres du groupe dont les expériences peuvent différer, hommes et femmes, personnes seules ou en couple.",
+      "preuves": "Prémisse reliant l’expérience au besoin partagé ; expériences différenciées au sein du groupe ; lien entre la confiance instaurée et la réflexion recherchée.",
+      "regle": "Conclure sur la fonction de l’expérience que documente le dossier : réponse au besoin d’échanger, ou moyen du cheminement de réflexion."
+     },
+     "verdict": "suspens",
+     "manque": "Les expériences différenciées au sein du groupe, au-delà d’une grille agrégée ; le lien entre la confiance instaurée et le cheminement de réflexion, que le rapport affirme sans le documenter.",
+     "integre": "Échanger et partager figure parmi les motifs des participants, et les répondants à la grille se disent tous très ou totalement satisfaits du climat et de l’écoute ; les expériences différenciées au sein du groupe et le rôle de la confiance dans la réflexion restent à documenter."
+    },
+    "V": {
+     "statut_croisement": "Exploratory",
+     "options": [
+      {
+       "id": "eclairer-guider",
+       "libelle": "Éclairer et guider les personnes dans leurs choix, à partir de leurs propres réalités",
+       "source": "rapport, p. 1",
+       "garantie": {
+        "raison": "L’écoute et la confiance comptent comme expression de l’engagement d’Habit’âge à éclairer et guider chaque personne à partir de ses propres réalités, si ce devoir porte sur la relation avec elle.",
+        "portee": "Les participants, dans les situations d’atelier où s’applique cet engagement.",
+        "preuves": "Contenu du devoir relationnel ; pratiques d’animation et engagements envers les participants ; expériences des participants, comme éléments sur l’interprétation de ce devoir.",
+        "regle": "Examiner la congruence des pratiques avec le devoir tel qu’il est spécifié, en distinguant la satisfaction des participants de l’orientation de l’agent."
+       },
+       "verdict": "suspens",
+       "manque": "Le devoir relationnel que cet engagement exprime, que le rapport n’explicite pas ; les pratiques d’animation, décrites seulement par le format et la personnalisation.",
+       "integre": "Habit’âge s’engage à éclairer et guider les personnes à partir de leurs propres réalités et a choisi un format de trois jours sur deux mois pour instaurer la confiance ; le devoir relationnel qui fonderait cet engagement reste à expliciter."
+      },
+      {
+       "id": "sollicitude",
+       "libelle": "Devoir de sollicitude envers des personnes rendues vulnérables par l’âge",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "L’écoute et la confiance comptent comme expression d’un devoir de sollicitude qu’Habit’âge reconnaîtrait envers des personnes que le vieillissement rend vulnérables.",
+        "portee": "Les participants, dont certains en début de perte d’autonomie ou vivant seuls, dans les situations d’atelier.",
+        "preuves": "Énoncé du devoir par l’organisation ; pratiques d’animation qui le traduisent ; expériences des participants.",
+        "regle": "Examiner la congruence des pratiques avec le devoir, en distinguant la satisfaction des participants de l’orientation de l’agent."
+       },
+       "verdict": "suspens",
+       "manque": "L’énoncé de ce devoir par Habit’âge ; les pratiques d’animation qui le traduiraient.",
+       "integre": "Les répondants à la grille se disent tous très ou totalement satisfaits du sentiment d’être écoutés ; le lien avec un devoir de sollicitude de l’organisation reste à documenter."
+      }
+     ]
+    },
+    "N": {
+     "statut_croisement": "Proposed",
+     "options": [
+      {
+       "id": "personnaliser",
+       "libelle": "Personnaliser chaque temps collectif au regard des envies et besoins des personnes",
+       "source": "rapport, p. 1",
+       "garantie": {
+        "raison": "Ce principe exige que chaque temps collectif soit ajusté aux envies et aux besoins des personnes présentes.",
+        "portee": "Les participants, dans chaque temps collectif des ateliers.",
+        "preuves": "Signification de la personnalisation retenue ; pratiques documentées d’ajustement aux envies et aux besoins ; écarts entre l’engagement et le déroulé des ateliers.",
+        "regle": "Qualifier chaque situation examinée au regard de l’exigence telle qu’elle est explicitée."
+       },
+       "verdict": "suspens",
+       "manque": "Les pratiques de personnalisation, que le rapport énonce sans les décrire ; les situations où elle a manqué.",
+       "integre": "Le rapport énonce la personnalisation de chaque temps collectif, et les répondants à la grille se disent tous très ou totalement satisfaits du sentiment d’être écoutés ; la mise en œuvre de la personnalisation reste à décrire."
+      },
+      {
+       "id": "dignite",
+       "libelle": "Dignité : être traité avec équité et respect (Principes des Nations unies pour les personnes âgées, 1991)",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "Ce principe exige que chaque personne âgée soit traitée avec respect et équité dans la relation d’accompagnement.",
+        "portee": "Les participants, dans chaque situation d’atelier.",
+        "preuves": "Signification du respect dans ce cadre ; pratiques de traitement documentées ; écarts entre l’engagement et la vie des ateliers.",
+        "regle": "Qualifier chaque situation examinée au regard de l’exigence ; une satisfaction globale laisse ouvertes les situations non examinées."
+       },
+       "verdict": "suspens",
+       "manque": "Les pratiques de traitement dans les ateliers ; la signification du respect retenue ; les expériences des non-répondants.",
+       "integre": "Les répondants à la grille se disent tous très ou totalement satisfaits du climat général, ambiance et respect compris ; la conformité des pratiques à une exigence de dignité reste à documenter."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "R5",
+   "enonce": "Les ateliers font acquérir aux personnes retraitées une posture de relais auprès d’autres personnes retraitées (pair-aidance).",
+   "court": "Pair-aidance",
+   "citation": "Acquisition d’une posture de relais par les personnes retraitées auprès d’autres personnes retraitées, (pair-aidance)",
+   "pages": "p. 1",
+   "domaine": "D01",
+   "propriete": "Une posture de relais des participants auprès d’autres personnes retraitées.",
+   "portee": "Les participants aux ateliers et les personnes retraitées de leur entourage, au-delà de l’atelier.",
+   "preuves": [
+    {
+     "texte": "Principaux bénéfices cités à chaud en 2025 : 58,7 % de nouvelles rencontres ou échanges enrichissants avec d’autres participants, 41,3 % une envie de participer à d’autres activités ou démarches collectives.",
+     "pages": "p. 1"
+    },
+    {
+     "texte": "Motif de participation : échanger et partager des expériences et des préoccupations ; l’animation en collectif favorise de nouveaux liens et de nouvelles rencontres.",
+     "pages": "p. 1"
+    },
+    {
+     "texte": "Entretien téléphonique un an après l’atelier, dont aucune donnée sur un rôle de relais n’est présentée.",
+     "pages": "p. 1"
+    }
+   ],
+   "conception_invoquee": {
+    "id": null,
+    "mode": "aucune"
+   },
+   "lectures": {
+    "M": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "La posture de relais compte par le bénéfice net qu’elle apporte au système formé des participants, des personnes retraitées qu’ils relaient et des services de l’habitat.",
+      "portee": "Participants, personnes relayées et services, sur un horizon commun ; situation sans les ateliers.",
+      "preuves": "Relais exercés et leurs effets sur chaque composante ; ressources consommées ; situation sans les ateliers.",
+      "regle": "Apprécier le bénéfice net ; pour conclure à une supériorité, classer les options selon une règle justifiée."
+     },
+     "verdict": "suspens",
+     "manque": "Les relais exercés et leurs effets sur les personnes relayées ; ressources consommées ; situation sans les ateliers.",
+     "integre": "En 2025, 58,7 % des répondants citent à chaud de nouvelles rencontres ou échanges avec d’autres participants ; la posture de relais et le bénéfice net pour le système restent à établir."
+    },
+    "I": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "La posture de relais vaut par ce qu’elle apporte à chaque participant dans les relations auxquelles il tient, la possibilité de donner comprise.",
+      "portee": "Chaque participant, après l’atelier ; la source de chaque appréciation.",
+      "preuves": "Appréciation de chaque personne sur ce rôle ; éléments sur les relais exercés ; changements dans le temps.",
+      "regle": "Distinguer l’intention exprimée, le rôle réalisé et l’attribution aux ateliers ; conclure au niveau documenté."
+     },
+     "verdict": "suspens",
+     "manque": "Les relais exercés par les participants et leur appréciation de ce rôle.",
+     "integre": "En 2025, 41,3 % des répondants déclarent à chaud l’envie de participer à d’autres activités ou démarches collectives ; une posture de relais auprès d’autres retraités reste à établir."
+    },
+    "S": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Le relais entre pairs répond à un besoin commun des personnes retraitées du territoire, s’informer sur l’habitat et en échanger, à condition qu’il ait été identifié avec elles.",
+      "portee": "Les participants et les personnes retraitées qu’ils côtoient ; changement durable, au-delà de l’atelier.",
+      "preuves": "Besoin identifié avec le groupe ; relais documentés ; personnes atteintes par ces relais.",
+      "regle": "Apprécier la réponse dans la portée définie ; ne conclure à un changement durable qu’avec un suivi."
+     },
+     "verdict": "suspens",
+     "manque": "Les relais exercés et les personnes qu’ils atteignent ; un suivi au-delà de l’atelier.",
+     "integre": "Échanger et partager figure parmi les motifs des participants, et en 2025, 58,7 % des répondants citent à chaud de nouvelles rencontres ou échanges ; la posture de relais reste à documenter."
+    },
+    "V": {
+     "statut_croisement": "Proposed",
+     "options": [
+      {
+       "id": "choisir-habitat",
+       "libelle": "Volonté de permettre à chacun de réfléchir et de choisir son habitat",
+       "source": "rapport, p. 1",
+       "garantie": {
+        "raison": "La posture de relais compte si elle procède de la volonté d’Habit’âge de permettre à chacun, au-delà des participants, de réfléchir et de choisir son habitat.",
+        "portee": "Les personnes retraitées du territoire ; l’engagement, distingué de l’effet revendiqué.",
+        "preuves": "Contenu de l’engagement et sa justification ; actes qui s’y rapportent ; bénéfices anticipés.",
+        "regle": "Examiner la cohérence entre l’engagement et la conduite des ateliers ; un effet produit appelle une seconde garantie."
+       },
+       "verdict": "suspens",
+       "manque": "Une seconde garantie pour l’effet revendiqué ; les actes de l’association qui soutiennent la pair-aidance.",
+       "integre": "Habit’âge énonce la volonté de permettre à chacun de réfléchir et de choisir son habitat ; l’acquisition d’une posture de relais relève d’une seconde garantie et d’actes qui la soutiennent, que le rapport ne décrit pas."
+      },
+      {
+       "id": "solidarite",
+       "libelle": "Devoir de solidarité envers les personnes retraitées isolées",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "La posture de relais compte si elle procède d’un devoir de solidarité qu’Habit’âge reconnaît envers les personnes retraitées isolées.",
+        "portee": "Les personnes retraitées isolées du territoire ; l’engagement, distingué de l’effet revendiqué.",
+        "preuves": "Énoncé du devoir par l’organisation ; engagement qu’il soutient ; bénéfices anticipés.",
+        "regle": "Examiner la cohérence entre le devoir et la conduite des ateliers ; un effet produit appelle une seconde garantie."
+       },
+       "verdict": "suspens",
+       "manque": "L’énoncé de ce devoir par Habit’âge ; une seconde garantie pour l’effet revendiqué.",
+       "integre": "En 2025, 58,7 % des répondants citent à chaud de nouvelles rencontres ou échanges avec d’autres participants ; le lien avec un devoir de solidarité de l’organisation reste à documenter."
+      }
+     ]
+    },
+    "N": {
+     "statut_croisement": "Proposed",
+     "options": [
+      {
+       "id": "onu-participation",
+       "libelle": "Participation : servir la collectivité selon ses goûts et ses capacités (Principes des Nations unies pour les personnes âgées, 1991)",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "Ce principe exige que les personnes âgées puissent rechercher et saisir des occasions de servir la collectivité selon leurs goûts et leurs capacités.",
+        "portee": "Les participants, après l’atelier, dans leur entourage et leur commune.",
+        "preuves": "Justification du principe ; occasions de relais offertes et saisies ; ce que l’organisation met en œuvre.",
+        "regle": "Comparer les occasions et les relais documentés à l’exigence du principe."
+       },
+       "verdict": "suspens",
+       "manque": "Les occasions de relais que l’association offre et celles que les participants saisissent.",
+       "integre": "En 2025, 41,3 % des répondants déclarent à chaud l’envie de participer à d’autres activités ou démarches collectives ; les occasions de relais offertes et saisies restent à documenter."
+      },
+      {
+       "id": "savoir-experientiel",
+       "libelle": "Reconnaissance du savoir d’expérience des personnes concernées",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "Ce principe exige que le savoir que les personnes tirent de leur propre expérience soit reconnu et puisse servir à leurs pairs.",
+        "portee": "Les participants et les personnes retraitées auxquelles ils transmettent ce savoir.",
+        "preuves": "Justification du principe ; transmissions entre pairs documentées ; ce que l’organisation met en œuvre pour les reconnaître.",
+        "regle": "Comparer les transmissions et la reconnaissance documentées à l’exigence du principe."
+       },
+       "verdict": "suspens",
+       "manque": "Les transmissions entre pairs et ce que l’association met en œuvre pour les reconnaître.",
+       "integre": "Le rapport annonce une posture de relais entre personnes retraitées sans la décrire ; en 2025, 58,7 % des répondants citent à chaud de nouvelles rencontres ou échanges avec d’autres participants."
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

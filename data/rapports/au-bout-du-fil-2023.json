@@ -1,0 +1,743 @@
+{
+ "id": "au-bout-du-fil-2023",
+ "titre": "Association AU BOUT DU FIL · mesure d’impact social des animations partagées par téléphone, septembre 2023",
+ "organisation": "Au bout du Fil",
+ "annee": 2023,
+ "perimetre": "Animations partagées par téléphone (une séance de groupe hebdomadaire sur la mémoire, le mouvement et la prévention des chutes, le sommeil, le chant ou la méditation), proposées gratuitement par l’association Au bout du Fil à des personnes âgées de 80 ans et plus, retraitées du groupe Malakoff Humanis ; l’association propose aussi, depuis 2007, un appel de convivialité individuel.",
+ "donnees": "Enquête par téléphone menée par l’association en septembre 2023, après un an de séances, auprès de 200 personnes âgées présentées comme un « échantillon représentatif » : 110 réponses (marge d’erreur annoncée de 6,28 %) à des questions fermées de perception, sans mesure initiale ni groupe de comparaison ; les objectifs, dits dépassés, ne sont pas énoncés, et le rapport ne discute pas ses limites.",
+ "source": "Synthèse d’impact publique d’une page (mesure de septembre 2023).",
+ "analyse": { "par": "compétence prisme-rapport (Claude Code)", "date": "2026-10-31", "modele": "PRISME 2.0" },
+ "revendications": [
+  {
+   "id": "R1",
+   "enonce": "La participation aux animations partagées par téléphone a fortement réduit le sentiment de solitude des personnes âgées de 80 ans et plus qui y ont pris part.",
+   "court": "Sentiment de solitude",
+   "citation": "Sachant que 60 % de cette tranche d’âge vivent seul, on constate aussi un fort impact sur la réduction du sentiment de solitude.",
+   "pages": "p. 1",
+   "domaine": "D01",
+   "propriete": "Le sentiment de solitude des participants.",
+   "portee": "Les personnes âgées de 80 ans et plus qui ont participé pendant un an aux séances ; le rapport adosse la revendication aux 60 % de personnes de cette tranche d’âge qui vivent seules.",
+   "preuves": [
+    { "texte": "Question « Diminution du sentiment de solitude » : 70 % des répondants « tout à fait d’accord » et 28,2 % « plutôt d’accord » ; le reste, non chiffré, « plutôt pas d’accord ».", "pages": "p. 1" },
+    { "texte": "110 réponses sur 200 personnes âgées retraitées de Malakoff Humanis, recueillies par téléphone par l’association en septembre 2023, après un an de séances hebdomadaires ; marge d’erreur annoncée de 6,28 %.", "pages": "p. 1" },
+    { "texte": "Les participants sont présentés comme « vivant seules » ; le graphique de situation familiale indique 60,6 % de répondants vivant seuls et 39,4 % en couple.", "pages": "p. 1" },
+    { "texte": "Mission de « lutter contre la solitude et l’isolement de ces personnes âgées seules », fondée sur des données de l’INSEE : à 90 ans, 79 % des personnes vivent à domicile, dont 60 % seules.", "pages": "p. 1" }
+   ],
+   "conception_invoquee": { "id": "S", "mode": "reconstruite", "premisse": "Les personnes âgées seules, moins mobiles et peu équipées, partagent un problème de solitude et d’isolement que l’association s’est donné pour mission de combattre « fort de ce constat », p. 1" },
+   "lectures": {
+    "M": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "La réduction du sentiment de solitude compte par le bénéfice net qu’elle apporte au système formé des participants, de leurs proches, des services et des financeurs.",
+      "portee": "Participants, proches, services et financeurs, sur l’année de participation ; situation sans les séances.",
+      "preuves": "Effets sur chaque composante et leur attribution aux séances ; ressources consommées ; situation sans les séances.",
+      "regle": "Apprécier le bénéfice net ; pour conclure à une supériorité, classer les options selon une règle justifiée."
+     },
+     "verdict": "suspens",
+     "manque": "Attribution de la diminution aux séances ; effets sur les proches et les services ; ressources consommées, prises en charge par un tiers ; situation sans les séances.",
+     "integre": "Après un an de séances, 70 % des répondants se disent tout à fait d’accord et 28,2 % plutôt d’accord avec une diminution de leur sentiment de solitude ; le bénéfice net pour le système reste à établir."
+    },
+    "I": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "La diminution du sentiment de solitude vaut par ce que chaque personne reconnaît dans sa propre vie relationnelle.",
+      "portee": "Chaque participant, sur l’année de participation ; la source de chaque appréciation.",
+      "preuves": "Appréciation de chaque personne et sa possibilité de l’exprimer librement ; changements dans le temps et autres influences, puisque la diminution est attribuée aux séances.",
+      "regle": "Distinguer le sentiment exprimé, le changement et l’attribution, en restant attentif à l’adaptation et à la complaisance envers l’association qui interroge ; conclure au niveau documenté."
+     },
+     "verdict": "suspens",
+     "manque": "Les changements dans le temps et les autres influences sur la solitude au cours de l’année ; la possibilité de répondre librement à l’association qui anime les séances et recueille les réponses.",
+     "integre": "Interrogés par l’association après un an de séances, 70 % des 110 répondants se disent tout à fait d’accord et 28,2 % plutôt d’accord avec une diminution de leur sentiment de solitude."
+    },
+    "S": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Réduire la solitude répond au problème commun des personnes âgées seules que l’association s’est donné pour mission de combattre, à condition qu’il ait été identifié avec elles.",
+      "portee": "Les participants de 80 ans et plus, sur l’année ; changement durable du sentiment de solitude.",
+      "preuves": "Besoin identifié avec les personnes ; changement documenté au niveau revendiqué ; personnes effectivement couvertes.",
+      "regle": "Apprécier la réponse au niveau du besoin retenu ; ne conclure à un changement durable qu’avec un suivi."
+     },
+     "verdict": "suspens",
+     "manque": "Le besoin défini avec les personnes, au-delà des données de l’INSEE ; une mesure du sentiment de solitude au début et à la fin de l’année ; les 90 participants sans réponse.",
+     "integre": "Après un an de séances, 70 % des 110 répondants sur 200 participants, dont 60,6 % vivent seuls, se disent tout à fait d’accord avec une diminution de leur sentiment de solitude ; le besoin défini avec les personnes et un changement mesuré restent à documenter."
+    },
+    "V": {
+     "statut_croisement": "Proposed",
+     "options": [
+      {
+       "id": "mission",
+       "libelle": "Mission : lutter contre la solitude et l’isolement des personnes âgées seules, « avec un simple téléphone »",
+       "source": "rapport, p. 1",
+       "garantie": {
+        "raison": "La réduction de la solitude compte si elle procède de la mission que l’association s’est donnée envers les personnes âgées seules.",
+        "portee": "Les personnes âgées seules que vise la mission ; l’engagement, distingué de l’effet revendiqué.",
+        "preuves": "Contenu de la mission et sa justification ; actes qui s’y rapportent ; bénéfices anticipés.",
+        "regle": "Examiner la cohérence entre la mission et la conduite des séances ; un effet produit appelle une seconde garantie."
+       },
+       "verdict": "suspens",
+       "manque": "Une seconde garantie pour l’effet revendiqué.",
+       "integre": "Au bout du Fil s’est donné pour mission de lutter contre la solitude des personnes âgées seules, propose depuis 2007 un appel hebdomadaire gratuit et, plus récemment, des séances collectives ; la réduction effective du sentiment de solitude relève d’une seconde garantie."
+      },
+      {
+       "id": "solidarite",
+       "libelle": "Devoir de solidarité envers les personnes âgées isolées",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "La réduction de la solitude compte si elle procède d’un devoir de solidarité que l’association reconnaît envers les personnes âgées isolées.",
+        "portee": "Les personnes âgées isolées ; l’engagement, distingué de l’effet revendiqué.",
+        "preuves": "Énoncé du devoir par l’organisation ; engagement qu’il soutient ; bénéfices anticipés.",
+        "regle": "Examiner la cohérence entre le devoir et la conduite des séances ; un effet produit appelle une seconde garantie."
+       },
+       "verdict": "suspens",
+       "manque": "L’énoncé de ce devoir par l’association, qui fonde sa mission sur un constat statistique ; une seconde garantie pour l’effet revendiqué.",
+       "integre": "70 % des répondants se disent tout à fait d’accord avec une diminution de leur sentiment de solitude ; le lien avec un devoir de solidarité de l’association reste à documenter."
+      }
+     ]
+    },
+    "N": {
+     "statut_croisement": "Proposed",
+     "options": [
+      {
+       "id": "odd3",
+       "libelle": "ODD 3 : permettre à tous de vivre en bonne santé et promouvoir le bien-être de tous à tout âge",
+       "source": "rapport, p. 1",
+       "garantie": {
+        "raison": "L’ODD 3 exige de promouvoir le bien-être de tous à tout âge, y compris le bien-être relationnel des personnes très âgées.",
+        "portee": "Les participants de 80 ans et plus, sur l’année de participation.",
+        "preuves": "Justification du principe et de son application à l’action ; effet sur le sentiment de solitude établi dans le temps ; ce que l’organisation met en œuvre.",
+        "regle": "Comparer l’effet documenté à l’exigence du principe."
+       },
+       "verdict": "suspens",
+       "manque": "L’argument qui rattache l’action à l’ODD 3, que le rapport signale par son seul pictogramme ; une diminution du sentiment de solitude établie dans le temps.",
+       "integre": "Après un an de séances, 70 % des répondants se disent tout à fait d’accord avec une diminution de leur sentiment de solitude ; le rattachement à l’ODD 3 et un effet établi dans le temps restent à documenter."
+      },
+      {
+       "id": "isolement",
+       "libelle": "Lutte contre l’isolement social des personnes âgées (mobilisation nationale Monalisa)",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "Ce principe exige que les personnes âgées ne restent pas privées de liens sociaux ; le sentiment de solitude n’en est qu’un signe.",
+        "portee": "Les participants, dans leur vie sociale au-delà des séances.",
+        "preuves": "Justification du principe ; liens sociaux des personnes et leur évolution ; ce que l’organisation met en œuvre.",
+        "regle": "Comparer les liens documentés à l’exigence du principe."
+       },
+       "verdict": "suspens",
+       "manque": "Les liens sociaux des participants au-delà des séances ; selon le graphique, 95,5 % des répondants déclarent des interactions sociales « aussi » fréquentes.",
+       "integre": "70 % des répondants se disent tout à fait d’accord avec une diminution de leur sentiment de solitude ; le recul de leur isolement, distinct de ce sentiment, reste à documenter."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "R2",
+   "enonce": "Les séances partagées créent des interactions entre les participants et leur offrent un lien social collectif.",
+   "court": "Lien social",
+   "citation": "Il se crée des interactions entre les participants",
+   "pages": "p. 1",
+   "domaine": "D01",
+   "propriete": "Les interactions sociales des participants, entre eux et dans leur vie.",
+   "portee": "Les personnes âgées de 80 ans et plus qui ont participé aux séances pendant un an.",
+   "preuves": [
+    { "texte": "Le service d’animation partagée « offre un lien social collectif, au sein d’un groupe de personnes âgées » ; son maintien est l’un des deux axes de l’action.", "pages": "p. 1" },
+    { "texte": "Une séance de groupe par téléphone chaque semaine, suivie pendant une année par les participants.", "pages": "p. 1" },
+    { "texte": "Graphique « Perception de l’augmentation de la fréquence des interactions sociales » : selon sa légende, 95,5 % des répondants répondent « aussi souvent » ; les parts « plus souvent » et « moins souvent » sont faibles et non chiffrées.", "pages": "p. 1" },
+    { "texte": "Témoignage de Josiane, qui apprécie « les jeux pour stimuler ma mémoire et les quiz de culture générale en groupe ».", "pages": "p. 1" },
+    { "texte": "110 réponses sur 200 participants, recueillies par téléphone par l’association en septembre 2023.", "pages": "p. 1" }
+   ],
+   "conception_invoquee": { "id": "S", "mode": "reconstruite", "premisse": "Le lien social collectif répond à l’isolement des personnes âgées seules, peu mobiles et peu équipées, que l’association s’est donné pour mission de combattre, p. 1" },
+   "lectures": {
+    "M": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Les interactions créées comptent par le bénéfice net qu’elles apportent au système formé des participants, de leurs proches et des services.",
+      "portee": "Participants, proches et services, sur l’année de participation ; situation sans les séances.",
+      "preuves": "Interactions pendant et hors des séances, attribuées à l’action ; effets sur chaque composante ; ressources consommées ; situation sans les séances.",
+      "regle": "Apprécier le bénéfice net ; pour conclure à une supériorité, classer les options selon une règle justifiée."
+     },
+     "verdict": "suspens",
+     "manque": "Interactions au-delà des séances et leur attribution ; effets sur les proches et les services ; ressources consommées ; situation sans les séances.",
+     "integre": "Les participants ont suivi une séance de groupe hebdomadaire pendant un an, et 95,5 % des répondants répondent « aussi souvent » à la question sur la fréquence de leurs interactions sociales ; le bénéfice net pour le système reste à établir."
+    },
+    "I": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Les interactions valent par ce que chaque personne reconnaît dans ses propres relations.",
+      "portee": "Chaque participant, sur l’année de participation.",
+      "preuves": "Appréciation de chaque personne sur ses relations ; éléments sur ses interactions ; changements dans le temps.",
+      "regle": "Distinguer l’appréciation des séances, les interactions réalisées et le changement de la vie relationnelle ; conclure au niveau documenté."
+     },
+     "verdict": "suspens",
+     "manque": "Ce que les séances changent dans les relations de chaque personne : 95,5 % des répondants déclarent des interactions sociales « aussi » fréquentes, résultat que le rapport ne commente pas.",
+     "integre": "Les répondants apprécient les séances, 98,2 % disent les avoir énormément aimées ; 95,5 % répondent « aussi souvent » à la question sur la fréquence de leurs interactions sociales."
+    },
+    "S": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Créer du lien social répond au problème commun d’isolement des personnes âgées seules, à condition qu’il ait été identifié avec elles.",
+      "portee": "Les participants, sur l’année ; réalisation immédiate, des échanges pendant les séances, ou changement durable de la vie sociale.",
+      "preuves": "Besoin identifié avec les personnes ; échanges documentés pendant les séances ; changement des interactions hors des séances ; personnes couvertes.",
+      "regle": "Apprécier directement une réalisation immédiate qui correspond au besoin ; ne conclure à un changement de la vie sociale qu’avec un suivi."
+     },
+     "verdict": "suspens",
+     "manque": "Le besoin défini avec les personnes ; les échanges entre participants pendant les séances, que le rapport ne décrit pas ; un changement des interactions, que 95,5 % des répondants ne déclarent pas.",
+     "integre": "200 personnes ont participé pendant un an à une séance de groupe hebdomadaire par téléphone ; le besoin défini avec elles et les interactions créées restent à documenter."
+    },
+    "V": {
+     "statut_croisement": "Proposed",
+     "options": [
+      {
+       "id": "mission",
+       "libelle": "Mission : lutter contre la solitude et l’isolement des personnes âgées seules, « avec un simple téléphone »",
+       "source": "rapport, p. 1",
+       "garantie": {
+        "raison": "Le lien social créé compte s’il procède de la mission que l’association s’est donnée envers les personnes âgées seules.",
+        "portee": "Les personnes âgées seules que vise la mission ; l’engagement, distingué de l’effet revendiqué.",
+        "preuves": "Contenu de la mission et sa justification ; actes qui s’y rapportent ; bénéfices anticipés.",
+        "regle": "Examiner la cohérence entre la mission et la conduite des séances ; un effet produit appelle une seconde garantie."
+       },
+       "verdict": "suspens",
+       "manque": "Une seconde garantie pour les interactions revendiquées.",
+       "integre": "L’association se donne pour mission de lutter contre l’isolement des personnes âgées seules et organise pour cela une séance de groupe hebdomadaire ; la création effective de lien social relève d’une seconde garantie."
+      },
+      {
+       "id": "solidarite",
+       "libelle": "Devoir de solidarité envers les personnes âgées isolées",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "Le lien social créé compte s’il procède d’un devoir de solidarité que l’association reconnaît envers les personnes âgées isolées.",
+        "portee": "Les personnes âgées isolées ; l’engagement, distingué de l’effet revendiqué.",
+        "preuves": "Énoncé du devoir par l’organisation ; engagement qu’il soutient ; bénéfices anticipés.",
+        "regle": "Examiner la cohérence entre le devoir et la conduite des séances ; un effet produit appelle une seconde garantie."
+       },
+       "verdict": "suspens",
+       "manque": "L’énoncé de ce devoir par l’association ; une seconde garantie pour l’effet revendiqué.",
+       "integre": "Une séance de groupe hebdomadaire réunit les participants par téléphone pendant un an ; le lien avec un devoir de solidarité de l’association reste à documenter."
+      }
+     ]
+    },
+    "N": {
+     "statut_croisement": "Proposed",
+     "options": [
+      {
+       "id": "onu-participation",
+       "libelle": "Participation : les personnes âgées doivent rester intégrées dans la société (Principes des Nations unies pour les personnes âgées, 1991)",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "Ce principe exige que les personnes âgées restent intégrées dans la société.",
+        "portee": "Les participants, dans leur vie sociale au-delà des séances.",
+        "preuves": "Justification du principe ; liens sociaux des participants et leur évolution ; ce que l’organisation met en œuvre.",
+        "regle": "Comparer l’intégration documentée à l’exigence du principe."
+       },
+       "verdict": "suspens",
+       "manque": "L’intégration des participants dans la vie sociale au-delà des séances ; 95,5 % des répondants déclarent des interactions sociales « aussi » fréquentes.",
+       "integre": "L’association réunit chaque semaine par téléphone des groupes de personnes âgées de 80 ans et plus ; leur intégration dans la vie sociale au-delà des séances reste à documenter."
+      },
+      {
+       "id": "isolement",
+       "libelle": "Lutte contre l’isolement social des personnes âgées (mobilisation nationale Monalisa)",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "Ce principe exige de créer ou de recréer des liens autour des personnes âgées isolées.",
+        "portee": "Les participants, pendant et hors des séances.",
+        "preuves": "Justification du principe ; liens créés ou maintenus ; ce que l’organisation met en œuvre.",
+        "regle": "Comparer les liens documentés à l’exigence du principe."
+       },
+       "verdict": "suspens",
+       "manque": "Les liens créés entre participants ou avec d’autres personnes, que le rapport affirme sans les décrire.",
+       "integre": "Une séance de groupe hebdomadaire réunit les participants par téléphone pendant un an ; les liens créés restent à documenter, et 95,5 % des répondants déclarent des interactions sociales aussi fréquentes."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "R3",
+   "enonce": "La participation aux séances a notablement amélioré la santé et le bien-être au quotidien des participants.",
+   "court": "Santé et bien-être",
+   "citation": "Au sein du groupe et avec les activités suivies, on constate une amélioration notable de la santé et du bien-être des participants. 99 % perçoivent une amélioration de leur santé au quotidien. 100 % perçoivent une amélioration de leur bien-être au quotidien.",
+   "pages": "p. 1",
+   "domaine": "D01",
+   "propriete": "La santé et le bien-être au quotidien des participants.",
+   "portee": "Les participants aux séances, sur l’année.",
+   "preuves": [
+    { "texte": "Question « Perception d’une amélioration de leur santé du quotidien » : le graphique indique 100 % « tout à fait d’accord » ; le texte annonce 99 %.", "pages": "p. 1" },
+    { "texte": "Question « Perception d’une amélioration de leur bien-être au quotidien » : 57,3 % « plutôt oui » et 42,7 % « tout à fait ».", "pages": "p. 1" },
+    { "texte": "Séances pour « stimuler ses neurones, bouger et prévenir les chutes, se relaxer pour mieux dormir », mais aussi chanter ou méditer.", "pages": "p. 1" },
+    { "texte": "Constat tiré de « la lecture des verbatims et des résultats » ; un seul témoignage est cité.", "pages": "p. 1" },
+    { "texte": "110 réponses sur 200 participants, recueillies par téléphone par l’association en septembre 2023 ; l’ODD 3, « Bonne santé et bien-être », est affiché comme objectif.", "pages": "p. 1" }
+   ],
+   "conception_invoquee": { "id": null, "mode": "aucune" },
+   "lectures": {
+    "M": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "L’amélioration de la santé et du bien-être compte par le bénéfice net qu’elle apporte au système formé des participants, de leurs proches, des services de santé et des financeurs.",
+      "portee": "Participants, proches, services de santé et financeurs, sur l’année ; situation sans les séances.",
+      "preuves": "Effets sur chaque composante, attribués aux séances ; ressources consommées ; situation sans les séances.",
+      "regle": "Apprécier le bénéfice net ; pour conclure à une supériorité, classer les options selon une règle justifiée."
+     },
+     "verdict": "suspens",
+     "manque": "Des éléments sur la santé au-delà de la perception déclarée ; l’attribution aux séances ; effets sur les services de santé et les proches ; ressources consommées ; situation sans les séances.",
+     "integre": "Après un an de séances, tous les répondants perçoivent une amélioration de leur bien-être au quotidien, dont 42,7 % tout à fait ; le bénéfice net pour le système reste à établir."
+    },
+    "I": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "La santé et le bien-être valent par ce que chaque personne reconnaît dans son propre quotidien.",
+      "portee": "Chaque participant, sur l’année ; la source de chaque appréciation.",
+      "preuves": "Appréciation de chaque personne et sa possibilité de l’exprimer ; éléments sur la santé revendiquée ; changements dans le temps et autres influences, puisque l’amélioration est attribuée aux séances.",
+      "regle": "Distinguer l’amélioration perçue, l’état de santé et l’attribution, en restant attentif à l’adaptation et à la complaisance envers l’association qui interroge ; conclure au niveau documenté."
+     },
+     "verdict": "suspens",
+     "manque": "Des éléments sur la santé au-delà de la perception ; les changements dans le temps et les autres influences ; l’écart entre le texte (99 %) et le graphique (100 %) pour la santé.",
+     "integre": "Interrogés par l’association après un an de séances, tous les répondants perçoivent une amélioration de leur bien-être au quotidien (57,3 % plutôt, 42,7 % tout à fait), et 99 % une amélioration de leur santé selon le texte."
+    },
+    "S": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Améliorer la santé et le bien-être répond à un besoin commun des participants, à condition qu’il ait été identifié avec eux.",
+      "portee": "Les participants de 80 ans et plus, sur l’année ; changement durable de la santé et du bien-être.",
+      "preuves": "Besoin identifié avec les personnes ; standard convenu ; changement documenté au niveau revendiqué ; personnes couvertes.",
+      "regle": "Apprécier la réponse au niveau du besoin retenu ; ne conclure à un changement durable qu’avec un suivi."
+     },
+     "verdict": "suspens",
+     "manque": "Le besoin de santé défini avec les personnes ; les objectifs, que le rapport dit dépassés sans les énoncer ; un changement mesuré dans le temps ; les 90 participants sans réponse.",
+     "integre": "Après un an de séances, les 110 répondants sur 200 participants perçoivent tous une amélioration de leur bien-être au quotidien ; le besoin défini avec eux, les objectifs visés et un changement mesuré restent à documenter."
+    },
+    "V": {
+     "statut_croisement": "Proposed",
+     "options": [
+      {
+       "id": "odd3",
+       "libelle": "Objectif affiché : ODD 3, Bonne santé et bien-être",
+       "source": "rapport, p. 1",
+       "garantie": {
+        "raison": "La santé et le bien-être comptent s’ils procèdent de l’engagement que l’association affiche envers l’ODD 3.",
+        "portee": "Les participants ; l’engagement, distingué de l’effet revendiqué.",
+        "preuves": "Contenu de l’engagement et sa justification ; actes qui s’y rapportent ; bénéfices anticipés.",
+        "regle": "Examiner la cohérence entre l’engagement et la conduite des séances ; un effet produit appelle une seconde garantie."
+       },
+       "verdict": "suspens",
+       "manque": "Le contenu de cet engagement et sa justification, que le rapport signale par le seul pictogramme de l’ODD ; une seconde garantie pour l’effet revendiqué.",
+       "integre": "L’association affiche l’ODD 3 parmi ses objectifs et conçoit des séances pour bouger, prévenir les chutes et mieux dormir ; l’amélioration effective de la santé et du bien-être relève d’une seconde garantie."
+      },
+      {
+       "id": "sollicitude",
+       "libelle": "Devoir de sollicitude envers des personnes rendues vulnérables par l’âge",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "La santé et le bien-être comptent s’ils procèdent d’un devoir de sollicitude que l’association reconnaît envers les personnes très âgées.",
+        "portee": "Les participants ; l’engagement, distingué de l’effet revendiqué.",
+        "preuves": "Énoncé du devoir par l’organisation ; engagement qu’il soutient ; bénéfices anticipés.",
+        "regle": "Examiner la cohérence entre le devoir et la conduite des séances ; un effet produit appelle une seconde garantie."
+       },
+       "verdict": "suspens",
+       "manque": "L’énoncé de ce devoir par l’association ; une seconde garantie pour l’effet revendiqué.",
+       "integre": "Tous les répondants perçoivent une amélioration de leur bien-être au quotidien ; le lien avec un devoir de sollicitude de l’association reste à documenter."
+      }
+     ]
+    },
+    "N": {
+     "statut_croisement": "Proposed",
+     "options": [
+      {
+       "id": "odd3",
+       "libelle": "ODD 3 : permettre à tous de vivre en bonne santé et promouvoir le bien-être de tous à tout âge",
+       "source": "rapport, p. 1",
+       "garantie": {
+        "raison": "L’ODD 3 exige de permettre à tous de vivre en bonne santé et de promouvoir le bien-être de tous à tout âge.",
+        "portee": "Les participants de 80 ans et plus, sur l’année.",
+        "preuves": "Justification du principe et de son application à l’action ; effet sur la santé et le bien-être établi au-delà de la perception déclarée ; ce que l’organisation met en œuvre.",
+        "regle": "Comparer l’effet documenté à l’exigence du principe."
+       },
+       "verdict": "suspens",
+       "manque": "L’argument qui rattache l’action à l’ODD 3 ; un effet sur la santé établi au-delà de la perception déclarée et dans le temps.",
+       "integre": "Après un an de séances, tous les répondants perçoivent une amélioration de leur bien-être au quotidien ; le rapport affiche l’ODD 3 sans argumenter son application, et l’effet sur la santé reste à établir."
+      },
+      {
+       "id": "prevention",
+       "libelle": "Prévention de la perte d’autonomie, priorité des politiques du vieillissement",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "Le principe de prévention de la perte d’autonomie exige d’entretenir les capacités des personnes âgées et de réduire les risques qui les menacent.",
+        "portee": "Les participants de 80 ans et plus, vivant à domicile.",
+        "preuves": "Justification du principe ; capacités entretenues ou risques réduits (chutes, sommeil, mémoire) ; ce que l’organisation met en œuvre.",
+        "regle": "Comparer les capacités et les risques documentés à l’exigence du principe."
+       },
+       "verdict": "suspens",
+       "manque": "Des éléments sur les capacités ou les risques visés (chutes, sommeil, mémoire) ; le contenu et la fréquence des exercices proposés.",
+       "integre": "Les séances portent notamment sur la mémoire, le mouvement, la prévention des chutes et le sommeil, et tous les répondants perçoivent une amélioration de leur bien-être ; l’entretien de leurs capacités reste à documenter."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "R4",
+   "enonce": "Chaque semaine, les séances permettent aux participants d’acquérir ou de maintenir des connaissances utiles au bien vieillir et leur font prendre conscience de l’importance de prendre soin d’eux.",
+   "court": "Connaissances bien vieillir",
+   "citation": "Chaque semaine, elles sont appelées sur leur téléphone pour acquérir ou maintenir des connaissances utiles au Bien Vieillir.",
+   "pages": "p. 1",
+   "domaine": "D01",
+   "propriete": "Les connaissances des participants utiles au bien vieillir et leur attention à prendre soin d’eux.",
+   "portee": "Les participants, chaque semaine pendant l’année.",
+   "preuves": [
+    { "texte": "Question « Perception d’acquisition d’informations utiles au Bien Vieillir » : 92,7 % « tout à fait d’accord » (5 sur 5), les autres réponses en 3 et 4.", "pages": "p. 1" },
+    { "texte": "99,1 % des répondants disent avoir pris conscience de l’importance de prendre soin de soi.", "pages": "p. 1" },
+    { "texte": "Thèmes des séances : mémoire, mouvement et prévention des chutes, relaxation pour mieux dormir, chant, méditation ; témoignage de Josiane sur les jeux de mémoire et les quiz.", "pages": "p. 1" },
+    { "texte": "Les personnes ciblées « ne reçoivent pas d’offres au téléphone » ; 81,8 % des répondants citent le manque d’information comme frein aux activités de bien vieillir.", "pages": "p. 1" },
+    { "texte": "110 réponses sur 200 participants, recueillies par téléphone par l’association en septembre 2023, après un an de séances.", "pages": "p. 1" }
+   ],
+   "conception_invoquee": { "id": null, "mode": "aucune" },
+   "lectures": {
+    "M": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Les connaissances acquises comptent par le bénéfice net qu’elles apportent au système formé des participants, de leurs proches et des services, par les comportements qu’elles modifient.",
+      "portee": "Participants, proches et services, sur l’année ; situation sans les séances.",
+      "preuves": "Connaissances et comportements changés, attribués aux séances ; leurs effets sur chaque composante ; ressources consommées ; situation sans les séances.",
+      "regle": "Apprécier le bénéfice net ; pour conclure à une supériorité, classer les options selon une règle justifiée."
+     },
+     "verdict": "suspens",
+     "manque": "Les comportements changés, que le rapport affirme sans les décrire, et leurs effets ; ressources consommées ; situation sans les séances.",
+     "integre": "92,7 % des répondants se disent tout à fait d’accord avec l’acquisition d’informations utiles au bien vieillir ; le bénéfice net pour le système reste à établir."
+    },
+    "I": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Les connaissances valent par ce que chaque personne reconnaît en tirer pour son propre quotidien.",
+      "portee": "Chaque participant, sur l’année ; la source de chaque appréciation.",
+      "preuves": "Appréciation de chaque personne ; éléments sur les connaissances ou les pratiques revendiquées ; changements dans le temps.",
+      "regle": "Distinguer l’information perçue comme utile, la connaissance acquise et la pratique changée ; conclure au niveau documenté."
+     },
+     "verdict": "suspens",
+     "manque": "Des éléments sur les connaissances acquises ou maintenues, au-delà de la perception ; ce que chaque personne en fait dans son quotidien.",
+     "integre": "Interrogés après un an de séances, 92,7 % des répondants se disent tout à fait d’accord avec l’acquisition d’informations utiles au bien vieillir, et 99,1 % disent avoir pris conscience de l’importance de prendre soin d’eux."
+    },
+    "S": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Transmettre des connaissances utiles au bien vieillir répond à un besoin commun des participants, à condition qu’il ait été identifié avec eux.",
+      "portee": "Les participants, chaque semaine pendant l’année ; réalisation immédiate, l’information transmise, ou changement durable des comportements.",
+      "preuves": "Besoin identifié avec les personnes ; information transmise documentée ; personnes couvertes.",
+      "regle": "Apprécier directement une réalisation immédiate qui correspond au besoin ; ne conclure à un changement de comportement qu’avec un suivi."
+     },
+     "verdict": "suspens",
+     "manque": "Le besoin de connaissances défini avec les personnes, distinct du manque d’information sur les activités que citent 81,8 % des répondants ; le contenu transmis ; les 90 participants sans réponse.",
+     "integre": "92,7 % des 110 répondants, sur 200 participants, se disent tout à fait d’accord avec l’acquisition d’informations utiles au bien vieillir ; le besoin défini avec eux et le contenu transmis restent à documenter."
+    },
+    "V": {
+     "statut_croisement": "Proposed",
+     "options": [
+      {
+       "id": "mission",
+       "libelle": "Mission : lutter contre la solitude et l’isolement des personnes âgées seules, « avec un simple téléphone »",
+       "source": "rapport, p. 1",
+       "garantie": {
+        "raison": "Les connaissances transmises comptent si elles procèdent de la mission que l’association s’est donnée envers les personnes âgées seules.",
+        "portee": "Les personnes âgées seules que vise la mission ; l’engagement, distingué de l’effet revendiqué.",
+        "preuves": "Contenu de la mission et sa justification ; actes qui s’y rapportent ; bénéfices anticipés.",
+        "regle": "Examiner la cohérence entre la mission et la conduite des séances ; un effet produit appelle une seconde garantie."
+       },
+       "verdict": "suspens",
+       "manque": "Le lien entre la mission, qui porte sur la solitude et l’isolement, et la transmission de connaissances ; une seconde garantie pour l’effet revendiqué.",
+       "integre": "L’association conçoit les séances pour stimuler la mémoire, bouger, prévenir les chutes et mieux dormir ; le rapport ne rattache pas ces bénéfices anticipés à sa mission, et l’acquisition effective de connaissances relève d’une seconde garantie."
+      },
+      {
+       "id": "sollicitude",
+       "libelle": "Devoir de sollicitude envers des personnes rendues vulnérables par l’âge",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "Les connaissances transmises comptent si elles procèdent d’un devoir de sollicitude que l’association reconnaît envers les personnes très âgées.",
+        "portee": "Les participants ; l’engagement, distingué de l’effet revendiqué.",
+        "preuves": "Énoncé du devoir par l’organisation ; engagement qu’il soutient ; bénéfices anticipés.",
+        "regle": "Examiner la cohérence entre le devoir et la conduite des séances ; un effet produit appelle une seconde garantie."
+       },
+       "verdict": "suspens",
+       "manque": "L’énoncé de ce devoir par l’association ; une seconde garantie pour l’effet revendiqué.",
+       "integre": "92,7 % des répondants se disent tout à fait d’accord avec l’acquisition d’informations utiles au bien vieillir ; le lien avec un devoir de sollicitude de l’association reste à documenter."
+      }
+     ]
+    },
+    "N": {
+     "statut_croisement": "Proposed",
+     "options": [
+      {
+       "id": "odd3",
+       "libelle": "ODD 3 : permettre à tous de vivre en bonne santé et promouvoir le bien-être de tous à tout âge",
+       "source": "rapport, p. 1",
+       "garantie": {
+        "raison": "L’ODD 3 exige de promouvoir la santé de tous à tout âge ; transmettre des connaissances de prévention en est un moyen.",
+        "portee": "Les participants de 80 ans et plus, sur l’année.",
+        "preuves": "Justification du principe et de son application à l’action ; connaissances transmises et leurs effets sur la santé ; ce que l’organisation met en œuvre.",
+        "regle": "Comparer les effets documentés à l’exigence du principe."
+       },
+       "verdict": "suspens",
+       "manque": "L’argument qui rattache l’action à l’ODD 3 ; les effets des connaissances transmises sur la santé.",
+       "integre": "92,7 % des répondants se disent tout à fait d’accord avec l’acquisition d’informations utiles au bien vieillir ; le rapport affiche l’ODD 3 sans en argumenter l’application, et les effets sur la santé restent à établir."
+      },
+      {
+       "id": "ottawa",
+       "libelle": "Promotion de la santé : donner aux personnes les moyens d’agir sur leur santé (Charte d’Ottawa, 1986)",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "La promotion de la santé exige de donner aux personnes les moyens d’agir elles-mêmes sur leur santé.",
+        "portee": "Les participants, dans leur quotidien.",
+        "preuves": "Justification du principe ; connaissances et pratiques que les personnes s’approprient ; ce que l’organisation met en œuvre.",
+        "regle": "Comparer les pratiques documentées à l’exigence du principe."
+       },
+       "verdict": "suspens",
+       "manque": "Ce que les personnes font de ces connaissances : le rapport affirme des « changements de comportements » sans les décrire.",
+       "integre": "Les séances hebdomadaires abordent la mémoire, le mouvement, les chutes et le sommeil ; 92,7 % des répondants se disent tout à fait d’accord avec l’acquisition d’informations utiles et 99,1 % disent avoir pris conscience de l’importance de prendre soin d’eux ; leurs pratiques restent à documenter."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "R5",
+   "enonce": "Le téléphone est le format adapté à ces personnes âgées, peu mobiles et peu équipées : elles ne sont pas intéressées par des activités hors de chez elles, et la visio leur est inaccessible.",
+   "court": "Format téléphonique",
+   "citation": "A noter que ces personnes ne sont pas intéressées par des activités à l’extérieur de leur domicile. Le présentiel ne les concerne pas, tout comme les activités en visio puisque la majorité ne possède pas l’équipement adéquat.",
+   "pages": "p. 1",
+   "domaine": "D04",
+   "propriete": "L’adéquation du format téléphonique à la situation et aux souhaits des personnes.",
+   "portee": "Les personnes âgées de 80 ans et plus visées par l’action, et les participants.",
+   "preuves": [
+    { "texte": "Constat : à partir de 80 ans, les personnes âgées sont « souvent moins mobiles et peu équipées », participent moins aux activités extérieures qui exigent un déplacement motorisé et sont peu familières de l’informatique ; données de l’INSEE.", "pages": "p. 1" },
+    { "texte": "« 80 % de ces personnes âgées n’ont qu’un téléphone à leur disposition » ; équipement des répondants : 97,3 % un smartphone, catégorie qui englobe le téléphone fixe, 7,3 % un ordinateur, 1,8 % une tablette.", "pages": "p. 1" },
+    { "texte": "« Aimeriez-vous participer à des activités en présentiel ? » : 17,3 % oui, 52,7 % non, 30 % ne savent pas.", "pages": "p. 1" },
+    { "texte": "Freins aux activités de bien vieillir : manque d’information 81,8 %, manque de temps 17,3 %, transport ou mobilité 10 %, absence d’outils numériques 2,7 %, manque d’aisance numérique 0 %.", "pages": "p. 1" },
+    { "texte": "98,2 % des répondants ont « énormément aimé » leur participation et 88,2 % souhaitent davantage de séances.", "pages": "p. 1" }
+   ],
+   "conception_invoquee": { "id": "S", "mode": "reconstruite", "premisse": "À partir de 80 ans, les personnes âgées sont souvent moins mobiles et peu équipées, et c’est « fort de ce constat » que l’association agit « avec un simple téléphone », p. 1" },
+   "lectures": {
+    "M": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Le format téléphonique compte comme moyen du bénéfice net, s’il ajuste la réponse aux circonstances des personnes dont l’isolement appelle le bénéfice recherché.",
+      "portee": "Les personnes de 80 ans et plus visées et leurs circonstances ; celles que le téléphone laisse de côté ; les autres formats possibles.",
+      "preuves": "Circonstances des personnes et leur variation ; lien entre le format et le bénéfice recherché ; justification de la priorité donnée au téléphone.",
+      "regle": "Tenir l’adéquation documentée pour un indice de plausibilité de la contribution ; justifier une priorité en comparant les formats possibles."
+     },
+     "verdict": "suspens",
+     "manque": "La comparaison avec d’autres formats, dont le présentiel que souhaitent 17,3 % des répondants ; le lien entre le format et le bénéfice recherché.",
+     "integre": "Le rapport documente par des données de l’INSEE et par l’équipement des répondants (97,3 % un téléphone, 7,3 % un ordinateur) la situation qui motive le choix du téléphone ; la priorité donnée à ce format reste à justifier."
+    },
+    "I": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Le format est pertinent s’il correspond à ce que chaque personne cherche à faire, compte tenu de ses contraintes.",
+      "portee": "Chaque personne visée, en situation ; le téléphone et les autres formats qui lui sont ouverts.",
+      "preuves": "Souhaits exprimés par chaque personne ; possibilité réelle de choisir ou de refuser un format ; écarts entre les souhaits personnels et le choix de l’organisation.",
+      "regle": "Apprécier l’adéquation au regard des souhaits exprimés, en gardant visibles les écarts avec la perspective de l’organisation."
+     },
+     "verdict": "suspens",
+     "manque": "La possibilité de choisir un autre format ; l’adéquation du téléphone pour les 17,3 % de répondants qui souhaitent le présentiel et les 30 % qui ne savent pas.",
+     "integre": "Parmi les répondants, 52,7 % ne souhaitent pas d’activités en présentiel, 17,3 % le souhaitent et 30 % ne savent pas, et 88,2 % voudraient davantage de séances ; l’adéquation du téléphone aux choix de chacun reste à documenter."
+    },
+    "S": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "Le téléphone est pertinent s’il porte sur le besoin et la situation du groupe tels qu’ils ont été définis avec lui.",
+      "portee": "Les personnes âgées de 80 ans et plus visées ; le problème retenu ; les personnes habilitées à le définir.",
+      "preuves": "Définition du problème et personnes qui l’ont fixée ; perspectives du groupe, y compris ses désaccords ; adéquation pratique du format.",
+      "regle": "Apprécier la correspondance entre le besoin défini et le format, en exposant les désaccords qui bornent la conclusion."
+     },
+     "verdict": "suspens",
+     "manque": "La définition du problème avec les personnes concernées ; les désaccords du groupe, que le rapport efface en concluant que « le présentiel ne les concerne pas » alors que 17,3 % des répondants le souhaitent.",
+     "integre": "Le format téléphonique correspond à l’équipement déclaré par les répondants (97,3 % un téléphone, 7,3 % un ordinateur) ; 52,7 % ne souhaitent pas d’activités en présentiel et 17,3 % le souhaitent ; la définition du besoin avec les personnes reste à documenter."
+    },
+    "V": {
+     "statut_croisement": "Exploratory",
+     "options": [
+      {
+       "id": "mission",
+       "libelle": "Mission : lutter contre la solitude et l’isolement des personnes âgées seules, « avec un simple téléphone »",
+       "source": "rapport, p. 1",
+       "garantie": {
+        "raison": "Le format téléphonique est pertinent s’il constitue une réponse argumentée à la mission que l’association se donne envers les personnes âgées seules.",
+        "portee": "Les personnes âgées seules, peu mobiles et peu équipées que vise la mission ; le téléphone envisagé comme réponse.",
+        "preuves": "Assise de la mission ; bénéfices anticipés ; raisons de retenir le téléphone.",
+        "regle": "Apprécier la cohérence de la justification et l’étendue des bénéfices anticipés ; traiter toute réalisation revendiquée sous une seconde garantie."
+       },
+       "verdict": "etayee",
+       "manque": "Rien pour cette portée ; l’intérêt des personnes pour ce format relève d’une seconde garantie.",
+       "integre": "Le choix du téléphone constitue une réponse argumentée à la mission que l’association se donne envers les personnes âgées seules : la plupart n’ont qu’un téléphone, et les séances visent un lien social collectif."
+      },
+      {
+       "id": "solidarite",
+       "libelle": "Devoir de solidarité envers les personnes âgées isolées",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "Le format téléphonique est pertinent s’il constitue une réponse argumentée à un devoir de solidarité que l’association reconnaît envers les personnes âgées isolées.",
+        "portee": "Les personnes âgées isolées ; le téléphone envisagé comme réponse.",
+        "preuves": "Énoncé et assise du devoir ; bénéfices anticipés ; raisons de retenir le téléphone.",
+        "regle": "Apprécier la cohérence de la justification et l’étendue des bénéfices anticipés ; traiter toute réalisation revendiquée sous une seconde garantie."
+       },
+       "verdict": "suspens",
+       "manque": "L’énoncé de ce devoir par l’association, qui fonde sa mission sur un constat statistique.",
+       "integre": "Le choix du téléphone répond à une mission argumentée envers les personnes âgées seules ; son lien avec un devoir de solidarité reste à établir."
+      }
+     ]
+    },
+    "N": {
+     "statut_croisement": "Exploratory",
+     "options": [
+      {
+       "id": "sans-numerique",
+       "libelle": "Ne pas conditionner l’accès à un équipement ou à une aisance numériques",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "Ce principe qualifie comme appropriée une réponse qui ne suppose ni équipement ni aisance numériques chez des personnes qui en sont dépourvues.",
+        "portee": "Les personnes de 80 ans et plus visées, selon leur équipement.",
+        "preuves": "Qualification du problème et autorité de cette qualification ; équipement des personnes ; désaccords et leurs effets.",
+        "regle": "Argumenter l’application du principe aux circonstances et garder les interprétations concurrentes dans la conclusion."
+       },
+       "verdict": "bornee",
+       "manque": "Ce que le principe ne couvre pas : le rejet du présentiel, que 17,3 % des répondants ne partagent pas.",
+       "integre": "Au regard de l’équipement des répondants (97,3 % un téléphone, fixe ou mobile, 7,3 % un ordinateur, 1,8 % une tablette), le téléphone est une réponse appropriée et la visio ne l’est pas ; le rejet du présentiel n’en découle pas."
+      },
+      {
+       "id": "onu-participation",
+       "libelle": "Participation : les personnes âgées doivent rester intégrées dans la société (Principes des Nations unies pour les personnes âgées, 1991)",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "Ce principe qualifie comme appropriée une réponse qui maintient les personnes âgées intégrées dans la société, y compris hors de chez elles quand elles le souhaitent.",
+        "portee": "Les personnes de 80 ans et plus visées, dans leur vie sociale.",
+        "preuves": "Qualification du problème et autorité de cette qualification ; part des personnes au choix du format ; désaccords et leurs effets.",
+        "regle": "Argumenter l’application du principe aux circonstances et garder les interprétations concurrentes dans la conclusion."
+       },
+       "verdict": "suspens",
+       "manque": "La part des personnes au choix du format ; la réponse apportée aux 17,3 % de répondants qui souhaitent des activités en présentiel et aux 30 % qui ne savent pas.",
+       "integre": "Le téléphone permet de réunir chaque semaine des personnes peu mobiles et peu équipées ; leur participation à des activités hors de chez elles, que 17,3 % des répondants souhaitent, est écartée par le rapport."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "R6",
+   "enonce": "Les services d’Au bout du Fil sont accessibles à toute personne qui en fait la demande, où qu’elle vive, chaque semaine, gratuitement et aussi longtemps qu’elle le souhaite, grâce à leur prise en charge par un tiers.",
+   "court": "Accès gratuit",
+   "citation": "Depuis 2007, un appel de convivialité est proposé à toute personne qui en fait la demande quelle que soit sa localisation, chaque semaine, gratuitement et aussi longtemps quelle le souhaite.",
+   "pages": "p. 1",
+   "domaine": "D06",
+   "propriete": "L’accès aux services : gratuité, absence de condition de lieu et de durée.",
+   "portee": "Toute personne qui en fait la demande, quel que soit son lieu de vie, depuis 2007.",
+   "preuves": [
+    { "texte": "Les services de lien individuel et collectif « sont toujours pris en charge par un tiers pour être proposés gratuitement au bénéficiaire » : caisse de retraite, mutuelle, bailleur social, collectivité, entreprise mécène ou particulier.", "pages": "p. 1" },
+    { "texte": "Projet mesuré : des personnes âgées d’au moins 80 ans, retraitées du groupe Malakoff Humanis, partenaire de l’association, ont été invitées à une séance de groupe hebdomadaire et y ont participé pendant une année.", "pages": "p. 1" },
+    { "texte": "Freins aux activités de bien vieillir cités par les répondants : manque d’information 81,8 %, manque de temps 17,3 %, transport ou mobilité 10 %, manque de ressources financières 0 %.", "pages": "p. 1" },
+    { "texte": "Le rapport attribue le manque d’information au fait que « seuls le courrier et le téléphone sont des moyens pour les joindre ».", "pages": "p. 1" },
+    { "texte": "88,2 % des répondants souhaitent participer à davantage de séances partagées.", "pages": "p. 1" }
+   ],
+   "conception_invoquee": { "id": "N", "mode": "reconstruite", "premisse": "Les services sont proposés à toute personne qui en fait la demande, quelle que soit sa localisation, aussi longtemps qu’elle le souhaite, et sont « toujours pris en charge par un tiers pour être proposés gratuitement au bénéficiaire », p. 1" },
+   "lectures": {
+    "M": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "L’accès compte comme moyen du bénéfice net : l’étendre vaut s’il augmente les bénéfices réalisés plus que les ressources qu’il requiert.",
+      "portee": "Personnes visées, invitées, participantes et maintenues ; personnes non atteintes ; extension de l’accès envisagée.",
+      "preuves": "Obstacles et caractéristiques des personnes non atteintes ; bénéfices selon les populations ; ressources et effets de l’extension.",
+      "regle": "Apprécier l’atteinte par les bénéfices auxquels elle donne accès, nets des ressources requises."
+     },
+     "verdict": "suspens",
+     "manque": "Les personnes non atteintes et leurs caractéristiques ; le coût des séances pris en charge par les financeurs ; les bénéfices selon les populations.",
+     "integre": "200 personnes âgées retraitées de Malakoff Humanis, invitées au projet, ont suivi sans frais une séance hebdomadaire pendant un an ; le bénéfice net d’un accès étendu reste à établir."
+    },
+    "I": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "L’accès vaut s’il ouvre à chaque personne une possibilité qu’elle valorise et qu’elle reste libre de choisir ou de refuser.",
+      "portee": "Chaque personne qui demande ou reçoit le service ; les conditions dans lesquelles elle peut l’utiliser ou le refuser.",
+      "preuves": "Appréciation de la possibilité par la personne ; offre et conditions d’usage ; contraintes rencontrées ; participation choisie, empêchée ou refusée, avec ses raisons.",
+      "regle": "Distinguer la disponibilité du service, la liberté d’y recourir ou de le refuser et la participation observée ; conclure au niveau documenté."
+     },
+     "verdict": "bornee",
+     "manque": "Les personnes qui ont demandé le service sans y accéder, ou qui l’ont quitté, et leurs raisons.",
+     "integre": "Les répondants, invités à une séance hebdomadaire gratuite par téléphone, y ont participé pendant un an ; 98,2 % disent avoir énormément aimé et 88,2 % souhaitent davantage de séances ; l’accès de toute personne qui en fait la demande reste à documenter."
+    },
+    "S": {
+     "statut_croisement": "Proposed",
+     "garantie": {
+      "raison": "L’accès vaut si les personnes âgées seules qui partagent le besoin peuvent effectivement bénéficier des services.",
+      "portee": "Les personnes âgées seules visées par la mission, et leurs sous-groupes ; conditions d’accès.",
+      "preuves": "Personnes servies rapportées à la population concernée ; usage continu ; raisons du non-recours ; personnes sans réponse.",
+      "regle": "Rapporter la couverture à la réponse au besoin, avec la population concernée pour dénominateur."
+     },
+     "verdict": "suspens",
+     "manque": "Le nombre de personnes servies rapporté aux personnes âgées seules visées ; les abandons en cours d’année ; les personnes restées sans réponse.",
+     "integre": "200 personnes âgées retraitées de Malakoff Humanis ont participé pendant un an aux séances, et 81,8 % des répondants citent le manque d’information comme frein aux activités de bien vieillir ; la couverture du groupe visé reste à documenter."
+    },
+    "V": {
+     "statut_croisement": "Exploratory",
+     "options": [
+      {
+       "id": "engagement-acces",
+       "libelle": "Engagement à proposer le service « à toute personne qui en fait la demande », gratuitement et sans limite de durée",
+       "source": "rapport, p. 1",
+       "garantie": {
+        "raison": "L’accès compte si les engagements d’accès de l’association correspondent aux personnes âgées seules envers lesquelles elle s’est donné une mission.",
+        "portee": "Les personnes âgées seules visées par la mission ; toute personne qui en fait la demande.",
+        "preuves": "Raisons de la délimitation des destinataires ; obstacles connus à l’accès ; engagements et pratiques d’accès.",
+        "regle": "Apprécier l’accès au regard de l’engagement tel qu’il est délimité, en exposant ses limites et les difficultés rencontrées."
+       },
+       "verdict": "bornee",
+       "manque": "La mise en pratique de l’engagement pour toute personne qui en fait la demande, au-delà du projet mené avec Malakoff Humanis.",
+       "integre": "L’engagement d’un accès gratuit, sans condition de lieu ni de durée, correspond à la mission envers les personnes âgées seules ; l’association le finance par des tiers et expose l’obstacle de l’information ; sa mise en pratique n’est décrite que pour les retraités de Malakoff Humanis invités au projet."
+      },
+      {
+       "id": "solidarite",
+       "libelle": "Devoir de solidarité envers les personnes âgées isolées",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "L’accès compte s’il s’étend aux personnes âgées isolées envers lesquelles l’association reconnaît un devoir de solidarité.",
+        "portee": "Les personnes âgées isolées que couvre le devoir et les limites tracées autour d’elles.",
+        "preuves": "Énoncé du devoir et délimitation de ses destinataires ; obstacles connus ; pratiques d’accès.",
+        "regle": "Apprécier l’accès au regard du devoir tel qu’il est délimité, en exposant ses limites."
+       },
+       "verdict": "suspens",
+       "manque": "L’énoncé de ce devoir par l’association et la délimitation de ses destinataires.",
+       "integre": "L’association propose un accès gratuit, sans condition de lieu ni de durée, financé par des tiers ; le lien avec un devoir de solidarité reste à documenter."
+      }
+     ]
+    },
+    "N": {
+     "statut_croisement": "Proposed",
+     "options": [
+      {
+       "id": "gratuite",
+       "libelle": "Accès gratuit, sans condition de lieu ni de durée, pour toute personne qui en fait la demande",
+       "source": "rapport, p. 1",
+       "garantie": {
+        "raison": "Ce principe exige que toute personne qui demande le service puisse l’obtenir gratuitement, où qu’elle vive et aussi longtemps qu’elle le souhaite.",
+        "portee": "Toute personne qui en fait la demande, quel que soit son lieu de vie.",
+        "preuves": "Principe explicité ; accès effectif des demandeurs, distinct de l’usage ; obstacles et exceptions ; ce que l’organisation met en œuvre.",
+        "regle": "Comparer l’accès documenté à l’exigence du principe."
+       },
+       "verdict": "bornee",
+       "manque": "Les demandes reçues et les réponses apportées ; la localisation des bénéficiaires ; la durée réelle d’accès au-delà d’une année.",
+       "integre": "Les 200 retraités de Malakoff Humanis invités au projet ont eu accès sans frais à une séance hebdomadaire pendant un an, et aucun répondant ne cite le manque de ressources financières comme frein ; l’accès de toute personne qui en fait la demande reste à documenter."
+      },
+      {
+       "id": "aller-vers",
+       "libelle": "« Aller vers » les personnes âgées isolées qui ne formulent pas de demande",
+       "source": "proposé par l’analyse",
+       "garantie": {
+        "raison": "Ce principe exige de joindre les personnes isolées sans attendre leur demande, puisque l’isolement freine le recours.",
+        "portee": "Les personnes âgées isolées du territoire couvert, y compris celles qui ne demandent rien.",
+        "preuves": "Principe explicité ; manière dont les personnes sont repérées et jointes ; personnes non jointes et obstacles ; ce que l’organisation met en œuvre.",
+        "regle": "Comparer l’accès documenté à l’exigence du principe."
+       },
+       "verdict": "suspens",
+       "manque": "La manière dont les participants ont été repérés et invités ; les personnes isolées qui n’ont pas été jointes.",
+       "integre": "Des personnes âgées d’au moins 80 ans, retraitées de Malakoff Humanis, ont été invitées aux séances, et 81,8 % des répondants citent le manque d’information comme frein ; le repérage des personnes isolées et la manière de les joindre restent à documenter."
+      }
+     ]
+    }
+   }
+  }
+ ]
+}
