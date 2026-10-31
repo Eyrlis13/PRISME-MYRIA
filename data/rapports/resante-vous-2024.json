@@ -36,6 +36,7 @@
      },
      "verdict": "suspens",
      "manque": "Effets sur les équipes et les établissements ; ressources consommées ; situation sans les activités ; attribution des capacités développées.",
+     "pour_etayer": { "texte": "Rapporter le coût des interventions et le temps d’équipe qu’elles mobilisent ; mesurer l’aide que les équipes apportent aux habitants accompagnés dans les actes du quotidien avant les activités et six mois après, et la comparer à celle d’habitants en attente d’accompagnement ou à une période antérieure.", "verdict_vise": "etayee" },
      "integre": "Interrogées juste après une activité, 80 % des personnes âgées estiment avoir pu montrer de quoi elles étaient capables ; le bénéfice net pour le système reste à établir."
     },
     "I": {
@@ -48,7 +49,8 @@
      },
      "verdict": "suspens",
      "manque": "Le développement des capacités apprécié par les personnes elles-mêmes, que l’avis des professionnels ne remplace pas ; les changements dans le temps et leur attribution aux activités.",
-     "integre": "Interrogées juste après une activité, 80 % des personnes âgées estiment avoir pu montrer de quoi elles étaient capables."
+     "pour_etayer": { "texte": "Recueillir auprès de chaque personne accompagnée, au début de l’accompagnement puis trois mois après, ce qu’elle se dit capable de faire au quotidien et ce qui a changé par ailleurs dans sa vie, avec des questions sur le présent qui ne font pas appel au souvenir de l’activité. Les faire poser par une personne qui n’a pas animé l’activité, et publier les questions et l’échelle de réponse.", "verdict_vise": "etayee" },
+     "integre": "Interrogées juste après une activité, 80 % des 76 personnes âgées répondantes estiment avoir pu montrer de quoi elles étaient capables."
     },
     "S": {
      "statut_croisement": "Proposed",
@@ -60,6 +62,7 @@
      },
      "verdict": "suspens",
      "manque": "Le besoin d’autonomie défini avec les habitants ; un changement au-delà de l’activité ; la couverture des 300 personnes visées.",
+     "pour_etayer": { "texte": "Indiquer comment le besoin d’autonomie a été défini avec les habitants (conseil de la vie sociale, entretiens) et par qui ; recueillir auprès des mêmes répondants, trois mois après, ce qu’ils font seuls au quotidien, et rapporter combien des 300 personnes visées ont été couvertes.", "verdict_vise": "etayee" },
      "integre": "Interrogées juste après une activité, 80 % des 76 personnes âgées répondantes estiment avoir pu montrer de quoi elles étaient capables ; la réponse à un besoin défini avec les habitants reste à documenter."
     },
     "V": {
@@ -77,6 +80,7 @@
        },
        "verdict": "suspens",
        "manque": "Une seconde garantie pour l’effet revendiqué ; les repérages effectivement conduits.",
+       "pour_etayer": { "texte": "Sous cette garantie, le soutien effectif de l’autonomie relève d’une autre conception. Pour étayer l’engagement : rapporter les repérages de capacités conduits en 2023 (nombre d’habitants, outil d’observation) et montrer, pour quelques habitants, comment le repérage a orienté l’activité proposée.", "verdict_vise": null },
        "integre": "ReSanté-Vous s’engage à repérer les capacités de chaque personne pour qu’elles s’expriment dans des activités, et en attend un mieux-être ; le soutien effectif de l’autonomie relève d’une seconde garantie."
       },
       {
@@ -91,6 +95,7 @@
        },
        "verdict": "suspens",
        "manque": "L’énoncé de ce devoir par ReSanté-Vous ; une seconde garantie pour l’effet revendiqué.",
+       "pour_etayer": { "texte": "Sous cette garantie, le soutien effectif de l’autonomie relève d’une autre conception. Pour étayer l’engagement : énoncer le devoir que ReSanté-Vous se reconnaît envers les personnes rendues vulnérables par l’âge et montrer comment il guide la conduite des activités, par exemple leur adaptation aux troubles cognitifs.", "verdict_vise": null },
        "integre": "Interrogées juste après une activité, 80 % des personnes âgées estiment avoir pu montrer de quoi elles étaient capables ; le lien avec un devoir de sollicitude de l’organisation reste à documenter."
       }
      ]
@@ -109,8 +114,9 @@
         "regle": "Comparer ce que les personnes font elles-mêmes à l’exigence du principe, dans chaque situation examinée."
        },
        "verdict": "bornee",
-       "manque": "Ce que les personnes font elles-mêmes dans les actes du quotidien, hors des activités.",
-       "integre": "Interrogées juste après une activité, 80 % des personnes âgées estiment avoir pu montrer de quoi elles étaient capables, et 78 % des professionnels interrogés estiment qu’elles ont développé des capacités ; ce qu’elles font elles-mêmes dans les actes du quotidien reste à documenter."
+       "manque": "Ce que les personnes font elles-mêmes dans les actes du quotidien, hors des activités ; ce que vivent dans les activités les 224 personnes visées qui n’ont pas répondu.",
+       "pour_etayer": { "texte": "Relever, pour les habitants accompagnés, les actes du quotidien (repas, habillage, toilette) qu’ils accomplissent eux-mêmes et ceux que les équipes font encore à leur place, à partir des observations que la méthode d’intervention prévoit déjà ; étendre ce relevé aux 300 personnes visées, dont 76 ont répondu en 2023.", "verdict_vise": "etayee" },
+       "integre": "Dans les activités, l’accompagnement permet aux personnes interrogées de faire elles-mêmes : juste après une activité, 80 % des 76 répondantes estiment avoir pu montrer de quoi elles étaient capables, et 78 % des professionnels interrogés estiment qu’elles ont développé des capacités ; les actes du quotidien et les personnes qui n’ont pas répondu restent à documenter."
       },
       {
        "id": "libre-choix",
@@ -124,6 +130,7 @@
        },
        "verdict": "suspens",
        "manque": "Le choix des activités par les personnes et leur consentement.",
+       "pour_etayer": { "texte": "Consigner, pour chaque habitant accompagné, les activités proposées, celle qu’il a choisie ou refusée et la façon dont son accord a été recueilli, y compris pour les personnes ayant des troubles cognitifs ; rapporter la part des habitants qui ont choisi leur activité.", "verdict_vise": "etayee" },
        "integre": "Interrogées juste après une activité, 80 % des personnes âgées estiment avoir pu montrer de quoi elles étaient capables ; le choix de ces activités par les personnes reste à documenter."
       }
      ]
@@ -159,6 +166,7 @@
      },
      "verdict": "suspens",
      "manque": "Les besoins des personnes accompagnées et leur variation ; la priorité donnée à ces besoins au regard d’autres réponses.",
+     "pour_etayer": { "texte": "Décrire, à partir des repérages que les intervenants conduisent déjà, les besoins des habitants accompagnés et leur répartition (sédentarité, isolement, perte d’autonomie) ; justifier la priorité donnée aux activités porteuses de sens en comparant leur contribution attendue à celle d’autres réponses possibles en EHPAD, comme les programmes de prévention des chutes.", "verdict_vise": "etayee" },
      "integre": "Le rapport documente par des données générales quatre problèmes qui touchent les personnes âgées et le coût de la perte d’autonomie, et argumente le lien entre activités porteuses de sens et santé ; les besoins des personnes accompagnées et la priorité donnée à ces besoins restent à documenter."
     },
     "I": {
@@ -171,6 +179,7 @@
      },
      "verdict": "suspens",
      "manque": "Les besoins et souhaits exprimés par les personnes ; leur possibilité de choisir ou de refuser une activité.",
+     "pour_etayer": { "texte": "Recueillir auprès de chaque habitant, lors du repérage initial, ce qu’il souhaite faire ou retrouver, puis consigner l’activité retenue, ses refus éventuels et les écarts entre ses souhaits et les objectifs fixés par l’établissement.", "verdict_vise": "etayee" },
      "integre": "Le rapport énonce une méthode qui part de l’expérience et des envies de chaque personne, et un homme de 90 ans relie une activité vélo à son histoire ; l’adéquation des activités aux choix de chaque personne reste à documenter."
     },
     "S": {
@@ -183,6 +192,7 @@
      },
      "verdict": "suspens",
      "manque": "La définition du problème avec les personnes âgées concernées ; leurs perspectives et leurs désaccords.",
+     "pour_etayer": { "texte": "Interroger les habitants des EHPAD partenaires, en conseil de la vie sociale ou en entretien, sur les problèmes qu’ils jugent prioritaires avant de fixer les actions, et rapporter qui y a pris part, ce qui a été retenu et les désaccords.", "verdict_vise": "etayee" },
      "integre": "Le problème est défini à partir de rapports et de statistiques sur les personnes âgées, et les axes d’impact sont dégagés d’entretiens sur les perceptions des actions ; la définition du besoin avec les personnes âgées reste à documenter."
     },
     "V": {
@@ -200,6 +210,7 @@
        },
        "verdict": "etayee",
        "manque": "Rien pour cette portée ; la réalisation de la réponse relève d’une seconde garantie.",
+       "pour_etayer": { "texte": "Rien pour cette portée.", "verdict_vise": null },
        "integre": "Les actions de ReSanté-Vous constituent une réponse argumentée à la mission qu’elle se reconnaît : soutenir l’engagement, l’autonomie et l’épanouissement des personnes âgées, quel que soit leur état de santé."
       },
       {
@@ -214,6 +225,7 @@
        },
        "verdict": "suspens",
        "manque": "L’énoncé de ce devoir par ReSanté-Vous : le rapport évoque une « nouvelle conception du prendre soin » (p. 22) sans en faire une obligation.",
+       "pour_etayer": { "texte": "Énoncer le devoir de sollicitude que ReSanté-Vous se reconnaît envers les personnes rendues vulnérables par l’âge, en précisant la « nouvelle conception du prendre soin » que le rapport évoque, et expliquer pourquoi les activités porteuses de sens en sont la réponse retenue.", "verdict_vise": "etayee" },
        "integre": "Les actions répondent à une mission argumentée envers les personnes âgées ; leur lien avec un devoir de sollicitude reste à établir."
       }
      ]
@@ -233,6 +245,7 @@
        },
        "verdict": "suspens",
        "manque": "La part des personnes âgées à la définition du problème et des réponses ; les interprétations concurrentes.",
+       "pour_etayer": { "texte": "Rapporter, pour chaque EHPAD partenaire, comment les habitants ont pris part à la définition du problème et au choix des activités (réunion, conseil de la vie sociale, vote), combien y ont participé et les avis divergents qui en sont sortis.", "verdict_vise": "etayee" },
        "integre": "Le rapport énonce le principe de ne rien faire pour la personne sans elle et interroge des habitants sur leurs perceptions des actions ; leur part à la définition du problème et des réponses reste à documenter."
       },
       {
@@ -247,6 +260,7 @@
        },
        "verdict": "suspens",
        "manque": "Une justification morale du principe, au-delà d’une priorité institutionnelle ; les interprétations concurrentes du problème.",
+       "pour_etayer": { "texte": "Énoncer pourquoi la prévention de la perte d’autonomie est due aux personnes âgées, et pas seulement prioritaire pour les politiques publiques, et exposer les lectures concurrentes du problème, dont le droit au risque que le rapport défend lui-même.", "verdict_vise": "etayee" },
        "integre": "Le rapport qualifie la sédentarité et la perte d’autonomie comme problèmes à l’aide de données de santé publique ; la justification morale du principe et les désaccords restent à exposer."
       }
      ]
@@ -280,6 +294,7 @@
      },
      "verdict": "suspens",
      "manque": "Pratiques changées et leurs effets sur les habitants ; ressources consommées, dont le temps des équipes ; situation sans l’intervention.",
+     "pour_etayer": { "texte": "Rapporter le coût des formations et du compagnonnage et le temps qu’y passent les équipes ; comparer, six mois après, les pratiques observées et l’aide apportée aux habitants dans les équipes formées et dans des équipes pas encore formées ou sur une période antérieure.", "verdict_vise": "etayee" },
      "integre": "74 % des professionnels interrogés ont le sentiment d’avoir développé leurs compétences grâce à l’activité ; le bénéfice net pour le système reste à établir."
     },
     "I": {
@@ -292,7 +307,8 @@
      },
      "verdict": "suspens",
      "manque": "Des éléments sur les pratiques au-delà du sentiment déclaré ; les changements dans le temps et les autres influences.",
-     "integre": "74 % des professionnels interrogés ont le sentiment d’avoir développé leurs compétences grâce à l’activité."
+     "pour_etayer": { "texte": "Recueillir auprès des mêmes professionnels, avant la formation puis six mois après, ce qu’ils font différemment avec les habitants (exemples d’actes, fréquence) et les autres changements survenus entre-temps (autre formation, nouvelle direction) ; publier les questions et l’échelle de réponse.", "verdict_vise": "etayee" },
+     "integre": "74 % des 88 professionnels répondants ont le sentiment d’avoir développé leurs compétences grâce à l’activité."
     },
     "S": {
      "statut_croisement": "Proposed",
@@ -304,6 +320,7 @@
      },
      "verdict": "suspens",
      "manque": "Le besoin de compétences défini avec les équipes ; l’évolution des pratiques au-delà de l’intervention ; la couverture des 230 professionnels visés.",
+     "pour_etayer": { "texte": "Indiquer comment le besoin de formation a été défini avec les équipes (diagnostic partagé, entretiens avec les soignants), recueillir auprès des mêmes professionnels, six mois après, ce qui a changé dans leurs pratiques, et rapporter combien des 230 professionnels visés ont été formés et ont répondu.", "verdict_vise": "etayee" },
      "integre": "74 % des 88 professionnels répondants, sur 230 visés, ont le sentiment d’avoir développé leurs compétences grâce à l’activité ; le besoin défini avec les équipes et l’évolution des pratiques restent à documenter."
     },
     "V": {
@@ -321,6 +338,7 @@
        },
        "verdict": "suspens",
        "manque": "Une seconde garantie pour l’évolution des pratiques ; les formations et le compagnonnage effectivement conduits.",
+       "pour_etayer": { "texte": "Sous cette garantie, l’évolution des pratiques relève d’une autre conception. Pour étayer l’engagement : rapporter les formations et les temps de compagnonnage conduits en 2023 (nombre, durée, professionnels concernés) et montrer comment leur contenu met en œuvre le respect de la dignité et de l’autonomie qui fonde l’engagement.", "verdict_vise": null },
        "integre": "ReSanté-Vous s’engage, au nom du respect de la dignité et de l’autonomie, à contribuer à l’évolution des compétences des acteurs de terrain par des formations et un compagnonnage ; l’évolution effective des pratiques relève d’une seconde garantie."
       },
       {
@@ -335,6 +353,7 @@
        },
        "verdict": "suspens",
        "manque": "L’énoncé de ce devoir par ReSanté-Vous, qui fonde son engagement sur les personnes âgées ; une seconde garantie pour l’effet.",
+       "pour_etayer": { "texte": "Sous cette garantie, l’évolution des pratiques relève d’une autre conception. Pour étayer l’engagement : énoncer le devoir que ReSanté-Vous se reconnaît envers les professionnels du soin, distinct de son engagement envers les personnes âgées, et montrer comment il oriente la conduite des formations et du compagnonnage, par exemple le choix des thèmes avec les équipes.", "verdict_vise": null },
        "integre": "74 % des professionnels interrogés ont le sentiment d’avoir développé leurs compétences grâce à l’activité ; le lien avec un devoir envers les équipes reste à documenter."
       }
      ]
@@ -354,6 +373,7 @@
        },
        "verdict": "suspens",
        "manque": "Les pratiques des équipes auprès des habitants, observées ou rapportées par eux.",
+       "pour_etayer": { "texte": "Observer dans chaque équipe formée, avant l’intervention puis six mois après, quelques actes du quotidien (toilette, repas, activité) à l’aide d’une grille tirée de l’approche centrée sur la personne, ou demander aux habitants si les soignants partent de ce qui a du sens pour eux ; rapporter les écarts relevés.", "verdict_vise": "etayee" },
        "integre": "Une aide-soignante dit voir chez les habitants des capacités oubliées, et 74 % des professionnels interrogés ont le sentiment d’avoir développé leurs compétences ; la conformité des pratiques à l’approche centrée sur la personne reste à documenter."
       },
       {
@@ -368,6 +388,7 @@
        },
        "verdict": "suspens",
        "manque": "Les pratiques des équipes et leur évaluation au regard de la bientraitance.",
+       "pour_etayer": { "texte": "Rapporter, pour les équipes formées, les résultats d’une auto-évaluation des pratiques de bientraitance fondée sur les repères de la HAS, conduite avant l’intervention puis six mois après, et les pratiques que les établissements ont changées en conséquence.", "verdict_vise": "etayee" },
        "integre": "74 % des professionnels interrogés ont le sentiment d’avoir développé leurs compétences grâce à l’activité ; la conformité de leurs pratiques à la bientraitance reste à documenter."
       }
      ]
@@ -401,6 +422,7 @@
      },
      "verdict": "suspens",
      "manque": "Effets sur les habitants et les établissements ; ressources consommées ; situation sans l’intervention.",
+     "pour_etayer": { "texte": "Rapporter le coût de l’intervention et, pour chaque EHPAD accompagné, l’absentéisme, le turnover et la part des postes tenus par des remplaçants auprès des habitants l’année qui précède et celle qui suit, comparés à des établissements pas encore accompagnés.", "verdict_vise": "etayee" },
      "integre": "75 % des professionnels interrogés ont le sentiment que l’activité agit sur leur bien-être au travail ; le bénéfice net pour le système reste à établir."
     },
     "I": {
@@ -413,7 +435,8 @@
      },
      "verdict": "suspens",
      "manque": "Les changements de bien-être dans le temps et les autres influences ; le moment du recueil auprès des professionnels.",
-     "integre": "75 % des professionnels interrogés ont le sentiment que l’activité agit sur leur bien-être au travail."
+     "pour_etayer": { "texte": "Indiquer quand et par qui les professionnels ont été interrogés, puis leur poser la même question sur leur bien-être au travail avant l’intervention et six mois après, en relevant ce qui a changé par ailleurs (effectifs, encadrement) ; publier la question et l’échelle de réponse.", "verdict_vise": "etayee" },
+     "integre": "75 % des 88 professionnels répondants ont le sentiment que l’activité agit sur leur bien-être au travail."
     },
     "S": {
      "statut_croisement": "Proposed",
@@ -425,6 +448,7 @@
      },
      "verdict": "suspens",
      "manque": "Le besoin des équipes défini avec elles ; un changement du quotidien de travail ; la couverture des 230 professionnels visés.",
+     "pour_etayer": { "texte": "Rapporter comment les difficultés du quotidien de travail ont été identifiées avec les équipes avant l’intervention, recueillir auprès des mêmes professionnels, six mois après, ce qui a changé dans ce quotidien, et indiquer combien des 230 professionnels visés ont été couverts.", "verdict_vise": "etayee" },
      "integre": "75 % des 88 professionnels répondants, sur 230 visés, ont le sentiment que l’activité agit sur leur bien-être au travail ; le besoin défini avec les équipes reste à documenter."
     },
     "V": {
@@ -442,6 +466,7 @@
        },
        "verdict": "suspens",
        "manque": "Le contenu de l’engagement envers les équipes, posé en corollaire ; une seconde garantie pour l’effet.",
+       "pour_etayer": { "texte": "Sous cette garantie, l’effet sur le bien-être au travail relève d’une autre conception. Pour étayer l’engagement : énoncer ce que ReSanté-Vous s’engage à faire pour les équipes elles-mêmes, au-delà du corollaire, et montrer comment la formation et le compagnonnage en tiennent compte (horaires, charge de travail, thèmes choisis avec les équipes).", "verdict_vise": null },
        "integre": "ReSanté-Vous vise le bien-être des personnes qui accompagnent les personnes âgées, en corollaire du leur ; l’effet sur le bien-être au travail relève d’une seconde garantie."
       },
       {
@@ -456,6 +481,7 @@
        },
        "verdict": "suspens",
        "manque": "L’énoncé de ce devoir par ReSanté-Vous ; une seconde garantie pour l’effet.",
+       "pour_etayer": { "texte": "Sous cette garantie, l’effet sur le bien-être au travail relève d’une autre conception. Pour étayer l’engagement : énoncer le devoir que ReSanté-Vous se reconnaît envers les professionnels du soin et montrer comment le principe « Aide-moi à faire seul », qu’elle applique aussi aux professionnels et aux managers, le met en œuvre dans ses interventions.", "verdict_vise": null },
        "integre": "75 % des professionnels interrogés ont le sentiment que l’activité agit sur leur bien-être au travail ; le lien avec un devoir envers les équipes reste à documenter."
       }
      ]
@@ -475,6 +501,7 @@
        },
        "verdict": "suspens",
        "manque": "La qualité du travail perçue par les équipes, que le rapport tient pour facteur clé ; ce que l’intervention change dans l’organisation du travail.",
+       "pour_etayer": { "texte": "Demander aux professionnels, avant l’intervention et six mois après, s’ils peuvent faire un travail dont ils reconnaissent la qualité, en publiant la question et l’échelle, et décrire ce que l’intervention a changé dans l’organisation du travail (temps d’activité inscrit au planning, rôles redistribués).", "verdict_vise": "etayee" },
        "integre": "75 % des professionnels interrogés ont le sentiment que l’activité agit sur leur bien-être au travail ; la qualité du travail perçue, que le rapport tient pour facteur clé, n’est pas mesurée."
       },
       {
@@ -489,6 +516,7 @@
        },
        "verdict": "suspens",
        "manque": "Les conditions de travail des équipes et ce que l’intervention y change.",
+       "pour_etayer": { "texte": "Décrire, pour chaque EHPAD accompagné, ce que l’intervention a changé dans les conditions de travail (temps dégagé pour les activités, effectifs prévus pendant les sorties, charge physique), relevé avec la direction et les représentants du personnel.", "verdict_vise": "etayee" },
        "integre": "75 % des professionnels interrogés ont le sentiment que l’activité agit sur leur bien-être au travail ; les conditions de travail des équipes restent à documenter."
       }
      ]
@@ -523,6 +551,7 @@
      },
      "verdict": "suspens",
      "manque": "Persistance et attribution de l’effet ; effets sur les autres composantes ; ressources consommées ; situation sans les activités.",
+     "pour_etayer": { "texte": "Mesurer l’image de soi des habitants accompagnés avant leur première activité puis trois mois après, un jour sans activité, et la comparer à celle d’habitants pas encore accompagnés ; rapporter le coût des activités et le temps qu’elles demandent aux équipes.", "verdict_vise": "etayee" },
      "integre": "Juste après une activité, 84 % des personnes âgées interrogées déclarent une meilleure image d’elles-mêmes ; le bénéfice net pour le système reste à établir."
     },
     "I": {
@@ -535,7 +564,8 @@
      },
      "verdict": "suspens",
      "manque": "La persistance de l’image de soi au-delà de l’activité ; son attribution aux activités, compte tenu du biais d’amorçage.",
-     "integre": "84 % des résidents interrogés ont déclaré une meilleure image d’eux-mêmes juste après une activité."
+     "pour_etayer": { "texte": "Mesurer l’image de soi de chaque personne accompagnée avant sa première activité puis trois mois après, un jour sans activité, par une question sur le présent posée par quelqu’un qui ne l’a pas accompagnée, et lui demander à quoi elle attribue un éventuel changement ; publier la question et l’échelle de réponse.", "verdict_vise": "etayee" },
+     "integre": "Juste après une activité, 84 % des 76 personnes âgées interrogées déclarent une meilleure image d’elles-mêmes."
     },
     "S": {
      "statut_croisement": "Proposed",
@@ -547,6 +577,7 @@
      },
      "verdict": "suspens",
      "manque": "Le besoin défini avec les habitants ; un changement au-delà de l’activité ; la couverture des 300 personnes visées.",
+     "pour_etayer": { "texte": "Indiquer comment le besoin de restaurer l’image de soi a été identifié avec les habitants (entretiens, conseil de la vie sociale), mesurer l’image de soi des mêmes répondants trois mois après, hors activité, et rapporter combien des 300 personnes visées ont répondu.", "verdict_vise": "etayee" },
      "integre": "Juste après une activité, 84 % des 76 personnes âgées répondantes, sur 300 visées, déclarent une meilleure image d’elles-mêmes ; le besoin défini avec les habitants et un changement durable restent à documenter."
     },
     "V": {
@@ -564,6 +595,7 @@
        },
        "verdict": "suspens",
        "manque": "Une seconde garantie pour l’effet revendiqué ; les projets effectivement conduits.",
+       "pour_etayer": { "texte": "Sous cette garantie, l’amélioration de l’image de soi relève d’une autre conception. Pour étayer l’engagement : rapporter les projets conduits en 2023 au nom de ce regard de confiance (sorties, défis, nombre d’habitants concernés) et montrer comment il a guidé le choix d’activités que les habitants ne se croyaient pas capables de faire.", "verdict_vise": null },
        "integre": "ReSanté-Vous s’engage à porter un regard de confiance sur la potentialité des personnes âgées et décrit des projets en ce sens ; l’amélioration de leur image d’elles-mêmes relève d’une seconde garantie."
       },
       {
@@ -578,6 +610,7 @@
        },
        "verdict": "suspens",
        "manque": "L’énoncé de ce devoir par ReSanté-Vous ; une seconde garantie pour l’effet revendiqué.",
+       "pour_etayer": { "texte": "Sous cette garantie, l’amélioration de l’image de soi relève d’une autre conception. Pour étayer l’engagement : énoncer le devoir de sollicitude que ReSanté-Vous se reconnaît envers les personnes âgées et montrer comment elle le concilie, dans la conduite des activités, avec le droit au risque qu’elle défend.", "verdict_vise": null },
        "integre": "Juste après une activité, 84 % des personnes âgées interrogées déclarent une meilleure image d’elles-mêmes ; le lien avec un devoir de sollicitude de l’organisation reste à documenter."
       }
      ]
@@ -597,6 +630,7 @@
        },
        "verdict": "suspens",
        "manque": "La dépréciation de soi liée à l’âge, établie avant les activités et à distance d’elles, hors de l’effet d’amorçage.",
+       "pour_etayer": { "texte": "Mesurer, avant la première activité puis trois mois après et hors activité, l’adhésion des habitants accompagnés à des stéréotypes sur leur propre âge, par exemple avec les cinq items d’attitude envers son propre vieillissement de l’échelle de moral de Lawton ; publier les questions et l’échelle.", "verdict_vise": "etayee" },
        "integre": "Juste après une activité, 84 % des personnes âgées interrogées déclarent une meilleure image d’elles-mêmes ; le recul de la dépréciation de soi liée à l’âge reste à établir."
       },
       {
@@ -611,6 +645,7 @@
        },
        "verdict": "suspens",
        "manque": "L’accès de chaque habitant à des activités qui développent son potentiel : nature et fréquence des activités, habitants concernés.",
+       "pour_etayer": { "texte": "Rapporter, pour chaque EHPAD partenaire, le nombre d’habitants qui ont eu accès aux activités en 2023, leur nature et leur fréquence, rapportés au nombre total d’habitants, et ce qui a été proposé à ceux qui n’y ont pas eu accès.", "verdict_vise": "etayee" },
        "integre": "Les 76 personnes âgées répondantes ont été interrogées après une activité, et 84 % d’entre elles déclarent une meilleure image d’elles-mêmes ; l’accès des habitants à des activités qui développent leur potentiel reste à documenter."
       }
      ]
@@ -644,6 +679,7 @@
      },
      "verdict": "suspens",
      "manque": "Les pratiques changées et leurs effets sur les habitants ; ressources consommées ; situation sans les activités.",
+     "pour_etayer": { "texte": "Compter, dans les équipes accompagnées, les activités que les professionnels mènent avec les habitants sans intervenant de ReSanté-Vous et le nombre d’habitants qui y prennent part, six mois avant et six mois après l’intervention, en comparaison d’équipes pas encore accompagnées ; rapporter le coût de l’intervention et le temps d’équipe que ces activités mobilisent.", "verdict_vise": "etayee" },
      "integre": "70 % des professionnels interrogés estiment être plus inspirés pour réaliser des activités avec les personnes âgées ; le bénéfice net pour le système reste à établir."
     },
     "I": {
@@ -656,7 +692,8 @@
      },
      "verdict": "suspens",
      "manque": "Le regard et la pratique des professionnels au-delà de l’inspiration déclarée ; les changements dans le temps et les autres influences.",
-     "integre": "70 % des professionnels interrogés estiment être plus inspirés pour réaliser des activités avec les personnes âgées."
+     "pour_etayer": { "texte": "Demander aux mêmes professionnels, avant l’intervention puis six mois après, combien d’activités ils ont menées avec les habitants au cours du dernier mois et ce qu’ils voient de leurs capacités, en relevant les autres influences (nouvelle direction, renfort d’animation) ; publier les questions et l’échelle.", "verdict_vise": "etayee" },
+     "integre": "70 % des 88 professionnels répondants estiment être plus inspirés pour réaliser des activités avec les personnes âgées."
     },
     "S": {
      "statut_croisement": "Proposed",
@@ -668,6 +705,7 @@
      },
      "verdict": "suspens",
      "manque": "Le besoin défini avec les habitants et les équipes ; un changement de regard durable ; la couverture des 230 professionnels visés.",
+     "pour_etayer": { "texte": "Rapporter comment le besoin de changer le regard porté sur les habitants a été identifié avec eux et avec les équipes, recueillir le regard et les activités des mêmes professionnels six mois après, et indiquer combien des 230 professionnels visés ont répondu.", "verdict_vise": "etayee" },
      "integre": "70 % des 88 professionnels répondants, sur 230 visés, estiment être plus inspirés pour réaliser des activités avec les personnes âgées ; le besoin défini avec le groupe reste à documenter."
     },
     "V": {
@@ -685,6 +723,7 @@
        },
        "verdict": "suspens",
        "manque": "Une seconde garantie pour le changement de regard revendiqué.",
+       "pour_etayer": { "texte": "Sous cette garantie, le changement de regard des équipes relève d’une autre conception. Pour étayer l’engagement : montrer comment la volonté de transformer le regard guide la conduite des interventions, par exemple les thèmes de formation, les ateliers transdisciplinaires et les projets de « droit au risque » menés avec les équipes en 2023.", "verdict_vise": null },
        "integre": "ReSanté-Vous fonde sa culture d’innovation sur la volonté de transformer le regard porté sur les personnes âgées, au bénéfice de celles-ci ; le changement de regard des équipes relève d’une seconde garantie."
       },
       {
@@ -699,6 +738,7 @@
        },
        "verdict": "suspens",
        "manque": "L’énoncé de ce devoir par ReSanté-Vous ; une seconde garantie pour l’effet revendiqué.",
+       "pour_etayer": { "texte": "Sous cette garantie, le changement de regard des équipes relève d’une autre conception. Pour étayer l’engagement : énoncer le devoir de sollicitude que ReSanté-Vous se reconnaît envers les personnes âgées et montrer comment il guide ce qu’elle transmet aux équipes, notamment l’équilibre entre protection et droit au risque.", "verdict_vise": null },
        "integre": "70 % des professionnels interrogés estiment être plus inspirés pour réaliser des activités avec les personnes âgées ; le lien avec un devoir de sollicitude de l’organisation reste à documenter."
       }
      ]
@@ -718,6 +758,7 @@
        },
        "verdict": "suspens",
        "manque": "Le regard et les pratiques des équipes envers les habitants, au-delà de l’inspiration déclarée.",
+       "pour_etayer": { "texte": "Recueillir auprès des mêmes professionnels, avant l’intervention puis six mois après, leur accord avec quelques stéréotypes sur l’âge, questions et échelle publiées, et relever dans les projets personnalisés les activités proposées ou refusées aux habitants en raison de leur âge.", "verdict_vise": "etayee" },
        "integre": "70 % des professionnels interrogés estiment être plus inspirés pour réaliser des activités avec les personnes âgées, et deux soignantes disent voir autrement leurs capacités ; le recul de la dépréciation liée à l’âge dans les équipes reste à établir."
       },
       {
@@ -732,6 +773,7 @@
        },
        "verdict": "suspens",
        "manque": "L’accès des habitants à de telles activités dans la pratique des équipes ; le choix des habitants.",
+       "pour_etayer": { "texte": "Rapporter, pour chaque EHPAD partenaire, les sorties et activités nouvelles proposées en 2023 hors du cadre habituel, le nombre d’habitants qui y ont pris part, qui a décidé d’y aller ou d’y renoncer, et celles que les équipes ont reconduites sans ReSanté-Vous.", "verdict_vise": "etayee" },
        "integre": "Des témoignages rapportent des activités nouvelles vécues par des personnes de 85 et 97 ans (stand up paddle, piscine) ; leur accès dans la pratique des équipes reste à documenter."
       },
       {
@@ -746,6 +788,7 @@
        },
        "verdict": "suspens",
        "manque": "Les pratiques des équipes envers les habitants et leur évaluation.",
+       "pour_etayer": { "texte": "Observer dans les équipes accompagnées, avant l’intervention puis six mois après, quelques moments du quotidien à l’aide d’une grille de bientraitance centrée sur la reconnaissance des capacités et des choix des habitants, et rapporter les écarts relevés.", "verdict_vise": "etayee" },
        "integre": "70 % des professionnels interrogés estiment être plus inspirés pour réaliser des activités avec les personnes âgées ; la conformité des pratiques des équipes à la bientraitance reste à documenter."
       }
      ]
@@ -781,6 +824,7 @@
      },
      "verdict": "suspens",
      "manque": "Effets sur chaque composante ; ressources consommées ; situation sans les actions.",
+     "pour_etayer": { "texte": "Rapporter, pour chaque projet d’ouverture (Rencontres Sportives, Éclaireurs du Tour, pôles ressources), le nombre d’habitants, d’aidants, de professionnels et d’acteurs du territoire qui y ont pris part, les effets que chacun déclare dans un court questionnaire et le coût pour chaque partenaire ; comparer avec l’année qui précède le projet.", "verdict_vise": "etayee" },
      "integre": "Le rapport décrit des projets qui ouvrent des EHPAD sur leur territoire ; le bénéfice net pour le système reste à établir."
     },
     "I": {
@@ -793,6 +837,7 @@
      },
      "verdict": "suspens",
      "manque": "L’appréciation des habitants sur leur participation ; des éléments sur cette participation et son évolution.",
+     "pour_etayer": { "texte": "Demander aux habitants, au début de l’année puis six mois après, à quelles activités et instances de l’établissement et de la cité ils prennent part et ce que cela leur apporte, et rapprocher leurs réponses de leur participation relevée (conseil de la vie sociale, sorties, projets).", "verdict_vise": "etayee" },
      "integre": "Une personne de 82 ans dit ne pas s’être crue capable d’une activité physique hors de l’établissement ; ce que l’inclusion change pour chaque habitant reste à établir."
     },
     "S": {
@@ -804,8 +849,9 @@
       "regle": "Apprécier la réponse au niveau du besoin retenu ; ne conclure à un changement durable qu’avec un suivi."
      },
      "verdict": "suspens",
-     "manque": "La participation effective des habitants à la vie de l’établissement et de la cité ; le nombre d’habitants concernés.",
-     "integre": "Des notions d’EHPAD inclusif ont été recueillies lors des entretiens, et des projets coopératifs sont décrits ; la participation effective des habitants reste à documenter."
+     "manque": "Le besoin de participation identifié avec les habitants eux-mêmes ; leur participation effective à la vie de l’établissement et de la cité ; le nombre d’habitants concernés.",
+     "pour_etayer": { "texte": "Rapporter comment le besoin de participer à la vie de l’établissement et de la cité a été identifié avec les habitants eux-mêmes, et par qui ; compter, pour chaque EHPAD partenaire et sur deux années successives, les habitants qui ont pris part au conseil de la vie sociale, aux projets coopératifs et aux sorties, rapportés au nombre d’habitants.", "verdict_vise": "etayee" },
+     "integre": "Des notions d’EHPAD inclusif ont été recueillies lors des entretiens qualitatifs, et des projets coopératifs sont décrits ; le besoin défini avec les habitants et leur participation effective restent à documenter."
     },
     "V": {
      "statut_croisement": "Proposed",
@@ -822,6 +868,7 @@
        },
        "verdict": "suspens",
        "manque": "Une seconde garantie pour l’inclusion revendiquée ; les actes qui associent les habitants aux décisions.",
+       "pour_etayer": { "texte": "Sous cette garantie, l’inclusion effective relève d’une autre conception. Pour étayer l’engagement : rapporter les décisions de ReSanté-Vous auxquelles des habitants ont été associés en 2023 (choix d’un projet, d’une sortie, du thème d’un colloque) et la façon dont ils l’ont été.", "verdict_vise": null },
        "integre": "ReSanté-Vous s’engage à ne pas écarter les personnes âgées des débats et des décisions, et décrit des projets coopératifs avec des partenaires ; l’inclusion effective relève d’une seconde garantie."
       },
       {
@@ -836,6 +883,7 @@
        },
        "verdict": "suspens",
        "manque": "L’obligation énoncée par ReSanté-Vous elle-même, la préface étant signée d’un auteur extérieur ; une seconde garantie pour l’effet.",
+       "pour_etayer": { "texte": "Sous cette garantie, l’inclusion effective relève d’une autre conception. Pour étayer l’engagement : énoncer, sous la signature de ReSanté-Vous et non de son préfacier, l’obligation de solidarité qu’elle se reconnaît, et montrer comment elle oriente ses projets d’ouverture des EHPAD sur leur territoire.", "verdict_vise": null },
        "integre": "La préface rattache le statut d’entreprise de l’économie sociale et solidaire de ReSanté-Vous à la fraternité et à la solidarité ; l’inclusion effective relève d’une seconde garantie."
       },
       {
@@ -850,6 +898,7 @@
        },
        "verdict": "suspens",
        "manque": "L’énoncé de ce devoir par ReSanté-Vous ; une seconde garantie pour l’effet revendiqué.",
+       "pour_etayer": { "texte": "Sous cette garantie, l’inclusion effective relève d’une autre conception. Pour étayer l’engagement : énoncer le devoir de sollicitude que ReSanté-Vous se reconnaît envers les personnes âgées et montrer comment il s’accorde avec son engagement à ne pas les écarter des débats et des décisions.", "verdict_vise": null },
        "integre": "Le rapport décrit des projets qui ouvrent des EHPAD sur leur territoire ; le lien avec un devoir de sollicitude de l’organisation reste à documenter."
       }
      ]
@@ -869,6 +918,7 @@
        },
        "verdict": "suspens",
        "manque": "L’accès effectif des habitants aux pouvoirs et aux ressources ; leur participation aux instances comme le CVS et à la vie de la cité.",
+       "pour_etayer": { "texte": "Rapporter, pour chaque EHPAD partenaire, le nombre d’habitants élus ou consultés au conseil de la vie sociale, les propositions qu’ils y ont portées et ce qu’elles sont devenues, et le nombre d’habitants engagés dans des projets dans la cité, rapportés au nombre total d’habitants ; décrire ce que ReSanté-Vous a fait pour rendre cette participation possible.", "verdict_vise": "etayee" },
        "integre": "Le rapport définit l’inclusion par le droit à la participation sociale et décrit des projets qui ouvrent des EHPAD sur leur territoire ; l’accès effectif des habitants aux pouvoirs et aux ressources n’est pas documenté."
       },
       {
@@ -883,6 +933,7 @@
        },
        "verdict": "suspens",
        "manque": "L’accès effectif des habitants aux structures ordinaires et les obstacles levés ; les photographies, antérieures à la mesure, ne disent ni qui a participé ni combien.",
+       "pour_etayer": { "texte": "Recenser, pour l’année de la mesure, les sorties vers des structures ordinaires (médiathèque, piscine, club sportif), le nombre d’habitants qui y ont pris part rapporté au nombre total d’habitants, dont ceux en fauteuil ou avec des troubles cognitifs, et les obstacles levés pour chacune (transport, accueil, horaires).", "verdict_vise": "etayee" },
        "integre": "Des photographies montrent des événements hors des établissements, dont un colloque où une habitante d’EHPAD a pris la parole (2019) ; l’accès des habitants aux structures ordinaires reste à documenter."
       },
       {
@@ -897,6 +948,7 @@
        },
        "verdict": "suspens",
        "manque": "La participation effective des habitants aux décisions qui les concernent et à la vie de la communauté.",
+       "pour_etayer": { "texte": "Consigner, dans les projets personnalisés des habitants accompagnés, les décisions qu’ils ont prises eux-mêmes sur leurs activités et leurs sorties, et rapporter la part des habitants qui prennent part à une activité régulière dans la commune.", "verdict_vise": "etayee" },
        "integre": "Le rapport décrit des projets qui ouvrent des EHPAD sur leur territoire ; la participation effective des habitants aux décisions reste à documenter."
       }
      ]
