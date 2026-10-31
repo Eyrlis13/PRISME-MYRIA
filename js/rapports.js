@@ -101,7 +101,7 @@
         return h("li", null,
           h("span", { class: "g-c" }, P.miniPrism(c.id, P.rays), c.nom),
           h("span", { class: "vchip v-" + r.verdict, text: r.verdict === "ouvert" ? "ouvert" : P.verdict(r.verdict).nom }),
-          h("span", { class: "g-t" }, l.options ? h("em", { text: r.libelle + " · " }) : null, pe.texte || r.manque,
+          h("span", { class: "g-t" }, l.options ? h("em", { text: r.libelle + " · " }) : null, (pe.texte && pe.texte !== "—") ? pe.texte : r.manque,
             pe.verdict_vise ? [" → ", h("span", { class: "vchip mini v-" + pe.verdict_vise, text: P.verdict(pe.verdict_vise).nom.toLowerCase() })] : null));
       }))));
     inner.appendChild(h("p", { class: "i-src", text: "Analyse : " + R.analyse.par + ", " + R.analyse.date + " · " + R.source }));

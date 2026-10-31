@@ -6,7 +6,11 @@
  "perimetre": "Quatre actions d’écoute à distance que l’association Avec Nos Proches propose aux aidants, partout en France : une ligne d’écoute tenue par d’anciens aidants bénévoles, des ateliers collectifs par téléphone (Connect’Aidants) et, après un premier contact, un accompagnement d’information et d’orientation et un accompagnement psychologique de 1 à 3 séances.",
  "donnees": "Mesures de 2024-2025 conduites par deux salariées formées et des bénévoles : questionnaires diffusés aux bénéficiaires 3 à 12 mois après leur participation, entretiens semi-directifs avec des participants volontaires et observations internes ; répondants volontaires, à 85 % des femmes et aux deux tiers urbains, avec un biais de sélection reconnu ; le rapport ne donne ni le nombre de répondants, ni celui des aidants accompagnés, ni les questions posées, et renvoie à quatre rapports détaillés publiés à part.",
  "source": "Rapport d’impact public, synthèse des quatre mesures (2025).",
- "analyse": { "par": "compétence prisme-rapport (Claude Code)", "date": "2026-10-31", "modele": "PRISME 2.0" },
+ "analyse": {
+  "par": "compétence prisme-rapport (Claude Code)",
+  "date": "2026-10-31",
+  "modele": "PRISME 2.0"
+ },
  "revendications": [
   {
    "id": "R1",
@@ -18,14 +22,36 @@
    "propriete": "L’isolement des aidants, saisi comme le sentiment d’être seul face à sa situation.",
    "portee": "Les aidants qui recourent aux quatre actions de l’association.",
    "preuves": [
-    { "texte": "Avant leur recours, 51 % des aidants répondants ont exprimé un sentiment de solitude « pleinement présent », 37 % un fort épuisement, et 70 % ne savaient plus vers qui se tourner pour trouver de l’aide.", "pages": "p. 11" },
-    { "texte": "Au moment de leur appel, la moitié des appelants de la ligne d’écoute se déclaraient totalement isolés, et 30 % seuls une grande partie du temps.", "pages": "p. 13" },
-    { "texte": "61 % des aidants ressentent encore les effets positifs de l’accompagnement une semaine après l’intervention, effets que le rapport décrit comme une « réduction de l’isolement, regain d’énergie et meilleure compréhension de soi ».", "pages": "p. 17" },
-    { "texte": "93 % des appelants de la ligne et 100 % des participants aux ateliers se sont sentis écoutés.", "pages": "p. 13" },
-    { "texte": "Le « sentiment de ne plus se sentir seuls face à leur situation » est l’une des cinq étapes-clés de transformation retenues par la théorie du changement.", "pages": "p. 7" },
-    { "texte": "Questionnaires diffusés 3 à 12 mois après la participation et remplis par des volontaires ; le rapport ne donne pas le nombre de répondants et reconnaît un biais de sélection.", "pages": "p. 6–7, 9" }
+    {
+     "texte": "Avant leur recours, 51 % des aidants répondants ont exprimé un sentiment de solitude « pleinement présent », 37 % un fort épuisement, et 70 % ne savaient plus vers qui se tourner pour trouver de l’aide.",
+     "pages": "p. 11"
+    },
+    {
+     "texte": "Au moment de leur appel, la moitié des appelants de la ligne d’écoute se déclaraient totalement isolés, et 30 % seuls une grande partie du temps.",
+     "pages": "p. 13"
+    },
+    {
+     "texte": "61 % des aidants ressentent encore les effets positifs de l’accompagnement une semaine après l’intervention, effets que le rapport décrit comme une « réduction de l’isolement, regain d’énergie et meilleure compréhension de soi ».",
+     "pages": "p. 17"
+    },
+    {
+     "texte": "93 % des appelants de la ligne et 100 % des participants aux ateliers se sont sentis écoutés.",
+     "pages": "p. 13"
+    },
+    {
+     "texte": "Le « sentiment de ne plus se sentir seuls face à leur situation » est l’une des cinq étapes-clés de transformation retenues par la théorie du changement.",
+     "pages": "p. 7"
+    },
+    {
+     "texte": "Questionnaires diffusés 3 à 12 mois après la participation et remplis par des volontaires ; le rapport ne donne pas le nombre de répondants et reconnaît un biais de sélection.",
+     "pages": "p. 6–7, 9"
+    }
    ],
-   "conception_invoquee": { "id": "I", "mode": "reconstruite", "premisse": "La mesure cherche « l’utilité réelle » des actions « du point de vue de celles et ceux à qui nos actions s’adressent », et la théorie du changement saisit l’isolement comme un sentiment vécu par l’aidant, p. 2 et 7" },
+   "conception_invoquee": {
+    "id": "I",
+    "mode": "reconstruite",
+    "premisse": "La mesure cherche « l’utilité réelle » des actions « du point de vue de celles et ceux à qui nos actions s’adressent », et la théorie du changement saisit l’isolement comme un sentiment vécu par l’aidant, p. 2 et 7"
+   },
    "lectures": {
     "M": {
      "statut_croisement": "Proposed",
@@ -37,7 +63,11 @@
      },
      "verdict": "suspens",
      "manque": "L’isolement des aidants après l’accompagnement ; les effets sur les personnes aidées et les services ; les ressources consommées, dont le temps des bénévoles ; la situation sans les actions.",
-     "integre": "61 % des aidants répondants disent ressentir encore, une semaine après l’intervention, des effets positifs parmi lesquels le rapport range la réduction de l’isolement ; le bénéfice net pour le système reste à établir."
+     "integre": "61 % des aidants répondants disent ressentir encore, une semaine après l’intervention, des effets positifs parmi lesquels le rapport range la réduction de l’isolement ; le bénéfice net pour le système reste à établir.",
+     "pour_etayer": {
+      "texte": "Mesurer le sentiment de solitude des aidants au premier contact puis trois mois après, et le comparer à celui d’aidants inscrits en liste d’attente des ateliers ; rapporter ce recul au coût annuel des quatre actions et au temps donné par les bénévoles, en indiquant ce que les aidants disent des effets sur la personne qu’ils aident.",
+      "verdict_vise": "etayee"
+     }
     },
     "I": {
      "statut_croisement": "Proposed",
@@ -49,7 +79,11 @@
      },
      "verdict": "suspens",
      "manque": "L’isolement apprécié par les aidants après l’accompagnement, distingué des autres effets positifs ; son évolution depuis le recours et les autres influences.",
-     "integre": "Avant leur recours, 51 % des aidants répondants exprimaient un sentiment de solitude « pleinement présent », et 93 % des appelants de la ligne se sont sentis écoutés ; ce que l’accompagnement a changé à l’isolement de chacun reste à établir."
+     "integre": "Avant leur recours, 51 % des aidants répondants exprimaient un sentiment de solitude « pleinement présent », et 93 % des appelants de la ligne se sont sentis écoutés ; ce que l’accompagnement a changé à l’isolement de chacun reste à établir.",
+     "pour_etayer": {
+      "texte": "Poser la même question sur le sentiment de solitude au premier contact, en la notant dans le dossier aidant que le bénévole remplit après l’appel, puis lors d’un rappel à trois mois aux aidants qui l’acceptent, en demandant à chacun ce qu’il attribue à l’accompagnement ; indiquer combien ont répondu aux deux temps, sur combien d’aidants accompagnés, et si leur profil diffère des autres.",
+      "verdict_vise": "etayee"
+     }
     },
     "S": {
      "statut_croisement": "Proposed",
@@ -61,7 +95,11 @@
      },
      "verdict": "suspens",
      "manque": "La réponse au niveau revendiqué, puisque l’isolement après l’accompagnement n’est pas mesuré ; le nombre d’aidants accompagnés et de répondants.",
-     "integre": "Les aidants répondants disent avoir recouru à l’association dans la solitude (51 %), les appelants de la ligne disent chercher d’abord une écoute (67 %), et 93 % d’entre eux se sont sentis écoutés ; la sortie de l’isolement et le nombre d’aidants concernés restent à documenter."
+     "integre": "Les aidants répondants disent avoir recouru à l’association dans la solitude (51 %), les appelants de la ligne disent chercher d’abord une écoute (67 %), et 93 % d’entre eux se sont sentis écoutés ; la sortie de l’isolement et le nombre d’aidants concernés restent à documenter.",
+     "pour_etayer": {
+      "texte": "Indiquer le nombre d’aidants accompagnés par chaque action et la part qui a répondu, et mesurer chez les mêmes aidants le sentiment de solitude au premier contact puis trois mois après : la réponse au besoin, déjà exprimé par les aidants, serait documentée au niveau revendiqué.",
+      "verdict_vise": "etayee"
+     }
     },
     "V": {
      "statut_croisement": "Proposed",
@@ -78,7 +116,11 @@
        },
        "verdict": "suspens",
        "manque": "La justification de cet engagement, que le rapport énonce comme ambition ; une seconde garantie pour l’effet revendiqué.",
-       "integre": "Avec Nos Proches fait de la rupture de l’isolement l’ambition commune de ses actions et y répond par une écoute téléphonique 7 j/7 assurée par d’anciens aidants et par des ateliers entre pairs ; la sortie effective de l’isolement relève d’une seconde garantie."
+       "integre": "Avec Nos Proches fait de la rupture de l’isolement l’ambition commune de ses actions et y répond par une écoute téléphonique 7 j/7 assurée par d’anciens aidants et par des ateliers entre pairs ; la sortie effective de l’isolement relève d’une seconde garantie.",
+       "pour_etayer": {
+        "texte": "Sous cette garantie, la sortie de l’isolement ne peut pas être étayée : elle relève d’une autre conception. Pour documenter l’engagement, exposer pourquoi l’association se tient pour tenue de rompre l’isolement des aidants, et les pratiques qui le mettent en œuvre, comme le nombre d’appels par aidant et la possibilité de retrouver le même bénévole.",
+        "verdict_vise": null
+       }
       },
       {
        "id": "solidarite-aidants",
@@ -92,7 +134,11 @@
        },
        "verdict": "suspens",
        "manque": "L’énoncé de ce devoir par Avec Nos Proches ; une seconde garantie pour l’effet revendiqué.",
-       "integre": "Avant leur recours, 51 % des aidants répondants exprimaient un sentiment de solitude ; le lien avec un devoir de solidarité de l’organisation reste à documenter."
+       "integre": "Avant leur recours, 51 % des aidants répondants exprimaient un sentiment de solitude ; le lien avec un devoir de solidarité de l’organisation reste à documenter.",
+       "pour_etayer": {
+        "texte": "Sous cette garantie, la sortie de l’isolement ne peut pas être étayée : elle relève d’une autre conception. Pour documenter l’engagement, énoncer le devoir de solidarité que l’association se reconnaît envers les aidants, ses raisons, et les choix qu’il commande, comme la gratuité et l’écoute par d’anciens aidants.",
+        "verdict_vise": null
+       }
       }
      ]
     },
@@ -111,7 +157,11 @@
        },
        "verdict": "suspens",
        "manque": "L’isolement des aidants après l’accompagnement ; la part des aidants concernés que l’association atteint.",
-       "integre": "L’association met en œuvre une écoute téléphonique gratuite 7 j/7 et des ateliers entre pairs, et 93 % des appelants de la ligne se sont sentis écoutés ; le recul de l’isolement des aidants reste à établir."
+       "integre": "L’association met en œuvre une écoute téléphonique gratuite 7 j/7 et des ateliers entre pairs, et 93 % des appelants de la ligne se sont sentis écoutés ; le recul de l’isolement des aidants reste à établir.",
+       "pour_etayer": {
+        "texte": "Mesurer le sentiment de solitude des mêmes aidants au premier contact puis trois mois après, indiquer le nombre d’aidants accompagnés et la part des répondants, et rattacher explicitement l’action à la priorité nationale de rompre l’isolement des proches aidants.",
+        "verdict_vise": "etayee"
+       }
       }
      ]
     }
@@ -127,15 +177,40 @@
    "propriete": "L’adéquation des actions aux besoins des aidants.",
    "portee": "Les aidants accompagnés par les quatre actions, quelle que soit la modalité.",
    "preuves": [
-    { "texte": "Tous dispositifs confondus, 8 aidants sur 10 estiment que l’accompagnement reçu a répondu à leurs besoins.", "pages": "p. 16" },
-    { "texte": "Par action : à la ligne d’écoute, 44 % ont obtenu exactement ce qu’ils étaient venus chercher et 24 % davantage ; aux ateliers, 75 % de satisfaction sur l’atteinte des objectifs initiaux ; à l’information et l’orientation, 66 % pleinement satisfaits et 16 % au-delà de leurs attentes ; au suivi psychologique, 85 % estiment leur besoin initial comblé.", "pages": "p. 16" },
-    { "texte": "Soutien recherché par les appelants de la ligne : une écoute (67 %), décharger leurs émotions (60 %), un espace sans jugement (44 %), échanger avec d’anciens aidants (43 %).", "pages": "p. 13" },
-    { "texte": "Raisons du recours : 70 % ne savaient plus vers qui se tourner, et 70 % disent avoir appelé faute d’avoir trouvé une solution locale satisfaisante.", "pages": "p. 11" },
-    { "texte": "Indicateurs construits en lien avec les objectifs des dispositifs, les attentes des bénéficiaires et les valeurs de l’association.", "pages": "p. 6" },
-    { "texte": "Attentes qui diffèrent selon le sexe et le lieu de vie, tirées surtout de la mesure de la ligne d’écoute : validation émotionnelle, écoute sans jugement et reconnaissance chez les femmes, échange informatif et aide à la décision chez les hommes, régularité des échanges en milieu rural.", "pages": "p. 18–19" },
-    { "texte": "Répondants volontaires, sans effectif publié ; le rapport reconnaît un biais de sélection et des aidants moins représentés dans les données.", "pages": "p. 7, 9" }
+    {
+     "texte": "Tous dispositifs confondus, 8 aidants sur 10 estiment que l’accompagnement reçu a répondu à leurs besoins.",
+     "pages": "p. 16"
+    },
+    {
+     "texte": "Par action : à la ligne d’écoute, 44 % ont obtenu exactement ce qu’ils étaient venus chercher et 24 % davantage ; aux ateliers, 75 % de satisfaction sur l’atteinte des objectifs initiaux ; à l’information et l’orientation, 66 % pleinement satisfaits et 16 % au-delà de leurs attentes ; au suivi psychologique, 85 % estiment leur besoin initial comblé.",
+     "pages": "p. 16"
+    },
+    {
+     "texte": "Soutien recherché par les appelants de la ligne : une écoute (67 %), décharger leurs émotions (60 %), un espace sans jugement (44 %), échanger avec d’anciens aidants (43 %).",
+     "pages": "p. 13"
+    },
+    {
+     "texte": "Raisons du recours : 70 % ne savaient plus vers qui se tourner, et 70 % disent avoir appelé faute d’avoir trouvé une solution locale satisfaisante.",
+     "pages": "p. 11"
+    },
+    {
+     "texte": "Indicateurs construits en lien avec les objectifs des dispositifs, les attentes des bénéficiaires et les valeurs de l’association.",
+     "pages": "p. 6"
+    },
+    {
+     "texte": "Attentes qui diffèrent selon le sexe et le lieu de vie, tirées surtout de la mesure de la ligne d’écoute : validation émotionnelle, écoute sans jugement et reconnaissance chez les femmes, échange informatif et aide à la décision chez les hommes, régularité des échanges en milieu rural.",
+     "pages": "p. 18–19"
+    },
+    {
+     "texte": "Répondants volontaires, sans effectif publié ; le rapport reconnaît un biais de sélection et des aidants moins représentés dans les données.",
+     "pages": "p. 7, 9"
+    }
    ],
-   "conception_invoquee": { "id": "S", "mode": "reconstruite", "premisse": "Les actions valent par leur réponse à « des besoins concrets, exprimés par les aidants eux-mêmes », p. 21" },
+   "conception_invoquee": {
+    "id": "S",
+    "mode": "reconstruite",
+    "premisse": "Les actions valent par leur réponse à « des besoins concrets, exprimés par les aidants eux-mêmes », p. 21"
+   },
    "lectures": {
     "M": {
      "statut_croisement": "Proposed",
@@ -147,7 +222,11 @@
      },
      "verdict": "suspens",
      "manque": "Le lien entre la réponse et un bénéfice pour le système ; la priorité donnée à ces besoins au regard d’autres réponses, dont les solutions locales.",
-     "integre": "Le rapport documente les besoins exprimés par les aidants répondants et leur variation selon le sexe et le lieu de vie ; le lien avec un bénéfice pour le système et la priorité donnée à ces besoins restent à établir."
+     "integre": "Le rapport documente les besoins exprimés par les aidants répondants et leur variation selon le sexe et le lieu de vie ; le lien avec un bénéfice pour le système et la priorité donnée à ces besoins restent à établir.",
+     "pour_etayer": {
+      "texte": "Expliquer en quoi répondre à ces besoins (écoute, décharge émotionnelle, orientation) prévient des pertes pour les aidants, les personnes aidées et les services, comme l’épuisement ou une rupture de l’aide, et justifier la priorité donnée à une écoute nationale à distance plutôt qu’au renforcement des solutions locales.",
+      "verdict_vise": "etayee"
+     }
     },
     "I": {
      "statut_croisement": "Proposed",
@@ -159,7 +238,11 @@
      },
      "verdict": "bornee",
      "manque": "Les attentes des aidants pour qui l’accompagnement n’a pas répondu à leurs besoins ; les aidants qui n’ont pas répondu ; le nombre de répondants.",
-     "integre": "Selon les aidants répondants, volontaires, l’accompagnement reçu a répondu aux besoins de 8 d’entre eux sur 10, tous dispositifs confondus, dans une offre où chacun peut mobiliser une ou plusieurs actions selon ses besoins du moment."
+     "integre": "Selon les aidants répondants, volontaires, l’accompagnement reçu a répondu aux besoins de 8 d’entre eux sur 10, tous dispositifs confondus, dans une offre où chacun peut mobiliser une ou plusieurs actions selon ses besoins du moment.",
+     "pour_etayer": {
+      "texte": "Indiquer combien d’aidants ont répondu, sur combien d’accompagnés par action, et si leur profil diffère des autres ; décrire les attentes des 2 aidants sur 10 pour qui l’accompagnement n’a pas répondu à leurs besoins, avec la question posée et l’échelle de réponse.",
+      "verdict_vise": "etayee"
+     }
     },
     "S": {
      "statut_croisement": "Proposed",
@@ -171,7 +254,11 @@
      },
      "verdict": "bornee",
      "manque": "Les besoins des aidants moins représentés, que le rapport signale sans les décrire ; le nombre de répondants.",
-     "integre": "Pour les aidants répondants, à 85 % des femmes et aux deux tiers urbains, les actions répondent aux besoins qu’ils expriment (écoute, décharge émotionnelle, orientation) pour 8 sur 10 d’entre eux, avec des attentes qui varient selon le sexe et le lieu de vie ; les besoins des aidants moins représentés restent à documenter."
+     "integre": "Pour les aidants répondants, à 85 % des femmes et aux deux tiers urbains, les actions répondent aux besoins qu’ils expriment (écoute, décharge émotionnelle, orientation) pour 8 sur 10 d’entre eux, avec des attentes qui varient selon le sexe et le lieu de vie ; les besoins des aidants moins représentés restent à documenter.",
+     "pour_etayer": {
+      "texte": "Décrire, par quelques entretiens ciblés, les besoins des aidants moins représentés parmi les répondants (hommes, aidants ruraux, aidants de plus de 60 ans), et indiquer le nombre de répondants rapporté au nombre d’aidants accompagnés par action.",
+      "verdict_vise": "etayee"
+     }
     },
     "V": {
      "statut_croisement": "Exploratory",
@@ -188,7 +275,11 @@
        },
        "verdict": "etayee",
        "manque": "Rien pour cette portée ; la réponse effective aux besoins relève d’une seconde garantie.",
-       "integre": "Les quatre actions constituent une réponse argumentée à l’ambition qu’Avec Nos Proches leur donne : rompre l’isolement des aidants, leur offrir un espace d’expression libre, reconnaître la singularité de chaque situation et les orienter vers des ressources adaptées."
+       "integre": "Les quatre actions constituent une réponse argumentée à l’ambition qu’Avec Nos Proches leur donne : rompre l’isolement des aidants, leur offrir un espace d’expression libre, reconnaître la singularité de chaque situation et les orienter vers des ressources adaptées.",
+       "pour_etayer": {
+        "texte": "Rien pour cette portée.",
+        "verdict_vise": null
+       }
       },
       {
        "id": "solidarite-aidants",
@@ -202,7 +293,11 @@
        },
        "verdict": "suspens",
        "manque": "L’énoncé de ce devoir par Avec Nos Proches, qui parle d’ambition et non d’obligation.",
-       "integre": "Les actions répondent à une ambition argumentée envers les aidants ; leur lien avec un devoir de solidarité reste à établir."
+       "integre": "Les actions répondent à une ambition argumentée envers les aidants ; leur lien avec un devoir de solidarité reste à établir.",
+       "pour_etayer": {
+        "texte": "Énoncer le devoir de solidarité que l’association se reconnaît envers les aidants, avec ses raisons, et montrer comment il commande le choix des quatre actions : gratuité, écoute par d’anciens aidants, accès national.",
+        "verdict_vise": "etayee"
+       }
       }
      ]
     },
@@ -221,7 +316,11 @@
        },
        "verdict": "suspens",
        "manque": "La réponse aux attentes qui s’écartent de l’offre, comme la régularité que souhaitent les aidants ruraux ; les effets de ces écarts sur les aidants concernés.",
-       "integre": "Le rapport qualifie le problème à partir des réponses des aidants, en expose la variation selon le sexe et le lieu de vie et en tire une offre « à la carte » ; la réponse aux attentes qui s’écartent de l’offre reste à documenter."
+       "integre": "Le rapport qualifie le problème à partir des réponses des aidants, en expose la variation selon le sexe et le lieu de vie et en tire une offre « à la carte » ; la réponse aux attentes qui s’écartent de l’offre reste à documenter.",
+       "pour_etayer": {
+        "texte": "Documenter la réponse aux attentes qui s’écartent de l’offre : pour les aidants ruraux qui veulent appeler plusieurs fois, indiquer s’ils peuvent retrouver le même bénévole et combien le font ; dire ce que l’association propose aux attentes qu’elle ne couvre pas.",
+        "verdict_vise": "etayee"
+       }
       },
       {
        "id": "equite",
@@ -235,7 +334,11 @@
        },
        "verdict": "suspens",
        "manque": "Les résultats selon le sexe et le lieu de vie, que le rapport ne ventile pas ; les attentes des aidants moins représentés.",
-       "integre": "Le rapport documente des attentes et des usages qui diffèrent selon le sexe et le lieu de vie, et en déduit le maintien de formats divers ; l’équité des réponses entre ces groupes reste à documenter."
+       "integre": "Le rapport documente des attentes et des usages qui diffèrent selon le sexe et le lieu de vie, et en déduit le maintien de formats divers ; l’équité des réponses entre ces groupes reste à documenter.",
+       "pour_etayer": {
+        "texte": "Ventiler les besoins comblés et la satisfaction par sexe et par lieu de vie, avec l’effectif de chaque groupe, et exposer ce que l’association change pour un groupe dont les résultats sont moins bons.",
+        "verdict_vise": "etayee"
+       }
       },
       {
        "id": "isolement-aidants",
@@ -249,7 +352,11 @@
        },
        "verdict": "suspens",
        "manque": "Une justification morale du principe, au-delà d’une priorité de politique publique ; les interprétations concurrentes du problème.",
-       "integre": "Les aidants répondants expliquent leur recours par la solitude (51 %), l’épuisement (37 %) et le fait de ne plus savoir vers qui se tourner (70 %), problèmes que retient la stratégie nationale ; la justification morale du principe reste à exposer."
+       "integre": "Les aidants répondants expliquent leur recours par la solitude (51 %), l’épuisement (37 %) et le fait de ne plus savoir vers qui se tourner (70 %), problèmes que retient la stratégie nationale ; la justification morale du principe reste à exposer.",
+       "pour_etayer": {
+        "texte": "Exposer pourquoi rompre l’isolement des aidants est dû, et non seulement prioritaire pour les pouvoirs publics, par exemple au titre de la solidarité envers ceux qui assurent l’aide d’un proche, et discuter les autres lectures du problème, comme le manque de solutions locales.",
+        "verdict_vise": "etayee"
+       }
       }
      ]
     }
@@ -265,14 +372,35 @@
    "propriete": "L’orientation des aidants vers des solutions adaptées, et l’usage qu’ils font des recommandations.",
    "portee": "Les aidants qui ont bénéficié de l’accompagnement d’information et d’orientation.",
    "preuves": [
-    { "texte": "80 % des aidants ont été orientés vers des solutions qu’ils n’avaient pas envisagées ; 80 % des répondants qui ont découvert de nouvelles propositions d’orientation les ont trouvées adaptées.", "pages": "p. 14" },
-    { "texte": "Les recommandations sont comprises par 80 %, mises en pratique par 64 % et encore ressenties comme utiles après 3 à 6 mois par 40 % des aidants.", "pages": "p. 14" },
-    { "texte": "66 % estiment que le service a pleinement répondu à leurs attentes, 16 % qu’il les a dépassées.", "pages": "p. 16" },
-    { "texte": "Une salariée évalue la situation de l’aidant, l’oriente vers les structures existantes sur son territoire et lui explique les démarches administratives ; le service n’est accessible qu’après un premier contact et suppose la levée de l’anonymat.", "pages": "p. 8" },
-    { "texte": "Avant leur recours, 70 % des aidants répondants ne savaient plus vers qui se tourner pour trouver de l’aide.", "pages": "p. 11" },
-    { "texte": "Le rapport attribue au lien de confiance avec l’association un rôle clé dans l’adhésion au service.", "pages": "p. 14" }
+    {
+     "texte": "80 % des aidants ont été orientés vers des solutions qu’ils n’avaient pas envisagées ; 80 % des répondants qui ont découvert de nouvelles propositions d’orientation les ont trouvées adaptées.",
+     "pages": "p. 14"
+    },
+    {
+     "texte": "Les recommandations sont comprises par 80 %, mises en pratique par 64 % et encore ressenties comme utiles après 3 à 6 mois par 40 % des aidants.",
+     "pages": "p. 14"
+    },
+    {
+     "texte": "66 % estiment que le service a pleinement répondu à leurs attentes, 16 % qu’il les a dépassées.",
+     "pages": "p. 16"
+    },
+    {
+     "texte": "Une salariée évalue la situation de l’aidant, l’oriente vers les structures existantes sur son territoire et lui explique les démarches administratives ; le service n’est accessible qu’après un premier contact et suppose la levée de l’anonymat.",
+     "pages": "p. 8"
+    },
+    {
+     "texte": "Avant leur recours, 70 % des aidants répondants ne savaient plus vers qui se tourner pour trouver de l’aide.",
+     "pages": "p. 11"
+    },
+    {
+     "texte": "Le rapport attribue au lien de confiance avec l’association un rôle clé dans l’adhésion au service.",
+     "pages": "p. 14"
+    }
    ],
-   "conception_invoquee": { "id": null, "mode": "aucune" },
+   "conception_invoquee": {
+    "id": null,
+    "mode": "aucune"
+   },
    "lectures": {
     "M": {
      "statut_croisement": "Proposed",
@@ -284,7 +412,11 @@
      },
      "verdict": "suspens",
      "manque": "Ce que les solutions mises en pratique ont changé pour les aidants et les personnes aidées ; les effets sur les structures sollicitées ; les ressources consommées ; la situation sans l’accompagnement.",
-     "integre": "64 % des aidants répondants disent avoir mis en pratique les recommandations reçues, et 40 % les jugent encore utiles après 3 à 6 mois ; le bénéfice net pour le système reste à établir."
+     "integre": "64 % des aidants répondants disent avoir mis en pratique les recommandations reçues, et 40 % les jugent encore utiles après 3 à 6 mois ; le bénéfice net pour le système reste à établir.",
+     "pour_etayer": {
+      "texte": "Recueillir auprès des aidants qui ont mis les recommandations en pratique ce qu’elles ont changé (aide obtenue, temps d’aide épargné, structures sollicitées), le comparer à leur situation avant le recours, et rapporter ces effets au temps de salariées que coûte le service.",
+      "verdict_vise": "etayee"
+     }
     },
     "I": {
      "statut_croisement": "Proposed",
@@ -296,7 +428,11 @@
      },
      "verdict": "bornee",
      "manque": "L’appréciation des aidants orientés qui n’ont pas répondu ; le nombre de répondants, que le rapport ne donne pas.",
-     "integre": "Parmi les aidants répondants, 80 % ont été orientés vers des solutions qu’ils n’avaient pas envisagées, 80 % de ceux qui en ont découvert les ont trouvées adaptées, 64 % ont mis les recommandations en pratique et 40 % les jugent encore utiles après 3 à 6 mois."
+     "integre": "Parmi les aidants répondants, 80 % ont été orientés vers des solutions qu’ils n’avaient pas envisagées, 80 % de ceux qui en ont découvert les ont trouvées adaptées, 64 % ont mis les recommandations en pratique et 40 % les jugent encore utiles après 3 à 6 mois.",
+     "pour_etayer": {
+      "texte": "Indiquer combien d’aidants ont été orientés en 2024-2025, combien ont répondu et si leur profil diffère des autres ; le service levant l’anonymat, interroger à trois mois tous les aidants orientés est à sa portée.",
+      "verdict_vise": "etayee"
+     }
     },
     "S": {
      "statut_croisement": "Proposed",
@@ -308,7 +444,11 @@
      },
      "verdict": "bornee",
      "manque": "Le nombre d’aidants orientés et de répondants ; le besoin d’orientation propre aux aidants de ce service, le chiffre de 70 % portant sur l’ensemble des répondants.",
-     "integre": "Les aidants répondants disent avoir recouru à l’association sans plus savoir vers qui se tourner (70 %) ; parmi ceux qui ont bénéficié du service d’orientation, 80 % ont été orientés vers des solutions qu’ils n’avaient pas envisagées et 64 % ont mis les recommandations en pratique."
+     "integre": "Les aidants répondants disent avoir recouru à l’association sans plus savoir vers qui se tourner (70 %) ; parmi ceux qui ont bénéficié du service d’orientation, 80 % ont été orientés vers des solutions qu’ils n’avaient pas envisagées et 64 % ont mis les recommandations en pratique.",
+     "pour_etayer": {
+      "texte": "Indiquer le nombre d’aidants orientés et de répondants, et demander à l’entrée dans le service si l’aidant sait vers qui se tourner, pour établir le besoin d’orientation propre à ce service.",
+      "verdict_vise": "etayee"
+     }
     },
     "V": {
      "statut_croisement": "Proposed",
@@ -325,7 +465,11 @@
        },
        "verdict": "suspens",
        "manque": "La justification de cet engagement ; une seconde garantie pour les solutions mises en pratique et leur utilité.",
-       "integre": "Avec Nos Proches se donne pour ambition d’orienter les aidants vers des ressources adaptées et en décrit le service : évaluation de la situation par une salariée, orientation vers les structures du territoire, explication des démarches ; la mise en pratique et l’utilité des recommandations relèvent d’une seconde garantie."
+       "integre": "Avec Nos Proches se donne pour ambition d’orienter les aidants vers des ressources adaptées et en décrit le service : évaluation de la situation par une salariée, orientation vers les structures du territoire, explication des démarches ; la mise en pratique et l’utilité des recommandations relèvent d’une seconde garantie.",
+       "pour_etayer": {
+        "texte": "Sous cette garantie, la mise en pratique des recommandations ne peut pas être étayée : elle relève d’une autre conception. Pour documenter l’engagement, dire pourquoi l’association se tient pour tenue d’orienter les aidants, et montrer la conduite du service : nombre d’aidants orientés, délai de prise en charge, suites données aux situations restées sans solution.",
+        "verdict_vise": null
+       }
       },
       {
        "id": "solidarite-aidants",
@@ -339,7 +483,11 @@
        },
        "verdict": "suspens",
        "manque": "L’énoncé de ce devoir par Avec Nos Proches ; une seconde garantie pour l’effet revendiqué.",
-       "integre": "64 % des aidants répondants disent avoir mis en pratique les recommandations reçues ; le lien avec un devoir de solidarité de l’organisation reste à documenter."
+       "integre": "64 % des aidants répondants disent avoir mis en pratique les recommandations reçues ; le lien avec un devoir de solidarité de l’organisation reste à documenter.",
+       "pour_etayer": {
+        "texte": "Sous cette garantie, la mise en pratique des recommandations ne peut pas être étayée : elle relève d’une autre conception. Pour documenter l’engagement, énoncer le devoir de solidarité que l’association se reconnaît envers les aidants et montrer qu’il commande l’existence d’un service d’orientation gratuit, assuré par des salariées.",
+        "verdict_vise": null
+       }
       }
      ]
     },
@@ -358,7 +506,11 @@
        },
        "verdict": "suspens",
        "manque": "Les personnes aidées, que le rapport ne décrit pas, pour situer les aidants dans le champ de ce droit ; les aidants orientés qui n’ont pas répondu.",
-       "integre": "Une salariée informe les aidants et leur explique les démarches, et 80 % des répondants disent avoir bien compris les recommandations ; la part des aidants qui relèvent de ce droit reste à établir."
+       "integre": "Une salariée informe les aidants et leur explique les démarches, et 80 % des répondants disent avoir bien compris les recommandations ; la part des aidants qui relèvent de ce droit reste à établir.",
+       "pour_etayer": {
+        "texte": "Indiquer qui sont les personnes aidées, au moins leur âge et leur perte d’autonomie, pour situer les aidants dans le champ de ce droit, ainsi que le nombre d’aidants orientés et de répondants.",
+        "verdict_vise": "etayee"
+       }
       },
       {
        "id": "acces-droits",
@@ -372,7 +524,11 @@
        },
        "verdict": "suspens",
        "manque": "Les aides et les droits effectivement obtenus après l’orientation ; les démarches abouties.",
-       "integre": "Une salariée explique aux aidants les démarches administratives, et 64 % des répondants disent avoir mis les recommandations en pratique ; les droits et les aides effectivement obtenus restent à documenter."
+       "integre": "Une salariée explique aux aidants les démarches administratives, et 64 % des répondants disent avoir mis les recommandations en pratique ; les droits et les aides effectivement obtenus restent à documenter.",
+       "pour_etayer": {
+        "texte": "Recueillir à trois mois, auprès des aidants orientés, les aides et les droits demandés et obtenus (APA, congé de proche aidant, solution de répit) et les démarches restées sans suite, en indiquant le nombre de répondants.",
+        "verdict_vise": "etayee"
+       }
       }
      ]
     }
@@ -388,14 +544,35 @@
    "propriete": "La persistance des effets positifs de l’accompagnement.",
    "portee": "Les aidants accompagnés par les quatre actions, plusieurs mois après l’accompagnement.",
    "preuves": [
-    { "texte": "61 % des aidants ressentent encore les effets positifs de l’accompagnement une semaine après l’intervention : réduction de l’isolement, regain d’énergie, meilleure compréhension de soi.", "pages": "p. 17" },
-    { "texte": "41 % des aidants déclarent que les effets positifs persistent 3 à 6 mois après l’accompagnement, et 16 % les ressentent encore partiellement.", "pages": "p. 17" },
-    { "texte": "Par action : effets qui perdurent au-delà de 3 mois pour 41 % des appelants de la ligne ; impacts émotionnels au-delà de l’atelier pour « une majorité des aidants » ; recommandations encore utiles après 3 à 6 mois pour 40 % ; effets du suivi psychologique qui perdurent après plusieurs mois pour plus de la moitié.", "pages": "p. 13–14" },
-    { "texte": "Questionnaires diffusés 3 à 12 mois après la participation, « afin de mesurer les effets à court et moyen terme ».", "pages": "p. 6" },
-    { "texte": "Le rapport voit dans ces chiffres la capacité des dispositifs « à initier des dynamiques de changement profondes » ; le sentiment d’avoir été écouté reste « une ressource émotionnelle mobilisable dans le temps ».", "pages": "p. 17" },
-    { "texte": "Attentes de durée qui diffèrent : en milieu rural, souhait d’appeler plusieurs fois et d’être accompagné dans la durée ; en milieu urbain, recours ponctuel à un moment clé, sans recherche de continuité.", "pages": "p. 19" }
+    {
+     "texte": "61 % des aidants ressentent encore les effets positifs de l’accompagnement une semaine après l’intervention : réduction de l’isolement, regain d’énergie, meilleure compréhension de soi.",
+     "pages": "p. 17"
+    },
+    {
+     "texte": "41 % des aidants déclarent que les effets positifs persistent 3 à 6 mois après l’accompagnement, et 16 % les ressentent encore partiellement.",
+     "pages": "p. 17"
+    },
+    {
+     "texte": "Par action : effets qui perdurent au-delà de 3 mois pour 41 % des appelants de la ligne ; impacts émotionnels au-delà de l’atelier pour « une majorité des aidants » ; recommandations encore utiles après 3 à 6 mois pour 40 % ; effets du suivi psychologique qui perdurent après plusieurs mois pour plus de la moitié.",
+     "pages": "p. 13–14"
+    },
+    {
+     "texte": "Questionnaires diffusés 3 à 12 mois après la participation, « afin de mesurer les effets à court et moyen terme ».",
+     "pages": "p. 6"
+    },
+    {
+     "texte": "Le rapport voit dans ces chiffres la capacité des dispositifs « à initier des dynamiques de changement profondes » ; le sentiment d’avoir été écouté reste « une ressource émotionnelle mobilisable dans le temps ».",
+     "pages": "p. 17"
+    },
+    {
+     "texte": "Attentes de durée qui diffèrent : en milieu rural, souhait d’appeler plusieurs fois et d’être accompagné dans la durée ; en milieu urbain, recours ponctuel à un moment clé, sans recherche de continuité.",
+     "pages": "p. 19"
+    }
    ],
-   "conception_invoquee": { "id": null, "mode": "aucune" },
+   "conception_invoquee": {
+    "id": null,
+    "mode": "aucune"
+   },
    "lectures": {
     "M": {
      "statut_croisement": "Proposed",
@@ -407,7 +584,11 @@
      },
      "verdict": "suspens",
      "manque": "Un horizon et une règle explicites ; la nature des effets qui persistent et leur érosion chez les autres aidants ; les ressources consommées ; la situation sans l’accompagnement.",
-     "integre": "41 % des aidants répondants déclarent que les effets positifs de l’accompagnement persistent 3 à 6 mois après, et 16 % partiellement ; le bénéfice net dans la durée reste à établir."
+     "integre": "41 % des aidants répondants déclarent que les effets positifs de l’accompagnement persistent 3 à 6 mois après, et 16 % partiellement ; le bénéfice net dans la durée reste à établir.",
+     "pour_etayer": {
+      "texte": "Fixer un horizon, par exemple six mois, et suivre les mêmes aidants à un et à six mois pour mesurer quels effets persistent et lesquels s’érodent ; rapporter les effets observés au coût des actions sur cet horizon, sans y ajouter de projection.",
+      "verdict_vise": "etayee"
+     }
     },
     "I": {
      "statut_croisement": "Proposed",
@@ -419,7 +600,11 @@
      },
      "verdict": "bornee",
      "manque": "Les autres répondants, chez qui les effets ne persistent pas ou ne sont pas décrits ; ce que recouvrent les effets qui persistent ; le nombre de répondants et la manière dont l’effet à une semaine a été recueilli.",
-     "integre": "41 % des aidants répondants déclarent que les effets positifs de l’accompagnement persistent 3 à 6 mois après, et 16 % qu’ils persistent partiellement."
+     "integre": "41 % des aidants répondants déclarent que les effets positifs de l’accompagnement persistent 3 à 6 mois après, et 16 % qu’ils persistent partiellement.",
+     "pour_etayer": {
+      "texte": "Rappeler les mêmes aidants à trois et à six mois en leur demandant quels effets persistent (énergie, solitude, compréhension de soi) et lesquels comptent pour eux ; préciser comment l’effet à une semaine a été recueilli, et le nombre de répondants à chaque temps sur les aidants accompagnés.",
+      "verdict_vise": "etayee"
+     }
     },
     "S": {
      "statut_croisement": "Proposed",
@@ -431,13 +616,21 @@
      },
      "verdict": "suspens",
      "manque": "Le maintien rapporté à la temporalité du besoin, que le rapport dit ponctuelle pour les uns et continue pour les autres ; les relais vers lesquels les aidants sont orientés.",
-     "integre": "41 % des aidants répondants déclarent que les effets persistent 3 à 6 mois après l’accompagnement ; le rapport de ce maintien au besoin de chaque groupe d’aidants, ponctuel ou continu, reste à établir."
+     "integre": "41 % des aidants répondants déclarent que les effets persistent 3 à 6 mois après l’accompagnement ; le rapport de ce maintien au besoin de chaque groupe d’aidants, ponctuel ou continu, reste à établir.",
+     "pour_etayer": {
+      "texte": "Rapporter la persistance au besoin de chaque groupe : pour les aidants qui veulent une continuité, en milieu rural surtout, mesurer à trois et six mois si la réponse se maintient ou si un relais a pris la suite ; pour ceux qui appellent à un moment clé, montrer que la réponse ponctuelle a suffi.",
+      "verdict_vise": "etayee"
+     }
     },
     "V": {
      "statut_croisement": "Open",
      "verdict": "ouvert",
      "manque": "L’obligation qui définit la conception vertueuse ne fixe aucun horizon : elle ne dit rien par elle-même de la durée des effets. La persistance revendiquée se lit sous une autre conception.",
-     "integre": ""
+     "integre": "",
+     "pour_etayer": {
+      "texte": "—",
+      "verdict_vise": null
+     }
     },
     "N": {
      "statut_croisement": "Proposed",
@@ -454,7 +647,11 @@
        },
        "verdict": "suspens",
        "manque": "La continuité effective du soutien, alors que le suivi psychologique est limité à 1 à 3 séances et que les aidants ruraux souhaitent être accompagnés dans la durée.",
-       "integre": "Selon le rapport, plus de la moitié des aidants ont recours à plusieurs actions de l’association, et l’aidant peut revenir vers elle quand son besoin évolue ; la continuité du soutien au long de l’aidance reste à documenter."
+       "integre": "Selon le rapport, plus de la moitié des aidants ont recours à plusieurs actions de l’association, et l’aidant peut revenir vers elle quand son besoin évolue ; la continuité du soutien au long de l’aidance reste à documenter.",
+       "pour_etayer": {
+        "texte": "Énoncer l’exigence de continuité que se donne l’association et indiquer, sur un an, combien d’aidants reviennent et après combien de temps, et ce qui est proposé quand les 1 à 3 séances de suivi psychologique ne suffisent pas.",
+        "verdict_vise": "etayee"
+       }
       },
       {
        "id": "sante-aidants",
@@ -468,7 +665,11 @@
        },
        "verdict": "suspens",
        "manque": "L’épuisement et la santé des aidants dans la durée, que le rapport ne mesure pas après l’accompagnement.",
-       "integre": "37 % des aidants répondants disaient un fort épuisement avant leur recours, et 41 % déclarent que les effets positifs persistent 3 à 6 mois après l’accompagnement ; l’épuisement des aidants dans la durée reste à documenter."
+       "integre": "37 % des aidants répondants disaient un fort épuisement avant leur recours, et 41 % déclarent que les effets positifs persistent 3 à 6 mois après l’accompagnement ; l’épuisement des aidants dans la durée reste à documenter.",
+       "pour_etayer": {
+        "texte": "Mesurer l’épuisement des mêmes aidants au premier contact puis à six mois, avec une échelle publiée, et indiquer le nombre de répondants à chaque temps.",
+        "verdict_vise": "etayee"
+       }
       }
      ]
     }
@@ -484,14 +685,35 @@
    "propriete": "La confiance et le sentiment d’être compris dans la relation avec un pair.",
    "portee": "Les aidants écoutés sur la ligne par un bénévole ancien aidant, ou accompagnés par un binôme professionnel et ancien aidant.",
    "preuves": [
-    { "texte": "81 % des répondants de la ligne d’écoute déclarent s’être sentis mieux compris parce que leur interlocuteur était un pair.", "pages": "p. 17" },
-    { "texte": "92 % des participants valorisent la co-animation par un professionnel et un ancien aidant bénévole comme un facteur rassurant et équilibré.", "pages": "p. 17" },
-    { "texte": "43 % des appelants de la ligne souhaitaient échanger avec d’anciens aidants, et 44 % chercher un espace sans jugement.", "pages": "p. 13" },
-    { "texte": "93 % des appelants de la ligne et 100 % des participants aux ateliers se sont sentis écoutés.", "pages": "p. 13" },
-    { "texte": "Témoignage : « Ça m’a fait du bien de pouvoir vider mon sac. Ce n’était pas que de l’écoute : on m’a aidé à mettre des mots sur ce que je vivais ».", "pages": "p. 11" },
-    { "texte": "Le rapport affirme que cette reconnaissance entre pairs facilite la libération de la parole et l’adhésion aux pistes évoquées, et fait de la pair-aidance une « dimension identitaire et relationnelle fondatrice de l’expérience de soutien ».", "pages": "p. 17" }
+    {
+     "texte": "81 % des répondants de la ligne d’écoute déclarent s’être sentis mieux compris parce que leur interlocuteur était un pair.",
+     "pages": "p. 17"
+    },
+    {
+     "texte": "92 % des participants valorisent la co-animation par un professionnel et un ancien aidant bénévole comme un facteur rassurant et équilibré.",
+     "pages": "p. 17"
+    },
+    {
+     "texte": "43 % des appelants de la ligne souhaitaient échanger avec d’anciens aidants, et 44 % chercher un espace sans jugement.",
+     "pages": "p. 13"
+    },
+    {
+     "texte": "93 % des appelants de la ligne et 100 % des participants aux ateliers se sont sentis écoutés.",
+     "pages": "p. 13"
+    },
+    {
+     "texte": "Témoignage : « Ça m’a fait du bien de pouvoir vider mon sac. Ce n’était pas que de l’écoute : on m’a aidé à mettre des mots sur ce que je vivais ».",
+     "pages": "p. 11"
+    },
+    {
+     "texte": "Le rapport affirme que cette reconnaissance entre pairs facilite la libération de la parole et l’adhésion aux pistes évoquées, et fait de la pair-aidance une « dimension identitaire et relationnelle fondatrice de l’expérience de soutien ».",
+     "pages": "p. 17"
+    }
    ],
-   "conception_invoquee": { "id": null, "mode": "aucune" },
+   "conception_invoquee": {
+    "id": null,
+    "mode": "aucune"
+   },
    "lectures": {
     "M": {
      "statut_croisement": "Proposed",
@@ -503,7 +725,11 @@
      },
      "verdict": "suspens",
      "manque": "Une règle qui intègre l’expérience au bénéfice, ou le lien documenté entre la relation avec un pair et l’adhésion aux pistes évoquées ; les expériences défavorables ; le temps des bénévoles.",
-     "integre": "81 % des répondants de la ligne se sont sentis mieux compris parce que leur interlocuteur était un pair, et 92 % des participants valorisent la co-animation ; la contribution de cette expérience au bénéfice net reste à établir."
+     "integre": "81 % des répondants de la ligne se sont sentis mieux compris parce que leur interlocuteur était un pair, et 92 % des participants valorisent la co-animation ; la contribution de cette expérience au bénéfice net reste à établir.",
+     "pour_etayer": {
+      "texte": "Montrer que se sentir compris par un pair conduit à l’adhésion, en comparant la mise en pratique des pistes évoquées chez les aidants qui se sont sentis mieux compris et chez les autres, ou inscrire cette expérience dans la définition du bénéfice ; signaler les expériences défavorables et chiffrer le temps des bénévoles.",
+      "verdict_vise": "etayee"
+     }
     },
     "I": {
      "statut_croisement": "Proposed",
@@ -515,7 +741,11 @@
      },
      "verdict": "bornee",
      "manque": "Le nombre de répondants ; l’expérience des aidants qui ne se sont pas sentis mieux compris, que le rapport ne décrit pas.",
-     "integre": "Parmi les répondants de la ligne d’écoute, 43 % disaient vouloir échanger avec d’anciens aidants et 81 % se sont sentis mieux compris parce que leur interlocuteur était un pair ; 92 % des participants valorisent la co-animation par un professionnel et un ancien aidant."
+     "integre": "Parmi les répondants de la ligne d’écoute, 43 % disaient vouloir échanger avec d’anciens aidants et 81 % se sont sentis mieux compris parce que leur interlocuteur était un pair ; 92 % des participants valorisent la co-animation par un professionnel et un ancien aidant.",
+     "pour_etayer": {
+      "texte": "Indiquer combien d’appelants ont répondu, sur combien d’aidants écoutés, et rapporter ce qu’ont dit ceux qui ne se sont pas sentis mieux compris, par une question ouverte ou quelques entretiens.",
+      "verdict_vise": "etayee"
+     }
     },
     "S": {
      "statut_croisement": "Proposed",
@@ -527,7 +757,11 @@
      },
      "verdict": "bornee",
      "manque": "Le nombre d’aidants écoutés et de répondants ; les expériences selon le sexe et le lieu de vie ; le lien avec l’adhésion aux pistes évoquées, si la pair-aidance est tenue pour un moyen.",
-     "integre": "Pour les répondants de la ligne d’écoute, dont 43 % cherchaient à échanger avec d’anciens aidants, l’écoute par un pair répond à ce besoin : 81 % se sont sentis mieux compris parce que leur interlocuteur était un pair."
+     "integre": "Pour les répondants de la ligne d’écoute, dont 43 % cherchaient à échanger avec d’anciens aidants, l’écoute par un pair répond à ce besoin : 81 % se sont sentis mieux compris parce que leur interlocuteur était un pair.",
+     "pour_etayer": {
+      "texte": "Indiquer le nombre d’appelants et de répondants, et ventiler le sentiment d’être compris par un pair selon le sexe et le lieu de vie, puisque les attentes de ces groupes diffèrent.",
+      "verdict_vise": "etayee"
+     }
     },
     "V": {
      "statut_croisement": "Exploratory",
@@ -544,7 +778,11 @@
        },
        "verdict": "suspens",
        "manque": "Le contenu de ce devoir relationnel, que le rapport énonce comme fondement sans le développer ; une seconde garantie pour la confiance et la compréhension revendiquées.",
-       "integre": "Avec Nos Proches fonde ses actions sur un recentrage sur l’expérience de l’aidant et confie l’écoute à d’anciens aidants ; la confiance et la compréhension que les aidants en retirent relèvent d’une seconde garantie."
+       "integre": "Avec Nos Proches fonde ses actions sur un recentrage sur l’expérience de l’aidant et confie l’écoute à d’anciens aidants ; la confiance et la compréhension que les aidants en retirent relèvent d’une seconde garantie.",
+       "pour_etayer": {
+        "texte": "Sous cette garantie, la confiance que les aidants retirent de l’écoute ne peut pas être étayée : elle relève d’une autre conception. Pour documenter l’engagement, expliciter ce que le recentrage sur l’expérience de l’aidant exige de la relation, et décrire les pratiques qui le mettent en acte : recrutement et formation des bénévoles anciens aidants, consignes d’écoute, supervision.",
+        "verdict_vise": null
+       }
       },
       {
        "id": "entraide",
@@ -558,7 +796,11 @@
        },
        "verdict": "suspens",
        "manque": "L’énoncé de l’entraide comme obligation, le rapport la définissant comme modalité ; une seconde garantie pour l’effet revendiqué.",
-       "integre": "L’écoute est confiée à d’anciens aidants bénévoles et les ateliers à un binôme professionnel et ancien aidant ; le lien avec une obligation d’entraide reste à documenter."
+       "integre": "L’écoute est confiée à d’anciens aidants bénévoles et les ateliers à un binôme professionnel et ancien aidant ; le lien avec une obligation d’entraide reste à documenter.",
+       "pour_etayer": {
+        "texte": "Sous cette garantie, la confiance que les aidants retirent de l’écoute ne peut pas être étayée : elle relève d’une autre conception. Pour documenter l’engagement, énoncer l’entraide comme une obligation que l’association reconnaît, avec ses raisons, et décrire comment elle l’organise : place des anciens aidants, formation, accompagnement des bénévoles.",
+        "verdict_vise": null
+       }
       }
      ]
     },
@@ -577,7 +819,11 @@
        },
        "verdict": "bornee",
        "manque": "L’expérience des aidants qui n’ont pas répondu ; les situations où l’aidant ne s’est pas senti compris, que le rapport ne décrit pas.",
-       "integre": "Sur la ligne d’écoute, tenue par d’anciens aidants, 93 % des appelants répondants se sont sentis écoutés et 81 % mieux compris parce que leur interlocuteur était un pair ; dans les ateliers, 100 % des participants répondants se sont sentis écoutés."
+       "integre": "Sur la ligne d’écoute, tenue par d’anciens aidants, 93 % des appelants répondants se sont sentis écoutés et 81 % mieux compris parce que leur interlocuteur était un pair ; dans les ateliers, 100 % des participants répondants se sont sentis écoutés.",
+       "pour_etayer": {
+        "texte": "Indiquer le nombre d’appelants et de participants répondants, rapporté aux aidants écoutés, et décrire les situations où l’aidant ne s’est pas senti compris, par une question ouverte ou un retour des bénévoles.",
+        "verdict_vise": "etayee"
+       }
       },
       {
        "id": "reconnaissance-aidants",
@@ -591,7 +837,11 @@
        },
        "verdict": "suspens",
        "manque": "La reconnaissance explicite de ce qu’elles font, que les aidantes disent chercher : le rapport ne dit pas si elles l’ont trouvée.",
-       "integre": "81 % des répondants de la ligne se sont sentis mieux compris parce que leur interlocuteur était un pair ; la reconnaissance explicite de leur rôle, que les aidantes disent chercher, reste à documenter."
+       "integre": "81 % des répondants de la ligne se sont sentis mieux compris parce que leur interlocuteur était un pair ; la reconnaissance explicite de leur rôle, que les aidantes disent chercher, reste à documenter.",
+       "pour_etayer": {
+        "texte": "Demander aux aidants s’ils se sont sentis reconnus dans ce qu’ils accomplissent, puisque les aidantes disent chercher cette reconnaissance, et décrire les pratiques d’écoute qui la visent.",
+        "verdict_vise": "etayee"
+       }
       }
      ]
     }
@@ -607,14 +857,36 @@
    "propriete": "L’accès des aidants à l’écoute et au soutien, sans obstacle de lieu, de coût, d’horaire ou d’exposition.",
    "portee": "Les aidants de toute la France, dont ceux qui vivent en milieu rural.",
    "preuves": [
-    { "texte": "Raisons du recours : simplicité du téléphone (40 %), créneaux horaires (23 %), anonymat et confidentialité (19 %), gratuité (18 %).", "pages": "p. 11" },
-    { "texte": "70 % des répondants disent avoir appelé faute d’avoir trouvé une solution locale satisfaisante.", "pages": "p. 11" },
-    { "texte": "En milieu rural, la confidentialité et l’anonymat sont des ressorts forts d’engagement, « jusqu’à 59% ».", "pages": "p. 18" },
-    { "texte": "Le suivi psychologique par téléphone est jugé moins intrusif et plus souple qu’un suivi en présentiel.", "pages": "p. 18" },
-    { "texte": "Ligne ouverte 7 j/7 de 8 h à 22 h, ateliers d’une heure par téléphone, gratuité ; les accompagnements de second niveau supposent un premier contact et la levée de l’anonymat.", "pages": "p. 8" },
-    { "texte": "Répondants : 85 % de femmes, principalement de 26 à 59 ans, deux tiers en milieu urbain ; le rapport signale des aidants moins représentés dans les données.", "pages": "p. 9" }
+    {
+     "texte": "Raisons du recours : simplicité du téléphone (40 %), créneaux horaires (23 %), anonymat et confidentialité (19 %), gratuité (18 %).",
+     "pages": "p. 11"
+    },
+    {
+     "texte": "70 % des répondants disent avoir appelé faute d’avoir trouvé une solution locale satisfaisante.",
+     "pages": "p. 11"
+    },
+    {
+     "texte": "En milieu rural, la confidentialité et l’anonymat sont des ressorts forts d’engagement, « jusqu’à 59% ».",
+     "pages": "p. 18"
+    },
+    {
+     "texte": "Le suivi psychologique par téléphone est jugé moins intrusif et plus souple qu’un suivi en présentiel.",
+     "pages": "p. 18"
+    },
+    {
+     "texte": "Ligne ouverte 7 j/7 de 8 h à 22 h, ateliers d’une heure par téléphone, gratuité ; les accompagnements de second niveau supposent un premier contact et la levée de l’anonymat.",
+     "pages": "p. 8"
+    },
+    {
+     "texte": "Répondants : 85 % de femmes, principalement de 26 à 59 ans, deux tiers en milieu urbain ; le rapport signale des aidants moins représentés dans les données.",
+     "pages": "p. 9"
+    }
    ],
-   "conception_invoquee": { "id": "N", "mode": "reconstruite", "premisse": "Toutes les actions reposent sur des fondements communs : « accessibilité (via le téléphone), gratuité, confidentialité, souplesse », p. 8" },
+   "conception_invoquee": {
+    "id": "N",
+    "mode": "reconstruite",
+    "premisse": "Toutes les actions reposent sur des fondements communs : « accessibilité (via le téléphone), gratuité, confidentialité, souplesse », p. 8"
+   },
    "lectures": {
     "M": {
      "statut_croisement": "Proposed",
@@ -626,7 +898,11 @@
      },
      "verdict": "suspens",
      "manque": "Le nombre d’aidants atteints et les aidants non atteints ; les bénéfices selon les populations ; les ressources de l’offre.",
-     "integre": "Les aidants répondants citent la simplicité du téléphone (40 %) et la gratuité (18 %) parmi les raisons de leur recours, et 70 % disent avoir appelé faute de solution locale ; la contribution de cet accès au bénéfice net reste à établir."
+     "integre": "Les aidants répondants citent la simplicité du téléphone (40 %) et la gratuité (18 %) parmi les raisons de leur recours, et 70 % disent avoir appelé faute de solution locale ; la contribution de cet accès au bénéfice net reste à établir.",
+     "pour_etayer": {
+      "texte": "Indiquer le nombre d’aidants atteints par action et le coût annuel de l’offre à distance, comparer les bénéfices déclarés selon le lieu de vie, et estimer à partir des données publiques sur les aidants la part que l’offre n’atteint pas.",
+      "verdict_vise": "etayee"
+     }
     },
     "I": {
      "statut_croisement": "Proposed",
@@ -638,7 +914,11 @@
      },
      "verdict": "bornee",
      "manque": "Les aidants qui n’ont pas recouru ou y ont renoncé, et leurs raisons ; le nombre de répondants.",
-     "integre": "Pour les aidants répondants, qui ont recouru à l’offre, le téléphone a compté dans ce recours : 40 % citent sa simplicité, 23 % les créneaux horaires, 19 % l’anonymat et 18 % la gratuité, et 70 % disent avoir appelé faute de solution locale satisfaisante."
+     "integre": "Pour les aidants répondants, qui ont recouru à l’offre, le téléphone a compté dans ce recours : 40 % citent sa simplicité, 23 % les créneaux horaires, 19 % l’anonymat et 18 % la gratuité, et 70 % disent avoir appelé faute de solution locale satisfaisante.",
+     "pour_etayer": {
+      "texte": "Demander au premier contact depuis quand l’aidant cherchait de l’aide et ce qui l’a retenu d’appeler plus tôt, interroger ceux qui renoncent au second niveau, qui suppose la levée de l’anonymat, et indiquer le nombre de répondants rapporté aux aidants accompagnés.",
+      "verdict_vise": "etayee"
+     }
     },
     "S": {
      "statut_croisement": "Proposed",
@@ -650,7 +930,11 @@
      },
      "verdict": "suspens",
      "manque": "Le nombre d’aidants servis et la population concernée ; les raisons du non-recours ; les aidants moins représentés, que le rapport signale sans les décrire.",
-     "integre": "Les répondants sont à 85 % des femmes et aux deux tiers urbains, et 70 % disent avoir appelé faute de solution locale ; la part des aidants concernés que l’offre atteint reste à documenter."
+     "integre": "Les répondants sont à 85 % des femmes et aux deux tiers urbains, et 70 % disent avoir appelé faute de solution locale ; la part des aidants concernés que l’offre atteint reste à documenter.",
+     "pour_etayer": {
+      "texte": "Indiquer le nombre d’aidants accompagnés par action et par département, rapporté à une estimation publique du nombre d’aidants, et décrire par quelques entretiens les aidants moins représentés, hommes et aidants ruraux, et leurs raisons de non-recours.",
+      "verdict_vise": "etayee"
+     }
     },
     "V": {
      "statut_croisement": "Exploratory",
@@ -667,7 +951,11 @@
        },
        "verdict": "suspens",
        "manque": "La justification de l’engagement et de ses limites ; une seconde garantie pour les freins effectivement levés.",
-       "integre": "Avec Nos Proches s’engage à offrir aux aidants une écoute accessible partout en France et documente les pratiques qui s’y rapportent : téléphone, gratuité, anonymat au premier niveau, ligne ouverte 7 j/7 de 8 h à 22 h ; les freins effectivement levés relèvent d’une seconde garantie."
+       "integre": "Avec Nos Proches s’engage à offrir aux aidants une écoute accessible partout en France et documente les pratiques qui s’y rapportent : téléphone, gratuité, anonymat au premier niveau, ligne ouverte 7 j/7 de 8 h à 22 h ; les freins effectivement levés relèvent d’une seconde garantie.",
+       "pour_etayer": {
+        "texte": "Sous cette garantie, les freins effectivement levés ne peuvent pas être étayés : ils relèvent d’une autre conception. Pour documenter l’engagement, dire pourquoi l’association se tient pour tenue d’être accessible partout en France, justifier ses limites, dont la levée de l’anonymat au second niveau, et montrer la répartition des appels par territoire.",
+        "verdict_vise": null
+       }
       },
       {
        "id": "solidarite-aidants",
@@ -681,7 +969,11 @@
        },
        "verdict": "suspens",
        "manque": "L’énoncé de ce devoir par Avec Nos Proches ; une seconde garantie pour les freins effectivement levés.",
-       "integre": "Le rapport documente une offre gratuite, à distance et anonyme au premier niveau ; le lien avec un devoir de solidarité envers les aidants reste à documenter."
+       "integre": "Le rapport documente une offre gratuite, à distance et anonyme au premier niveau ; le lien avec un devoir de solidarité envers les aidants reste à documenter.",
+       "pour_etayer": {
+        "texte": "Sous cette garantie, les freins effectivement levés ne peuvent pas être étayés : ils relèvent d’une autre conception. Pour documenter l’engagement, énoncer le devoir de solidarité que l’association se reconnaît envers les aidants, dire quels aidants il couvre, et montrer que la gratuité, le téléphone et les horaires en découlent.",
+        "verdict_vise": null
+       }
       }
      ]
     },
@@ -700,7 +992,11 @@
        },
        "verdict": "bornee",
        "manque": "L’accès effectif des aidants au-delà des répondants, et les obstacles qui demeurent ; la levée de l’anonymat exigée au second niveau, dont le rapport ne donne pas les raisons.",
-       "integre": "Les actions sont gratuites, accessibles par téléphone 7 j/7 de 8 h à 22 h et anonymes au premier niveau, et les aidants répondants citent la simplicité du téléphone (40 %), l’anonymat (19 %) et la gratuité (18 %) parmi les raisons de leur recours ; l’accès des aidants que les données ne touchent pas reste à documenter."
+       "integre": "Les actions sont gratuites, accessibles par téléphone 7 j/7 de 8 h à 22 h et anonymes au premier niveau, et les aidants répondants citent la simplicité du téléphone (40 %), l’anonymat (19 %) et la gratuité (18 %) parmi les raisons de leur recours ; l’accès des aidants que les données ne touchent pas reste à documenter.",
+       "pour_etayer": {
+        "texte": "Indiquer le nombre d’aidants accompagnés par action et la part des répondants, les obstacles signalés par ceux qui renoncent au second niveau, et les raisons de la levée de l’anonymat exigée à ce niveau.",
+        "verdict_vise": "etayee"
+       }
       },
       {
        "id": "egalite-territoires",
@@ -714,7 +1010,11 @@
        },
        "verdict": "suspens",
        "manque": "L’accès rapporté aux aidants de chaque territoire ; la réponse au besoin de régularité que les aidants ruraux expriment.",
-       "integre": "Deux tiers des répondants vivent en milieu urbain et 70 % disent avoir appelé faute de solution locale ; en milieu rural, l’anonymat et la confidentialité sont des ressorts forts d’engagement ; l’égalité d’accès entre territoires reste à documenter."
+       "integre": "Deux tiers des répondants vivent en milieu urbain et 70 % disent avoir appelé faute de solution locale ; en milieu rural, l’anonymat et la confidentialité sont des ressorts forts d’engagement ; l’égalité d’accès entre territoires reste à documenter.",
+       "pour_etayer": {
+        "texte": "Ventiler le recours et les résultats par lieu de vie et par région, les rapporter au nombre d’aidants de chaque territoire, et indiquer comment l’association répond au besoin de régularité exprimé en milieu rural.",
+        "verdict_vise": "etayee"
+       }
       }
      ]
     }
