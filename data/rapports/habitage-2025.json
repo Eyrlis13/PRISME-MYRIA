@@ -63,6 +63,10 @@
      },
      "verdict": "suspens",
      "manque": "Effets sur les proches, les partenaires et les services ; ressources consommées ; situation sans les ateliers ; attribution du renforcement aux ateliers.",
+     "pour_etayer": {
+      "texte": "Rapporter le coût d’un atelier par participant (temps de l’animatrice et du partenaire local, salle) et, à l’entretien à un an, les démarches d’habitat engagées, les demandes adressées au CCAS ou au CLIC et le temps que les proches y ont consacré. Les comparer aux démarches de l’année écoulée que déclarent, à leur inscription, les participants d’une session suivante.",
+      "verdict_vise": "etayee"
+     },
      "integre": "42 % des répondants sont plutôt d’accord et 49,7 % tout à fait d’accord avec une augmentation de leur capacité à agir ; le bénéfice net pour le système reste à établir."
     },
     "I": {
@@ -75,6 +79,10 @@
      },
      "verdict": "suspens",
      "manque": "Ce que les participants peuvent désormais décider ou faire pour leur habitat, que l’entretien à un an pouvait documenter ; l’énoncé de la question, le moment du recueil et le nombre de répondants ; l’origine du chiffre de 90 %.",
+     "pour_etayer": {
+      "texte": "Indiquer l’énoncé de la question sur la capacité à agir, le moment où elle est posée et le nombre de répondants sur les 127 participants, en montrant comment le chiffre de 90 % en est tiré. Restituer, à l’entretien à un an, ce que chaque personne dit avoir décidé ou entrepris pour son habitat depuis l’atelier, la part qu’elle en attribue à l’atelier et les autres événements qui ont pesé.",
+      "verdict_vise": "etayee"
+     },
      "integre": "42 % des répondants sont plutôt d’accord et 49,7 % tout à fait d’accord avec une augmentation de leur capacité à agir, à un moment que le rapport ne précise pas ; ce que ce renforcement change dans leurs décisions sur leur habitat reste à établir."
     },
     "S": {
@@ -87,6 +95,10 @@
      },
      "verdict": "suspens",
      "manque": "Le besoin d’agir sur son habitat, identifié avec les personnes : la « volonté d’être acteur de leurs choix » figure dans l’analyse sans que le rapport dise d’où elle vient, et ne compte pas parmi les motifs de participation ; le nombre de répondants ; un résultat de l’entretien à un an.",
+     "pour_etayer": {
+      "texte": "Indiquer d’où vient la « volonté d’être acteur de leurs choix » (question d’inscription, échanges du premier jour), combien des 127 participants l’expriment et combien ont répondu à la question sur la capacité à agir. Poser la même question à l’entretien à un an pour distinguer la réalisation en fin d’atelier d’un changement durable.",
+      "verdict_vise": "etayee"
+     },
      "integre": "42 % des répondants sont plutôt d’accord et 49,7 % tout à fait d’accord avec une augmentation de leur capacité à agir ; la réponse à un besoin défini avec les personnes retraitées et sa persistance restent à documenter."
     },
     "V": {
@@ -104,6 +116,10 @@
        },
        "verdict": "suspens",
        "manque": "Une seconde garantie pour l’effet revendiqué ; la justification morale de l’engagement, que le rapport énonce sans l’argumenter.",
+       "pour_etayer": {
+        "texte": "Sous cette garantie, le renforcement du pouvoir d’agir ne peut pas être étayé : il relève d’une autre conception, l’individualiste que le rapport invoque. Pour documenter l’engagement, énoncer pourquoi l’association tient pour un devoir de permettre à chacun de choisir son habitat, et décrire comment les ateliers s’y conforment : comment les CCAS et les CLIC recrutent les participants dans les 20 communes, et ce que l’atelier coûte à ceux qui y viennent.",
+        "verdict_vise": null
+       },
        "integre": "Habit’âge énonce la volonté de permettre à chacun de réfléchir et de choisir son habitat, et organise depuis 2018 des ateliers de trois jours avec des acteurs locaux ; le renforcement du pouvoir d’agir relève d’une seconde garantie."
       },
       {
@@ -118,6 +134,10 @@
        },
        "verdict": "suspens",
        "manque": "L’énoncé de ce devoir par Habit’âge ; une seconde garantie pour l’effet revendiqué.",
+       "pour_etayer": {
+        "texte": "Sous cette garantie, le renforcement du pouvoir d’agir ne peut pas être étayé : il relève d’une autre conception. Pour documenter l’engagement, énoncer le devoir que l’association se reconnaît envers les retraités en début de perte d’autonomie ou vivant seuls, et rapporter ce qu’il change à la conduite des ateliers, par exemple le rythme des trois jours ou l’accompagnement de ceux qui ne peuvent pas venir seuls.",
+        "verdict_vise": null
+       },
        "integre": "42 % des répondants sont plutôt d’accord et 49,7 % tout à fait d’accord avec une augmentation de leur capacité à agir ; le lien avec un devoir de sollicitude de l’organisation reste à documenter."
       }
      ]
@@ -137,6 +157,10 @@
        },
        "verdict": "suspens",
        "manque": "Les choix d’habitat que les participants font ou préparent, et les conditions de ces choix ; l’énoncé de la question sur la capacité à agir et le nombre de répondants.",
+       "pour_etayer": {
+        "texte": "Restituer, à l’entretien à un an, le choix d’habitat que chaque participant a fait ou prépare (adapter son logement, déménager, attendre) et s’il l’a arrêté lui-même, en connaissant les options, ou sous la pression de ses proches ou de ses moyens. Indiquer l’énoncé de la question sur la capacité à agir et le nombre de répondants sur les 127.",
+        "verdict_vise": "etayee"
+       },
        "integre": "Habit’âge organise des ateliers pour que les personnes retraitées soient actrices de leurs choix d’habitat, et 42 % des répondants sont plutôt d’accord et 49,7 % tout à fait d’accord avec une augmentation de leur capacité à agir ; leurs choix et les conditions de ces choix restent à documenter."
       },
       {
@@ -151,6 +175,10 @@
        },
        "verdict": "suspens",
        "manque": "Les participants en situation de handicap ou de dépendance et les choix qu’ils exercent sur leur mode de vie.",
+       "pour_etayer": {
+        "texte": "Repérer à l’inscription, par une question sur l’aide reçue au quotidien, les participants en situation de handicap ou de dépendance, et restituer pour eux, à l’entretien à un an, le mode de vie qu’ils ont choisi et ce qui a limité ce choix.",
+        "verdict_vise": "etayee"
+       },
        "integre": "Certains participants sont en début de perte d’autonomie, et 42 % des répondants sont plutôt d’accord et 49,7 % tout à fait d’accord avec une augmentation de leur capacité à agir ; la liberté de choix des personnes que couvre la Charte reste à documenter."
       }
      ]
@@ -200,6 +228,10 @@
      },
      "verdict": "suspens",
      "manque": "Ce que les connaissances changent dans les choix et les recours des participants ; effets sur les autres composantes ; ressources consommées ; situation sans les ateliers.",
+     "pour_etayer": {
+      "texte": "Rapporter, à l’entretien à un an, les acteurs ressources que les participants ont effectivement contactés après l’atelier, ce que ces contacts leur ont permis d’engager ou d’éviter et la charge qu’ils ont représentée pour les services sollicités, avec le coût d’un atelier par participant. Comparer ces recours à ceux de l’année écoulée, déclarés à l’inscription par les participants d’une session suivante.",
+      "verdict_vise": "etayee"
+     },
      "integre": "Selon l’année, 75 % à 93,9 % des répondants déclarent avoir découvert de nouvelles formes d’habitat ; le bénéfice net pour le système reste à établir."
     },
     "I": {
@@ -212,6 +244,10 @@
      },
      "verdict": "bornee",
      "manque": "Le nombre de répondants par année et les participants qui n’ont pas répondu ; pour les aides techniques, l’acquisition ne concerne que la moitié des répondants au plus.",
+     "pour_etayer": {
+      "texte": "Indiquer, pour 2023, 2024 et 2025, le nombre de participants et celui des répondants au questionnaire de fin d’atelier. Pour chaque thème, remplacer le choix multiple par une question à trois réponses (je le savais déjà, je l’ai appris à l’atelier, je l’ignore encore), afin de distinguer, parmi la moitié ou plus des répondants qui ne citent pas les aides techniques, ceux qui les connaissaient déjà.",
+      "verdict_vise": "etayee"
+     },
      "integre": "Selon l’année, 75 % à 93,9 % des répondants déclarent avoir découvert de nouvelles formes d’habitat, 50 % à 83,7 % mieux connaître les acteurs ressources du territoire et 38,8 % à 50 % connaître les aides techniques sur l’habitat."
     },
     "S": {
@@ -224,6 +260,10 @@
      },
      "verdict": "bornee",
      "manque": "La couverture des 127 participants, le nombre de répondants par année n’étant pas donné.",
+     "pour_etayer": {
+      "texte": "Indiquer, pour 2023, 2024 et 2025, combien de personnes ont suivi l’atelier et combien ont rempli le questionnaire de fin d’atelier, soit la part des 127 participants que couvrent les pourcentages ; faire remplir le questionnaire sur place le dernier jour pour que cette part approche la totalité.",
+      "verdict_vise": "etayee"
+     },
      "integre": "S’informer sur les formes d’habitat est le premier motif des participants, et selon l’année 75 % à 93,9 % des répondants déclarent avoir découvert de nouvelles formes d’habitat et 50 % à 83,7 % mieux connaître les acteurs ressources du territoire ; la couverture de l’ensemble des participants reste à documenter."
     },
     "V": {
@@ -241,6 +281,10 @@
        },
        "verdict": "suspens",
        "manque": "Une seconde garantie pour l’acquisition revendiquée ; le contenu des ateliers, que le rapport ne décrit qu’à travers les thèmes du questionnaire.",
+       "pour_etayer": {
+        "texte": "Sous cette garantie, l’acquisition des connaissances ne peut pas être étayée : elle relève d’une autre conception, la normative que le rapport invoque. Pour documenter l’engagement, décrire le contenu des trois jours (formes d’habitat présentées, acteurs invités, place des aides techniques et des financements) et dire pourquoi l’association tient ces clés de compréhension pour dues à tout retraité qui réfléchit à son habitat.",
+        "verdict_vise": null
+       },
        "integre": "Habit’âge s’engage à donner aux personnes retraitées les clés de compréhension de leurs choix d’habitat et organise à cette fin des ateliers avec des acteurs locaux ; l’acquisition des connaissances relève d’une seconde garantie."
       },
       {
@@ -255,6 +299,10 @@
        },
        "verdict": "suspens",
        "manque": "L’énoncé de ce devoir par Habit’âge ; une seconde garantie pour l’effet revendiqué.",
+       "pour_etayer": {
+        "texte": "Sous cette garantie, l’acquisition des connaissances ne peut pas être étayée : elle relève d’une autre conception. Pour documenter l’engagement, énoncer le devoir que l’association se reconnaît envers les retraités que l’âge rend vulnérables, et montrer comment il règle la transmission des connaissances, par exemple des supports lisibles malgré une baisse de la vue ou de l’audition et des documents remis pour y revenir chez soi.",
+        "verdict_vise": null
+       },
        "integre": "Selon l’année, 75 % à 93,9 % des répondants déclarent avoir découvert de nouvelles formes d’habitat ; le lien avec un devoir de sollicitude de l’organisation reste à documenter."
       }
      ]
@@ -274,6 +322,10 @@
        },
        "verdict": "bornee",
        "manque": "Les connaissances des participants qui n’ont pas répondu ; la connaissance des aides techniques, que la moitié des répondants au plus déclarent.",
+       "pour_etayer": {
+        "texte": "Ajouter au questionnaire de fin d’atelier deux questions de connaissance (citer un acteur ressource à contacter dans sa commune, une aide technique utile dans son propre logement) et indiquer chaque année le nombre de répondants sur les 127 participants.",
+        "verdict_vise": "etayee"
+       },
        "integre": "Selon l’année, 75 % à 93,9 % des répondants déclarent avoir découvert de nouvelles formes d’habitat et 50 % à 83,7 % mieux connaître les acteurs ressources du territoire ; 38,8 % à 50 % seulement déclarent connaître les aides techniques sur l’habitat."
       },
       {
@@ -288,6 +340,10 @@
        },
        "verdict": "suspens",
        "manque": "La connaissance des financements, que le rapport ne mesure pas alors qu’anticiper le volet financier figure parmi les motifs de participation ; les démarches d’adaptation engagées, que l’entretien à un an pouvait documenter.",
+       "pour_etayer": {
+        "texte": "Ajouter au questionnaire de fin d’atelier une question sur la connaissance des financements de l’adaptation du logement (MaPrimeAdapt’, aides des caisses de retraite), et restituer à l’entretien à un an les démarches d’adaptation engagées : diagnostic, devis, travaux, aides techniques installées.",
+        "verdict_vise": "etayee"
+       },
        "integre": "Selon l’année, 38,8 % à 50 % des répondants déclarent connaître les aides techniques sur l’habitat ; la connaissance des financements et les démarches d’anticipation restent à documenter."
       }
      ]
@@ -345,6 +401,10 @@
      },
      "verdict": "suspens",
      "manque": "Les choix effectués et leurs effets sur chaque composante ; ressources consommées ; situation sans les ateliers.",
+     "pour_etayer": {
+      "texte": "Restituer, à l’entretien à un an, les décisions d’habitat prises (adaptation, déménagement, habitat partagé) et le temps qu’elles ont demandé aux proches et aux services sollicités, avec le coût d’un atelier par participant. Comparer la part de participants qui ont décidé à celle que déclarent, pour l’année écoulée, les inscrits d’une session suivante.",
+      "verdict_vise": "etayee"
+     },
      "integre": "46,5 % des répondants au niveau 4 et 42 % au niveau 5 d’une échelle d’accord déclarent une clarification de leurs envies en matière d’habitat ; le bénéfice net pour le système reste à établir."
     },
     "I": {
@@ -357,6 +417,10 @@
      },
      "verdict": "suspens",
      "manque": "Les décisions ou démarches des participants sur leur habitat et leur accord avec leur projet de vie ; l’entretien à un an ne restitue que la part des personnes vivant seules.",
+     "pour_etayer": {
+      "texte": "Restituer, à l’entretien à un an et pour chaque personne jointe, la décision d’habitat prise ou en préparation, si elle la juge accordée à son projet de vie et ce qu’elle en doit à l’atelier ; indiquer combien des 127 participants ont été joints.",
+      "verdict_vise": "etayee"
+     },
      "integre": "46,5 % des répondants au niveau 4 et 42 % au niveau 5 d’une échelle d’accord déclarent une clarification de leurs envies en matière d’habitat ; l’aide à la décision et au libre choix reste à établir."
     },
     "S": {
@@ -369,6 +433,10 @@
      },
      "verdict": "bornee",
      "manque": "Les décisions ou démarches après l’atelier, que l’entretien à un an pouvait documenter ; le nombre de répondants.",
+     "pour_etayer": {
+      "texte": "Rapporter, à l’entretien à un an, combien de participants ont pris une décision ou engagé une démarche sur leur habitat, et combien de ceux qu’un événement imprévu (chute, hospitalisation, veuvage) a touchés avaient une solution préparée, en indiquant le nombre de personnes jointes sur les 127.",
+      "verdict_vise": "etayee"
+     },
      "integre": "Ne pas être pris au dépourvu figure parmi les motifs des participants, et en 2025, 52,2 % des répondants citent à chaud une clarification de leurs envies et besoins concernant leur habitat ; l’aide à la décision dans leur parcours résidentiel, au-delà de l’atelier, reste à documenter."
     },
     "V": {
@@ -386,6 +454,10 @@
        },
        "verdict": "suspens",
        "manque": "Une seconde garantie pour l’aide à la décision revendiquée ; la justification morale de cette volonté.",
+       "pour_etayer": {
+        "texte": "Sous cette garantie, l’aide effective au choix ne peut pas être étayée : elle relève d’une autre conception, l’individualiste que le rapport invoque. Pour documenter l’engagement, dire pourquoi l’association tient pour un devoir de laisser chacun choisir son habitat, et décrire comment l’atelier part « des propres réalités » de chaque personne : ce qu’il recueille de sa situation, et comment l’animatrice lui laisse la décision entre les séances et à la fin.",
+        "verdict_vise": null
+       },
        "integre": "Habit’âge énonce la volonté de permettre à chacun de réfléchir et de choisir son habitat, et conçoit ses ateliers comme une aide à la décision partant des réalités de chaque personne ; l’aide effective au choix relève d’une seconde garantie."
       },
       {
@@ -400,7 +472,11 @@
        },
        "verdict": "suspens",
        "manque": "L’énoncé de ce devoir par Habit’âge ; une seconde garantie pour l’effet revendiqué.",
-       "integre": "La majorité des répondants déclarent une clarification de leurs envies en matière d’habitat ; le lien avec un devoir de sollicitude de l’organisation reste à documenter."
+       "pour_etayer": {
+        "texte": "Sous cette garantie, l’aide au choix résidentiel ne peut pas être étayée : elle relève d’une autre conception. Pour documenter l’engagement, énoncer le devoir que l’association se reconnaît envers les participants qui font seuls face à une décision d’habitat, et rapporter ce qu’elle fait pour eux après l’atelier, entretien à un an compris, ou vers quel partenaire elle les oriente.",
+        "verdict_vise": null
+       },
+       "integre": "46,5 % des répondants au niveau 4 et 42 % au niveau 5 d’une échelle d’accord déclarent une clarification de leurs envies en matière d’habitat ; le lien avec un devoir de sollicitude de l’organisation reste à documenter."
       }
      ]
     },
@@ -419,6 +495,10 @@
        },
        "verdict": "suspens",
        "manque": "Les décisions ou démarches des participants et les conditions dans lesquelles elles sont prises ; la justification du principe, que le rapport énonce sans l’argumenter.",
+       "pour_etayer": {
+        "texte": "Énoncer pourquoi le libre choix du parcours résidentiel s’impose dans l’action, et restituer, à l’entretien à un an, les décisions prises par les participants, en indiquant qui les a prises et entre quelles options.",
+        "verdict_vise": "etayee"
+       },
        "integre": "Les ateliers font découvrir des options d’habitat, et 46,5 % des répondants au niveau 4 et 42 % au niveau 5 d’une échelle d’accord déclarent une clarification de leurs envies ; le libre choix exercé dans leur parcours résidentiel reste à documenter."
       },
       {
@@ -433,7 +513,11 @@
        },
        "verdict": "suspens",
        "manque": "Les participants en situation de handicap ou de dépendance ; les options qui leur sont accessibles et les choix qu’ils font.",
-       "integre": "Certains participants sont en début de perte d’autonomie, et les ateliers font découvrir de nouvelles formes d’habitat ; leur possibilité de choisir un lieu de vie adapté reste à documenter."
+       "pour_etayer": {
+        "texte": "Repérer à l’inscription les participants en situation de handicap ou de dépendance et restituer pour eux, à l’entretien à un an, les lieux de vie envisagés, ceux qui leur étaient accessibles compte tenu de leurs moyens et de l’offre locale, et celui qu’ils ont retenu.",
+        "verdict_vise": "etayee"
+       },
+       "integre": "Certains participants sont en début de perte d’autonomie, et selon l’année 75 % à 93,9 % des répondants déclarent avoir découvert de nouvelles formes d’habitat ; leur possibilité de choisir un lieu de vie adapté reste à documenter."
       },
       {
        "id": "vivre-chez-soi",
@@ -447,6 +531,10 @@
        },
        "verdict": "suspens",
        "manque": "Le lieu de vie des participants après l’atelier et les adaptations réalisées ; l’entretien à un an ne restitue que la part des personnes vivant seules.",
+       "pour_etayer": {
+        "texte": "Restituer, à l’entretien à un an, combien de participants joints vivent toujours chez eux et quelles adaptations ou aides techniques y ont été installées depuis l’atelier, en comptant à part ceux qui ont choisi un habitat collectif ou partagé.",
+        "verdict_vise": "bornee"
+       },
        "integre": "Les ateliers abordent l’aménagement du logement et les aides techniques, que 38,8 % à 50 % des répondants déclarent connaître selon l’année ; le maintien à domicile des participants reste à documenter."
       }
      ]
@@ -499,6 +587,10 @@
      },
      "verdict": "suspens",
      "manque": "Une définition du bénéfice qui intègre l’expérience ; l’expérience distinguée de la satisfaction envers l’atelier ; les expériences des non-répondants ; les ressources consommées.",
+     "pour_etayer": {
+      "texte": "Énoncer que le bénéfice retenu par l’association inclut l’expérience vécue en atelier, et la recueillir par des questions sur ce que la personne a vécu (avoir pu parler de sa situation, s’être sentie gênée ou jugée), distinctes de la grille de satisfaction, en joignant aussi ceux qui n’ont pas suivi les trois jours. Rapporter le coût des trois journées par participant.",
+      "verdict_vise": "etayee"
+     },
      "integre": "Les répondants à la grille de satisfaction se disent tous très ou totalement satisfaits du climat général et du sentiment d’être écoutés ; la place de cette expérience dans un bénéfice net reste à établir."
     },
     "I": {
@@ -511,6 +603,10 @@
      },
      "verdict": "bornee",
      "manque": "Le nombre de répondants et l’année de la grille ; l’appréciation du lien de confiance lui-même, que la grille n’interroge pas ; les expériences des participants qui n’ont pas répondu.",
+     "pour_etayer": {
+      "texte": "Indiquer l’année et le nombre de répondants à la grille de satisfaction sur les 127 participants, et y ajouter une question sur la confiance ressentie envers le groupe et l’animatrice, avec une ligne libre pour ce qui a gêné.",
+      "verdict_vise": "etayee"
+     },
      "integre": "Les participants qui ont rempli la grille de satisfaction, dont le rapport ne donne ni le nombre ni l’année, se disent tous très ou totalement satisfaits du climat général et du sentiment d’être écoutés, à 67,4 % totalement ; en 2025, 58,7 % des répondants citent de nouvelles rencontres ou des échanges enrichissants."
     },
     "S": {
@@ -523,6 +619,10 @@
      },
      "verdict": "suspens",
      "manque": "Les expériences différenciées au sein du groupe, au-delà d’une grille agrégée ; le lien entre la confiance instaurée et le cheminement de réflexion, que le rapport affirme sans le documenter.",
+     "pour_etayer": {
+      "texte": "Présenter les réponses sur l’écoute et le climat séparément pour les personnes seules et en couple, et pour les hommes et les femmes, avec les effectifs ; demander à l’entretien à un an si la confiance établie dans le groupe a aidé la personne à avancer dans sa réflexion sur son habitat.",
+      "verdict_vise": "etayee"
+     },
      "integre": "Échanger et partager figure parmi les motifs des participants, et les répondants à la grille se disent tous très ou totalement satisfaits du climat et de l’écoute ; les expériences différenciées au sein du groupe et le rôle de la confiance dans la réflexion restent à documenter."
     },
     "V": {
@@ -540,6 +640,10 @@
        },
        "verdict": "suspens",
        "manque": "Le devoir relationnel que cet engagement exprime, que le rapport n’explicite pas ; les pratiques d’animation, décrites seulement par le format et la personnalisation.",
+       "pour_etayer": {
+        "texte": "Expliciter ce que l’engagement d’éclairer et de guider « à partir de leurs propres réalités » exige de la relation avec chaque participant, par exemple partir de la situation qu’il décrit et ne pas lui imposer de solution, puis décrire les pratiques d’animation qui le traduisent sur les trois jours et les moments où elles ont manqué.",
+        "verdict_vise": "etayee"
+       },
        "integre": "Habit’âge s’engage à éclairer et guider les personnes à partir de leurs propres réalités et a choisi un format de trois jours sur deux mois pour instaurer la confiance ; le devoir relationnel qui fonderait cet engagement reste à expliciter."
       },
       {
@@ -554,6 +658,10 @@
        },
        "verdict": "suspens",
        "manque": "L’énoncé de ce devoir par Habit’âge ; les pratiques d’animation qui le traduiraient.",
+       "pour_etayer": {
+        "texte": "Énoncer l’exigence relationnelle que l’association tire de la sollicitude envers des retraités parfois seuls ou en début de perte d’autonomie, comme laisser à chacun le temps de parler ou veiller à ceux qui se taisent, et décrire comment l’animatrice la met en œuvre pendant les trois jours.",
+        "verdict_vise": "etayee"
+       },
        "integre": "Les répondants à la grille se disent tous très ou totalement satisfaits du sentiment d’être écoutés ; le lien avec un devoir de sollicitude de l’organisation reste à documenter."
       }
      ]
@@ -573,6 +681,10 @@
        },
        "verdict": "suspens",
        "manque": "Les pratiques de personnalisation, que le rapport énonce sans les décrire ; les situations où elle a manqué.",
+       "pour_etayer": {
+        "texte": "Tenir, pour chaque session de 2023 à 2025, la liste des attentes recueillies auprès des participants et du partenaire avant le premier jour et des ajustements faits en réponse, y compris ceux qui n’ont pas été possibles.",
+        "verdict_vise": "etayee"
+       },
        "integre": "Le rapport énonce la personnalisation de chaque temps collectif, et les répondants à la grille se disent tous très ou totalement satisfaits du sentiment d’être écoutés ; la mise en œuvre de la personnalisation reste à décrire."
       },
       {
@@ -587,6 +699,10 @@
        },
        "verdict": "suspens",
        "manque": "Les pratiques de traitement dans les ateliers ; la signification du respect retenue ; les expériences des non-répondants.",
+       "pour_etayer": {
+        "texte": "Préciser ce que le respect exige dans les ateliers, comme la confidentialité de ce que chacun dit de sa situation et l’absence de jugement sur ses moyens, et rapporter, au-delà de la grille, les situations où un participant s’est senti mal traité ou a quitté l’atelier.",
+        "verdict_vise": "etayee"
+       },
        "integre": "Les répondants à la grille se disent tous très ou totalement satisfaits du climat général, ambiance et respect compris ; la conformité des pratiques à une exigence de dignité reste à documenter."
       }
      ]
@@ -631,6 +747,10 @@
      },
      "verdict": "suspens",
      "manque": "Les relais exercés et leurs effets sur les personnes relayées ; ressources consommées ; situation sans les ateliers.",
+     "pour_etayer": {
+      "texte": "Rapporter, à l’entretien à un an, combien de participants ont orienté d’autres retraités vers un acteur ressource ou vers un atelier, et ce que ces personnes en ont fait. Indiquer le coût d’un atelier par personne atteinte, personnes relayées comprises, et demander à celles qui s’inscrivent si elles seraient venues sans ce conseil.",
+      "verdict_vise": "etayee"
+     },
      "integre": "En 2025, 58,7 % des répondants citent à chaud de nouvelles rencontres ou échanges avec d’autres participants ; la posture de relais et le bénéfice net pour le système restent à établir."
     },
     "I": {
@@ -643,6 +763,10 @@
      },
      "verdict": "suspens",
      "manque": "Les relais exercés par les participants et leur appréciation de ce rôle.",
+     "pour_etayer": {
+      "texte": "Demander, à l’entretien à un an, si la personne a parlé de son habitat ou de l’atelier à d’autres retraités, ce qu’elle leur a transmis, ce que ce rôle lui apporte et si elle l’aurait tenu sans l’atelier ; indiquer combien des 127 participants ont été joints.",
+      "verdict_vise": "etayee"
+     },
      "integre": "En 2025, 41,3 % des répondants déclarent à chaud l’envie de participer à d’autres activités ou démarches collectives ; une posture de relais auprès d’autres retraités reste à établir."
     },
     "S": {
@@ -655,6 +779,10 @@
      },
      "verdict": "suspens",
      "manque": "Les relais exercés et les personnes qu’ils atteignent ; un suivi au-delà de l’atelier.",
+     "pour_etayer": {
+      "texte": "Ajouter à la fiche d’inscription la question « Comment avez-vous connu l’atelier ? » pour compter les participants venus sur le conseil d’un ancien, et rapporter à l’entretien à un an la part des participants joints qui ont relayé l’information auprès de retraités de leur commune.",
+      "verdict_vise": "etayee"
+     },
      "integre": "Échanger et partager figure parmi les motifs des participants, et en 2025, 58,7 % des répondants citent à chaud de nouvelles rencontres ou échanges ; la posture de relais reste à documenter."
     },
     "V": {
@@ -672,6 +800,10 @@
        },
        "verdict": "suspens",
        "manque": "Une seconde garantie pour l’effet revendiqué ; les actes de l’association qui soutiennent la pair-aidance.",
+       "pour_etayer": {
+        "texte": "Sous cette garantie, l’acquisition d’une posture de relais ne peut pas être étayée : elle relève d’une autre conception. Pour documenter l’engagement, montrer en quoi la volonté de permettre « à chacun » de choisir son habitat s’étend aux retraités qui ne viennent pas aux ateliers, et décrire ce que l’association fait pour soutenir les relais, comme remettre des supports aux participants ou inviter d’anciens participants à témoigner.",
+        "verdict_vise": null
+       },
        "integre": "Habit’âge énonce la volonté de permettre à chacun de réfléchir et de choisir son habitat ; l’acquisition d’une posture de relais relève d’une seconde garantie et d’actes qui la soutiennent, que le rapport ne décrit pas."
       },
       {
@@ -686,6 +818,10 @@
        },
        "verdict": "suspens",
        "manque": "L’énoncé de ce devoir par Habit’âge ; une seconde garantie pour l’effet revendiqué.",
+       "pour_etayer": {
+        "texte": "Sous cette garantie, la posture de relais ne peut pas être étayée : elle relève d’une autre conception. Pour documenter l’engagement, énoncer le devoir de solidarité que l’association se reconnaît envers les retraités isolés des 20 communes, et rapporter comment elle cherche à les atteindre, par les partenaires locaux ou par les anciens participants.",
+        "verdict_vise": null
+       },
        "integre": "En 2025, 58,7 % des répondants citent à chaud de nouvelles rencontres ou échanges avec d’autres participants ; le lien avec un devoir de solidarité de l’organisation reste à documenter."
       }
      ]
@@ -705,6 +841,10 @@
        },
        "verdict": "suspens",
        "manque": "Les occasions de relais que l’association offre et celles que les participants saisissent.",
+       "pour_etayer": {
+        "texte": "Décrire les occasions de relais que l’association offre aux anciens participants (témoigner dans une session suivante, informer dans leur commune) et rapporter, à l’entretien à un an, combien les ont saisies et pourquoi les autres ne l’ont pas fait.",
+        "verdict_vise": "etayee"
+       },
        "integre": "En 2025, 41,3 % des répondants déclarent à chaud l’envie de participer à d’autres activités ou démarches collectives ; les occasions de relais offertes et saisies restent à documenter."
       },
       {
@@ -719,7 +859,11 @@
        },
        "verdict": "suspens",
        "manque": "Les transmissions entre pairs et ce que l’association met en œuvre pour les reconnaître.",
-       "integre": "Le rapport annonce une posture de relais entre personnes retraitées sans la décrire ; en 2025, 58,7 % des répondants citent à chaud de nouvelles rencontres ou échanges avec d’autres participants."
+       "pour_etayer": {
+        "texte": "Rapporter les transmissions entre pairs que l’atelier suscite, pendant les séances et après (un participant qui raconte au groupe son déménagement ou ses travaux, un ancien invité à témoigner), et ce que l’association prévoit pour reconnaître ce savoir dans le déroulé des ateliers.",
+        "verdict_vise": "etayee"
+       },
+       "integre": "En 2025, 58,7 % des répondants citent à chaud de nouvelles rencontres ou échanges avec d’autres participants ; la transmission d’un savoir d’expérience entre pairs, que le rapport annonce sans la décrire, reste à documenter."
       }
      ]
     }
