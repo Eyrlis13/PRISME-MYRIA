@@ -34,8 +34,9 @@
       "regle": "Apprécier le bénéfice net ; pour conclure à une supériorité, classer les options selon une règle justifiée."
      },
      "verdict": "suspens",
-     "manque": "Attribution de la diminution aux séances ; effets sur les proches et les services ; ressources consommées, prises en charge par un tiers ; situation sans les séances.",
-     "integre": "Après un an de séances, 70 % des répondants se disent tout à fait d’accord et 28,2 % plutôt d’accord avec une diminution de leur sentiment de solitude ; le bénéfice net pour le système reste à établir."
+     "manque": "Attribution de la diminution aux séances ; effets sur les proches et les services ; coût des séances, pris en charge par un tiers ; situation sans les séances.",
+     "integre": "Après un an de séances, 70 % des répondants se disent tout à fait d’accord et 28,2 % plutôt d’accord avec une diminution de leur sentiment de solitude ; le bénéfice net pour le système reste à établir.",
+     "pour_etayer": { "texte": "Rapporter le coût annuel des séances pour les 200 participants, pris en charge par Malakoff Humanis, et comparer le sentiment de solitude mesuré à l’inscription puis six mois plus tard chez les participants et chez des retraités invités qui attendent l’ouverture d’un groupe. Demander aux uns et aux autres si leurs appels à leurs proches et leurs recours au médecin ou aux services d’aide ont changé sur la période.", "verdict_vise": "etayee" }
     },
     "I": {
      "statut_croisement": "Proposed",
@@ -47,7 +48,8 @@
      },
      "verdict": "suspens",
      "manque": "Les changements dans le temps et les autres influences sur la solitude au cours de l’année ; la possibilité de répondre librement à l’association qui anime les séances et recueille les réponses.",
-     "integre": "Interrogés par l’association après un an de séances, 70 % des 110 répondants se disent tout à fait d’accord et 28,2 % plutôt d’accord avec une diminution de leur sentiment de solitude."
+     "integre": "Interrogés par l’association après un an de séances, 70 % des 110 répondants se disent tout à fait d’accord et 28,2 % plutôt d’accord avec une diminution de leur sentiment de solitude.",
+     "pour_etayer": { "texte": "Poser la question « À quelle fréquence vous sentez-vous seul(e) ? » (jamais, rarement, parfois, souvent) à l’inscription puis après six mois, avec une question sur ce qui a changé par ailleurs dans la vie de la personne (deuil, hospitalisation, déménagement, visites). Confier ce recueil à un bénévole ou à un partenaire qui n’anime pas les séances, et l’annoncer aux répondants.", "verdict_vise": "etayee" }
     },
     "S": {
      "statut_croisement": "Proposed",
@@ -59,7 +61,8 @@
      },
      "verdict": "suspens",
      "manque": "Le besoin défini avec les personnes, au-delà des données de l’INSEE ; une mesure du sentiment de solitude au début et à la fin de l’année ; les 90 participants sans réponse.",
-     "integre": "Après un an de séances, 70 % des 110 répondants sur 200 participants, dont 60,6 % vivent seuls, se disent tout à fait d’accord avec une diminution de leur sentiment de solitude ; le besoin défini avec les personnes et un changement mesuré restent à documenter."
+     "integre": "Après un an de séances, 70 % des 110 répondants, sur 200 participants, se disent tout à fait d’accord avec une diminution de leur sentiment de solitude, et 60,6 % des répondants vivent seuls ; le besoin défini avec les personnes et un changement mesuré restent à documenter.",
+     "pour_etayer": { "texte": "Rapporter comment le besoin a été défini avec les retraités invités (appel d’inscription, questions posées, par qui) et mesurer leur sentiment de solitude à l’inscription puis en fin d’année avec la même question. Indiquer l’assiduité des 200 participants sur l’année et celle des 90 qui n’ont pas répondu à l’enquête.", "verdict_vise": "etayee" }
     },
     "V": {
      "statut_croisement": "Proposed",
@@ -75,8 +78,9 @@
         "regle": "Examiner la cohérence entre la mission et la conduite des séances ; un effet produit appelle une seconde garantie."
        },
        "verdict": "suspens",
-       "manque": "Une seconde garantie pour l’effet revendiqué.",
-       "integre": "Au bout du Fil s’est donné pour mission de lutter contre la solitude des personnes âgées seules, propose depuis 2007 un appel hebdomadaire gratuit et, plus récemment, des séances collectives ; la réduction effective du sentiment de solitude relève d’une seconde garantie."
+       "manque": "La diminution du sentiment de solitude est un effet, que cette garantie ne couvre pas et qui appelle une seconde garantie.",
+       "integre": "Au bout du Fil s’est donné pour mission de lutter contre la solitude des personnes âgées seules, propose depuis 2007 un appel hebdomadaire gratuit et, plus récemment, des séances collectives ; la réduction effective du sentiment de solitude relève d’une seconde garantie.",
+       "pour_etayer": { "texte": "Sous cette garantie, la diminution du sentiment de solitude ne peut pas être étayée : c’est un effet, qui relève de la conception individualiste ou de celle des parties prenantes ciblées. Documenter l’engagement en décrivant ce que la mission change dans la conduite des séances : priorité donnée aux personnes qui vivent seules, taille des groupes, temps laissé aux échanges, rappel des participants absents.", "verdict_vise": null }
       },
       {
        "id": "solidarite",
@@ -90,7 +94,8 @@
        },
        "verdict": "suspens",
        "manque": "L’énoncé de ce devoir par l’association, qui fonde sa mission sur un constat statistique ; une seconde garantie pour l’effet revendiqué.",
-       "integre": "70 % des répondants se disent tout à fait d’accord avec une diminution de leur sentiment de solitude ; le lien avec un devoir de solidarité de l’association reste à documenter."
+       "integre": "70 % des répondants se disent tout à fait d’accord avec une diminution de leur sentiment de solitude ; le lien avec un devoir de solidarité de l’association reste à documenter.",
+       "pour_etayer": { "texte": "Sous cette garantie, la diminution du sentiment de solitude ne peut pas être étayée : c’est un effet, qui relève d’une autre conception. Documenter l’engagement en énonçant le devoir de solidarité que l’association reconnaît envers les personnes âgées isolées, au-delà du constat de l’INSEE, et les pratiques qui en découlent, comme la gratuité assurée par des tiers et l’absence de limite de durée.", "verdict_vise": null }
       }
      ]
     },
@@ -109,7 +114,8 @@
        },
        "verdict": "suspens",
        "manque": "L’argument qui rattache l’action à l’ODD 3, que le rapport signale par son seul pictogramme ; une diminution du sentiment de solitude établie dans le temps.",
-       "integre": "Après un an de séances, 70 % des répondants se disent tout à fait d’accord avec une diminution de leur sentiment de solitude ; le rattachement à l’ODD 3 et un effet établi dans le temps restent à documenter."
+       "integre": "Après un an de séances, 70 % des répondants se disent tout à fait d’accord avec une diminution de leur sentiment de solitude ; le rattachement à l’ODD 3 et un effet établi dans le temps restent à documenter.",
+       "pour_etayer": { "texte": "Rattacher l’action à une cible de l’ODD 3, par exemple la cible 3.4, qui vise à promouvoir la santé mentale et le bien-être, en expliquant en quoi la solitude des personnes de 80 ans et plus en relève. Mesurer le sentiment de solitude des mêmes participants à l’inscription puis après six mois avec la même question.", "verdict_vise": "etayee" }
       },
       {
        "id": "isolement",
@@ -123,7 +129,8 @@
        },
        "verdict": "suspens",
        "manque": "Les liens sociaux des participants au-delà des séances ; selon le graphique, 95,5 % des répondants déclarent des interactions sociales « aussi » fréquentes.",
-       "integre": "70 % des répondants se disent tout à fait d’accord avec une diminution de leur sentiment de solitude ; le recul de leur isolement, distinct de ce sentiment, reste à documenter."
+       "integre": "70 % des répondants se disent tout à fait d’accord avec une diminution de leur sentiment de solitude ; le recul de leur isolement, distinct de ce sentiment, reste à documenter.",
+       "pour_etayer": { "texte": "Relever à l’inscription puis après six mois les contacts de chaque participant hors des séances (appels et visites de proches, sorties, appels entre participants) et rapporter la part de ceux dont ces contacts ont augmenté, plutôt que de s’en tenir à la question actuelle, à laquelle 95,5 % des répondants répondent « aussi souvent ».", "verdict_vise": "etayee" }
       }
      ]
     }
@@ -157,7 +164,8 @@
      },
      "verdict": "suspens",
      "manque": "Interactions au-delà des séances et leur attribution ; effets sur les proches et les services ; ressources consommées ; situation sans les séances.",
-     "integre": "Les participants ont suivi une séance de groupe hebdomadaire pendant un an, et 95,5 % des répondants répondent « aussi souvent » à la question sur la fréquence de leurs interactions sociales ; le bénéfice net pour le système reste à établir."
+     "integre": "Les participants ont suivi une séance de groupe hebdomadaire pendant un an, et 95,5 % des répondants répondent « aussi souvent » à la question sur la fréquence de leurs interactions sociales ; le bénéfice net pour le système reste à établir.",
+     "pour_etayer": { "texte": "Relever à l’inscription puis après six mois les contacts de chaque personne hors des séances et ses recours aux proches et aux services d’aide, chez les participants et chez des retraités invités qui attendent l’ouverture d’un groupe ; rapporter le coût annuel des séances pour les 200 participants.", "verdict_vise": "etayee" }
     },
     "I": {
      "statut_croisement": "Proposed",
@@ -169,7 +177,8 @@
      },
      "verdict": "suspens",
      "manque": "Ce que les séances changent dans les relations de chaque personne : 95,5 % des répondants déclarent des interactions sociales « aussi » fréquentes, résultat que le rapport ne commente pas.",
-     "integre": "Les répondants apprécient les séances, 98,2 % disent les avoir énormément aimées ; 95,5 % répondent « aussi souvent » à la question sur la fréquence de leurs interactions sociales."
+     "integre": "Les répondants apprécient les séances, 98,2 % disent les avoir énormément aimées ; 95,5 % répondent « aussi souvent » à la question sur la fréquence de leurs interactions sociales.",
+     "pour_etayer": { "texte": "Demander à l’inscription puis après six mois avec qui la personne échange dans la semaine (autres participants, animateurs, proches, voisins) et, en question ouverte, ce que les séances ont changé dans ses relations. Présenter ces réponses en regard du résultat actuel, 95,5 % d’interactions déclarées « aussi » fréquentes, que le rapport laisse sans commentaire.", "verdict_vise": "etayee" }
     },
     "S": {
      "statut_croisement": "Proposed",
@@ -181,7 +190,8 @@
      },
      "verdict": "suspens",
      "manque": "Le besoin défini avec les personnes ; les échanges entre participants pendant les séances, que le rapport ne décrit pas ; un changement des interactions, que 95,5 % des répondants ne déclarent pas.",
-     "integre": "200 personnes ont participé pendant un an à une séance de groupe hebdomadaire par téléphone ; le besoin défini avec elles et les interactions créées restent à documenter."
+     "integre": "200 personnes ont participé pendant un an à une séance de groupe hebdomadaire par téléphone ; le besoin défini avec elles et les interactions créées restent à documenter.",
+     "pour_etayer": { "texte": "Rapporter comment le besoin de lien a été identifié avec les retraités invités (questions posées à l’inscription, par qui) et décrire les échanges entre participants pendant les séances à partir d’un relevé tenu par les animateurs sur quelques semaines : nombre de présents, temps d’échange libre, nombre de participants qui prennent la parole. Indiquer l’assiduité des 200 participants sur l’année.", "verdict_vise": "etayee" }
     },
     "V": {
      "statut_croisement": "Proposed",
@@ -197,8 +207,9 @@
         "regle": "Examiner la cohérence entre la mission et la conduite des séances ; un effet produit appelle une seconde garantie."
        },
        "verdict": "suspens",
-       "manque": "Une seconde garantie pour les interactions revendiquées.",
-       "integre": "L’association se donne pour mission de lutter contre l’isolement des personnes âgées seules et organise pour cela une séance de groupe hebdomadaire ; la création effective de lien social relève d’une seconde garantie."
+       "manque": "La création d’interactions est un effet, que cette garantie ne couvre pas et qui appelle une seconde garantie.",
+       "integre": "L’association se donne pour mission de lutter contre l’isolement des personnes âgées seules et organise pour cela une séance de groupe hebdomadaire ; la création effective de lien social relève d’une seconde garantie.",
+       "pour_etayer": { "texte": "Sous cette garantie, la création d’interactions ne peut pas être étayée : c’est un effet, qui relève d’une autre conception. Documenter l’engagement en décrivant comment la mission oriente l’animation : composition et stabilité des groupes, place laissée aux échanges entre participants, suivi des personnes qui cessent de venir.", "verdict_vise": null }
       },
       {
        "id": "solidarite",
@@ -212,7 +223,8 @@
        },
        "verdict": "suspens",
        "manque": "L’énoncé de ce devoir par l’association ; une seconde garantie pour l’effet revendiqué.",
-       "integre": "Une séance de groupe hebdomadaire réunit les participants par téléphone pendant un an ; le lien avec un devoir de solidarité de l’association reste à documenter."
+       "integre": "Une séance de groupe hebdomadaire réunit les participants par téléphone pendant un an ; le lien avec un devoir de solidarité de l’association reste à documenter.",
+       "pour_etayer": { "texte": "Sous cette garantie, la création d’interactions ne peut pas être étayée : c’est un effet, qui relève d’une autre conception. Documenter l’engagement en énonçant le devoir de solidarité que l’association reconnaît envers les personnes âgées isolées et les choix d’organisation des groupes qui en découlent.", "verdict_vise": null }
       }
      ]
     },
@@ -231,7 +243,8 @@
        },
        "verdict": "suspens",
        "manque": "L’intégration des participants dans la vie sociale au-delà des séances ; 95,5 % des répondants déclarent des interactions sociales « aussi » fréquentes.",
-       "integre": "L’association réunit chaque semaine par téléphone des groupes de personnes âgées de 80 ans et plus ; leur intégration dans la vie sociale au-delà des séances reste à documenter."
+       "integre": "L’association réunit chaque semaine par téléphone des groupes de personnes âgées de 80 ans et plus ; leur intégration dans la vie sociale au-delà des séances reste à documenter.",
+       "pour_etayer": { "texte": "Relever à l’inscription puis après six mois la participation de chaque personne à la vie sociale hors des séances (sorties, activités associatives ou de quartier, visites reçues) et expliquer en quelques lignes comment un groupe téléphonique contribue à l’intégration que demande ce principe.", "verdict_vise": "etayee" }
       },
       {
        "id": "isolement",
@@ -245,7 +258,8 @@
        },
        "verdict": "suspens",
        "manque": "Les liens créés entre participants ou avec d’autres personnes, que le rapport affirme sans les décrire.",
-       "integre": "Une séance de groupe hebdomadaire réunit les participants par téléphone pendant un an ; les liens créés restent à documenter, et 95,5 % des répondants déclarent des interactions sociales aussi fréquentes."
+       "integre": "Une séance de groupe hebdomadaire réunit les participants par téléphone pendant un an ; les liens créés restent à documenter, et 95,5 % des répondants déclarent des interactions sociales aussi fréquentes.",
+       "pour_etayer": { "texte": "Décrire les liens créés : après six mois de participation, rapporter le nombre de participants qui disent être en contact avec d’autres participants en dehors des séances et le nombre de ceux qui ont repris contact avec un proche ou une activité.", "verdict_vise": "etayee" }
       }
      ]
     }
@@ -279,7 +293,8 @@
      },
      "verdict": "suspens",
      "manque": "Des éléments sur la santé au-delà de la perception déclarée ; l’attribution aux séances ; effets sur les services de santé et les proches ; ressources consommées ; situation sans les séances.",
-     "integre": "Après un an de séances, tous les répondants perçoivent une amélioration de leur bien-être au quotidien, dont 42,7 % tout à fait ; le bénéfice net pour le système reste à établir."
+     "integre": "Après un an de séances, tous les répondants perçoivent une amélioration de leur bien-être au quotidien, dont 42,7 % tout à fait ; le bénéfice net pour le système reste à établir.",
+     "pour_etayer": { "texte": "Recueillir à l’inscription puis après six mois, chez les participants et chez des retraités invités qui attendent l’ouverture d’un groupe, quelques événements de santé déclarés sur les trois derniers mois (chutes, consultations, hospitalisations, aide reçue des proches), et rapporter le coût annuel des séances pour les 200 participants.", "verdict_vise": "etayee" }
     },
     "I": {
      "statut_croisement": "Proposed",
@@ -291,7 +306,8 @@
      },
      "verdict": "suspens",
      "manque": "Des éléments sur la santé au-delà de la perception ; les changements dans le temps et les autres influences ; l’écart entre le texte (99 %) et le graphique (100 %) pour la santé.",
-     "integre": "Interrogés par l’association après un an de séances, tous les répondants perçoivent une amélioration de leur bien-être au quotidien (57,3 % plutôt, 42,7 % tout à fait), et 99 % une amélioration de leur santé selon le texte."
+     "integre": "Interrogés par l’association après un an de séances, tous les répondants perçoivent une amélioration de leur bien-être au quotidien (57,3 % plutôt, 42,7 % tout à fait), et 99 % une amélioration de leur santé selon le texte.",
+     "pour_etayer": { "texte": "Poser à l’inscription puis après six mois la question « Comment est votre état de santé en général ? » (de très bon à très mauvais) et les cinq questions de l’indice de bien-être de l’OMS (WHO-5), avec les événements survenus entre-temps (chute, hospitalisation, deuil), en confiant le recueil à une personne qui n’anime pas les séances. Corriger l’écart entre le texte (99 %) et le graphique (100 %) sur la santé.", "verdict_vise": "etayee" }
     },
     "S": {
      "statut_croisement": "Proposed",
@@ -303,7 +319,8 @@
      },
      "verdict": "suspens",
      "manque": "Le besoin de santé défini avec les personnes ; les objectifs, que le rapport dit dépassés sans les énoncer ; un changement mesuré dans le temps ; les 90 participants sans réponse.",
-     "integre": "Après un an de séances, les 110 répondants sur 200 participants perçoivent tous une amélioration de leur bien-être au quotidien ; le besoin défini avec eux, les objectifs visés et un changement mesuré restent à documenter."
+     "integre": "Après un an de séances, les 110 répondants sur 200 participants perçoivent tous une amélioration de leur bien-être au quotidien ; le besoin défini avec eux, les objectifs visés et un changement mesuré restent à documenter.",
+     "pour_etayer": { "texte": "Énoncer les objectifs fixés avant le projet, que le rapport dit dépassés, et la manière dont les besoins de santé ont été définis avec les retraités invités (thèmes demandés, par qui) ; mesurer la santé et le bien-être perçus des mêmes personnes à l’inscription puis en fin d’année. Indiquer l’assiduité des 200 participants et celle des 90 qui n’ont pas répondu.", "verdict_vise": "etayee" }
     },
     "V": {
      "statut_croisement": "Proposed",
@@ -320,7 +337,8 @@
        },
        "verdict": "suspens",
        "manque": "Le contenu de cet engagement et sa justification, que le rapport signale par le seul pictogramme de l’ODD ; une seconde garantie pour l’effet revendiqué.",
-       "integre": "L’association affiche l’ODD 3 parmi ses objectifs et conçoit des séances pour bouger, prévenir les chutes et mieux dormir ; l’amélioration effective de la santé et du bien-être relève d’une seconde garantie."
+       "integre": "L’association affiche l’ODD 3 parmi ses objectifs et conçoit des séances pour bouger, prévenir les chutes et mieux dormir ; l’amélioration effective de la santé et du bien-être relève d’une seconde garantie.",
+       "pour_etayer": { "texte": "Sous cette garantie, l’amélioration de la santé et du bien-être ne peut pas être étayée : c’est un effet, qui relève d’une autre conception. Documenter l’engagement en disant ce que l’association entend par son objectif ODD 3 et comment il oriente le choix des thèmes (mouvement, prévention des chutes, sommeil), la fréquence des séances et la formation des animateurs.", "verdict_vise": null }
       },
       {
        "id": "sollicitude",
@@ -334,7 +352,8 @@
        },
        "verdict": "suspens",
        "manque": "L’énoncé de ce devoir par l’association ; une seconde garantie pour l’effet revendiqué.",
-       "integre": "Tous les répondants perçoivent une amélioration de leur bien-être au quotidien ; le lien avec un devoir de sollicitude de l’association reste à documenter."
+       "integre": "Tous les répondants perçoivent une amélioration de leur bien-être au quotidien ; le lien avec un devoir de sollicitude de l’association reste à documenter.",
+       "pour_etayer": { "texte": "Sous cette garantie, l’amélioration de la santé et du bien-être ne peut pas être étayée : c’est un effet, qui relève d’une autre conception. Documenter l’engagement en énonçant le devoir de sollicitude que l’association reconnaît envers les personnes très âgées et les pratiques qui le traduisent dans les séances, comme l’adaptation des exercices aux capacités de chacun ou la conduite à tenir quand un participant semble en difficulté.", "verdict_vise": null }
       }
      ]
     },
@@ -353,7 +372,8 @@
        },
        "verdict": "suspens",
        "manque": "L’argument qui rattache l’action à l’ODD 3 ; un effet sur la santé établi au-delà de la perception déclarée et dans le temps.",
-       "integre": "Après un an de séances, tous les répondants perçoivent une amélioration de leur bien-être au quotidien ; le rapport affiche l’ODD 3 sans argumenter son application, et l’effet sur la santé reste à établir."
+       "integre": "Après un an de séances, tous les répondants perçoivent une amélioration de leur bien-être au quotidien ; le rapport affiche l’ODD 3 sans argumenter son application, et l’effet sur la santé reste à établir.",
+       "pour_etayer": { "texte": "Rattacher l’action à une cible de l’ODD 3, par exemple la cible 3.4 sur la santé mentale et le bien-être, et rapporter pour les mêmes participants, à l’inscription puis après six mois, l’état de santé perçu ainsi que les chutes et les hospitalisations déclarées.", "verdict_vise": "etayee" }
       },
       {
        "id": "prevention",
@@ -367,7 +387,8 @@
        },
        "verdict": "suspens",
        "manque": "Des éléments sur les capacités ou les risques visés (chutes, sommeil, mémoire) ; le contenu et la fréquence des exercices proposés.",
-       "integre": "Les séances portent notamment sur la mémoire, le mouvement, la prévention des chutes et le sommeil, et tous les répondants perçoivent une amélioration de leur bien-être ; l’entretien de leurs capacités reste à documenter."
+       "integre": "Les séances portent notamment sur la mémoire, le mouvement, la prévention des chutes et le sommeil, et tous les répondants perçoivent une amélioration de leur bien-être ; l’entretien de leurs capacités reste à documenter.",
+       "pour_etayer": { "texte": "Décrire le programme de l’année (nombre de séances par thème, exercices d’équilibre, de mémoire et de sommeil proposés) et recueillir à l’inscription puis après six mois les chutes déclarées, la peur de tomber et la qualité du sommeil des participants, en rattachant l’action à la prévention de la perte d’autonomie.", "verdict_vise": "etayee" }
       }
      ]
     }
@@ -401,7 +422,8 @@
      },
      "verdict": "suspens",
      "manque": "Les comportements changés, que le rapport affirme sans les décrire, et leurs effets ; ressources consommées ; situation sans les séances.",
-     "integre": "92,7 % des répondants se disent tout à fait d’accord avec l’acquisition d’informations utiles au bien vieillir ; le bénéfice net pour le système reste à établir."
+     "integre": "92,7 % des répondants se disent tout à fait d’accord avec l’acquisition d’informations utiles au bien vieillir ; le bénéfice net pour le système reste à établir.",
+     "pour_etayer": { "texte": "Relever à l’inscription puis après six mois quelques pratiques liées aux thèmes des séances (exercices faits chez soi, aménagements contre les chutes, habitudes de sommeil), ainsi que les chutes et les recours aux soins déclarés, chez les participants et chez des retraités invités qui attendent l’ouverture d’un groupe ; rapporter le coût annuel des séances pour les 200 participants.", "verdict_vise": "etayee" }
     },
     "I": {
      "statut_croisement": "Proposed",
@@ -413,7 +435,8 @@
      },
      "verdict": "suspens",
      "manque": "Des éléments sur les connaissances acquises ou maintenues, au-delà de la perception ; ce que chaque personne en fait dans son quotidien.",
-     "integre": "Interrogés après un an de séances, 92,7 % des répondants se disent tout à fait d’accord avec l’acquisition d’informations utiles au bien vieillir, et 99,1 % disent avoir pris conscience de l’importance de prendre soin d’eux."
+     "integre": "Interrogés après un an de séances, 92,7 % des répondants se disent tout à fait d’accord avec l’acquisition d’informations utiles au bien vieillir, et 99,1 % disent avoir pris conscience de l’importance de prendre soin d’eux.",
+     "pour_etayer": { "texte": "Demander à chaque participant, après six mois, de citer une ou deux choses apprises en séance et ce qu’il fait différemment depuis dans son quotidien (exercices, sommeil, aménagement du logement), et rapporter la part de ceux qui citent une pratique précise.", "verdict_vise": "etayee" }
     },
     "S": {
      "statut_croisement": "Proposed",
@@ -425,7 +448,8 @@
      },
      "verdict": "suspens",
      "manque": "Le besoin de connaissances défini avec les personnes, distinct du manque d’information sur les activités que citent 81,8 % des répondants ; le contenu transmis ; les 90 participants sans réponse.",
-     "integre": "92,7 % des 110 répondants, sur 200 participants, se disent tout à fait d’accord avec l’acquisition d’informations utiles au bien vieillir ; le besoin défini avec eux et le contenu transmis restent à documenter."
+     "integre": "92,7 % des 110 répondants, sur 200 participants, se disent tout à fait d’accord avec l’acquisition d’informations utiles au bien vieillir ; le besoin défini avec eux et le contenu transmis restent à documenter.",
+     "pour_etayer": { "texte": "Rapporter comment les thèmes ont été choisis avec les retraités invités (questions posées à l’inscription, suggestions recueillies en séance, par qui) et le programme effectivement transmis sur l’année, thème par thème ; indiquer l’assiduité des 200 participants et celle des 90 qui n’ont pas répondu.", "verdict_vise": "etayee" }
     },
     "V": {
      "statut_croisement": "Proposed",
@@ -442,7 +466,8 @@
        },
        "verdict": "suspens",
        "manque": "Le lien entre la mission, qui porte sur la solitude et l’isolement, et la transmission de connaissances ; une seconde garantie pour l’effet revendiqué.",
-       "integre": "L’association conçoit les séances pour stimuler la mémoire, bouger, prévenir les chutes et mieux dormir ; le rapport ne rattache pas ces bénéfices anticipés à sa mission, et l’acquisition effective de connaissances relève d’une seconde garantie."
+       "integre": "L’association conçoit les séances pour stimuler la mémoire, bouger, prévenir les chutes et mieux dormir ; le rapport ne rattache pas ces bénéfices anticipés à sa mission, et l’acquisition effective de connaissances relève d’une seconde garantie.",
+       "pour_etayer": { "texte": "Sous cette garantie, l’acquisition de connaissances ne peut pas être étayée : c’est un effet, qui relève d’une autre conception. Documenter l’engagement en expliquant comment la transmission de connaissances sur la mémoire, le mouvement et le sommeil sert la mission de lutte contre la solitude et l’isolement, et comment une séance fait place à la fois au contenu et aux échanges entre participants.", "verdict_vise": null }
       },
       {
        "id": "sollicitude",
@@ -456,7 +481,8 @@
        },
        "verdict": "suspens",
        "manque": "L’énoncé de ce devoir par l’association ; une seconde garantie pour l’effet revendiqué.",
-       "integre": "92,7 % des répondants se disent tout à fait d’accord avec l’acquisition d’informations utiles au bien vieillir ; le lien avec un devoir de sollicitude de l’association reste à documenter."
+       "integre": "92,7 % des répondants se disent tout à fait d’accord avec l’acquisition d’informations utiles au bien vieillir ; le lien avec un devoir de sollicitude de l’association reste à documenter.",
+       "pour_etayer": { "texte": "Sous cette garantie, l’acquisition de connaissances ne peut pas être étayée : c’est un effet, qui relève d’une autre conception. Documenter l’engagement en énonçant le devoir de sollicitude que l’association reconnaît envers les personnes très âgées et la manière dont il guide le choix des contenus pour des personnes qui vivent à domicile et que les offres de prévention n’atteignent pas.", "verdict_vise": null }
       }
      ]
     },
@@ -475,7 +501,8 @@
        },
        "verdict": "suspens",
        "manque": "L’argument qui rattache l’action à l’ODD 3 ; les effets des connaissances transmises sur la santé.",
-       "integre": "92,7 % des répondants se disent tout à fait d’accord avec l’acquisition d’informations utiles au bien vieillir ; le rapport affiche l’ODD 3 sans en argumenter l’application, et les effets sur la santé restent à établir."
+       "integre": "92,7 % des répondants se disent tout à fait d’accord avec l’acquisition d’informations utiles au bien vieillir ; le rapport affiche l’ODD 3 sans en argumenter l’application, et les effets sur la santé restent à établir.",
+       "pour_etayer": { "texte": "Rattacher la transmission de connaissances de prévention à une cible de l’ODD 3, par exemple la cible 3.4, et rapporter après six mois les pratiques de santé adoptées par les participants (exercices, sommeil, prévention des chutes) et les chutes déclarées, comparées à leur situation à l’inscription.", "verdict_vise": "etayee" }
       },
       {
        "id": "ottawa",
@@ -489,7 +516,8 @@
        },
        "verdict": "suspens",
        "manque": "Ce que les personnes font de ces connaissances : le rapport affirme des « changements de comportements » sans les décrire.",
-       "integre": "Les séances hebdomadaires abordent la mémoire, le mouvement, les chutes et le sommeil ; 92,7 % des répondants se disent tout à fait d’accord avec l’acquisition d’informations utiles et 99,1 % disent avoir pris conscience de l’importance de prendre soin d’eux ; leurs pratiques restent à documenter."
+       "integre": "Les séances hebdomadaires abordent la mémoire, le mouvement, les chutes et le sommeil ; 92,7 % des répondants se disent tout à fait d’accord avec l’acquisition d’informations utiles et 99,1 % disent avoir pris conscience de l’importance de prendre soin d’eux ; leurs pratiques restent à documenter.",
+       "pour_etayer": { "texte": "Décrire les « changements de comportements » que le rapport affirme : demander après six mois à chaque participant quelle pratique il a adoptée ou maintenue grâce aux séances (exercices quotidiens, routine de sommeil, aménagement contre les chutes) et rapporter la part de ceux qui en citent une ; indiquer comment les participants proposent ou choisissent les thèmes.", "verdict_vise": "etayee" }
       }
      ]
     }
@@ -523,7 +551,8 @@
      },
      "verdict": "suspens",
      "manque": "La comparaison avec d’autres formats, dont le présentiel que souhaitent 17,3 % des répondants ; le lien entre le format et le bénéfice recherché.",
-     "integre": "Le rapport documente par des données de l’INSEE et par l’équipement des répondants (97,3 % un téléphone, 7,3 % un ordinateur) la situation qui motive le choix du téléphone ; la priorité donnée à ce format reste à justifier."
+     "integre": "Le rapport documente par des données de l’INSEE et par l’équipement des répondants (97,3 % un téléphone, 7,3 % un ordinateur) la situation qui motive le choix du téléphone ; la priorité donnée à ce format reste à justifier.",
+     "pour_etayer": { "texte": "Comparer le coût par participant et l’assiduité des séances téléphoniques avec ceux d’un format présentiel ou en visio proposé à un public comparable, par exemple un atelier de prévention des chutes financé par une caisse de retraite, et rapporter l’assiduité au téléphone selon la mobilité et l’équipement des participants.", "verdict_vise": "etayee" }
     },
     "I": {
      "statut_croisement": "Proposed",
@@ -535,7 +564,8 @@
      },
      "verdict": "suspens",
      "manque": "La possibilité de choisir un autre format ; l’adéquation du téléphone pour les 17,3 % de répondants qui souhaitent le présentiel et les 30 % qui ne savent pas.",
-     "integre": "Parmi les répondants, 52,7 % ne souhaitent pas d’activités en présentiel, 17,3 % le souhaitent et 30 % ne savent pas, et 88,2 % voudraient davantage de séances ; l’adéquation du téléphone aux choix de chacun reste à documenter."
+     "integre": "Parmi les répondants, 52,7 % ne souhaitent pas d’activités en présentiel, 17,3 % le souhaitent et 30 % ne savent pas, et 88,2 % voudraient davantage de séances ; l’adéquation du téléphone aux choix de chacun reste à documenter.",
+     "pour_etayer": { "texte": "Indiquer si les personnes invitées pouvaient demander un autre format que le téléphone, et demander aux 17,3 % de répondants qui souhaitent des activités en présentiel et aux 30 % qui hésitent ce qu’ils y chercheraient et ce qui les en empêche (mobilité, transport, absence d’offre proche).", "verdict_vise": "etayee" }
     },
     "S": {
      "statut_croisement": "Proposed",
@@ -547,7 +577,8 @@
      },
      "verdict": "suspens",
      "manque": "La définition du problème avec les personnes concernées ; les désaccords du groupe, que le rapport efface en concluant que « le présentiel ne les concerne pas » alors que 17,3 % des répondants le souhaitent.",
-     "integre": "Le format téléphonique correspond à l’équipement déclaré par les répondants (97,3 % un téléphone, 7,3 % un ordinateur) ; 52,7 % ne souhaitent pas d’activités en présentiel et 17,3 % le souhaitent ; la définition du besoin avec les personnes reste à documenter."
+     "integre": "Le format téléphonique correspond à l’équipement déclaré par les répondants (97,3 % un téléphone, 7,3 % un ordinateur) ; 52,7 % ne souhaitent pas d’activités en présentiel et 17,3 % le souhaitent ; la définition du besoin avec les personnes reste à documenter.",
+     "pour_etayer": { "texte": "Rapporter comment le besoin et le format ont été définis avec des retraités invités ou leurs représentants (qui, quand, questions posées) et exposer le désaccord du groupe : 52,7 % des répondants ne souhaitent pas d’activités en présentiel, 17,3 % le souhaitent et 30 % ne savent pas. La pertinence du téléphone vaudrait alors pour la part du groupe qui le retient.", "verdict_vise": "bornee" }
     },
     "V": {
      "statut_croisement": "Exploratory",
@@ -564,7 +595,8 @@
        },
        "verdict": "etayee",
        "manque": "Rien pour cette portée ; l’intérêt des personnes pour ce format relève d’une seconde garantie.",
-       "integre": "Le choix du téléphone constitue une réponse argumentée à la mission que l’association se donne envers les personnes âgées seules : la plupart n’ont qu’un téléphone, et les séances visent un lien social collectif."
+       "integre": "Le choix du téléphone constitue une réponse argumentée à la mission que l’association se donne envers les personnes âgées seules : la plupart n’ont qu’un téléphone, et les séances visent un lien social collectif.",
+       "pour_etayer": { "texte": "Rien pour cette portée.", "verdict_vise": null }
       },
       {
        "id": "solidarite",
@@ -578,7 +610,8 @@
        },
        "verdict": "suspens",
        "manque": "L’énoncé de ce devoir par l’association, qui fonde sa mission sur un constat statistique.",
-       "integre": "Le choix du téléphone répond à une mission argumentée envers les personnes âgées seules ; son lien avec un devoir de solidarité reste à établir."
+       "integre": "Le choix du téléphone répond à une mission argumentée envers les personnes âgées seules ; son lien avec un devoir de solidarité reste à établir.",
+       "pour_etayer": { "texte": "Énoncer le devoir de solidarité que l’association reconnaît envers les personnes âgées isolées, au-delà du constat de l’INSEE, et montrer en quoi le choix d’un « simple téléphone », sans équipement à acquérir ni déplacement, en découle.", "verdict_vise": "etayee" }
       }
      ]
     },
@@ -597,7 +630,8 @@
        },
        "verdict": "bornee",
        "manque": "Ce que le principe ne couvre pas : le rejet du présentiel, que 17,3 % des répondants ne partagent pas.",
-       "integre": "Au regard de l’équipement des répondants (97,3 % un téléphone, fixe ou mobile, 7,3 % un ordinateur, 1,8 % une tablette), le téléphone est une réponse appropriée et la visio ne l’est pas ; le rejet du présentiel n’en découle pas."
+       "integre": "Au regard de l’équipement des répondants (97,3 % un téléphone, fixe ou mobile, 7,3 % un ordinateur, 1,8 % une tablette), le téléphone est une réponse appropriée et la visio ne l’est pas ; le rejet du présentiel n’en découle pas.",
+       "pour_etayer": { "texte": "Rapporter la mobilité des répondants, en particulier des 17,3 % qui souhaitent des activités en présentiel (sortie sans aide, accès à un transport), et argumenter qu’un format présentiel conditionnerait leur accès à un déplacement comme la visio le conditionne à un équipement.", "verdict_vise": "etayee" }
       },
       {
        "id": "onu-participation",
@@ -611,7 +645,8 @@
        },
        "verdict": "suspens",
        "manque": "La part des personnes au choix du format ; la réponse apportée aux 17,3 % de répondants qui souhaitent des activités en présentiel et aux 30 % qui ne savent pas.",
-       "integre": "Le téléphone permet de réunir chaque semaine des personnes peu mobiles et peu équipées ; leur participation à des activités hors de chez elles, que 17,3 % des répondants souhaitent, est écartée par le rapport."
+       "integre": "Le téléphone permet de réunir chaque semaine des personnes peu mobiles et peu équipées ; leur participation à des activités hors de chez elles, que 17,3 % des répondants souhaitent, est écartée par le rapport.",
+       "pour_etayer": { "texte": "Indiquer comment les participants ont été associés au choix du format (questions posées à l’inscription, par qui) et ce que l’association propose aux 17,3 % de répondants qui souhaitent des activités en présentiel, par exemple une orientation vers des activités proches de chez eux.", "verdict_vise": "etayee" }
       }
      ]
     }
@@ -645,7 +680,8 @@
      },
      "verdict": "suspens",
      "manque": "Les personnes non atteintes et leurs caractéristiques ; le coût des séances pris en charge par les financeurs ; les bénéfices selon les populations.",
-     "integre": "200 personnes âgées retraitées de Malakoff Humanis, invitées au projet, ont suivi sans frais une séance hebdomadaire pendant un an ; le bénéfice net d’un accès étendu reste à établir."
+     "integre": "200 personnes âgées retraitées de Malakoff Humanis, invitées au projet, ont suivi sans frais une séance hebdomadaire pendant un an ; le bénéfice net d’un accès étendu reste à établir.",
+     "pour_etayer": { "texte": "Rapporter le coût annuel par participant pris en charge par Malakoff Humanis, le nombre de retraités invités, inscrits et restés jusqu’à la fin de l’année, et l’âge, la situation familiale et la mobilité de ceux qui n’ont pas donné suite ; présenter les résultats de l’enquête selon que les répondants vivent seuls ou en couple.", "verdict_vise": "etayee" }
     },
     "I": {
      "statut_croisement": "Proposed",
@@ -657,7 +693,8 @@
      },
      "verdict": "bornee",
      "manque": "Les personnes qui ont demandé le service sans y accéder, ou qui l’ont quitté, et leurs raisons.",
-     "integre": "Les répondants, invités à une séance hebdomadaire gratuite par téléphone, y ont participé pendant un an ; 98,2 % disent avoir énormément aimé et 88,2 % souhaitent davantage de séances ; l’accès de toute personne qui en fait la demande reste à documenter."
+     "integre": "Les répondants, invités à une séance hebdomadaire gratuite par téléphone, y ont participé pendant un an ; 98,2 % disent avoir énormément aimé et 88,2 % souhaitent davantage de séances ; l’accès de toute personne qui en fait la demande reste à documenter.",
+     "pour_etayer": { "texte": "Rapporter, pour l’appel de convivialité comme pour les séances, les demandes reçues sur l’année hors du partenariat avec Malakoff Humanis, le délai de mise en place, les demandes restées sans suite et les arrêts, avec leurs raisons recueillies lors d’un dernier appel.", "verdict_vise": "etayee" }
     },
     "S": {
      "statut_croisement": "Proposed",
@@ -669,7 +706,8 @@
      },
      "verdict": "suspens",
      "manque": "Le nombre de personnes servies rapporté aux personnes âgées seules visées ; les abandons en cours d’année ; les personnes restées sans réponse.",
-     "integre": "200 personnes âgées retraitées de Malakoff Humanis ont participé pendant un an aux séances, et 81,8 % des répondants citent le manque d’information comme frein aux activités de bien vieillir ; la couverture du groupe visé reste à documenter."
+     "integre": "200 personnes âgées retraitées de Malakoff Humanis ont participé pendant un an aux séances, et 81,8 % des répondants citent le manque d’information comme frein aux activités de bien vieillir ; la couverture du groupe visé reste à documenter.",
+     "pour_etayer": { "texte": "Rapporter combien de retraités de 80 ans et plus vivant seuls ont été invités au projet et combien y ont participé, ainsi que les abandons en cours d’année ; pour l’appel de convivialité, indiquer le nombre de bénéficiaires et les demandes restées sans réponse.", "verdict_vise": "etayee" }
     },
     "V": {
      "statut_croisement": "Exploratory",
@@ -686,7 +724,8 @@
        },
        "verdict": "bornee",
        "manque": "La mise en pratique de l’engagement pour toute personne qui en fait la demande, au-delà du projet mené avec Malakoff Humanis.",
-       "integre": "L’engagement d’un accès gratuit, sans condition de lieu ni de durée, correspond à la mission envers les personnes âgées seules ; l’association le finance par des tiers et expose l’obstacle de l’information ; sa mise en pratique n’est décrite que pour les retraités de Malakoff Humanis invités au projet."
+       "integre": "L’engagement d’un accès gratuit, sans condition de lieu ni de durée, correspond à la mission envers les personnes âgées seules ; l’association le finance par des tiers et expose l’obstacle de l’information ; sa mise en pratique n’est décrite que pour les retraités de Malakoff Humanis invités au projet.",
+       "pour_etayer": { "texte": "Décrire comment une personne qui n’est pas retraitée d’un financeur partenaire peut demander l’appel de convivialité ou les séances (numéro d’appel, orientation par un CCAS ou un proche), et rapporter les demandes reçues par ce canal sur l’année et la suite donnée, y compris quand aucun tiers ne prend en charge le service.", "verdict_vise": "etayee" }
       },
       {
        "id": "solidarite",
@@ -700,7 +739,8 @@
        },
        "verdict": "suspens",
        "manque": "L’énoncé de ce devoir par l’association et la délimitation de ses destinataires.",
-       "integre": "L’association propose un accès gratuit, sans condition de lieu ni de durée, financé par des tiers ; le lien avec un devoir de solidarité reste à documenter."
+       "integre": "L’association propose un accès gratuit, sans condition de lieu ni de durée, financé par des tiers ; le lien avec un devoir de solidarité reste à documenter.",
+       "pour_etayer": { "texte": "Énoncer le devoir de solidarité que l’association reconnaît et préciser envers qui il vaut, toute personne âgée isolée qui en fait la demande ou les retraités des financeurs partenaires, puis décrire le traitement des demandes qu’aucun financeur ne couvre.", "verdict_vise": "etayee" }
       }
      ]
     },
@@ -719,7 +759,8 @@
        },
        "verdict": "bornee",
        "manque": "Les demandes reçues et les réponses apportées ; la localisation des bénéficiaires ; la durée réelle d’accès au-delà d’une année.",
-       "integre": "Les 200 retraités de Malakoff Humanis invités au projet ont eu accès sans frais à une séance hebdomadaire pendant un an, et aucun répondant ne cite le manque de ressources financières comme frein ; l’accès de toute personne qui en fait la demande reste à documenter."
+       "integre": "Les 200 retraités de Malakoff Humanis invités au projet ont eu accès sans frais à une séance hebdomadaire pendant un an, et aucun répondant ne cite le manque de ressources financières comme frein ; l’accès de toute personne qui en fait la demande reste à documenter.",
+       "pour_etayer": { "texte": "Rapporter, pour l’appel de convivialité, le nombre de demandes reçues et satisfaites sur l’année, la répartition des bénéficiaires par département et leur ancienneté dans le service (part suivie depuis plus d’un an, de trois ans, de cinq ans).", "verdict_vise": "etayee" }
       },
       {
        "id": "aller-vers",
@@ -733,7 +774,8 @@
        },
        "verdict": "suspens",
        "manque": "La manière dont les participants ont été repérés et invités ; les personnes isolées qui n’ont pas été jointes.",
-       "integre": "Des personnes âgées d’au moins 80 ans, retraitées de Malakoff Humanis, ont été invitées aux séances, et 81,8 % des répondants citent le manque d’information comme frein ; le repérage des personnes isolées et la manière de les joindre restent à documenter."
+       "integre": "Des personnes âgées d’au moins 80 ans, retraitées de Malakoff Humanis, ont été invitées aux séances, et 81,8 % des répondants citent le manque d’information comme frein ; le repérage des personnes isolées et la manière de les joindre restent à documenter.",
+       "pour_etayer": { "texte": "Énoncer si l’association fait de l’« aller vers » un principe de son action, décrire comment les participants ont été repérés et invités (source des coordonnées, courrier ou appel, critères retenus) et rapporter combien de personnes ont été contactées, jointes et inscrites.", "verdict_vise": "etayee" }
       }
      ]
     }
